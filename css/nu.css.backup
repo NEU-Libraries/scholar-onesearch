@@ -1,0 +1,25 @@
+/*------------CUSTOMIZED nu.css USED FOR Northeastern--------------*/
+
+/*---Removing Last Update line from footer---*/
+.EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {display:none;}
+#exlidMainMenuTile div.EXLMainMenuContainer {float:right; width:40em}
+
+/*---------Remove Languages Nav from Header--------*/
+#exlidMainMenuTile div.EXLLanguagesContainer{ display:none; }
+#exlidMainMenuTile div.EXLMainMenuContainer { float: right; }
+
+/* ---To remove the extraneous little white box around the search Button in Advanced Search--- */
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {border:1px solid #7C0000; clear:both ; display:inline ; float:left ; margin-top:-1px; }
+
+/*Removing RSS Image from Search Box*/
+exlidSearchBanner {display:none;}
+
+/* ----------Christine/Marci solution for space within boxes -----*/
+.EXLSearchFieldRibbonAdvancedSearchLink {text-indent:1em;}
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {width:auto;}
+
+/* ---Fixing overlap of search button---*/
+#exlidAdvancedSearchRibbon input.submit {width: 8.5em;}
+
+/*Adding numbers to display results; note the * display hack for ie6/7 */
+.EXLResultsList td.EXLResultNumber {vertical-align: middle; display:table-cell; *display:block; width:1%;} 

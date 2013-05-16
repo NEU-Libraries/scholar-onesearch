@@ -1,0 +1,31 @@
+/*------------CUSTOMIZED nu.css USED FOR Northeastern--------------*/
+
+/*---Removing Last Update line from footer---*/
+.EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {display:none;}
+#exlidMainMenuTile div.EXLMainMenuContainer {float:right; width:40em}
+
+/*--- .EXLMainMenu { padding-top:40px; } --*/
+
+/*---------Remove Languages Nav from Header--------*/
+#exlidMainMenuTile div.EXLLanguagesContainer {display: none;}
+#exlidMainMenuTile div.EXLMainMenuContainer {
+        float: right;
+}
+
+/* ---To remove the extraneous little white box around the search Button in Advanced Search--- */
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {border:1px solid #ECF3FD; clear:both; display:inline;float:left
+;margin-top:-1px;}
+
+/*Removing RSS Image from Search Box*/
+#exlidSearchBanner, .EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {display:none;}
+
+/*Remove "rss" link from the bottom-left of the results page (beneath "Suggested New Searches"*/
+.EXLFacetContainer div.EXLFacetActions li.EXLFacetRSSAction {display:none;}
+
+/* ----------Christine/Marci solution for space within boxes -----*/
+.EXLSearchFieldRibbonAdvancedSearchLink {text-indent:1em;}
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {width:auto;}
+
+/* ---Fixing overlap of search button---*/
+#exlidAdvancedSearchRibbon input.submit {width: 8.5em;}
+
