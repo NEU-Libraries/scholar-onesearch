@@ -36,11 +36,11 @@
 //@import "close.less";
 
 // // Components: Nav
-// @import "navs.less";
-// @import "navbar.less";
-// @import "button-groups.less";
+@import "navs.less";
+@import "navbar.less";
+@import "button-groups.less";
 // @import "breadcrumbs.less";
-// @import "pagination.less";
+@import "pagination.less";
 // @import "pager.less";
 
 // // Components: Popovers
@@ -62,10 +62,22 @@
 // // Utility classes
 // @import "utilities.less"; // Has to be last to override when necessary
 // @import "responsive-utilities.less";
-// 
-// 
+
+.reset{
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+}
+
 #exlidSearchTile{
   background: none;
+  .navbar;
+  border-top: none;
+  border-bottom: none;
 }
 
 .nu-lib-logo{
@@ -84,8 +96,9 @@
   .btn-default;
 }
 
-
-
+.EXLTabsRibbon div li.EXLResultTab{
+  float: none;
+}
 #exlidSearchRibbon{
   .EXLSearchFieldRibbonFormSubmitSearch .submit{
     .btn-primary;
@@ -93,3 +106,32 @@
   }
 }
 
+
+#exlidMainMenuRibbon{
+  .nav;
+  .nav-pills;
+}
+
+iframe html{
+  margin: 1em;
+}
+
+.EXLTabsRibbon{
+  border: none;
+  div{
+    li.EXLResultSelectedTab{
+      border: none;
+      background: none;
+    }
+  }
+}
+
+#exlidSearchRibbon{
+  .reset;
+  fieldset{
+    .reset;
+  }
+  div.EXLSearchFieldRibbon{
+    .reset;
+  }
+}
