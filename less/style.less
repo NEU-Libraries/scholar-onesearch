@@ -16,10 +16,14 @@
 @import "normalize.less";
 @import "print.less";
 
+//adding the old styles here.
+@import "Primo_default.3.0.less";
+@import "nu-old-style.less";
+
+
 // Core CSS
 @import "scaffolding.less";
 @import "type.less";
-
 @import "grid.less";
 
 //@import "tables.less";
@@ -63,8 +67,8 @@
 // @import "utilities.less"; // Has to be last to override when necessary
 // @import "responsive-utilities.less";
 
-@import "Primo_default.3.0.less";
-@import "nu-old-style.less";
+@import "primo-layout.less";
+
 
 
 .reset{
@@ -77,12 +81,9 @@
   border: none;
 }
 
-#exlidSearchTile{
-  background: none;
-  .navbar;
-  border-top: none;
-  border-bottom: none;
-}
+
+
+
 
 .nu-lib-logo{
   background: url('../images/nu-libraries-logo.svg') no-repeat top left;
@@ -98,6 +99,7 @@
   color: @link-color;
   .btn;
   .btn-default;
+  .btn-small;
 }
 
 .EXLTabsRibbon div li.EXLResultTab{
@@ -120,22 +122,3 @@ iframe html{
   margin: 1em;
 }
 
-.EXLTabsRibbon{
-  border: none;
-  div{
-    li.EXLResultSelectedTab{
-      border: none;
-      background: none;
-    }
-  }
-}
-
-#exlidSearchRibbon{
-  .reset;
-  fieldset{
-    .reset;
-  }
-  div.EXLSearchFieldRibbon{
-    .reset;
-  }
-}
