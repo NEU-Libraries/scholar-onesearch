@@ -566,7 +566,7 @@ html {
 }
 
 body {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.528571429;
   color: #333333;
@@ -4431,6 +4431,17 @@ ul.icons-ul > li .icon-li {
   background: none;
 }
 
+.EXLResultsList,
+.EXLResultsHeader h1,
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy,
+.EXLResultsHeader div.EXLResultsNavigation,
+.EXLFacetContainer ol li,
+.EXLFacetContainer h1,
+.EXLFacetContainer h4,
+.EXLFacetContainer h3 {
+  font-size: inherit;
+}
+
 #exlidUserAreaRibbon {
   float: right;
   padding-left: 0;
@@ -4553,14 +4564,24 @@ ul.icons-ul > li .icon-li {
   border-radius: 5px;
 }
 
+#exlidUserAreaRibbon li {
+  font-size: inherit;
+}
+
 #exlidUserAreaRibbon li > .EXLUserNameDisplay {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 
+#exlidMainMenuTile {
+  width: auto;
+  margin-top: 0;
+}
+
 #exlidMainMenuRibbon {
   float: right;
+  padding: 0;
   padding-left: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -4677,8 +4698,17 @@ ul.icons-ul > li .icon-li {
   background-color: #cc0000;
 }
 
+#exlidMainMenuRibbon li {
+  margin: 0;
+  font-size: inherit;
+}
+
 #exlidMainMenuRibbon li span {
   border: none;
+}
+
+#exlidMainMenuRibbon a {
+  font-size: inherit;
 }
 
 #exlidHeaderTile {
@@ -4697,6 +4727,7 @@ ul.icons-ul > li .icon-li {
 }
 
 #exlidSearchTile {
+  font-size: inherit;
   background-color: #eeeeee;
   background-image: none;
   border: none;
@@ -4718,21 +4749,6 @@ ul.icons-ul > li .icon-li {
 @media (min-width: 768px) {
   #exlidSearchRibbon {
     width: 100%;
-  }
-}
-
-#exlidSearchRibbon fieldset {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-@media (min-width: 768px) {
-  #exlidSearchRibbon fieldset {
-    width: 83.33333333333334%;
   }
 }
 
@@ -4777,6 +4793,8 @@ ul.icons-ul > li .icon-li {
   border: 1px solid transparent;
   border-color: #cc0000;
   border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 #exlidSearchRibbon input.submit:hover,
@@ -4910,7 +4928,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   padding: 8px 12px;
   margin-bottom: 0;
   font-size: 14px;
-  font-size: 12px;
   font-weight: 500;
   line-height: 1.528571429;
   color: #ffffff;
@@ -4922,6 +4939,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   border: 1px solid transparent;
   border-color: #a7a9aa;
   border-radius: 4px;
+  border-radius: 0;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a:focus {
@@ -4999,6 +5017,19 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a:active,
 fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   background-color: #a7a9aa;
   border-color: #a7a9aa;
+}
+
+.EXLSearchFieldRibbonAdvancedSearchLink,
+.EXLSearchFieldRibbonBrowseSearchLink {
+  width: 10%;
+}
+
+.EXLSearchFieldRibbonAdvancedSearchLink a,
+.EXLSearchFieldRibbonBrowseSearchLink a,
+.EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks,
+.EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
+  padding: 0;
+  font-size: inherit;
 }
 
 .reset {

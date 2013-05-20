@@ -1,3 +1,3 @@
 $(function() {
- 
+  $('body').addClass('container'); 
 });
