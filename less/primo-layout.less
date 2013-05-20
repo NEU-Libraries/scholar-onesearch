@@ -16,4 +16,65 @@
   .nav;
   .nav-pills;
   .pull-right;
+  li span{
+    border: none;
+  }
+}
+
+#exlidHeaderTile{
+  .make-column(4);
+}
+#exlidSearchTile{
+  background-image: none;
+  background-color: @navbar-bg;
+  border-radius: @border-radius-base;
+  border: none;
+}
+#exlidSearchRibbon{
+  padding: 0;
+  margin-top: 0;
+  .make-column(12);
+  fieldset{
+    .make-column(10);
+  }
+  div.EXLSearchTabsContainer{
+    display: none;
+  }
+  div.EXLSearchFieldRibbon{
+    border: none;
+    float: none;
+    background: none;
+  }
+  input{
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    
+  }
+  input#search_field{
+    width: 100%;
+    margin-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+  }
+}
+.EXLSearchFieldRibbonFormSearchFor{
+  .make-column(5);
+  margin-right: 0px;
+}
+.EXLSearchFieldRibbonFormSubmitSearch{
+  width: auto;
+}
+#exlidHeaderSystemFeedback{
+  display: none;
+}
+
+
+.EXLSearchFieldRibbonFormFields{
+
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection{
+  background: #FFFFFF;
 }
