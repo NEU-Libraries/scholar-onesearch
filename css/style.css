@@ -4758,19 +4758,12 @@ ul.icons-ul > li .icon-li {
   border-bottom-right-radius: 0;
 }
 
-.EXLSearchFieldRibbonFormSearchFor {
-  position: relative;
-  float: left;
+#exlidSearchRibbon input.submit {
   width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-@media (min-width: 768px) {
-  .EXLSearchFieldRibbonFormSearchFor {
-    width: 41.66666666666667%;
-  }
+.EXLSearchFieldRibbonFormSearchFor {
+  padding-right: 0;
 }
 
 .EXLSearchFieldRibbonFormSubmitSearch {
@@ -4781,8 +4774,134 @@ ul.icons-ul > li .icon-li {
   display: none;
 }
 
+.EXLSearchFieldRibbonFormFields {
+  display: table;
+}
+
+.EXLSearchFieldRibbonFormFields.col {
+  float: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.EXLSearchFieldRibbonFormFields input,
+.EXLSearchFieldRibbonFormFields select {
+  width: 100%;
+  margin-bottom: 0;
+}
+
 .EXLSearchFieldRibbonFormSelectedCollection {
-  background: #FFFFFF;
+  position: relative;
+  display: table-cell;
+  width: 1%;
+  width: 39%;
+  height: auto;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection .EXLSearchFieldRibbonFormSelectedCollectionLabel {
+  padding-left: 0;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.528571429;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #a7a9aa;
+  border: 1px solid transparent;
+  border-color: #a7a9aa;
+  border-radius: 4px;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:hover,
+.EXLSearchFieldRibbonFormSelectedCollection a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:active,
+.EXLSearchFieldRibbonFormSelectedCollection a.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a.disabled,
+.EXLSearchFieldRibbonFormSelectedCollection a[disabled],
+fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a [class^="icon-"].icon-large,
+.EXLSearchFieldRibbonFormSelectedCollection a [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a [class^="icon-"].icon-spin,
+.EXLSearchFieldRibbonFormSelectedCollection a [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a [class^="icon-"].pull-left.icon-2x,
+.EXLSearchFieldRibbonFormSelectedCollection a [class*=" icon-"].pull-left.icon-2x,
+.EXLSearchFieldRibbonFormSelectedCollection a [class^="icon-"].pull-right.icon-2x,
+.EXLSearchFieldRibbonFormSelectedCollection a [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a [class^="icon-"].icon-spin.icon-large,
+.EXLSearchFieldRibbonFormSelectedCollection a [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:hover,
+.EXLSearchFieldRibbonFormSelectedCollection a:focus,
+.EXLSearchFieldRibbonFormSelectedCollection a:active,
+.EXLSearchFieldRibbonFormSelectedCollection a.active {
+  background-color: #9a9c9d;
+  border-color: #8d9091;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a.disabled:hover,
+.EXLSearchFieldRibbonFormSelectedCollection a[disabled]:hover,
+fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a:hover,
+.EXLSearchFieldRibbonFormSelectedCollection a.disabled:focus,
+.EXLSearchFieldRibbonFormSelectedCollection a[disabled]:focus,
+fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a:focus,
+.EXLSearchFieldRibbonFormSelectedCollection a.disabled:active,
+.EXLSearchFieldRibbonFormSelectedCollection a[disabled]:active,
+fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a:active,
+.EXLSearchFieldRibbonFormSelectedCollection a.disabled.active,
+.EXLSearchFieldRibbonFormSelectedCollection a[disabled].active,
+fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
+  background-color: #a7a9aa;
+  border-color: #a7a9aa;
 }
 
 .reset {

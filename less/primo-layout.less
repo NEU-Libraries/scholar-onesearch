@@ -49,19 +49,19 @@
     width: auto;
     height: auto;
     padding: 8px 12px;
-    
   }
   input#search_field{
     width: 100%;
     margin-right: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-
+  }
+  input.submit{
+    width: 100%;
   }
 }
 .EXLSearchFieldRibbonFormSearchFor{
-  .make-column(5);
-  margin-right: 0px;
+  padding-right: 0px;
 }
 .EXLSearchFieldRibbonFormSubmitSearch{
   width: auto;
@@ -72,9 +72,20 @@
 
 
 .EXLSearchFieldRibbonFormFields{
-
+  .input-group;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection{
-  background: #FFFFFF;
+  height: auto;
+
+  .input-group-btn;
+  .EXLSearchFieldRibbonFormSelectedCollectionLabel{
+    padding-left: 0;
+  }
+  a{
+    .btn;
+    .btn-default;
+    font-size: 12px;
+  }
+  width: 39%;
 }
