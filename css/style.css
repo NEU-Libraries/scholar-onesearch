@@ -276,21 +276,8 @@ table {
   display: none;
 }
 
-#exlidMainMenuTile div.EXLMainMenuContainer {
-  float: right;
-  width: 40em;
-}
-
-/*--- .EXLMainMenu { padding-top:40px; } --*/
-
-/*---------Remove Languages Nav from Header--------*/
-
 #exlidMainMenuTile div.EXLLanguagesContainer {
   display: none;
-}
-
-#exlidMainMenuTile div.EXLMainMenuContainer {
-  float: right;
 }
 
 /* ---To remove the extraneous little white box around the search Button in Advanced Search--- */
@@ -4423,6 +4410,16 @@ ul.icons-ul > li .icon-li {
   border-bottom-right-radius: 3px;
 }
 
+.reset {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  clear: none;
+  border: none;
+}
+
 #exlidUserAreaRibbon li span.EXLUserAreaStart {
   display: none;
 }
@@ -4446,6 +4443,304 @@ ul.icons-ul > li .icon-li {
 .EXLFooterTile,
 .EXLFacetContainer div.EXLFacetActionsV2 {
   font-size: inherit;
+}
+
+.nu-lib-logo {
+  display: block;
+  width: 400px;
+  height: 58px;
+  max-width: 100%;
+  margin-bottom: 1em;
+  background: url('../images/nu-libraries-logo.svg') no-repeat top left;
+  background-size: contain;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a,
+a.EXLBriefResultsDisplayMultipleLink {
+  display: inline-block;
+  padding: 8px 12px;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.528571429;
+  line-height: 1.5;
+  color: #cc0000;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #a7a9aa;
+  border: 1px solid transparent;
+  border-color: #a7a9aa;
+  border-radius: 4px;
+  border-radius: 3px;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a:focus,
+a.EXLBriefResultsDisplayMultipleLink:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a:hover,
+a.EXLBriefResultsDisplayMultipleLink:hover,
+.EXLTabsRibbon div li.EXLResultTab a:focus,
+a.EXLBriefResultsDisplayMultipleLink:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a:active,
+a.EXLBriefResultsDisplayMultipleLink:active,
+.EXLTabsRibbon div li.EXLResultTab a.active,
+a.EXLBriefResultsDisplayMultipleLink.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.EXLTabsRibbon div li.EXLResultTab a.disabled,
+a.EXLBriefResultsDisplayMultipleLink.disabled,
+.EXLTabsRibbon div li.EXLResultTab a[disabled],
+a.EXLBriefResultsDisplayMultipleLink[disabled],
+fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a,
+fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-large,
+a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-large,
+.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-large,
+a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-spin,
+a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-spin,
+.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin,
+a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].pull-left.icon-2x,
+a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].pull-left.icon-2x,
+.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].pull-left.icon-2x,
+a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].pull-left.icon-2x,
+.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].pull-right.icon-2x,
+a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].pull-right.icon-2x,
+.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].pull-right.icon-2x,
+a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-spin.icon-large,
+a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-spin.icon-large,
+.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin.icon-large,
+a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a:hover,
+a.EXLBriefResultsDisplayMultipleLink:hover,
+.EXLTabsRibbon div li.EXLResultTab a:focus,
+a.EXLBriefResultsDisplayMultipleLink:focus,
+.EXLTabsRibbon div li.EXLResultTab a:active,
+a.EXLBriefResultsDisplayMultipleLink:active,
+.EXLTabsRibbon div li.EXLResultTab a.active,
+a.EXLBriefResultsDisplayMultipleLink.active {
+  background-color: #9a9c9d;
+  border-color: #8d9091;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a.disabled:hover,
+a.EXLBriefResultsDisplayMultipleLink.disabled:hover,
+.EXLTabsRibbon div li.EXLResultTab a[disabled]:hover,
+a.EXLBriefResultsDisplayMultipleLink[disabled]:hover,
+fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:hover,
+fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink:hover,
+.EXLTabsRibbon div li.EXLResultTab a.disabled:focus,
+a.EXLBriefResultsDisplayMultipleLink.disabled:focus,
+.EXLTabsRibbon div li.EXLResultTab a[disabled]:focus,
+a.EXLBriefResultsDisplayMultipleLink[disabled]:focus,
+fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:focus,
+fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink:focus,
+.EXLTabsRibbon div li.EXLResultTab a.disabled:active,
+a.EXLBriefResultsDisplayMultipleLink.disabled:active,
+.EXLTabsRibbon div li.EXLResultTab a[disabled]:active,
+a.EXLBriefResultsDisplayMultipleLink[disabled]:active,
+fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:active,
+fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink:active,
+.EXLTabsRibbon div li.EXLResultTab a.disabled.active,
+a.EXLBriefResultsDisplayMultipleLink.disabled.active,
+.EXLTabsRibbon div li.EXLResultTab a[disabled].active,
+a.EXLBriefResultsDisplayMultipleLink[disabled].active,
+fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a.active,
+fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
+  background-color: #a7a9aa;
+  border-color: #a7a9aa;
+}
+
+.EXLTabsRibbon div li.EXLResultTab {
+  float: none;
+}
+
+@media (max-width: 756px) {
+  .float-left-small-screen {
+    float: left;
+    clear: left;
+  }
+}
+
+#exlidMainMenuRibbon {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+#exlidMainMenuRibbon [class^="icon-"].icon-large,
+#exlidMainMenuRibbon [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+#exlidMainMenuRibbon [class^="icon-"].icon-spin,
+#exlidMainMenuRibbon [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+#exlidMainMenuRibbon:before,
+#exlidMainMenuRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidMainMenuRibbon:after {
+  clear: both;
+}
+
+#exlidMainMenuRibbon > li {
+  position: relative;
+  display: block;
+}
+
+#exlidMainMenuRibbon > li a,
+#exlidMainMenuRibbon > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+#exlidMainMenuRibbon > li a:hover,
+#exlidMainMenuRibbon > li > a:hover,
+#exlidMainMenuRibbon > li a:focus,
+#exlidMainMenuRibbon > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+#exlidMainMenuRibbon > li.disabled > a {
+  color: #999999;
+}
+
+#exlidMainMenuRibbon > li.disabled > a:hover,
+#exlidMainMenuRibbon > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+}
+
+#exlidMainMenuRibbon > li + .nav-header {
+  margin-top: 9px;
+}
+
+#exlidMainMenuRibbon.open > a,
+#exlidMainMenuRibbon.open > a:hover,
+#exlidMainMenuRibbon.open > a:focus {
+  color: #fff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+#exlidMainMenuRibbon.open > a .caret,
+#exlidMainMenuRibbon.open > a:hover .caret,
+#exlidMainMenuRibbon.open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+#exlidMainMenuRibbon > .pull-right {
+  float: right;
+}
+
+#exlidMainMenuRibbon .nav-divider {
+  height: 2px;
+  margin: 9.5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+#exlidMainMenuRibbon [class^="icon-"],
+#exlidMainMenuRibbon [class*=" icon-"],
+#exlidMainMenuRibbon [class^="icon-"].icon-large,
+#exlidMainMenuRibbon [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+#exlidMainMenuRibbon > li {
+  float: left;
+}
+
+#exlidMainMenuRibbon > li a,
+#exlidMainMenuRibbon > li > a {
+  border-radius: 5px;
+}
+
+#exlidMainMenuRibbon > li + li > a {
+  margin-left: 2px;
+}
+
+#exlidMainMenuRibbon > li.active > a,
+#exlidMainMenuRibbon > li.active > a:hover,
+#exlidMainMenuRibbon > li.active > a:focus {
+  color: #fff;
+  background-color: #cc0000;
+}
+
+iframe html {
+  margin: 1em;
+}
+
+#exlidUserAreaTile {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  #exlidUserAreaTile {
+    width: 41.66666666666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  #exlidUserAreaTile {
+    margin-left: 25%;
+  }
 }
 
 #exlidUserAreaRibbon {
@@ -4580,9 +4875,37 @@ ul.icons-ul > li .icon-li {
   padding: 10px 15px;
 }
 
+@media (max-width: 756px) {
+  #exlidUserAreaRibbon {
+    float: left;
+    clear: left;
+  }
+}
+
 #exlidMainMenuTile {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  #exlidMainMenuTile {
+    width: 41.66666666666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  #exlidMainMenuTile {
+    margin-left: 58.333333333333336%;
+  }
+}
+
+#exlidMainMenuTile div.EXLMainMenuContainer {
+  float: none;
   width: auto;
-  margin-top: 0;
 }
 
 #exlidMainMenuRibbon {
@@ -4717,6 +5040,13 @@ ul.icons-ul > li .icon-li {
   font-size: inherit;
 }
 
+@media (max-width: 756px) {
+  #exlidMainMenuRibbon {
+    float: left;
+    clear: left;
+  }
+}
+
 #exlidHeaderTile {
   position: relative;
   float: left;
@@ -4734,28 +5064,30 @@ ul.icons-ul > li .icon-li {
 
 #exlidSearchTile {
   font-size: inherit;
-  background-color: #eeeeee;
   background-image: none;
   border: none;
-  border-radius: 4px;
 }
 
 #exlidSearchRibbon {
   position: relative;
-  float: left;
-  width: 100%;
-  height: 0;
-  min-height: 1px;
-  padding: 0;
+  float: none;
+  width: auto;
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: 0;
+  margin-top: 3em;
+  margin-bottom: 20px;
+  background-color: #eeeeee;
+  border-radius: 4px;
 }
 
-@media (min-width: 768px) {
-  #exlidSearchRibbon {
-    width: 100%;
-  }
+#exlidSearchRibbon:before,
+#exlidSearchRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidSearchRibbon:after {
+  clear: both;
 }
 
 #exlidSearchRibbon div.EXLSearchTabsContainer {
@@ -4777,6 +5109,7 @@ ul.icons-ul > li .icon-li {
 #exlidSearchRibbon input#search_field {
   width: 100%;
   margin-right: 0;
+  border: 1px solid #cccccc;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -4880,6 +5213,49 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   line-height: .8em;
 }
 
+#exlidSearchRibbon fieldset {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-bottom: 8px;
+  margin-left: auto;
+}
+
+#exlidSearchRibbon fieldset:before,
+#exlidSearchRibbon fieldset:after {
+  display: table;
+  content: " ";
+}
+
+#exlidSearchRibbon fieldset:after {
+  clear: both;
+}
+
+#exlidSearchRibbon fieldset input,
+#exlidSearchRibbon fieldset select,
+#exlidSearchRibbon fieldset textarea,
+#exlidSearchRibbon fieldset .radio,
+#exlidSearchRibbon fieldset .checkbox {
+  display: inline-block;
+}
+
+#exlidSearchRibbon fieldset .radio,
+#exlidSearchRibbon fieldset .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #exlidSearchRibbon fieldset {
+    width: 83.33333333333334%;
+  }
+}
+
 .EXLSearchFieldRibbonFormSearchFor {
   width: 65%;
   padding-right: 0;
@@ -4894,21 +5270,8 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 .EXLSearchFieldRibbonFormFields {
-  display: table;
   width: 77%;
   height: auto;
-}
-
-.EXLSearchFieldRibbonFormFields.col {
-  float: none;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.EXLSearchFieldRibbonFormFields input,
-.EXLSearchFieldRibbonFormFields select {
-  width: 100%;
-  margin-bottom: 0;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection {
@@ -5027,7 +5390,19 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 
 .EXLSearchFieldRibbonAdvancedSearchLink,
 .EXLSearchFieldRibbonBrowseSearchLink {
-  width: 10%;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLSearchFieldRibbonAdvancedSearchLink,
+  .EXLSearchFieldRibbonBrowseSearchLink {
+    width: 16.666666666666664%;
+  }
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink a,
@@ -5038,247 +5413,10 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   font-size: inherit;
 }
 
-.reset {
-  float: none;
-  width: auto;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  clear: none;
-  border: none;
-}
-
-.nu-lib-logo {
-  display: block;
-  width: 400px;
-  height: 65px;
-  max-width: 100%;
-  margin-bottom: 1em;
-  background: url('../images/nu-libraries-logo.svg') no-repeat top left;
-  background-size: contain;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a {
-  display: inline-block;
-  padding: 8px 12px;
-  padding: 5px 10px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.528571429;
-  line-height: 1.5;
-  color: #cc0000;
-  color: #ffffff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: #a7a9aa;
-  border: 1px solid transparent;
-  border-color: #a7a9aa;
-  border-radius: 4px;
-  border-radius: 3px;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a:hover,
-.EXLTabsRibbon div li.EXLResultTab a:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a:active,
-.EXLTabsRibbon div li.EXLResultTab a.active {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-
-.EXLTabsRibbon div li.EXLResultTab a.disabled,
-.EXLTabsRibbon div li.EXLResultTab a[disabled],
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a {
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-large,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-spin,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].pull-left.icon-2x,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].pull-left.icon-2x,
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].pull-right.icon-2x,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .18em;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-spin.icon-large,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin.icon-large {
-  line-height: .8em;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a:hover,
-.EXLTabsRibbon div li.EXLResultTab a:focus,
-.EXLTabsRibbon div li.EXLResultTab a:active,
-.EXLTabsRibbon div li.EXLResultTab a.active {
-  background-color: #9a9c9d;
-  border-color: #8d9091;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a.disabled:hover,
-.EXLTabsRibbon div li.EXLResultTab a[disabled]:hover,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:hover,
-.EXLTabsRibbon div li.EXLResultTab a.disabled:focus,
-.EXLTabsRibbon div li.EXLResultTab a[disabled]:focus,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:focus,
-.EXLTabsRibbon div li.EXLResultTab a.disabled:active,
-.EXLTabsRibbon div li.EXLResultTab a[disabled]:active,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:active,
-.EXLTabsRibbon div li.EXLResultTab a.disabled.active,
-.EXLTabsRibbon div li.EXLResultTab a[disabled].active,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
-}
-
-.EXLTabsRibbon div li.EXLResultTab {
-  float: none;
-}
-
-#exlidMainMenuRibbon {
-  padding-left: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  list-style: none;
-}
-
-#exlidMainMenuRibbon [class^="icon-"].icon-large,
-#exlidMainMenuRibbon [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-
-#exlidMainMenuRibbon [class^="icon-"].icon-spin,
-#exlidMainMenuRibbon [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-
-#exlidMainMenuRibbon:before,
-#exlidMainMenuRibbon:after {
-  display: table;
-  content: " ";
-}
-
-#exlidMainMenuRibbon:after {
-  clear: both;
-}
-
-#exlidMainMenuRibbon > li {
-  position: relative;
-  display: block;
-}
-
-#exlidMainMenuRibbon > li a,
-#exlidMainMenuRibbon > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-
-#exlidMainMenuRibbon > li a:hover,
-#exlidMainMenuRibbon > li > a:hover,
-#exlidMainMenuRibbon > li a:focus,
-#exlidMainMenuRibbon > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-
-#exlidMainMenuRibbon > li.disabled > a {
-  color: #999999;
-}
-
-#exlidMainMenuRibbon > li.disabled > a:hover,
-#exlidMainMenuRibbon > li.disabled > a:focus {
-  color: #999999;
-  text-decoration: none;
-  cursor: default;
-  background-color: transparent;
-}
-
-#exlidMainMenuRibbon > li + .nav-header {
-  margin-top: 9px;
-}
-
-#exlidMainMenuRibbon.open > a,
-#exlidMainMenuRibbon.open > a:hover,
-#exlidMainMenuRibbon.open > a:focus {
-  color: #fff;
-  background-color: #cc0000;
-  border-color: #cc0000;
-}
-
-#exlidMainMenuRibbon.open > a .caret,
-#exlidMainMenuRibbon.open > a:hover .caret,
-#exlidMainMenuRibbon.open > a:focus .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-
-#exlidMainMenuRibbon > .pull-right {
-  float: right;
-}
-
-#exlidMainMenuRibbon .nav-divider {
-  height: 2px;
-  margin: 9.5px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-  border-bottom: 1px solid #ffffff;
-}
-
-#exlidMainMenuRibbon [class^="icon-"],
-#exlidMainMenuRibbon [class*=" icon-"],
-#exlidMainMenuRibbon [class^="icon-"].icon-large,
-#exlidMainMenuRibbon [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-
-#exlidMainMenuRibbon > li {
-  float: left;
-}
-
-#exlidMainMenuRibbon > li a,
-#exlidMainMenuRibbon > li > a {
-  border-radius: 5px;
-}
-
-#exlidMainMenuRibbon > li + li > a {
-  margin-left: 2px;
-}
-
-#exlidMainMenuRibbon > li.active > a,
-#exlidMainMenuRibbon > li.active > a:hover,
-#exlidMainMenuRibbon > li.active > a:focus {
-  color: #fff;
-  background-color: #cc0000;
-}
-
-iframe html {
-  margin: 1em;
+.EXLSearchFieldRibbonFormCollectionsList {
+  top: 0;
+  left: 65%;
+  width: 24.2em;
+  font-size: 0.8em;
+  box-shadow: #999999 0px 0.25em 0.25em;
 }

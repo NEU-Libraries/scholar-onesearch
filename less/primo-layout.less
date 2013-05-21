@@ -1,4 +1,46 @@
+.nu-lib-logo{
+  background: url('../images/nu-libraries-logo.svg') no-repeat top left;
+  background-size: contain;
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: 58px;
+  margin-bottom: 1em;
+}
 
+.EXLTabsRibbon div li.EXLResultTab a, a.EXLBriefResultsDisplayMultipleLink{
+  color: @link-color;
+  .btn;
+  .btn-default;
+  .btn-small;
+}
+
+.EXLTabsRibbon div li.EXLResultTab{
+  float: none;
+}
+
+.float-left-small-screen{
+  @media (max-width: 756px){
+    float: left;
+    clear: left;
+  }
+}
+
+#exlidMainMenuRibbon{
+  .nav;
+  .nav-pills;
+}
+
+iframe html{
+  margin: 1em;
+}
+
+#exlidUserAreaTile{
+  .make-column(5);
+  .make-column-offset(3);
+}
+
+//User ribbon
 #exlidUserAreaRibbon{
   .nav;
   .nav-pills;
@@ -14,12 +56,18 @@
     display: block;
     padding: 10px 15px;
   }
+  .float-left-small-screen;
+}
+//Main menu tile
+#exlidMainMenuTile{
+  .make-column(5);
+  .make-column-offset(7);
+  div.EXLMainMenuContainer{
+    float: none;
+    width: auto;
+  }
 }
 
-#exlidMainMenuTile{
-  width: auto;
-  margin-top: 0;
-}
 #exlidMainMenuRibbon{
   .nav;
   .nav-pills;
@@ -35,23 +83,25 @@
   a{
     font-size: inherit;
   }
+  .float-left-small-screen;
 }
 
 #exlidHeaderTile{
   .make-column(4);
 }
+////// ---- SEARCH AREA -------------
 #exlidSearchTile{
   background-image: none;
-  background-color: @navbar-bg;
-  border-radius: @border-radius-base;
   border: none;
   font-size: inherit;
 }
+
+// Styling as a navbar component.
 #exlidSearchRibbon{
-  height: 0;
-  padding: 0;
-  margin-top: 0;
-  .make-column(12);
+  float: none;
+  margin-top: 3em;
+  width: auto;
+  .navbar;
   div.EXLSearchTabsContainer{
     display: none;
   }
@@ -59,6 +109,7 @@
     border: none;
     float: none;
     background: none;
+    
   }
   input{
     width: auto;
@@ -70,6 +121,7 @@
     margin-right: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    border: 1px solid @input-border;
   }
   input.submit{
     width: 100%;
@@ -78,6 +130,12 @@
     height: auto;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  //
+  fieldset{
+    .container;
+    .navbar-form;
+    .make-column(10);
   }
 }
 .EXLSearchFieldRibbonFormSearchFor{
@@ -93,7 +151,6 @@
 
 
 .EXLSearchFieldRibbonFormFields{
-  .input-group;
   width: 77%;
   height: auto;
 }
@@ -116,9 +173,18 @@
 
 
 .EXLSearchFieldRibbonAdvancedSearchLink, .EXLSearchFieldRibbonBrowseSearchLink{
-  width: 10%;
+  .make-column(2);
   a, a.EXLSearchFieldRibbonAdvancedTwoLinks{ 
     padding: 0;
     font-size: inherit;
   }
 }
+
+.EXLSearchFieldRibbonFormCollectionsList{
+  top: 0;
+  left: 65%;
+  font-size: 0.8em;
+  width: 24.2em;
+  box-shadow: rgb(153, 153, 153) 0px 0.25em 0.25em;
+}
+// ------ END Search Area --- 
