@@ -4431,6 +4431,10 @@ ul.icons-ul > li .icon-li {
   background: none;
 }
 
+#exlidMainMenuRibbon li span {
+  padding: 0;
+}
+
 .EXLResultsList,
 .EXLResultsHeader h1,
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy,
@@ -4438,7 +4442,9 @@ ul.icons-ul > li .icon-li {
 .EXLFacetContainer ol li,
 .EXLFacetContainer h1,
 .EXLFacetContainer h4,
-.EXLFacetContainer h3 {
+.EXLFacetContainer h3,
+.EXLFooterTile,
+.EXLFacetContainer div.EXLFacetActionsV2 {
   font-size: inherit;
 }
 
