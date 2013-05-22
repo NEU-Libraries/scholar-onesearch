@@ -2,6 +2,7 @@
 
 body{
   background-color: @brand-gray;
+  min-width: inherit;
 }
 //------- End Body Styles ----
 // ------ Content Div --------
@@ -10,6 +11,7 @@ body{
   border-right: 1px solid #8c8c8a;
   border-left: 1px solid #8c8c8a;
   padding: 0 1em;
+  height: 100%;
   @media (max-width: 756px){
     padding: 0;
     border: none;
@@ -118,6 +120,7 @@ iframe html{
 // Styling as a navbar component.
 #exlidSearchRibbon{
   float: none;
+  margin: 0.5em;
   margin-top: 3em;
   width: auto;
   .navbar;
@@ -204,15 +207,26 @@ iframe html{
   .dropdown-menu;
   left: 49%;
 }
-// ------ END Search Area --- 
+
+// ------ Results Tile --------
+.EXLResultsContainer div.EXLResultsTile{
+  @media (max-width: 756px){
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 1em auto;
+  }
+}
+
 
 // ------ Facet Tile --------
-.EXLFacetTile {
+.EXLFacetTile{
  @media (max-width: 756px){
   width: 100%;
- }
+  float: left;
+  clear: both;
+  }
 }
-// --- End Facet Tile -------
 
 // ------ Footer Tile -------
 #footerEXL{

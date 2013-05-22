@@ -333,19 +333,6 @@ li#exlidMainMenuItem2.EXLMainMenuItem {
 
 /* .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a{ margin-left:0.5em; padding-right:1em; background-image:url(../images/icon_arrow_sendTo.png); background-repeat:no-repeat; background-position:100% 70%; color:#32322f; font-weight:bold} */
 
-/*---Change body text color to #333333---*/
-
-body {
-  height: 100%;
-  min-width: 990px;
-  padding: 0;
-  margin: 0;
-  font-family: Arial,verdana;
-  font-size: 100%;
-  color: #333333;
-  background-color: #ffffff;
-}
-
 /*---Hide the default Help link---*/
 
 #exlidMainMenuRibbon li.EXLLastItem {
@@ -4645,10 +4632,12 @@ ul.icons-ul > li .icon-li {
 }
 
 body {
+  min-width: inherit;
   background-color: #e9e8e5;
 }
 
 #contentEXL {
+  height: 100%;
   padding: 0 1em;
   background-color: #FFFFFF;
   border-right: 1px solid #8c8c8a;
@@ -5291,6 +5280,7 @@ iframe html {
   width: auto;
   padding-right: 15px;
   padding-left: 15px;
+  margin: 0.5em;
   margin-top: 3em;
   margin-bottom: 20px;
   background-color: #cc0000;
@@ -5685,8 +5675,19 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 }
 
 @media (max-width: 756px) {
-  .EXLFacetTile {
+  .EXLResultsContainer div.EXLResultsTile {
+    float: left;
     width: 100%;
+    margin: 1em auto;
+    clear: both;
+  }
+}
+
+@media (max-width: 756px) {
+  .EXLFacetTile {
+    float: left;
+    width: 100%;
+    clear: both;
   }
 }
 
