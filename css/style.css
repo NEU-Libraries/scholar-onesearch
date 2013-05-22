@@ -4035,7 +4035,7 @@ ul.icons-ul > li .icon-li {
   padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 20px;
-  background-color: #eeeeee;
+  background-color: #cc0000;
   border-radius: 4px;
 }
 
@@ -4058,13 +4058,13 @@ ul.icons-ul > li .icon-li {
   padding-top: 14.5px;
   padding-bottom: 14.5px;
   line-height: 20px;
-  color: #777777;
+  color: #ffffff;
   border-radius: 4px;
 }
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #e6e6e6;
   background-color: transparent;
 }
 
@@ -4072,7 +4072,7 @@ ul.icons-ul > li .icon-li {
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #d5d5d5;
+  background-color: #990000;
 }
 
 .navbar-nav > .disabled > a,
@@ -4113,13 +4113,13 @@ ul.icons-ul > li .icon-li {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
-  color: #777777;
+  color: #ffffff;
   text-align: center;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4183,20 +4183,20 @@ ul.icons-ul > li .icon-li {
 
 .navbar-nav > .dropdown > a:hover .caret,
 .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: #333333;
-  border-bottom-color: #333333;
+  border-top-color: #e6e6e6;
+  border-bottom-color: #e6e6e6;
 }
 
 .navbar-nav > .open > a,
 .navbar-nav > .open > a:hover,
 .navbar-nav > .open > a:focus {
   color: #555555;
-  background-color: #d5d5d5;
+  background-color: #990000;
 }
 
 .navbar-nav > .dropdown > a .caret {
-  border-top-color: #777777;
-  border-bottom-color: #777777;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .navbar-nav > .open > a .caret,
@@ -4333,11 +4333,11 @@ ul.icons-ul > li .icon-li {
 }
 
 .navbar-link {
-  color: #777777;
+  color: #ffffff;
 }
 
 .navbar-link:hover {
-  color: #333333;
+  color: #e6e6e6;
 }
 
 .navbar-inverse .navbar-link {
@@ -4642,6 +4642,17 @@ ul.icons-ul > li .icon-li {
 .EXLFooterTile,
 .EXLFacetContainer div.EXLFacetActionsV2 {
   font-size: inherit;
+}
+
+body {
+  background-color: #e9e8e5;
+}
+
+#contentEXL {
+  padding: 0 1em;
+  background-color: #FFFFFF;
+  border-right: 1px solid #8c8c8a;
+  border-left: 1px solid #8c8c8a;
 }
 
 .nu-lib-logo {
@@ -5275,7 +5286,7 @@ iframe html {
   padding-left: 15px;
   margin-top: 3em;
   margin-bottom: 20px;
-  background-color: #eeeeee;
+  background-color: #cc0000;
   border-radius: 4px;
 }
 
@@ -5327,9 +5338,9 @@ iframe html {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #cc0000;
+  background-color: #a7a9aa;
   border: 1px solid transparent;
-  border-color: #cc0000;
+  border-color: #a7a9aa;
   border-radius: 4px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -5339,8 +5350,8 @@ iframe html {
 #exlidSearchRibbon input.submit:focus,
 #exlidSearchRibbon input.submit:active,
 #exlidSearchRibbon input.submit.active {
-  background-color: #b30000;
-  border-color: #990000;
+  background-color: #9a9c9d;
+  border-color: #8d9091;
 }
 
 #exlidSearchRibbon input.submit.disabled:hover,
@@ -5355,8 +5366,8 @@ fieldset[disabled] #exlidSearchRibbon input.submit:active,
 #exlidSearchRibbon input.submit.disabled.active,
 #exlidSearchRibbon input.submit[disabled].active,
 fieldset[disabled] #exlidSearchRibbon input.submit.active {
-  background-color: #cc0000;
-  border-color: #cc0000;
+  background-color: #a7a9aa;
+  border-color: #a7a9aa;
 }
 
 #exlidSearchRibbon input.submit:focus {
@@ -5610,14 +5621,14 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 .EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
   padding: 0;
   font-size: inherit;
-  color: #777777;
+  color: #ffffff;
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink a:hover,
 .EXLSearchFieldRibbonBrowseSearchLink a:hover,
 .EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks:hover,
 .EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks:hover {
-  color: #333333;
+  color: #e6e6e6;
 }
 
 .EXLSearchFieldRibbonFormCollectionsList {
@@ -5663,4 +5674,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   line-height: 1.528571429;
   color: #333333;
   white-space: nowrap;
+}
+
+#footerEXL {
+  background: none;
 }

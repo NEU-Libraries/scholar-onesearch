@@ -24,6 +24,8 @@
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
+@brand-gray:            #e9e8e5;
+
 
 // Scaffolding
 // -------------------------
@@ -178,12 +180,12 @@
 
 // Basics of a navbar
 @navbar-height:                    50px;
-@navbar-color:                     #777;
-@navbar-bg:                        #eee;
+@navbar-color:                     #FFFFFF;
+@navbar-bg:                        @brand-primary;
 
 // Navbar links
-@navbar-link-color:                #777;
-@navbar-link-hover-color:          #333;
+@navbar-link-color:                #FFFFFF;
+@navbar-link-hover-color:          darken(@navbar-link-color, 10%);;
 @navbar-link-hover-bg:             transparent;
 @navbar-link-active-color:         #555;
 @navbar-link-active-bg:            darken(@navbar-bg, 10%);
