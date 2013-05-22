@@ -4655,6 +4655,13 @@ body {
   border-left: 1px solid #8c8c8a;
 }
 
+@media (max-width: 756px) {
+  #contentEXL {
+    padding: 0;
+    border: none;
+  }
+}
+
 .nu-lib-logo {
   display: block;
   width: 400px;
@@ -5635,6 +5642,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   position: absolute;
   top: 100%;
   left: 0;
+  left: 49%;
   z-index: 1000;
   display: none;
   float: left;
@@ -5674,6 +5682,12 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   line-height: 1.528571429;
   color: #333333;
   white-space: nowrap;
+}
+
+@media (max-width: 756px) {
+  .EXLFacetTile {
+    width: 100%;
+  }
 }
 
 #footerEXL {

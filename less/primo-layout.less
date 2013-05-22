@@ -10,6 +10,10 @@ body{
   border-right: 1px solid #8c8c8a;
   border-left: 1px solid #8c8c8a;
   padding: 0 1em;
+  @media (max-width: 756px){
+    padding: 0;
+    border: none;
+  }
 }
 // --- End Content Div -------
 
@@ -197,15 +201,18 @@ iframe html{
 }
 
 .EXLSearchFieldRibbonFormCollectionsList{
-  // top: 0;
-  // left: 65%;
-  // font-size: 0.8em;
-  // width: 24.2em;
-  // box-shadow: rgb(153, 153, 153) 0px 0.25em 0.25em;
   .dropdown-menu;
+  left: 49%;
 }
 // ------ END Search Area --- 
 
+// ------ Facet Tile --------
+.EXLFacetTile {
+ @media (max-width: 756px){
+  width: 100%;
+ }
+}
+// --- End Facet Tile -------
 
 // ------ Footer Tile -------
 #footerEXL{
