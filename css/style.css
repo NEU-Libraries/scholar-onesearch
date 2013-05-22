@@ -1799,16 +1799,16 @@ fieldset[disabled] .btn-warning.active {
 
 .btn-danger {
   color: #ffffff;
-  background-color: #d9534f;
-  border-color: #d9534f;
+  background-color: #e67e22;
+  border-color: #e67e22;
 }
 
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active {
-  background-color: #d43f3a;
-  border-color: #c9302c;
+  background-color: #d67118;
+  border-color: #bf6516;
 }
 
 .btn-danger.disabled:hover,
@@ -1823,22 +1823,22 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #d9534f;
-  border-color: #d9534f;
+  background-color: #e67e22;
+  border-color: #e67e22;
 }
 
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
-  border-color: #5cb85c;
+  background-color: #16a085;
+  border-color: #16a085;
 }
 
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active {
-  background-color: #4cae4c;
-  border-color: #449d44;
+  background-color: #138a72;
+  border-color: #107360;
 }
 
 .btn-success.disabled:hover,
@@ -1853,22 +1853,22 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
-  border-color: #5cb85c;
+  background-color: #16a085;
+  border-color: #16a085;
 }
 
 .btn-info {
   color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #5bc0de;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
 }
 
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active {
-  background-color: #46b8da;
-  border-color: #31b0d5;
+  background-color: #233140;
+  border-color: #1a242f;
 }
 
 .btn-info.disabled:hover,
@@ -1883,8 +1883,8 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #5bc0de;
-  border-color: #5bc0de;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
 }
 
 .btn-link,
@@ -3793,6 +3793,180 @@ ul.icons-ul > li .icon-li {
   z-index: 1051;
 }
 
+.list-group {
+  margin: 0 0 20px;
+  background-color: #ffffff;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 30px 10px 15px;
+  margin-bottom: -1px;
+  border: 1px solid #dddddd;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.list-group-item-text {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+a.list-group-item .list-group-item-heading {
+  color: #333;
+}
+
+a.list-group-item .list-group-item-text {
+  color: #555;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+a.list-group-item.active {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+a.list-group-item.active .list-group-item-heading {
+  color: inherit;
+}
+
+a.list-group-item.active .list-group-item-text {
+  color: #ff9999;
+}
+
+.list-group-item > .badge,
+.list-group-item > .glyphicon-chevron-right {
+  float: right;
+  margin-right: -15px;
+}
+
+.list-group-item > .glyphicon-chevron-right {
+  margin-right: -15px;
+}
+
+.list-group-item > .glyphicon + .badge {
+  margin-right: 5px;
+}
+
+.panel {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  margin: -15px -15px 15px;
+  font-size: 17.5px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dddddd;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  margin: 15px -15px -15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #dddddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panel-primary {
+  border-color: #cc0000;
+}
+
+.panel-primary .panel-heading {
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.panel-success {
+  border-color: #d6e9c6;
+}
+
+.panel-success .panel-heading {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.panel-warning {
+  border-color: #fbeed5;
+}
+
+.panel-warning .panel-heading {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+}
+
+.panel-danger {
+  border-color: #eed3d7;
+}
+
+.panel-danger .panel-heading {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.panel-info {
+  border-color: #bce8f1;
+}
+
+.panel-info .panel-heading {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.list-group-flush {
+  margin: 15px -15px -15px;
+}
+
+.list-group-flush .list-group-item {
+  border-width: 1px 0;
+}
+
+.list-group-flush .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-flush .list-group-item:last-child {
+  border-bottom: 0;
+}
+
 .nav {
   padding-left: 0;
   margin-bottom: 0;
@@ -4596,6 +4770,51 @@ ul.icons-ul > li .icon-li {
   border-bottom-right-radius: 3px;
 }
 
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #999999;
+  border-radius: 10px;
+}
+
+.badge:empty {
+  display: none;
+}
+
+a.badge:hover,
+a.badge:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+.btn-mini .badge {
+  top: 0;
+}
+
+a.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: #cc0000;
+  background-color: #fff;
+}
+
+.nav-pills > li > a > .badge {
+  margin-left: 3px;
+}
+
 .reset {
   float: none;
   width: auto;
@@ -4637,7 +4856,7 @@ body {
 }
 
 #contentEXL {
-  height: 100%;
+  min-height: 100%;
   padding: 0 1em;
   background-color: #FFFFFF;
   border-right: 1px solid #8c8c8a;
@@ -4754,6 +4973,12 @@ a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-spin.icon-large,
 .EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin.icon-large,
 a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
+}
+
+.EXLTabsRibbon div li.EXLResultTab a .badge,
+a.EXLBriefResultsDisplayMultipleLink .badge {
+  position: relative;
+  top: -1px;
 }
 
 .EXLTabsRibbon div li.EXLResultTab a:hover,
@@ -4951,7 +5176,9 @@ iframe html {
 
 #exlidUserAreaRibbon {
   float: right;
+  height: auto;
   padding-left: 0;
+  margin: 0.25em 0;
   margin-bottom: 0;
   margin-left: 0;
   list-style: none;
@@ -5068,10 +5295,12 @@ iframe html {
 }
 
 #exlidUserAreaRibbon .EXLUserName {
+  margin: 0 0.25em 0.25em 0;
   border-radius: 5px;
 }
 
 #exlidUserAreaRibbon li {
+  padding: 0;
   font-size: inherit;
 }
 
@@ -5116,8 +5345,10 @@ iframe html {
 
 #exlidMainMenuRibbon {
   float: right;
+  height: auto;
   padding: 0;
   padding-left: 0;
+  margin: 0.25em 0;
   margin-bottom: 0;
   margin-left: 0;
   list-style: none;
@@ -5335,9 +5566,9 @@ iframe html {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #a7a9aa;
+  background-color: #2c3e50;
   border: 1px solid transparent;
-  border-color: #a7a9aa;
+  border-color: #2c3e50;
   border-radius: 4px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -5347,8 +5578,8 @@ iframe html {
 #exlidSearchRibbon input.submit:focus,
 #exlidSearchRibbon input.submit:active,
 #exlidSearchRibbon input.submit.active {
-  background-color: #9a9c9d;
-  border-color: #8d9091;
+  background-color: #233140;
+  border-color: #1a242f;
 }
 
 #exlidSearchRibbon input.submit.disabled:hover,
@@ -5363,8 +5594,8 @@ fieldset[disabled] #exlidSearchRibbon input.submit:active,
 #exlidSearchRibbon input.submit.disabled.active,
 #exlidSearchRibbon input.submit[disabled].active,
 fieldset[disabled] #exlidSearchRibbon input.submit.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
 }
 
 #exlidSearchRibbon input.submit:focus {
@@ -5418,6 +5649,11 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 #exlidSearchRibbon input.submit [class^="icon-"].icon-spin.icon-large,
 #exlidSearchRibbon input.submit [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
+}
+
+#exlidSearchRibbon input.submit .badge {
+  position: relative;
+  top: -1px;
 }
 
 #exlidSearchRibbon fieldset {
@@ -5495,6 +5731,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   vertical-align: middle;
   cursor: pointer;
   background-color: #a7a9aa;
+  background-image: none;
   border: 1px solid transparent;
   border-color: #a7a9aa;
   border-radius: 4px;
@@ -5554,6 +5791,11 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a {
   line-height: .8em;
 }
 
+.EXLSearchFieldRibbonFormSelectedCollection a .badge {
+  position: relative;
+  top: -1px;
+}
+
 .EXLSearchFieldRibbonFormSelectedCollection a:hover,
 .EXLSearchFieldRibbonFormSelectedCollection a:focus,
 .EXLSearchFieldRibbonFormSelectedCollection a:active,
@@ -5576,6 +5818,20 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a:active,
 fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   background-color: #a7a9aa;
   border-color: #a7a9aa;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top-color: #ffffff;
+  content: "";
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink,
@@ -5617,7 +5873,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   position: absolute;
   top: 100%;
   left: 0;
-  left: 49%;
+  left: 52%;
   z-index: 1000;
   display: none;
   float: left;
@@ -5674,6 +5930,87 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
     width: 100%;
     clear: both;
   }
+}
+
+.EXLFacetContainer {
+  padding: 15px;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.EXLFacetContainer h3,
+.EXLFacetContainer h1,
+.EXLFacetContainer h4 {
+  padding: 10px 15px;
+  margin: -15px -15px 15px;
+  margin: 0;
+  font-size: 17.5px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dddddd;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.EXLFacetContainer h1 {
+  font-size: 16px;
+}
+
+.EXLFacetContainer h3 {
+  font-size: 15px;
+}
+
+.EXLFacetContainer h4 {
+  font-size: 14.5px;
+}
+
+.EXLFacetContainer ol.EXLFacetsList {
+  padding: 0;
+  margin: 0 0 20px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.EXLFacetContainer ol.EXLFacetsList li {
+  position: relative;
+  display: block;
+  padding: 10px 30px 10px 15px;
+  padding-right: 15px;
+  margin-bottom: -1px;
+  border: 1px solid #dddddd;
+  border-right: none;
+  border-left: none;
+}
+
+.EXLFacetContainer ol.EXLFacetsList li.EXLAdditionalFacet {
+  display: none;
+}
+
+.EXLFacetContainer ol.EXLFacetsList li.EXLFacetsDisplayMore {
+  margin-top: 0;
+}
+
+.EXLFacetContainer ol.EXLFacetsList li a {
+  font-size: 13px;
+}
+
+.EXLFacetContainer ol.EXLFacetsList li span {
+  float: right;
+  font-size: 12px;
+}
+
+.EXLFacetContainer div.EXLFacetActionsV2 {
+  margin-bottom: 0;
+}
+
+.EXLRelatedSearchTopic {
+  margin-bottom: 0;
 }
 
 #footerEXL {
