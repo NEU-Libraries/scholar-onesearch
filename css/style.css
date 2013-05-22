@@ -5426,21 +5426,11 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
+  padding-right: 0;
   padding-left: 15px;
+  padding-left: 0;
   margin-top: 8px;
-  margin-right: auto;
   margin-bottom: 8px;
-  margin-left: auto;
-}
-
-#exlidSearchRibbon fieldset:before,
-#exlidSearchRibbon fieldset:after {
-  display: table;
-  content: " ";
-}
-
-#exlidSearchRibbon fieldset:after {
-  clear: both;
 }
 
 #exlidSearchRibbon fieldset input,
@@ -5459,17 +5449,18 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 
 @media (min-width: 768px) {
   #exlidSearchRibbon fieldset {
-    width: 83.33333333333334%;
+    width: 66.66666666666666%;
   }
 }
 
 .EXLSearchFieldRibbonFormSearchFor {
-  width: 65%;
+  width: 60%;
   padding-right: 0;
 }
 
 .EXLSearchFieldRibbonFormSubmitSearch {
   width: auto;
+  max-width: 12%;
 }
 
 #exlidHeaderSystemFeedback {
@@ -5477,22 +5468,14 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 .EXLSearchFieldRibbonFormFields {
-  width: 77%;
+  width: 88%;
   height: auto;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection {
-  position: relative;
-  display: table-cell;
-  width: 1%;
-  width: 35%;
+  width: 40%;
   height: auto;
-  white-space: nowrap;
-  vertical-align: middle;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection:not(:first-child):not(:last-child) {
-  border-radius: 0;
+  border-left: none;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection .EXLSearchFieldRibbonFormSelectedCollectionLabel {
@@ -5603,6 +5586,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 
 @media (min-width: 768px) {
