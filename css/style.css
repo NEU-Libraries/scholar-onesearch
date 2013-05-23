@@ -5900,11 +5900,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   }
 }
 
-.EXLResultsHeader {
-  padding-right: -15px;
-  padding-left: -15px;
-}
-
 .EXLResultsHeader div.EXLResultsNumbers {
   position: relative;
   float: left;
@@ -5916,7 +5911,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 
 @media (min-width: 768px) {
   .EXLResultsHeader div.EXLResultsNumbers {
-    width: 75%;
+    width: 66.66666666666666%;
   }
 }
 
@@ -5926,7 +5921,9 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
+  padding-right: 0;
   padding-left: 15px;
+  padding-left: 0;
   margin: 9px 0;
   font-size: 13px;
   color: #333333;
@@ -6151,12 +6148,35 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 @media (min-width: 768px) {
   .EXLResultsHeader div.EXLResultsNavigation {
-    width: 25%;
+    width: 33.33333333333333%;
   }
+}
+
+.EXLResultsHeader div.EXLResultsNavigation a,
+.EXLResultsHeader div.EXLResultsNavigation span {
+  float: left;
+  min-height: 30px;
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #dddddd;
+}
+
+.EXLResultsHeader div.EXLResultsNavigation a img,
+.EXLResultsHeader div.EXLResultsNavigation span img {
+  display: none;
+}
+
+.EXLResultsHeader div.EXLResultsNavigation a:first-child,
+.EXLResultsHeader div.EXLResultsNavigation span:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 @media (max-width: 756px) {

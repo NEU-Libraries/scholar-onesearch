@@ -236,16 +236,16 @@ iframe html{
 
 //------- Results header-----
 .EXLResultsHeader{
-  padding-right: -15px;
-  padding-left: -15px;
   div.EXLResultsNumbers{
-    .make-column(9);
+    .make-column(8);
     //Results header showing the number of results found.
     h1{
       color: @text-color;
       font-size: 13px;
       .make-column(7);
       margin: 9px 0;
+      padding-left: 0px;
+      padding-right: 0px;
     }
     //styling the result dropdown as a button toggle for sorted by menu.
     div.EXLResultsSortBy{
@@ -291,10 +291,28 @@ iframe html{
   }
   //Pagination styles
   div.EXLResultsNavigation{
-    .make-column(3);
-
+    .make-column(4);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 12px;
+    a, span{
+      float: left;
+      padding: 5px 10px;
+      background-color: #FFFFFF;
+      border: 1px solid #dddddd;
+      min-height: 30px;
+      img{
+        display: none;
+        
+      }
+     &:first-child{
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+     }
+    }
   }
 }
+
 
 
 // ------ Facet Tile --------
