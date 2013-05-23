@@ -234,6 +234,45 @@ iframe html{
   }
 }
 
+//------- Results header-----
+.EXLResultsHeader{
+  div.EXLResultsNumbers{
+    div.EXLResultsSortBy{
+      span.EXLResultsSortBySelected a{
+        .btn;
+        .btn-small;
+        .btn-primary;
+        background-image: none;
+        &:after{
+          .btn .caret;
+          .caret;
+        }
+      }
+      ul{
+        .dropdown-menu;
+        display: block;
+        li.EXLSortByLink{
+          color: #000000;
+          background-color: #FFFFFF;
+          &:hover, &:focus{
+            background-color:  #f1f1f1;
+          }
+        }
+        li.EXLSortByLinkSelected{
+          display: block;
+          padding: 3px 20px;
+          clear: both;
+          font-weight: normal;
+          line-height: 1.528571429;
+          color: #333333;
+          white-space: nowrap;
+          background-color:  #f1f1f1;
+        }
+      }
+    }
+  }
+}
+
 
 // ------ Facet Tile --------
 .EXLFacetTile{
@@ -277,10 +316,15 @@ iframe html{
       }
       a{
         font-size: 13px;
+        display: inline-block;
+        width: 68%;
       }
       span{
         float: right;
+        clear: right;
+        text-align: right;
         font-size: 12px;
+        display: inline-block;
       }
     }
   }
