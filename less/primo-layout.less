@@ -236,8 +236,24 @@ iframe html{
 
 //------- Results header-----
 .EXLResultsHeader{
+  padding-right: -15px;
+  padding-left: -15px;
   div.EXLResultsNumbers{
+    .make-column(9);
+    //Results header showing the number of results found.
+    h1{
+      color: @text-color;
+      font-size: 13px;
+      .make-column(7);
+      margin: 9px 0;
+    }
+    //styling the result dropdown as a button toggle for sorted by menu.
     div.EXLResultsSortBy{
+      .make-column(5);
+      float: left;
+      span.EXLResultsSortByLabel{
+        margin-top: 4px;
+      }
       span.EXLResultsSortBySelected a{
         .btn;
         .btn-small;
@@ -251,13 +267,15 @@ iframe html{
       ul{
         .dropdown-menu;
         display: block;
+        margin-left: 5.4em;
         li.EXLSortByLink{
-          color: #000000;
+          color: @text-color;
           background-color: #FFFFFF;
           &:hover, &:focus{
             background-color:  #f1f1f1;
           }
         }
+        //this is the selected scope or the active scope.
         li.EXLSortByLinkSelected{
           display: block;
           padding: 3px 20px;
@@ -270,6 +288,11 @@ iframe html{
         }
       }
     }
+  }
+  //Pagination styles
+  div.EXLResultsNavigation{
+    .make-column(3);
+
   }
 }
 

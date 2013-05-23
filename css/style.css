@@ -366,12 +366,6 @@ Started working on 08/27/12
   margin-bottom: 5px;
 }
 
-/* Aligning the search scope list  */
-
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
-  margin-left: 2.4em;
-}
-
 /* Adding more padding to the display all link */
 
 a.EXLBriefResultsDisplayMultipleLink {
@@ -434,10 +428,6 @@ a.EXLBriefResultsDisplayMultipleLink {
   padding: 6px 0 3px 0px;
   background-color: #f8f8f8;
   border: 1px solid #e4e4e4;
-}
-
-.EXLResultsHeader div.EXLResultsNavigation {
-  margin-right: 10px;
 }
 
 .EXLResultsFooter {
@@ -5910,6 +5900,63 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   }
 }
 
+.EXLResultsHeader {
+  padding-right: -15px;
+  padding-left: -15px;
+}
+
+.EXLResultsHeader div.EXLResultsNumbers {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLResultsHeader div.EXLResultsNumbers {
+    width: 75%;
+  }
+}
+
+.EXLResultsHeader div.EXLResultsNumbers h1 {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 9px 0;
+  font-size: 13px;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  .EXLResultsHeader div.EXLResultsNumbers h1 {
+    width: 58.333333333333336%;
+  }
+}
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+    width: 41.66666666666667%;
+  }
+}
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel {
+  margin-top: 4px;
+}
+
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a {
   display: inline-block;
   padding: 8px 12px;
@@ -6040,6 +6087,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
+  margin-left: 5.4em;
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #ccc;
@@ -6076,7 +6124,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLink {
-  color: #000000;
+  color: #333333;
   background-color: #FFFFFF;
 }
 
@@ -6094,6 +6142,21 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   color: #333333;
   white-space: nowrap;
   background-color: #f1f1f1;
+}
+
+.EXLResultsHeader div.EXLResultsNavigation {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLResultsHeader div.EXLResultsNavigation {
+    width: 25%;
+  }
 }
 
 @media (max-width: 756px) {
