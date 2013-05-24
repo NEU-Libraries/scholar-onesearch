@@ -6718,11 +6718,6 @@ a[title="More "] img {
 
 .EXLFooterTile,
 #EXLFooterTile {
-  display: block;
   margin: 0 auto;
   background-image: none;
-}
-
-#footerEXL {
-  background: none;
 }
