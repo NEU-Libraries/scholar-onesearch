@@ -5726,6 +5726,12 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   padding-right: 0;
 }
 
+@media (max-width: 756px) {
+  .EXLSearchFieldRibbonFormSearchFor {
+    width: 50%;
+  }
+}
+
 .EXLSearchFieldRibbonFormSubmitSearch {
   width: auto;
   max-width: 12%;
@@ -5744,6 +5750,12 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   width: 40%;
   height: auto;
   border-left: none;
+}
+
+@media (max-width: 756px) {
+  .EXLSearchFieldRibbonFormSelectedCollection {
+    width: 50%;
+  }
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection .EXLSearchFieldRibbonFormSelectedCollectionLabel {
@@ -5945,6 +5957,12 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   line-height: 1.528571429;
   color: #333333;
   white-space: nowrap;
+}
+
+@media (max-width: 756px) {
+  .EXLSearchFieldRibbonFormCollectionsList {
+    left: 10%;
+  }
 }
 
 @media (max-width: 756px) {

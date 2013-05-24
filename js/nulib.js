@@ -4,4 +4,7 @@ $(function() {
   $('#search_field').attr('placeholder','Search...');
   $('a.EXLBriefResultsPaginationLinkNext > img').after('<i class="icon-circle-arrow-right"></i>');
   $('a.EXLBriefResultsPaginationLinkPrevious:first-of-type > img').after('<i class="icon-circle-arrow-left"></i>');
+  if(window.innerWidth < 500){
+    $('#goButton').val("→");
+  }
 });
