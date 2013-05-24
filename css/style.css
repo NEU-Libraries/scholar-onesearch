@@ -4831,18 +4831,74 @@ body {
   background-color: #e9e8e5;
 }
 
-#contentEXL {
-  min-height: 100%;
+#contentEXL,
+body > div {
   padding: 0 1em;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #FFFFFF;
   border-right: 1px solid #8c8c8a;
   border-left: 1px solid #8c8c8a;
 }
 
+#contentEXL:before,
+body > div:before,
+#contentEXL:after,
+body > div:after {
+  display: table;
+  content: " ";
+}
+
+#contentEXL:after,
+body > div:after {
+  clear: both;
+}
+
 @media (max-width: 756px) {
-  #contentEXL {
+  #contentEXL,
+  body > div {
     padding: 0;
     border: none;
+  }
+}
+
+#contentEXL {
+  min-height: 100%;
+}
+
+body > div {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body > div:before,
+body > div:after {
+  display: table;
+  content: " ";
+}
+
+body > div:after {
+  clear: both;
+}
+
+@media screen and (min-width: 768px) {
+  #contentEXL,
+  body > div {
+    max-width: 728px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #contentEXL,
+  body > div {
+    max-width: 940px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #contentEXL,
+  body > div {
+    max-width: 1170px;
   }
 }
 
@@ -5921,11 +5977,9 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-right: 0;
   padding-left: 15px;
-  padding-left: 0;
   margin: 9px 0;
-  font-size: 13px;
+  font-size: 12px;
   color: #333333;
 }
 
@@ -6159,6 +6213,13 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   }
 }
 
+@media (max-width: 756px) {
+  .EXLResultsHeader div.EXLResultsNavigation {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
 .EXLResultsHeader div.EXLResultsNavigation a,
 .EXLResultsHeader div.EXLResultsNavigation span {
   float: left;
@@ -6168,15 +6229,34 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   border: 1px solid #dddddd;
 }
 
+.EXLResultsHeader div.EXLResultsNavigation a:hover,
+.EXLResultsHeader div.EXLResultsNavigation span:hover,
+.EXLResultsHeader div.EXLResultsNavigation a:focus,
+.EXLResultsHeader div.EXLResultsNavigation span:focus {
+  background-color: #f5f5f5;
+}
+
 .EXLResultsHeader div.EXLResultsNavigation a img,
 .EXLResultsHeader div.EXLResultsNavigation span img {
   display: none;
+}
+
+.EXLResultsHeader div.EXLResultsNavigation a i,
+.EXLResultsHeader div.EXLResultsNavigation span i {
+  font-size: 17px;
+  color: #555555;
 }
 
 .EXLResultsHeader div.EXLResultsNavigation a:first-child,
 .EXLResultsHeader div.EXLResultsNavigation span:first-child {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
+}
+
+.EXLResultsHeader div.EXLResultsNavigation a:last-child,
+.EXLResultsHeader div.EXLResultsNavigation span:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 @media (max-width: 756px) {
@@ -6269,8 +6349,28 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   margin-bottom: 0;
 }
 
+a[title="More "]:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+a[title="More "] img {
+  display: none;
+}
+
 .EXLRelatedSearchTopic {
   margin-bottom: 0;
+}
+
+#EXLFooterTile {
+  marign: 0 auto;
 }
 
 #footerEXL {
