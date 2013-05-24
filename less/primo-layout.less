@@ -55,6 +55,7 @@ body > div{
   max-width: 100%;
   height: 58px;
   margin-bottom: 1em;
+  content: "Northeastern University Libraries";
 }
 
 .EXLTabsRibbon div li.EXLResultTab a, a.EXLBriefResultsDisplayMultipleLink{
@@ -272,6 +273,9 @@ iframe html{
 
 //------- Results header-----
 .EXLResultsHeader{
+  .panel-heading;
+  font-size: inherit;
+  margin: 0;
   div.EXLResultsNumbers{
     .make-column(8);
     //Results header showing the number of results found.
@@ -341,7 +345,7 @@ iframe html{
       min-height: 30px;
       &:hover,
       &:focus{
-        background-color: #f5f5f5;
+        background-color: #f5f5f5;  
       } 
       img{
         display: none;
@@ -362,7 +366,11 @@ iframe html{
   }
 }
 
-
+//------- Results Tile ------
+.EXLResultsTile{
+  .panel;
+  padding: 0;
+}
 
 // ------ Facet Tile --------
 .EXLFacetTile{
