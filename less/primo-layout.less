@@ -21,26 +21,26 @@ body{
   min-height: 100%;
 }
 
-body > div{
+body > div, .EXLFooterTile{
   .container-fixed();
 }
 // Responsive: Tablets and up
 @media screen and (min-width: @screen-tablet) {
-  #contentEXL, body > div {
+  #contentEXL, body > div, .EXLFooterTile {
     max-width: 728px;
   }
 }
 
 // Responsive: Desktops and up
 @media screen and (min-width: @screen-desktop) {
-  #contentEXL, body > div {
+  #contentEXL, body > div, .EXLFooterTile {
     max-width: 940px;
   }
 }
 
 // Responsive: Large desktops and up
 @media screen and (min-width: @screen-large-desktop) {
-  #contentEXL, body > div {
+  #contentEXL, body > div, .EXLFooterTile {
     max-width: 1170px;
   }
 }
@@ -366,12 +366,34 @@ iframe html{
   }
 }
 
+//Facet refinement
+
+img[alt="remove"]{
+  .invisible;
+}
+
+
+
 //------- Results Tile ------
 .EXLResultsTile{
   .panel;
   padding: 0;
 }
-
+.searchword{
+  background-color: inherit;
+  border-bottom: 1px @gray-light dotted;
+}
+.EXLResultAvailability em{
+  font-style: normal;
+}
+.EXLResultsList{
+  h3{
+    margin-top: 15px;
+  }
+  h2{
+    font-size: 1.2em;
+  }
+}
 // ------ Facet Tile --------
 .EXLFacetTile{
  @media (max-width: 756px){
@@ -421,16 +443,31 @@ iframe html{
         float: right;
         clear: right;
         text-align: right;
-        font-size: 12px;
+        font-size: 11px;
         display: inline-block;
+        max-width: 24%;
+        overflow: hidden;
       }
     }
   }
   div.EXLFacetActionsV2{
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    li.EXLFacetRSSAction{
+      background-image: none;
+      padding-left: 0;
+    }
   }
 }
-
+//removing the border radius on facet containers that are related.
+.EXLRelatedSearchTopicFIELDfacet_creator{
+  .border-bottom-radius(0);
+  border-bottom: none;
+}
+.EXLRelatedSearchTopicFIELDfacet_topic{
+  border-radius: 0;
+  border-top: none;
+  border-bottom: none;
+}
 //Styling the more link to not have the stupid blue arrow.
 a[title="More "]{
   &:after{
@@ -447,9 +484,12 @@ a[title="More "]{
 
 
 // ------ Footer Tile -------
-#EXLFooterTile{
-  marign: 0 auto;
+.EXLFooterTile, #EXLFooterTile{
+  margin: 0 auto;
+  background-image: none;
+  display: block;
 }
+
 #footerEXL{
   background: none;
 }

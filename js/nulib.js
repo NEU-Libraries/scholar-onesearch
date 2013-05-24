@@ -7,6 +7,6 @@ $(function() {
   $('a.EXLBriefResultsPaginationLinkPrevious:first-of-type > img').after('<i class="icon-circle-arrow-left"></i>');
   //just adding a special character to the submit button;
   $('#goButton').val("➜");
-  
+  $('form[name="rssForm"]').prepend('<i class="icon-rss"></i>');
 
 });

@@ -388,13 +388,6 @@ a.EXLBriefResultsDisplayMultipleLink {
   padding-top: 1.4em;
 }
 
-/* Making the h2 result title more prominent in the results list */
-
-.EXLResultsList h2 {
-  font-size: 110%;
-  font-weight: 800;
-}
-
 /* aligning the search field */
 
 #exlidSearchRibbon input {
@@ -800,6 +793,16 @@ dd {
   clear: both;
 }
 
+.dl-horizontal:before,
+.dl-horizontal:after {
+  display: table;
+  content: " ";
+}
+
+.dl-horizontal:after {
+  clear: both;
+}
+
 .dl-horizontal dt {
   float: left;
   width: 160px;
@@ -906,6 +909,26 @@ address {
 }
 
 .container:after {
+  clear: both;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
   clear: both;
 }
 
@@ -3960,6 +3983,16 @@ a.list-group-item.active .list-group-item-text {
   clear: both;
 }
 
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
 .nav > li {
   position: relative;
   display: block;
@@ -4141,6 +4174,16 @@ a.list-group-item.active .list-group-item-text {
   clear: both;
 }
 
+.tabbable:before,
+.tabbable:after {
+  display: table;
+  content: " ";
+}
+
+.tabbable:after {
+  clear: both;
+}
+
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: none;
@@ -4174,6 +4217,16 @@ a.list-group-item.active .list-group-item-text {
   margin-bottom: 20px;
   background-color: #cc0000;
   border-radius: 4px;
+}
+
+.navbar:before,
+.navbar:after {
+  display: table;
+  content: " ";
+}
+
+.navbar:after {
+  clear: both;
 }
 
 .navbar:before,
@@ -4527,6 +4580,16 @@ a.list-group-item.active .list-group-item-text {
   clear: both;
 }
 
+.btn-toolbar:before,
+.btn-toolbar:after {
+  display: table;
+  content: " ";
+}
+
+.btn-toolbar:after {
+  clear: both;
+}
+
 .btn-toolbar .btn-group {
   float: left;
 }
@@ -4746,6 +4809,92 @@ a.list-group-item.active .list-group-item-text {
   border-bottom-right-radius: 3px;
 }
 
+.alert {
+  padding: 10px 35px 10px 15px;
+  margin-bottom: 21px;
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  border-radius: 4px;
+}
+
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.alert hr {
+  border-top-color: #f8e5be;
+}
+
+.alert .alert-link {
+  font-weight: 500;
+  color: #a47e3c;
+}
+
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+  color: #356635;
+}
+
+.alert-danger {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.alert-danger hr {
+  border-top-color: #e6c1c7;
+}
+
+.alert-danger .alert-link {
+  color: #953b39;
+}
+
+.alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+  color: #2d6987;
+}
+
+.alert-block {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+
+.alert-block p + p {
+  margin-top: 5px;
+}
+
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -4789,6 +4938,48 @@ a.list-group-item.active > .badge,
 
 .nav-pills > li > a > .badge {
   margin-left: 3px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.affix {
+  position: fixed;
 }
 
 .reset {
@@ -4854,6 +5045,19 @@ body > div:after {
   clear: both;
 }
 
+#contentEXL:before,
+body > div:before,
+#contentEXL:after,
+body > div:after {
+  display: table;
+  content: " ";
+}
+
+#contentEXL:after,
+body > div:after {
+  clear: both;
+}
+
 @media (max-width: 756px) {
   #contentEXL,
   body > div {
@@ -4866,38 +5070,58 @@ body > div:after {
   min-height: 100%;
 }
 
-body > div {
+body > div,
+.EXLFooterTile {
   margin-right: auto;
   margin-left: auto;
 }
 
 body > div:before,
-body > div:after {
+.EXLFooterTile:before,
+body > div:after,
+.EXLFooterTile:after {
   display: table;
   content: " ";
 }
 
-body > div:after {
+body > div:after,
+.EXLFooterTile:after {
+  clear: both;
+}
+
+body > div:before,
+.EXLFooterTile:before,
+body > div:after,
+.EXLFooterTile:after {
+  display: table;
+  content: " ";
+}
+
+body > div:after,
+.EXLFooterTile:after {
   clear: both;
 }
 
 @media screen and (min-width: 768px) {
   #contentEXL,
-  body > div {
+  body > div,
+  .EXLFooterTile {
     max-width: 728px;
   }
 }
 
 @media screen and (min-width: 992px) {
   #contentEXL,
-  body > div {
+  body > div,
+  .EXLFooterTile {
     max-width: 940px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #contentEXL,
-  body > div {
+  body > div,
+  .EXLFooterTile {
     max-width: 1170px;
   }
 }
@@ -5092,6 +5316,16 @@ fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
   clear: both;
 }
 
+#exlidMainMenuRibbon:before,
+#exlidMainMenuRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidMainMenuRibbon:after {
+  clear: both;
+}
+
 #exlidMainMenuRibbon > li {
   position: relative;
   display: block;
@@ -5225,6 +5459,16 @@ iframe html {
 #exlidUserAreaRibbon [class^="icon-"].icon-spin,
 #exlidUserAreaRibbon [class*=" icon-"].icon-spin {
   display: inline-block;
+}
+
+#exlidUserAreaRibbon:before,
+#exlidUserAreaRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidUserAreaRibbon:after {
+  clear: both;
 }
 
 #exlidUserAreaRibbon:before,
@@ -5407,6 +5651,16 @@ iframe html {
   clear: both;
 }
 
+#exlidMainMenuRibbon:before,
+#exlidMainMenuRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidMainMenuRibbon:after {
+  clear: both;
+}
+
 #exlidMainMenuRibbon > li {
   position: relative;
   display: block;
@@ -5549,6 +5803,16 @@ iframe html {
   margin-bottom: 20px;
   background-color: #cc0000;
   border-radius: 4px;
+}
+
+#exlidSearchRibbon:before,
+#exlidSearchRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidSearchRibbon:after {
+  clear: both;
 }
 
 #exlidSearchRibbon:before,
@@ -6291,6 +6555,10 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   border-bottom-right-radius: 3px;
 }
 
+img[alt="remove"] {
+  visibility: hidden;
+}
+
 .EXLResultsTile {
   padding: 15px;
   padding: 0;
@@ -6300,6 +6568,23 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.searchword {
+  background-color: inherit;
+  border-bottom: 1px #999999 dotted;
+}
+
+.EXLResultAvailability em {
+  font-style: normal;
+}
+
+.EXLResultsList h3 {
+  margin-top: 15px;
+}
+
+.EXLResultsList h2 {
+  font-size: 1.2em;
 }
 
 @media (max-width: 756px) {
@@ -6383,13 +6668,32 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 .EXLFacetContainer ol.EXLFacetsList li span {
   display: inline-block;
   float: right;
+  max-width: 24%;
+  overflow: hidden;
   clear: right;
-  font-size: 12px;
+  font-size: 11px;
   text-align: right;
 }
 
 .EXLFacetContainer div.EXLFacetActionsV2 {
   margin-bottom: 0;
+}
+
+.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetRSSAction {
+  padding-left: 0;
+  background-image: none;
+}
+
+.EXLRelatedSearchTopicFIELDfacet_creator {
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.EXLRelatedSearchTopicFIELDfacet_topic {
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0;
 }
 
 a[title="More "]:after {
@@ -6412,8 +6716,11 @@ a[title="More "] img {
   margin-bottom: 0;
 }
 
+.EXLFooterTile,
 #EXLFooterTile {
-  marign: 0 auto;
+  display: block;
+  margin: 0 auto;
+  background-image: none;
 }
 
 #footerEXL {
