@@ -324,9 +324,28 @@ iframe html{
       font-size: inherit;
     }
   }
+  div.EXLSearchFieldRibbonFormFieldsGroup1{
+    div.EXLAdvancedSearchFormRow{
+      &:first-of-type,
+      &:nth-of-type(4),
+      &:nth-of-type(5),
+      &:nth-of-type(6),
+      &:nth-of-type(7){
+        display: none;
+      }
+    }
+  }
   div.EXLSearchFieldRibbonFormFieldsGroup2{
+    label{
+      min-width: 9em;
+      width: auto;
+      
+    }
     @media (max-width: 756px){
       border-left: none;
+      label{
+        margin-left: auto;
+      }
     }
   }
 }

@@ -6572,9 +6572,25 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
   font-size: inherit;
 }
 
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:first-of-type,
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(4),
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(5),
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(6),
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(7) {
+  display: none;
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
+  width: auto;
+  min-width: 9em;
+}
+
 @media (max-width: 756px) {
   #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
     border-left: none;
+  }
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
+    margin-left: auto;
   }
 }
 
