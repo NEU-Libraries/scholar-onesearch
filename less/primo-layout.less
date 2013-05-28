@@ -429,15 +429,28 @@ img[alt="remove"]{
 //remove the background image and style the header box.
 .EXLResultTabContainer{
   div.EXLTabHeader{
+    .reset;
+    min-height: 43px;
     background-image: none;
     background-color: @panel-heading-bg;
     margin-top: 35px;
     border: 1px solid @panel-border;
     .border-top-radius(4px);
     //remove the tabs buttons backgrounds
+    div.EXLTabHeaderContent{
+      .reset;
+    }
     div.EXLTabHeaderButtons li, div.EXLTabHeaderButtons li span{
+      height: auto;
       background-image: none;
-    } 
+    }
+    div.EXLTabHeaderButtons ul{
+      .reset;
+      .nav;
+      > li > ol span{
+        float: none;
+      }
+    }
   }
 }
 a[title="open this item in a new window"]{
@@ -470,6 +483,13 @@ a[title="show send to options"]{
     display: none;
   }
 }
+.EXLTabContent{
+  height: 20em;
+  border: 1px solid @panel-border;
+  .border-bottom-radius(4px);
+}
+
+
 
 
 // ------ Facet Tile --------

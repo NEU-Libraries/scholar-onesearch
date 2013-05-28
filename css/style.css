@@ -6752,17 +6752,147 @@ img[alt="remove"] {
 }
 
 .EXLResultTabContainer div.EXLTabHeader {
+  float: none;
+  width: auto;
+  height: auto;
+  min-height: 43px;
+  padding: 0;
+  margin: 0;
   margin-top: 35px;
+  clear: none;
   background-color: #f5f5f5;
   background-image: none;
+  border: none;
   border: 1px solid #dddddd;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
 
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  clear: none;
+  border: none;
+}
+
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li,
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li span {
+  height: auto;
   background-image: none;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  clear: none;
+  list-style: none;
+  border: none;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-large,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-spin,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  display: table;
+  content: " ";
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  display: table;
+  content: " ";
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li {
+  position: relative;
+  display: block;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li a,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li a:hover,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:hover,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li a:focus,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a {
+  color: #999999;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:hover,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li + .nav-header {
+  margin-top: 9px;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul.open > a,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul.open > a:hover,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul.open > a:focus {
+  color: #fff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul.open > a .caret,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul.open > a:hover .caret,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul.open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > .pull-right {
+  float: right;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .nav-divider {
+  height: 2px;
+  margin: 9.5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > ol span {
+  float: none;
 }
 
 a[title="open this item in a new window"] {
@@ -6842,6 +6972,13 @@ a[title="show send to options"]:after {
 
 a[title="show send to options"] img {
   display: none;
+}
+
+.EXLTabContent {
+  height: 20em;
+  border: 1px solid #dddddd;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 @media (max-width: 756px) {
