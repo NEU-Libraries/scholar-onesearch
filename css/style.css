@@ -6468,8 +6468,10 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   width: 100%;
   height: auto;
   padding: 8px 12px;
+  padding: 14px 16px;
   margin-bottom: 0;
   font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.528571429;
   color: #ffffff;
@@ -6482,6 +6484,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   border: 1px solid transparent;
   border-color: #2c3e50;
   border-radius: 4px;
+  border-radius: 6px;
 }
 
 #exlidAdvancedSearchRibbon input.submit:hover,
@@ -6592,6 +6595,120 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
   #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
     margin-left: auto;
   }
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ {
+  width: auto;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul [class^="icon-"].icon-large,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul [class^="icon-"].icon-spin,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul:before,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul:after {
+  display: table;
+  content: " ";
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul:after {
+  clear: both;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul:before,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul:after {
+  display: table;
+  content: " ";
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul:after {
+  clear: both;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li {
+  position: relative;
+  display: block;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li a,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li a:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li a:focus,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li.disabled > a {
+  color: #999999;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li.disabled > a:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li + .nav-header {
+  margin-top: 9px;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul.open > a,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul.open > a:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul.open > a:focus {
+  color: #fff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul.open > a .caret,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul.open > a:hover .caret,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul.open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > .pull-right {
+  float: right;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul .nav-divider {
+  height: 2px;
+  margin: 9.5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li {
+  width: auto;
+  line-height: inherit;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li a {
+  width: auto;
+  color: white;
 }
 
 @media (max-width: 756px) {

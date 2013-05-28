@@ -315,6 +315,7 @@ iframe html{
    width: 100%;
    .btn-info;
    .btn;
+   .btn-large;
    height: auto;
   }
   div.EXLAdvancedSearchFormRow {
@@ -324,6 +325,7 @@ iframe html{
       font-size: inherit;
     }
   }
+  //hides the empty rows that are in this advanced search form.
   div.EXLSearchFieldRibbonFormFieldsGroup1{
     div.EXLAdvancedSearchFormRow{
       &:first-of-type,
@@ -350,6 +352,23 @@ iframe html{
   }
 }
 
+// ------- A-Z list ----------
+#exlidSearchTile.EXLSearchEJorunals {
+  .EXLSearchEJorunalsListAtoZ{
+   width: auto;
+   ul{
+    .nav;
+   }
+   li{
+    width: auto;
+    line-height: inherit;
+   }
+   li a{
+    color: white;
+    width: auto;
+    }
+  }
+}
 
 // ------ Results Tile --------
 .EXLResultsContainer div.EXLResultsTile{
