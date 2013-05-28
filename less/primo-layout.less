@@ -63,6 +63,7 @@ body > div, .EXLFooterTile{
   .btn;
   .btn-default;
   .btn-small;
+  margin-bottom: 3px;
 }
 
 .EXLTabsRibbon div li.EXLResultTab{
@@ -404,6 +405,17 @@ img[alt="remove"]{
     font-size: 1.2em;
   }
 }
+// Adding some basic padding
+.EXLResult .EXLTabContent iframe{
+  padding: 1em;
+  line-height: 2em;
+  .viewIt{
+    line-height: 2em !important;
+  }
+}
+
+
+
 //Results tabs ribbon
 .EXLTabsRibbon{
   border-bottom: none;
@@ -411,18 +423,10 @@ img[alt="remove"]{
   div li.EXLResultSelectedTab{
     background: none;
     border: none;
-    &:after{
-      display: inline-block;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid @panel-heading-bg;
-      border-left: 7px solid transparent;
-      content: '';
-      position: relative;
-      right: 15%;
-      top: 20px;
-    }
     a{
       .btn.active;
+      background-color: #9a9c9d;
+      border-color: #8d9091;
     }
   }
 }
@@ -430,7 +434,7 @@ img[alt="remove"]{
 .EXLResultTabContainer{
   div.EXLTabHeader{
     .reset;
-    min-height: 43px;
+    .make-row();
     background-image: none;
     background-color: @panel-heading-bg;
     margin-top: 35px;
@@ -438,7 +442,20 @@ img[alt="remove"]{
     .border-top-radius(4px);
     //remove the tabs buttons backgrounds
     div.EXLTabHeaderContent{
-      .reset;
+      .make-column(6);
+      padding: 0;
+      padding-top: 0;
+      a{
+        padding: 5px;
+        position: relative;
+        top: 10px;
+      }
+    }
+    div.EXLTabHeaderButtons{
+      .make-column(6);
+      padding-right: 0;
+      height: auto;
+      .pull-right;
     }
     div.EXLTabHeaderButtons li, div.EXLTabHeaderButtons li span{
       height: auto;
@@ -446,7 +463,11 @@ img[alt="remove"]{
     }
     div.EXLTabHeaderButtons ul{
       .reset;
+      .pull-right;
       .nav;
+      li:first-child{
+        border-left: 1px solid #e1e1e1;
+      }
       > li > ol span{
         float: none;
       }
@@ -487,7 +508,41 @@ a[title="show send to options"]{
   height: 20em;
   border: 1px solid @panel-border;
   .border-bottom-radius(4px);
+  div.EXLDetailsLinks{
+    background-image: none;
+  }
 }
+
+.EXLDetailsTabContent{
+  div.EXLDetailsLinks{
+    .make-column(4);
+    margin: 0;
+    padding: 0;
+    ul{
+      height: auto;
+      width: auto;
+      padding: 0;
+      margin-left: 12.5px;
+    }
+    li span.EXLDetailsLinksTitle a{
+      .reset;
+    }
+    li span.EXLDetailsLinksBullet{
+      background-image: none;
+      margin-top: 0;
+      margin-right: 8px;
+      .make-font-awesome;
+      &:before{
+        content: "\f138";
+      }
+    }
+  }
+  div.EXLDetailsContent{
+  .make-column(8);
+  margin: 0;
+  }
+}
+
 
 
 
@@ -588,4 +643,10 @@ a[title="More "]{
 }
 
 
-// --- End Footer Tile ------
+// --- Full view ------
+
+.EXLFullView{
+  .EXLResultsNavigation{
+    display: none;
+  }
+}

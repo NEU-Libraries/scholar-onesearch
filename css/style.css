@@ -5272,6 +5272,7 @@ a.EXLBriefResultsDisplayMultipleLink {
   padding: 8px 12px;
   padding: 5px 10px;
   margin-bottom: 0;
+  margin-bottom: 3px;
   font-size: 14px;
   font-size: 12px;
   font-weight: 500;
@@ -6724,6 +6725,15 @@ img[alt="remove"] {
   font-size: 1.2em;
 }
 
+.EXLResult .EXLTabContent iframe {
+  padding: 1em;
+  line-height: 2em;
+}
+
+.EXLResult .EXLTabContent iframe .viewIt {
+  line-height: 2em !important;
+}
+
 .EXLTabsRibbon {
   border-bottom: none;
 }
@@ -6733,19 +6743,10 @@ img[alt="remove"] {
   border: none;
 }
 
-.EXLTabsRibbon div li.EXLResultSelectedTab:after {
-  position: relative;
-  top: 20px;
-  right: 15%;
-  display: inline-block;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #f5f5f5;
-  border-left: 7px solid transparent;
-  content: '';
-}
-
 .EXLTabsRibbon div li.EXLResultSelectedTab a {
+  background-color: #9a9c9d;
   background-image: none;
+  border-color: #8d9091;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -6755,7 +6756,6 @@ img[alt="remove"] {
   float: none;
   width: auto;
   height: auto;
-  min-height: 43px;
   padding: 0;
   margin: 0;
   margin-top: 35px;
@@ -6768,14 +6768,70 @@ img[alt="remove"] {
   border-top-left-radius: 4px;
 }
 
+.EXLResultTabContainer div.EXLTabHeader:before,
+.EXLResultTabContainer div.EXLTabHeader:after {
+  display: table;
+  content: " ";
+}
+
+.EXLResultTabContainer div.EXLTabHeader:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader:before,
+.EXLResultTabContainer div.EXLTabHeader:after {
+  display: table;
+  content: " ";
+}
+
+.EXLResultTabContainer div.EXLTabHeader:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
-  float: none;
-  width: auto;
-  height: auto;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
   padding: 0;
-  margin: 0;
-  clear: none;
-  border: none;
+  padding-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
+    width: 50%;
+  }
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent a {
+  position: relative;
+  top: 10px;
+  padding: 5px;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
+  position: relative;
+  float: left;
+  float: right;
+  width: 100%;
+  height: auto;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
+    width: 50%;
+  }
 }
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li,
@@ -6786,6 +6842,7 @@ img[alt="remove"] {
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul {
   float: none;
+  float: right;
   width: auto;
   height: auto;
   padding: 0;
@@ -6891,6 +6948,10 @@ img[alt="remove"] {
   border-bottom: 1px solid #ffffff;
 }
 
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul li:first-child {
+  border-left: 1px solid #e1e1e1;
+}
+
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > ol span {
   float: none;
 }
@@ -6979,6 +7040,82 @@ a[title="show send to options"] img {
   border: 1px solid #dddddd;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+.EXLTabContent div.EXLDetailsLinks {
+  background-image: none;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .EXLDetailsTabContent div.EXLDetailsLinks {
+    width: 33.33333333333333%;
+  }
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks ul {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-left: 12.5px;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksTitle a {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  clear: none;
+  border: none;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet {
+  margin-top: 0;
+  margin-right: 8px;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-image: none;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet:before {
+  content: "\f138";
+}
+
+.EXLDetailsTabContent div.EXLDetailsContent {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .EXLDetailsTabContent div.EXLDetailsContent {
+    width: 66.66666666666666%;
+  }
 }
 
 @media (max-width: 756px) {
@@ -7114,4 +7251,8 @@ a[title="More "] img {
 #EXLFooterTile {
   margin: 0 auto;
   background-image: none;
+}
+
+.EXLFullView .EXLResultsNavigation {
+  display: none;
 }
