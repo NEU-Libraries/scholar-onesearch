@@ -280,17 +280,6 @@ table {
   display: none;
 }
 
-/* ---To remove the extraneous little white box around the search Button in Advanced Search--- */
-
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
-  display: inline;
-  float: left
-;
-  margin-top: -1px;
-  clear: both;
-  border: 1px solid #ECF3FD;
-}
-
 /*Removing RSS Image from Search Box*/
 
 #exlidSearchBanner,
@@ -6360,6 +6349,235 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   }
 }
 
+#exlidAdvancedSearchTile {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  font-size: inherit;
+  background-color: #cc0000;
+  background-image: none;
+  border-radius: 4px;
+}
+
+#exlidAdvancedSearchTile:before,
+#exlidAdvancedSearchTile:after {
+  display: table;
+  content: " ";
+}
+
+#exlidAdvancedSearchTile:after {
+  clear: both;
+}
+
+#exlidAdvancedSearchTile:before,
+#exlidAdvancedSearchTile:after {
+  display: table;
+  content: " ";
+}
+
+#exlidAdvancedSearchTile:after {
+  clear: both;
+}
+
+#exlidAdvancedSearchTile fieldset {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#exlidAdvancedSearchTile fieldset input,
+#exlidAdvancedSearchTile fieldset select,
+#exlidAdvancedSearchTile fieldset textarea,
+#exlidAdvancedSearchTile fieldset .radio,
+#exlidAdvancedSearchTile fieldset .checkbox {
+  display: inline-block;
+}
+
+#exlidAdvancedSearchTile fieldset .radio,
+#exlidAdvancedSearchTile fieldset .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#exlidAdvancedSearchRibbon {
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonPreFilters {
+  background: none;
+  border: none;
+}
+
+#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
+  color: #ffffff;
+}
+
+#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a:hover {
+  color: #e6e6e6;
+}
+
+#exlidAdvancedSearchRibbon input,
+#exlidAdvancedSearchRibbon select {
+  width: auto;
+  height: auto;
+  border: 1px solid #cccccc;
+}
+
+#exlidAdvancedSearchRibbon input[type="text"],
+#exlidAdvancedSearchRibbon select {
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+}
+
+#exlidAdvancedSearchRibbon select,
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 select {
+  height: 36px;
+}
+
+#exlidAdvancedSearchRibbon label {
+  color: white;
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1,
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1,
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
+    width: 50%;
+  }
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+  border: none;
+}
+
+#exlidAdvancedSearchRibbon input.submit {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.528571429;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #2c3e50;
+  background-image: none;
+  border: 1px solid transparent;
+  border-color: #2c3e50;
+  border-radius: 4px;
+}
+
+#exlidAdvancedSearchRibbon input.submit:hover,
+#exlidAdvancedSearchRibbon input.submit:focus,
+#exlidAdvancedSearchRibbon input.submit:active,
+#exlidAdvancedSearchRibbon input.submit.active {
+  background-color: #233140;
+  border-color: #1a242f;
+}
+
+#exlidAdvancedSearchRibbon input.submit.disabled:hover,
+#exlidAdvancedSearchRibbon input.submit[disabled]:hover,
+fieldset[disabled] #exlidAdvancedSearchRibbon input.submit:hover,
+#exlidAdvancedSearchRibbon input.submit.disabled:focus,
+#exlidAdvancedSearchRibbon input.submit[disabled]:focus,
+fieldset[disabled] #exlidAdvancedSearchRibbon input.submit:focus,
+#exlidAdvancedSearchRibbon input.submit.disabled:active,
+#exlidAdvancedSearchRibbon input.submit[disabled]:active,
+fieldset[disabled] #exlidAdvancedSearchRibbon input.submit:active,
+#exlidAdvancedSearchRibbon input.submit.disabled.active,
+#exlidAdvancedSearchRibbon input.submit[disabled].active,
+fieldset[disabled] #exlidAdvancedSearchRibbon input.submit.active {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+#exlidAdvancedSearchRibbon input.submit:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+#exlidAdvancedSearchRibbon input.submit:hover,
+#exlidAdvancedSearchRibbon input.submit:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+#exlidAdvancedSearchRibbon input.submit:active,
+#exlidAdvancedSearchRibbon input.submit.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+#exlidAdvancedSearchRibbon input.submit.disabled,
+#exlidAdvancedSearchRibbon input.submit[disabled],
+fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-large,
+#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+#exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-spin,
+#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+#exlidAdvancedSearchRibbon input.submit [class^="icon-"].pull-left.icon-2x,
+#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].pull-left.icon-2x,
+#exlidAdvancedSearchRibbon input.submit [class^="icon-"].pull-right.icon-2x,
+#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+#exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-spin.icon-large,
+#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+#exlidAdvancedSearchRibbon input.submit .badge {
+  position: relative;
+  top: -1px;
+}
+
+#exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormDateRangeRow input {
+  width: auto;
+  height: auto;
+  font-size: inherit;
+}
+
+@media (max-width: 756px) {
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
+    border-left: none;
+  }
+}
+
 @media (max-width: 756px) {
   .EXLResultsContainer div.EXLResultsTile {
     float: left;
@@ -6806,7 +7024,7 @@ img[alt="remove"] {
 
 @media (min-width: 768px) {
   .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
-    width: 50%;
+    width: 41.66666666666667%;
   }
 }
 
@@ -6830,7 +7048,7 @@ img[alt="remove"] {
 
 @media (min-width: 768px) {
   .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
-    width: 50%;
+    width: 58.333333333333336%;
   }
 }
 
