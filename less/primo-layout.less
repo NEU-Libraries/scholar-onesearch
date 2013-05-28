@@ -404,6 +404,74 @@ img[alt="remove"]{
     font-size: 1.2em;
   }
 }
+//Results tabs ribbon
+.EXLTabsRibbon{
+  border-bottom: none;
+  
+  div li.EXLResultSelectedTab{
+    background: none;
+    border: none;
+    &:after{
+      display: inline-block;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid @panel-heading-bg;
+      border-left: 7px solid transparent;
+      content: '';
+      position: relative;
+      right: 15%;
+      top: 20px;
+    }
+    a{
+      .btn.active;
+    }
+  }
+}
+//remove the background image and style the header box.
+.EXLResultTabContainer{
+  div.EXLTabHeader{
+    background-image: none;
+    background-color: @panel-heading-bg;
+    margin-top: 35px;
+    border: 1px solid @panel-border;
+    .border-top-radius(4px);
+    //remove the tabs buttons backgrounds
+    div.EXLTabHeaderButtons li, div.EXLTabHeaderButtons li span{
+      background-image: none;
+    } 
+  }
+}
+a[title="open this item in a new window"]{
+  .make-font-awesome;
+  &:before{
+    content: "\f08e";
+  }
+  img{
+    display: none;
+  }
+}
+
+a[title="hide tabs"]{
+  .close;
+  .make-font-awesome;
+  &:before{
+    content: "\f05c"
+  }
+  img{
+    display: none;
+  }
+}
+
+
+a[title="show send to options"]{
+  &:after{
+    .caret;
+  }
+  img{
+    display: none;
+  }
+}
+
+
 // ------ Facet Tile --------
 .EXLFacetTile{
  @media (max-width: 756px){

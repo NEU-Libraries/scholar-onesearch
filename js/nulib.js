@@ -27,4 +27,7 @@ $(function() {
   }).tooltip();
   //tooltips for more of the UI
   $("a#showMoreOptions, a.EXLSearchFieldRibbonAdvancedTwoLinks").tooltip();
+  //replace the external link icon with icon-font
+  $('img[src="../images/icon_popout_tab.png"]').hide().after('<i class="icon-external-link"></i>');
+  
 });
