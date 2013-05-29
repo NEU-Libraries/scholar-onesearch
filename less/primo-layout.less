@@ -464,6 +464,7 @@ td.EXLMyShelfStar{
 //------- Results header-----
 .EXLResultsHeader{
   .panel-heading;
+  border-bottom: none;
   font-size: inherit;
   margin: 0;
   div.EXLResultsNumbers{
@@ -562,6 +563,11 @@ img[alt="remove"]{
   .invisible;
 }
 
+//------- Results footer ----
+.EXLResultsFooter{
+  border-top: none;
+}
+
 
 
 //------- Results Tile ------
@@ -592,10 +598,35 @@ img[alt="remove"]{
     line-height: 2em !important;
   }
 }
+
+.EXLResultsList {
+  tr{
+    border: 1px solid @table-border-color;
+    .make-row();
+  }
+  td{
+    border: none !important;
+  }
+  td.EXLThumbnail{
+    .make-column(1);
+  }
+  td.EXLMyShelfStar{
+    .make-column(1);
+  }
+  td.EXLSummary{
+    .make-column(9);
+  }
+}
+
 .EXLResultNumber{
   display: block;
-  .badge;
+  font-size: 10px;
+  .text-muted;
+  padding: 2px 0 0 2px;
+  .make-column(1);
 }
+
+
 
 
 //Results tabs ribbon
