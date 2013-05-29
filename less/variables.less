@@ -42,11 +42,37 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  Verdana,Arial,sans-serif;
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+//
+@font-face {
+  font-family: "HelveticaNeue67MdCn";
+  src: url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.eot");
+  src: url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.woff") format("woff"),
+  url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.ttf") format("truetype"),
+  url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.svg#HelveticaNeue67MdCn") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeue57Condensed";
+  src: url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.eot");
+  src: url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.woff") format("woff"),
+  url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.ttf") format("truetype"),
+  url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.svg#HelveticaNeue57Condensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-family-sans-serif-body:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif-headings:  "HelveticaNeue67MdCn","Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif-headings-condensed:  "HelveticaNeue67MdCn","Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Times, 'Times New Roman', Georgia, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        @font-family-sans-serif-body;
 
 @font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px

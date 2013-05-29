@@ -8,6 +8,22 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+@font-face {
+  font-family: "HelveticaNeue67MdCn";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.eot");
+  src: url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.woff") format("woff"), url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.ttf") format("truetype"), url("../fonts/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.svg#HelveticaNeue67MdCn") format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeue57Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.eot");
+  src: url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.woff") format("woff"), url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.ttf") format("truetype"), url("../fonts/helveticaneue-condensed/helveticaneue-condensed-webfont.svg#HelveticaNeue57Condensed") format("svg");
+}
+
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 
 article,
@@ -660,6 +676,7 @@ h2,
 h3 {
   margin-top: 21px;
   margin-bottom: 10.5px;
+  font-family: "HelveticaNeue67MdCn", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h4,
@@ -667,6 +684,7 @@ h5,
 h6 {
   margin-top: 10.5px;
   margin-bottom: 10.5px;
+  font-family: "HelveticaNeue67MdCn", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -1976,8 +1994,8 @@ input[type="button"].btn-block {
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('../font/fontawesome-webfont.eot?v=3.1.0');
-  src: url('../font/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'), url('../font/fontawesome-webfont.woff?v=3.1.0') format('woff'), url('../font/fontawesome-webfont.ttf?v=3.1.0') format('truetype'), url('../font/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');
+  src: url('../font/font-awesome/fontawesome-webfont.eot?v=3.1.0');
+  src: url('../font/font-awesome/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'), url('../font/font-awesome/fontawesome-webfont.woff?v=3.1.0') format('woff'), url('../font/font-awesome/fontawesome-webfont.ttf?v=3.1.0') format('truetype'), url('../font/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');
 }
 
 /* FONT AWESOME CORE
