@@ -5709,6 +5709,7 @@ iframe html {
 }
 
 #exlidUserAreaRibbon .EXLUserName {
+  display: none;
   margin: 0 0.25em 0.25em 0;
   border-radius: 5px;
 }
@@ -5783,7 +5784,7 @@ iframe html {
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
-  color: #2c3e50;
+  color: #7f8c8d;
   text-decoration: inherit;
   vertical-align: -10%;
   content: "\f085";
@@ -5807,7 +5808,7 @@ iframe html {
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
-  color: #e67e22;
+  color: #cc0000;
   text-decoration: inherit;
   vertical-align: -10%;
   content: "\f011";
