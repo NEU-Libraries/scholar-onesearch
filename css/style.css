@@ -4901,7 +4901,7 @@ button.close {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #2c3e50;
   border-radius: 4px;
 }
 
@@ -4917,7 +4917,7 @@ button.close {
   bottom: 0;
   left: 50%;
   margin-left: -5px;
-  border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-color: #2c3e50;
   border-width: 5px 5px 0;
 }
 
@@ -4925,7 +4925,7 @@ button.close {
   top: 50%;
   left: 0;
   margin-top: -5px;
-  border-right-color: rgba(0, 0, 0, 0.9);
+  border-right-color: #2c3e50;
   border-width: 5px 5px 5px 0;
 }
 
@@ -4933,7 +4933,7 @@ button.close {
   top: 50%;
   right: 0;
   margin-top: -5px;
-  border-left-color: rgba(0, 0, 0, 0.9);
+  border-left-color: #2c3e50;
   border-width: 5px 0 5px 5px;
 }
 
@@ -4941,7 +4941,7 @@ button.close {
   top: 0;
   left: 50%;
   margin-left: -5px;
-  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-color: #2c3e50;
   border-width: 0 5px 5px;
 }
 
@@ -5714,8 +5714,109 @@ iframe html {
 }
 
 #exlidUserAreaRibbon li {
+  height: auto;
   padding: 0;
   font-size: inherit;
+}
+
+#exlidUserAreaRibbon li span.EXLMyShelfStarSelected {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0 0.25em 0 0;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  color: #16a085;
+  text-decoration: inherit;
+  background-image: none;
+}
+
+#exlidUserAreaRibbon li span.EXLMyShelfStarSelected:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+}
+
+#exlidUserAreaRibbon li span.EXLMyShelfStarSelected:before {
+  font-size: 1.3333333333333333em;
+  vertical-align: -10%;
+  content: "\f02e";
+}
+
+#exlidUserAreaRibbon li span.EXLUserNameDisplay:before {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0 0.25em 0 0;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  font-size: 1.3333333333333333em;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  color: #2c3e50;
+  text-decoration: inherit;
+  vertical-align: -10%;
+  content: "\f007";
+}
+
+#exlidUserAreaRibbon li span.EXLUserNameDisplay:before:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+}
+
+#exlidUserAreaRibbon li.EXLMyAccount > a:before {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0 0.25em 0 0;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  font-size: 1.3333333333333333em;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  color: #2c3e50;
+  text-decoration: inherit;
+  vertical-align: -10%;
+  content: "\f085";
+}
+
+#exlidUserAreaRibbon li.EXLMyAccount > a:before:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+}
+
+#exlidUserAreaRibbon li.EXLSignOut > a:before {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0 0.25em 0 0;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  font-size: 1.3333333333333333em;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  color: #e67e22;
+  text-decoration: inherit;
+  vertical-align: -10%;
+  content: "\f011";
+}
+
+#exlidUserAreaRibbon li.EXLSignOut > a:before:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
 }
 
 #exlidUserAreaRibbon li > .EXLUserNameDisplay {
@@ -5920,6 +6021,12 @@ iframe html {
 @media (min-width: 768px) {
   #exlidHeaderTile {
     width: 33.33333333333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  #exlidHeaderTile {
+    margin-bottom: 4em;
   }
 }
 

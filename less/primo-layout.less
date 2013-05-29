@@ -105,6 +105,73 @@ iframe html{
   li{
     font-size: inherit;
     padding: 0px;
+    height: auto;
+    // e-Shelf Iconography
+    span.EXLMyShelfStarSelected{
+      background-image: none;
+      margin: 0 0.25em 0 0;
+      padding: 0;
+      width: auto;
+      height: auto;
+      float: none;
+      .make-font-awesome;
+      color: @brand-success;
+      &:before{
+        content: "\f02e";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+      }
+    }
+    //user account iconography 
+    span.EXLUserNameDisplay{
+      &:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+        .make-font-awesome;
+        color: @brand-info;
+        //.icon-user:before                 { content: "\f007"; }
+        content: "\f007";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+      }
+    }
+    // my account link iconography
+    &.EXLMyAccount > a:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+        .make-font-awesome;
+        color: @brand-info;
+        //.icon-cogs:before                 { content: "\f085"; }
+        content: "\f085";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+    }
+    // my account sign in for 
+    &.EXLSignOut > a:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+        .make-font-awesome;
+        color: @brand-danger;
+        //.icon-off:before                  { content: "\f011"; }
+        content: "\f011";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;      
+    }
+
+
   }
   li > .EXLUserNameDisplay{
     position: relative;
@@ -145,6 +212,9 @@ iframe html{
 
 #exlidHeaderTile{
   .make-column(4);
+  @media (min-width: 768px){
+    margin-bottom: 4em;
+  }
 }
 ////// ---- SEARCH AREA -------------
 #exlidSearchTile{
