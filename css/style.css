@@ -7885,6 +7885,11 @@ a[title="show send to options"] img {
   border-radius: 0;
 }
 
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer:first-of-type {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
 .EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer:last-of-type {
   margin-bottom: 15px;
   border-bottom-right-radius: 4px;
@@ -7893,6 +7898,10 @@ a[title="show send to options"] img {
 
 .EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer h4 {
   border: none;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer h4:last-of-type {
+  border-bottom: 1px #dddddd solid;
 }
 
 .EXLFacetContainer {
@@ -7947,16 +7956,29 @@ a[title="show send to options"] img {
 .EXLFacetContainer ol.EXLFacetsList li {
   position: relative;
   display: block;
+  height: auto;
   padding: 10px 30px 10px 15px;
   padding-right: 15px;
   margin-bottom: -1px;
   border: 1px solid #dddddd;
   border-right: none;
   border-left: none;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 
 .EXLFacetContainer ol.EXLFacetsList li.EXLAdditionalFacet {
-  display: none;
+  position: relative;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 
 .EXLFacetContainer ol.EXLFacetsList li.EXLFacetsDisplayMore {

@@ -797,12 +797,18 @@ a[title="show send to options"]{
     .EXLFacetContainer{
       margin-bottom: 0;
       border-radius: 0;
+      &:first-of-type{
+        .border-top-radius(@panel-border-radius);
+      }
       &:last-of-type{
         margin-bottom: 15px;
         .border-bottom-radius(@panel-border-radius);
       }
       h4{
         border: none;
+        &:last-of-type{
+          border-bottom: 1px @list-group-border solid;
+        }
       }
     }
   }
@@ -836,8 +842,15 @@ a[title="show send to options"]{
       padding-right: 15px;
       border-left: none;
       border-right: none;
+      height: auto;
+      .transition(all 0.5s ease);
       &.EXLAdditionalFacet{
-        display: none;
+        height: 0;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        .transition(all 0.5s ease);
       }
       &.EXLFacetsDisplayMore{
         margin-top: 0px;
