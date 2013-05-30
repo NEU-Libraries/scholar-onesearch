@@ -44,6 +44,27 @@ $(function() {
   }
 
   signinPopover();
+
+
+  //Create the report a problem link on each of the results.
+  var reportAProblem = function(){
+    $results = $('#exlidResultsTable tr.EXLResult');
+    $results.each(function(){
+      var title = $(this).find('h2.EXLResultTitle').text().trim();
+      var id = $(this).find('a.EXLResultRecordId').attr('id');
+      //The Document ID
+      var titleStr = title + ' (' + id + ')';
+      
+      var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
+
+      var link = '<a class="report-a-problem pull-right btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-warning-sign"></a>'
+      $(this).find('ul.EXLResultTabs').append(link);
+    });
+    $('a.report-a-problem').tooltip();
+  }
+
+  reportAProblem();
+
 });
 
 

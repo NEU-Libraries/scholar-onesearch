@@ -7450,6 +7450,21 @@ img[alt="remove"] {
   border-bottom: none;
 }
 
+.EXLTabsRibbon div.tooltip {
+  float: none;
+  width: auto;
+  margin: auto;
+  clear: none;
+}
+
+.EXLTabsRibbon div.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
 .EXLTabsRibbon div li.EXLResultSelectedTab {
   background: none;
   border: none;
@@ -7462,6 +7477,27 @@ img[alt="remove"] {
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+a.report-a-problem {
+  float: right;
+  font-size: 21px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+a.report-a-problem:hover,
+a.report-a-problem:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 .EXLResultTabContainer div.EXLTabHeader {
