@@ -76,6 +76,29 @@ $(function() {
   }
   //move the a-to-z link item to the search bar.
   //buildNavBarNav();
+  //
+  var buildFacetCollapse = function(){
+    var i = 1;
+    $('li.EXLFacetsDisplayMore').hide();
+    //Creating a collapse group.
+    $('#facetList > .EXLFacetContainer').each(function(){
+      
+      var $link = $('<a href="#expandFacet'+ i +'"><i class="icon-expand-alt icon-large pull-right"></i></a>');
+      $link.click(function(){
+        console.lg
+        $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
+        $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
+        //$(this).find('ol li').toggleClass('EXLAdditionalFacet');
+      });
+      $(this).find('h4').append($link);
+
+      i++;
+    });
+  }
+  buildFacetCollapse();
+  
+  
+
 
 });
 

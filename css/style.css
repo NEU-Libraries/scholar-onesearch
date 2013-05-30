@@ -7405,7 +7405,7 @@ img[alt="remove"] {
 
 @media (min-width: 768px) {
   .EXLResultsList td.EXLThumbnail {
-    width: 8.333333333333332%;
+    width: 16.666666666666664%;
   }
 }
 
@@ -7440,23 +7440,12 @@ img[alt="remove"] {
 }
 
 .EXLResultNumber {
-  position: relative;
-  display: block;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding: 2px 0 0 2px;
-  padding-right: 15px;
-  padding-left: 15px;
+  position: absolute;
+  display: inline;
+  margin: 2px;
   font-size: 10px;
   color: #999999;
   text-align: left;
-}
-
-@media (min-width: 768px) {
-  .EXLResultNumber {
-    width: 8.333333333333332%;
-  }
 }
 
 .EXLTabsRibbon {
@@ -8023,41 +8012,4 @@ a[title="More "] img {
 
 .EXLFullView .EXLResultsNavigation {
   display: none;
-}
-
-.multipleCoverImageContainer {
-  width: auto;
-  height: auto;
-  *margin-right: .3em;
-  overflow: hidden;
-  font-family: FontAwesome;
-  font-size: inherit;
-  font-size: 2.85em;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  background-image: none !important;
-  border: none;
-}
-
-.multipleCoverImageContainer:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-.EXLResultMediaTYPEbook .multipleCoverImageContainer:before {
-  content: "\f02d";
-}
-
-.EXLResultsList td.EXLThumbnail img {
-  width: auto;
-  height: auto;
-  min-width: 38px;
-  min-height: 56px;
-}
-
-.EXLResultsList td.EXLThumbnail img[id*="google"] {
-  border: 1px solid #bdbcbd;
 }
