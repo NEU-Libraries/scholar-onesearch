@@ -324,6 +324,7 @@ iframe html{
     padding: 0;
     font-size: inherit;
     .navbar-link;
+    display: inline;
   }
 }
 
@@ -602,6 +603,10 @@ img[alt="remove"]{
 }
 
 .EXLResultsList {
+  div.EXLSummaryContainer div.EXLSummaryFields {
+    float: none;
+    width: auto;
+  }
   tr{
     border: 1px solid @table-border-color;
     .make-row();
@@ -626,6 +631,7 @@ img[alt="remove"]{
   .text-muted;
   padding: 2px 0 0 2px;
   .make-column(1);
+  text-align: left;
 }
 
 
@@ -634,6 +640,8 @@ img[alt="remove"]{
 //Results tabs ribbon
 .EXLTabsRibbon{
   border-bottom: none;
+  height: auto;
+  div, 
   div.tooltip{
       width: auto;
       float: none;
@@ -665,7 +673,6 @@ a.report-a-problem{
     .make-row();
     background-image: none;
     background-color: @panel-heading-bg;
-    margin-top: 35px;
     border: 1px solid @panel-border;
     .border-top-radius(4px);
     //remove the tabs buttons backgrounds
@@ -832,10 +839,16 @@ a[title="show send to options"]{
     }
   }
   div.EXLFacetActionsV2{
+    ul{
+      margin: 0;
+    }
     margin-bottom: 0;
-    li.EXLFacetRSSAction{
+    li.EXLFacetRSSAction,
+    li.EXLFacetSaveSearchAction,
+    li.EXLFacetSaveToEShelfAction,
+    {
       background-image: none;
-      padding-left: 0;
+      padding: 10px 30px 10px 15px
     }
   }
 }

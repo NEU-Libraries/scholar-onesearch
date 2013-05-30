@@ -6548,6 +6548,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 .EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks,
 .EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks,
 .EXLSearchFieldRibbonAtoZLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
+  display: inline;
   padding: 0;
   font-size: inherit;
   color: #ffffff;
@@ -7355,6 +7356,11 @@ img[alt="remove"] {
   line-height: 2em !important;
 }
 
+.EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
+  float: none;
+  width: auto;
+}
+
 .EXLResultsList tr {
   border: 1px solid #dddddd;
 }
@@ -7444,6 +7450,7 @@ img[alt="remove"] {
   padding-left: 15px;
   font-size: 10px;
   color: #999999;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -7453,9 +7460,11 @@ img[alt="remove"] {
 }
 
 .EXLTabsRibbon {
+  height: auto;
   border-bottom: none;
 }
 
+.EXLTabsRibbon div,
 .EXLTabsRibbon div.tooltip {
   float: none;
   width: auto;
@@ -7512,7 +7521,6 @@ a.report-a-problem:focus {
   height: auto;
   padding: 0;
   margin: 0;
-  margin-top: 35px;
   clear: none;
   background-color: #f5f5f5;
   background-image: none;
@@ -7964,8 +7972,14 @@ a[title="show send to options"] img {
   margin-bottom: 0;
 }
 
-.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetRSSAction {
-  padding-left: 0;
+.EXLFacetContainer div.EXLFacetActionsV2 ul {
+  margin: 0;
+}
+
+.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetRSSAction,
+.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveSearchAction,
+.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveToEShelfAction {
+  padding: 10px 30px 10px 15px;
   background-image: none;
 }
 
@@ -8009,4 +8023,41 @@ a[title="More "] img {
 
 .EXLFullView .EXLResultsNavigation {
   display: none;
+}
+
+.multipleCoverImageContainer {
+  width: auto;
+  height: auto;
+  *margin-right: .3em;
+  overflow: hidden;
+  font-family: FontAwesome;
+  font-size: inherit;
+  font-size: 2.85em;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-image: none !important;
+  border: none;
+}
+
+.multipleCoverImageContainer:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+}
+
+.EXLResultMediaTYPEbook .multipleCoverImageContainer:before {
+  content: "\f02d";
+}
+
+.EXLResultsList td.EXLThumbnail img {
+  width: auto;
+  height: auto;
+  min-width: 38px;
+  min-height: 56px;
+}
+
+.EXLResultsList td.EXLThumbnail img[id*="google"] {
+  border: 1px solid #bdbcbd;
 }

@@ -4,7 +4,10 @@ $(function() {
   $('a.EXLBriefResultsPaginationLinkPrevious:first-of-type > img').after('<i class="icon-circle-arrow-left"></i>');
   //just adding a special character to the submit button;
   $('#goButton').val("➜");
+  //adding an icon before the RSS link;
   $('form[name="rssForm"]').prepend('<i class="icon-rss"></i>');
+  $('.EXLFacetSaveSearchAction > a').before('<i class="icon-save"/>');
+  $('.EXLFacetSaveToEShelfAction > a').before('<i class="icon-bookmark"/>');
   $('img[alt="Add to e-Shelf"]').after('<i class="icon-bookmark-empty icon-large"></i>').hide();
   $('img[alt="In e-Shelf"]').after('<i class="icon-bookmark icon-large"></i>').hide();
   $('td.EXLMyShelfStar > a').addClass('btn btn-success btn-small').click(function(){
@@ -64,6 +67,8 @@ $(function() {
   }
 
   reportAProblem();
+  
+
   var buildNavBarNav = function(){
     $('#exlidMainMenuTile').hide();
     $('div.EXLSearchFieldRibbonBrowseSearchLink').after('<div class="EXLSearchFieldRibbonAtoZLink"/>');
