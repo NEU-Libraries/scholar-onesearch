@@ -7439,13 +7439,16 @@ img[alt="remove"] {
   }
 }
 
-.EXLResultNumber {
+.EXLResultsList .EXLResultNumber {
   position: absolute;
-  display: inline;
-  margin: 2px;
+  display: block;
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
   font-size: 10px;
   color: #999999;
-  text-align: left;
 }
 
 .EXLTabsRibbon {
@@ -7877,6 +7880,21 @@ a[title="show send to options"] img {
   }
 }
 
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer:last-of-type {
+  margin-bottom: 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer h4 {
+  border: none;
+}
+
 .EXLFacetContainer {
   padding: 15px;
   padding: 0;
@@ -7913,6 +7931,10 @@ a[title="show send to options"] img {
 
 .EXLFacetContainer h4 {
   font-size: 14.5px;
+}
+
+.EXLFacetContainer a i:hover {
+  text-decoration: none;
 }
 
 .EXLFacetContainer ol.EXLFacetsList {

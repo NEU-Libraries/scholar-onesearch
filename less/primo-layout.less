@@ -623,16 +623,20 @@ img[alt="remove"]{
   td.EXLSummary{
     .make-column(9);
   }
+  .EXLResultNumber{
+    display: block;
+    font-size: 10px;
+    .text-muted;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+  }
 }
 
-.EXLResultNumber{
-  display: inline;
-  font-size: 10px;
-  .text-muted;
-  position: absolute;
-  margin: 2px;
-  text-align: left;
-}
+
 
 
 
@@ -789,6 +793,19 @@ a[title="show send to options"]{
   float: left;
   clear: both;
   }
+  .EXLFacetList:nth-of-type(2){
+    .EXLFacetContainer{
+      margin-bottom: 0;
+      border-radius: 0;
+      &:last-of-type{
+        margin-bottom: 15px;
+        .border-bottom-radius(@panel-border-radius);
+      }
+      h4{
+        border: none;
+      }
+    }
+  }
 }
 .EXLFacetContainer{
   .panel;
@@ -806,6 +823,9 @@ a[title="show send to options"]{
   }
   h4{
     font-size: 14.5px;
+  }
+  a i:hover{
+    text-decoration: none;
   }
   ol.EXLFacetsList{
     .list-group;
