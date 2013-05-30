@@ -6522,7 +6522,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink,
-.EXLSearchFieldRibbonBrowseSearchLink {
+.EXLSearchFieldRibbonBrowseSearchLink,
+.EXLSearchFieldRibbonAtoZLink {
   position: relative;
   float: left;
   width: 100%;
@@ -6535,15 +6536,18 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 
 @media (min-width: 768px) {
   .EXLSearchFieldRibbonAdvancedSearchLink,
-  .EXLSearchFieldRibbonBrowseSearchLink {
+  .EXLSearchFieldRibbonBrowseSearchLink,
+  .EXLSearchFieldRibbonAtoZLink {
     width: 16.666666666666664%;
   }
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink a,
 .EXLSearchFieldRibbonBrowseSearchLink a,
+.EXLSearchFieldRibbonAtoZLink a,
 .EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks,
-.EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
+.EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks,
+.EXLSearchFieldRibbonAtoZLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
   padding: 0;
   font-size: inherit;
   color: #ffffff;
@@ -6551,8 +6555,10 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 
 .EXLSearchFieldRibbonAdvancedSearchLink a:hover,
 .EXLSearchFieldRibbonBrowseSearchLink a:hover,
+.EXLSearchFieldRibbonAtoZLink a:hover,
 .EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks:hover,
-.EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks:hover {
+.EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks:hover,
+.EXLSearchFieldRibbonAtoZLink a.EXLSearchFieldRibbonAdvancedTwoLinks:hover {
   color: #e6e6e6;
 }
 

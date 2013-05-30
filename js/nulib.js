@@ -64,6 +64,13 @@ $(function() {
   }
 
   reportAProblem();
+  var buildNavBarNav = function(){
+    $('#exlidMainMenuTile').hide();
+    $('div.EXLSearchFieldRibbonBrowseSearchLink').after('<div class="EXLSearchFieldRibbonAtoZLink"/>');
+    $('div.EXLSearchFieldRibbonAtoZLink').append($('a.EXLMainMenuITEMATOZ').addClass('EXLSearchFieldRibbonAdvancedTwoLinks'));
+  }
+  //move the a-to-z link item to the search bar.
+  //buildNavBarNav();
 
 });
 
