@@ -15,7 +15,7 @@
 .EXLTabsRibbon div li.EXLResultTab a, a.EXLBriefResultsDisplayMultipleLink{
   color: @link-color;
   .btn;
-  .btn-default;
+  .btn-secondary;
   .btn-small;
   margin-bottom: 3px;
 }
@@ -156,6 +156,12 @@ iframe html{
   li{
     font-size: inherit;
     margin: 0;
+    &.EXLMainMenuItemSelected span a{
+      background-image: none;
+      border: none;
+      color: #fff;
+      background-color: @component-active-bg;
+    }
     span{
       border: none;
     }
@@ -165,7 +171,9 @@ iframe html{
   }
   .float-left-small-screen;
 }
-
+.EXLMainMenuITEMATOZClose{
+  display: none;
+}
 #exlidHeaderTile{
   .make-column(4);
   @media (min-width: 768px){
