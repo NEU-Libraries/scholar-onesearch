@@ -7872,6 +7872,10 @@ a[title="show send to options"] img {
   }
 }
 
+.EXLFullView .EXLResultsNavigation {
+  display: none;
+}
+
 @media (max-width: 756px) {
   .EXLFacetTile {
     float: left;
@@ -7897,6 +7901,8 @@ a[title="show send to options"] img {
 }
 
 .EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer h4 {
+  font-size: 13.5px;
+  background-color: #fcfcfc;
   border: none;
 }
 
@@ -7963,10 +7969,10 @@ a[title="show send to options"] img {
   border: 1px solid #dddddd;
   border-right: none;
   border-left: none;
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -webkit-transition: all 0.35s ease;
+     -moz-transition: all 0.35s ease;
+       -o-transition: all 0.35s ease;
+          transition: all 0.35s ease;
 }
 
 .EXLFacetContainer ol.EXLFacetsList li.EXLAdditionalFacet {
@@ -7975,10 +7981,10 @@ a[title="show send to options"] img {
   padding: 0;
   overflow: hidden;
   border: none;
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -webkit-transition: all 0.35s ease;
+     -moz-transition: all 0.35s ease;
+       -o-transition: all 0.35s ease;
+          transition: all 0.35s ease;
 }
 
 .EXLFacetContainer ol.EXLFacetsList li.EXLFacetsDisplayMore {
@@ -8050,10 +8056,7 @@ a[title="More "] img {
 
 .EXLFooterTile,
 #EXLFooterTile {
+  display: block;
   margin: 0 auto;
   background-image: none;
-}
-
-.EXLFullView .EXLResultsNavigation {
-  display: none;
 }

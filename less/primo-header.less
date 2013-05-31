@@ -1,0 +1,173 @@
+// Primo Header Styles
+// ----------------------
+
+.nu-lib-logo{
+  background: url('../images/nu-libraries-logo.svg') no-repeat top left;
+  background-size: contain;
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: 58px;
+  margin-bottom: 1em;
+  content: "Northeastern University Libraries";
+}
+
+.EXLTabsRibbon div li.EXLResultTab a, a.EXLBriefResultsDisplayMultipleLink{
+  color: @link-color;
+  .btn;
+  .btn-default;
+  .btn-small;
+  margin-bottom: 3px;
+}
+
+.EXLTabsRibbon div li.EXLResultTab{
+  float: none;
+}
+
+.float-left-small-screen{
+  @media (max-width: 756px){
+    float: left;
+    clear: left;
+  }
+}
+
+#exlidMainMenuRibbon{
+  .nav;
+  .nav-pills;
+}
+
+iframe html{
+  margin: 1em;
+}
+
+#exlidUserAreaTile{
+  .make-column(5);
+  .make-column-offset(3);
+}
+
+//User ribbon
+#exlidUserAreaRibbon{
+  .nav;
+  .nav-pills;
+  .pull-right;
+  height: auto;
+  margin: 0.25em 0;
+  .EXLUserName{
+    margin: 0 0.25em 0.25em 0;
+    border-radius: 5px;
+    display: none;
+  }
+  li{
+    font-size: inherit;
+    padding: 0px;
+    height: auto;
+    // e-Shelf Iconography
+    span.EXLMyShelfStarSelected{
+      background-image: none;
+      margin: 0 0.25em 0 0;
+      padding: 0;
+      width: auto;
+      height: auto;
+      float: none;
+      .make-font-awesome;
+      color: @brand-success;
+      &:before{
+        content: "\f02e";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+      }
+    }
+    //user account iconography 
+    span.EXLUserNameDisplay{
+      &:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+        .make-font-awesome;
+        color: @brand-info;
+        //.icon-user:before                 { content: "\f007"; }
+        content: "\f007";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+      }
+    }
+    // my account link iconography
+    &.EXLMyAccount > a:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+        .make-font-awesome;
+        color: @asbestos;
+        //.icon-cogs:before                 { content: "\f085"; }
+        content: "\f085";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+    }
+    // my account sign in for 
+    &.EXLSignOut > a:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+        .make-font-awesome;
+        color: @brand-primary;
+        //.icon-off:before                  { content: "\f011"; }
+        content: "\f011";
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;      
+    }
+
+
+  }
+  li > .EXLUserNameDisplay{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+  }
+  .float-left-small-screen;
+}
+//Main menu tile
+#exlidMainMenuTile{
+  .make-column(5);
+  .make-column-offset(3);
+  div.EXLMainMenuContainer{
+    float: none;
+    width: auto;
+  }
+}
+
+#exlidMainMenuRibbon{
+  .nav;
+  .nav-pills;
+  .pull-right;
+  padding: 0;
+  height: auto;
+  margin: 0.25em 0;
+  li{
+    font-size: inherit;
+    margin: 0;
+    span{
+      border: none;
+    }
+  }
+  a{
+    font-size: inherit;
+  }
+  .float-left-small-screen;
+}
+
+#exlidHeaderTile{
+  .make-column(4);
+  @media (min-width: 768px){
+    margin-bottom: 4em;
+  }
+}

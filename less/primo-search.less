@@ -1,0 +1,226 @@
+////// ---- SEARCH AREA -------------
+#exlidSearchTile{
+  background-image: none;
+  border: none;
+  font-size: inherit;
+}
+
+// Styling as a navbar component.
+#exlidSearchRibbon{
+  float: none;
+  margin: 0.5em;
+  margin-top: 3em;
+  width: auto;
+  .navbar;
+  div.EXLSearchTabsContainer{
+    display: none;
+  }
+  div.EXLSearchFieldRibbon{
+    border: none;
+    float: none;
+    background: none;
+    
+  }
+  input{
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+  }
+  input#search_field{
+    width: 100%;
+    margin-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid @input-border;
+  }
+  input.submit{
+    width: 100%;
+    .btn-info;
+    .btn;
+    height: auto;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  //
+  fieldset{
+    .navbar-form;
+    .make-column(8);
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.EXLSearchFieldRibbonFormSearchFor{
+  padding-right: 0px;
+  width: 60%;
+  @media(max-width: 756px){
+    width: 50%;
+  }
+}
+.EXLSearchFieldRibbonFormSubmitSearch{
+  width: auto;
+  max-width: 12%;
+}
+#exlidHeaderSystemFeedback{
+  display: none;
+}
+
+
+.EXLSearchFieldRibbonFormFields{
+  width: 88%;
+  height: auto;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection{
+  height: auto;
+  width: 40%;
+  border-left: none;
+  @media(max-width: 756px){
+    width: 50%;
+  }
+  .EXLSearchFieldRibbonFormSelectedCollectionLabel{
+    padding-left: 0;
+  }
+  a{
+    .btn;
+    .btn-default;
+    border-radius: 0;
+    background-image: none;
+    &:after{
+      .btn .caret;
+      .caret;
+    }
+  }
+ 
+}
+
+
+
+.EXLSearchFieldRibbonAdvancedSearchLink,
+.EXLSearchFieldRibbonBrowseSearchLink,
+.EXLSearchFieldRibbonAtoZLink{
+  .make-column(2);
+  margin-top: 17px;
+  margin-bottom: 17px;
+  a, a.EXLSearchFieldRibbonAdvancedTwoLinks{ 
+    padding: 0;
+    font-size: inherit;
+    .navbar-link;
+    display: inline;
+  }
+}
+
+.EXLSearchFieldRibbonFormCollectionsList{
+  .dropdown-menu;
+  left: 52%;
+  @media(max-width: 756px){
+    left: 10%;
+  }
+}
+
+
+
+// ---- Advanced Search Tile --
+#exlidAdvancedSearchTile{
+  .navbar;
+  background-image: none;
+  font-size: inherit;
+  fieldset{
+    .navbar-form;
+  }
+}
+
+#exlidAdvancedSearchRibbon{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  div.EXLSearchFieldRibbonPreFilters{
+    border: none;
+    background: none;
+  }
+  .EXLSearchFieldRibbonFormLinks{
+    a {
+      .navbar-link;
+    }
+  }
+  input, select{
+    width: auto;
+    height: auto;
+    border: 1px solid #cccccc;
+  }
+  input[type="text"], select{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  select, div.EXLSearchFieldRibbonFormFieldsGroup2 select{
+    height: 36px;
+  }
+  label{
+    color: white;
+  }
+  div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
+    .make-column(6);
+  }
+  div.EXLSearchFieldRibbonFormSubmitSearch{
+    border: none;
+  }
+  input.submit{
+   background-image: none;
+   width: 100%;
+   .btn-info;
+   .btn;
+   .btn-large;
+   height: auto;
+  }
+  div.EXLAdvancedSearchFormRow {
+    span.EXLAdvancedSearchFormDateRangeRow input{
+      width: auto;
+      height: auto;
+      font-size: inherit;
+    }
+  }
+  //hides the empty rows that are in this advanced search form.
+  div.EXLSearchFieldRibbonFormFieldsGroup1{
+    div.EXLAdvancedSearchFormRow{
+      &:first-of-type,
+      &:nth-of-type(4),
+      &:nth-of-type(5),
+      &:nth-of-type(6),
+      &:nth-of-type(7){
+        display: none;
+      }
+    }
+  }
+  div.EXLSearchFieldRibbonFormFieldsGroup2{
+    label{
+      min-width: 9em;
+      width: auto;
+      
+    }
+    @media (max-width: 756px){
+      border-left: none;
+      label{
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+// ------- A-Z list ----------
+#exlidSearchTile.EXLSearchEJorunals {
+  .EXLSearchEJorunalsListAtoZ{
+   width: auto;
+   ul{
+    .nav;
+   }
+   li{
+    width: auto;
+    line-height: inherit;
+   }
+   li a{
+    color: white;
+    width: auto;
+    }
+  }
+}

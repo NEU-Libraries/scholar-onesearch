@@ -1,0 +1,46 @@
+//------- Body styles --------
+
+body{
+  background-color: @brand-gray;
+  min-width: inherit;
+}
+//------- End Body Styles ----
+// ------ Content Div --------
+#contentEXL, body > div {
+  .container-fixed();
+  background-color: #FFFFFF;
+  border-right: 1px solid #8c8c8a;
+  border-left: 1px solid #8c8c8a;
+  padding: 0 1em;
+  @media (max-width: 756px){
+    padding: 0;
+    border: none;
+  }
+}
+#contentEXL{
+  min-height: 100%;
+}
+
+body > div, .EXLFooterTile{
+  .container-fixed();
+}
+// Responsive: Tablets and up
+@media screen and (min-width: @screen-tablet) {
+  #contentEXL, body > div, .EXLFooterTile {
+    max-width: 728px;
+  }
+}
+
+// Responsive: Desktops and up
+@media screen and (min-width: @screen-desktop) {
+  #contentEXL, body > div, .EXLFooterTile {
+    max-width: 940px;
+  }
+}
+
+// Responsive: Large desktops and up
+@media screen and (min-width: @screen-large-desktop) {
+  #contentEXL, body > div, .EXLFooterTile {
+    max-width: 1170px;
+  }
+}
