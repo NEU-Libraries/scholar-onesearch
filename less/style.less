@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap v3.0.0
  *
@@ -30,7 +31,7 @@
 @import "buttons.less";
 
 // Components: common
-//@import "component-animations.less";
+@import "component-animations.less";
 @import "font-awesome-less/font-awesome.less";
 @import "dropdowns.less";
 @import "list-group.less";
@@ -47,7 +48,7 @@
 // @import "pager.less";
 
 // // Components: Popovers
-// @import "modals.less";
+@import "modals.less";
 @import "tooltip.less";
 @import "popovers.less";
 
@@ -64,16 +65,8 @@
 
 // // Utility classes
 @import "utilities.less"; // Has to be last to override when necessary
-// @import "responsive-utilities.less";
-.reset{
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-}
+@import "responsive-utilities.less";
+
 @import "un-suck-primo.less";
 @import "primo-layout.less";
 @import "primo-my-account.less";
@@ -83,7 +76,7 @@
 @import "primo-results.less";
 @import "primo-facets.less";
 @import "primo-footer.less";
-
+@import "primo-modal.less";
 
 @import "hide-these.less";
 @import "primo-icons.less";

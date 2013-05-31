@@ -1,0 +1,72 @@
+.EXLLightbox{
+  .reset;
+  .modal-content;
+  background-image: none;
+  div.EXLLightboxHeader{
+    .reset;
+    background-image: none;
+    .modal-header;
+    //reset the modal header text to hormal sizing;
+    span.EXLLightboxHeaderTitle{
+      .h4;
+      .modal-title;
+    }//end Headertext
+  }
+  div.EXLLightboxFormContainer{
+    font-size: inherit;
+    .modal-body;
+    div.EXLLightboxFormRow{
+      .make-row();
+    }
+    fieldset.EXLLightboxFormDisciplineSelection{
+      .reset;
+      .make-row();
+      //make them six column wide
+      ul[class^=EXLLightboxFormDisciplineSelectionColumn]{
+        .make-column(6);
+        margin: 0;
+      }//end lists
+    }//end fieldset.EXLLightboxFormDisciplineSelection
+    
+  }
+  .EXLLightboxFormButtons{
+    .modal-footer;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
+
+.EXLLighboxSubmitButton, .EXLLighboxCancelButton{
+  .reset;
+  font-size: inherit;
+  .make-column(2);
+  span {
+    .reset;
+    margin: 0;
+    width: inherit;
+    text-align: left;
+    display: inline;
+    a, input{
+      height: auto;
+      padding: 0;
+      .btn;
+
+      &.EXLSubmit{
+        height: auto;
+        .btn;
+        .btn-primary;
+      }
+    }
+  }
+}
+
+#EXLCancelPersonalRankData{
+  background-image: none;
+  .btn;
+  .btn-default;
+}
+
+
