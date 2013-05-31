@@ -5286,6 +5286,212 @@ a.list-group-item.active > .badge,
   font-size: inherit;
 }
 
+.EXLMyAccountTabsRibbon {
+  height: auto;
+  padding-top: 0;
+  margin: 0 auto;
+  border-bottom: none;
+}
+
+.EXLMyAccountTabsRibbon div {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLMyAccountTabsRibbon div {
+    width: 100%;
+  }
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs {
+  padding-left: 0;
+  margin: 0.5em auto 0 auto;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountTab {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: auto;
+  color: #555555;
+  text-align: inherit;
+  vertical-align: inherit;
+  border: none;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountSelectedTab {
+  background: none;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountSelectedTab > a,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountSelectedTab > a:hover,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountSelectedTab > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class^="icon-"].icon-large,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class^="icon-"].icon-spin,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs:before,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs:after {
+  display: table;
+  content: " ";
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs:after {
+  clear: both;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs:before,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs:after {
+  display: table;
+  content: " ";
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs:after {
+  clear: both;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li {
+  position: relative;
+  display: block;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li a,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li a:hover,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li > a:hover,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li a:focus,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li.disabled > a {
+  color: #999999;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li.disabled > a:hover,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li + .nav-header {
+  margin-top: 9px;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.open > a,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.open > a:hover,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.open > a:focus {
+  color: #fff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.open > a .caret,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.open > a:hover .caret,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > .pull-right {
+  float: right;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs .nav-divider {
+  height: 2px;
+  margin: 9.5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class^="icon-"],
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class*=" icon-"],
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class^="icon-"].icon-large,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li > a {
+  margin-right: 2px;
+  line-height: 1.528571429;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li.active > a,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li.active > a:hover,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.nav-justified > li {
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.nav-justified > li > a {
+  text-align: center;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.nav-justified > li > a {
+  margin-right: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs.nav-justified > .active > a {
+  border-bottom-color: #ffffff;
+}
+
 body {
   min-width: inherit;
   background-color: #e9e8e5;
@@ -6975,6 +7181,31 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li a {
   width: auto;
   color: white;
+}
+
+.EXLResultsContainer:before,
+.EXLResultsContainer:after {
+  display: table;
+  content: " ";
+}
+
+.EXLResultsContainer:after {
+  clear: both;
+}
+
+.EXLResultsContainer:before,
+.EXLResultsContainer:after {
+  display: table;
+  content: " ";
+}
+
+.EXLResultsContainer:after {
+  clear: both;
+}
+
+.EXLResultsContainer .row {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 @media (max-width: 756px) {

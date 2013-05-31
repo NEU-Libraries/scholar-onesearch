@@ -1,0 +1,40 @@
+// My Account tab ribbon styles.
+
+.EXLMyAccountTabsRibbon{
+  height: auto;
+  border-bottom: none;
+  padding-top: 0;
+  margin: 0 auto;
+  div{
+    .make-column(12);
+    .EXLMyAccountTabs{
+      margin: 0.5em auto 0 auto;
+      li.EXLMyAccountTab{
+        
+        height: auto;
+        width: auto;
+        margin: auto;
+        padding: 0;
+        border: none;
+        text-align: inherit;
+        vertical-align: inherit;
+        color: @gray;
+      }
+      li.EXLMyAccountSelectedTab{
+        background: none;
+        > a,
+        > a:hover,
+        > a:focus {
+          color: @gray;
+          background-color: @body-bg;
+          border: 1px solid #ddd;
+          border-bottom-color: transparent;
+          cursor: default;
+        }
+      }
+      .nav;
+      .nav-tabs;
+    }  
+  }
+}
+
