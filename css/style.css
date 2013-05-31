@@ -4943,7 +4943,7 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1010;
+  z-index: 1060;
   display: none;
   max-width: 276px;
   padding: 1px;
@@ -5317,19 +5317,34 @@ a.list-group-item.active > .badge,
   border-bottom: 1px solid #ddd;
 }
 
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountTab {
   width: auto;
   height: auto;
   padding: 0;
   margin: auto;
-  color: #555555;
+  margin-bottom: -1px;
   text-align: inherit;
   vertical-align: inherit;
   border: none;
 }
 
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountTab a {
+  color: #cc0000;
+}
+
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountTab a:hover,
+.EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountTab a:focus {
+  color: #800000;
+}
+
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountSelectedTab {
   background: none;
+  border-bottom: none;
 }
 
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs li.EXLMyAccountSelectedTab > a,
@@ -5490,6 +5505,106 @@ a.list-group-item.active > .badge,
 
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs.nav-justified > .active > a {
   border-bottom-color: #ffffff;
+}
+
+.EXLMyAccountContainer {
+  background-color: #ffffff;
+}
+
+.EXLMyAccountContainer:before,
+.EXLMyAccountContainer:after {
+  display: table;
+  content: " ";
+}
+
+.EXLMyAccountContainer:after {
+  clear: both;
+}
+
+.EXLMyAccountContainer:before,
+.EXLMyAccountContainer:after {
+  display: table;
+  content: " ";
+}
+
+.EXLMyAccountContainer:after {
+  clear: both;
+}
+
+.EXLMyAccountContainer .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.EXLMyAccountMainMenuTile {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLMyAccountMainMenuTile {
+    width: 25%;
+  }
+}
+
+.EXLMyAccountMainContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .EXLMyAccountMainContainer {
+    width: 75%;
+  }
+}
+
+.EXLMyAccountMainContainer div.EXLMyAccountMainHeader {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: auto;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: inherit;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .EXLMyAccountMainContainer div.EXLMyAccountMainHeader {
+    width: 100%;
+  }
+}
+
+.EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  padding-bottom: 9.5px;
+  margin: 0;
+  margin: 42px 0 21px;
+  clear: none;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle h1 {
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
 }
 
 body {
@@ -5918,6 +6033,7 @@ iframe html {
 }
 
 #exlidUserAreaRibbon {
+  position: relative;
   float: right;
   height: auto;
   padding-left: 0;
@@ -7480,6 +7596,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 
 .EXLResultsHeader div.EXLResultsNavigation {
   position: relative;
+  z-index: 0;
   float: left;
   width: 100%;
   min-height: 1px;

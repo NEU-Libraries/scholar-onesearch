@@ -9,19 +9,32 @@
     .make-column(12);
     .EXLMyAccountTabs{
       margin: 0.5em auto 0 auto;
+      li{
+        font-size: inherit;
+        line-height: inherit;
+      }
       li.EXLMyAccountTab{
         
         height: auto;
         width: auto;
         margin: auto;
+        margin-bottom: -1px;
         padding: 0;
         border: none;
         text-align: inherit;
         vertical-align: inherit;
-        color: @gray;
+        a{
+          color: @link-color;
+          &:hover,
+          &:focus{
+            color: @link-hover-color;
+          }
+        }
+
       }
       li.EXLMyAccountSelectedTab{
         background: none;
+        border-bottom: none;
         > a,
         > a:hover,
         > a:focus {
@@ -38,3 +51,37 @@
   }
 }
 
+// My account container
+.EXLMyAccountContainer{
+  background-color: @body-bg;
+  .make-row();
+}
+//menu tile floated to the left
+.EXLMyAccountMainMenuTile{
+  .make-column(3);
+}
+
+
+//
+.EXLMyAccountMainContainer{
+  .make-column(9);
+  margin-left: auto;
+  div.EXLMyAccountMainHeader{
+    .make-column(12); 
+    height: auto;
+    background-color: transparent;
+    border-bottom: none;
+    font-size: inherit;
+    div.EXLMyAccountMainHeaderTitle{
+      .reset;
+      .page-header;
+      h1{
+        margin: 0 auto;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1;
+        color: @gray-light;
+      }
+    }
+  }
+}
