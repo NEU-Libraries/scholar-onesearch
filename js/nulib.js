@@ -46,6 +46,8 @@ $(function() {
     } 
   }
 
+  $('div.EXLSearchFieldRibbonFormFields').before('<i class="icon-search icon-large pull-left icon-border"><span class="text-hide">Search Icon</span></i>');
+
   signinPopover();
 
 
