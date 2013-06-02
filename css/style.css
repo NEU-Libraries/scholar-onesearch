@@ -6971,6 +6971,9 @@ img[alt="remove"] {
   width: 15px;
   height: 15px;
 }
+iframe [name="uResolverViewItForm"] {
+  color: aqua !important;
+}
 .EXLTabsRibbon {
   border-bottom: none;
   height: auto;
