@@ -9823,3 +9823,7 @@ a.EXLLightboxHeaderClose:before {
 img[src="../images/icon_close_tabs.png"] {
   opacity: 0;
 }
+
+.EXLContainer-viewOnlineTab iframe body {
+  color: red !important;
+}
