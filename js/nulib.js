@@ -100,7 +100,6 @@ var scholarOneSearch = (function(){
     var $dropdown = $('<div class="btn-group pull-right "><button class="btn btn-default btn-small dropdown-toggle" data-toggle="dowpdown" type="button"><i class="icon-reorder"></i><span class="text-hide">Main Menu</span></button><ul class="dropdown-menu"/></div>');
     var $links  = $('#exlidMainMenuRibbon').find('a:visible');
     $('#exlidMainMenuRibbon').hide();
-    
     $dropdown.find('ul.dropdown-menu').html($links);
     $dropdown.find('a').wrap('<li/>');
     $('#exlidMainMenuRibbon').after($dropdown);
@@ -116,6 +115,7 @@ var scholarOneSearch = (function(){
     addToolTips();
     signinPopover();
     buildMainMenu();
+    $('#search_field').attr('placeholder','Search...');
   };
 
   return {

@@ -49,13 +49,12 @@
 
 // Grays
 // -------------------------
-// 
 
-@gray-darker:            @asbestos; //lighten(#000, 13.5%); // #222
-@gray-dark:              darken(@asbestos, 40%);//(#000, 20%);   // #333
-@gray:                   @silver; //lighten(#000, 33.5%); // #555
-@gray-light:             lighten( @silver, 10%);//lighten(#000, 60%);   // #999
-@gray-lighter:           @clouds; //lighten(#000, 93.5%); // #eee
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
 
 // Brand colors
 // -------------------------
@@ -113,8 +112,8 @@
   font-weight: normal;
   font-style: normal;
 }
-
-@font-family-sans-serif-body:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif-body:  @font-family-sans-serif;
 @font-family-sans-serif-headings: "Helvetica Neue", Helvetica, Arial, sans-serif; //"HelveticaNeue67MdCn","Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-sans-serif-headings-condensed:  "Helvetica Neue", Helvetica, Arial, sans-serif;//"HelveticaNeue67MdCn","Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Times, 'Times New Roman', Georgia, serif;
@@ -207,7 +206,7 @@
 @input-border:                   #ccc;
 @input-border-radius:            @border-radius-base;
 
-@input-color-placeholder:        @gray-light;
+@input-color-placeholder:        @gray;//@gray-light;
 
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2));
 @input-height-large:             (@line-height-computed + (@padding-large-vertical * 2));

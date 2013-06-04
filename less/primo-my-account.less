@@ -25,6 +25,7 @@
         vertical-align: inherit;
         a{
           color: @link-color;
+          font-size: inherit;
           &:hover,
           &:focus{
             color: @link-hover-color;
@@ -66,6 +67,11 @@
 .EXLMyAccountMainContainer{
   .make-column(9);
   margin-left: auto;
+  border: none;
+  
+  table{
+    font-size: inherit;
+  }
   div.EXLMyAccountMainHeader{
     .make-column(12); 
     height: auto;
@@ -74,13 +80,97 @@
     font-size: inherit;
     div.EXLMyAccountMainHeaderTitle{
       .reset;
-      .page-header;
+      border-bottom: 1px @gray-lighter solid;
+      margin-bottom: 1em;
       h1{
-        margin: 0 auto;
+        margin: 0.5em 0em 1em 0em;
         font-size: 24px;
         font-weight: normal;
         line-height: 1;
-        color: @gray-light;
+        color: @gray;
+      }
+    }
+  }//end div.EXLMyAccountMainHeader
+  
+  //Form
+  form{
+    input{
+
+    }
+    span.submit{
+      .reset;
+      width: 100%;
+    }
+    input.submit{
+      .reset;
+      background-image: none;
+      .btn;
+      .btn-large;
+      .btn-block;
+      .btn-success;
+      &#EXLMyAccountSaveSettings{
+        .btn-small;
+      }
+    }
+  }//end form
+}
+//My account form container
+.EXLMyAccountFormContainer {
+  .make-column(12);
+  font-size: inherit;
+  padding-top: inherit;
+  div.EXLMyPersonalSettings{
+    .make-column(7);
+  }
+  div.EXLMyAccountTips{
+    margin: 0;
+    .make-column(5)
+    
+  }
+}
+
+
+.EXLRequestSystemFeedback,
+.EXLMyAccountMainContainer div.EXLMyPersonalSettings div.EXLRequestSystemFeedback
+{
+  .alert;
+  .alert-block;
+  span{
+    .reset;
+    color: inherit;
+    background-image: none;
+  }
+}
+
+
+.EXLMyAccountMainMenuContainer {
+  ol{
+    .reset;
+    .list-group;
+    border-radius: @list-group-border-radius;
+    li{
+      font-size: inherit;
+      .list-group-item;
+      &:first-of-type{
+        .border-top-radius(@list-group-border-radius);
+      }
+      &:last-of-type{
+        .border-bottom-radius(@list-group-border-radius);
+      }
+      span.EXLMyAccountMainMenuBulletSelected{
+        .reset;
+        float: left;
+        background-image: none;
+        .make-font-awesome;
+        &:before{
+          content: "\f00c";
+        }
+        & + span a {
+          color: @silver;
+          &:hover, &:focus{
+            text-decoration: none;
+          }
+        }
       }
     }
   }
