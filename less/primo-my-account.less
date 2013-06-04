@@ -56,10 +56,15 @@
 .EXLMyAccountContainer{
   background-color: @body-bg;
   .make-row();
+  .EXLMyAccountQueriesMainContainer{
+    margin-left: auto;
+  }
+
 }
 //menu tile floated to the left
 .EXLMyAccountMainMenuTile{
   .make-column(3);
+  margin-top: 2em;
 }
 
 
@@ -91,7 +96,6 @@
       }
     }
   }//end div.EXLMyAccountMainHeader
-  
   //Form
   form{
     input{
@@ -122,10 +126,11 @@
   div.EXLMyPersonalSettings{
     .make-column(7);
   }
-  div.EXLMyAccountTips{
+  div.EXLMyAccountTips,
+  div.EXLMyAccountRanking{
     margin: 0;
-    .make-column(5)
-    
+    .make-column(5);
+    background-image: none;
   }
 }
 

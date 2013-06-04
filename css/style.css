@@ -5867,6 +5867,10 @@ a.list-group-item.active > .badge,
   margin-left: -15px;
 }
 
+.EXLMyAccountContainer .EXLMyAccountQueriesMainContainer {
+  margin-left: auto;
+}
+
 .EXLMyAccountMainMenuTile {
   position: relative;
   float: left;
@@ -5874,6 +5878,7 @@ a.list-group-item.active > .badge,
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 2em;
 }
 
 @media (min-width: 768px) {
@@ -6107,7 +6112,8 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   }
 }
 
-.EXLMyAccountFormContainer div.EXLMyAccountTips {
+.EXLMyAccountFormContainer div.EXLMyAccountTips,
+.EXLMyAccountFormContainer div.EXLMyAccountRanking {
   position: relative;
   float: left;
   width: 100%;
@@ -6115,10 +6121,12 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0;
+  background-image: none;
 }
 
 @media (min-width: 768px) {
-  .EXLMyAccountFormContainer div.EXLMyAccountTips {
+  .EXLMyAccountFormContainer div.EXLMyAccountTips,
+  .EXLMyAccountFormContainer div.EXLMyAccountRanking {
     width: 41.66666666666667%;
   }
 }
@@ -9295,9 +9303,13 @@ a[title="More "] img {
 .EXLLighboxSubmitButton span input,
 .EXLLighboxCancelButton span input {
   display: inline-block;
+  display: block;
+  width: 100%;
   height: auto;
   padding: 0;
   padding: 8px 12px;
+  padding-right: 0;
+  padding-left: 0;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 500;
@@ -9733,6 +9745,10 @@ fieldset[disabled] #EXLCancelPersonalRankData:active,
 fieldset[disabled] #EXLCancelPersonalRankData.active {
   background-color: #a7a9aa;
   border-color: #a7a9aa;
+}
+
+#exliGreyOverlay {
+  max-width: 100%;
 }
 
 #exliWhiteContent {
