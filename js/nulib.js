@@ -1,4 +1,5 @@
 $(function() {
+  "use strict";
   //Adding icons for the next arrows
   $('a.EXLBriefResultsPaginationLinkNext > img').after('<i class="icon-circle-arrow-right"></i>');
   $('a.EXLBriefResultsPaginationLinkPrevious:first-of-type > img').after('<i class="icon-circle-arrow-left"></i>');
@@ -11,7 +12,7 @@ $(function() {
   $('img[alt="Add to e-Shelf"]').after('<i class="icon-bookmark-empty icon-large"></i>').hide();
   $('img[alt="In e-Shelf"]').after('<i class="icon-bookmark icon-large"></i>').hide();
   $('td.EXLMyShelfStar > a').addClass('btn btn-success btn-small').click(function(){
-    if ($(this).data('original-title') == "In e-Shelf"){
+    if ($(this).data('original-title') === "In e-Shelf"){
         $(this).tooltip('destroy').attr('title','Add to e-Shelf').tooltip({title:'Add to e-Shelf'});
     }
     else{
@@ -44,7 +45,7 @@ $(function() {
     else{
       return;
     } 
-  }
+  };
 
   $('div.EXLSearchFieldRibbonFormFields').before('<i class="icon-search icon-large pull-left icon-border"><span class="text-hide">Search Icon</span></i>');
 
@@ -53,7 +54,7 @@ $(function() {
 
   //Create the report a problem link on each of the results.
   var reportAProblem = function(){
-    $results = $('#exlidResultsTable tr.EXLResult');
+    var $results = $('#exlidResultsTable tr.EXLResult');
     $results.each(function(){
       var title = $(this).find('h2.EXLResultTitle').text().trim();
       var id = $(this).find('a.EXLResultRecordId').attr('id');
@@ -62,11 +63,12 @@ $(function() {
       
       var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
 
-      var link = '<a class="report-a-problem pull-right btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-warning-sign"></a>'
+      var link = '<a class="report-a-problem pull-right btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-warning-sign"></a>';
+      
       $(this).find('ul.EXLResultTabs').append(link);
     });
     $('a.report-a-problem').tooltip();
-  }
+  };
 
   reportAProblem();
   
@@ -75,7 +77,9 @@ $(function() {
     $('#exlidMainMenuTile').hide();
     $('div.EXLSearchFieldRibbonBrowseSearchLink').after('<div class="EXLSearchFieldRibbonAtoZLink"/>');
     $('div.EXLSearchFieldRibbonAtoZLink').append($('a.EXLMainMenuITEMATOZ').addClass('EXLSearchFieldRibbonAdvancedTwoLinks'));
-  }
+  };
+
+
   //move the a-to-z link item to the search bar.
   //buildNavBarNav();
   //
@@ -87,16 +91,14 @@ $(function() {
       
       var $link = $('<a href="#expandFacet'+ i +'"><i class="icon-expand-alt icon-large pull-right"></i></a>');
       $link.click(function(){
-        console.lg
         $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
         $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
-        //$(this).find('ol li').toggleClass('EXLAdditionalFacet');
       });
       $(this).find('h4').append($link);
 
       i++;
     });
-  }
+  };
   buildFacetCollapse();
   
   
@@ -107,6 +109,27 @@ $(function() {
 
 
 var dismissSigninPopover = function(){
+  "use strict";
   $('ul.EXLEShelfTileGuest > li.EXLSignOut').popover('hide');
   sessionStorage.setItem('popoverDissmiss', 'true');
-}
+};
+
+
+!function($){
+  "use strict"; // jshint ;_;
+
+  var NuPrimo = function(){
+    this.name = "Steven";
+  };
+
+  NuPrimo.prototype = {
+    init: function(){
+      alert('Hello');
+    }
+  }
+
+
+
+
+}(window.jQuery);
+
