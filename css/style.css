@@ -6131,6 +6131,30 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   }
 }
 
+.EXLMyAccountFormContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet,
+.EXLMyAccountFormContainer div.EXLMyAccountRanking li span.EXLMyAccountTipsBullet {
+  margin-top: 0;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-image: none;
+}
+
+.EXLMyAccountFormContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet:before,
+.EXLMyAccountFormContainer div.EXLMyAccountRanking li span.EXLMyAccountTipsBullet:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+}
+
+.EXLMyAccountFormContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet:before,
+.EXLMyAccountFormContainer div.EXLMyAccountRanking li span.EXLMyAccountTipsBullet:before {
+  content: "\f05a";
+}
+
 .EXLRequestSystemFeedback,
 .EXLMyAccountMainContainer div.EXLMyPersonalSettings div.EXLRequestSystemFeedback {
   padding: 10px 35px 10px 15px;
@@ -6969,7 +6993,7 @@ iframe html {
   }
 }
 
-.EXLMainMenuITEMATOZClose {
+a.EXLMainMenuITEMATOZClose {
   display: none;
 }
 
@@ -8492,8 +8516,13 @@ fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
   border-color: #a7a9aa;
 }
 
-.EXLTabsRibbon div li.EXLResultTab {
+.EXLTabsRibbon div li.EXLResultTab,
+.EXLTabsRibbon div li.EXLResultSelectedTab {
   float: none;
+  height: auto;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 a.report-a-problem {

@@ -97,13 +97,16 @@ var scholarOneSearch = (function(){
   var buildMainMenu = function(){
     //add a button for a dropdown menu;
     
-    var $dropdown = $('<div class="btn-group pull-right "><button class="btn btn-default btn-small dropdown-toggle" data-toggle="dowpdown" type="button"><i class="icon-reorder"></i><span class="text-hide">Main Menu</span></button><ul class="dropdown-menu"/></div>');
+    var $dropdown = $('<div class=" pull-right btn-group"><button class="btn btn-default dropdown-toggle" data-toggle="dowpdown" type="button"><i class="icon-reorder"></i><span class="text-hide">Main Menu</span></button><ul class="dropdown-menu"/></div>');
     var $links  = $('#exlidMainMenuRibbon').find('a:visible');
     $('#exlidMainMenuRibbon').hide();
     $dropdown.find('ul.dropdown-menu').html($links);
     $dropdown.find('a').wrap('<li/>');
     $('#exlidMainMenuRibbon').after($dropdown);
-    $('.dropdown-toggle').dropdown();
+    $('.dropdown-toggle').dropdown().tooltip({
+      title: "Main menu",
+      placement: "right"
+    });
   }
 
   //Build the page functions.
