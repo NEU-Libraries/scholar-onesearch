@@ -7001,10 +7001,6 @@ iframe html {
   }
 }
 
-a.EXLMainMenuITEMATOZClose {
-  display: none;
-}
-
 #exlidHeaderTile {
   position: relative;
   float: left;
@@ -7948,6 +7944,7 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 }
 
 .EXLAlmaAz #exlidSearchRibbon {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -8105,6 +8102,14 @@ fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFiel
 fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.active {
   background-color: #cc0000;
   border-color: #cc0000;
+}
+
+div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
+  display: block;
+}
+
+a.EXLMainMenuITEMATOZClose {
+  display: none !important;
 }
 
 .EXLResultsContainer:before,

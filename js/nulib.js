@@ -108,9 +108,10 @@ var scholarOneSearch = (function(){
       placement: "right"
     });
   }
-  var $activeStatesTargets = $('.EXLFindDBListHeaderAtoZSelected > a');
-  var addActiveStates = function($targets){
-    $targets.addClass('active');
+  
+  var addActiveStates = function(){
+    var $activeStatesTargets = $('.EXLFindDBListHeaderAtoZSelected > a');
+    $activeStatesTargets.addClass('active');
   }
 
   //Build the page functions.
@@ -122,7 +123,7 @@ var scholarOneSearch = (function(){
     addToolTips();
     signinPopover();
     buildMainMenu();
-    addActiveStates($activeStatesTargets);
+    addActiveStates();
     $('#search_field').attr('placeholder','Search...');
   };
 
