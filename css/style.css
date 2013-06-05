@@ -1829,16 +1829,16 @@ fieldset[disabled] .btn-warning.active {
 
 .btn-danger {
   color: #ffffff;
-  background-color: #e67e22;
-  border-color: #e67e22;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
 }
 
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active {
-  background-color: #d67118;
-  border-color: #bf6516;
+  background-color: #e43725;
+  border-color: #d62c1a;
 }
 
 .btn-danger.disabled:hover,
@@ -1853,8 +1853,8 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #e67e22;
-  border-color: #e67e22;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
 }
 
 .btn-success {
@@ -6280,7 +6280,8 @@ body {
 }
 
 #contentEXL,
-body > div {
+body > div,
+#exlidSearchTile.EXLSearchEJorunals {
   padding: 0 1em;
   margin-right: auto;
   margin-left: auto;
@@ -6291,33 +6292,40 @@ body > div {
 
 #contentEXL:before,
 body > div:before,
+#exlidSearchTile.EXLSearchEJorunals:before,
 #contentEXL:after,
-body > div:after {
+body > div:after,
+#exlidSearchTile.EXLSearchEJorunals:after {
   display: table;
   content: " ";
 }
 
 #contentEXL:after,
-body > div:after {
+body > div:after,
+#exlidSearchTile.EXLSearchEJorunals:after {
   clear: both;
 }
 
 #contentEXL:before,
 body > div:before,
+#exlidSearchTile.EXLSearchEJorunals:before,
 #contentEXL:after,
-body > div:after {
+body > div:after,
+#exlidSearchTile.EXLSearchEJorunals:after {
   display: table;
   content: " ";
 }
 
 #contentEXL:after,
-body > div:after {
+body > div:after,
+#exlidSearchTile.EXLSearchEJorunals:after {
   clear: both;
 }
 
 @media (max-width: 756px) {
   #contentEXL,
-  body > div {
+  body > div,
+  #exlidSearchTile.EXLSearchEJorunals {
     padding: 0;
     border: none;
   }
@@ -7821,6 +7829,110 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
   border-bottom: 1px solid #ffffff;
 }
 
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a {
+  display: inline-block;
+  padding: 8px 12px;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.528571429;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #cc0000;
+  border: 1px solid transparent;
+  border-color: #cc0000;
+  border-radius: 4px;
+  border-radius: 3px;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:active,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.disabled,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a[disabled],
+fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class^="icon-"].icon-large,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class^="icon-"].icon-spin,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class^="icon-"].pull-left.icon-2x,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class*=" icon-"].pull-left.icon-2x,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class^="icon-"].pull-right.icon-2x,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class^="icon-"].icon-spin.icon-large,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a .badge {
+  position: relative;
+  top: -1px;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:active,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.active {
+  background-color: #b30000;
+  border-color: #990000;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.disabled:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a[disabled]:hover,
+fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.disabled:focus,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a[disabled]:focus,
+fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.disabled:active,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a[disabled]:active,
+fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:active,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.disabled.active,
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a[disabled].active,
+fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.active {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li {
   width: auto;
   line-height: inherit;
@@ -7831,8 +7943,168 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
   color: white;
 }
 
-.EXLSearchFieldRibbon i.icon-search {
-  color: #ecf0f1;
+.EXLAlmaAz .EXLSearchFieldRibbonFormFields {
+  width: 93%;
+}
+
+.EXLAlmaAz #exlidSearchRibbon {
+  margin-bottom: 0;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals {
+  height: auto;
+  background: none;
+  background-color: #FFF;
+  background-image: none;
+  border-top: none;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 0;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset {
+    width: 100%;
+  }
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset label {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 0;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink {
+    width: 25%;
+  }
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a {
+  display: inline-block;
+  padding: 8px 12px;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.528571429;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #cc0000;
+  border: 1px solid transparent;
+  border-color: #cc0000;
+  border-radius: 4px;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:hover,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:active,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.disabled,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a[disabled],
+fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class^="icon-"].icon-large,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class^="icon-"].icon-spin,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class^="icon-"].pull-left.icon-2x,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class*=" icon-"].pull-left.icon-2x,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class^="icon-"].pull-right.icon-2x,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class^="icon-"].icon-spin.icon-large,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a .badge {
+  position: relative;
+  top: -1px;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:hover,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:focus,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:active,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.active {
+  background-color: #b30000;
+  border-color: #990000;
+}
+
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.disabled:hover,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a[disabled]:hover,
+fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:hover,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.disabled:focus,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a[disabled]:focus,
+fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:focus,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.disabled:active,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a[disabled]:active,
+fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:active,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.disabled.active,
+.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a[disabled].active,
+fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.active {
+  background-color: #cc0000;
+  border-color: #cc0000;
 }
 
 .EXLResultsContainer:before,

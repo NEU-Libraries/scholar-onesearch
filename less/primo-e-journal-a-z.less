@@ -1,0 +1,68 @@
+// ------- A-Z list ----------
+#exlidSearchTile.EXLSearchEJorunals {
+  .EXLSearchEJorunalsListAtoZ{
+   width: auto;
+   ul{
+    .nav;
+    //Make the A-Z Link nav fit 12 column spans
+    & > li > a{
+      .btn;
+      .btn-small;
+      .btn-primary;
+    }
+    & > li.EXLFindDBListHeaderAtoZSelected > a{
+      .active;
+    }
+   }
+   li{
+    width: auto;
+    line-height: inherit;
+   }
+   li a{
+    color: white;
+    width: auto;
+    }
+  }
+}
+
+//Selecting the body for the search field styles scope
+.EXLAlmaAz{
+  .EXLSearchFieldRibbonFormFields{
+    width: 93%;
+  }
+  #exlidSearchRibbon{
+    margin-bottom: 0;
+  }
+  #exlidSearchTile.EXLSearchEJorunals{
+    background: none;
+    background-color: #FFF;
+    background-image: none;
+    border-top: none; 
+    height: auto;
+    //reset the fieldset to be a navbar again
+    fieldset{
+      margin-left: auto;
+      margin-top: 0;
+      .make-column(12);
+      label{
+        .hide-text();
+      }
+    }//end field set
+
+    //Return to simple search link
+    .EXLSearchFieldRibbonSimpleSearchLink{
+      margin-top: 0;
+      margin-left: auto;
+      .make-column(3);
+      a{
+        .btn;
+        .btn-primary;
+        .btn-small;
+        .border-top-radius(0);
+      }
+    }
+  }
+
+
+}
+
