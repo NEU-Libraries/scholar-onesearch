@@ -59,24 +59,34 @@ td.EXLMyShelfStar{
       ul{
         .dropdown-menu;
         display: block;
-        margin-left: 5.4em;
-        li.EXLSortByLink{
-          color: @text-color;
-          background-color: #FFFFFF;
-          &:hover, &:focus{
-            background-color:  #f1f1f1;
-          }
+        li.EXLSortByLink,
+        li.EXLSortByLinkSelected{
+          .reset;
+          line-height: inherit;
+          color: inherit;
         }
-        //this is the selected scope or the active scope.
+        li.EXLSortByLink a,
         li.EXLSortByLinkSelected{
           display: block;
           padding: 3px 20px;
           clear: both;
           font-weight: normal;
-          line-height: 1.528571429;
-          color: #333333;
-          white-space: nowrap;
-          background-color:  #f1f1f1;
+          line-height: @line-height-base;
+          color: @dropdown-link-color;
+          white-space: nowrap; // prevent links from randomly breaking onto new lines
+          &:hover, &:focus{
+            text-decoration: none;
+            color: @dropdown-link-hover-color;
+            #gradient > .vertical(@dropdown-link-hover-bg, darken(@dropdown-link-hover-bg, 5%));
+
+          }
+        }
+        //this is the selected scope or the active scope.
+        li.EXLSortByLinkSelected{
+          color: @dropdown-link-active-color;
+          text-decoration: none;
+          outline: 0;
+          #gradient > .vertical(@dropdown-link-active-bg, darken(@dropdown-link-active-bg, 5%));
         }
       }
     }
@@ -123,10 +133,32 @@ td.EXLMyShelfStar{
 }
 
 //Facet refinement
+.EXLRefinementRibbonWithExclude{
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  
+  span.EXLRemoveRefinement{
+    padding: 5px 8px;
+    color: inherit;
+    background-color: #FFF;
+    border-radius: @border-radius-small;
+    text-transform: uppercase;
+    a{
+      padding: 4px;
+      text-transform: none;
+      strong{
+        font-weight: 500;
+      }
+    }
 
-img[alt="remove"]{
-  .invisible;
+  }
+  div a:hover{
+    color: inherit;
+  }
 }
+
+
 
 //------- Results footer ----
 .EXLResultsFooter{
@@ -369,6 +401,7 @@ a[title="show send to options"]{
   margin: 0;
   }
 }
+
 
 
 

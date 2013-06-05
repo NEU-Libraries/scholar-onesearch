@@ -88,6 +88,7 @@ var scholarOneSearch = (function(){
     $('.EXLFacetSaveSearchAction > a').before('<i class="icon-save"/>');
     $('.EXLFacetSaveToEShelfAction > a').before('<i class="icon-bookmark"/>');
     $('img[src="../images/icon_popout_tab.png"]').hide().after('<i class="icon-external-link"></i>');
+    $('a.EXLFirstRefinementElement').find('#removeFacet').hide().before('<i class="icon-remove-circle close"/>');
   };
 
   var addToolTips = function(){
