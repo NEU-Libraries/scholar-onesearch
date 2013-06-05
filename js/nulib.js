@@ -117,7 +117,7 @@ var scholarOneSearch = (function(){
   //handle the radio clicks of the dropdown menus on Primo 
   
   var handleRadio = function(){
-    var $radios = [$('#scopesListContainer').find('input[name="searchField"][type="radio"]'), $('#scopesListContainer').find('input[type="radio"]')];
+    var $radios = $('#scopesListContainer').find('input[type="radio"]');
     $radios.click(function(){
       $radios.removeAttr('checked');
     });
