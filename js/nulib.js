@@ -114,6 +114,15 @@ var scholarOneSearch = (function(){
     $activeStatesTargets.addClass('active');
   }
 
+  //handle the radio clicks of the dropdown menus on Primo 
+  
+  var handleRadio = function(){
+    var $radios = [$('#scopesListContainer').find('input[name="searchField"][type="radio"]'), $('#scopesListContainer').find('input[type="radio"]')];
+    $radios.click(function(){
+      $radios.removeAttr('checked');
+    });
+  }
+
   //Build the page functions.
   var init = function(){
     eShelfIcons();
@@ -124,6 +133,7 @@ var scholarOneSearch = (function(){
     signinPopover();
     buildMainMenu();
     addActiveStates();
+    handleRadio();
     $('#search_field').attr('placeholder','Search...');
   };
 
