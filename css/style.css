@@ -9729,14 +9729,55 @@ a[title="show send to options"] img {
   border-bottom-left-radius: 4px;
 }
 
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer h4 {
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a {
+  display: block;
+  padding: 10px 15px;
+  background-color: #fcfcfc;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:before,
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  display: table;
+  content: " ";
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  clear: both;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:before,
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  display: table;
+  content: " ";
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  clear: both;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:hover,
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:focus {
+  text-decoration: none;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:last-of-type {
+  border-bottom: 1px #dddddd solid;
+}
+
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a h4 {
+  display: block;
+  float: left;
+  max-width: 90%;
+  padding: 0;
   font-size: 13.5px;
   background-color: #fcfcfc;
   border: none;
-}
-
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer h4:last-of-type {
-  border-bottom: 1px #dddddd solid;
+  border-bottom: none;
 }
 
 .EXLFacetContainer {
@@ -9822,8 +9863,10 @@ a[title="show send to options"] img {
 
 .EXLFacetContainer ol.EXLFacetsList li a {
   display: inline-block;
-  width: 68%;
+  width: 61%;
+  overflow: hidden;
   font-size: 13px;
+  text-overflow: ellipsis;
 }
 
 .EXLFacetContainer ol.EXLFacetsList li span {
@@ -9834,6 +9877,7 @@ a[title="show send to options"] img {
   clear: right;
   font-size: 11px;
   text-align: right;
+  text-overflow: ellipsis;
 }
 
 .EXLFacetContainer div.EXLFacetActionsV2 {
@@ -9890,7 +9934,8 @@ a[title="More "] img {
   background-image: none;
 }
 
-.EXLLightbox {
+.EXLLightbox,
+#exlidFindDBTile {
   position: relative;
   float: none;
   width: auto;
@@ -9912,7 +9957,10 @@ a[title="More "] img {
           background-clip: padding-box;
 }
 
-.EXLLightbox div.EXLLightboxHeader {
+.EXLLightbox div.EXLLightboxHeader,
+#exlidFindDBTile div.EXLLightboxHeader,
+.EXLLightbox div.EXLFindDBHeader,
+#exlidFindDBTile div.EXLFindDBHeader {
   float: none;
   width: auto;
   height: auto;
@@ -9926,7 +9974,10 @@ a[title="More "] img {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle {
+.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle,
+#exlidFindDBTile div.EXLLightboxHeader span.EXLLightboxHeaderTitle,
+.EXLLightbox div.EXLFindDBHeader span.EXLLightboxHeaderTitle,
+#exlidFindDBTile div.EXLFindDBHeader span.EXLLightboxHeaderTitle {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
@@ -9934,49 +9985,100 @@ a[title="More "] img {
   line-height: 1.528571429;
 }
 
-.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle small {
+.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle small,
+#exlidFindDBTile div.EXLLightboxHeader span.EXLLightboxHeaderTitle small,
+.EXLLightbox div.EXLFindDBHeader span.EXLLightboxHeaderTitle small,
+#exlidFindDBTile div.EXLFindDBHeader span.EXLLightboxHeaderTitle small {
   font-weight: normal;
   line-height: 1;
   color: #999999;
 }
 
-.EXLLightbox div.EXLLightboxHeader a.EXLLightboxHeaderClose {
+.EXLLightbox div.EXLLightboxHeader a.EXLLightboxHeaderClose,
+#exlidFindDBTile div.EXLLightboxHeader a.EXLLightboxHeaderClose,
+.EXLLightbox div.EXLFindDBHeader a.EXLLightboxHeaderClose,
+#exlidFindDBTile div.EXLFindDBHeader a.EXLLightboxHeaderClose {
   margin-top: 0.2em;
   margin-right: 0.2em;
 }
 
-.EXLLightbox div.EXLLightboxFormContainer {
+.EXLLightbox div.EXLLightboxFormContainer,
+#exlidFindDBTile div.EXLLightboxFormContainer,
+.EXLLightbox #searchDbForm,
+#exlidFindDBTile #searchDbForm,
+.EXLLightbox #searchDbFormTabs,
+#exlidFindDBTile #searchDbFormTabs {
   position: relative;
   padding: 20px;
   font-size: inherit;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after {
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:before,
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
   display: table;
   content: " ";
 }
 
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after {
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
   clear: both;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after {
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:before,
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
   display: table;
   content: " ";
 }
 
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after {
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
   clear: both;
 }
 
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow .row {
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow .row,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow .row,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow .row,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow .row,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow .row,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow .row {
   margin-right: -15px;
   margin-left: -15px;
 }
 
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection {
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection {
   float: none;
   width: auto;
   height: auto;
@@ -9987,31 +10089,71 @@ a[title="More "] img {
 }
 
 .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after {
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
   display: table;
   content: " ";
 }
 
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after {
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
   clear: both;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after {
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
   display: table;
   content: " ";
 }
 
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after {
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
   clear: both;
 }
 
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection .row {
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection .row,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection .row,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection .row,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection .row,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection .row,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection .row {
   margin-right: -15px;
   margin-left: -15px;
 }
 
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
   position: relative;
   float: left;
   width: 100%;
@@ -10022,12 +10164,18 @@ a[title="More "] img {
 }
 
 @media (min-width: 768px) {
-  .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
+  .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  #exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  .EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  #exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  .EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  #exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
     width: 50%;
   }
 }
 
-.EXLLightbox .EXLLightboxFormButtons {
+.EXLLightbox .EXLLightboxFormButtons,
+#exlidFindDBTile .EXLLightboxFormButtons {
   padding: 19px 20px 20px;
   padding-right: 0;
   padding-left: 0;
@@ -10040,35 +10188,44 @@ a[title="More "] img {
 }
 
 .EXLLightbox .EXLLightboxFormButtons:before,
-.EXLLightbox .EXLLightboxFormButtons:after {
+#exlidFindDBTile .EXLLightboxFormButtons:before,
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
   display: table;
   content: " ";
 }
 
-.EXLLightbox .EXLLightboxFormButtons:after {
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
   clear: both;
 }
 
 .EXLLightbox .EXLLightboxFormButtons:before,
-.EXLLightbox .EXLLightboxFormButtons:after {
+#exlidFindDBTile .EXLLightboxFormButtons:before,
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
   display: table;
   content: " ";
 }
 
-.EXLLightbox .EXLLightboxFormButtons:after {
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
   clear: both;
 }
 
-.EXLLightbox .EXLLightboxFormButtons .btn + .btn {
+.EXLLightbox .EXLLightboxFormButtons .btn + .btn,
+#exlidFindDBTile .EXLLightboxFormButtons .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
 }
 
-.EXLLightbox .EXLLightboxFormButtons .btn-group .btn + .btn {
+.EXLLightbox .EXLLightboxFormButtons .btn-group .btn + .btn,
+#exlidFindDBTile .EXLLightboxFormButtons .btn-group .btn + .btn {
   margin-left: -1px;
 }
 
-.EXLLightbox .EXLLightboxFormButtons .btn-block + .btn-block {
+.EXLLightbox .EXLLightboxFormButtons .btn-block + .btn-block,
+#exlidFindDBTile .EXLLightboxFormButtons .btn-block + .btn-block {
   margin-left: 0;
 }
 
@@ -10565,7 +10722,94 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
 }
 
 #exliWhiteContent {
-  display: none;
+  background-color: transparent;
+  border-right: none;
+  border-left: none;
+}
+
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:before,
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  clear: both;
+}
+
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:before,
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  display: table;
+  content: " ";
+}
+
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  clear: both;
+}
+
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1,
+#exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1,
+  #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 {
+    width: 50%;
+  }
+}
+
+#exlidFindDBContainer {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  clear: none;
+  background-color: transparent;
+  border: none;
+}
+
+#exlidFindDBTile {
+  float: none;
+  width: auto;
+  height: auto;
+  min-height: 650px;
+  padding: 0;
+  margin: 0;
+  clear: none;
+  font-size: inherit;
+  border: none;
+}
+
+.EXLFindDBHeader h1 {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  clear: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  border: none;
+}
+
+.EXLFindDBHeader h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
 }
 
 a.EXLLightboxHeaderClose {

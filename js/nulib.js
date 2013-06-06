@@ -48,12 +48,13 @@ var scholarOneSearch = (function(){
     //Creating a collapse group.
     $('#facetList > .EXLFacetContainer').each(function(){
       
-      var $link = $('<a href="#expandFacet'+ i +'"><i class="icon-expand-alt icon-large pull-right"></i></a>');
+      var $link = $('<a href="#expandFacet'+ i +'"/></a>');
+      var $icon = $('<i class="icon-expand-alt icon-large pull-right"></i>');
       $link.click(function(){
         $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
         $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
       });
-      $(this).find('h4').append($link);
+      $(this).find('h4').wrap($link).after($icon);
       i++;
     });
   };
@@ -123,6 +124,7 @@ var scholarOneSearch = (function(){
       $radios.removeAttr('checked');
     });
   }
+
 
   //Build the page functions.
   var init = function(){

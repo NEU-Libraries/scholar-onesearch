@@ -16,14 +16,29 @@
         margin-bottom: 15px;
         .border-bottom-radius(@panel-border-radius);
       }
-      h4{
-        border: none;
+      > a{
         background-color: #fcfcfc;
-        font-size: 13.5px;
+        padding: 10px 15px;
+        display: block;
+        .make-row();
+        &:hover,
+        &:focus{
+          text-decoration: none;
+        }
         &:last-of-type{
           border-bottom: 1px @list-group-border solid;
         }
-      }
+        h4{
+          border: none;
+          border-bottom: none;
+          background-color: #fcfcfc;
+          font-size: 13.5px;
+          display: block;
+          padding: 0;
+          max-width: 90%;
+          float: left;
+        }//end h4
+      }//end a
     }
   }
 }
@@ -72,7 +87,9 @@
       a{
         font-size: 13px;
         display: inline-block;
-        width: 68%;
+        width: 61%;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
       span{
         float: right;
@@ -82,6 +99,7 @@
         display: inline-block;
         max-width: 24%;
         overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }

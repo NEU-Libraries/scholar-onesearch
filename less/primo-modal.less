@@ -1,8 +1,11 @@
-.EXLLightbox{
+.EXLLightbox,
+#exlidFindDBTile{
   .reset;
-  .modal-content;
   background-image: none;
-  div.EXLLightboxHeader{
+  .modal-content;
+  
+  div.EXLLightboxHeader,
+  div.EXLFindDBHeader{
     .reset;
     background-image: none;
     .modal-header;
@@ -16,7 +19,9 @@
       margin-right: 0.2em;
     }
   }
-  div.EXLLightboxFormContainer{
+  div.EXLLightboxFormContainer,
+  #searchDbForm,
+  #searchDbFormTabs{
     font-size: inherit;
     .modal-body;
     div.EXLLightboxFormRow{
@@ -78,6 +83,39 @@
 }
 
 #exliWhiteContent{
-  display: none;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+
 }
+
+#exlidFindDBRibbon{
+  div.EXLFindDBFieldRibbon{
+    .make-row();
+  }
+  div.EXLFindDBFieldRibbonFormFieldsGroup1,
+  div.EXLFindDBFieldRibbonFormFieldsGroup2{
+    .make-column(6);
+  }
+}
+
+
+#exlidFindDBContainer{
+  .reset;
+  background-color: transparent;
+}
+#exlidFindDBTile{
+  .reset;
+  font-size: inherit;
+  min-height: 650px;
+
+}
+
+.EXLFindDBHeader h1{
+  .reset;
+  .h4;
+  color: inherit;
+}
+
+
 
