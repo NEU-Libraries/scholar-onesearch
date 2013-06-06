@@ -540,3 +540,34 @@
     }
   }
 }
+
+
+
+// Font-Awesome Icon Generation
+// ----------------------------------------------------
+
+
+.make-font-aweseome-eshelf(@content){
+  .btn;
+  .btn-small;
+  .btn-default;
+  margin-top: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  text-decoration: none !important;
+  background-image: none !important;
+  font-family: FontAwesome !important;;
+  font-weight: normal !important;
+  font-style: normal!important;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em; // fixes ie7 issues
+  &:before{
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+    content: @content;
+    font-size: 18px !important;
+    margin-right: 0.2em;
+  }
+}
+
