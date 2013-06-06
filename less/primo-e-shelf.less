@@ -1,25 +1,82 @@
 
 //modernizr scope
-.svg{
-  .MyAccount{
-    .eShelf_title + .draggable + noscript + table{
-      font-size: inherit !important;
-      vertical-align: middle !important;
-      td{
-        vertical-align: middle;
+.svg .MyAccount .eShelf_title + .draggable + noscript + table{
+  font-size: inherit !important;
+  vertical-align: middle !important;
+  font-family: @font-family-base !important;
+  td{
+    vertical-align: middle;
+  }
+  .folder_details h5{
+    .h5;
+    font-size: 14px !important;
+  }
+  .folder_details a.eShelf_cut_but{
+    .make-font-awesome-eshelf("\f0c4");
+  }
+  .folder_details a.eShelf_copy_but {
+    .make-font-awesome-eshelf("\f0c5");
+  }
+  .folder_details a.eShelf_paste_but {
+    .make-font-awesome-eshelf("\f0ea");
+  }      
+  .folder_details a.eShelf_delete_but {
+    .make-font-awesome-eshelf("\f00d");
+  }
+  a.eShelf_email{
+    .make-font-awesome-eshelf("\f003");
+  }
+  a.eShelf_print{
+    .make-font-awesome-eshelf("\f02f");
+  }
+  .folder_details .newManage_buts li{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select{
+    font-size: 14px !important;
+    border: 1px solid @input-border;
+    .make-column(8);
+  }
+  .EXLEShelfFolderContentsTable{
+    
+    tr:first-of-type{
+      .make-row();
+      td:first-of-type{
+        .make-column(12);
       }
-      .folder_details h5{
-        .h5;
-        font-size: 14px !important;
-      }
-      .folder_details a.eShelf_cut_but{
-        .make-font-aweseome-eshelf("\f0c4");
-      }
-      .folder_details a.eShelf_copy_but {
-        .make-font-aweseome-eshelf("\f0c5");
+      td.buttonsUl{
+        .make-column(12);
+        .EXLEShelfFolderContentsSendButtonList,
+        .newManage_buts{
+          display: block;
+          float: left;
+        }
+        .folder_details table.auto{
+          width: 100% !important;
+          td.ulTd{
+            .make-column(10);
+            padding-left: 0;
+          }
+        }
       }
     }
   }
-
+  .folder_details label{
+    .hide-text();
+  }
+  .folder_details table.auto {
+    width: 100%!important;
+  }
+  .buttonGo{
+    .make-column(4);
+    a{
+      .btn;
+      .btn-small;
+      .btn-primary;
+    }
+  }
 }
+
+
 

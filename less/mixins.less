@@ -547,10 +547,10 @@
 // ----------------------------------------------------
 
 
-.make-font-aweseome-eshelf(@content){
+.make-font-awesome-eshelf(@content){
   .btn;
   .btn-small;
-  .btn-default;
+  .btn-link;
   margin-top: 0 !important;
   width: auto !important;
   height: auto !important;
@@ -568,6 +568,12 @@
     content: @content;
     font-size: 18px !important;
     margin-right: 0.2em;
+  }
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: underline;
+    background-color: transparent;
   }
 }
 
