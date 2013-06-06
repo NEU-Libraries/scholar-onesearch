@@ -10831,16 +10831,7 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
 }
 
 .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details h5 {
-  font-size: 14px;
-  font-size: 14px !important;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details h5 small {
-  font-weight: normal;
-  line-height: 1;
-  color: #999999;
+  display: none !important;
 }
 
 .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but {
@@ -11679,11 +11670,12 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo {
-    width: 33.33333333333333%;
+    width: 16.666666666666664%;
   }
 }
 
@@ -11691,7 +11683,9 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   display: inline-block;
   padding: 8px 12px;
   padding: 5px 10px;
+  margin-top: 4px;
   margin-bottom: 0;
+  margin-left: 4px;
   font-size: 14px;
   font-size: 12px;
   font-weight: 500;
