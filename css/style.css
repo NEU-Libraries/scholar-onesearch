@@ -10827,7 +10827,47 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
 }
 
 .svg .MyAccount .eShelf_title + noscript + table td {
-  vertical-align: middle;
+  vertical-align: top;
+}
+
+.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:before,
+.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
+  display: table;
+  content: " ";
+}
+
+.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
+  clear: both;
+}
+
+.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:before,
+.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
+  display: table;
+  content: " ";
+}
+
+.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
+  clear: both;
+}
+
+.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.svg .MyAccount .eShelf_title + noscript + table td.folder_details {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
+    width: 75%;
+  }
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details h5 {
@@ -11651,6 +11691,10 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   }
 }
 
+.svg .MyAccount .eShelf_title + noscript + table .folder_details .added {
+  width: auto;
+}
+
 .svg .MyAccount .eShelf_title + noscript + table .folder_details label {
   font: 0/0 a;
   color: transparent;
@@ -11783,6 +11827,58 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:
 fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
   background-color: #cc0000;
   border-color: #cc0000;
+}
+
+.svg .MyAccount .eShelf_title + noscript + table .noteBubble h3 {
+  height: 47px;
+}
+
+.svg .MyAccount .eShelf_title + noscript + table .tableBorder {
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+
+.draggable {
+  width: 35px;
+  padding: 7px 10px;
+  margin: 10px auto -13px;
+  color: #cc0000;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  border: solid 1px #f6f6f6;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+}
+
+.folders_new {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 1px solid #dddddd;
+}
+
+@media (min-width: 768px) {
+  .folders_new {
+    width: 25%;
+  }
+}
+
+.folders_new ol {
+  margin: 0!important;
+}
+
+.folders_new li a {
+  color: #cc0000;
+}
+
+.folders_new li a:hover,
+.folders_new li a:focus {
+  color: #800000;
 }
 
 a.EXLLightboxHeaderClose {

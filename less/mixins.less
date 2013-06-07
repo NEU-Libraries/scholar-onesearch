@@ -52,6 +52,13 @@
   .size(@size, @size);
 }
 
+.border-not-top(@border){
+  border-right: @border;
+  border-bottom: @border;
+  border-left: @border;
+}
+
+
 // Placeholder text
 .placeholder(@color: @input-color-placeholder) {
   &:-moz-placeholder            { color: @color; } // Firefox 4-18

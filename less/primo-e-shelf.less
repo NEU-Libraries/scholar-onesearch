@@ -5,7 +5,13 @@
   vertical-align: middle !important;
   font-family: @font-family-base !important;
   td{
-    vertical-align: middle;
+    vertical-align: top;
+  }
+  tr:first-of-type{
+    .make-row();
+  }
+  td.folder_details{
+    .make-column(9);
   }
   .folder_details h5{
     display: none !important;
@@ -61,6 +67,9 @@
       }
     }
   }
+  .folder_details .added{
+    width: auto;
+  }
   .folder_details label{
     .hide-text();
   }
@@ -78,8 +87,40 @@
       margin-left: 4px;
     }
   }
+  .noteBubble h3{
+    height: 47px;
+  }
 
+  .tableBorder{
+    .border-not-top( 1px solid @table-border-color);
+  }
 }
 
+.draggable{
+  text-align: center;
+  color: @link-color;
+  .border-top-radius(35px);
+  cursor: pointer;
+  background-color: @primo-defualt-gray;
+  border: solid 1px @primo-defualt-gray;
+  padding: 7px @padding-small-horizontal;
+  width: 35px;
+  margin: 10px auto -13px;
+}
+
+.folders_new{
+  .make-column(3);
+  border: 1px solid @table-border-color;
+  ol{
+    margin: 0!important;
+  }
+  li a{
+    color: @link-color;
+    &:hover,
+    &:focus{
+      color: @link-hover-color;
+    }
+  }
+}
 
 
