@@ -125,11 +125,17 @@ var scholarOneSearch = (function(){
     });
   }
 
+  // Build the draggable handle.
+  var draggable = function(){
+    $('#draggable').html('<i class="icon-resize-vertical"></i>').find('img').hide();
+    $('#demoLibId').before($('#draggable'));
+  }
 
 
   //Build the page functions.
   var init = function(){
     $('#search_field').attr('placeholder','Search...');
+    draggable();
     eShelfIcons();
     buildFacetCollapse();
     reportAProblem();

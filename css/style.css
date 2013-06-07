@@ -10820,21 +10820,21 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
   color: #999999;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table {
+.svg .MyAccount .eShelf_title + noscript + table {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: inherit !important;
   vertical-align: middle !important;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table td {
+.svg .MyAccount .eShelf_title + noscript + table td {
   vertical-align: middle;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details h5 {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details h5 {
   display: none !important;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
   display: inline-block;
   width: auto !important;
   height: auto !important;
@@ -10871,29 +10871,29 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but.active {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:active,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but.disabled,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.disabled,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled],
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -10902,42 +10902,42 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-right.icon-2x {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-right.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin.icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin.icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but .badge {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but .badge {
   position: relative;
   top: -1px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled]:hover,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled]:focus,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #333333;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:before {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:before {
   display: inline-block;
   margin-right: 0.2em;
   font-size: 18px !important;
@@ -10946,14 +10946,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   speak: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_cut_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #800000;
   text-decoration: underline;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
   display: inline-block;
   width: auto !important;
   height: auto !important;
@@ -10990,29 +10990,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but.active {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:active,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but.disabled,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.disabled,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled],
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -11021,42 +11021,42 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-right.icon-2x {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-right.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin.icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin.icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but .badge {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but .badge {
   position: relative;
   top: -1px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled]:hover,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled]:focus,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #333333;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:before {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:before {
   display: inline-block;
   margin-right: 0.2em;
   font-size: 18px !important;
@@ -11065,14 +11065,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   speak: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_copy_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #800000;
   text-decoration: underline;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
   display: inline-block;
   width: auto !important;
   height: auto !important;
@@ -11109,29 +11109,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but.active {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:active,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but.disabled,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.disabled,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled],
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -11140,42 +11140,42 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-right.icon-2x {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-right.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin.icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin.icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but .badge {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but .badge {
   position: relative;
   top: -1px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled]:hover,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled]:focus,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #333333;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:before {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:before {
   display: inline-block;
   margin-right: 0.2em;
   font-size: 18px !important;
@@ -11184,14 +11184,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   speak: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_paste_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #800000;
   text-decoration: underline;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
   display: inline-block;
   width: auto !important;
   height: auto !important;
@@ -11228,29 +11228,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but.active {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:active,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but.disabled,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.disabled,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled],
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -11259,42 +11259,42 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-right.icon-2x {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-right.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin.icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin.icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but .badge {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but .badge {
   position: relative;
   top: -1px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled]:hover,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled]:focus,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #333333;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:before {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:before {
   display: inline-block;
   margin-right: 0.2em;
   font-size: 18px !important;
@@ -11303,14 +11303,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   speak: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details a.eShelf_delete_but:focus {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
+.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #800000;
   text-decoration: underline;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email {
   display: inline-block;
   width: auto !important;
   height: auto !important;
@@ -11347,29 +11347,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email.active {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:active,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email.disabled,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email.disabled,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled],
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -11378,42 +11378,42 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class*=" icon-"].icon-large {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-large,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class*=" icon-"].icon-spin {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class*=" icon-"].pull-right.icon-2x {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-right.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email [class*=" icon-"].icon-spin.icon-large {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin.icon-large,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email .badge {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email .badge {
   position: relative;
   top: -1px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled]:hover,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled]:focus,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #333333;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:before {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:before {
   display: inline-block;
   margin-right: 0.2em;
   font-size: 18px !important;
@@ -11422,14 +11422,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   speak: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_email:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #800000;
   text-decoration: underline;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print {
   display: inline-block;
   width: auto !important;
   height: auto !important;
@@ -11466,29 +11466,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print.active {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:active,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print.disabled,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print.disabled,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled],
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -11497,42 +11497,42 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class*=" icon-"].icon-large {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-large,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class*=" icon-"].icon-spin {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class*=" icon-"].pull-right.icon-2x {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-right.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print [class*=" icon-"].icon-spin.icon-large {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin.icon-large,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print .badge {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print .badge {
   position: relative;
   top: -1px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled]:hover,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled]:focus,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #333333;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:before {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:before {
   display: inline-block;
   margin-right: 0.2em;
   font-size: 18px !important;
@@ -11541,19 +11541,19 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   speak: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table a.eShelf_print:focus {
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
+.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #800000;
   text-decoration: underline;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details .newManage_buts li {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details .newManage_buts li {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
   position: relative;
   float: left;
   width: 100%;
@@ -11565,37 +11565,37 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
 }
 
 @media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
+  .svg .MyAccount .eShelf_title + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
     width: 66.66666666666666%;
   }
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:before,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:before,
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
   display: table;
   content: " ";
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
   clear: both;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:before,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:before,
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
   display: table;
   content: " ";
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
   clear: both;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type .row {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type .row {
   margin-right: -15px;
   margin-left: -15px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
   position: relative;
   float: left;
   width: 100%;
@@ -11605,12 +11605,12 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
 }
 
 @media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
+  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
     width: 100%;
   }
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl {
   position: relative;
   float: left;
   width: 100%;
@@ -11620,22 +11620,22 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
 }
 
 @media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl {
+  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl {
     width: 100%;
   }
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .EXLEShelfFolderContentsSendButtonList,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .newManage_buts {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .EXLEShelfFolderContentsSendButtonList,
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .newManage_buts {
   display: block;
   float: left;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto {
   width: 100% !important;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto td.ulTd {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto td.ulTd {
   position: relative;
   float: left;
   width: 100%;
@@ -11646,12 +11646,12 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
 }
 
 @media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + .draggable + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto td.ulTd {
+  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto td.ulTd {
     width: 83.33333333333334%;
   }
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details label {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details label {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -11659,11 +11659,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   border: 0;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .folder_details table.auto {
+.svg .MyAccount .eShelf_title + noscript + table .folder_details table.auto {
   width: 100%!important;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo {
   position: relative;
   float: left;
   width: 100%;
@@ -11674,12 +11674,12 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
 }
 
 @media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo {
+  .svg .MyAccount .eShelf_title + noscript + table .buttonGo {
     width: 16.666666666666664%;
   }
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a {
   display: inline-block;
   padding: 8px 12px;
   padding: 5px 10px;
@@ -11703,29 +11703,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
   border-radius: 3px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:focus {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:focus {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.active {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.disabled,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled],
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -11734,53 +11734,53 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table
           box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class*=" icon-"].icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class*=" icon-"].icon-spin {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-spin,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class*=" icon-"].pull-right.icon-2x {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].pull-left.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].pull-right.icon-2x,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a [class*=" icon-"].icon-spin.icon-large {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-spin.icon-large,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a .badge {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a .badge {
   position: relative;
   top: -1px;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:focus,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.active {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
   background-color: #b30000;
   border-color: #990000;
 }
 
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.disabled:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:hover,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.disabled:focus,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:focus,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.disabled:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a[disabled]:active,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a:active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.disabled.active,
-.svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a[disabled].active,
-fieldset[disabled] .svg .MyAccount .eShelf_title + .draggable + noscript + table .buttonGo a.active {
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:hover,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:hover,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:focus,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:focus,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:active,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:active,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled.active,
+.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled].active,
+fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
   background-color: #cc0000;
   border-color: #cc0000;
 }
