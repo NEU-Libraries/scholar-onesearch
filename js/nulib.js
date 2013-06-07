@@ -90,6 +90,7 @@ var scholarOneSearch = (function(){
     $('.EXLFacetSaveToEShelfAction > a').before('<i class="icon-bookmark"/>');
     $('img[src="../images/icon_popout_tab.png"]').hide().after('<i class="icon-external-link"></i>');
     $('a.EXLFirstRefinementElement').find('#removeFacet').hide().before('<i class="icon-remove-circle close"/>');
+    
   };
 
   var addToolTips = function(){
@@ -140,12 +141,13 @@ var scholarOneSearch = (function(){
     buildFacetCollapse();
     reportAProblem();
     buildIcons();
-    addToolTips();
-    signinPopover();
-    buildMainMenu();
+    
+    
     addActiveStates();
     handleRadio();
-
+    addToolTips();
+    signinPopover();
+    //buildMainMenu();
   };
 
   return {

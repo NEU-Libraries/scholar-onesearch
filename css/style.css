@@ -1174,6 +1174,197 @@ address {
   float: right;
 }*/
 
+table {
+  max-width: 100%;
+  background-color: transparent;
+}
+
+th {
+  text-align: left;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.table thead > tr > th,
+.table tbody > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td {
+  padding: 8px;
+  line-height: 1.528571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table thead > tr > th {
+  vertical-align: bottom;
+}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+.table-condensed thead > tr > th,
+.table-condensed tbody > tr > th,
+.table-condensed thead > tr > td,
+.table-condensed tbody > tr > td {
+  padding: 4px 5px;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  border-left: 0;
+  border-radius: 4px;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td {
+  border-left: 1px solid #dddddd;
+}
+
+.table-bordered > caption + thead > tr:first-child th,
+.table-bordered > caption + tbody > tr:first-child th,
+.table-bordered > caption + tbody > tr:first-child td,
+.table-bordered > colgroup + thead > tr:first-child th,
+.table-bordered > colgroup + tbody > tr:first-child th,
+.table-bordered > colgroup + tbody > tr:first-child td,
+.table-bordered > thead:first-child > tr:first-child th,
+.table-bordered > tbody:first-child > tr:first-child th,
+.table-bordered > tbody:first-child > tr:first-child td {
+  border-top: 0;
+}
+
+.table-bordered > thead:first-child > tr:first-child > th:first-child,
+.table-bordered > tbody:first-child > tr:first-child > td:first-child,
+.table-bordered > tbody:first-child > tr:first-child > th:first-child {
+  border-top-left-radius: 4px;
+}
+
+.table-bordered > thead:first-child > tr:first-child > th:last-child,
+.table-bordered > tbody:first-child > tr:first-child > td:last-child,
+.table-bordered > tbody:first-child > tr:first-child > th:last-child {
+  border-top-right-radius: 4px;
+}
+
+.table-bordered > thead:last-child > tr:last-child > th:first-child,
+.table-bordered > tbody:last-child > tr:last-child > td:first-child,
+.table-bordered > tbody:last-child > tr:last-child > th:first-child,
+.table-bordered > tfoot:last-child > tr:last-child > td:first-child,
+.table-bordered > tfoot:last-child > tr:last-child > th:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+.table-bordered > thead:last-child > tr:last-child > th:last-child,
+.table-bordered > tbody:last-child > tr:last-child > td:last-child,
+.table-bordered > tbody:last-child > tr:last-child > th:last-child,
+.table-bordered > tfoot:last-child > tr:last-child > td:last-child,
+.table-bordered > tfoot:last-child > tr:last-child > th:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+.table-bordered > tfoot + tbody:last-child > tr:last-child > td:first-child {
+  border-bottom-left-radius: 0;
+}
+
+.table-bordered > tfoot + tbody:last-child > tr:last-child > td:last-child {
+  border-bottom-right-radius: 0;
+}
+
+.table-bordered > caption + thead > tr:first-child > th:first-child,
+.table-bordered > caption + tbody > tr:first-child > td:first-child,
+.table-bordered > colgroup + thead > tr:first-child > th:first-child,
+.table-bordered > colgroup + tbody > tr:first-child > td:first-child {
+  border-top-left-radius: 4px;
+}
+
+.table-bordered > caption + thead > tr:first-child > th:last-child,
+.table-bordered > caption + tbody > tr:first-child > td:last-child,
+.table-bordered > colgroup + thead > tr:first-child > th:last-child,
+.table-bordered > colgroup + tbody > tr:first-child > td:last-child {
+  border-top-right-radius: 4px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+
+table col[class*="col-span-"] {
+  display: table-column;
+  float: none;
+}
+
+table td[class*="col-span-"],
+table th[class*="col-span-"] {
+  display: table-cell;
+  float: none;
+}
+
+.table > tbody > tr > td.success,
+.table > tbody > tr > th.success,
+.table > tbody > tr.success > td {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.table > tbody > tr > td.danger,
+.table > tbody > tr > th.danger,
+.table > tbody > tr.danger > td {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.table > tbody > tr > td.warning,
+.table > tbody > tr > th.warning,
+.table > tbody > tr.warning > td {
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+}
+
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td {
+  background-color: #d0e9c6;
+  border-color: #c9e2b3;
+}
+
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td {
+  background-color: #ebcccc;
+  border-color: #e6c1c7;
+}
+
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td {
+  background-color: #faf2cc;
+  border-color: #f8e5be;
+}
+
 form {
   margin: 0;
 }
@@ -5839,6 +6030,8 @@ a.list-group-item.active > .badge,
 }
 
 .EXLMyAccountContainer {
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: #ffffff;
 }
 
@@ -6404,10 +6597,20 @@ body > div:after,
   width: 400px;
   height: 58px;
   max-width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 0.85em;
   background: url('../images/nu-libraries-logo.svg') no-repeat top left;
   background-size: contain;
   content: "Northeastern University Libraries";
+}
+
+.scholar-one-search {
+  display: block;
+  width: 250px;
+  height: 30px;
+  max-width: 100%;
+  margin-bottom: 0.75em;
+  background: url('../images/scholar-one-search.svg') no-repeat top left;
+  background-size: contain;
 }
 
 @media (max-width: 756px) {
@@ -7014,6 +7217,10 @@ iframe html {
   }
 }
 
+.EXLHeader {
+  margin-top: 1em;
+}
+
 #exlidHeaderTile {
   position: relative;
   float: left;
@@ -7026,12 +7233,6 @@ iframe html {
 @media (min-width: 768px) {
   #exlidHeaderTile {
     width: 33.33333333333333%;
-  }
-}
-
-@media (min-width: 768px) {
-  #exlidHeaderTile {
-    margin-bottom: 4em;
   }
 }
 
@@ -9709,8 +9910,41 @@ a[title="show send to options"] img {
   }
 }
 
-.EXLFullView .EXLResultsNavigation {
+.icon-remove-circle.close {
+  float: none;
+}
+
+body.EXLFullView .EXLResultsNavigation {
   display: none;
+}
+
+body.EXLFullView div.EXLTabContent {
+  border: 1px solid #dddddd;
+  border-top: none;
+}
+
+body.EXLFullView .EXLResultsContainer > .EXLResultsTile {
+  border: none;
+}
+
+body.EXLFullView .EXLResultsContainer > .EXLResultsTile .EXLResultsFooter {
+  background-color: #ffffff;
+  border: none;
+}
+
+body.EXLFullView div.EXLBackToResults {
+  font-size: 14px;
+}
+
+body.EXLFullView div.EXLTabHeaderButtons li:hover,
+body.EXLFullView div.EXLTabHeaderButtons li:focus {
+  background-color: transparent;
+}
+
+body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
+  position: absolute;
+  margin: 0;
+  background-color: #ffffff;
 }
 
 @media (max-width: 756px) {
@@ -10830,44 +11064,31 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
   vertical-align: top;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:before,
-.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
-  display: table;
-  content: " ";
-}
-
-.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
-  clear: both;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:before,
-.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
-  display: table;
-  content: " ";
-}
-
-.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type:after {
-  clear: both;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table tr:first-of-type .row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
   position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
+  padding-right: 0;
   padding-left: 15px;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
-    width: 75%;
+    width: 83.33333333333334%;
   }
+}
+
+@media (max-width: 768px) {
+  .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
+    padding-left: 0;
+  }
+}
+
+.svg .MyAccount .eShelf_title + noscript + table .folder_details .itemsList_left {
+  border-left: none;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details h5 {
@@ -11610,31 +11831,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   }
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:before,
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
-  display: table;
-  content: " ";
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
-  clear: both;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:before,
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
-  display: table;
-  content: " ";
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type:after {
-  clear: both;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type .row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
   position: relative;
   float: left;
@@ -11840,9 +12036,9 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.
 }
 
 .draggable {
-  width: 35px;
+  width: 120px;
   padding: 7px 10px;
-  margin: 10px auto -13px;
+  margin: 10px auto -5px;
   color: #cc0000;
   text-align: center;
   cursor: pointer;
@@ -11858,13 +12054,15 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
+  padding-right: 0;
   padding-left: 15px;
+  padding-left: 0;
   border: 1px solid #dddddd;
 }
 
 @media (min-width: 768px) {
   .folders_new {
-    width: 25%;
+    width: 16.666666666666664%;
   }
 }
 
@@ -11879,6 +12077,474 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.
 .folders_new li a:hover,
 .folders_new li a:focus {
   color: #800000;
+}
+
+noscript + table[cellpadding="0"][cellspacing="0"] tbody {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+noscript + table[cellpadding="0"][cellspacing="0"] tbody:before,
+noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
+  display: table;
+  content: " ";
+}
+
+noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
+  clear: both;
+}
+
+noscript + table[cellpadding="0"][cellspacing="0"] tbody:before,
+noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
+  display: table;
+  content: " ";
+}
+
+noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
+  clear: both;
+}
+
+.EXLEshelfDocumentDetailsIFrame {
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px #dddddd solid;
+  border-radius: 4px;
+}
+
+.EXLEshelfDocumentDetailsIFrame:before,
+.EXLEshelfDocumentDetailsIFrame:after {
+  display: table;
+  content: " ";
+}
+
+.EXLEshelfDocumentDetailsIFrame:after {
+  clear: both;
+}
+
+.EXLEshelfDocumentDetailsIFrame:before,
+.EXLEshelfDocumentDetailsIFrame:after {
+  display: table;
+  content: " ";
+}
+
+.EXLEshelfDocumentDetailsIFrame:after {
+  clear: both;
+}
+
+.note,
+.noteImg {
+  display: none;
+}
+
+.js .note + td,
+.js .note + th {
+  display: none;
+}
+
+.folders_new li {
+  padding-left: 0;
+}
+
+table.itemsListTable {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+table.itemsListTable thead > tr > th,
+table.itemsListTable tbody > tr > th,
+table.itemsListTable thead > tr > td,
+table.itemsListTable tbody > tr > td {
+  padding: 8px;
+  line-height: 1.528571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+table.itemsListTable thead > tr > th {
+  vertical-align: bottom;
+}
+
+table.itemsListTable caption + thead tr:first-child th,
+table.itemsListTable caption + thead tr:first-child td,
+table.itemsListTable colgroup + thead tr:first-child th,
+table.itemsListTable colgroup + thead tr:first-child td,
+table.itemsListTable thead:first-child tr:first-child th,
+table.itemsListTable thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+table.itemsListTable tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+table.itemsListTable .table {
+  background-color: #ffffff;
+}
+
+table.itemsListTable thead > tr > th,
+table.itemsListTable tbody > tr > th,
+table.itemsListTable thead > tr > td,
+table.itemsListTable tbody > tr > td {
+  padding: 4px 5px;
+}
+
+.itemsListTable tr:hover {
+  background-color: #f5f5f5;
+}
+
+.folder_details tr.selected td,
+.folders_new li.selected,
+.folders_new li a.selectedFolder {
+  color: #cc0000;
+  background-color: #f9f9f9;
+}
+
+.folder_details .itemsListTH,
+.folder_details .itemsListTable {
+  width: 100% !important;
+}
+
+.foldersOverflow {
+  padding: 0!important;
+}
+
+table.itemsListTH thead > tr > th,
+table.itemsListTable thead > tr > th,
+table.itemsListTH tbody > tr > th,
+table.itemsListTable tbody > tr > th,
+table.itemsListTH thead > tr > td,
+table.itemsListTable thead > tr > td,
+table.itemsListTH tbody > tr > td,
+table.itemsListTable tbody > tr > td {
+  padding: 8px !important;
+  line-height: 1.528571429;
+}
+
+.folders_new .folderActions {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+.folders_new .folderActions [class^="icon-"].icon-large,
+.folders_new .folderActions [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.folders_new .folderActions [class^="icon-"].icon-spin,
+.folders_new .folderActions [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.folders_new .folderActions:before,
+.folders_new .folderActions:after {
+  display: table;
+  content: " ";
+}
+
+.folders_new .folderActions:after {
+  clear: both;
+}
+
+.folders_new .folderActions:before,
+.folders_new .folderActions:after {
+  display: table;
+  content: " ";
+}
+
+.folders_new .folderActions:after {
+  clear: both;
+}
+
+.folders_new .folderActions > li {
+  position: relative;
+  display: block;
+}
+
+.folders_new .folderActions > li a,
+.folders_new .folderActions > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.folders_new .folderActions > li a:hover,
+.folders_new .folderActions > li > a:hover,
+.folders_new .folderActions > li a:focus,
+.folders_new .folderActions > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.folders_new .folderActions > li.disabled > a {
+  color: #999999;
+}
+
+.folders_new .folderActions > li.disabled > a:hover,
+.folders_new .folderActions > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+}
+
+.folders_new .folderActions > li + .nav-header {
+  margin-top: 9px;
+}
+
+.folders_new .folderActions.open > a,
+.folders_new .folderActions.open > a:hover,
+.folders_new .folderActions.open > a:focus {
+  color: #fff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.folders_new .folderActions.open > a .caret,
+.folders_new .folderActions.open > a:hover .caret,
+.folders_new .folderActions.open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.folders_new .folderActions > .pull-right {
+  float: right;
+}
+
+.folders_new .folderActions .nav-divider {
+  height: 2px;
+  margin: 9.5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+.folders_new .folderActions li a {
+  display: inline-block;
+  padding: 8px 12px;
+  padding: 5px 7px !important;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.528571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.folders_new .folderActions li a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.folders_new .folderActions li a:hover,
+.folders_new .folderActions li a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.folders_new .folderActions li a:active,
+.folders_new .folderActions li a.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.folders_new .folderActions li a.disabled,
+.folders_new .folderActions li a[disabled],
+fieldset[disabled] .folders_new .folderActions li a {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.folders_new .folderActions li a [class^="icon-"].icon-large,
+.folders_new .folderActions li a [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.folders_new .folderActions li a [class^="icon-"].icon-spin,
+.folders_new .folderActions li a [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.folders_new .folderActions li a [class^="icon-"].pull-left.icon-2x,
+.folders_new .folderActions li a [class*=" icon-"].pull-left.icon-2x,
+.folders_new .folderActions li a [class^="icon-"].pull-right.icon-2x,
+.folders_new .folderActions li a [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+.folders_new .folderActions li a [class^="icon-"].icon-spin.icon-large,
+.folders_new .folderActions li a [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+.folders_new .folderActions li a .badge {
+  position: relative;
+  top: -1px;
+}
+
+.folders_new input,
+.folders_new li ul .noNextBranch input {
+  border: 1px solid #cccccc;
+}
+
+.folders_new input.newFolders_submit,
+.folders_new input.newFolders_submit_o {
+  display: inline-block;
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  padding: 8px 12px;
+  padding: 5px 10px;
+  margin: 0;
+  margin-bottom: 0;
+  clear: none;
+  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.528571429;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #cc0000;
+  background-image: none;
+  border: none;
+  border: 1px solid transparent;
+  border-color: #cc0000;
+  border-radius: 4px;
+  border-radius: 3px;
+}
+
+.folders_new input.newFolders_submit:focus,
+.folders_new input.newFolders_submit_o:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.folders_new input.newFolders_submit:hover,
+.folders_new input.newFolders_submit_o:hover,
+.folders_new input.newFolders_submit:focus,
+.folders_new input.newFolders_submit_o:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.folders_new input.newFolders_submit:active,
+.folders_new input.newFolders_submit_o:active,
+.folders_new input.newFolders_submit.active,
+.folders_new input.newFolders_submit_o.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.folders_new input.newFolders_submit.disabled,
+.folders_new input.newFolders_submit_o.disabled,
+.folders_new input.newFolders_submit[disabled],
+.folders_new input.newFolders_submit_o[disabled],
+fieldset[disabled] .folders_new input.newFolders_submit,
+fieldset[disabled] .folders_new input.newFolders_submit_o {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.folders_new input.newFolders_submit [class^="icon-"].icon-large,
+.folders_new input.newFolders_submit_o [class^="icon-"].icon-large,
+.folders_new input.newFolders_submit [class*=" icon-"].icon-large,
+.folders_new input.newFolders_submit_o [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.folders_new input.newFolders_submit [class^="icon-"].icon-spin,
+.folders_new input.newFolders_submit_o [class^="icon-"].icon-spin,
+.folders_new input.newFolders_submit [class*=" icon-"].icon-spin,
+.folders_new input.newFolders_submit_o [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.folders_new input.newFolders_submit [class^="icon-"].pull-left.icon-2x,
+.folders_new input.newFolders_submit_o [class^="icon-"].pull-left.icon-2x,
+.folders_new input.newFolders_submit [class*=" icon-"].pull-left.icon-2x,
+.folders_new input.newFolders_submit_o [class*=" icon-"].pull-left.icon-2x,
+.folders_new input.newFolders_submit [class^="icon-"].pull-right.icon-2x,
+.folders_new input.newFolders_submit_o [class^="icon-"].pull-right.icon-2x,
+.folders_new input.newFolders_submit [class*=" icon-"].pull-right.icon-2x,
+.folders_new input.newFolders_submit_o [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+.folders_new input.newFolders_submit [class^="icon-"].icon-spin.icon-large,
+.folders_new input.newFolders_submit_o [class^="icon-"].icon-spin.icon-large,
+.folders_new input.newFolders_submit [class*=" icon-"].icon-spin.icon-large,
+.folders_new input.newFolders_submit_o [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+.folders_new input.newFolders_submit .badge,
+.folders_new input.newFolders_submit_o .badge {
+  position: relative;
+  top: -1px;
+}
+
+.folders_new input.newFolders_submit:hover,
+.folders_new input.newFolders_submit_o:hover,
+.folders_new input.newFolders_submit:focus,
+.folders_new input.newFolders_submit_o:focus,
+.folders_new input.newFolders_submit:active,
+.folders_new input.newFolders_submit_o:active,
+.folders_new input.newFolders_submit.active,
+.folders_new input.newFolders_submit_o.active {
+  background-color: #b30000;
+  border-color: #990000;
+}
+
+.folders_new input.newFolders_submit.disabled:hover,
+.folders_new input.newFolders_submit_o.disabled:hover,
+.folders_new input.newFolders_submit[disabled]:hover,
+.folders_new input.newFolders_submit_o[disabled]:hover,
+fieldset[disabled] .folders_new input.newFolders_submit:hover,
+fieldset[disabled] .folders_new input.newFolders_submit_o:hover,
+.folders_new input.newFolders_submit.disabled:focus,
+.folders_new input.newFolders_submit_o.disabled:focus,
+.folders_new input.newFolders_submit[disabled]:focus,
+.folders_new input.newFolders_submit_o[disabled]:focus,
+fieldset[disabled] .folders_new input.newFolders_submit:focus,
+fieldset[disabled] .folders_new input.newFolders_submit_o:focus,
+.folders_new input.newFolders_submit.disabled:active,
+.folders_new input.newFolders_submit_o.disabled:active,
+.folders_new input.newFolders_submit[disabled]:active,
+.folders_new input.newFolders_submit_o[disabled]:active,
+fieldset[disabled] .folders_new input.newFolders_submit:active,
+fieldset[disabled] .folders_new input.newFolders_submit_o:active,
+.folders_new input.newFolders_submit.disabled.active,
+.folders_new input.newFolders_submit_o.disabled.active,
+.folders_new input.newFolders_submit[disabled].active,
+.folders_new input.newFolders_submit_o[disabled].active,
+fieldset[disabled] .folders_new input.newFolders_submit.active,
+fieldset[disabled] .folders_new input.newFolders_submit_o.active {
+  background-color: #cc0000;
+  border-color: #cc0000;
 }
 
 a.EXLLightboxHeaderClose {

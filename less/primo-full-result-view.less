@@ -1,0 +1,36 @@
+// --- Full view ------
+
+body.EXLFullView{
+  .EXLResultsNavigation{
+    display: none;
+  }
+  div.EXLTabContent{
+    border: 1px solid #dddddd;
+    border-top: none;
+  }
+  .EXLResultsContainer > .EXLResultsTile{
+    border: none;
+    .EXLResultsFooter{
+      background-color: @body-bg;
+      border: none;
+    }
+  }
+  div.EXLBackToResults{
+    font-size: 14px;
+  }
+} 
+
+body.EXLFullView div.EXLTabHeaderButtons {
+  li{
+    &:hover,
+    &:focus{
+      background-color: transparent;
+    }
+  }
+  ol.EXLTabHeaderButtonSendToList{
+    background-color: @body-bg;
+    position: absolute;
+    margin: 0;
+  }
+
+}
