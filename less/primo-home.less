@@ -1,0 +1,31 @@
+#exlidHomeContainer{
+  color: @text-color;
+  font-size: @font-size-base;
+  .make-row();
+  width: auto;
+  div.EXLHomeBlockContainer1 div.EXLContentBlock1{
+    .make-column(6);
+    p a{
+      color: @btn-default-color;
+      line-height: inherit;
+      display: inline-block;
+      &.btn-primary{
+        .btn-primary;
+      }
+      &.btn-info{
+        .btn-info;
+      }
+      
+    }
+  }
+  div.EXLHomeBlockContainer1 div.EXLContentBlock2{
+    .make-column(6);
+    margin-left: 0;
+  }
+  h3{
+    .h3;
+  }
+  .EXLHomeNewsContainer p{
+    .lead;
+  }
+}

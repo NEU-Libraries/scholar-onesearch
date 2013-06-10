@@ -465,17 +465,6 @@ a.EXLBriefResultsDisplayMultipleLink {
   color: #cc0000;
 }
 
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 div.EXLHomeListsContainer {
-  float: left;
-  width: 35em;
-  padding-top: 9em;
-  padding-left: 0.5em;
-  margin-top: 1em;
-  background-image: url(../images/home_main_visual.jpg);
-  background-position: 0 0%;
-  background-repeat: no-repeat;
-}
-
 #exlidSearchRibbon div.EXLSearchFieldRibbon {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
@@ -5569,49 +5558,33 @@ button.close {
   margin-top: 5px;
 }
 
-.badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.2928571435;
+  color: inherit;
+  background-color: #eeeeee;
+}
+
+.jumbotron h1 {
   line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  background-color: #999999;
-  border-radius: 10px;
+  color: inherit;
 }
 
-.badge:empty {
-  display: none;
+.jumbotron p {
+  line-height: 1.4;
 }
 
-a.badge:hover,
-a.badge:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.btn .badge {
-  position: relative;
-  top: -1px;
-}
-
-.btn-mini .badge {
-  top: 0;
-}
-
-a.list-group-item.active > .badge,
-.nav-pills > .active > a > .badge {
-  color: #cc0000;
-  background-color: #fff;
-}
-
-.nav-pills > li > a > .badge {
-  margin-left: 3px;
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding: 50px 60px;
+    border-radius: 6px;
+  }
+  .jumbotron h1 {
+    font-size: 63px;
+  }
 }
 
 .clearfix:before,
@@ -6235,11 +6208,6 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit {
 .EXLMyAccountMainContainer form input.submit [class^="icon-"].icon-spin.icon-large,
 .EXLMyAccountMainContainer form input.submit [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.EXLMyAccountMainContainer form input.submit .badge {
-  position: relative;
-  top: -1px;
 }
 
 .EXLMyAccountMainContainer form input.submit:hover,
@@ -7398,11 +7366,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   line-height: .8em;
 }
 
-#exlidSearchRibbon input.submit .badge {
-  position: relative;
-  top: -1px;
-}
-
 #exlidSearchRibbon fieldset {
   position: relative;
   float: left;
@@ -7548,11 +7511,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a {
 .EXLSearchFieldRibbonFormSelectedCollection a [class^="icon-"].icon-spin.icon-large,
 .EXLSearchFieldRibbonFormSelectedCollection a [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a .badge {
-  position: relative;
-  top: -1px;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a:hover,
@@ -7902,11 +7860,6 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
   line-height: .8em;
 }
 
-#exlidAdvancedSearchRibbon input.submit .badge {
-  position: relative;
-  top: -1px;
-}
-
 #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormDateRangeRow input {
   width: auto;
   height: auto;
@@ -8114,11 +8067,6 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   line-height: .8em;
 }
 
-#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a .badge {
-  position: relative;
-  top: -1px;
-}
-
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus,
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:active,
@@ -8294,11 +8242,6 @@ fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFiel
   line-height: .8em;
 }
 
-.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a .badge {
-  position: relative;
-  top: -1px;
-}
-
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:hover,
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:focus,
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:active,
@@ -8450,11 +8393,6 @@ fieldset[disabled] .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldR
   line-height: .8em;
 }
 
-.EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit .badge {
-  position: relative;
-  top: -1px;
-}
-
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks {
   position: relative;
   float: left;
@@ -8568,11 +8506,6 @@ fieldset[disabled] .EXLBrowseList .EXLSearchFieldRibbonFormSelectedBrowse a {
 .EXLBrowseList .EXLSearchFieldRibbonFormSelectedBrowse a [class^="icon-"].icon-spin.icon-large,
 .EXLBrowseList .EXLSearchFieldRibbonFormSelectedBrowse a [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.EXLBrowseList .EXLSearchFieldRibbonFormSelectedBrowse a .badge {
-  position: relative;
-  top: -1px;
 }
 
 .EXLBrowseList .EXLSearchFieldRibbonFormSelectedBrowse a:hover,
@@ -8959,11 +8892,6 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   line-height: .8em;
 }
 
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a .badge {
-  position: relative;
-  top: -1px;
-}
-
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:hover,
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:focus,
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:active,
@@ -9328,6 +9256,11 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   color: #999999;
 }
 
+.EXLResultsList em.EXLResultStatusAvailable,
+.EXLResultsList em.EXLResultStatusNotAvailable {
+  color: #333333;
+}
+
 iframe [name="uResolverViewItForm"] {
   color: aqua !important;
 }
@@ -9461,12 +9394,6 @@ a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-spin.icon-large,
 .EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin.icon-large,
 a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.EXLTabsRibbon div li.EXLResultTab a .badge,
-a.EXLBriefResultsDisplayMultipleLink .badge {
-  position: relative;
-  top: -1px;
 }
 
 .EXLTabsRibbon div li.EXLResultTab a:hover,
@@ -10641,14 +10568,6 @@ fieldset[disabled] .EXLLighboxCancelButton span input {
   line-height: .8em;
 }
 
-.EXLLighboxSubmitButton span a .badge,
-.EXLLighboxCancelButton span a .badge,
-.EXLLighboxSubmitButton span input .badge,
-.EXLLighboxCancelButton span input .badge {
-  position: relative;
-  top: -1px;
-}
-
 .EXLLighboxSubmitButton span a.EXLSubmit,
 .EXLLighboxCancelButton span a.EXLSubmit,
 .EXLLighboxSubmitButton span input.EXLSubmit,
@@ -10776,14 +10695,6 @@ fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit {
 .EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].icon-spin.icon-large,
 .EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.EXLLighboxSubmitButton span a.EXLSubmit .badge,
-.EXLLighboxCancelButton span a.EXLSubmit .badge,
-.EXLLighboxSubmitButton span input.EXLSubmit .badge,
-.EXLLighboxCancelButton span input.EXLSubmit .badge {
-  position: relative;
-  top: -1px;
 }
 
 .EXLLighboxSubmitButton span a.EXLSubmit:hover,
@@ -10928,11 +10839,6 @@ fieldset[disabled] #EXLCancelPersonalRankData {
 #EXLCancelPersonalRankData [class^="icon-"].icon-spin.icon-large,
 #EXLCancelPersonalRankData [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-#EXLCancelPersonalRankData .badge {
-  position: relative;
-  top: -1px;
 }
 
 #EXLCancelPersonalRankData:hover,
@@ -11185,11 +11091,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but .badge {
-  position: relative;
-  top: -1px;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled]:hover,
 fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled]:focus,
@@ -11302,11 +11203,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin.icon-large,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but .badge {
-  position: relative;
-  top: -1px;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled]:hover,
@@ -11423,11 +11319,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but .badge {
-  position: relative;
-  top: -1px;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled]:hover,
 fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled]:focus,
@@ -11540,11 +11431,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin.icon-large,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but .badge {
-  position: relative;
-  top: -1px;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled]:hover,
@@ -11661,11 +11547,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email .badge {
-  position: relative;
-  top: -1px;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled]:hover,
 fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled]:focus,
@@ -11778,11 +11659,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin.icon-large,
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print .badge {
-  position: relative;
-  top: -1px;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled]:hover,
@@ -11994,11 +11870,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a 
 .svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-spin.icon-large,
 .svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a .badge {
-  position: relative;
-  top: -1px;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
@@ -12389,11 +12260,6 @@ fieldset[disabled] .folders_new .folderActions li a {
   line-height: .8em;
 }
 
-.folders_new .folderActions li a .badge {
-  position: relative;
-  top: -1px;
-}
-
 .folders_new input,
 .folders_new li ul .noNextBranch input {
   border: 1px solid #cccccc;
@@ -12501,12 +12367,6 @@ fieldset[disabled] .folders_new input.newFolders_submit_o {
   line-height: .8em;
 }
 
-.folders_new input.newFolders_submit .badge,
-.folders_new input.newFolders_submit_o .badge {
-  position: relative;
-  top: -1px;
-}
-
 .folders_new input.newFolders_submit:hover,
 .folders_new input.newFolders_submit_o:hover,
 .folders_new input.newFolders_submit:focus,
@@ -12589,4 +12449,151 @@ img[src="../images/icon_close_tabs.png"] {
 
 .EXLContainer-viewOnlineTab iframe body {
   color: red !important;
+}
+
+#exlidHomeContainer {
+  width: auto;
+  font-size: 14px;
+  color: #333333;
+}
+
+#exlidHomeContainer:before,
+#exlidHomeContainer:after {
+  display: table;
+  content: " ";
+}
+
+#exlidHomeContainer:after {
+  clear: both;
+}
+
+#exlidHomeContainer:before,
+#exlidHomeContainer:after {
+  display: table;
+  content: " ";
+}
+
+#exlidHomeContainer:after {
+  clear: both;
+}
+
+#exlidHomeContainer .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+    width: 50%;
+  }
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a {
+  display: inline-block;
+  line-height: inherit;
+  color: #ffffff;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary {
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary:hover,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary:focus,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary:active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary.active {
+  background-color: #b30000;
+  border-color: #990000;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary.disabled:hover,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary[disabled]:hover,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary:hover,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary.disabled:focus,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary[disabled]:focus,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary:focus,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary.disabled:active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary[disabled]:active,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary:active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary.disabled.active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary[disabled].active,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-primary.active {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info {
+  color: #ffffff;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info:hover,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info:focus,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info:active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info.active {
+  background-color: #233140;
+  border-color: #1a242f;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info.disabled:hover,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info[disabled]:hover,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info:hover,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info.disabled:focus,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info[disabled]:focus,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info:focus,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info.disabled:active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info[disabled]:active,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info:active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info.disabled.active,
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info[disabled].active,
+fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a.btn-info.active {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 {
+    width: 50%;
+  }
+}
+
+#exlidHomeContainer h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+#exlidHomeContainer h3 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+#exlidHomeContainer .EXLHomeNewsContainer p {
+  margin-bottom: 21px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 1.4;
 }
