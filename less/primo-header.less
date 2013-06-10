@@ -68,6 +68,7 @@ iframe html{
     font-size: inherit;
     padding: 0px;
     height: auto;
+
     // e-Shelf Iconography
     span.EXLMyShelfStarSelected{
       background-image: none;
@@ -163,17 +164,25 @@ iframe html{
     font-size: inherit;
     margin: 0;
     &.EXLMainMenuItemSelected span a{
-      background-image: none;
-      border: none;
       color: #fff;
       background-color: @component-active-bg;
+      background-image: none;
+      border: none;
     }
     span{
       border: none;
+      a{
+        font-size: inherit;
+        padding: 10px 15px !important;
+        &:hover,
+        &:focus{
+          color: #fff;
+          background-color: @component-active-bg;
+          background-image: none;
+        }
+      }
+
     }
-  }
-  a{
-    font-size: inherit;
   }
   .float-left-small-screen;
 }
@@ -181,6 +190,19 @@ iframe html{
 .EXLHeader{
   margin-top: 1em;
 }
+
+
+// Hide the new search link, the report a problem link and the help link.
+
+#exlidMainMenuRibbon{
+  #exlidMainMenuItem1,//new search
+  #exlidMainMenuItem4,//Report a problem
+  #exlidMainMenuItem5//Help
+  {
+    display: none;
+  }  
+}
+
 
 
 #exlidHeaderTile{

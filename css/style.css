@@ -7174,8 +7174,16 @@ iframe html {
   border: none;
 }
 
-#exlidMainMenuRibbon a {
+#exlidMainMenuRibbon li span a {
+  padding: 10px 15px !important;
   font-size: inherit;
+}
+
+#exlidMainMenuRibbon li span a:hover,
+#exlidMainMenuRibbon li span a:focus {
+  color: #fff;
+  background-color: #cc0000;
+  background-image: none;
 }
 
 @media (max-width: 756px) {
@@ -7187,6 +7195,12 @@ iframe html {
 
 .EXLHeader {
   margin-top: 1em;
+}
+
+#exlidMainMenuRibbon #exlidMainMenuItem1,
+#exlidMainMenuRibbon #exlidMainMenuItem4,
+#exlidMainMenuRibbon #exlidMainMenuItem5 {
+  display: none;
 }
 
 #exlidHeaderTile {
@@ -12591,9 +12605,7 @@ fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContent
   color: #999999;
 }
 
-#exlidHomeContainer .EXLHomeNewsContainer p {
-  margin-bottom: 21px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 1.4;
+#exlidHomeContainer .scholar-one-search {
+  width: 100%;
+  height: 40px;
 }
