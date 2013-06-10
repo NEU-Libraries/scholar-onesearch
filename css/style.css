@@ -7194,7 +7194,7 @@ iframe html {
 }
 
 .EXLHeader {
-  margin-top: 1em;
+  padding: 1em 0;
 }
 
 #exlidMainMenuRibbon #exlidMainMenuItem1,
@@ -12597,6 +12597,7 @@ fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContent
   font-size: 24px;
   font-weight: 500;
   line-height: 1.1;
+  color: #2c3e50;
 }
 
 #exlidHomeContainer h3 small {

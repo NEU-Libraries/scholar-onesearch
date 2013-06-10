@@ -22,8 +22,8 @@ var scholarOneSearch = (function(){
   var signinPopover  = function(){
     if ( sessionStorage.getItem('popoverDissmiss') !== 'true'){
       $('ul.EXLEShelfTileGuest > li.EXLSignOut').popover({
-      title: 'Yo! Sign in <button="#exlidSignOut" id="nulib-signin-popover" class="close pull-right" onclick="scholarOneSearch.dismissSigninPopover()")">x</button>',
-      content: '<p>you better sign in</p>',
+      title: 'Why Sign In?<button="#exlidSignOut" id="nulib-signin-popover" class="close pull-right" onclick="scholarOneSearch.dismissSigninPopover()")">x</button>',
+      content: '<p>Get more results, personalized for you!</p>',
       placement: 'bottom',
       // trigger: 'manual',
       html: true,
