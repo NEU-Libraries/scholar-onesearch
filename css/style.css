@@ -12467,6 +12467,7 @@ img[src="../images/icon_close_tabs.png"] {
 
 #exlidHomeContainer {
   width: auto;
+  margin-top: 6em;
   font-size: 14px;
   color: #333333;
 }
@@ -12496,6 +12497,12 @@ img[src="../images/icon_close_tabs.png"] {
   margin-left: -15px;
 }
 
+@media (min-width: 768px) {
+  #exlidHomeContainer {
+    margin-top: 2em;
+  }
+}
+
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
   position: relative;
   float: left;
@@ -12503,6 +12510,11 @@ img[src="../images/icon_close_tabs.png"] {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 .jumbotron {
+  padding: 20px;
+  font-size: 18px;
 }
 
 @media (min-width: 768px) {

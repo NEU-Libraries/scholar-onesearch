@@ -3,7 +3,15 @@
   font-size: @font-size-base;
   .make-row();
   width: auto;
+  margin-top: 6em;
+  @media (min-width: 768px){
+  	margin-top: 2em;
+  }
   div.EXLHomeBlockContainer1 div.EXLContentBlock1{
+    .jumbotron{
+      padding: 20px;
+      font-size: 18px;
+    }
     .make-column(6);
     p a{
       color: @btn-default-color;
