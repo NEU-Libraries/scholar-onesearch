@@ -146,7 +146,7 @@ var scholarOneSearch = (function(){
     addActiveStates();
     handleRadio();
     addToolTips();
-    signinPopover();
+    //signinPopover();
     //buildMainMenu();
   };
 
