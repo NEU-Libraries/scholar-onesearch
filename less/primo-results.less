@@ -32,16 +32,20 @@ td.EXLMyShelfStar{
   margin: 0;
   div.EXLResultsNumbers{
     .make-column(8);
+    position: static;
     //Results header showing the number of results found.
     h1{
       color: @text-color;
       font-size: 12px;
       .make-column(7);
+      position: static;
       margin: 9px 0;
+
     }
     //styling the result dropdown as a button toggle for sorted by menu.
     div.EXLResultsSortBy{
       .make-column(5);
+      position: static;
       float: left;
       span.EXLResultsSortByLabel{
         margin-top: 4px;
@@ -58,6 +62,8 @@ td.EXLMyShelfStar{
       }
       ul{
         .dropdown-menu;
+        top: auto;
+        left: auto;
         display: block;
         li.EXLSortByLink,
         li.EXLSortByLinkSelected{
@@ -95,7 +101,7 @@ td.EXLMyShelfStar{
   //Pagination styles
   div.EXLResultsNavigation{
     .make-column(4);
-    z-index: 0;
+    position: static;
     text-align: center;
     border-radius: 4px;
     font-size: 12px;
