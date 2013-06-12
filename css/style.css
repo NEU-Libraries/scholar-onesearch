@@ -6440,6 +6440,12 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   display: none;
 }
 
+.MyAccount #exlidSearchTile,
+.MyAccount #exlidAdvancedSearchTile {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 body {
   min-width: inherit;
   background-color: #e9e8e5;
@@ -7220,6 +7226,9 @@ iframe html {
 }
 
 #exlidSearchTile {
+  width: auto;
+  margin-right: -15px;
+  margin-left: -15px;
   font-size: inherit;
   background-image: none;
   border: none;
@@ -7231,7 +7240,6 @@ iframe html {
   width: auto;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0.5em;
   margin-top: 3em;
   margin-bottom: 20px;
   background-color: #cc0000;
@@ -7663,9 +7671,12 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 
 #exlidAdvancedSearchTile {
   position: relative;
+  width: auto;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: -15px;
   margin-bottom: 20px;
+  margin-left: -15px;
   font-size: inherit;
   background-color: #cc0000;
   background-image: none;
@@ -7692,23 +7703,34 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   clear: both;
 }
 
-#exlidAdvancedSearchTile fieldset {
+#exlidAdvancedSearchRibbon > fieldset {
+  margin: 8px 15px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-#exlidAdvancedSearchTile fieldset input,
-#exlidAdvancedSearchTile fieldset select,
-#exlidAdvancedSearchTile fieldset textarea,
-#exlidAdvancedSearchTile fieldset .radio,
-#exlidAdvancedSearchTile fieldset .checkbox {
+#exlidAdvancedSearchRibbon > fieldset input,
+#exlidAdvancedSearchRibbon > fieldset select,
+#exlidAdvancedSearchRibbon > fieldset textarea,
+#exlidAdvancedSearchRibbon > fieldset .radio,
+#exlidAdvancedSearchRibbon > fieldset .checkbox {
   display: inline-block;
 }
 
-#exlidAdvancedSearchTile fieldset .radio,
-#exlidAdvancedSearchTile fieldset .checkbox {
+#exlidAdvancedSearchRibbon > fieldset .radio,
+#exlidAdvancedSearchRibbon > fieldset .checkbox {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+div.EXLAdvancedSearchFormRow .EXLSearchForm,
+form.EXLSearchForm[name="searchForm"] {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+#exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow {
+  margin-left: 0;
 }
 
 #exlidAdvancedSearchRibbon {
@@ -8157,6 +8179,10 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   width: 93%;
 }
 
+.EXLAlmaAz .EXLSearchFieldRibbonFormFields .EXLSearchFieldRibbonFormSearchFor {
+  width: 100%;
+}
+
 .EXLAlmaAz #exlidSearchRibbon {
   margin-top: 0;
   margin-bottom: 0;
@@ -8490,6 +8516,25 @@ fieldset[disabled] .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSe
   margin-top: 0;
 }
 
+.EXLBrowseList #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSearchFor,
+.EXLAdvancedBrowseRibbon .EXLSearchFieldRibbonFormSearchFor {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-right: 0;
+  padding-left: 15px;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .EXLBrowseList #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSearchFor,
+  .EXLAdvancedBrowseRibbon .EXLSearchFieldRibbonFormSearchFor {
+    width: 58.333333333333336%;
+  }
+}
+
 .EXLSearchFieldRibbonFormSelectedBrowse {
   position: relative;
   float: left;
@@ -8619,23 +8664,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse a.active {
   border-left: 4px solid transparent;
   border-top-color: #ffffff;
   content: "";
-}
-
-.EXLSearchFieldRibbonFormSearchFor {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-right: 0;
-  padding-left: 15px;
-  padding-left: 0;
-}
-
-@media (min-width: 768px) {
-  .EXLSearchFieldRibbonFormSearchFor {
-    width: 58.333333333333336%;
-  }
 }
 
 #exlidAdvancedSearchRibbon.EXLAdvancedBrowseRibbon input#search_field {
