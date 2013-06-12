@@ -14,6 +14,7 @@
   }
   td.folder_details{
     .make-column(10);
+    position: static;
     padding-right: 0;
     
     overflow: hidden;
@@ -53,6 +54,7 @@
     font-size: 14px !important;
     border: 1px solid @input-border;
     .make-column(8);
+    position: static;
   }
   .EXLEShelfFolderContentsTable{
     
@@ -60,9 +62,11 @@
       
       td:first-of-type{
         .make-column(12);
+        position: static;
       }
       td.buttonsUl{
         .make-column(12);
+        position: static;
         .EXLEShelfFolderContentsSendButtonList,
         .newManage_buts{
           display: block;
@@ -72,6 +76,7 @@
           width: 100% !important;
           td.ulTd{
             .make-column(10);
+            position: static;
             padding-left: 0;
           }
         }
@@ -121,6 +126,7 @@
 
 .folders_new{
   .make-column(2);
+  position: static;
   padding-right: 0;
   padding-left: 0;
   border: 1px solid @table-border-color;
@@ -146,15 +152,7 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody{
  
  
 }
-.note,
-.noteImg{
-  display: none;
-}
 
-.js .note+td,
-.js .note+th{
-    display: none;
-}
 
 .folders_new li{
   padding-left: 0;

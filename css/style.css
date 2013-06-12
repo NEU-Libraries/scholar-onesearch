@@ -7732,8 +7732,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 
 #exlidAdvancedSearchRibbon input,
 #exlidAdvancedSearchRibbon select {
-  width: auto;
-  height: auto;
+  min-height: 37px;
+  margin-bottom: 8px;
   border: 1px solid #cccccc;
 }
 
@@ -7772,6 +7772,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 }
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+  float: right;
   border: none;
 }
 
@@ -7880,6 +7881,36 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
   width: auto;
   height: auto;
   font-size: inherit;
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  min-height: 37px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+    width: 31.25%;
+  }
+}
+
+@media (min-width: 768px) {
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+    margin-left: 2.083333333333333%;
+  }
+}
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type input,
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type select {
+  margin-left: 0;
 }
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:first-of-type,
@@ -8724,6 +8755,28 @@ fieldset[disabled] .EXLBrowseList .EXLSearchFieldRibbonFormSelectedBrowse a.acti
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffb30000', GradientType=0);
 }
 
+#exlidBrowseResultsEnteries {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.EXLBrowseList .EXLNext,
+.EXLBrowseList .EXLPrevious {
+  font-size: 0;
+}
+
+.EXLBrowseList .EXLNext:hover,
+.EXLBrowseList .EXLPrevious:hover,
+.EXLBrowseList .EXLNext:focus,
+.EXLBrowseList .EXLPrevious:focus {
+  text-decoration: none;
+}
+
+.EXLBrowseList #resultsNumbersTile h1 {
+  margin-left: 0;
+  font-size: 14px;
+}
+
 .EXLResultsContainer:before,
 .EXLResultsContainer:after {
   display: table;
@@ -8813,6 +8866,10 @@ td.EXLMyShelfStar i {
   .EXLResultsHeader div.EXLResultsNumbers h1 {
     width: 58.333333333333336%;
   }
+}
+
+.EXLResultsHeader div.EXLResultsNumbers h1 em {
+  color: #333333;
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
@@ -10993,6 +11050,7 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
 
 .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -11713,6 +11771,7 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -11730,6 +11789,7 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 
 .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -11745,6 +11805,7 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 
 .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -11770,6 +11831,7 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 
 .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto td.ulTd {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -11942,6 +12004,7 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.
 
 .folders_new {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -12021,16 +12084,6 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
 
 .EXLEshelfDocumentDetailsIFrame:after {
   clear: both;
-}
-
-.note,
-.noteImg {
-  display: none;
-}
-
-.js .note + td,
-.js .note + th {
-  display: none;
 }
 
 .folders_new li {
