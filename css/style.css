@@ -9366,7 +9366,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 }
 
 .EXLResult .EXLTabContent iframe {
-  padding: 1em;
+  position: static;
   line-height: 2em;
 }
 
@@ -9474,8 +9474,8 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   color: #333333;
 }
 
-iframe [name="uResolverViewItForm"] {
-  color: aqua !important;
+iframe {
+  position: static;
 }
 
 .EXLTabsRibbon {
@@ -9660,6 +9660,7 @@ fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
 
 a.report-a-problem {
   float: right;
+  float: none;
   font-size: 21px;
   font-size: 14px;
   font-weight: bold;
@@ -9668,6 +9669,7 @@ a.report-a-problem {
   color: #e67e22;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
+  opacity: 0.5;
   filter: alpha(opacity=20);
 }
 
@@ -9683,12 +9685,14 @@ a.report-a-problem:focus {
 a.report-a-problem:hover,
 a.report-a-problem:focus {
   color: #e67e22;
+  opacity: 1.0;
 }
 
 .EXLResultTabContainer div.EXLTabHeader {
   float: none;
   width: auto;
   height: auto;
+  max-height: 50em;
   padding: 0;
   margin: 0;
   clear: none;
@@ -9738,31 +9742,32 @@ a.report-a-problem:focus {
 
 @media (min-width: 768px) {
   .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
-    width: 41.66666666666667%;
+    width: 50%;
   }
 }
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent a {
-  position: relative;
-  top: 10px;
-  padding: 5px;
+  display: inline-block;
+  padding: 8px 15px;
 }
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
   position: relative;
   float: left;
-  float: right;
   width: 100%;
   height: auto;
   min-height: 1px;
-  padding-right: 15px;
   padding-right: 0;
+  padding-right: 15px;
   padding-left: 15px;
+  margin-top: -1px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
 }
 
 @media (min-width: 768px) {
   .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
-    width: 58.333333333333336%;
+    width: 50%;
   }
 }
 
@@ -9770,6 +9775,7 @@ a.report-a-problem:focus {
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li span {
   height: auto;
   background-image: none;
+  border-right: none;
 }
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul {
@@ -9878,10 +9884,6 @@ a.report-a-problem:focus {
   overflow: hidden;
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul li:first-child {
-  border-left: 1px solid #e1e1e1;
 }
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > ol span {
@@ -12654,10 +12656,6 @@ a.EXLLightboxHeaderClose:before {
 
 img[src="../images/icon_close_tabs.png"] {
   opacity: 0;
-}
-
-.EXLContainer-viewOnlineTab iframe body {
-  color: red !important;
 }
 
 #exlidHomeContainer {

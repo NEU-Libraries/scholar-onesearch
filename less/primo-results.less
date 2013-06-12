@@ -199,7 +199,7 @@ td.EXLMyShelfStar{
 }
 // Adding some basic padding
 .EXLResult .EXLTabContent iframe{
-  padding: 1em;
+  position: static;
   line-height: 2em;
   .viewIt{
     line-height: 2em !important;
@@ -246,8 +246,8 @@ td.EXLMyShelfStar{
   
 }
 
-iframe [name="uResolverViewItForm"]{
-	color: aqua !important;
+iframe{
+  position: static;
 }
 
 
@@ -299,11 +299,14 @@ iframe [name="uResolverViewItForm"]{
 
 a.report-a-problem{
   .close;
+  float: none;
+  opacity: 0.5;
   color: @carrot;
   font-size: 14px;
   &:hover,
   &:focus{
     color: @carrot;
+    opacity: 1.0;
   }
 }
 //remove the background image and style the header box.
@@ -311,38 +314,41 @@ a.report-a-problem{
   div.EXLTabHeader{
     .reset;
     .make-row();
+    max-height: 50em; 
     background-image: none;
     background-color: @panel-heading-bg;
     border: 1px solid @panel-border;
     .border-top-radius(4px);
     //remove the tabs buttons backgrounds
     div.EXLTabHeaderContent{
-      .make-column(5);
+      
+      .make-column(6);
       padding: 0;
       padding-top: 0;
       a{
-        padding: 5px;
-        position: relative;
-        top: 10px;
+        display: inline-block;
+        padding: 8px 15px;
       }
     }
     div.EXLTabHeaderButtons{
-      .make-column(7);
+      background-color: #f5f5f5;
       padding-right: 0;
       height: auto;
-      .pull-right;
+      border-top: 1px solid #ddd;
+      margin-top: -1px;
+      .make-column(6);
     }
     div.EXLTabHeaderButtons li, div.EXLTabHeaderButtons li span{
       height: auto;
       background-image: none;
+      border-right: none;
     }
+
     div.EXLTabHeaderButtons ul{
       .reset;
       .pull-right;
       .nav;
-      li:first-child{
-        border-left: 1px solid #e1e1e1;
-      }
+
       > li > ol span{
         float: none;
       }
