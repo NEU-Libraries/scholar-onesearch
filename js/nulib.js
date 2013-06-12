@@ -12,9 +12,9 @@ var scholarOneSearch = (function(){
       
       var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
 
-      var link = '<a class="report-a-problem pull-right btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-warning-sign"></a>';
-      
-      $(this).find('ul.EXLResultTabs').append(link);
+      var $link = $('<a class="report-a-problem pull-right btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-warning-sign"></a>');
+      $link.wrap('<li/>');
+      $(this).find('ul.EXLResultTabs').append($link);
     });
     $('a.report-a-problem').tooltip();
   };

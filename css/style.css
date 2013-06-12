@@ -6727,10 +6727,6 @@ body > div:after,
   border-top-left-radius: 3px;
 }
 
-iframe html {
-  margin: 1em;
-}
-
 #exlidUserAreaTile {
   position: relative;
   float: left;
@@ -7015,6 +7011,7 @@ iframe html {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 768px) {
@@ -7465,11 +7462,13 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   display: inline-block;
   padding: 8px 12px;
   margin-bottom: 0;
+  overflow: hidden;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.528571429;
   color: #ffffff;
   text-align: center;
+  text-overflow: ellipsis;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
@@ -7584,6 +7583,9 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   padding-left: 15px;
   margin-top: 17px;
   margin-bottom: 17px;
+  overflow: hidden;
+  color: #FFFFFF;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 768px) {
@@ -8172,7 +8174,7 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 }
 
 .EXLAlmaAz .EXLSearchFieldRibbonFormFields {
-  width: 93%;
+  width: 88%;
 }
 
 .EXLAlmaAz .EXLSearchFieldRibbonFormFields .EXLSearchFieldRibbonFormSearchFor {
@@ -8186,6 +8188,8 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals {
   height: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   background: none;
   background-color: #FFF;
   background-image: none;
@@ -8198,8 +8202,9 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
+  padding-right: 0;
   padding-left: 15px;
-  margin-top: 0;
+  padding-left: 0;
   margin-left: auto;
 }
 
@@ -8349,6 +8354,11 @@ div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
   div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
     width: 8.333333333333332%;
   }
+}
+
+.EXLSearchEJorunals form.EXLSearchForm[name="searchForm"] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 a.EXLMainMenuITEMATOZClose {
@@ -8509,7 +8519,7 @@ fieldset[disabled] .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSe
 
 .EXLBrowseList #exlidAdvancedSearchRibbon fieldset,
 .EXLAdvancedBrowseRibbon fieldset {
-  margin-top: 0;
+  margin: 0;
 }
 
 .EXLBrowseList #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSearchFor,
@@ -8829,6 +8839,25 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse a.active {
   font-size: 14px;
 }
 
+#exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon {
+  min-height: 1px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 #exlidBrowseResultsEnteries {
   width: 100%;
   max-width: 100%;
@@ -8876,6 +8905,11 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse a.active {
 
 #exlidBrowseResultsEnteries th {
   width: auto !important;
+}
+
+.EXLResultsContainer {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .EXLResultsContainer:before,

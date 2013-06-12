@@ -38,7 +38,7 @@
       margin: 8px auto;
     }
     fieldset{
-      margin-top: 0;
+      margin: 0;
     }
     div.EXLSearchFieldRibbonFormLinks{
 
@@ -163,6 +163,24 @@
   #resultsNumbersTile h1{
     margin-left: 0;
     font-size: 14px;
+  }
+}
+
+
+#exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon{
+  background-color: transparent;
+  border: none;
+  min-height: 1px;
+  padding: 0;
+}
+
+
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]{
+  padding-right: 15px;
+  padding-left: 15px;
+  @media (min-width: 768px){
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 

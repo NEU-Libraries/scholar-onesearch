@@ -30,7 +30,7 @@
 //Selecting the body for the search field styles scope
 .EXLAlmaAz{
   .EXLSearchFieldRibbonFormFields{
-    width: 93%;
+    width: 88%;
     .EXLSearchFieldRibbonFormSearchFor{
       width: 100%;
     }
@@ -45,11 +45,14 @@
     background-image: none;
     border-top: none; 
     height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
     //reset the fieldset to be a navbar again
     fieldset{
       margin-left: auto;
-      margin-top: 0;
       .make-column(12);
+      padding-left: 0;
+      padding-right: 0;
       label{
         .hide-text();
       }
@@ -75,6 +78,12 @@ div.EXLALMAResultsTileNoFacets td.EXLThumbnail{
   display: block;
   .make-column(1);
 }
+
+.EXLSearchEJorunals form.EXLSearchForm[name="searchForm"]{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 
 
 //Get rid of this annoying link.
