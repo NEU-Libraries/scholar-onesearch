@@ -1,5 +1,6 @@
-.EXLBrowseList{
-  #exlidAdvancedSearchRibbon{
+
+  .EXLBrowseList #exlidAdvancedSearchRibbon,
+  .EXLAdvancedBrowseRibbon{
     div.EXLBrowseFieldRibbon{
       background: none;
       border: none;
@@ -31,6 +32,7 @@
     }
     div.EXLSearchFieldRibbonFormLinks{
       .make-column(2);
+      position: static;
       line-height: inherit;
       text-indent: inherit;
       margin: 8px auto;
@@ -103,7 +105,7 @@
   .EXLSearchFieldRibbonFormBrowseList{
     .dropdown-menu;
   }
-}
+
 
 
 #exlidAdvancedSearchRibbon,
@@ -160,5 +162,21 @@
   #resultsNumbersTile h1{
     margin-left: 0;
     font-size: 14px;
+  }
+}
+
+
+#exlidBrowseResultsEnteries{
+  .table;
+  max-width: 100%;
+  tbody > tr > td,
+  tbody > tr > th{
+    max-width: 99px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+  th{
+    width: auto !important;
   }
 }
