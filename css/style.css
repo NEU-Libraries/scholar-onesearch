@@ -10024,6 +10024,7 @@ a.report-a-problem:focus {
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   height: auto;
@@ -10040,6 +10041,53 @@ a.report-a-problem:focus {
   .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
     width: 50%;
   }
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 900 !important;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  clear: none;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .divider {
+  height: 2px;
+  margin: 9.5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.528571429;
+  color: #333333;
+  white-space: nowrap;
 }
 
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li,
@@ -10157,11 +10205,15 @@ a.report-a-problem:focus {
   border-bottom: 1px solid #ffffff;
 }
 
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul a {
+  border-right: 1px solid #cccccc;
+}
+
 .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > ol span {
   float: none;
 }
 
-a[title="open this item in a new window"] {
+a[title="open this item in a new window"]:before {
   *margin-right: .3em;
   font-family: FontAwesome;
   -webkit-font-smoothing: antialiased;
@@ -10177,18 +10229,12 @@ a[title="open this item in a new window"] img {
 
 a[title="hide tabs"] {
   float: right;
-  *margin-right: .3em;
-  font-family: FontAwesome;
   font-size: 21px;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
   font-weight: bold;
-  font-weight: normal;
   line-height: 1;
   color: #000;
-  text-decoration: inherit;
   text-shadow: 0 1px 0 #ffffff;
-  content: "\f05c";
+  border-right: none !important;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
@@ -10200,6 +10246,16 @@ a[title="hide tabs"]:focus {
   cursor: pointer;
   opacity: 0.5;
   filter: alpha(opacity=50);
+}
+
+a[title="hide tabs"]:before {
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f05c";
 }
 
 a[title="hide tabs"] img {
@@ -10271,18 +10327,22 @@ a[title="show send to options"] img {
 .EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet {
   margin-top: 0;
   margin-right: 8px;
+  background-image: none;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet:before {
   *margin-right: .3em;
   font-family: FontAwesome;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-  background-image: none;
   content: "\f138";
 }
 
 .EXLDetailsTabContent div.EXLDetailsContent {
   position: relative;
+  position: static;
   z-index: 1;
   float: left;
   width: 100%;
@@ -10290,7 +10350,6 @@ a[title="show send to options"] img {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0;
-  background-color: #c0392b;
 }
 
 @media (min-width: 768px) {
