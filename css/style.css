@@ -11207,7 +11207,7 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
 
 @media (min-width: 768px) {
   .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
-    width: 83.33333333333334%;
+    width: 75%;
   }
 }
 
@@ -11932,49 +11932,12 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   }
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
-  position: relative;
-  position: static;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable > tbody {
+  border: #dddddd 1px solid;
 }
 
-@media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td:first-of-type {
-    width: 100%;
-  }
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl {
-  position: relative;
-  position: static;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-@media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl {
-    width: 100%;
-  }
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .EXLEShelfFolderContentsSendButtonList,
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .newManage_buts {
-  display: block;
-  float: left;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto {
-  width: 100% !important;
-}
-
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto td.ulTd {
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.ulTd,
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.selectWidth.EXLEShelfFolderContentsPushTo {
   position: relative;
   position: static;
   float: left;
@@ -11986,9 +11949,36 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 }
 
 @media (min-width: 768px) {
-  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tr:first-of-type td.buttonsUl .folder_details table.auto td.ulTd {
-    width: 83.33333333333334%;
+  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.ulTd,
+  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.selectWidth.EXLEShelfFolderContentsPushTo {
+    width: 50%;
   }
+}
+
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl {
+  position: relative;
+  position: static;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl {
+    width: 100%;
+  }
+}
+
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .EXLEShelfFolderContentsSendButtonList,
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .newManage_buts {
+  display: block;
+  float: left;
+}
+
+.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .folder_details table.auto {
+  width: 100% !important;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details .added {
@@ -12162,7 +12152,7 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.
 
 @media (min-width: 768px) {
   .folders_new {
-    width: 16.666666666666664%;
+    width: 25%;
   }
 }
 
@@ -12229,6 +12219,26 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
 
 .EXLEshelfDocumentDetailsIFrame:after {
   clear: both;
+}
+
+.folders_new li.selected {
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background: none;
+}
+
+.folders_new li.selected:before {
+  display: inline-block;
+  text-decoration: inherit;
+  speak: none;
+}
+
+.folders_new li.selected:before {
+  content: "\f0fc";
 }
 
 .folders_new li {
@@ -12624,6 +12634,12 @@ fieldset[disabled] .folders_new input.newFolders_submit.active,
 fieldset[disabled] .folders_new input.newFolders_submit_o.active {
   background-color: #cc0000;
   border-color: #cc0000;
+}
+
+table.folderName.EXLEShelfFolderContentsTable {
+  height: auto;
+  border-collapse: separate;
+  border-top: 1px solid #dddddd !important;
 }
 
 .svg a.EXLLightboxHeaderClose {

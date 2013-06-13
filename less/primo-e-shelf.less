@@ -13,7 +13,7 @@
     
   }
   td.folder_details{
-    .make-column(10);
+    .make-column(9);
     position: static;
     padding-right: 0;
     
@@ -57,13 +57,17 @@
     position: static;
   }
   .EXLEShelfFolderContentsTable{
-    
-    tr:first-of-type{
+    & > tbody {
+      border: @table-border-color 1px solid;
+    }
+    td.ulTd,
+    td.selectWidth.EXLEShelfFolderContentsPushTo{
+      .make-column(6);
+      position: static;
+      padding-left: 0;
+    }
+    tbody > tr{
       
-      td:first-of-type{
-        .make-column(12);
-        position: static;
-      }
       td.buttonsUl{
         .make-column(12);
         position: static;
@@ -74,11 +78,8 @@
         }
         .folder_details table.auto{
           width: 100% !important;
-          td.ulTd{
-            .make-column(10);
-            position: static;
-            padding-left: 0;
-          }
+
+
         }
       }
     }
@@ -112,6 +113,8 @@
   }
 }
 
+
+
 .draggable{
   text-align: center;
   color: @link-color;
@@ -125,7 +128,7 @@
 }
 
 .folders_new{
-  .make-column(2);
+  .make-column(3);
   position: static;
   padding-right: 0;
   padding-left: 0;
@@ -140,6 +143,7 @@
       color: @link-hover-color;
     }
   }
+
 }
 noscript + table[cellpadding="0"][cellspacing="0"] tbody{
   .container-fixed();
@@ -151,6 +155,10 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody{
  .container-fixed();
  
  
+}
+.folders_new li.selected{
+  background: none;
+  .make-font-awesome-icon();
 }
 
 
@@ -219,4 +227,11 @@ table.itemsListTable{
   .btn;
   .btn-small;
   .btn-primary;
+}
+
+
+table.folderName.EXLEShelfFolderContentsTable{
+  height: auto;
+  border-top: 1px solid @table-border-color !important;
+  border-collapse: separate;
 }
