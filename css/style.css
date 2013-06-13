@@ -7279,6 +7279,7 @@ body > div:after,
 
 #exlidSearchRibbon input#search_field {
   width: 100%;
+  min-height: 36px;
   margin-right: 0;
   border: 1px solid #cccccc;
   border-top-right-radius: 0;
@@ -7289,8 +7290,10 @@ body > div:after,
   display: inline-block;
   width: 100%;
   height: auto;
+  min-height: 38px;
   padding: 8px 12px;
   margin-bottom: 0;
+  overflow: hidden;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.528571429;
@@ -7443,8 +7446,11 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection {
-  width: 40%;
+  width: 40.001%;
   height: auto;
+  max-height: 38px;
+  overflow: hidden;
+  border-right: 1px solid #a7a9aa;
   border-left: none;
 }
 
@@ -7460,6 +7466,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 
 .EXLSearchFieldRibbonFormSelectedCollection a {
   display: inline-block;
+  height: auto;
   padding: 8px 12px;
   margin-bottom: 0;
   overflow: hidden;
@@ -12619,7 +12626,7 @@ fieldset[disabled] .folders_new input.newFolders_submit_o.active {
   border-color: #cc0000;
 }
 
-a.EXLLightboxHeaderClose {
+.svg a.EXLLightboxHeaderClose {
   float: right;
   *margin-right: .3em;
   font-family: FontAwesome;
@@ -12636,8 +12643,8 @@ a.EXLLightboxHeaderClose {
   filter: alpha(opacity=20);
 }
 
-a.EXLLightboxHeaderClose:hover,
-a.EXLLightboxHeaderClose:focus {
+.svg a.EXLLightboxHeaderClose:hover,
+.svg a.EXLLightboxHeaderClose:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -12645,17 +12652,17 @@ a.EXLLightboxHeaderClose:focus {
   filter: alpha(opacity=50);
 }
 
-a.EXLLightboxHeaderClose:before {
+.svg a.EXLLightboxHeaderClose:before {
   display: inline-block;
   text-decoration: inherit;
   speak: none;
 }
 
-a.EXLLightboxHeaderClose:before {
+.svg a.EXLLightboxHeaderClose:before {
   content: "\f05c";
 }
 
-img[src="../images/icon_close_tabs.png"] {
+.svg img[src="../images/icon_close_tabs.png"] {
   opacity: 0;
 }
 

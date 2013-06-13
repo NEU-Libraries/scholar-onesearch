@@ -37,12 +37,17 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border: 1px solid @input-border;
+    min-height: 36px;
   }
   input.submit{
     width: 100%;
     .btn-info;
     .btn;
+    
     height: auto;
+    min-height: 38px;
+    overflow: hidden;
+
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -77,8 +82,12 @@
 
 .EXLSearchFieldRibbonFormSelectedCollection{
   height: auto;
-  width: 40.1%;
+  width: 40.001%;
+  height: auto;
+  max-height: 38px;
+  overflow: hidden;
   border-left: none;
+  border-right: 1px solid @btn-default-border;
   @media(max-width: 756px){
     width: 50%;
   }
@@ -88,6 +97,7 @@
   a{
     .btn;
     .btn-default;
+    height: auto;
     border-radius: 0;
     background-image: none;
     text-overflow: ellipsis;
