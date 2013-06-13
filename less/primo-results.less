@@ -196,6 +196,7 @@ td.EXLMyShelfStar{
   h2{
     font-size: 1.2em;
     line-height: 1.3;
+    color: @brand-info;
   }
 }
 // Adding some basic padding
@@ -243,8 +244,35 @@ td.EXLMyShelfStar{
   em.EXLResultStatusAvailable,
   em.EXLResultStatusNotAvailable{
     color: @text-color;
+    padding-left: 0;
   }
-  
+  em.EXLResultStatusAvailable{
+    background-image: none;
+    &:before{
+      color: @brand-success;
+      .icon(@ok-circle);
+      vertical-align: -5%;
+      font-size: 1.5em;
+    }
+  }
+  em.EXLResultStatusNotAvailable{
+    background-image: none;
+    &:before{
+      color: @brand-danger;
+      .icon(@remove-circle);
+      vertical-align: -5%;
+      font-size: 1.5em;
+    }
+  }
+  .multipleCoverImageContainer,
+  td.EXLThumbnail img{
+    height: 56px * 1.4;
+    width: 38px * 1.4;
+    background-size: contain;
+    border: 1px solid @silver;
+    overflow: hidden;
+    border-radius: 3px;
+  }
 }
 
 iframe{
@@ -393,6 +421,7 @@ a[title="show send to options"]{
 .EXLDetailsTabContent{
   div.EXLDetailsLinks{
     .make-column(4);
+    position: static;
     margin: 0;
     padding: 0;
     ul{
@@ -413,7 +442,9 @@ a[title="show send to options"]{
   }
   div.EXLDetailsContent{
   .make-column(8);
+  z-index: 1;
   margin: 0;
+  background-color: @pomegranate;
   }
 }
 
