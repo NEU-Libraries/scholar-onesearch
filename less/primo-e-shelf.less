@@ -222,8 +222,30 @@ table.itemsListTable{
   tbody > tr > td {
     padding: 8px !important;
     line-height: @line-height-base;
+    width: auto !important  ;
+    &:last-of-type{
+      display: none;
+    }
+  }
+  .added, .type{
+    display: none;
+    @media (min-width: @screen-tablet){
+      display: table-cell;
+    }
+  }
+  .note{
+    display: none;
+    @media (min-width: @screen-desktop){
+      display: table-cell;
+    }
   }
 }
+a.eShelf_email span:hover,
+a.eShelf_print span:hover{
+  text-decoration: none;
+}
+
+
 .folders_new{
   & > ul{
     .make-row();
