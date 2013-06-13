@@ -7665,7 +7665,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 .EXLSearchFieldRibbonFormSelectedCollection {
   width: 40.001%;
   height: auto;
-  max-height: 38px;
+  max-height: 39px;
   overflow: hidden;
   border-right: 1px solid #a7a9aa;
   border-left: none;
@@ -9588,6 +9588,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 .EXLResultsList h2 {
   font-size: 1.2em;
   line-height: 1.3;
+  color: #2c3e50;
 }
 
 .EXLResult .EXLTabContent iframe {
@@ -9696,7 +9697,52 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 
 .EXLResultsList em.EXLResultStatusAvailable,
 .EXLResultsList em.EXLResultStatusNotAvailable {
+  padding-left: 0;
   color: #333333;
+}
+
+.EXLResultsList em.EXLResultStatusAvailable {
+  background-image: none;
+}
+
+.EXLResultsList em.EXLResultStatusAvailable:before {
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  color: #16a085;
+  text-decoration: inherit;
+  vertical-align: -5%;
+  content: "\f05d";
+}
+
+.EXLResultsList em.EXLResultStatusNotAvailable {
+  background-image: none;
+}
+
+.EXLResultsList em.EXLResultStatusNotAvailable:before {
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  color: #e74c3c;
+  text-decoration: inherit;
+  vertical-align: -5%;
+  content: "\f05c";
+}
+
+.EXLResultsList .multipleCoverImageContainer,
+.EXLResultsList td.EXLThumbnail img {
+  width: 53.199999999999996px;
+  height: 78.39999999999999px;
+  overflow: hidden;
+  background-size: contain;
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
 }
 
 iframe {
@@ -10189,6 +10235,7 @@ a[title="show send to options"] img {
 
 .EXLDetailsTabContent div.EXLDetailsLinks {
   position: relative;
+  position: static;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -10236,12 +10283,14 @@ a[title="show send to options"] img {
 
 .EXLDetailsTabContent div.EXLDetailsContent {
   position: relative;
+  z-index: 1;
   float: left;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0;
+  background-color: #c0392b;
 }
 
 @media (min-width: 768px) {
@@ -10354,7 +10403,7 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
 .EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a h4 {
   display: block;
   float: left;
-  max-width: 90%;
+  max-width: 83%;
   padding: 0;
   font-size: 13.5px;
   background-color: #fcfcfc;
@@ -12081,10 +12130,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   width: 100% !important;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details .added {
-  width: auto;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .folder_details label {
   font: 0/0 a;
   color: transparent;
@@ -12449,16 +12494,16 @@ table.itemsListTable tbody > tr > td:last-of-type {
   display: none;
 }
 
-table.itemsListTH .added,
-table.itemsListTable .added,
+table.itemsListTH .itemsList_left .added,
+table.itemsListTable .itemsList_left .added,
 table.itemsListTH .type,
 table.itemsListTable .type {
   display: none;
 }
 
 @media (min-width: 768px) {
-  table.itemsListTH .added,
-  table.itemsListTable .added,
+  table.itemsListTH .itemsList_left .added,
+  table.itemsListTable .itemsList_left .added,
   table.itemsListTH .type,
   table.itemsListTable .type {
     display: table-cell;
@@ -12992,4 +13037,14 @@ fieldset[disabled] #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContent
 #exlidHomeContainer .scholar-one-search {
   width: 100%;
   height: 40px;
+}
+
+.EXLPopup.EXLEmailPopup #mailFormId,
+.EXLPopup.EXLEmailPopup #mailFormId > table {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
 }
