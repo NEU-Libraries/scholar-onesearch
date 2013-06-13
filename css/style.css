@@ -2203,28 +2203,29 @@ input[type="button"].btn-block {
 }
 
 /*!
- *  Font Awesome 3.1.0
+ *  Font Awesome 3.2.0
  *  the iconic font designed for Bootstrap
- *  -------------------------------------------------------
- *  The full suite of pictographic icons, examples, and documentation
- *  can be found at: http://fontawesome.io
+ *  ------------------------------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation can be
+ *  found at http://fontawesome.io.  Stay up to date on Twitter at
+ *  http://twitter.com/fontawesome.
  *
  *  License
- *  -------------------------------------------------------
- *  - The Font Awesome font is licensed under the SIL Open Font License v1.1 -
+ *  ------------------------------------------------------------------------------
+ *  - The Font Awesome font is licensed under SIL OFL 1.1 -
  *    http://scripts.sil.org/OFL
- *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
  *    http://opensource.org/licenses/mit-license.html
- *  - Font Awesome documentation licensed under CC BY 3.0 License -
+ *  - Font Awesome documentation licensed under CC BY 3.0 -
  *    http://creativecommons.org/licenses/by/3.0/
  *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
  *    "Font Awesome by Dave Gandy - http://fontawesome.io"
-
- *  Contact
- *  -------------------------------------------------------
+ *
+ *  Author - Dave Gandy
+ *  ------------------------------------------------------------------------------
  *  Email: dave@fontawesome.io
- *  Twitter: http://twitter.com/fortaweso_me
- *  Work: Lead Product Designer @ http://kyruus.com
+ *  Twitter: http://twitter.com/byscuits
+ *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
  */
 
 /* FONT PATH
@@ -2234,8 +2235,8 @@ input[type="button"].btn-block {
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('../font/font-awesome/fontawesome-webfont.eot?v=3.1.0');
-  src: url('../font/font-awesome/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'), url('../font/font-awesome/fontawesome-webfont.woff?v=3.1.0') format('woff'), url('../font/font-awesome/fontawesome-webfont.ttf?v=3.1.0') format('truetype'), url('../font/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');
+  src: url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.eot?v=3.2.0');
+  src: url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0') format('woff'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.ttf?v=3.2.0') format('truetype'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.0') format('svg');
 }
 
 /* FONT AWESOME CORE
@@ -2255,21 +2256,7 @@ input[type="button"].btn-block {
 [class*=" icon-"]:before {
   display: inline-block;
   text-decoration: inherit;
-  speak: none;
-}
-
-.make-font-awesome {
-  *margin-right: .3em;
-  font-family: FontAwesome;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-}
-
-.make-font-awesome:before {
-  display: inline-block;
-  text-decoration: inherit;
+  cursor: default;
   speak: none;
 }
 
@@ -2283,9 +2270,7 @@ input[type="button"].btn-block {
 /* makes sure icons active on rollover in links */
 
 a [class^="icon-"],
-a [class*=" icon-"],
-a [class^="icon-"]:before,
-a [class*=" icon-"]:before {
+a [class*=" icon-"] {
   display: inline;
 }
 
@@ -2294,24 +2279,30 @@ a [class*=" icon-"]:before {
 [class^="icon-"].icon-fixed-width,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;
-  width: 1.2857142857142858em;
-  text-align: center;
+  width: 1.1428571428571428em;
+  padding-right: 0.2857142857142857em;
+  text-align: right;
 }
 
 [class^="icon-"].icon-fixed-width.icon-large,
 [class*=" icon-"].icon-fixed-width.icon-large {
-  width: 1.5714285714285714em;
+  width: 1.4285714285714286em;
 }
 
-ul.icons-ul {
+.icons-ul {
   margin-left: 2.142857142857143em;
-  text-indent: -0.7142857142857143em;
   list-style-type: none;
 }
 
-ul.icons-ul > li .icon-li {
-  display: inline-block;
-  width: 0.7142857142857143em;
+.icons-ul > li {
+  position: relative;
+}
+
+.icons-ul .icon-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  line-height: inherit;
   text-align: center;
 }
 
@@ -2547,6 +2538,11 @@ ul.icons-ul > li .icon-li {
           animation: spin 2s infinite linear;
 }
 
+a .icon-spin {
+  display: inline-block;
+  text-decoration: none;
+}
+
 @-moz-keyframes spin {
   0% {
     -moz-transform: rotate(0deg);
@@ -2637,6 +2633,16 @@ ul.icons-ul > li .icon-li {
           transform: scale(1, -1);
 }
 
+/* ensure rotation occurs inside anchor tags */
+
+a .icon-rotate-90:before,
+a .icon-rotate-180:before,
+a .icon-rotate-270:before,
+a .icon-flip-horizontal:before,
+a .icon-flip-vertical:before {
+  display: inline-block;
+}
+
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 
@@ -2652,7 +2658,7 @@ ul.icons-ul > li .icon-li {
   content: "\f002";
 }
 
-.icon-envelope:before {
+.icon-envelope-alt:before {
   content: "\f003";
 }
 
@@ -2704,6 +2710,7 @@ ul.icons-ul > li .icon-li {
   content: "\f010";
 }
 
+.icon-power-off:before,
 .icon-off:before {
   content: "\f011";
 }
@@ -2724,7 +2731,7 @@ ul.icons-ul > li .icon-li {
   content: "\f015";
 }
 
-.icon-file:before {
+.icon-file-alt:before {
   content: "\f016";
 }
 
@@ -2756,12 +2763,10 @@ ul.icons-ul > li .icon-li {
   content: "\f01d";
 }
 
-.icon-repeat:before,
-.icon-rotate-right:before {
+.icon-rotate-right:before,
+.icon-repeat:before {
   content: "\f01e";
 }
-
-/* F020 doesn't work in Safari. all shifted one down */
 
 .icon-refresh:before {
   content: "\f021";
@@ -3019,8 +3024,8 @@ ul.icons-ul > li .icon-li {
   content: "\f063";
 }
 
-.icon-share-alt:before,
-.icon-mail-forward:before {
+.icon-mail-forward:before,
+.icon-share-alt:before {
   content: "\f064";
 }
 
@@ -3152,11 +3157,11 @@ ul.icons-ul > li .icon-li {
   content: "\f086";
 }
 
-.icon-thumbs-up:before {
+.icon-thumbs-up-alt:before {
   content: "\f087";
 }
 
-.icon-thumbs-down:before {
+.icon-thumbs-down-alt:before {
   content: "\f088";
 }
 
@@ -3208,6 +3213,7 @@ ul.icons-ul > li .icon-li {
   content: "\f095";
 }
 
+.icon-unchecked:before,
 .icon-check-empty:before {
   content: "\f096";
 }
@@ -3340,6 +3346,7 @@ ul.icons-ul > li .icon-li {
   content: "\f0c5";
 }
 
+.icon-paperclip:before,
 .icon-paper-clip:before {
   content: "\f0c6";
 }
@@ -3436,7 +3443,7 @@ ul.icons-ul > li .icon-li {
   content: "\f0de";
 }
 
-.icon-envelope-alt:before {
+.icon-envelope:before {
   content: "\f0e0";
 }
 
@@ -3444,8 +3451,8 @@ ul.icons-ul > li .icon-li {
   content: "\f0e1";
 }
 
-.icon-undo:before,
-.icon-rotate-left:before {
+.icon-rotate-left:before,
+.icon-undo:before {
   content: "\f0e2";
 }
 
@@ -3521,7 +3528,7 @@ ul.icons-ul > li .icon-li {
   content: "\f0f5";
 }
 
-.icon-file-alt:before {
+.icon-file-text-alt:before {
   content: "\f0f6";
 }
 
@@ -3625,9 +3632,13 @@ ul.icons-ul > li .icon-li {
   content: "\f111";
 }
 
-.icon-reply:before,
-.icon-mail-reply:before {
+.icon-mail-reply:before,
+.icon-reply:before {
   content: "\f112";
+}
+
+.icon-github-alt:before {
+  content: "\f113";
 }
 
 .icon-folder-close-alt:before {
@@ -3853,6 +3864,245 @@ ul.icons-ul > li .icon-li {
 
 .icon-share-sign:before {
   content: "\f14d";
+}
+
+.icon-compass:before {
+  content: "\f14e";
+}
+
+.icon-collapse:before {
+  content: "\f150";
+}
+
+.icon-collapse-top:before {
+  content: "\f151";
+}
+
+.icon-expand:before {
+  content: "\f152";
+}
+
+.icon-euro:before,
+.icon-eur:before {
+  content: "\f153";
+}
+
+.icon-gbp:before {
+  content: "\f154";
+}
+
+.icon-dollar:before,
+.icon-usd:before {
+  content: "\f155";
+}
+
+.icon-rupee:before,
+.icon-inr:before {
+  content: "\f156";
+}
+
+.icon-yen:before,
+.icon-jpy:before {
+  content: "\f157";
+}
+
+.icon-renminbi:before,
+.icon-cny:before {
+  content: "\f158";
+}
+
+.icon-won:before,
+.icon-krw:before {
+  content: "\f159";
+}
+
+.icon-bitcoin:before,
+.icon-btc:before {
+  content: "\f15a";
+}
+
+.icon-file:before {
+  content: "\f15b";
+}
+
+.icon-file-text:before {
+  content: "\f15c";
+}
+
+.icon-sort-by-alphabet:before {
+  content: "\f15d";
+}
+
+.icon-sort-by-alphabet-alt:before {
+  content: "\f15e";
+}
+
+.icon-sort-by-attributes:before {
+  content: "\f160";
+}
+
+.icon-sort-by-attributes-alt:before {
+  content: "\f161";
+}
+
+.icon-sort-by-order:before {
+  content: "\f162";
+}
+
+.icon-sort-by-order-alt:before {
+  content: "\f163";
+}
+
+.icon-thumbs-up:before {
+  content: "\f164";
+}
+
+.icon-thumbs-down:before {
+  content: "\f165";
+}
+
+.icon-youtube-sign:before {
+  content: "\f166";
+}
+
+.icon-youtube:before {
+  content: "\f167";
+}
+
+.icon-xing:before {
+  content: "\f168";
+}
+
+.icon-xing-sign:before {
+  content: "\f169";
+}
+
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+
+.icon-dropbox:before {
+  content: "\f16b";
+}
+
+.icon-stackexchange:before {
+  content: "\f16c";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+.icon-flickr:before {
+  content: "\f16e";
+}
+
+.icon-adn:before {
+  content: "\f170";
+}
+
+.icon-bitbucket:before {
+  content: "\f171";
+}
+
+.icon-bitbucket-sign:before {
+  content: "\f172";
+}
+
+.icon-tumblr:before {
+  content: "\f173";
+}
+
+.icon-tumblr-sign:before {
+  content: "\f174";
+}
+
+.icon-long-arrow-down:before {
+  content: "\f175";
+}
+
+.icon-long-arrow-up:before {
+  content: "\f176";
+}
+
+.icon-long-arrow-left:before {
+  content: "\f177";
+}
+
+.icon-long-arrow-right:before {
+  content: "\f178";
+}
+
+.icon-apple:before {
+  content: "\f179";
+}
+
+.icon-windows:before {
+  content: "\f17a";
+}
+
+.icon-android:before {
+  content: "\f17b";
+}
+
+.icon-linux:before {
+  content: "\f17c";
+}
+
+.icon-dribble:before {
+  content: "\f17d";
+}
+
+.icon-skype:before {
+  content: "\f17e";
+}
+
+.icon-foursquare:before {
+  content: "\f180";
+}
+
+.icon-trello:before {
+  content: "\f181";
+}
+
+.icon-female:before {
+  content: "\f182";
+}
+
+.icon-male:before {
+  content: "\f183";
+}
+
+.icon-gittip:before {
+  content: "\f184";
+}
+
+.icon-sun:before {
+  content: "\f185";
+}
+
+.icon-moon:before {
+  content: "\f186";
+}
+
+.icon-archive:before {
+  content: "\f187";
+}
+
+.icon-bug:before {
+  content: "\f188";
+}
+
+.icon-vk:before {
+  content: "\f189";
+}
+
+.icon-weibo:before {
+  content: "\f18a";
+}
+
+.icon-renren:before {
+  content: "\f18b";
 }
 
 .caret {
@@ -6303,17 +6553,6 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   font-weight: normal;
   text-decoration: inherit;
   background-image: none;
-}
-
-.EXLMyAccountFormContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet:before,
-.EXLMyAccountFormContainer div.EXLMyAccountRanking li span.EXLMyAccountTipsBullet:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-.EXLMyAccountFormContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet:before,
-.EXLMyAccountFormContainer div.EXLMyAccountRanking li span.EXLMyAccountTipsBullet:before {
   content: "\f05a";
 }
 
@@ -6415,15 +6654,6 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   text-decoration: inherit;
   background-image: none;
   border: none;
-}
-
-.EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuBulletSelected:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-.EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuBulletSelected:before {
   content: "\f00c";
 }
 
@@ -6897,24 +7127,18 @@ body > div:after,
   height: auto;
   padding: 0;
   margin: 0 0.25em 0 0;
+  background-image: none;
+}
+
+#exlidUserAreaRibbon li span.EXLMyShelfStarSelected:before {
   *margin-right: .3em;
   font-family: FontAwesome;
+  font-size: 1.3333333333333333em;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
   color: #16a085;
   text-decoration: inherit;
-  background-image: none;
-}
-
-#exlidUserAreaRibbon li span.EXLMyShelfStarSelected:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-#exlidUserAreaRibbon li span.EXLMyShelfStarSelected:before {
-  font-size: 1.3333333333333333em;
   vertical-align: -10%;
   content: "\f02e";
 }
@@ -6937,12 +7161,6 @@ body > div:after,
   content: "\f007";
 }
 
-#exlidUserAreaRibbon li span.EXLUserNameDisplay:before:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
 #exlidUserAreaRibbon li.EXLMyAccount > a:before {
   float: none;
   width: auto;
@@ -6961,12 +7179,6 @@ body > div:after,
   content: "\f085";
 }
 
-#exlidUserAreaRibbon li.EXLMyAccount > a:before:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
 #exlidUserAreaRibbon li.EXLSignOut > a:before {
   float: none;
   width: auto;
@@ -6983,12 +7195,6 @@ body > div:after,
   text-decoration: inherit;
   vertical-align: -10%;
   content: "\f011";
-}
-
-#exlidUserAreaRibbon li.EXLSignOut > a:before:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
 }
 
 #exlidUserAreaRibbon li > .EXLUserNameDisplay {
@@ -9905,15 +10111,6 @@ a[title="open this item in a new window"] {
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-}
-
-a[title="open this item in a new window"]:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-a[title="open this item in a new window"]:before {
   content: "\f08e";
 }
 
@@ -9934,6 +10131,7 @@ a[title="hide tabs"] {
   color: #000;
   text-decoration: inherit;
   text-shadow: 0 1px 0 #ffffff;
+  content: "\f05c";
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
@@ -9945,16 +10143,6 @@ a[title="hide tabs"]:focus {
   cursor: pointer;
   opacity: 0.5;
   filter: alpha(opacity=50);
-}
-
-a[title="hide tabs"]:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-a[title="hide tabs"]:before {
-  content: "\f05c";
 }
 
 a[title="hide tabs"] img {
@@ -10032,15 +10220,6 @@ a[title="show send to options"] img {
   font-weight: normal;
   text-decoration: inherit;
   background-image: none;
-}
-
-.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet:before {
   content: "\f138";
 }
 
@@ -12222,23 +12401,7 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
 }
 
 .folders_new li.selected {
-  *margin-right: .3em;
-  font-family: FontAwesome;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
   background: none;
-}
-
-.folders_new li.selected:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-.folders_new li.selected:before {
-  content: "\f0fc";
 }
 
 .folders_new li {
@@ -12655,6 +12818,7 @@ table.folderName.EXLEShelfFolderContentsTable {
   color: #000;
   text-decoration: inherit;
   text-shadow: 0 1px 0 #ffffff;
+  content: "\f05c";
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
@@ -12666,16 +12830,6 @@ table.folderName.EXLEShelfFolderContentsTable {
   cursor: pointer;
   opacity: 0.5;
   filter: alpha(opacity=50);
-}
-
-.svg a.EXLLightboxHeaderClose:before {
-  display: inline-block;
-  text-decoration: inherit;
-  speak: none;
-}
-
-.svg a.EXLLightboxHeaderClose:before {
-  content: "\f05c";
 }
 
 .svg img[src="../images/icon_close_tabs.png"] {

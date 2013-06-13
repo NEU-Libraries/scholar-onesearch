@@ -68,19 +68,18 @@
 
     // e-Shelf Iconography
     span.EXLMyShelfStarSelected{
+      
       background-image: none;
       margin: 0 0.25em 0 0;
       padding: 0;
       width: auto;
       height: auto;
       float: none;
-      .make-font-awesome;
-      color: @brand-success;
       &:before{
-        content: "\f02e";
-        //make large!
-        vertical-align: -10%;
-        font-size: 4/3em;
+      color: @brand-success;
+      .icon("\f02e");
+      vertical-align: -10%;
+      font-size: 4/3em;
       }
     }
     //user account iconography 
@@ -91,11 +90,9 @@
         width: auto;
         height: auto;
         float: none;
-        .make-font-awesome;
+        .icon("\f007");
         color: @brand-info;
-        //.icon-user:before                 { content: "\f007"; }
-        content: "\f007";
-        //make large!
+        
         vertical-align: -10%;
         font-size: 4/3em;
       }
@@ -107,10 +104,10 @@
         width: auto;
         height: auto;
         float: none;
-        .make-font-awesome;
+        
         color: @asbestos;
-        //.icon-cogs:before                 { content: "\f085"; }
-        content: "\f085";
+        
+        .icon("\f085");
         //make large!
         vertical-align: -10%;
         font-size: 4/3em;
@@ -122,10 +119,10 @@
         width: auto;
         height: auto;
         float: none;
-        .make-font-awesome;
+        
         color: @brand-primary;
         //.icon-off:before                  { content: "\f011"; }
-        content: "\f011";
+        .icon("\f011");
         //make large!
         vertical-align: -10%;
         font-size: 4/3em;      
