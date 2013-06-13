@@ -366,6 +366,13 @@ a.report-a-problem{
       border-top: 1px solid #ddd;
       margin-top: -1px;
       .make-column(6);
+      position: static;
+      ol.EXLTabHeaderButtonSendToList{
+        clear: none;
+        background-color: @body-bg;
+        z-index: 900 !important;
+        .dropdown-menu;
+      }
     }
     div.EXLTabHeaderButtons li, div.EXLTabHeaderButtons li span{
       height: auto;
@@ -377,6 +384,11 @@ a.report-a-problem{
       .reset;
       .pull-right;
       .nav;
+      a{
+        border-right: 1px solid @input-border;
+        
+      }
+
 
       > li > ol span{
         float: none;
@@ -385,8 +397,9 @@ a.report-a-problem{
   }
 }
 a[title="open this item in a new window"]{
-  .icon("\f08e");
-  
+  &:before{
+    .icon("\f08e");
+  }
   img{
     display: none;
   }
@@ -394,7 +407,11 @@ a[title="open this item in a new window"]{
 
 a[title="hide tabs"]{
   .close;
-  .icon("\f05c");
+  border-right: none !important;
+  &:before{
+    .icon("\f05c");
+
+  }
   img{
     display: none;
   }
@@ -437,14 +454,16 @@ a[title="show send to options"]{
       background-image: none;
       margin-top: 0;
       margin-right: 8px;
-      .icon("\f138");
+      &:before{
+        .icon("\f138");
+      }
     }
   }
   div.EXLDetailsContent{
-  .make-column(8);
-  z-index: 1;
-  margin: 0;
-  background-color: @pomegranate;
+    .make-column(8);
+    position: static;
+    z-index: 1;
+    margin: 0;
   }
 }
 
