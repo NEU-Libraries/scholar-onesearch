@@ -357,10 +357,8 @@ a.report-a-problem{
   }
 }
 a[title="open this item in a new window"]{
-  .make-font-awesome;
-  &:before{
-    content: "\f08e";
-  }
+  .icon("\f08e");
+  
   img{
     display: none;
   }
@@ -368,10 +366,7 @@ a[title="open this item in a new window"]{
 
 a[title="hide tabs"]{
   .close;
-  .make-font-awesome;
-  &:before{
-    content: "\f05c"
-  }
+  .icon("\f05c");
   img{
     display: none;
   }
@@ -413,10 +408,7 @@ a[title="show send to options"]{
       background-image: none;
       margin-top: 0;
       margin-right: 8px;
-      .make-font-awesome;
-      &:before{
-        content: "\f138";
-      }
+      .icon("\f138");
     }
   }
   div.EXLDetailsContent{
