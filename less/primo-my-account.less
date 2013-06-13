@@ -91,7 +91,11 @@
       .reset;
       border-bottom: 1px @gray-lighter solid;
       margin-bottom: 1em;
-      h1{
+      display: inline-block;
+      width: 100%;
+      h1,
+      span.EXLMyAccountMainHeaderContentSelected{
+        border: none;
         margin: 0.5em 0em 1em 0em;
         font-size: 24px;
         font-weight: normal;
@@ -139,8 +143,9 @@
       span.EXLMyAccountTipsBullet{
         background-image: none;
         margin-top: 0;
-        .icon("\f05a");
-
+        &:before{
+          .icon("\f05a");
+        }
       }
     }
   }
@@ -178,7 +183,9 @@
         .reset;
         float: left;
         background-image: none;
-        .icon("\f00c");
+        &:before{
+          .icon("\f00c");
+        }
         & + span a {
           color: @silver;
           &:hover, &:focus{
