@@ -12433,8 +12433,53 @@ table.itemsListTH thead > tr > td,
 table.itemsListTable thead > tr > td,
 table.itemsListTH tbody > tr > td,
 table.itemsListTable tbody > tr > td {
+  width: auto !important  ;
   padding: 8px !important;
   line-height: 1.528571429;
+}
+
+table.itemsListTH thead > tr > th:last-of-type,
+table.itemsListTable thead > tr > th:last-of-type,
+table.itemsListTH tbody > tr > th:last-of-type,
+table.itemsListTable tbody > tr > th:last-of-type,
+table.itemsListTH thead > tr > td:last-of-type,
+table.itemsListTable thead > tr > td:last-of-type,
+table.itemsListTH tbody > tr > td:last-of-type,
+table.itemsListTable tbody > tr > td:last-of-type {
+  display: none;
+}
+
+table.itemsListTH .added,
+table.itemsListTable .added,
+table.itemsListTH .type,
+table.itemsListTable .type {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  table.itemsListTH .added,
+  table.itemsListTable .added,
+  table.itemsListTH .type,
+  table.itemsListTable .type {
+    display: table-cell;
+  }
+}
+
+table.itemsListTH .note,
+table.itemsListTable .note {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  table.itemsListTH .note,
+  table.itemsListTable .note {
+    display: table-cell;
+  }
+}
+
+a.eShelf_email span:hover,
+a.eShelf_print span:hover {
+  text-decoration: none;
 }
 
 .folders_new > ul:before,
