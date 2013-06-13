@@ -11430,7 +11430,6 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
   -webkit-font-smoothing: antialiased;
   font-style: normal!important;
   font-weight: 500;
-  font-weight: normal;
   font-weight: normal !important;
   line-height: 1.528571429;
   line-height: 1.5;
@@ -11440,16 +11439,10 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: transparent;
-  background-image: none;
   background-image: none !important;
   border: 1px solid transparent;
-  border-color: transparent;
   border-radius: 4px;
   border-radius: 3px;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
@@ -11505,14 +11498,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
-  color: #333333;
-  text-decoration: none;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:before {
   display: inline-block;
   margin-right: 0.2em;
@@ -11525,8 +11510,8 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #800000;
-  text-decoration: underline;
   background-color: transparent;
+  border: 1px solid #800000;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
@@ -11544,7 +11529,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   -webkit-font-smoothing: antialiased;
   font-style: normal!important;
   font-weight: 500;
-  font-weight: normal;
   font-weight: normal !important;
   line-height: 1.528571429;
   line-height: 1.5;
@@ -11554,16 +11538,10 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: transparent;
-  background-image: none;
   background-image: none !important;
   border: 1px solid transparent;
-  border-color: transparent;
   border-radius: 4px;
   border-radius: 3px;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
@@ -11619,14 +11597,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
-  color: #333333;
-  text-decoration: none;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:before {
   display: inline-block;
   margin-right: 0.2em;
@@ -11639,8 +11609,8 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #800000;
-  text-decoration: underline;
   background-color: transparent;
+  border: 1px solid #800000;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
@@ -11658,7 +11628,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   -webkit-font-smoothing: antialiased;
   font-style: normal!important;
   font-weight: 500;
-  font-weight: normal;
   font-weight: normal !important;
   line-height: 1.528571429;
   line-height: 1.5;
@@ -11668,16 +11637,10 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: transparent;
-  background-image: none;
   background-image: none !important;
   border: 1px solid transparent;
-  border-color: transparent;
   border-radius: 4px;
   border-radius: 3px;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
@@ -11733,14 +11696,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
-  color: #333333;
-  text-decoration: none;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:before {
   display: inline-block;
   margin-right: 0.2em;
@@ -11753,8 +11708,8 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #800000;
-  text-decoration: underline;
   background-color: transparent;
+  border: 1px solid #800000;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
@@ -11772,7 +11727,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   -webkit-font-smoothing: antialiased;
   font-style: normal!important;
   font-weight: 500;
-  font-weight: normal;
   font-weight: normal !important;
   line-height: 1.528571429;
   line-height: 1.5;
@@ -11782,16 +11736,10 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: transparent;
-  background-image: none;
   background-image: none !important;
   border: 1px solid transparent;
-  border-color: transparent;
   border-radius: 4px;
   border-radius: 3px;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
@@ -11847,14 +11795,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
-  color: #333333;
-  text-decoration: none;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:before {
   display: inline-block;
   margin-right: 0.2em;
@@ -11867,8 +11807,8 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #800000;
-  text-decoration: underline;
   background-color: transparent;
+  border: 1px solid #800000;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email {
@@ -11886,7 +11826,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   -webkit-font-smoothing: antialiased;
   font-style: normal!important;
   font-weight: 500;
-  font-weight: normal;
   font-weight: normal !important;
   line-height: 1.528571429;
   line-height: 1.5;
@@ -11896,16 +11835,10 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: transparent;
-  background-image: none;
   background-image: none !important;
   border: 1px solid transparent;
-  border-color: transparent;
   border-radius: 4px;
   border-radius: 3px;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
@@ -11961,14 +11894,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
-  color: #333333;
-  text-decoration: none;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:before {
   display: inline-block;
   margin-right: 0.2em;
@@ -11981,8 +11906,8 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #800000;
-  text-decoration: underline;
   background-color: transparent;
+  border: 1px solid #800000;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print {
@@ -12000,7 +11925,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   -webkit-font-smoothing: antialiased;
   font-style: normal!important;
   font-weight: 500;
-  font-weight: normal;
   font-weight: normal !important;
   line-height: 1.528571429;
   line-height: 1.5;
@@ -12010,16 +11934,10 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: transparent;
-  background-image: none;
   background-image: none !important;
   border: 1px solid transparent;
-  border-color: transparent;
   border-radius: 4px;
   border-radius: 3px;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
@@ -12075,14 +11993,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
-  color: #333333;
-  text-decoration: none;
-}
-
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:before {
   display: inline-block;
   margin-right: 0.2em;
@@ -12095,8 +12005,8 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #800000;
-  text-decoration: underline;
   background-color: transparent;
+  border: 1px solid #800000;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details .newManage_buts li {
@@ -12477,10 +12387,33 @@ table.itemsListTable tbody > tr > td {
 }
 
 .folder_details tr.selected td,
-.folders_new li.selected,
+.folders_new li.selected > *,
 .folders_new li a.selectedFolder {
-  color: #cc0000;
+  color: #800000;
   background-color: #f9f9f9;
+}
+
+.folder_details tr.selected td,
+.folders_new li.selected {
+  color: #cc0000;
+}
+
+.folder_details tr.selected td > a,
+.folders_new li.selected > a {
+  color: #800000;
+  background-color: #f9f9f9;
+}
+
+.folder_details tr.selected td .selectedFolder,
+.folders_new li.selected .selectedFolder {
+  padding: 5px 10px;
+  border: 1px solid #800000;
+  border-radius: 3px;
+}
+
+.folder_details tr.selected td > ul,
+.folders_new li.selected > ul {
+  background-color: #ffffff;
 }
 
 .folder_details .itemsListTH,
@@ -12504,204 +12437,172 @@ table.itemsListTable tbody > tr > td {
   line-height: 1.528571429;
 }
 
-.folders_new .folderActions {
+.folders_new > ul:before,
+.folders_new > ul:after {
+  display: table;
+  content: " ";
+}
+
+.folders_new > ul:after {
+  clear: both;
+}
+
+.folders_new > ul:before,
+.folders_new > ul:after {
+  display: table;
+  content: " ";
+}
+
+.folders_new > ul:after {
+  clear: both;
+}
+
+.folders_new > ul .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.folders_new > ul > ol,
+.folders_new > ul > li {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-right: 0;
+  padding-left: 15px;
   padding-left: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  list-style: none;
 }
 
-.folders_new .folderActions [class^="icon-"].icon-large,
-.folders_new .folderActions [class*=" icon-"].icon-large {
-  line-height: .9em;
+@media (min-width: 768px) {
+  .folders_new > ul > ol,
+  .folders_new > ul > li {
+    width: 100%;
+  }
 }
 
-.folders_new .folderActions [class^="icon-"].icon-spin,
-.folders_new .folderActions [class*=" icon-"].icon-spin {
-  display: inline-block;
+.folders_new > ul > ol {
+  padding: 5px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #dddddd;
 }
 
-.folders_new .folderActions:before,
-.folders_new .folderActions:after {
-  display: table;
-  content: " ";
+.folders_new .folderActions ul {
+  width: auto;
+  height: auto;
+  padding: 0;
+  padding-left: 0;
+  margin: 0;
+  border-bottom: none;
 }
 
-.folders_new .folderActions:after {
-  clear: both;
+.folders_new .folderActions ul li {
+  margin-right: 0;
 }
 
-.folders_new .folderActions:before,
-.folders_new .folderActions:after {
-  display: table;
-  content: " ";
-}
-
-.folders_new .folderActions:after {
-  clear: both;
-}
-
-.folders_new .folderActions > li {
-  position: relative;
-  display: block;
-}
-
-.folders_new .folderActions > li a,
-.folders_new .folderActions > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-
-.folders_new .folderActions > li a:hover,
-.folders_new .folderActions > li > a:hover,
-.folders_new .folderActions > li a:focus,
-.folders_new .folderActions > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-
-.folders_new .folderActions > li.disabled > a {
-  color: #999999;
-}
-
-.folders_new .folderActions > li.disabled > a:hover,
-.folders_new .folderActions > li.disabled > a:focus {
-  color: #999999;
-  text-decoration: none;
-  cursor: default;
-  background-color: transparent;
-}
-
-.folders_new .folderActions > li + .nav-header {
-  margin-top: 9px;
-}
-
-.folders_new .folderActions.open > a,
-.folders_new .folderActions.open > a:hover,
-.folders_new .folderActions.open > a:focus {
-  color: #fff;
-  background-color: #cc0000;
-  border-color: #cc0000;
-}
-
-.folders_new .folderActions.open > a .caret,
-.folders_new .folderActions.open > a:hover .caret,
-.folders_new .folderActions.open > a:focus .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-
-.folders_new .folderActions > .pull-right {
-  float: right;
-}
-
-.folders_new .folderActions .nav-divider {
-  height: 2px;
-  margin: 9.5px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-  border-bottom: 1px solid #ffffff;
-}
-
-.folders_new .folderActions li a {
-  display: inline-block;
-  padding: 8px 12px;
-  padding: 5px 10px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.528571429;
-  line-height: 1.5;
-  color: #ffffff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: #cc0000;
+.folders_new .folderActions ul li a {
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 5px 10px !important;
+  margin-bottom: 0 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  color: #cc0000 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
   background-image: none !important;
-  border: 1px solid transparent;
-  border-color: #cc0000;
-  border-radius: 4px;
-  border-radius: 3px;
+  border: 1px solid transparent !important;
+  border-radius: 3px !important;
 }
 
-.folders_new .folderActions li a:focus {
+.folders_new .folderActions ul li a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.folders_new .folderActions li a:hover,
-.folders_new .folderActions li a:focus {
-  color: #fff;
-  text-decoration: none;
+.folders_new .folderActions ul li a:hover,
+.folders_new .folderActions ul li a:focus {
+  color: #800000 !important;
+  border: 1px solid #800000 !important;
 }
 
-.folders_new .folderActions li a:active,
-.folders_new .folderActions li a.active {
-  background-image: none;
-  outline: 0;
+.folders_new .folderActions ul li a:active,
+.folders_new .folderActions ul li a.active {
+  background-image: none !important;
+  outline: 0 !important;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.folders_new .folderActions li a.disabled,
-.folders_new .folderActions li a[disabled],
-fieldset[disabled] .folders_new .folderActions li a {
-  pointer-events: none;
-  cursor: default;
+.folders_new .folderActions ul li a.disabled,
+.folders_new .folderActions ul li a[disabled],
+fieldset[disabled] .folders_new .folderActions ul li a {
+  pointer-events: none !important;
+  cursor: default !important;
   opacity: 0.65;
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.folders_new .folderActions li a [class^="icon-"].icon-large,
-.folders_new .folderActions li a [class*=" icon-"].icon-large {
-  line-height: .9em;
+.folders_new .folderActions ul li a.newFolder_but:before {
+  margin-right: 3px;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f067";
 }
 
-.folders_new .folderActions li a [class^="icon-"].icon-spin,
-.folders_new .folderActions li a [class*=" icon-"].icon-spin {
-  display: inline-block;
+.folders_new .folderActions ul li a.renameFolder_but:before {
+  margin-right: 3px;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f120";
 }
 
-.folders_new .folderActions li a [class^="icon-"].pull-left.icon-2x,
-.folders_new .folderActions li a [class*=" icon-"].pull-left.icon-2x,
-.folders_new .folderActions li a [class^="icon-"].pull-right.icon-2x,
-.folders_new .folderActions li a [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .18em;
+.folders_new .folderActions ul li a.moveFolder_but:before {
+  margin-right: 3px;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f0c5";
 }
 
-.folders_new .folderActions li a [class^="icon-"].icon-spin.icon-large,
-.folders_new .folderActions li a [class*=" icon-"].icon-spin.icon-large {
-  line-height: .8em;
+.folders_new .folderActions ul li a.copyFolder_but:before {
+  margin-right: 3px;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f0ea";
 }
 
-.folders_new .folderActions li a:hover,
-.folders_new .folderActions li a:focus,
-.folders_new .folderActions li a:active,
-.folders_new .folderActions li a.active {
-  background-color: #b30000;
-  border-color: #990000;
-}
-
-.folders_new .folderActions li a.disabled:hover,
-.folders_new .folderActions li a[disabled]:hover,
-fieldset[disabled] .folders_new .folderActions li a:hover,
-.folders_new .folderActions li a.disabled:focus,
-.folders_new .folderActions li a[disabled]:focus,
-fieldset[disabled] .folders_new .folderActions li a:focus,
-.folders_new .folderActions li a.disabled:active,
-.folders_new .folderActions li a[disabled]:active,
-fieldset[disabled] .folders_new .folderActions li a:active,
-.folders_new .folderActions li a.disabled.active,
-.folders_new .folderActions li a[disabled].active,
-fieldset[disabled] .folders_new .folderActions li a.active {
-  background-color: #cc0000;
-  border-color: #cc0000;
+.folders_new .folderActions ul li a.deleteFolder_but:before {
+  margin-right: 3px;
+  *margin-right: .3em;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f00d";
 }
 
 .folders_new input,
