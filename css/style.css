@@ -6345,8 +6345,10 @@ button.close {
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle {
+  display: inline-block;
   float: none;
   width: auto;
+  width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
@@ -6356,12 +6358,14 @@ button.close {
   border-bottom: 1px #eeeeee solid;
 }
 
-.EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle h1 {
+.EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle h1,
+.EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle span.EXLMyAccountMainHeaderContentSelected {
   margin: 0.5em 0 1em 0em;
   font-size: 24px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
+  border: none;
 }
 
 .EXLMyAccountMainContainer form span.submit {
@@ -6546,13 +6550,17 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
 .EXLMyAccountFormContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet,
 .EXLMyAccountFormContainer div.EXLMyAccountRanking li span.EXLMyAccountTipsBullet {
   margin-top: 0;
+  background-image: none;
+}
+
+.EXLMyAccountFormContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet:before,
+.EXLMyAccountFormContainer div.EXLMyAccountRanking li span.EXLMyAccountTipsBullet:before {
   *margin-right: .3em;
   font-family: FontAwesome;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-  background-image: none;
   content: "\f05a";
 }
 
@@ -6645,15 +6653,18 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   height: auto;
   padding: 0;
   margin: 0;
-  *margin-right: .3em;
   clear: none;
+  background-image: none;
+  border: none;
+}
+
+.EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuBulletSelected:before {
+  *margin-right: .3em;
   font-family: FontAwesome;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-  background-image: none;
-  border: none;
   content: "\f00c";
 }
 
