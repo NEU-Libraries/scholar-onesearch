@@ -7925,22 +7925,22 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   clear: both;
 }
 
-#exlidAdvancedSearchRibbon > fieldset {
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset {
   margin: 8px 15px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-#exlidAdvancedSearchRibbon > fieldset input,
-#exlidAdvancedSearchRibbon > fieldset select,
-#exlidAdvancedSearchRibbon > fieldset textarea,
-#exlidAdvancedSearchRibbon > fieldset .radio,
-#exlidAdvancedSearchRibbon > fieldset .checkbox {
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset input,
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset select,
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset textarea,
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset .radio,
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset .checkbox {
   display: inline-block;
 }
 
-#exlidAdvancedSearchRibbon > fieldset .radio,
-#exlidAdvancedSearchRibbon > fieldset .checkbox {
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset .radio,
+#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset .checkbox {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -7955,51 +7955,51 @@ form.EXLSearchForm[name="searchForm"] {
   margin-left: 0;
 }
 
-#exlidAdvancedSearchRibbon {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon {
   width: auto;
   margin-right: auto;
   margin-left: auto;
 }
 
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonPreFilters {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonPreFilters {
   background: none;
   border: none;
 }
 
-#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
   color: #ffffff;
 }
 
-#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a:hover {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a:hover {
   color: #e6e6e6;
 }
 
-#exlidAdvancedSearchRibbon input,
-#exlidAdvancedSearchRibbon select {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   min-height: 37px;
   margin-bottom: 8px;
   border: 1px solid #cccccc;
 }
 
-#exlidAdvancedSearchRibbon input[type="text"],
-#exlidAdvancedSearchRibbon select {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input[type="text"],
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   padding-top: 8px;
   padding-right: 15px;
   padding-bottom: 8px;
   padding-left: 15px;
 }
 
-#exlidAdvancedSearchRibbon select,
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 select {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 select {
   height: 36px;
 }
 
-#exlidAdvancedSearchRibbon label {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon label {
   color: white;
 }
 
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1,
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
   position: relative;
   float: left;
   width: 100%;
@@ -8009,18 +8009,18 @@ form.EXLSearchForm[name="searchForm"] {
 }
 
 @media (min-width: 768px) {
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1,
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1,
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
     width: 50%;
   }
 }
 
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   float: right;
   border: none;
 }
 
-#exlidAdvancedSearchRibbon input.submit {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit {
   display: inline-block;
   width: 100%;
   height: auto;
@@ -8044,53 +8044,53 @@ form.EXLSearchForm[name="searchForm"] {
   border-radius: 6px;
 }
 
-#exlidAdvancedSearchRibbon input.submit:hover,
-#exlidAdvancedSearchRibbon input.submit:focus,
-#exlidAdvancedSearchRibbon input.submit:active,
-#exlidAdvancedSearchRibbon input.submit.active {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:hover,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:focus,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:active,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.active {
   background-color: #233140;
   border-color: #1a242f;
 }
 
-#exlidAdvancedSearchRibbon input.submit.disabled:hover,
-#exlidAdvancedSearchRibbon input.submit[disabled]:hover,
-fieldset[disabled] #exlidAdvancedSearchRibbon input.submit:hover,
-#exlidAdvancedSearchRibbon input.submit.disabled:focus,
-#exlidAdvancedSearchRibbon input.submit[disabled]:focus,
-fieldset[disabled] #exlidAdvancedSearchRibbon input.submit:focus,
-#exlidAdvancedSearchRibbon input.submit.disabled:active,
-#exlidAdvancedSearchRibbon input.submit[disabled]:active,
-fieldset[disabled] #exlidAdvancedSearchRibbon input.submit:active,
-#exlidAdvancedSearchRibbon input.submit.disabled.active,
-#exlidAdvancedSearchRibbon input.submit[disabled].active,
-fieldset[disabled] #exlidAdvancedSearchRibbon input.submit.active {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.disabled:hover,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit[disabled]:hover,
+fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:hover,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.disabled:focus,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit[disabled]:focus,
+fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:focus,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.disabled:active,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit[disabled]:active,
+fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:active,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.disabled.active,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit[disabled].active,
+fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.active {
   background-color: #2c3e50;
   border-color: #2c3e50;
 }
 
-#exlidAdvancedSearchRibbon input.submit:focus {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-#exlidAdvancedSearchRibbon input.submit:hover,
-#exlidAdvancedSearchRibbon input.submit:focus {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:hover,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:focus {
   color: #fff;
   text-decoration: none;
 }
 
-#exlidAdvancedSearchRibbon input.submit:active,
-#exlidAdvancedSearchRibbon input.submit.active {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:active,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-#exlidAdvancedSearchRibbon input.submit.disabled,
-#exlidAdvancedSearchRibbon input.submit[disabled],
-fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.disabled,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit[disabled],
+fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit {
   pointer-events: none;
   cursor: default;
   opacity: 0.65;
@@ -8099,36 +8099,36 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
           box-shadow: none;
 }
 
-#exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-large,
-#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-large {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-large,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-#exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-spin,
-#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-spin {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-spin,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-#exlidAdvancedSearchRibbon input.submit [class^="icon-"].pull-left.icon-2x,
-#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].pull-left.icon-2x,
-#exlidAdvancedSearchRibbon input.submit [class^="icon-"].pull-right.icon-2x,
-#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].pull-right.icon-2x {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class^="icon-"].pull-left.icon-2x,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class*=" icon-"].pull-left.icon-2x,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class^="icon-"].pull-right.icon-2x,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-#exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-spin.icon-large,
-#exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-spin.icon-large {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class^="icon-"].icon-spin.icon-large,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-#exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormDateRangeRow input {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormDateRangeRow input {
   width: auto;
   height: auto;
   font-size: inherit;
 }
 
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
   position: relative;
   float: left;
   width: 100%;
@@ -8139,42 +8139,42 @@ fieldset[disabled] #exlidAdvancedSearchRibbon input.submit {
 }
 
 @media (min-width: 768px) {
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
     width: 31.25%;
   }
 }
 
 @media (min-width: 768px) {
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
     margin-left: 2.083333333333333%;
   }
 }
 
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type input,
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type select {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type input,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type select {
   margin-left: 0;
 }
 
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:first-of-type,
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(4),
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(5),
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(6),
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(7) {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:first-of-type,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(4),
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(5),
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(6),
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(7) {
   display: none;
 }
 
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
   width: auto;
   min-width: 9em;
 }
 
 @media (max-width: 756px) {
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
     border-left: none;
   }
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
     margin-left: auto;
   }
 }
@@ -8589,6 +8589,7 @@ a.EXLMainMenuITEMATOZClose {
   display: none !important;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon,
 .EXLAdvancedBrowseRibbon div.EXLBrowseFieldRibbon {
   position: relative;
@@ -8606,22 +8607,20 @@ a.EXLMainMenuITEMATOZClose {
 }
 
 @media (min-width: 768px) {
+  .MyAccount #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon,
   .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon,
   .EXLAdvancedBrowseRibbon div.EXLBrowseFieldRibbon {
     width: 66.66666666666666%;
   }
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon .EXLSearchFieldRibbonFormFields,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon .EXLSearchFieldRibbonFormFields,
 .EXLAdvancedBrowseRibbon div.EXLBrowseFieldRibbon .EXLSearchFieldRibbonFormFields {
   width: 100%;
 }
 
-.EXLBrowseList #exlidAdvancedSearchRibbon div.EXLAdvancedBrowseRibbon,
-.EXLAdvancedBrowseRibbon div.EXLAdvancedBrowseRibbon {
-  width: 100%;
-}
-
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   display: block;
@@ -8631,6 +8630,7 @@ a.EXLMainMenuITEMATOZClose {
   clear: none;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit {
   display: inline-block;
@@ -8649,6 +8649,7 @@ a.EXLMainMenuITEMATOZClose {
   border-top-left-radius: 0;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:focus,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:focus,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:focus {
   outline: thin dotted #333;
@@ -8656,16 +8657,20 @@ a.EXLMainMenuITEMATOZClose {
   outline-offset: -2px;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:hover,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:hover,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:hover,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:focus,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:focus,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:focus {
   color: #fff;
   text-decoration: none;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:active,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:active,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:active,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit.active,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit.active,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit.active {
   background-image: none;
@@ -8674,10 +8679,13 @@ a.EXLMainMenuITEMATOZClose {
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit.disabled,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit.disabled,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit.disabled,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit[disabled],
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit[disabled],
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit[disabled],
+fieldset[disabled] .MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit,
 fieldset[disabled] .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit,
 fieldset[disabled] .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit {
   pointer-events: none;
@@ -8688,38 +8696,55 @@ fieldset[disabled] .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSe
           box-shadow: none;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-large,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-large,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-large,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-large,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-large,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-spin,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-spin,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-spin,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-spin,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-spin,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].pull-left.icon-2x,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].pull-left.icon-2x,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].pull-left.icon-2x,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].pull-left.icon-2x,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].pull-left.icon-2x,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].pull-left.icon-2x,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].pull-right.icon-2x,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].pull-right.icon-2x,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].pull-right.icon-2x,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].pull-right.icon-2x,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].pull-right.icon-2x,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-spin.icon-large,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-spin.icon-large,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class^="icon-"].icon-spin.icon-large,
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-spin.icon-large,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-spin.icon-large,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon div.EXLAdvancedBrowseRibbon,
+.EXLBrowseList #exlidAdvancedSearchRibbon div.EXLAdvancedBrowseRibbon,
+.EXLAdvancedBrowseRibbon div.EXLAdvancedBrowseRibbon {
+  width: 100%;
+}
+
+.MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks,
 .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks,
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormLinks {
   position: relative;
@@ -8735,17 +8760,20 @@ fieldset[disabled] .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSe
 }
 
 @media (min-width: 768px) {
+  .MyAccount #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks,
   .EXLBrowseList #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks,
   .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormLinks {
     width: 16.666666666666664%;
   }
 }
 
+.MyAccount #exlidAdvancedSearchRibbon fieldset,
 .EXLBrowseList #exlidAdvancedSearchRibbon fieldset,
 .EXLAdvancedBrowseRibbon fieldset {
   margin: 0;
 }
 
+.MyAccount #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSearchFor,
 .EXLBrowseList #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSearchFor,
 .EXLAdvancedBrowseRibbon .EXLSearchFieldRibbonFormSearchFor {
   position: relative;
@@ -8759,6 +8787,7 @@ fieldset[disabled] .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSe
 }
 
 @media (min-width: 768px) {
+  .MyAccount #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSearchFor,
   .EXLBrowseList #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSearchFor,
   .EXLAdvancedBrowseRibbon .EXLSearchFieldRibbonFormSearchFor {
     width: 58.333333333333336%;
@@ -9740,9 +9769,13 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   width: 53.199999999999996px;
   height: 78.39999999999999px;
   overflow: hidden;
-  background-size: contain;
+  background-size: cover;
   border: 1px solid #bdc3c7;
   border-radius: 3px;
+}
+
+.coverImageDiv {
+  margin: -1px;
 }
 
 iframe {
