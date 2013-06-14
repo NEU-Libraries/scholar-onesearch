@@ -7,14 +7,8 @@
 
 }
 
-#exlidAdvancedSearchTile > #exlidAdvancedSearchRibbon > fieldset{
-  .navbar-form;
-  margin: 8px 15px;
-}
-div.EXLAdvancedSearchFormRow
 
-.EXLSearchForm,
-form.EXLSearchForm[name="searchForm"]{
+.MyAccount form.EXLSearchForm{
   padding-right: 15px !important;
   padding-left: 15px !important;
 }
@@ -70,12 +64,9 @@ form.EXLSearchForm[name="searchForm"]{
    .btn-large;
    height: auto;
   }
-  div.EXLAdvancedSearchFormRow {
-    span.EXLAdvancedSearchFormDateRangeRow input{
-      width: auto;
-      height: auto;
-      font-size: inherit;
-    }
+  
+  div.EXLAdvancedSearchFormRow{
+      .make-row();
   }
   //hides the empty rows that are in this advanced search form.
   div.EXLSearchFieldRibbonFormFieldsGroup1{
@@ -106,10 +97,31 @@ form.EXLSearchForm[name="searchForm"]{
     }
   }
   div.EXLSearchFieldRibbonFormFieldsGroup2{
+    label, select, input[type="text"]{
+      .make-column(3.75);
+      .make-column-offset(0.25);
+      height: auto;     
+
+    }
+    #exlidInput_publicationDate_
+    ,#exlidInput_mediaType_
+    ,#exlidInput_language_
+    ,#exlidSearchIn{
+      .make-column(7.75);
+    }
+    .EXLAdvancedSearchFormDateRangeRow{
+      label{
+        .make-column(12);
+        padding-left: 0;
+      }
+
+    }
+    select{
+      height: 36px;
+    }
     label{
-      min-width: 9em;
-      width: auto;
-      
+
+      padding-left: 0;
     }
     @media (max-width: 756px){
       border-left: none;
