@@ -356,12 +356,14 @@ a.report-a-problem{
     //remove the tabs buttons backgrounds
     div.EXLTabHeaderContent{
       
-      .make-column(6);
+      .make-column(5);
       padding: 0;
       padding-top: 0;
       a{
         display: inline-block;
         padding: 8px 15px;
+        // max-height: 21px;
+        .text-overflow();
       }
     }
     div.EXLTabHeaderButtons{
@@ -370,13 +372,16 @@ a.report-a-problem{
       height: auto;
       border-top: 1px solid #ddd;
       margin-top: -1px;
-      .make-column(6);
+      .make-column(7);
       position: static;
       ol.EXLTabHeaderButtonSendToList{
         clear: none;
         background-color: @body-bg;
-        z-index: 900 !important;
+        
         .dropdown-menu;
+         @media(max-width: @screen-small){
+          .dropup;
+        }
       }
     }
     div.EXLTabHeaderButtons li, div.EXLTabHeaderButtons li span{
@@ -390,11 +395,8 @@ a.report-a-problem{
       .pull-right;
       .nav;
       a{
-        border-right: 1px solid @input-border;
-        
+        border-right: 1px solid @input-border; 
       }
-
-
       > li > ol span{
         float: none;
       }
@@ -434,6 +436,8 @@ a[title="show send to options"]{
 .EXLTabContent{
   height: 20em;
   border: 1px solid @panel-border;
+  position: relative;
+  z-index: 1;
   .border-bottom-radius(4px);
   div.EXLDetailsLinks{
     background-image: none;

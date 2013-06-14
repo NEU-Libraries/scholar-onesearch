@@ -1,114 +1,30 @@
-  .MyAccount #exlidAdvancedSearchRibbon,
-  .EXLBrowseList #exlidAdvancedSearchRibbon,
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]{
+  .navbar-form;
   .EXLAdvancedBrowseRibbon{
-    div.EXLBrowseFieldRibbon{
-      background: none;
-      border: none;
-      min-height: 1px;
-      padding-top: 0;
-      padding-bottom: 0;
-      .make-column(8);
-      padding-right: 0;
-      padding-left: 0;
-      .EXLSearchFieldRibbonFormFields{
-        width: 100%;
-      }
-      
-    }
-    div.EXLSearchFieldRibbonFormSubmitSearch{
-      clear: none;
-      display: block;
-      float: left;
-      width: auto;
-      margin-top: 0;
-        input.submit{
-          .btn;
-          .border-left-radius(0);
-        }
-
-      }
-    
-    div.EXLAdvancedBrowseRibbon{
-      width: 100%;
-    }
-    
-    div.EXLSearchFieldRibbonFormLinks{
-      .make-column(2);
-      position: static;
-      line-height: inherit;
-      text-indent: inherit;
-      margin: 8px auto;
-    }
-    fieldset{
-      margin: 0;
-    }
-    div.EXLSearchFieldRibbonFormLinks{
-
-    }
-    .EXLSearchFieldRibbonFormSearchFor{
-    .make-column(7);
-    padding-right: 0;
-    padding-left: 0;
+    .make-row();
+    margin-top: 0;  
   }
-  }
-
-
-
-  .EXLSearchFieldRibbonFormSelectedBrowse{
-    .make-column(5);
-    padding-left: 0;
-    padding-right: 0;
+  div.EXLBrowseFieldRibbon{
+    .reset;
+    background-color: inherit;
     border: none;
-    height: auto;
-    a{
-      .btn;
-      .btn-default;
-      .border-right-radius(0);
-      background-image: none;
-      &:after{
-        .btn .caret;
-        .caret;
-      }
-    }
   }
-
-  
-  
-  #exlidAdvancedSearchRibbon.EXLAdvancedBrowseRibbon input#search_field{
-    height: auto;
-    line-height: inherit;
-    padding-left: 15px;
-    padding-right: 15px;
-    vertical-align: center;
-    border-radius: 0;
+  #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormFields{
+    width:90%;
   }
-  #exlidAdvancedSearchRibbon{
-
-  }
-  .EXLSearchFieldRibbonFormSelectedLabelBrowse, .EXLSearchFieldRibbonFormSelectedCollectionLabel{
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .EXLAdvancedBrowseRibbon{
-    .make-column(12);
-  }
-
-  #exlidAdvancedSearchTile{
-    border-top: none;
-    border-bottom: none;
+  //Reseting the ribbon here;
+  #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon{
+    background-color: transparent;
+    border: none;
+    min-height: 1px;
     padding: 0;
   }
-  #exlidAdvancedSearchRibbon.EXLAdvancedBrowseRibbon{
-    width: 100%;
-    height: auto;
-    border: none;
-    background: none;
-  }
-  .EXLSearchFieldRibbonFormBrowseList{
-    .dropdown-menu;
-  }
 
+}
+
+
+//// Dropdown menu gradients
+//// Not just for browse
 
 
 #exlidAdvancedSearchRibbon,
@@ -143,61 +59,5 @@
     text-decoration: none;
     outline: 0;
     #gradient > .vertical(@dropdown-link-active-bg, darken(@dropdown-link-active-bg, 5%));
-  }
-}
-
-
-
-#exlidBrowseResultsEnteries{
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.EXLBrowseList{
-  .EXLNext,
-  .EXLPrevious{
-    font-size: 0;
-    &:hover,
-    &:focus{
-      text-decoration: none;
-    }
-  }
-  #resultsNumbersTile h1{
-    margin-left: 0;
-    font-size: 14px;
-  }
-}
-
-
-#exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon{
-  background-color: transparent;
-  border: none;
-  min-height: 1px;
-  padding: 0;
-}
-
-
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]{
-  padding-right: 15px;
-  padding-left: 15px;
-  @media (min-width: 768px){
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-
-#exlidBrowseResultsEnteries{
-  .table;
-  max-width: 100%;
-  tbody > tr > td,
-  tbody > tr > th{
-    max-width: 99px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-  }
-  th{
-    width: auto !important;
   }
 }
