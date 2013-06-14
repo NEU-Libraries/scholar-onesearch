@@ -277,7 +277,8 @@ a.eShelf_print span:hover{
           .icon(@plus);
           margin-right: 3px;
         }
-        &.renameFolder_but:before{
+        &.renameFolder_but:before,
+        &.renameFolder_butDisabled:before{
           .icon(@terminal);
           margin-right: 3px;
         }
@@ -289,10 +290,14 @@ a.eShelf_print span:hover{
           .icon(@paste);
           margin-right: 3px;
         }
-        &.deleteFolder_but:before{
+        &.deleteFolder_but:before,
+        &.deleteFolder_butDisabled:before{
           .icon(@remove);
           margin-right: 3px;
-        }         
+        }
+        &[class*="Disabled"]{
+          .disabled !important;
+        }
       }
     }
   }

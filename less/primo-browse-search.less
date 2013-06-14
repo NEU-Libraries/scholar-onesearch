@@ -1,31 +1,128 @@
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]{
-  .navbar-form;
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm{
+  padding-left: 0;
+  padding-right: 0;
+  .MyAccount &{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // container for the text field and the dopdown
   .EXLAdvancedBrowseRibbon{
     .make-row();
     margin-top: 0;  
   }
-  div.EXLBrowseFieldRibbon{
-    .reset;
-    background-color: inherit;
-    border: none;
+  #exlidAdvancedSearchTile{
+    .navbar;
+    padding: 0 0 0 0;
+    border-top: none;
+    border-bottom: none;
+    .EXLAdvancedBrowseRibbon{
+      .container;
+    }
   }
-  #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormFields{
-    width:90%;
+  .EXLSearchFieldRibbonFormSearchFor{
+    width: 50%;
+    float: left;
+    clear: left;
+    input[name="searchTxt"]#search_field{
+      margin-bottom: 0px;
+      display: block;
+      min-height: 39px;
+      padding: 8px 12px;
+      font-size: 14px;
+      line-height: 1.428571429;
+      color: #555555;
+      vertical-align: middle;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 4px 0 0 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      &:focus{
+        border-color: rgba(82, 168, 236, 0.8);
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+      }
+    }
+
   }
+  div.EXLSearchFieldRibbonFormLinks{
+    a{
+      padding: 15px;
+      display: block;
+    }
+  }
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch{
+    width: auto;
+    max-width: 10%;
+    float: left;
+    clear: right;
+    margin: 8px 0 8px -1px;
+    input.submit{
+      .btn;
+      min-height: auto;
+      .border-left-radius(0);
+    }
+  }
+  .EXLSearchFieldRibbonFormFields{
+    width: 100%;
+
+  }
+
   //Reseting the ribbon here;
   #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon{
+    width: 80%;
+    float: left;
+    padding: 0;
+    margin: 7px 0;
     background-color: transparent;
     border: none;
     min-height: 1px;
-    padding: 0;
+   
   }
-
+  .EXLSearchFieldRibbonFormBrowseList{
+    .dropdown-menu;
+    left: 50%;
+    width: auto;
+    top: 45px;
+    @media (max-width: @screen-small){
+      left: 40%;
+    }
+    @media(max-width: @screen-tiny){
+      left: 18%;
+    } 
+  }
 }
 
+//Unique component, this is the dropdown for browse selection.
+.EXLSearchFieldRibbonFormSelectedBrowse{
+  width: 50%;
+  float: right;
+  border: none;
+  height: auto;
+  .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse{
+    padding: 0;
+    a{
+      .btn;
+      .btn-default;
+      border-radius: 0;
+      height: auto;
+      background-image: none;
+      &:after{
+        .btn .caret;
+        .caret;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
 
 //// Dropdown menu gradients
 //// Not just for browse
-
 
 #exlidAdvancedSearchRibbon,
 .EXLSearchFieldRibbonFormCollectionsList,
@@ -37,12 +134,12 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]{
     clear: both;
     font-weight: normal;
     line-height: 1.528571429;
-    color: #333333;
+    color: #333333!important;
     white-space: nowrap;
     margin-bottom: 0;
     &:hover,
     &:focus{
-      color: #ffffff;
+      color: #ffffff !important;
       text-decoration: none;
       background-color: #b30000;
       background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#b30000));
@@ -55,7 +152,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]{
   }
   div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
   div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label{
-    color: @dropdown-link-active-color;
+    color: @dropdown-link-active-color !important;
     text-decoration: none;
     outline: 0;
     #gradient > .vertical(@dropdown-link-active-bg, darken(@dropdown-link-active-bg, 5%));
