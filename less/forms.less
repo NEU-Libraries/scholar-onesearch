@@ -16,7 +16,8 @@ fieldset {
   border: 0;
 }
 
-legend {
+legend,
+.legend {
   display: block;
   width: 100%;
   padding: 0;
@@ -38,6 +39,7 @@ label {
 // -------------------------
 
 // Shared size and type resets
+.form-control,
 select,
 textarea,
 input[type="text"],
@@ -112,6 +114,7 @@ input[type="checkbox"] {
 }
 
 // Set the height of select and file controls to match text inputs
+.select,
 select,
 input[type="file"] {
   height: @input-height-base; /* In IE7, the height of the select element cannot be changed by height, only font-size. TODO: Check if this is still needed when dropping IE7 support */

@@ -139,6 +139,7 @@
     margin: 0;
     .make-column(5);
     background-image: none;
+    overflow: hidden;
     li{
       span.EXLMyAccountTipsBullet{
         background-image: none;
@@ -149,6 +150,34 @@
       }
     }
   }
+  fieldset, label{
+    color: @text-color;
+    
+  }
+  div.EXLMyAccountTips form,
+  div.EXLMyAccountRanking{
+    legend,
+    strong{
+      .legend;
+      font-weight: normal;
+    }
+  }
+  .EXLMyAccountForm{
+    display: inline-block;
+    th
+    ,td{
+      .make-column(6);
+    }
+  }
+}
+
+.EXLMyAccountMainContainer table.EXLMyAccountForm th{
+  margin-right: 0;
+}
+
+.EXLMyAccountFormContainer div.EXLMyAccountTips form select{
+  .form-control;
+  .select;
 }
 
 
@@ -161,6 +190,13 @@
     .reset;
     color: inherit;
     background-image: none;
+  }
+}
+
+.EXLMyAccountRanking table.EXLMyAccountForm{
+  th{
+    font-weight: bold;
+    color: @text-color;
   }
 }
 
