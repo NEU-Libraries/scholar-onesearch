@@ -91,8 +91,8 @@ var scholarOneSearch = (function(){
     $('a.EXLFirstRefinementElement').find('#removeFacet').hide().before('<i class="icon-remove-circle close"/>');
     $('img[src="../images/folders_close_inpage.gif"]').hide().before('<i class="icon-folder-close"></i>');
     $('img[src="../images/folders_open.gif"]').hide().before('<i class="icon-folder-open"></i>');
-    $('img[src="../images/full_note.gif"]').hide().before('<i class="icon-comment"></i>');
-    $('img[src="../images/empty_note.gif"]').hide().before('<i class="icon-comment-alt"></i>');
+    //$('img[src="../images/full_note.gif"]').hide().before('<i class="icon-comment"></i>');
+    //$('img[src="../images/empty_note.gif"]').hide().before('<i class="icon-comment-alt"></i>');
   };
 
   var addToolTips = function(){
