@@ -12,7 +12,7 @@ var scholarOneSearch = (function(){
       
       var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
 
-      var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-warning-sign"></a><li>');
+      var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-comments-alt"></a><li>');
       $(this).find('ul.EXLResultTabs').append($link);
     });
     $('a.report-a-problem').tooltip();
@@ -45,16 +45,16 @@ var scholarOneSearch = (function(){
     var i = 1;
     $('li.EXLFacetsDisplayMore').hide();
     //Creating a collapse group.
-    $('#facetList > .EXLFacetContainer').each(function(){
-      
-      var $link = $('<a href="#expandFacet'+ i +'"/></a>');
-      var $icon = $('<i class="icon-expand-alt icon-large pull-right"></i>');
-      $link.click(function(){
-        $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
-        $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
-      });
-      $(this).find('h4').wrap($link).after($icon);
-      i++;
+    $('#facetList > .EXLFacetContainer').each(function(i){
+      if( i > 0 ){
+        var $link = $('<a href="#expandFacet'+ (i + 1) +'"/></a>');
+        var $icon = $('<i class="icon-expand-alt icon-large pull-right"></i>');
+        $link.click(function(){
+          $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
+          $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
+        });
+        $(this).find('h4').wrap($link).after($icon);  
+      }
     });
   };
 
@@ -99,20 +99,6 @@ var scholarOneSearch = (function(){
     $("a#showMoreOptions, a.EXLSearchFieldRibbonAdvancedTwoLinks").tooltip(); 
   };
 
-  var buildMainMenu = function(){
-    //add a button for a dropdown menu;
-      var $dropdown = $('<div class=" pull-right btn-group"><button class="btn btn-default dropdown-toggle" data-toggle="dowpdown" type="button"><i class="icon-reorder"></i><span class="text-hide">Main Menu</span></button><ul class="dropdown-menu"/></div>');
-      var $links  = $('#exlidMainMenuRibbon').find('a:visible');
-      $('#exlidMainMenuRibbon').hide();
-      $dropdown.find('ul.dropdown-menu').html($links);
-      $dropdown.find('a').wrap('<li/>');
-      $('#exlidMainMenuRibbon').after($dropdown);
-      $('.dropdown-toggle').dropdown().tooltip({
-        title: "Main menu",
-        placement: "right"
-      });
-    
-  }
   
   var addActiveStates = function(){
     var $activeStatesTargets = $('.EXLFindDBListHeaderAtoZSelected > a');
@@ -143,15 +129,9 @@ var scholarOneSearch = (function(){
     buildFacetCollapse();
     reportAProblem();
     buildIcons();
-    
-    
     addActiveStates();
     handleRadio();
     addToolTips();
-    //signinPopover();
-    //buildMainMenu();
-    //
-    console.log('Init Ran!');
   };
 
   return {

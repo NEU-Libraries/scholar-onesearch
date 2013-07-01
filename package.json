@@ -1,0 +1,17 @@
+{
+  "name": "scholar-onesearch",
+  "version": "1.0.0",
+  "description": "Provides Northeastern's Primo frontend.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bassettsj/primo-frontend.git"
+  },
+  "author": "Steven Bassett (steven.j.bassett@gmail.com)",
+  "bugs": {
+    "url": "https://github.com/bassettsj/primo-frontend/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-recess": "~0.3.3"
+  }
+}

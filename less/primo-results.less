@@ -338,11 +338,14 @@ a.report-a-problem{
   float: none;
   opacity: 0.5;
   color: @carrot;
-  font-size: 14px;
+  i{
+    font-size: @report-a-problem-font-size;
+  }
   &:hover,
   &:focus{
     color: @carrot;
     opacity: 1.0;
+    text-decoration: none!important;
   }
 }
 //remove the background image and style the header box.
