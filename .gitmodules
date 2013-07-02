@@ -1,0 +1,8 @@
+[submodule "js/vendor/respond"]
+	path = js/vendor/respond
+	url = https://github.com/scottjehl/Respond.git
+    branch = master
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twitter/bootstrap.git
+	branch = 3.0.0-wip

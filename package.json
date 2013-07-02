@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/bassettsj/primo-frontend/issues"
   },
+  "dependencies"
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-recess": "~0.3.3",
