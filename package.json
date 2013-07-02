@@ -1,18 +1,21 @@
 {
-  "name": "scholar-onesearch",
-  "version": "1.0.0",
-  "description": "Provides Northeastern's Primo frontend.",
+  "name": "Scholar OneSearch (scholar-onesearch)",
+  "version": "0.0.1",
+  "description": "Provides Northeastern's Primo frontend, meant to currently override the`primo_library/libweb/css/Primo_default.3.0.css` file set in the view.",
+  "keywords": ["Primo","ExLibris"],
+  "homepage": "http:// https://github.com/nu-lts/scholar-onesearch",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bassettsj/primo-frontend.git"
+    "url": "git://github.com/nu-lts/scholar-onesearch.git"
   },
-  "author": "Steven Bassett (steven.j.bassett@gmail.com)",
+  "author": "Steven Bassett <steven.j.bassett@gmail.com> (http://bassettsj.github.io)",
   "bugs": {
     "url": "https://github.com/bassettsj/primo-frontend/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-recess": "~0.3.3",
-    "grunt-contrib-uglify": "~0.2.2"
+    "grunt-contrib-uglify": "~0.2.2",
+    "less": "~1.4.0"
   }
 }
