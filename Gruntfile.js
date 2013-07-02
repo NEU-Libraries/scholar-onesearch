@@ -11,13 +11,26 @@ module.exports = function(grunt) {
         src: 'js/src/<%= pkg.name %>.js',
         dest: 'js/build/<%= pkg.name %>.min.js'
       }
+    },
+    recess: {
+        dist: {
+            options: {
+                compile: true
+            },
+            files: {
+                'css/style.css': ['less/style.less']
+            }
+        }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
+  // Load the plugin that provides recess to compile and lint LESS to CSS
+  grunt.loadNpmTasks('grunt-recess');
+
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['recess']);
 
 };
