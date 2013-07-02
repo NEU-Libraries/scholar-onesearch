@@ -2,13 +2,13 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json')
-    uglify: {ˆˆÒnner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'js/src/<%= pkg.name %>.js',
-        dest: 'js/build/<%= pkg.name %>.min.js'
-      }
+    pkg: grunt.file.readJSON('package.json'),
+    uglify: {
+        my_target: {
+          files: {
+            'js/sos-app.min.js': ['js/src/bootstrap.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js']
+          }
+        }
     },
     recess: {
         dist: {
@@ -20,14 +20,19 @@ module.exports = function(grunt) {
                 'css/style.css': ['less/style.less']
             }
         }
+    },
+    watch: {
+        files: ['less/*.less'],
+        tasks: ['recess']
     }
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-recess');
-
+  grunt.loadNpmTasks('grunt-contrib-watch');
   // Default task(s).
   grunt.registerTask('default', ['uglify','recess']);
-
+  grunt.registerTask('recess', ['recess']);
+  grunt.registerTask('watch', ['watch']);
 };
