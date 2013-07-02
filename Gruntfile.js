@@ -15,7 +15,8 @@ module.exports = function(grunt) {
     recess: {
         dist: {
             options: {
-                compile: true
+                compile: true,
+                compress: true
             },
             files: {
                 'css/style.css': ['less/style.less']
