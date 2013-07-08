@@ -23,8 +23,8 @@ module.exports = function(grunt) {
         }
     },
     watch: {
-        files: ['less/*.less'],
-        tasks: ['recess']
+        files: 'less/*.less',
+        tasks: 'recess-compile'
     }
   });
 
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   // Default task(s).
   grunt.registerTask('default', ['uglify','recess']);
-  grunt.registerTask('recess', ['recess']);
-  grunt.registerTask('watch', ['watch']);
 
+  grunt.registerTask('recess-compile', ['recess']);
+  grunt.registerTask('watch-less', ['watch']);
 };
