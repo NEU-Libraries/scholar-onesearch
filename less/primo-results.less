@@ -33,13 +33,13 @@ td.EXLMyShelfStar{
   font-size: inherit;
   margin: 0;
   div.EXLResultsNumbers{
-    .make-column(8);
+    .make-lg-column(8);
     position: static;
     //Results header showing the number of results found.
     h1{
       color: @text-color;
       font-size: 12px;
-      .make-column(7);
+      .make-lg-column(7);
       position: static;
       margin: 9px 0;
       em{
@@ -48,7 +48,7 @@ td.EXLMyShelfStar{
     }
     //styling the result dropdown as a button toggle for sorted by menu.
     div.EXLResultsSortBy{
-      .make-column(5);
+      .make-lg-column(5);
       position: static;
       float: left;
       span.EXLResultsSortByLabel{
@@ -56,7 +56,7 @@ td.EXLMyShelfStar{
       }
       span.EXLResultsSortBySelected a{
         .btn;
-        .btn-small;
+        .btn-sm;
         .btn-primary;
         background-image: none;
         &:after{
@@ -104,7 +104,7 @@ td.EXLMyShelfStar{
 
   //Pagination styles
   div.EXLResultsNavigation{
-    .make-column(4);
+    .make-lg-column(4);
     position: static;
     text-align: center;
     border-radius: 4px;
@@ -121,8 +121,8 @@ td.EXLMyShelfStar{
       min-height: 30px;
       &:hover,
       &:focus{
-        background-color: #f5f5f5;  
-      } 
+        background-color: #f5f5f5;
+      }
       img{
         display: none;
       }
@@ -147,7 +147,7 @@ td.EXLMyShelfStar{
   font-size: inherit;
   color: inherit;
   line-height: inherit;
-  
+
   span.EXLRemoveRefinement{
     padding: 5px 8px;
     color: inherit;
@@ -221,13 +221,13 @@ td.EXLMyShelfStar{
     border: none !important;
   }
   td.EXLThumbnail{
-    .make-column(2);
+    .make-lg-column(2);
   }
   td.EXLMyShelfStar{
-    .make-column(1);
+    .make-lg-column(1);
   }
   td.EXLSummary{
-    .make-column(9);
+    .make-lg-column(9);
   }
   .EXLResultNumber{
     display: block;
@@ -293,7 +293,7 @@ iframe{
 .EXLTabsRibbon{
   border-bottom: none;
   height: auto;
-  div, 
+  div,
   div.tooltip{
       width: auto;
       float: none;
@@ -318,7 +318,7 @@ iframe{
   color: @link-color;
   .btn;
   .btn-default;
-  .btn-small;
+  .btn-sm;
   margin-bottom: 3px;
 }
 
@@ -353,15 +353,15 @@ a.report-a-problem{
   div.EXLTabHeader{
     .reset;
     .make-row();
-    max-height: 50em; 
+    max-height: 50em;
     background-image: none;
     background-color: @panel-heading-bg;
     border: 1px solid @panel-border;
     .border-top-radius(4px);
     //remove the tabs buttons backgrounds
     div.EXLTabHeaderContent{
-      
-      .make-column(5);
+
+      .make-lg-column(5);
       padding: 0;
       padding-top: 0;
       a{
@@ -377,12 +377,12 @@ a.report-a-problem{
       height: auto;
       border-top: 1px solid #ddd;
       margin-top: -1px;
-      .make-column(7);
+      .make-lg-column(7);
       position: static;
       ol.EXLTabHeaderButtonSendToList{
         clear: none;
         background-color: @body-bg;
-        
+
         .dropdown-menu;
          @media(max-width: @screen-small){
           .dropup;
@@ -400,7 +400,7 @@ a.report-a-problem{
       .pull-right;
       .nav;
       a{
-        border-right: 1px solid @input-border; 
+        border-right: 1px solid @input-border;
       }
       > li > ol span{
         float: none;
@@ -451,7 +451,7 @@ a[title="show send to options"]{
 
 .EXLDetailsTabContent{
   div.EXLDetailsLinks{
-    .make-column(4);
+    .make-lg-column(4);
     position: static;
     margin: 0;
     padding: 0;
@@ -474,7 +474,7 @@ a[title="show send to options"]{
     }
   }
   div.EXLDetailsContent{
-    .make-column(8);
+    .make-lg-column(8);
     position: static;
     z-index: 1;
     margin: 0;

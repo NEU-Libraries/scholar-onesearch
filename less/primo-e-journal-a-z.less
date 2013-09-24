@@ -7,7 +7,7 @@
     //Make the A-Z Link nav fit 12 column spans
     & > li > a{
       .btn;
-      .btn-small;
+      .btn-sm;
       .btn-primary;
       &:hover,
       &:focus{
@@ -43,14 +43,14 @@
     background: none;
     background-color: #FFF;
     background-image: none;
-    border-top: none; 
+    border-top: none;
     height: auto;
     padding-right: 15px;
     padding-left: 15px;
     //reset the fieldset to be a navbar again
     fieldset{
       margin-left: auto;
-      .make-column(12);
+      .make-lg-column(12);
       padding-left: 0;
       padding-right: 0;
       label{
@@ -62,11 +62,11 @@
     .EXLSearchFieldRibbonSimpleSearchLink{
       margin-top: 0;
       margin-left: auto;
-      .make-column(3);
+      .make-lg-column(3);
       a{
         .btn;
         .btn-primary;
-        .btn-small;
+        .btn-sm;
         .border-top-radius(0);
       }
     }
@@ -76,7 +76,7 @@
 }
 div.EXLALMAResultsTileNoFacets td.EXLThumbnail{
   display: block;
-  .make-column(1);
+  .make-lg-column(1);
 }
 
 .EXLSearchEJorunals form.EXLSearchForm[name="searchForm"]{
