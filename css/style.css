@@ -1,26 +1,10 @@
 /*!
- * Bootstrap v3.0.0
- *
- * Copyright 2013 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world by @mdo and @fat.
- */
-@font-face {
-  font-family: "HelveticaNeue67MdCn";
-  src: url("../font/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.eot");
-  src: url("../font/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.eot?#iefix") format("embedded-opentype"), url("../font/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.woff") format("woff"), url("../font/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.ttf") format("truetype"), url("../font/helveticaneue-mediumcond/helveticaneue-mediumcond-webfont.svg#HelveticaNeue67MdCn") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "HelveticaNeue57Condensed";
-  src: url("../font/helveticaneue-condensed/helveticaneue-condensed-webfont.eot");
-  src: url("../font/helveticaneue-condensed/helveticaneue-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("../font/helveticaneue-condensed/helveticaneue-condensed-webfont.woff") format("woff"), url("../font/helveticaneue-condensed/helveticaneue-condensed-webfont.ttf") format("truetype"), url("../font/helveticaneue-condensed/helveticaneue-condensed-webfont.svg#HelveticaNeue57Condensed") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+* Bootstrap v3.0.0 by @fat and @mdo
+* Copyright 2013 Twitter, Inc.
+* Licensed under http://www.apache.org/licenses/LICENSE-2.0
+*
+* Designed and built with all the love in the world by @mdo and @fat.
+*/
 .reset {
   margin: 0;
   padding: 0;
@@ -4966,7 +4950,7 @@ td.visible-print {
   }
 }
 /*!
- *  Font Awesome 3.2.0
+ *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
  *  ------------------------------------------------------------------------------
  *  The full suite of pictographic icons, examples, and documentation can be
@@ -4987,15 +4971,15 @@ td.visible-print {
  *  Author - Dave Gandy
  *  ------------------------------------------------------------------------------
  *  Email: dave@fontawesome.io
- *  Twitter: http://twitter.com/byscuits
+ *  Twitter: http://twitter.com/davegandy
  *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.eot?v=3.2.0');
-  src: url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0') format('woff'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.ttf?v=3.2.0') format('truetype'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.0') format('svg');
+  src: url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot?v=3.2.1');
+  src: url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -5014,7 +4998,6 @@ td.visible-print {
 [class*=" icon-"]:before {
   text-decoration: inherit;
   display: inline-block;
-  cursor: default;
   speak: none;
 }
 /* makes the font 33% larger relative to the icon container */
@@ -5187,10 +5170,10 @@ a [class*=" icon-"] {
 .btn [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
-.btn.btn-sm [class^="icon-"].pull-left.icon-2x,
-.btn.btn-sm [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-sm [class^="icon-"].pull-right.icon-2x,
-.btn.btn-sm [class*=" icon-"].pull-right.icon-2x {
+.btn.btn-small [class^="icon-"].pull-left.icon-2x,
+.btn.btn-small [class*=" icon-"].pull-left.icon-2x,
+.btn.btn-small [class^="icon-"].pull-right.icon-2x,
+.btn.btn-small [class*=" icon-"].pull-right.icon-2x {
   margin-top: .25em;
 }
 .btn.btn-large [class^="icon-"],
@@ -5210,6 +5193,11 @@ a [class*=" icon-"] {
 .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-left: .2em;
+}
+/* Fixes alignment in nav lists */
+.nav-list [class^="icon-"],
+.nav-list [class*=" icon-"] {
+  line-height: inherit;
 }
 /* EXTRAS
  * -------------------------- */
@@ -5245,6 +5233,8 @@ a [class*=" icon-"] {
   -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
+/* Prevent stack and spinners from being taken inline when inside a link */
+a .icon-stack,
 a .icon-spin {
   display: inline-block;
   text-decoration: none;
@@ -5393,6 +5383,7 @@ a .icon-flip-vertical:before {
 .icon-signal:before {
   content: "\f012";
 }
+.icon-gear:before,
 .icon-cog:before {
   content: "\f013";
 }
@@ -5716,6 +5707,7 @@ a .icon-flip-vertical:before {
 .icon-key:before {
   content: "\f084";
 }
+.icon-gears:before,
 .icon-cogs:before {
   content: "\f085";
 }
@@ -6394,7 +6386,7 @@ a .icon-flip-vertical:before {
 .icon-linux:before {
   content: "\f17c";
 }
-.icon-dribble:before {
+.icon-dribbble:before {
   content: "\f17d";
 }
 .icon-skype:before {
