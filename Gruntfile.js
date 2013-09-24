@@ -35,29 +35,25 @@ module.exports = function(grunt) {
       }
     },
     sftp: {
-        stagingServer:{
-            files: {
-                "./css/style.css": "./css/style.css"
-                },
-            options: {
-                path: '<%= stagingServer.path %>',
-                host: '<%= stagingServer.host %>',
-                //password: '<%= stagingServer.password %>',
-                username: '<%= stagingServer.username %>',
-
-            }
-        }
+        files: {
+            "./css/style.css": "./css/style.css"
+        },
     },
+    // sshexec: {
+    //   gitPull: {
+    //     command: 'cd <%= this.path %> && git pull --recurse-submodules=yes -v',
+    //   }
+    // }
     sshexec: {
-      stagingServer: {
-        command: 'cd <%= stagingServer.path %> && git pull',
-        options: {
-          host: '<%= stagingServer.host %>',
-          username: '<%= stagingServer.username %>',
-          //password: '<%= stagingServer.password %>'
-        }
-      }
-    }
+        stagingPull: {
+           command: 'cd <%= stagingServer.path %> && git pull --recurse-submodules=yes -v',
+           options: {
+             host: '<%= stagingServer.host %>',
+             username: '<%= stagingServer.username %>',
+             //password: '<%= stagingServer.password %>'
+           }
+         }
+       }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -70,6 +66,7 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', ['uglify','less:production']);
   grunt.registerTask('watch-less', ['watch']);
+  grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
 };
 
 
