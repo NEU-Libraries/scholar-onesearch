@@ -10,17 +10,17 @@
     vertical-align: top;
   }
   tr:first-of-type{
-    
+
   }
   td.folder_details{
-    .make-column(9);
+    .make-lg-column(9);
     position: static;
     padding-right: 0;
-    
+
     overflow: hidden;
     @media (max-width: 768px){
       padding-left: 0;
-    } 
+    }
   }
   .folder_details .itemsList_left{
     border-left: none;
@@ -36,7 +36,7 @@
   }
   .folder_details a.eShelf_paste_but {
     .make-font-awesome-eshelf("\f0ea");
-  }      
+  }
   .folder_details a.eShelf_delete_but {
     .make-font-awesome-eshelf("\f00d");
   }
@@ -53,7 +53,7 @@
   .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select{
     font-size: 14px !important;
     border: 1px solid @input-border;
-    .make-column(8);
+    .make-lg-column(8);
     position: static;
   }
   .EXLEShelfFolderContentsTable{
@@ -62,14 +62,14 @@
     }
     td.ulTd,
     td.selectWidth.EXLEShelfFolderContentsPushTo{
-      .make-column(6);
+      .make-lg-column(6);
       position: static;
       padding-left: 0;
     }
     tbody > tr{
-      
+
       td.buttonsUl{
-        .make-column(12);
+        .make-lg-column(12);
         position: static;
         .EXLEShelfFolderContentsSendButtonList,
         .newManage_buts{
@@ -91,11 +91,11 @@
     width: 100%!important;
   }
   .buttonGo{
-    .make-column(2);
+    .make-lg-column(2);
     border: none;
     a{
       .btn;
-      .btn-small;
+      .btn-sm;
       .btn-primary;
       margin-top: 4px;
       margin-left: 4px;
@@ -125,7 +125,7 @@
 }
 
 .folders_new{
-  .make-column(3);
+  .make-lg-column(3);
   position: static;
   padding-right: 0;
   padding-left: 0;
@@ -150,8 +150,8 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody{
  border-radius: @border-radius-base;
  border: 1px @table-border-color solid;
  .container-fixed();
- 
- 
+
+
 }
 .folders_new li.selected{
   background: none;
@@ -168,11 +168,11 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody{
 table.itemsListTable{
   .table;
   .table-condensed;
-  
+
 }
 
 .itemsListTable tr:hover{
-  
+
   background-color: @table-bg-hover;
 }
 
@@ -248,7 +248,7 @@ a.eShelf_print span:hover{
     .make-row();
     & > ol,
     & > li{
-      .make-column(12);
+      .make-lg-column(12);
       padding-right: 0;
       padding-left: 0;
     }
@@ -260,7 +260,7 @@ a.eShelf_print span:hover{
     }
   }
   .folderActions{
-    
+
     ul {
       width: auto;
       height: auto;
@@ -315,7 +315,7 @@ a.eShelf_print span:hover{
   .reset;
   background-image: none;
   .btn;
-  .btn-small;
+  .btn-sm;
   .btn-primary;
 }
 
