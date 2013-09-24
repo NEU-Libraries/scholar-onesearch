@@ -15,7 +15,7 @@
   margin-top: 3em;
   width: auto;
   .navbar;
-
+  .navbar-default;
 
   div.EXLSearchTabsContainer{
     display: none;
@@ -120,13 +120,15 @@
   margin-bottom: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #FFFFFF;
+
   a, a.EXLSearchFieldRibbonAdvancedTwoLinks{
     padding: 0;
     font-size: inherit;
-    //@TODO .navbar-link;
+    color: @navbar-default-link-color;
     display: inline;
-
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
   }
 }
 
