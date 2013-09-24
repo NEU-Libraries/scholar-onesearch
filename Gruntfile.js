@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          paths: ["less"]
+          paths: ["less"],
         },
         files: {
           "css/style.css": "less/style.less"
