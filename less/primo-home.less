@@ -8,24 +8,8 @@
   	margin-top: 2em;
   }
   div.EXLHomeBlockContainer1 div.EXLContentBlock1{
-    .jumbotron{
-      padding: 20px;
-      font-size: 18px;
-    }
     .make-lg-column(6);
     position: static;
-    p a{
-      color: @btn-default-color;
-      line-height: inherit;
-      display: inline-block;
-      &.btn-primary{
-        .btn-primary;
-      }
-      &.btn-info{
-        .btn-info;
-      }
-
-    }
   }
   div.EXLHomeBlockContainer1 div.EXLContentBlock2{
     .make-lg-column(6);
@@ -36,10 +20,24 @@
     .h3;
     color: @brand-info;
   }
-  .EXLHomeNewsContainer p{
-  }
   .scholar-one-search{
     width: 100%;
     height: 40px;
+  }
+}
+//reseting the link to act normal
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a {
+  display: inline;
+  line-height: normal;
+}
+
+
+
+#exlidHomeContainer{
+  .make-row();
+  div.EXLHomeBlockContainer1 div.EXLContentBlock2,
+  div.EXLHomeBlockContainer1 div.EXLContentBlock1{
+    width: auto;
+    .make-lg-column(6);
   }
 }
