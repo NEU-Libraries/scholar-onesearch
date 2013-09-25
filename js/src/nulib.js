@@ -1,3 +1,16 @@
+// Adding support for IE10 and Windows Phone 8
+// http://getbootstrap.com/getting-started/#browsers
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style")
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  )
+  document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+}
+
+
 var scholarOneSearch = (function(){
   "use strict";
 
@@ -9,7 +22,7 @@ var scholarOneSearch = (function(){
       var id = $(this).find('a.EXLResultRecordId').attr('id');
       //The Document ID
       var titleStr = title + ' (' + id + ')';
-      
+
       var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
 
       var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-comments-alt"></a><li>');
@@ -30,7 +43,7 @@ var scholarOneSearch = (function(){
     }
     else{
       return;
-    } 
+    }
   };
 
   var dismissSigninPopover = function(){
@@ -53,7 +66,7 @@ var scholarOneSearch = (function(){
           $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
           $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
         });
-        $(this).find('h4').wrap($link).after($icon);  
+        $(this).find('h4').wrap($link).after($icon);
       }
     });
   };
@@ -96,17 +109,17 @@ var scholarOneSearch = (function(){
   };
 
   var addToolTips = function(){
-    $("a#showMoreOptions, a.EXLSearchFieldRibbonAdvancedTwoLinks").tooltip(); 
+    $("a#showMoreOptions, a.EXLSearchFieldRibbonAdvancedTwoLinks").tooltip();
   };
 
-  
+
   var addActiveStates = function(){
     var $activeStatesTargets = $('.EXLFindDBListHeaderAtoZSelected > a');
     $activeStatesTargets.addClass('active');
   }
 
-  //handle the radio clicks of the dropdown menus on Primo 
-  
+  //handle the radio clicks of the dropdown menus on Primo
+
   var handleRadio = function(){
     var $radios = $('#scopesListContainer').find('input[type="radio"]');
     $radios.click(function(){
