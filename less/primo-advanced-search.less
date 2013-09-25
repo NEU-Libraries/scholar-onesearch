@@ -2,6 +2,7 @@
 #exlidAdvancedSearchTile{
   .navbar;
   background-image: none;
+  background-color: @navbar-default-bg;
   font-size: inherit;
   width: auto;
 
@@ -27,7 +28,7 @@ form.EXLSearchForm{
   }
   .EXLSearchFieldRibbonFormLinks{
     a {
-      .navbar-link;
+      //@TODO .navbar-link;
     }
   }
   input, select{
@@ -50,7 +51,7 @@ form.EXLSearchForm{
     color: white;
   }
   div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
-    .make-column(6);
+    .make-lg-column(6);
   }
   div.EXLSearchFieldRibbonFormSubmitSearch{
     border: none;
@@ -61,10 +62,10 @@ form.EXLSearchForm{
    width: 100%;
    .btn-info;
    .btn;
-   .btn-large;
+   .btn-lg;
    height: auto;
   }
-  
+
   div.EXLAdvancedSearchFormRow{
       .make-row();
   }
@@ -73,8 +74,8 @@ form.EXLSearchForm{
 
     div.EXLAdvancedSearchFormRow{
       input, select{
-        .make-column(3.75);
-        .make-column-offset(0.25);
+        .make-lg-column(3.75);
+        .make-lg-column-offset(0.25);
         min-height: 37px;
       }
       .EXLAdvancedSearchFormRowInlineInput:first-of-type{
@@ -98,20 +99,20 @@ form.EXLSearchForm{
   }
   div.EXLSearchFieldRibbonFormFieldsGroup2{
     label, select, input[type="text"]{
-      .make-column(3.75);
-      .make-column-offset(0.25);
-      height: auto;     
+      .make-lg-column(3.75);
+      .make-lg-column-offset(0.25);
+      height: auto;
 
     }
     #exlidInput_publicationDate_
     ,#exlidInput_mediaType_
     ,#exlidInput_language_
     ,#exlidSearchIn{
-      .make-column(7.75);
+      .make-lg-column(7.75);
     }
     .EXLAdvancedSearchFormDateRangeRow{
       label{
-        .make-column(12);
+        .make-lg-column(12);
         padding-left: 0;
       }
 

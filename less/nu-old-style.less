@@ -1,55 +1,36 @@
-/*------------CUSTOMIZED nu.css USED FOR Northeastern--------------*/
+//------------CUSTOMIZED nu.css USED FOR Northeastern--------------
 
-/*---Removing Last Update line from footer---*/
+//---Removing Last Update line from footer---*/
 .EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {display:none;}
-
-
 
 
 ///---------Remove Languages Nav from Header
 #exlidMainMenuTile div.EXLLanguagesContainer {display: none;}
 
 
-/*Removing RSS Image from Search Box*/
+//Removing RSS Image from Search Box
 #exlidSearchBanner, .EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {display:none;}
 
-/*Remove "rss" link from the bottom-left of the results page (beneath "Suggested New Searches"*/
+//Remove "rss" link from the bottom-left of the results page (beneath "Suggested New Searches"
 .EXLFacetContainer div.EXLFacetActions li.EXLFacetRSSAction {display:none;}
 
-/* ----------Christine/Marci solution for space within boxes -----*/
-//.EXLSearchFieldRibbonAdvancedSearchLink {text-indent:1em;}
-//#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {width:auto;}
-
-/* ---Fixing overlap of search button---*/
+// ---Fixing overlap of search button---
 #exlidAdvancedSearchRibbon input.submit {width: 8.5em;}
 
 
-/*---Hide Reviews & Tags---*/
+//---Hide Reviews & Tags---
 .EXLResult .EXLReviewsTab { display:none;}
 li#exlidMainMenuItem2.EXLMainMenuItem { display:none;}
 
-/*---Highlight Sort By text/label---*/
+//---Highlight Sort By text/label---
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel {  float:left;width:auto; text-align:right; font-weight:bold}
-/* .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a{ margin-left:0.5em; padding-right:1em; background-image:url(../images/icon_arrow_sendTo.png); background-repeat:no-repeat; background-position:100% 70%; color:#32322f; font-weight:bold} */
 
 
-/*---Hide the default Help link---*/
-#exlidMainMenuRibbon li.EXLLastItem { display:none;} 
-
-/*---Hide VIEW in NUCat tab ---
-.EXLResult .EXLRequestTab {display:none;}
-*/
-/*
-Steven Bassett
-s.bassett@neu.edu 
-
-Started working on 08/27/12
+//---Hide the default Help link---
+#exlidMainMenuRibbon li.EXLLastItem { display:none;}
 
 
-
-*/
-
-/**hide the Get More "tab"**/
+//hide the Get More "tab"
 .EXLMoreTab {
   display: none !important;
 }
@@ -70,18 +51,18 @@ a.EXLBriefResultsDisplayMultipleLink{
 /* Styling the general result list to have more padding */
 .EXLResult, .EXLResultsList td.EXLSummary{
   padding: 10px 0;
-  
+
 }
 
 .EXLResultsList td.EXLThumbnail{
-  padding-top: 1.2em; 
+  padding-top: 1.2em;
 }
 
 .EXLResultsList td.EXLMyShelfStar{
   padding-top: 1.4em;
 }
 
-/* aligning the search field */
+// aligning the search field
 
 #exlidSearchRibbon input{
   border: none;
@@ -89,7 +70,7 @@ a.EXLBriefResultsDisplayMultipleLink{
   height: 22px;
 }
 
-/* adding some background colors to the upper toolbar */
+// adding some background colors to the upper toolbar
 #exlidTopLevelFacetsTile{
   background-color: rgb(248, 248, 248);
   border: 1px solid rgb(228, 228, 228);
@@ -118,7 +99,6 @@ a.EXLBriefResultsDisplayMultipleLink{
   padding: 0;
   border: 1px solid rgb(228, 228, 228);
 }
-/* Refine my results more consistent */
 .EXLFacetContainer h4 {
   background-color:#F8F8F8;
   border-bottom:1px solid #E4E4E4;
@@ -134,10 +114,10 @@ a.EXLBriefResultsDisplayMultipleLink{
 
 .EXLFacetContainer h1 {
  margin-bottom: 0;
- font-size: 90%;  
+ font-size: 90%;
 }
 
-/* making the background search button NU red */
+// making the background search button NU red
 #exlidSearchRibbon input.submit{
   background-color: rgb(204, 0, 0);
   background-image: none;
@@ -145,15 +125,7 @@ a.EXLBriefResultsDisplayMultipleLink{
 #exlidHomeContainer h1, #exlidHomeContainer h2{
   color: rgb(204, 0, 0);
 }
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 div.EXLHomeListsContainer{
-  //float:left;
-  // margin-top:1em;
-  // padding-top:9em; 
-  // padding-left:0.5em;
-  // width:35em;
-  // background-image:url(../images/home_main_visual.jpg);
-  // background-position:0% 0%; background-repeat:no-repeat;
-}
+
 
 #exlidSearchRibbon div.EXLSearchFieldRibbon{
   -o-border-radius: 5px;
@@ -162,9 +134,7 @@ a.EXLBriefResultsDisplayMultipleLink{
   border-radius: 5px;
 }
 
-/* Added by Alon B from ExL alon.botvinik@exlibrisgroup.com */
-
-/* Removing location tab using CSS */
+//Added by Alon B from ExL alon.botvinik@exlibrisgroup.com
 .EXLTabsRibbon div li.EXLLocationsTab {
 	display:none
 }
