@@ -55,7 +55,19 @@ module.exports = function(grunt) {
              password: '<%= stagingServer.password %>'
            }
          }
-       }
+       },
+    autoshot: {
+      default_options: {
+        options: {
+          // necessary config
+          path: 'temp/autoshot',
+          type: 'png',
+          // optional config, must set either remote or local
+          remote: 'http://onesearch-test.library.northeastern.edu/primo_library/libweb/action/search.do?vid=NUdev',
+          viewport: ['1024x768', '1920x1080']
+        },
+      },
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -64,7 +76,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-ssh');
-
+  grunt.loadNpmTasks('grunt-autoshot');
   // Default task(s).
 
   grunt.registerTask('default', ['uglify','less:production']);
