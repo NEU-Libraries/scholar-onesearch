@@ -8,10 +8,11 @@ module.exports = function(grunt) {
     uglify: {
         my_target: {
           files: {
-            'js/sos-app.min.js': ['js/src/bootstrap.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js']
+            'js/sos-app.min.js': ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js']
           }
         }
     },
+
     watch: {
         files: 'less/*.less',
         tasks: 'less:development'
@@ -47,11 +48,11 @@ module.exports = function(grunt) {
     // }
     sshexec: {
         stagingPull: {
-           command: 'cd <%= stagingServer.path %> && git pull --recurse-submodules=yes -v',
+           command: 'cd <%= stagingServer.path %> && git pull -v',
            options: {
              host: '<%= stagingServer.host %>',
              username: '<%= stagingServer.username %>',
-             //password: '<%= stagingServer.password %>'
+             password: '<%= stagingServer.password %>'
            }
          }
        }
@@ -66,7 +67,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
 
-  grunt.registerTask('default', ['uglify','less:production']);
+  grunt.registerTask('default', ['uglify','less:production','sshexec:stagingPull']);
 
   grunt.registerTask('watch-less', ['watch']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
