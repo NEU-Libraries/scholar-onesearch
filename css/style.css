@@ -6661,34 +6661,8 @@ a:visited {
 }
 .EXLMyAccountContainer {
   background-color: #ffffff;
-  margin-left: -15px;
-  margin-right: -15px;
   padding-right: 15px;
   padding-left: 15px;
-}
-.EXLMyAccountContainer:before,
-.EXLMyAccountContainer:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLMyAccountContainer:after {
-  clear: both;
-}
-.EXLMyAccountContainer:before,
-.EXLMyAccountContainer:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLMyAccountContainer:after {
-  clear: both;
 }
 .EXLMyAccountContainer .EXLMyAccountQueriesMainContainer {
   margin-left: auto;
@@ -8079,6 +8053,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   padding-right: 15px;
   padding-right: 0px;
   padding-left: 0px;
+  margin-top: 8px;
 }
 @media (min-width: 1200px) {
   #exlidSearchRibbon fieldset {
@@ -8337,6 +8312,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   margin-bottom: 21px;
   border: 1px solid transparent;
   background-image: none;
+  background-color: #cc0000;
   font-size: inherit;
   width: auto;
 }
