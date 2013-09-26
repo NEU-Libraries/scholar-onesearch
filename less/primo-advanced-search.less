@@ -15,10 +15,6 @@ form.EXLSearchForm{
   padding-left: 15px;
 }
 
-#exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow{
-  margin-left: 0;
-}
-
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon{
   width: auto;
   margin-left: auto;
@@ -36,7 +32,6 @@ form.EXLSearchForm{
     min-height: 37px;
     border: 1px solid #cccccc;
     margin-bottom: 8px;
-
   }
   input[type="text"], select{
     padding-top: 8px;
@@ -53,10 +48,13 @@ form.EXLSearchForm{
   }
   div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
     .make-md-column(6);
+    padding-left: 0;
+    padding-right: 0;
   }
   div.EXLSearchFieldRibbonFormSubmitSearch{
     border: none;
     float: right;
+    //move the submit up to save space
   }
   input.submit{
    background-image: none;
@@ -71,13 +69,13 @@ form.EXLSearchForm{
       .make-row();
       padding-bottom: 0;
   }
-  //hides the empty rows that are in this advanced search form.
+  //left group of form fields
   div.EXLSearchFieldRibbonFormFieldsGroup1{
 
     div.EXLAdvancedSearchFormRow{
       input, select{
-        .make-lg-column(3.75);
-        .make-lg-column-offset(0.25);
+        .make-md-column(3.75);
+        .make-md-column-offset(0.25);
         min-height: 37px;
       }
       .EXLAdvancedSearchFormRowInlineInput:first-of-type{
@@ -87,9 +85,8 @@ form.EXLSearchForm{
       }
     }
 
-
+    //hides the empty rows that are in this advanced search form.
     div.EXLAdvancedSearchFormRow{
-
       &:first-of-type,
       &:nth-of-type(4),
       &:nth-of-type(5),
@@ -98,7 +95,9 @@ form.EXLSearchForm{
         display: none;
       }
     }
-  }
+  }//end .EXLSearchFieldRibbonFormFieldsGroup1
+
+  //starting right row fields
   div.EXLSearchFieldRibbonFormFieldsGroup2{
     border-left: none;
     //resizing the advanced search form fields
@@ -107,7 +106,14 @@ form.EXLSearchForm{
       &:nth-of-type(2),
       &:nth-of-type(3){
         .make-md-column(4);
+
+        //make the labels and select elements block width
+        select,
+        label{
+          width: 100%;
+        }
       }
+
     }
 
     label, select, input[type="text"]{
@@ -116,12 +122,7 @@ form.EXLSearchForm{
       height: auto;
 
     }
-    #exlidInput_publicationDate_
-    ,#exlidInput_mediaType_
-    ,#exlidInput_language_
-    ,#exlidSearchIn{
-      .make-md-column(7.75);
-    }
+
     .EXLAdvancedSearchFormDateRangeRow{
       label{
         .make-md-column(12);
