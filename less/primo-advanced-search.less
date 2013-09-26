@@ -25,16 +25,21 @@ form.EXLSearchForm{
   }
   //resetting the div to conserve more space
   .EXLSearchFieldRibbonFormLinks{
+    float: right;
+    line-height: normal;
+    text-indent: 0;
+    display: block;
+    margin-top: -60px;
+    //style link a bs .nav-link
     a{
+      display: block;
       color: @navbar-default-link-color;
-      margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+      padding-top: 15px;
+      padding-bottom: 15px;
       &:hover{
         color: @navbar-default-link-hover-color;
       }
     }
-    float: right;
-    line-height: normal;
-    text-indent: 0;
   }
   input, select{
     min-height: 37px;

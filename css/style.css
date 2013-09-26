@@ -8382,10 +8382,14 @@ form.EXLSearchForm {
   float: right;
   line-height: normal;
   text-indent: 0;
+  display: block;
+  margin-top: -60px;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
+  display: block;
   color: #ffffff;
-  margin: 7.25px -15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a:hover {
   color: #e6e6e6;
