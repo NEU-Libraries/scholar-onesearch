@@ -5,7 +5,8 @@
   background-color: @navbar-default-bg;
   font-size: inherit;
   width: auto;
-
+  //removing the padding to the top of the search tile
+  padding: 0 0 0 0;
 }
 
 
@@ -45,13 +46,13 @@ form.EXLSearchForm{
 
   }
   select, div.EXLSearchFieldRibbonFormFieldsGroup2 select{
-    height: 36px;
+    height: 34px;
   }
   label{
     color: white;
   }
   div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
-    .make-lg-column(6);
+    .make-md-column(6);
   }
   div.EXLSearchFieldRibbonFormSubmitSearch{
     border: none;
@@ -68,6 +69,7 @@ form.EXLSearchForm{
 
   div.EXLAdvancedSearchFormRow{
       .make-row();
+      padding-bottom: 0;
   }
   //hides the empty rows that are in this advanced search form.
   div.EXLSearchFieldRibbonFormFieldsGroup1{
@@ -98,9 +100,19 @@ form.EXLSearchForm{
     }
   }
   div.EXLSearchFieldRibbonFormFieldsGroup2{
+    border-left: none;
+    //resizing the advanced search form fields
+    .EXLAdvancedSearchFormRow{
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3){
+        .make-md-column(4);
+      }
+    }
+
     label, select, input[type="text"]{
-      .make-lg-column(3.75);
-      .make-lg-column-offset(0.25);
+      .make-md-column(3.75);
+      .make-md-column-offset(0.25);
       height: auto;
 
     }
@@ -108,11 +120,11 @@ form.EXLSearchForm{
     ,#exlidInput_mediaType_
     ,#exlidInput_language_
     ,#exlidSearchIn{
-      .make-lg-column(7.75);
+      .make-md-column(7.75);
     }
     .EXLAdvancedSearchFormDateRangeRow{
       label{
-        .make-lg-column(12);
+        .make-md-column(12);
         padding-left: 0;
       }
 
