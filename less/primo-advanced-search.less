@@ -20,17 +20,23 @@ form.EXLSearchForm{
   margin-left: auto;
   margin-right: auto;
   div.EXLSearchFieldRibbonPreFilters{
+    .make-sm-column(12);
     border: none;
     background: none;
   }
   //resetting the div to conserve more space
-  .EXLSearchFieldRibbonFormLinks{
+  .EXLSearchFieldRibbonFormLinks,
+  div.EXLSearchFieldRibbonFormSubmitSearch{
+    border: none;
     float: right;
+    position: relative;
+    top: -70px;
+    margin-right: 15px;
     line-height: normal;
     text-indent: 0;
     display: block;
-    margin-top: -60px;
-    //style link a bs .nav-link
+    //save on space and move it up to the pervious div
+    //    //style link a bs .nav-link
     a{
       display: block;
       color: @navbar-default-link-color;
@@ -60,15 +66,12 @@ form.EXLSearchForm{
     color: white;
   }
   div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
-    .make-md-column(6);
-    padding-left: 0;
-    padding-right: 0;
-  }
-  div.EXLSearchFieldRibbonFormSubmitSearch{
-    border: none;
-    float: right;
-    //move the submit up to save space
-    margin-top: -60px;
+    width: 100%;
+    @media (min-width: 992px ){
+      width: 50%;
+    }
+
+
   }
   input.submit{
    background-image: none;
@@ -116,16 +119,23 @@ form.EXLSearchForm{
     border-left: none;
     //resizing the advanced search form fields
     .EXLAdvancedSearchFormRow{
+      .make-md-column(12);
       &:nth-of-type(1),
       &:nth-of-type(2),
       &:nth-of-type(3){
         .make-md-column(4);
+        .make-md-column-offset(0.25);
 
         //make the labels and select elements block width
-        select,
-        label{
+        label, select, input[type="text"]{
           width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 0;
         }
+      }
+      &:nth-of-type(1){
+        margin-left: 0;
       }
 
     }
@@ -134,7 +144,6 @@ form.EXLSearchForm{
       .make-md-column(3.75);
       .make-md-column-offset(0.25);
       height: auto;
-
     }
 
     .EXLAdvancedSearchFormDateRangeRow{
