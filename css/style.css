@@ -8378,6 +8378,18 @@ form.EXLSearchForm {
   border: none;
   background: none;
 }
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks {
+  float: right;
+  line-height: normal;
+  text-indent: 0;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
+  color: #ffffff;
+  margin: 7.25px -15px;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a:hover {
+  color: #e6e6e6;
+}
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input,
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   min-height: 37px;
@@ -8417,6 +8429,7 @@ form.EXLSearchForm {
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   border: none;
   float: right;
+  margin-top: -60px;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit {
   width: 100%;
