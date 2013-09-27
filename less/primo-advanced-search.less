@@ -34,21 +34,24 @@ form.EXLSearchForm{
     padding: 0 0 0 0;
   }//div.EXLSearchFieldRibbonPreFilters
 
-  //resetting the div to conserve more space
-  .EXLSearchFieldRibbonFormLinks,
-  div.EXLSearchFieldRibbonFormSubmitSearch{
-    //save on space and move it up to the pervious div
-    border: none;
-    float: right;
-    position: relative;
-    top: -70px;
-    margin-right: 15px;
-    line-height: normal;
-    text-indent: 0;
-    display: block;
-    margin-bottom: -60px;
-  } //.EXLSearchFieldRibbonFormLinks,
-  //div.EXLSearchFieldRibbonFormSubmitSearc
+    //resetting the div to conserve more space
+    .EXLSearchFieldRibbonFormLinks,
+    div.EXLSearchFieldRibbonFormSubmitSearch{
+      //save on space and move it up to the pervious div
+      border: none;
+      float: right;
+      margin-right: 15px;
+      line-height: normal;
+      text-indent: 0;
+      display: block;
+      @media (min-width: 1000px) {
+        position: relative;
+        top: -70px;
+        margin-bottom: -60px;
+      }
+    } //.EXLSearchFieldRibbonFormLinks,
+    //div.EXLSearchFieldRibbonFormSubmitSearc
+
 
   .EXLSearchFieldRibbonFormLinks{
     margin-right: 80px;
@@ -71,6 +74,7 @@ form.EXLSearchForm{
     color: white;
   }
   div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
+     width: 100%;
     .make-md-column(6);
 
   }
@@ -88,10 +92,11 @@ form.EXLSearchForm{
       .make-md-column(12);
       padding-bottom: 0;
       margin-left: 0;
+      margin-bottom: 8px;
   }
   //left group of form fields
   div.EXLSearchFieldRibbonFormFieldsGroup1{
-
+    margin-top: 15px;
     div.EXLAdvancedSearchFormRow{
       .make-row();
       select
@@ -116,37 +121,34 @@ form.EXLSearchForm{
 
   //starting right row fields
   div.EXLSearchFieldRibbonFormFieldsGroup2{
+
     border-left: none;
     //resizing the advanced search form fields
     .EXLAdvancedSearchFormRow{
 
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3){
+        .make-md-column(4);
+        margin-left: 0;
 
-    &:nth-of-type(1),
-    &:nth-of-type(2),
-    &:nth-of-type(3){
-      .make-md-column(4);
-      margin-left: 0;
-
-      //make the labels and select elements block width
-      label, select, input[type="text"]{
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
+        //make the labels and select elements block width
+        label, select, input[type="text"]{
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 0;
+        }
+      }
+      &:nth-of-type(1){
         margin-left: 0;
       }
     }
-    &:nth-of-type(1){
-      margin-left: 0;
-    }
-
-    }
-
-
 
     .EXLAdvancedSearchFormDateRangeRow{
       .make-row();
       select, input[type="text"]{
-        .make-md-column(3.75);
+        .make-md-column(3.65);
         .make-md-column-offset(0.25)
       }
       label{
@@ -159,6 +161,10 @@ form.EXLSearchForm{
     #exlidInput_drStartDay_
     , #exlidInput_drEndDay_{
       margin-left: 0;
+      margin-right: 2.083333333333333%;
+    }
+    #exlidInput_drStartMonth_
+    , #exlidInput_drEndMonth_{
       margin-right: 2.083333333333333%;
     }
     select{
@@ -175,7 +181,4 @@ form.EXLSearchForm{
       }
     }
   } //div.EXLSearchFieldRibbonFormFieldsGroup2
-}//#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon
-
-
-
+}
