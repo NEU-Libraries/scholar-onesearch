@@ -7,13 +7,15 @@
   width: auto;
   //removing the padding to the top of the search tile
   padding: 0 0 0 0;
-}
+
+
+}//#exlidAdvancedSearchTile
 
 
 form.EXLSearchForm{
   padding-right: 15px;
   padding-left: 15px;
-}
+}//form.EXLSearchForm
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon{
   width: auto;
@@ -23,10 +25,12 @@ form.EXLSearchForm{
     .make-sm-column(12);
     border: none;
     background: none;
-  }
+  }//div.EXLSearchFieldRibbonPreFilters
+
   //resetting the div to conserve more space
   .EXLSearchFieldRibbonFormLinks,
   div.EXLSearchFieldRibbonFormSubmitSearch{
+    //save on space and move it up to the pervious div
     border: none;
     float: right;
     position: relative;
@@ -35,8 +39,13 @@ form.EXLSearchForm{
     line-height: normal;
     text-indent: 0;
     display: block;
-    //save on space and move it up to the pervious div
-    //    //style link a bs .nav-link
+    margin-bottom: -60px;
+  } //.EXLSearchFieldRibbonFormLinks,
+  //div.EXLSearchFieldRibbonFormSubmitSearc
+
+  .EXLSearchFieldRibbonFormLinks{
+    margin-right: 80px;
+    //style link a bs .nav-link
     a{
       display: block;
       color: @navbar-default-link-color;
@@ -124,7 +133,7 @@ form.EXLSearchForm{
       &:nth-of-type(2),
       &:nth-of-type(3){
         .make-md-column(4);
-        .make-md-column-offset(0.25);
+        margin-left: 0;
 
         //make the labels and select elements block width
         label, select, input[type="text"]{
@@ -147,8 +156,9 @@ form.EXLSearchForm{
     }
 
     .EXLAdvancedSearchFormDateRangeRow{
+      .make-md-column(12);
       label{
-        .make-md-column(12);
+        width: 100%;
         padding-left: 0;
       }
 
@@ -167,4 +177,10 @@ form.EXLSearchForm{
       }
     }
   }
-}
+  .EXLAdvancedSearchFormDateRangeRow{
+
+  }
+}//#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon
+
+
+

@@ -14,8 +14,17 @@ module.exports = function(grunt) {
     },
 
     watch: {
-        files: 'less/*.less',
-        tasks: 'less:development'
+        less: {
+          files: 'less/*.less',
+          tasks: 'less:development',
+        },
+        livereload: {
+          files: 'css/**',
+          options: {
+            livereload: true,
+          },
+
+        }
     },
     less: {
       development: {
@@ -58,7 +67,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['uglify','less:production']);
 
-  grunt.registerTask('watch-less', ['watch']);
+  grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
 };
 

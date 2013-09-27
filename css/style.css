@@ -8398,16 +8398,18 @@ form.EXLSearchForm {
   line-height: normal;
   text-indent: 0;
   display: block;
+  margin-bottom: -60px;
 }
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a,
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch a {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks {
+  margin-right: 80px;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
   display: block;
   color: #ffffff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a:hover,
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch a:hover {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a:hover {
   color: #e6e6e6;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input,
@@ -8629,6 +8631,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: 0;
 }
 @media (min-width: 992px) {
   #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1),
@@ -8636,13 +8639,6 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(3) {
     float: left;
     width: 33.33333333333333%;
-  }
-}
-@media (min-width: 992px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1),
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(2),
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(3) {
-    margin-left: 2.083333333333333%;
   }
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1) label,
@@ -8686,18 +8682,21 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
     margin-left: 2.083333333333333%;
   }
 }
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow label {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 0;
 }
 @media (min-width: 992px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow label {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow {
     float: left;
     width: 100%;
   }
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow label {
+  width: 100%;
+  padding-left: 0;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 select {
   height: 36px;
