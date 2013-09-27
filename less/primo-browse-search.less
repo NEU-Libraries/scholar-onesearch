@@ -6,9 +6,11 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
     padding-right: 15px;
   }
   // container for the text field and the dopdown
-  .EXLAdvancedBrowseRibbon{
-    .make-row();
-    margin-top: 0;  
+ .EXLAdvancedBrowseRibbon{
+    margin-top: 0;
+    a input{
+      display: none !important;
+    }
   }
   #exlidAdvancedSearchTile{
     .navbar;
@@ -24,35 +26,24 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
     float: left;
     clear: left;
     input[name="searchTxt"]#search_field{
-      margin-bottom: 0px;
-      display: block;
-      min-height: 39px;
-      padding: 8px 12px;
-      font-size: 14px;
-      line-height: 1.428571429;
-      color: #555555;
-      vertical-align: middle;
-      background-color: #ffffff;
-      border: 1px solid #cccccc;
+      .form-control;
       border-radius: 4px 0 0 4px;
-      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-      -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-      -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-      &:focus{
-        border-color: rgba(82, 168, 236, 0.8);
-        outline: 0;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-      }
     }
 
   }
-  div.EXLSearchFieldRibbonFormLinks{
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon  > fieldset{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks{
+    margin-right: 8px;
+    position: static;
+    margin-bottom: 8px;
+    margin-top: 10px;
+
     a{
-      padding: 15px;
+      padding: 8px 15px;
       display: block;
     }
   }
@@ -62,6 +53,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
     float: left;
     clear: right;
     margin: 8px 0 8px -1px;
+    position: static;
     input.submit{
       .btn;
       min-height: auto;
@@ -82,7 +74,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
     background-color: transparent;
     border: none;
     min-height: 1px;
-   
+
   }
   .EXLSearchFieldRibbonFormBrowseList{
     .dropdown-menu;
@@ -94,7 +86,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
     }
     @media(max-width: @screen-tiny){
       left: 18%;
-    } 
+    }
   }
 }
 

@@ -9254,33 +9254,10 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   padding-right: 15px;
 }
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon {
-  margin-left: -15px;
-  margin-right: -15px;
   margin-top: 0;
 }
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon:before,
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon:after {
-  clear: both;
-}
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon:before,
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon:after {
-  clear: both;
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLAdvancedBrowseRibbon a input {
+  display: none !important;
 }
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchTile {
   position: relative;
@@ -9357,32 +9334,64 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   clear: left;
 }
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field {
-  margin-bottom: 0px;
   display: block;
-  min-height: 39px;
+  width: 100%;
+  height: 37px;
   padding: 8px 12px;
   font-size: 14px;
-  line-height: 1.428571429;
+  line-height: 1.528571429;
   color: #555555;
   vertical-align: middle;
   background-color: #ffffff;
+  background-image: none;
   border: 1px solid #cccccc;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  border-radius: 4px 0 0 4px;
+}
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field:-moz-placeholder {
+  color: #999999;
+}
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field::-moz-placeholder {
+  color: #999999;
+}
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field:-ms-input-placeholder {
+  color: #999999;
+}
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field::-webkit-input-placeholder {
+  color: #999999;
 }
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field:focus {
-  border-color: rgba(82, 168, 236, 0.8);
+  border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm div.EXLSearchFieldRibbonFormLinks a {
-  padding: 15px;
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field[disabled],
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field[readonly],
+fieldset[disabled] form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+textareaform[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field {
+  height: auto;
+}
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon > fieldset {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks {
+  margin-right: 8px;
+  position: static;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks a {
+  padding: 8px 15px;
   display: block;
 }
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
@@ -9391,6 +9400,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   float: left;
   clear: right;
   margin: 8px 0 8px -1px;
+  position: static;
 }
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit {
   display: inline-block;
@@ -9774,32 +9784,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 .EXLResultsContainer {
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.EXLResultsContainer:before,
-.EXLResultsContainer:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLResultsContainer:after {
-  clear: both;
-}
-.EXLResultsContainer:before,
-.EXLResultsContainer:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLResultsContainer:after {
-  clear: both;
 }
 @media (max-width: 756px) {
   .EXLResultsContainer div.EXLResultsTile {
