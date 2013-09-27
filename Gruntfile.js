@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           tasks: 'less:development',
         },
         livereload: {
-          files: 'css/**',
+          files: 'dist/css/**',
           options: {
             livereload: true,
           },
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
           paths: ["less"],
         },
         files: {
-          "css/style.css": "less/style.less"
+          "dist/css/style.css": "less/style.less"
         }
       },
       production: {
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
           yuicompress: true
         },
         files: {
-          "css/style.css": "less/style.less"
+          "dist/css/style.css": "less/style.less"
         }
       }
     },
@@ -56,7 +56,20 @@ module.exports = function(grunt) {
          }
        },
     sftp: {
-
+      staging: {
+        files: {
+          "./": "dist/**"
+        },
+        options: {
+          path: '<%= stagingServer.path %>',
+          host: '<%= stagingServer.host %>',
+          username: '<%= stagingServer.username %>',
+          password: '<%= stagingServer.password %>',
+          srcBasePath: "dist/",
+          ignoreErrors: true,
+          createDirectories: true,
+        },
+      },
     }
   });
 
