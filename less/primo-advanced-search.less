@@ -63,18 +63,7 @@ form.EXLSearchForm{
       }
     }
   }
-  // input, select{
-  //   min-height: 37px;
-  //   border: 1px solid #cccccc;
-  //   margin-bottom: 8px;
-  // }
-  // input[type="text"], select{
-  //   padding-top: 8px;
-  //   padding-bottom: 8px;
-  //   padding-left: 15px;
-  //   padding-right: 15px;
 
-  // }
   select, div.EXLSearchFieldRibbonFormFieldsGroup2 select{
     height: 34px;
   }
@@ -82,10 +71,6 @@ form.EXLSearchForm{
     color: white;
   }
   div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
-    // width: 100%;
-    // @media (min-width: 992px ){
-    //   width: 50%;
-    // }
     .make-md-column(6);
 
   }
@@ -108,16 +93,13 @@ form.EXLSearchForm{
   div.EXLSearchFieldRibbonFormFieldsGroup1{
 
     div.EXLAdvancedSearchFormRow{
-      input, select{
+      .make-row();
+      select
+      , input{
         .make-md-column(3.75);
-        .make-md-column-offset(0.25);
-        min-height: 37px;
+        .make-md-column-offset(0.25)
       }
-      .EXLAdvancedSearchFormRowInlineInput:first-of-type{
-        input, select{
-          margin-left: 0;
-        }
-      }
+
     }
 
     //hides the empty rows that are in this advanced search form.
@@ -138,24 +120,24 @@ form.EXLSearchForm{
     //resizing the advanced search form fields
     .EXLAdvancedSearchFormRow{
 
-      // .make-row();
-      // &:nth-of-type(1),
-      // &:nth-of-type(2),
-      // &:nth-of-type(3){
-      //   .make-md-column(4);
-      //   margin-left: 0;
 
-      //   //make the labels and select elements block width
-      //   label, select, input[type="text"]{
-      //     width: 100%;
-      //     padding-left: 0;
-      //     padding-right: 0;
-      //     margin-left: 0;
-      //   }
-      // }
-      // &:nth-of-type(1){
-      //   margin-left: 0;
-      // }
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(3){
+      .make-md-column(4);
+      margin-left: 0;
+
+      //make the labels and select elements block width
+      label, select, input[type="text"]{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+      }
+    }
+    &:nth-of-type(1){
+      margin-left: 0;
+    }
 
     }
 
@@ -164,8 +146,8 @@ form.EXLSearchForm{
     .EXLAdvancedSearchFormDateRangeRow{
       .make-row();
       select, input[type="text"]{
-        .make-md-column(4);
-        height: auto;
+        .make-md-column(3.75);
+        .make-md-column-offset(0.25)
       }
       label{
         .make-md-column(12);
@@ -173,6 +155,11 @@ form.EXLSearchForm{
         padding-left: 0;
       }
 
+    }//
+    #exlidInput_drStartDay_
+    , #exlidInput_drEndDay_{
+      margin-left: 0;
+      margin-right: 2.083333333333333%;
     }
     select{
       height: 36px;

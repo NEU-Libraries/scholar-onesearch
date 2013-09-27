@@ -8655,30 +8655,53 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
     width: 100%;
   }
 }
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:before,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:after {
+  clear: both;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:before,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:after {
+  clear: both;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  min-height: 37px;
 }
 @media (min-width: 992px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select,
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input {
     float: left;
     width: 31.25%;
   }
 }
 @media (min-width: 992px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input,
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select,
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input {
     margin-left: 2.083333333333333%;
   }
-}
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type input,
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput:first-of-type select {
-  margin-left: 0;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:first-of-type,
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:nth-of-type(4),
@@ -8689,6 +8712,40 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
   border-left: none;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1),
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(2),
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(3) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1),
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(2),
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(3) {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1) label,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(2) label,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(3) label,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1) select,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(2) select,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(3) select,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1) input[type="text"],
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(2) input[type="text"],
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(3) input[type="text"] {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormRow:nth-of-type(1) {
+  margin-left: 0;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow {
   margin-left: -15px;
@@ -8724,13 +8781,18 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  height: auto;
 }
 @media (min-width: 992px) {
   #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow select,
   #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow input[type="text"] {
     float: left;
-    width: 33.33333333333333%;
+    width: 31.25%;
+  }
+}
+@media (min-width: 992px) {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow select,
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow input[type="text"] {
+    margin-left: 2.083333333333333%;
   }
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 .EXLAdvancedSearchFormDateRangeRow label {
@@ -8746,6 +8808,11 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
     float: left;
     width: 100%;
   }
+}
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 #exlidInput_drStartDay_,
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 #exlidInput_drEndDay_ {
+  margin-left: 0;
+  margin-right: 2.083333333333333%;
 }
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 select {
   height: 36px;
