@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     uglify: {
         my_target: {
           files: {
-            'js/sos-app.min.js': ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js']
+            'dist/js/sos-app.min.js': ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js']
           }
         }
     },
@@ -55,6 +55,9 @@ module.exports = function(grunt) {
            }
          }
        },
+    sftp: {
+
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
