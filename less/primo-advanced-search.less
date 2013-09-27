@@ -26,6 +26,7 @@ form.EXLSearchForm{
 
   & > fieldset{
     .make-row();
+    margin-top: -2px;
   }
   div.EXLSearchFieldRibbonPreFilters{
     border: none;
@@ -46,7 +47,7 @@ form.EXLSearchForm{
       display: block;
       @media (min-width: 1000px) {
         position: relative;
-        top: -70px;
+        bottom: 60px;
         margin-bottom: -60px;
       }
     } //.EXLSearchFieldRibbonFormLinks,
@@ -97,8 +98,10 @@ form.EXLSearchForm{
   //left group of form fields
   div.EXLSearchFieldRibbonFormFieldsGroup1{
     margin-top: 15px;
+    padding-right: 0;
     div.EXLAdvancedSearchFormRow{
       .make-row();
+      padding-right: 0;
       select
       , input{
         .make-md-column(3.75);
@@ -121,11 +124,13 @@ form.EXLSearchForm{
 
   //starting right row fields
   div.EXLSearchFieldRibbonFormFieldsGroup2{
-
+    margin-top: 10px;
     border-left: none;
+    padding-left: 0;
+    padding-right: 0;
     //resizing the advanced search form fields
     .EXLAdvancedSearchFormRow{
-
+      margin-bottom: 4px;
       &:nth-of-type(1),
       &:nth-of-type(2),
       &:nth-of-type(3){
@@ -181,4 +186,7 @@ form.EXLSearchForm{
       }
     }
   } //div.EXLSearchFieldRibbonFormFieldsGroup2
+  #scopesListAdvanced{
+    .make-md-column(7);
+  }
 }
