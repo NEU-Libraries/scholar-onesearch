@@ -5,57 +5,79 @@
   background-color: @navbar-default-bg;
   font-size: inherit;
   width: auto;
+  //removing the padding to the top of the search tile
+  padding: 0 0 0 0;
 
-}
+
+}//#exlidAdvancedSearchTile
 
 
 form.EXLSearchForm{
   padding-right: 15px;
   padding-left: 15px;
-}
-
-#exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow{
-  margin-left: 0;
-}
+}//form.EXLSearchForm
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon{
   width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  .container-fixed();
+  input, select{
+    .form-control;
+  }
+
+  & > fieldset{
+    .make-row();
+    margin-top: -2px;
+  }
   div.EXLSearchFieldRibbonPreFilters{
     border: none;
     background: none;
-  }
+    min-height: 1px;
+    padding: 0 0 0 0;
+  }//div.EXLSearchFieldRibbonPreFilters
+
+    //resetting the div to conserve more space
+    .EXLSearchFieldRibbonFormLinks,
+    div.EXLSearchFieldRibbonFormSubmitSearch{
+      //save on space and move it up to the pervious div
+      border: none;
+      float: right;
+      margin-right: 15px;
+      line-height: normal;
+      text-indent: 0;
+      display: block;
+      @media (min-width: 1000px) {
+        position: relative;
+        bottom: 60px;
+        margin-bottom: -60px;
+      }
+    } //.EXLSearchFieldRibbonFormLinks,
+    //div.EXLSearchFieldRibbonFormSubmitSearc
+
+
   .EXLSearchFieldRibbonFormLinks{
-    a {
-      //@TODO .navbar-link;
+    margin-right: 80px;
+    //style link a bs .nav-link
+    a{
+      display: block;
+      color: @navbar-default-link-color;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      &:hover{
+        color: @navbar-default-link-hover-color;
+      }
     }
   }
-  input, select{
-    min-height: 37px;
-    border: 1px solid #cccccc;
-    margin-bottom: 8px;
 
-  }
-  input[type="text"], select{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-  }
   select, div.EXLSearchFieldRibbonFormFieldsGroup2 select{
-    height: 36px;
+    height: 34px;
   }
   label{
     color: white;
   }
   div.EXLSearchFieldRibbonFormFieldsGroup1, div.EXLSearchFieldRibbonFormFieldsGroup2{
-    .make-lg-column(6);
-  }
-  div.EXLSearchFieldRibbonFormSubmitSearch{
-    border: none;
-    float: right;
+     width: 100%;
+    .make-md-column(6);
+
   }
   input.submit{
    background-image: none;
@@ -67,27 +89,29 @@ form.EXLSearchForm{
   }
 
   div.EXLAdvancedSearchFormRow{
-      .make-row();
+      .form-group;
+      .make-md-column(12);
+      padding-bottom: 0;
+      margin-left: 0;
+      margin-bottom: 8px;
   }
-  //hides the empty rows that are in this advanced search form.
+  //left group of form fields
   div.EXLSearchFieldRibbonFormFieldsGroup1{
-
+    margin-top: 15px;
+    padding-right: 0;
     div.EXLAdvancedSearchFormRow{
-      input, select{
-        .make-lg-column(3.75);
-        .make-lg-column-offset(0.25);
-        min-height: 37px;
+      .make-row();
+      padding-right: 0;
+      select
+      , input{
+        .make-md-column(3.75);
+        .make-md-column-offset(0.25)
       }
-      .EXLAdvancedSearchFormRowInlineInput:first-of-type{
-        input, select{
-          margin-left: 0;
-        }
-      }
+
     }
 
-
+    //hides the empty rows that are in this advanced search form.
     div.EXLAdvancedSearchFormRow{
-
       &:first-of-type,
       &:nth-of-type(4),
       &:nth-of-type(5),
@@ -96,32 +120,63 @@ form.EXLSearchForm{
         display: none;
       }
     }
-  }
-  div.EXLSearchFieldRibbonFormFieldsGroup2{
-    label, select, input[type="text"]{
-      .make-lg-column(3.75);
-      .make-lg-column-offset(0.25);
-      height: auto;
+  }//end .EXLSearchFieldRibbonFormFieldsGroup1
 
+  //starting right row fields
+  div.EXLSearchFieldRibbonFormFieldsGroup2{
+    margin-top: 10px;
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+    //resizing the advanced search form fields
+    .EXLAdvancedSearchFormRow{
+      margin-bottom: 4px;
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3){
+        .make-md-column(4);
+        margin-left: 0;
+
+        //make the labels and select elements block width
+        label, select, input[type="text"]{
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 0;
+        }
+      }
+      &:nth-of-type(1){
+        margin-left: 0;
+      }
     }
-    #exlidInput_publicationDate_
-    ,#exlidInput_mediaType_
-    ,#exlidInput_language_
-    ,#exlidSearchIn{
-      .make-lg-column(7.75);
-    }
+
     .EXLAdvancedSearchFormDateRangeRow{
+      .make-row();
+      select, input[type="text"]{
+        .make-md-column(3.65);
+        .make-md-column-offset(0.25)
+      }
       label{
-        .make-lg-column(12);
+        .make-md-column(12);
+        width: 100%;
         padding-left: 0;
       }
 
+    }//
+    #exlidInput_drStartDay_
+    , #exlidInput_drEndDay_{
+      margin-left: 0;
+      margin-right: 2.083333333333333%;
+    }
+    #exlidInput_drStartMonth_
+    , #exlidInput_drEndMonth_{
+      margin-right: 2.083333333333333%;
     }
     select{
       height: 36px;
     }
     label{
-
+      margin-left: 0;
       padding-left: 0;
     }
     @media (max-width: 756px){
@@ -130,5 +185,8 @@ form.EXLSearchForm{
         margin-left: auto;
       }
     }
+  } //div.EXLSearchFieldRibbonFormFieldsGroup2
+  #scopesListAdvanced{
+    .make-md-column(7);
   }
 }

@@ -14,8 +14,17 @@ module.exports = function(grunt) {
     },
 
     watch: {
-        files: 'less/*.less',
-        tasks: 'less:development'
+        less: {
+          files: 'less/*.less',
+          tasks: 'less:development',
+        },
+        livereload: {
+          files: 'css/**',
+          options: {
+            livereload: true,
+          },
+
+        }
     },
     less: {
       development: {
@@ -36,16 +45,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    sftp: {
-        files: {
-            "./css/style.css": "./css/style.css"
-        },
-    },
-    // sshexec: {
-    //   gitPull: {
-    //     command: 'cd <%= this.path %> && git pull --recurse-submodules=yes -v',
-    //   }
-    // }
     sshexec: {
         stagingPull: {
            command: 'cd <%= stagingServer.path %> && git pull -v',
@@ -56,18 +55,6 @@ module.exports = function(grunt) {
            }
          }
        },
-    autoshot: {
-      default_options: {
-        options: {
-          // necessary config
-          path: 'temp/autoshot',
-          type: 'png',
-          // optional config, must set either remote or local
-          remote: 'http://onesearch-test.library.northeastern.edu/primo_library/libweb/action/search.do?vid=NUdev',
-          viewport: ['1024x768', '1920x1080']
-        },
-      },
-    },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -76,12 +63,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-ssh');
-  grunt.loadNpmTasks('grunt-autoshot');
   // Default task(s).
 
   grunt.registerTask('default', ['uglify','less:production']);
-
-  grunt.registerTask('watch-less', ['watch']);
+  grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
 };
 
