@@ -8368,10 +8368,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
     border-radius: 4px;
   }
 }
-form.EXLSearchForm {
-  padding-right: 15px;
-  padding-left: 15px;
-}
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon {
   width: auto;
   margin-right: auto;
@@ -14106,4 +14102,60 @@ button.svg a.EXLLightboxHeaderClose {
   left: 0;
   right: 0;
   height: 100%;
+}
+#exlidHeaderSystemFeedback {
+  border-bottom: none;
+  border-top: none;
+  background-color: #ffffff;
+  text-align: inherit;
+  display: block;
+  margin-top: 0;
+}
+#exlidHeaderSystemFeedback strong {
+  padding: 0 0 0 0;
+  font-size: 100%;
+  background: none;
+  color: inherit;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback,
+.EXLSystemFeedback > .EXLSystemFeedback {
+  padding: 15px;
+  margin-bottom: 21px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+  color: #c09853;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback h4,
+.EXLSystemFeedback > .EXLSystemFeedback h4 {
+  margin-top: 0;
+  color: inherit;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback .alert-link,
+.EXLSystemFeedback > .EXLSystemFeedback .alert-link {
+  font-weight: bold;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > p,
+.EXLSystemFeedback > .EXLSystemFeedback > p,
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > ul,
+.EXLSystemFeedback > .EXLSystemFeedback > ul {
+  margin-bottom: 0;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > p + p,
+.EXLSystemFeedback > .EXLSystemFeedback > p + p {
+  margin-top: 5px;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback hr,
+.EXLSystemFeedback > .EXLSystemFeedback hr {
+  border-top-color: #f8e5be;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback .alert-link,
+.EXLSystemFeedback > .EXLSystemFeedback .alert-link {
+  color: #a47e3c;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback a,
+.EXLSystemFeedback > .EXLSystemFeedback a {
+  font-weight: bold;
+  color: #a47e3c;
 }
