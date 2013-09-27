@@ -7390,13 +7390,13 @@ body > div:after,
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #exlidUserAreaTile {
     float: left;
     width: 41.66666666666667%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #exlidUserAreaTile {
     margin-left: 25%;
   }
@@ -7782,13 +7782,13 @@ body > div:after,
   display: none;
 }
 #exlidHeaderTile {
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #exlidHeaderTile {
     float: left;
     width: 33.33333333333333%;
@@ -8337,6 +8337,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   font-size: inherit;
   width: auto;
   padding: 0 0 0 0;
+  clear: both;
 }
 #exlidAdvancedSearchTile:before,
 #exlidAdvancedSearchTile:after {
