@@ -43,7 +43,7 @@ td.EXLMyShelfStar{
   padding-bottom: 8px;
   div.EXLResultsNumbers{
     width: 100%;
-    .make-md-column(8);
+    .make-lg-column(8);
     position: static;
     //Results header showing the number of results found.
     h1{
@@ -59,7 +59,7 @@ td.EXLMyShelfStar{
     //styling the result dropdown as a button toggle for sorted by menu.
     div.EXLResultsSortBy{
       width: 100%;
-      .make-lg-column(5);
+      .make-sm-column(5);
       //position: static;
       float: left;
       span.EXLResultsSortByLabel{
@@ -116,7 +116,7 @@ td.EXLMyShelfStar{
   //Pagination styles
   div.EXLResultsNavigation{
     width: 100%;
-    .make-md-column(4);
+    .make-lg-column(4);
     position: static;
     text-align: center;
     border-radius: 4px;
@@ -184,16 +184,16 @@ td.EXLMyShelfStar{
 
 //------- Results footer ----
 .EXLResultsFooter{
+  border-bottom: 1px solid @panel-border;
   border-top: none;
+  .border-top-radius(0);
+  .border-bottom-radius(@panel-border-radius);
 }
 
 
 
 //------- Results Tile ------
-.EXLResultsTile{
-  .panel;
-  padding: 0;
-}
+
 .searchword{
   background-color: inherit;
   border-bottom: 1px @gray-light dotted;
