@@ -7751,34 +7751,6 @@ body > div:after,
     clear: left;
   }
 }
-.EXLHeader {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.EXLHeader:before,
-.EXLHeader:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLHeader:after {
-  clear: both;
-}
-.EXLHeader:before,
-.EXLHeader:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLHeader:after {
-  clear: both;
-}
 #exlidMainMenuRibbon #exlidMainMenuItem1,
 #exlidMainMenuRibbon #exlidMainMenuItem4,
 #exlidMainMenuRibbon #exlidMainMenuItem5 {
@@ -7830,37 +7802,18 @@ body > div:after,
   border: none;
   font-size: inherit;
   width: auto;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-#exlidSearchTile:before,
-#exlidSearchTile:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-#exlidSearchTile:after {
-  clear: both;
-}
-#exlidSearchTile:before,
-#exlidSearchTile:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-#exlidSearchTile:after {
-  clear: both;
-}
-#exlidSearchRibbon {
+  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #exlidSearchTile {
+    float: left;
+    width: 100%;
+  }
+}
+#exlidSearchRibbon {
   float: none;
   width: auto;
   position: relative;
@@ -7870,12 +7823,8 @@ body > div:after,
   border: 1px solid transparent;
   background-color: #cc0000;
   border-color: #ab0000;
-}
-@media (min-width: 768px) {
-  #exlidSearchRibbon {
-    float: left;
-    width: 100%;
-  }
+  padding-right: 15px;
+  padding-left: 15px;
 }
 #exlidSearchRibbon:before,
 #exlidSearchRibbon:after {
