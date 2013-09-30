@@ -363,11 +363,6 @@ a.EXLBriefResultsDisplayMultipleLink {
   background-color: #f8f8f8;
   border: 1px solid #e4e4e4;
 }
-.EXLResultsContainer div.EXLResultsTile {
-  border: 1px solid #e4e4e4;
-  padding-left: 0;
-  margin-left: 1%;
-}
 .EXLResultsHeader {
   display: inline-block;
   width: 100%;
@@ -9721,6 +9716,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffb30000', GradientType=0);
 }
+/* Primo Browse List */
 #exlidBrowseResultsEnteries {
   font-size: inherit;
   line-height: inherit;
@@ -9770,6 +9766,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 .EXLBrowseList .EXLNext,
 .EXLBrowseList .EXLPrevious {
   font-size: 0;
+  color: transparent;
 }
 .EXLBrowseList .EXLNext:hover,
 .EXLBrowseList .EXLPrevious:hover,
@@ -9781,16 +9778,47 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
   margin-left: 0;
   font-size: 14px;
 }
+/* primo-results.less */
 .EXLResultsContainer {
-  padding-right: 15px;
-  padding-left: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
-@media (max-width: 756px) {
+.EXLResultsContainer:before,
+.EXLResultsContainer:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLResultsContainer:after {
+  clear: both;
+}
+.EXLResultsContainer:before,
+.EXLResultsContainer:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLResultsContainer:after {
+  clear: both;
+}
+.EXLResultsContainer div.EXLResultsTile {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: right !important;
+  float: right;
+}
+@media (min-width: 992px) {
   .EXLResultsContainer div.EXLResultsTile {
-    width: 100%;
     float: left;
-    clear: both;
-    margin: 1em auto;
+    width: 75%;
   }
 }
 .EXLResultsList td.EXLMyShelfStar {
@@ -9815,7 +9843,7 @@ td.EXLMyShelfStar i {
   padding-right: 15px;
   position: static;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .EXLResultsHeader div.EXLResultsNumbers {
     float: left;
     width: 66.66666666666666%;
@@ -11025,11 +11053,17 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
   position: absolute;
   margin: 0;
 }
-@media (max-width: 756px) {
-  .EXLFacetTile {
-    width: 100%;
+/* primo-facets.less */
+#exlidFacetTile {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #exlidFacetTile {
     float: left;
-    clear: both;
+    width: 25%;
   }
 }
 .EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer {

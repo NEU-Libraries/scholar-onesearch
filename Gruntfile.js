@@ -30,6 +30,7 @@ module.exports = function(grunt) {
       development: {
         options: {
           paths: ["less"],
+
         },
         files: {
           "dist/css/style.css": "less/style.less"

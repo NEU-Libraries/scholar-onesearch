@@ -1,19 +1,16 @@
+/* primo-results.less */
+
 // Results container
 .EXLResultsContainer{
-  padding-right: 15px;
-  padding-left: 15px;
+  .make-row();
 
 }
 
 // ------ Results Tile --------
 
 .EXLResultsContainer div.EXLResultsTile{
-  @media (max-width: 756px){
-  width: 100%;
-  float: left;
-  clear: both;
-  margin: 1em auto;
-  }
+  .make-md-column(9);
+  .pull-right;
 }
 
 //add to eShelf button
@@ -33,7 +30,7 @@ td.EXLMyShelfStar{
   font-size: inherit;
   margin: 0;
   div.EXLResultsNumbers{
-    .make-lg-column(8);
+    .make-md-column(8);
     position: static;
     //Results header showing the number of results found.
     h1{
