@@ -1,20 +1,10 @@
 #exlidHomeContainer{
   color: @text-color;
   font-size: @font-size-base;
-  .make-row();
   width: auto;
   margin-top: 6em;
   @media (min-width: 768px){
   	margin-top: 2em;
-  }
-  div.EXLHomeBlockContainer1 div.EXLContentBlock1{
-    .make-lg-column(6);
-    position: static;
-  }
-  div.EXLHomeBlockContainer1 div.EXLContentBlock2{
-    .make-lg-column(6);
-    position: static;
-    margin-left: 0;
   }
   h3{
     .h3;
@@ -34,10 +24,10 @@
 
 
 #exlidHomeContainer{
-  .make-row();
+  .make-md-column(6);
   div.EXLHomeBlockContainer1 div.EXLContentBlock2,
   div.EXLHomeBlockContainer1 div.EXLContentBlock1{
-    width: auto;
-    .make-lg-column(6);
+    .make-row();
+
   }
 }
