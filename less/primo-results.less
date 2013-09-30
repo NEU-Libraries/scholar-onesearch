@@ -3,14 +3,20 @@
 // Results container
 .EXLResultsContainer{
   .make-row();
-
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 }
 
 // ------ Results Tile --------
 
 .EXLResultsContainer div.EXLResultsTile{
+  width: 100%;
   .make-md-column(9);
   .pull-right;
+  border-left: none;
+
+
 }
 
 //add to eShelf button
@@ -25,11 +31,18 @@ td.EXLMyShelfStar{
 
 //------- Results header-----
 .EXLResultsHeader{
-  .panel-heading;
-  border-bottom: none;
+  .clearfix();
+  clear: both;
+  width: 100%;
   font-size: inherit;
-  margin: 0;
+  background-color: @panel-heading-bg;
+  border: 1px solid @panel-border;
+  border-bottom: none;
+  .border-top-radius(@panel-border-radius);
+  padding-top: 8px;
+  padding-bottom: 8px;
   div.EXLResultsNumbers{
+    width: 100%;
     .make-md-column(8);
     position: static;
     //Results header showing the number of results found.
@@ -45,8 +58,9 @@ td.EXLMyShelfStar{
     }
     //styling the result dropdown as a button toggle for sorted by menu.
     div.EXLResultsSortBy{
+      width: 100%;
       .make-lg-column(5);
-      position: static;
+      //position: static;
       float: left;
       span.EXLResultsSortByLabel{
         margin-top: 4px;
@@ -101,7 +115,8 @@ td.EXLMyShelfStar{
 
   //Pagination styles
   div.EXLResultsNavigation{
-    .make-lg-column(4);
+    width: 100%;
+    .make-md-column(4);
     position: static;
     text-align: center;
     border-radius: 4px;
@@ -206,25 +221,29 @@ td.EXLMyShelfStar{
 }
 
 .EXLResultsList {
+  border: 1px solid @table-border-color;
   div.EXLSummaryContainer div.EXLSummaryFields {
     float: none;
     width: auto;
   }
   tr{
-    border: 1px solid @table-border-color;
+    border-bottom: 1px solid @table-border-color;
     .make-row();
+    &#exlidResult9{
+      border-bottom: none;
+    }
   }
   td{
     border: none !important;
   }
   td.EXLThumbnail{
-    .make-lg-column(2);
+    .make-md-column(2);
   }
   td.EXLMyShelfStar{
-    .make-lg-column(1);
+    .make-md-column(1);
   }
   td.EXLSummary{
-    .make-lg-column(9);
+    .make-md-column(9);
   }
   .EXLResultNumber{
     display: block;

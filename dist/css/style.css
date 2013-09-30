@@ -333,11 +333,6 @@ li#exlidMainMenuItem2.EXLMainMenuItem {
 .EXLMoreTab {
   display: none !important;
 }
-/* making the container wider */
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
-  width: 16em;
-  margin-bottom: 5px;
-}
 /* Adding more padding to the display all link */
 a.EXLBriefResultsDisplayMultipleLink {
   display: inline-block;
@@ -362,18 +357,6 @@ a.EXLBriefResultsDisplayMultipleLink {
 #exlidTopLevelFacetsTile {
   background-color: #f8f8f8;
   border: 1px solid #e4e4e4;
-}
-.EXLResultsHeader {
-  display: inline-block;
-  width: 100%;
-  padding: 6px 0px 3px 0px;
-  background-color: #f8f8f8;
-  border: 1px solid #e4e4e4;
-}
-.EXLResultsFooter {
-  height: auto;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .EXLFacetContainer {
   padding: 0;
@@ -9782,6 +9765,9 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 .EXLResultsContainer {
   margin-left: -15px;
   margin-right: -15px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 }
 .EXLResultsContainer:before,
 .EXLResultsContainer:after {
@@ -9808,12 +9794,14 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
   clear: both;
 }
 .EXLResultsContainer div.EXLResultsTile {
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   float: right !important;
   float: right;
+  border-left: none;
 }
 @media (min-width: 992px) {
   .EXLResultsContainer div.EXLResultsTile {
@@ -9828,15 +9816,43 @@ td.EXLMyShelfStar i {
   color: #FFFFFF;
 }
 .EXLResultsHeader {
-  padding: 10px 15px;
-  border-bottom: 1px solid transparent;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-  border-bottom: none;
+  clear: both;
+  width: 100%;
   font-size: inherit;
-  margin: 0;
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.EXLResultsHeader:before,
+.EXLResultsHeader:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLResultsHeader:after {
+  clear: both;
+}
+.EXLResultsHeader:before,
+.EXLResultsHeader:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLResultsHeader:after {
+  clear: both;
 }
 .EXLResultsHeader div.EXLResultsNumbers {
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -9869,11 +9885,11 @@ td.EXLMyShelfStar i {
   color: #333333;
 }
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: static;
   float: left;
 }
 @media (min-width: 1200px) {
@@ -10100,6 +10116,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffb30000', GradientType=0);
 }
 .EXLResultsHeader div.EXLResultsNavigation {
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -10109,7 +10126,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   border-radius: 4px;
   font-size: 12px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .EXLResultsHeader div.EXLResultsNavigation {
     float: left;
     width: 33.33333333333333%;
@@ -10277,12 +10294,15 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 .EXLResult .EXLTabContent iframe .viewIt {
   line-height: 2em !important;
 }
+.EXLResultsList {
+  border: 1px solid #dddddd;
+}
 .EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
   float: none;
   width: auto;
 }
 .EXLResultsList tr {
-  border: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -10310,6 +10330,9 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 .EXLResultsList tr:after {
   clear: both;
 }
+.EXLResultsList tr#exlidResult9 {
+  border-bottom: none;
+}
 .EXLResultsList td {
   border: none !important;
 }
@@ -10319,7 +10342,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .EXLResultsList td.EXLThumbnail {
     float: left;
     width: 16.666666666666664%;
@@ -10331,7 +10354,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .EXLResultsList td.EXLMyShelfStar {
     float: left;
     width: 8.333333333333332%;
@@ -10343,7 +10366,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .EXLResultsList td.EXLSummary {
     float: left;
     width: 75%;
@@ -11055,6 +11078,7 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
 }
 /* primo-facets.less */
 #exlidFacetTile {
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
