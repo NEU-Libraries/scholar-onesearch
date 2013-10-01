@@ -1,3 +1,12 @@
+/*  @file less/legacy-primo-dist-default-3-0.less
+ *
+ * Reference file autored by ExLibris in their default styling
+ *
+ */
+
+
+
+
 /*-------------Primo CSS Document-------------*/
 
 
@@ -8,18 +17,12 @@
 }
 
 .EXLHide, .EXLHiddenCue {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-/*display:none*/;
+  .text-hide();
 }
 
 * html .EXLTemporarilyHideSelects select {
   display: none;
-} /* for ie6 where selects overlap background content */
+} // for ie6 where selects overlap background content
 
 /*Skip To Main Content Styles*/
 #exlidSkipToContent a, #exlidSkipToContent a:hover, #exlidSkipToContent a:visited {

@@ -231,24 +231,26 @@ pre.sourcecode {
   overflow: auto;
   margin: 0 0 20px;
 }
+/*  @file less/legacy-primo-dist-default-3-0.less
+ *
+ * Reference file autored by ExLibris in their default styling
+ *
+ */
 /*-------------Primo CSS Document-------------*/
 .no_wrap {
   white-space: nowrap;
 }
 .EXLHide,
 .EXLHiddenCue {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  /*display:none*/
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
 * html .EXLTemporarilyHideSelects select {
   display: none;
 }
-/* for ie6 where selects overlap background content */
 /*Skip To Main Content Styles*/
 #exlidSkipToContent a,
 #exlidSkipToContent a:hover,
