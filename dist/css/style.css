@@ -9263,9 +9263,11 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
 html {
   background-color: #e9e8e5;
   min-width: inherit;
+  height: 100%;
 }
 
 body {
+  min-height: 100%;
   background-color: #ffffff;
   border-right: 1px solid #8c8c8a;
   border-left: 1px solid #8c8c8a;
@@ -9304,26 +9306,37 @@ body {
   clear: both;
 }
 
-.EXLMyAccountTabsRibbon {
-  height: auto;
-  border-bottom: none;
-  padding-top: 0;
-  margin: 0 auto;
+.EXLMyAccountContainer {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.EXLMyAccountContainer:before,
+.EXLMyAccountContainer:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLMyAccountContainer:after {
+  clear: both;
+}
+
+.EXLMyAccountContainer:before,
+.EXLMyAccountContainer:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLMyAccountContainer:after {
+  clear: both;
 }
 
 .EXLMyAccountTabsRibbon div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
   position: static;
-}
-
-@media (min-width: 1200px) {
-  .EXLMyAccountTabsRibbon div {
-    float: left;
-    width: 100%;
-  }
 }
 
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs {
@@ -9543,16 +9556,6 @@ body {
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class^="icon-"].icon-large,
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs [class*=" icon-"].icon-large {
   line-height: .9em;
-}
-
-.EXLMyAccountContainer {
-  background-color: #ffffff;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.EXLMyAccountContainer .EXLMyAccountQueriesMainContainer {
-  margin-left: auto;
 }
 
 .EXLMyAccountMainMenuTile {
@@ -14045,17 +14048,17 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
   clear: both;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table {
+.MyAccount .eShelf_title + noscript + table {
   font-size: inherit !important;
   vertical-align: middle !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table td {
+.MyAccount .eShelf_title + noscript + table td {
   vertical-align: top;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table td.folder_details {
+.MyAccount .eShelf_title + noscript + table td.folder_details {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -14066,27 +14069,27 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
 }
 
 @media (min-width: 1200px) {
-  .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
+  .MyAccount .eShelf_title + noscript + table td.folder_details {
     float: left;
     width: 75%;
   }
 }
 
 @media (max-width: 768px) {
-  .svg .MyAccount .eShelf_title + noscript + table td.folder_details {
+  .MyAccount .eShelf_title + noscript + table td.folder_details {
     padding-left: 0;
   }
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details .itemsList_left {
+.MyAccount .eShelf_title + noscript + table .folder_details .itemsList_left {
   border-left: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details h5 {
+.MyAccount .eShelf_title + noscript + table .folder_details h5 {
   display: none !important;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -14122,28 +14125,28 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
   *margin-right: .3em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14151,29 +14154,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14182,35 +14185,35 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14218,29 +14221,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14249,14 +14252,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -14292,28 +14295,28 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   *margin-right: .3em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14321,29 +14324,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14352,35 +14355,35 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14388,29 +14391,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14419,14 +14422,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -14462,28 +14465,28 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   *margin-right: .3em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14491,29 +14494,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14522,35 +14525,35 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14558,29 +14561,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14589,14 +14592,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -14632,28 +14635,28 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   *margin-right: .3em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14661,29 +14664,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14692,35 +14695,35 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:active,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.active {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:active,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but.disabled,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14728,29 +14731,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:before {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14759,14 +14762,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
-.svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
+.MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -14802,28 +14805,28 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
   *margin-right: .3em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:active,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email.active {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:active,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email.disabled,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email.disabled,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_email {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14831,29 +14834,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:before {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14862,35 +14865,35 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:active,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email.active {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:active,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email.disabled,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email.disabled,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_email {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -14898,29 +14901,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:before {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -14929,14 +14932,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -14972,28 +14975,28 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
   *margin-right: .3em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:active,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print.active {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:active,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print.disabled,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print.disabled,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_print {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -15001,29 +15004,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:before {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -15032,35 +15035,35 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:active,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print.active {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:active,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print.disabled,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print.disabled,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_print {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -15068,29 +15071,29 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:before {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:before {
   text-decoration: inherit;
   display: inline-block;
   speak: none;
@@ -15099,19 +15102,19 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   margin-right: 0.2em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
-.svg .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
+.MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
   color: #800000;
   border: 1px solid #800000;
   background-color: transparent;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details .newManage_buts li {
+.MyAccount .eShelf_title + noscript + table .folder_details .newManage_buts li {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
+.MyAccount .eShelf_title + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
   font-size: 14px !important;
   border: 1px solid #cccccc;
   position: relative;
@@ -15122,18 +15125,18 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 }
 
 @media (min-width: 1200px) {
-  .svg .MyAccount .eShelf_title + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
+  .MyAccount .eShelf_title + noscript + table .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select {
     float: left;
     width: 66.66666666666666%;
   }
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable > tbody {
+.MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable > tbody {
   border: #dddddd 1px solid;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.ulTd,
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.selectWidth.EXLEShelfFolderContentsPushTo {
+.MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.ulTd,
+.MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.selectWidth.EXLEShelfFolderContentsPushTo {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -15143,14 +15146,14 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 }
 
 @media (min-width: 1200px) {
-  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.ulTd,
-  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.selectWidth.EXLEShelfFolderContentsPushTo {
+  .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.ulTd,
+  .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable td.selectWidth.EXLEShelfFolderContentsPushTo {
     float: left;
     width: 50%;
   }
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl {
+.MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -15159,23 +15162,23 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 }
 
 @media (min-width: 1200px) {
-  .svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl {
+  .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl {
     float: left;
     width: 100%;
   }
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .EXLEShelfFolderContentsSendButtonList,
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .newManage_buts {
+.MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .EXLEShelfFolderContentsSendButtonList,
+.MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .newManage_buts {
   display: block;
   float: left;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .folder_details table.auto {
+.MyAccount .eShelf_title + noscript + table .EXLEShelfFolderContentsTable tbody > tr td.buttonsUl .folder_details table.auto {
   width: 100% !important;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details label {
+.MyAccount .eShelf_title + noscript + table .folder_details label {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -15183,11 +15186,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   border: 0;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .folder_details table.auto {
+.MyAccount .eShelf_title + noscript + table .folder_details table.auto {
   width: 100%!important;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo {
+.MyAccount .eShelf_title + noscript + table .buttonGo {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -15196,13 +15199,13 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 }
 
 @media (min-width: 1200px) {
-  .svg .MyAccount .eShelf_title + noscript + table .buttonGo {
+  .MyAccount .eShelf_title + noscript + table .buttonGo {
     float: left;
     width: 16.666666666666664%;
   }
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a {
+.MyAccount .eShelf_title + noscript + table .buttonGo a {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -15232,28 +15235,28 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
   margin-left: 4px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus {
+.MyAccount .eShelf_title + noscript + table .buttonGo a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus {
+.MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
+.MyAccount .eShelf_title + noscript + table .buttonGo a:focus {
   color: #ffffff;
   text-decoration: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
+.MyAccount .eShelf_title + noscript + table .buttonGo a:active,
+.MyAccount .eShelf_title + noscript + table .buttonGo a.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a {
+.MyAccount .eShelf_title + noscript + table .buttonGo a.disabled,
+.MyAccount .eShelf_title + noscript + table .buttonGo a[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -15261,68 +15264,68 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a 
   box-shadow: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-large {
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-large,
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-spin,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-spin {
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-spin,
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].pull-left.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].pull-right.icon-2x,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].pull-right.icon-2x {
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].pull-left.icon-2x,
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].pull-right.icon-2x,
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-spin.icon-large,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-spin.icon-large {
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class^="icon-"].icon-spin.icon-large,
+.MyAccount .eShelf_title + noscript + table .buttonGo a [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active,
-.open .dropdown-toggle.svg .MyAccount .eShelf_title + noscript + table .buttonGo a {
+.MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
+.MyAccount .eShelf_title + noscript + table .buttonGo a:focus,
+.MyAccount .eShelf_title + noscript + table .buttonGo a:active,
+.MyAccount .eShelf_title + noscript + table .buttonGo a.active,
+.open .dropdown-toggle.MyAccount .eShelf_title + noscript + table .buttonGo a {
   color: #ffffff;
   background-color: #a30000;
   border-color: #8f0000;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active,
-.open .dropdown-toggle.svg .MyAccount .eShelf_title + noscript + table .buttonGo a {
+.MyAccount .eShelf_title + noscript + table .buttonGo a:active,
+.MyAccount .eShelf_title + noscript + table .buttonGo a.active,
+.open .dropdown-toggle.MyAccount .eShelf_title + noscript + table .buttonGo a {
   background-image: none;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled],
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:hover,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:hover,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:focus,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:focus,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:focus,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:active,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:active,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a.disabled.active,
-.svg .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled].active,
-fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
+.MyAccount .eShelf_title + noscript + table .buttonGo a.disabled,
+.MyAccount .eShelf_title + noscript + table .buttonGo a[disabled],
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a,
+.MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:hover,
+.MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:hover,
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
+.MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:focus,
+.MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:focus,
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a:focus,
+.MyAccount .eShelf_title + noscript + table .buttonGo a.disabled:active,
+.MyAccount .eShelf_title + noscript + table .buttonGo a[disabled]:active,
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
+.MyAccount .eShelf_title + noscript + table .buttonGo a.disabled.active,
+.MyAccount .eShelf_title + noscript + table .buttonGo a[disabled].active,
+fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
   background-color: #cc0000;
   border-color: #cc0000;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .noteBubble h3 {
+.MyAccount .eShelf_title + noscript + table .noteBubble h3 {
   height: 47px;
 }
 
-.svg .MyAccount .eShelf_title + noscript + table .tableBorder {
+.MyAccount .eShelf_title + noscript + table .tableBorder {
   border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   border-left: 1px solid #dddddd;
@@ -15339,37 +15342,6 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .buttonGo a.
   padding: 7px 10px;
   width: 120px;
   margin: 10px auto -5px;
-}
-
-.folders_new {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: static;
-  padding-right: 0;
-  padding-left: 0;
-  border: 1px solid #dddddd;
-}
-
-@media (min-width: 1200px) {
-  .folders_new {
-    float: left;
-    width: 25%;
-  }
-}
-
-.folders_new ol {
-  margin: 0!important;
-}
-
-.folders_new li a {
-  color: #cc0000;
-}
-
-.folders_new li a:hover,
-.folders_new li a:focus {
-  color: #800000;
 }
 
 noscript + table[cellpadding="0"][cellspacing="0"] tbody {
@@ -15601,33 +15573,46 @@ a.eShelf_print span:hover {
   text-decoration: none;
 }
 
-.folders_new > ul {
-  margin-left: -15px;
-  margin-right: -15px;
+.folders_new {
+  border: none;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.folders_new > ul:before,
-.folders_new > ul:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+@media (min-width: 768px) {
+  .folders_new {
+    float: left;
+    width: 100%;
+  }
 }
 
-.folders_new > ul:after {
-  clear: both;
+@media (min-width: 992px) {
+  .folders_new {
+    float: left;
+    width: 50%;
+  }
 }
 
-.folders_new > ul:before,
-.folders_new > ul:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+@media (min-width: 1200px) {
+  .folders_new {
+    float: left;
+    width: 25%;
+  }
 }
 
-.folders_new > ul:after {
-  clear: both;
+.folders_new ol {
+  margin: 0!important;
+}
+
+.folders_new li a {
+  color: #cc0000;
+}
+
+.folders_new li a:hover,
+.folders_new li a:focus {
+  color: #800000;
 }
 
 .folders_new > ul > ol,

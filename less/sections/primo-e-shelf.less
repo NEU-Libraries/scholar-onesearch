@@ -1,6 +1,6 @@
 
 //modernizr scope
-.svg .MyAccount .eShelf_title + noscript + table{
+.MyAccount .eShelf_title + noscript + table{
   font-size: inherit !important;
   vertical-align: middle !important;
   font-family: @font-family-base !important;
@@ -124,24 +124,7 @@
   margin: 10px auto -5px;
 }
 
-.folders_new{
-  .make-lg-column(3);
-  position: static;
-  padding-right: 0;
-  padding-left: 0;
-  border: 1px solid @table-border-color;
-  ol{
-    margin: 0!important;
-  }
-  li a{
-    color: @link-color;
-    &:hover,
-    &:focus{
-      color: @link-hover-color;
-    }
-  }
 
-}
 noscript + table[cellpadding="0"][cellspacing="0"] tbody{
   .container-fixed();
 }
@@ -244,10 +227,23 @@ a.eShelf_print span:hover{
 
 
 .folders_new{
+  border: none;
+  .make-sm-column(12);
+  .make-md-column(6);
+  .make-lg-column(3);
+  ol{
+    margin: 0!important;
+  }
+  li a{
+    color: @link-color;
+    &:hover,
+    &:focus{
+      color: @link-hover-color;
+    }
+  }
   & > ul{
-    .make-row();
-    & > ol,
-    & > li{
+  & > ol,
+  & > li{
       .make-lg-column(12);
       padding-right: 0;
       padding-left: 0;
