@@ -15,9 +15,18 @@ module.exports = function(grunt) {
     },
 
     watch: {
+
         less: {
           files: 'less/**/*.less',
-          tasks: 'less:development',
+          tasks: ['less:development', 'autoprefixer:dist'],
+          options: {
+            interrupt: true,
+          },
+        },
+
+        js:{
+          files: 'js/**/*.js',
+          tasks: ['uglify', 'jshint'],
         },
         livereload: {
           files: 'dist/**/*',
@@ -25,31 +34,27 @@ module.exports = function(grunt) {
             livereload: true,
           },
         },
-        js:{
-          files: 'js/**/*.js',
-          tasks: ['uglify', 'jshint']
-        }
     },
     less: {
-      development: {
-        options: {
+      options: {
           paths: ["less"],
-
-        },
+      },
+      development: {
         files: {
-          "dist/css/style.css": "less/style.less"
-        }
+          "dist/css/style.css": "less/style.less",
+          "dist/css/legacy.css": "less/legacy.less",
+        },
       },
       production: {
+        files: {
+          "dist/css/style.css": "less/style.less",
+          "dist/css/legacy.css": "less/legacy.less",
+        },
         options: {
-          paths: ["less"],
           yuicompress: true,
           report: 'gzip',
           strictImports: true
         },
-        files: {
-          "dist/css/style.css": "less/style.less"
-        }
       }
     },
     sshexec: {
@@ -81,9 +86,9 @@ module.exports = function(grunt) {
 
     csslint: {
       options: {
-        csslintrc: '.csslintrc',
+        force: true,
         formatters: [
-          {id: 'junit-xml', dest: 'report/csslint_junit.xml'},
+          // {id: 'junit-xml', dest: 'report/csslint_junit.xml'},
           {id: 'csslint-xml', dest: 'report/csslint.xml'}
         ],
       },
@@ -95,7 +100,8 @@ module.exports = function(grunt) {
       },
       lax: {
         options: {
-          import: false
+          import: false,
+          force: true,
         },
         src: ['dist/css/**/*.css']
       }
@@ -111,6 +117,17 @@ module.exports = function(grunt) {
         },
       },
     },
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 version', 'ie 8', 'ie 7']
+      },
+      dist: {
+        expand: true,
+        flatten: true,
+        src: 'dist/css/*.css',
+        dest: 'dist/css/'
+      }
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -121,6 +138,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-ssh');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+
   // Default task(s).
 
   grunt.registerTask('default', ['watch']);
