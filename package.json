@@ -23,6 +23,7 @@
     "grunt-ssh": "~0.6.2",
     "grunt-contrib-csslint": "~0.1.2",
     "grunt-contrib-jshint": "~0.6.4",
-    "grunt-autoprefixer": "~0.3.0"
+    "grunt-autoprefixer": "~0.3.0",
+    "grunt-contrib-imagemin": "~0.3.0"
   }
 }

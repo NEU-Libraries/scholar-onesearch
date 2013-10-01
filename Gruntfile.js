@@ -127,7 +127,18 @@ module.exports = function(grunt) {
         src: 'dist/css/*.css',
         dest: 'dist/css/'
       }
-    }
+    },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: 'dist/images'                  // Destination path prefix
+        }],
+      }
+
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -139,6 +150,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
 
