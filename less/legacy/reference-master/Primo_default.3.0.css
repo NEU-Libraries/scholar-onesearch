@@ -292,7 +292,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail{display:none;}
 .EXLformFindDBIframe {position:absolute; top:50px; left:25%; background-color:#00FF99; z-index:300;background-color:#f4f7f8; }/*iframe*/
 
 #exlidFindDBContainer { background-color:#ecf0f3; width:100%; height:510px; padding-top:2%}
-#exlidFindDBTile {  clear:left;  padding:0em 0em 0em 0em; font-size:80%; height:450px; width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
+#exlidFindDBTile {  clear:left;  padding:0 0 0 0; font-size:80%; height:450px; width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
 
 
 .exliLoadingHA {position: absolute; top: 62%; left: 22%; width: 75%; height: 25px; background-color: white; z-index:1002; background-image:url(../images/icon_loading_circle.gif); background-repeat:no-repeat; background-position:center; text-align:center;-moz-opacity:0.6; opacity:0.60; filter: alpha(opacity=60 );}
@@ -330,7 +330,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail{display:none;}
 
 /*form*/
 #exlidFindDBRibbon { width:100%; margin-left:0em;  margin-right:0em; clear:left;  }
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon {clear:both; min-height:9em; width:100%; padding:0em 0em 0em 0em;margin:0px; }
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon {clear:both; min-height:9em; width:100%; padding:0 0 0 0;margin:0px; }
 #exlidFindDBRibbon fieldset fieldset { padding-left:0em; display:block}
 #exlidFindDBRibbon fieldset legend { display:none }
 #exlidFindDBRibbon select { width:7em; border:1px solid #8fb9d0; height:auto; padding-top:0em;padding-left:0em; font-size:100%}
@@ -357,7 +357,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail{display:none;}
 #exlidFindDBContainer input.EXLSubmit  { border:1px solid #ffffff;  padding:0em 0.5em 0em 0.5em; display:block; background-color:#e87107; background-image:url(../images/bg_strip_btn_orange.png); background-repeat:repeat-x;margin:0em; width:auto;  color:#FFFFFF; font-weight: normal;height:24px; cursor: pointer;}
 #exlidFindDBContainer .EXLFindDBFieldRibbonFormClear  {float:left; display:inline; border:1px solid #adb9c2; margin-left:0.2em; clear:none;}
 /*tabs*/
-.EXLFindDBTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:2.5em; margin:0em 0em 0em 0em; background-color:#FFFFFF }
+.EXLFindDBTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:2.5em; margin:0 0 0 0; background-color:#FFFFFF }
 .EXLFindDBTabsRibbon div {width:90%;margin: 0px;clear:left; float:left; margin-left:0em;}
 .EXLFindDBTabsRibbon div ul{margin-left:0.8em; margin-bottom:0em}
 .EXLFindDBTabsRibbon div li {line-height: 200%; font-size:100%; display: inline; min-width:12em; width:auto }
@@ -486,7 +486,7 @@ div.EXLFindDBListHeaderAtoZ li a:hover { background-image:url(../images/icon_arr
 /* Citation Linker styles */
 
 #exlidCitationLinkerContainer { background-color:#ecf0f3; width:100%; height:510px; padding-top:2%}
-#exlidCitationLinkerTile {  clear:left;  padding:0em 0em 0em 0em; font-size:80%; height:auto; width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
+#exlidCitationLinkerTile {  clear:left;  padding:0 0 0 0; font-size:80%; height:auto; width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
 
 .exliLoadingFdb {position: absolute; top: 10%; left: 15%; width: 75%; height: 400px; background-color: white; z-index:1002; background-image:url(../images/icon_loading_circle.gif); background-repeat:no-repeat; background-position:center; text-align:center;-moz-opacity:0.6; opacity:0.60; filter: alpha(opacity=60 );}
 #exlidCitationLinkerListWrapper {clear:both;}
@@ -537,7 +537,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit{padding-bottom:1em;padding-top:
 #exlidCitationLinkerContainer input.EXLSubmit  { border:1px solid #ffffff;  padding:0em 0.5em 0em 0.5em; display:block; background-color:#e87107; background-image:url(../images/bg_strip_btn_orange.png); background-repeat:repeat-x;margin:0em; width:80px;  color:#FFFFFF; font-weight: normal;height:24px; cursor: pointer;}
 
 /*tabs*/
-.EXLCitationLinkerTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:2.5em; margin:0em 0em 0em 0em; background-color:#FFFFFF }
+.EXLCitationLinkerTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:2.5em; margin:0 0 0 0; background-color:#FFFFFF }
 .EXLCitationLinkerTabsRibbon div {width:90%;margin: 0px;clear:left; float:left; margin-left:0em;}
 .EXLCitationLinkerTabsRibbon div ul{margin-left:0.8em; margin-bottom:0em}
 .EXLCitationLinkerTabsRibbon div li {line-height: 200%; font-size:100%; display: inline; min-width:12em; width:auto }
@@ -697,7 +697,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {font-size:100%; font-wei
 .EXLResultsList td.EXLThumbnail span.EXLThumbnailCaption { border:1px solid #ffffff; padding:0px; margin:0px; display:block}
 .EXLResultsList td.EXLMyShelfStar{ width:1.5em;padding-top:0.6em;padding-bottom:0.5em; text-align:left}
 .EXLResultsList td.EXLSummary{ padding-top:0em;}
-/* 
+/*
 	PRM_18049 adding image and removing color
 */
 .EXLResultsList em.EXLResultStatusAvailable {background-image: url(../images/icon_available.png);background-repeat: no-repeat;background-position: 0px 3px;padding-left: 15px;color:#000000}
@@ -744,7 +744,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {font-size:100%; font-wei
 }
 
 /*Record Tabs*/
-.EXLTabsRibbon{height:1.25em/*17px*/;border-bottom:1px solid #8fb9d0; padding:0px; padding-top:1em; margin:0em 0em 0em 0em; clear:left}
+.EXLTabsRibbon{height:1.25em/*17px*/;border-bottom:1px solid #8fb9d0; padding:0px; padding-top:1em; margin:0 0 0 0; clear:left}
 .EXLTabsRibbon div { /*height:1em;*/width:90%;margin: 0px;clear:left; float:left; margin-left:0em;}
 .EXLTabsRibbon div ul{margin-left:0em; margin-bottom:0em}
 .EXLTabsRibbon div li {line-height: 120%; font-size:100%; display: inline; }
@@ -1509,7 +1509,7 @@ background-image: url(../images/bullet_arrow_orange_tip.png); background-repeat:
 
 
 /*My Account Tabs*/
-.EXLMyAccountTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:1.5em; margin:0em 0em 0em 0em; background-color:#FFFFFF }
+.EXLMyAccountTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:1.5em; margin:0 0 0 0; background-color:#FFFFFF }
 .EXLMyAccountTabsRibbon div {width:90%;margin: 0px;clear:left; float:left; margin-left:0em;}
 .EXLMyAccountTabsRibbon div ul{margin-left:0.8em; margin-bottom:0em}
 .EXLMyAccountTabsRibbon div li {line-height: 160%; font-size:100%; display: inline; width:6em }
@@ -1558,7 +1558,7 @@ background-image: url(../images/bullet_arrow_orange_tip.png); background-repeat:
 #exlidHomeContainer div.EXLContentBlock4 p{ padding-left:0.4em; line-height:120%;margin-right:5.5em;}
 
 /*Footer Styles*/
-.EXLFooterTile{min-height:60px; height:auto; margin:0em 0em 0em 0em;  border-top:1px solid #cfcfcf; background-color: #ffffff;  font-size:80% ; display: inline-block; width:100%; background-image:url(../images/bg_strip_footer.png); background-repeat:repeat-x;}
+.EXLFooterTile{min-height:60px; height:auto; margin:0 0 0 0;  border-top:1px solid #cfcfcf; background-color: #ffffff;  font-size:80% ; display: inline-block; width:100%; background-image:url(../images/bg_strip_footer.png); background-repeat:repeat-x;}
 .EXLFooterTile div.EXLFooterLinksContainer { float:left; width:70%;}
 .EXLFooterTile div.EXLFooterUpdateContainer { float:right; width:auto; text-align:left;padding-top:1em; padding-right:1em}
 .EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {color:#717478; font-weight:normal; }
@@ -1583,7 +1583,7 @@ background-image: url(../images/bullet_arrow_orange_tip.png); background-repeat:
  z-index:1000; display:none;
 }
 #exlidPleaseWaitContainer {z-index:1001; position:fixed;top: 20%; left:30%; display:none; background-color:#ecf0f3; width:500px; height:260px; padding-top:0.5em}
-#exlidPleaseWaitTile {clear:left;  padding:0em 0em 0em 0em; font-size:80%; height:250px;   width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
+#exlidPleaseWaitTile {clear:left;  padding:0 0 0 0; font-size:80%; height:250px;   width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
 /*header*/
 .EXLPleaseWaitHeader { width:100%; clear:both; display:block; height:3em;}
 .EXLPleaseWaitHeader h1 { float:left; font-size:100%; color:#000000; line-height:300%; padding-left:1em}
@@ -1603,7 +1603,7 @@ background-color:#e87107;}
 .EXLSuggestedSearchesTile{ width:100%; display:block; color:#000000; border-bottom:1px solid #e4e4e4; padding-top:0.5em; padding-bottom:0.5em ; background-color:#f8f8f8;}
 .EXLSuggestedSearchesTile h2{  font-size:80%; padding-left:1em}
 .EXLSuggestedSearchesTile div.EXLSuggestedSearchesList { margin-top:0em; }
-.EXLSuggestedSearchesContainer{margin-bottom:0em;padding:0em 0em 0em 0em;  display:block; width:100%}
+.EXLSuggestedSearchesContainer{margin-bottom:0em;padding:0 0 0 0;  display:block; width:100%}
 .EXLSuggestedSearchesContainer h3{  color:#000000; font-weight:normal; font-size:80%; padding:0em; text-indent:0em; padding-left:1em; display:inline-block; line-height:100%; width:7em  }
 .EXLSuggestedSearchesContainer ol {  display:inline-block; padding-left:0.5em;}
 .EXLSuggestedSearchesContainer li a { text-indent:0em; margin-right:0.7em; padding-left:0.5em }
@@ -1629,7 +1629,7 @@ background-color:#e87107;}
 
 /*Facets Lightbox Styles*/
 #exlidFacetsLightboxContainer { background-color:#ecf0f3; width:100%; height:565px; padding-top:2%}
-#exlidFacetsLightboxTile {  clear:left;  padding:0em 0em 0em 0em; font-size:80%; height:510px; width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
+#exlidFacetsLightboxTile {  clear:left;  padding:0 0 0 0; font-size:80%; height:510px; width:96%; border:1px solid #d4d4d4; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
 
 #exlidFacetsLightboxListWrapper {clear:both;}
 
@@ -1657,7 +1657,7 @@ background-color:#e87107;}
 background-color:#bababa;  }
 
 /*tabs, titles*/
-.EXLFacetsLightboxTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:auto; padding-left:1em; margin:0em 0em 0em 0em; background-color:#FFFFFF }
+.EXLFacetsLightboxTabsRibbon{height:28px;border-bottom:2px solid #f4762d; padding:0px; padding-top:auto; padding-left:1em; margin:0 0 0 0; background-color:#FFFFFF }
 
 .EXLFacetsLightboxTabsRibbon  span {line-height: 200%; font-size:100%; display: inline; min-width:14em; width:auto;margin-right:13em;  }
 .EXLFacetsLightboxTabsRibbon  span.EXLFacetsLightboxTabsRibbonInclude {margin-right:0em;}
