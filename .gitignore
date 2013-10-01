@@ -2,3 +2,4 @@ node_modules
 css/*
 npm-debug.log
 stagingServer.json
+report

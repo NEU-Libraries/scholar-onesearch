@@ -71,7 +71,29 @@ module.exports = function(grunt) {
           createDirectories: true,
         },
       },
-    }
+    },
+
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc',
+        formatters: [
+          {id: 'junit-xml', dest: 'report/csslint_junit.xml'},
+          {id: 'csslint-xml', dest: 'report/csslint.xml'}
+        ],
+      },
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['dist/css/**/*.css']
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['dist/css/**/*.css']
+      }
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -80,6 +102,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-ssh');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   // Default task(s).
 
   grunt.registerTask('default', ['uglify','less:production']);
