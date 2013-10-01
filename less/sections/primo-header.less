@@ -4,7 +4,7 @@
 
 
 .nu-lib-logo{
-  background: data-uri('../dist/images/nu-libraries-logo.svg') no-repeat top left;
+  background: data-uri(@brand-parent-logo-svg) no-repeat top left;
   background-size: contain;
   display: block;
   width: 400px;
@@ -12,14 +12,14 @@
   height: 58px;
   margin-bottom: 0.85em;
   .no-svg &{
-    background-image: url('../images/nu-libraries-logo.png');
+    background-image: url(@brand-parent-logo-png);
 
   }
 }
 
 
 .scholar-one-search{
-  background: data-uri('../dist/images/scholar-one-search.svg') no-repeat top left;
+  background: data-uri(@brand-logo-svg) no-repeat top left;
   background-size: contain;
   display: block;
   width: 250px;
@@ -27,7 +27,7 @@
   height: 35px;
   margin-bottom: 0.75em;
   .no-svg &{
-    background-image: url('../images/scholar-one-search.png');
+    background-image: url(@brand-logo-png);
   }
 }
 
@@ -206,6 +206,6 @@
 
 
 #exlidHeaderTile{
-  width: 100%;
+  width: auto;
   .make-md-column(4);
 }

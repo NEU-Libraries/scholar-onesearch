@@ -6,38 +6,6 @@
 * Designed and built with all the love in the world by @mdo and @fat.
 */
 
-.reset {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-}
-
-.heavy-reset {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
-  background: none;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  font-size: inherit;
-}
-
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 article,
@@ -379,7 +347,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
 }
@@ -427,7 +395,7 @@ img {
 
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -443,8 +411,8 @@ img {
 }
 
 hr {
-  margin-top: 21px;
-  margin-bottom: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -461,11 +429,11 @@ hr {
 }
 
 p {
-  margin: 0 0 10.5px;
+  margin: 0 0 10px;
 }
 
 .lead {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-size: 16.099999999999998px;
   font-weight: 200;
   line-height: 1.4;
@@ -580,8 +548,8 @@ h6 small,
 h1,
 h2,
 h3 {
-  margin-top: 21px;
-  margin-bottom: 10.5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 small,
@@ -593,8 +561,8 @@ h3 small {
 h4,
 h5,
 h6 {
-  margin-top: 10.5px;
-  margin-bottom: 10.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h4 small,
@@ -634,15 +602,15 @@ h6,
 }
 
 .page-header {
-  padding-bottom: 9.5px;
-  margin: 42px 0 21px;
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
 }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10.5px;
+  margin-bottom: 10px;
 }
 
 ul ul,
@@ -669,12 +637,12 @@ ol ol {
 }
 
 dl {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 dt,
 dd {
-  line-height: 1.528571429;
+  line-height: 1.428571429;
 }
 
 dt {
@@ -737,8 +705,8 @@ abbr.initialism {
 }
 
 blockquote {
-  padding: 10.5px 21px;
-  margin: 0 0 21px;
+  padding: 10px 20px;
+  margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
@@ -754,7 +722,7 @@ blockquote p:last-child {
 
 blockquote small {
   display: block;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #999999;
 }
 
@@ -788,9 +756,9 @@ blockquote:after {
 }
 
 address {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-style: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
 }
 
 .container {
@@ -1604,7 +1572,7 @@ th {
 
 .table {
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .table > thead > tr > th,
@@ -1614,7 +1582,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
@@ -1844,7 +1812,7 @@ legend,
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
   color: #333333;
@@ -1901,9 +1869,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 output {
   display: block;
-  padding-top: 9px;
+  padding-top: 7px;
   font-size: 14px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
 }
@@ -1927,10 +1895,10 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 37px;
-  padding: 8px 12px;
+  height: 34px;
+  padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
   background-color: #ffffff;
@@ -1966,7 +1934,7 @@ textarea.form-control {
 .radio,
 .checkbox {
   display: block;
-  min-height: 21px;
+  min-height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -2026,7 +1994,7 @@ fieldset[disabled] .checkbox-inline {
 }
 
 .input-sm {
-  height: 31px;
+  height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -2034,8 +2002,8 @@ fieldset[disabled] .checkbox-inline {
 }
 
 select.input-sm {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 
 textarea.input-sm {
@@ -2043,16 +2011,16 @@ textarea.input-sm {
 }
 
 .input-lg {
-  height: 49px;
-  padding: 14px 16px;
+  height: 45px;
+  padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
 select.input-lg {
-  height: 49px;
-  line-height: 49px;
+  height: 45px;
+  line-height: 45px;
 }
 
 textarea.input-lg {
@@ -2124,7 +2092,7 @@ textarea.input-lg {
 
 .form-control-static {
   margin-bottom: 0;
-  padding-top: 9px;
+  padding-top: 7px;
 }
 
 .help-block {
@@ -2167,7 +2135,7 @@ textarea.input-lg {
 .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 9px;
+  padding-top: 7px;
 }
 
 .form-horizontal .form-group {
@@ -2207,11 +2175,11 @@ textarea.input-lg {
 
 .btn {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -2539,7 +2507,7 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .btn-lg {
-  padding: 14px 16px;
+  padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
@@ -2647,7 +2615,7 @@ input[type="button"].btn-block {
 
 .dropdown-menu .divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -2657,7 +2625,7 @@ input[type="button"].btn-block {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
 }
@@ -2705,7 +2673,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #999999;
 }
 
@@ -2898,7 +2866,7 @@ input[type="button"].btn-block {
 }
 
 .btn-group-lg > .btn {
-  padding: 14px 16px;
+  padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
@@ -3044,8 +3012,8 @@ input[type="button"].btn-block {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 49px;
-  padding: 14px 16px;
+  height: 45px;
+  padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
@@ -3054,8 +3022,8 @@ input[type="button"].btn-block {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 49px;
-  line-height: 49px;
+  height: 45px;
+  line-height: 45px;
 }
 
 textarea.input-group-lg > .form-control,
@@ -3067,7 +3035,7 @@ textarea.input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 31px;
+  height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -3077,8 +3045,8 @@ textarea.input-group-lg > .input-group-btn > .btn {
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn {
-  height: 31px;
-  line-height: 31px;
+  height: 30px;
+  line-height: 30px;
 }
 
 textarea.input-group-sm > .form-control,
@@ -3107,7 +3075,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .input-group-addon {
-  padding: 8px 12px;
+  padding: 6px 12px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
@@ -3125,7 +3093,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .input-group-addon.input-lg {
-  padding: 14px 16px;
+  padding: 10px 16px;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -3262,7 +3230,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -3282,7 +3250,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -3491,7 +3459,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   z-index: 1000;
   min-height: 50px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 
@@ -3675,9 +3643,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-brand {
   float: left;
-  padding: 14.5px 15px;
+  padding: 15px 15px;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 .navbar-brand:hover,
@@ -3721,13 +3689,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-nav {
-  margin: 7.25px -15px;
+  margin: 7.5px -15px;
 }
 
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 @media (max-width: 767px) {
@@ -3747,7 +3715,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 21px;
+    line-height: 20px;
   }
 
   .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -3767,8 +3735,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 
   .navbar-nav > li > a {
-    padding-top: 14.5px;
-    padding-bottom: 14.5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -3791,8 +3759,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 6.5px;
-  margin-bottom: 6.5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
@@ -3857,14 +3825,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-btn {
-  margin-top: 6.5px;
-  margin-bottom: 6.5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .navbar-text {
   float: left;
-  margin-top: 14.5px;
-  margin-bottom: 14.5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
@@ -4120,7 +4088,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 21px 0;
+  margin: 20px 0;
   border-radius: 4px;
 }
 
@@ -4132,8 +4100,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 8px 12px;
-  line-height: 1.528571429;
+  padding: 6px 12px;
+  line-height: 1.428571429;
   text-decoration: none;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -4187,7 +4155,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 14px 16px;
+  padding: 10px 16px;
   font-size: 18px;
 }
 
@@ -4223,7 +4191,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .alert {
   padding: 15px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -4392,7 +4360,7 @@ a.list-group-item:focus {
 }
 
 .panel {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -4773,7 +4741,7 @@ body.modal-open,
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.528571429px;
+  min-height: 16.428571429px;
 }
 
 .modal-header .close {
@@ -4782,7 +4750,7 @@ body.modal-open,
 
 .modal-title {
   margin: 0;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
 }
 
 .modal-body {
@@ -7492,7 +7460,7 @@ a:visited {
 }
 
 .EXLFacetContainer {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -7768,7 +7736,7 @@ a[title="More "] img {
   background-image: none;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.528571429px;
+  min-height: 16.428571429px;
 }
 
 .EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle,
@@ -7781,7 +7749,7 @@ a[title="More "] img {
   color: inherit;
   font-size: 18px;
   margin: 0;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
 }
 
 .EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle small,
@@ -8076,11 +8044,11 @@ a[title="More "] img {
   height: auto;
   padding: 0;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -8210,11 +8178,11 @@ fieldset[disabled] .EXLLighboxCancelButton span input {
 .EXLLighboxCancelButton span input.EXLSubmit {
   height: auto;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -8443,11 +8411,11 @@ fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit.active {
 
 #EXLCancelPersonalRankData {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -8650,6 +8618,494 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
   color: #999999;
 }
 
+a.report-a-problem {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  float: none;
+  opacity: 0.5;
+  color: #e67e22;
+}
+
+a.report-a-problem:hover,
+a.report-a-problem:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+buttona.report-a-problem {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+a.report-a-problem i {
+  font-size: 20px;
+}
+
+a.report-a-problem:hover,
+a.report-a-problem:focus {
+  color: #e67e22;
+  opacity: 1.0;
+  text-decoration: none!important;
+}
+
+.EXLResultTabContainer div.EXLTabHeader {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-height: 50em;
+  background-image: none;
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.EXLResultTabContainer div.EXLTabHeader:before,
+.EXLResultTabContainer div.EXLTabHeader:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLResultTabContainer div.EXLTabHeader:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader:before,
+.EXLResultTabContainer div.EXLTabHeader:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLResultTabContainer div.EXLTabHeader:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 1200px) {
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
+    float: left;
+    width: 41.66666666666667%;
+  }
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent a {
+  display: inline-block;
+  padding: 8px 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
+  background-color: #f5f5f5;
+  padding-right: 0;
+  height: auto;
+  border-top: 1px solid #ddd;
+  margin-top: -1px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: static;
+}
+
+@media (min-width: 1200px) {
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
+    float: left;
+    width: 58.333333333333336%;
+  }
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
+  clear: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .caret {
+    border-top: 0 dotted;
+    border-bottom: 4px solid #000000;
+    content: "";
+  }
+
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px;
+  }
+
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-default .caret {
+    border-bottom-color: #ffffff;
+  }
+
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-primary .caret,
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-success .caret,
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-warning .caret,
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-danger .caret,
+  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-info .caret {
+    border-bottom-color: #fff;
+  }
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li span {
+  height: auto;
+  background-image: none;
+  border-right: none;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  float: right !important;
+  float: right;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+  clear: both;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li {
+  position: relative;
+  display: block;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:hover,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a {
+  color: #999999;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:hover,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:hover,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #cc0000;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a .caret,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:hover .caret,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:focus .caret {
+  border-top-color: #800000;
+  border-bottom-color: #800000;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a > img {
+  max-width: none;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-large,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-spin,
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul a {
+  border-right: 1px solid #cccccc;
+}
+
+.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > ol span {
+  float: none;
+}
+
+a[title="open this item in a new window"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f08e";
+}
+
+a[title="open this item in a new window"] img {
+  display: none;
+}
+
+a[title="hide tabs"] {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  border-right: none !important;
+}
+
+a[title="hide tabs"]:hover,
+a[title="hide tabs"]:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+buttona[title="hide tabs"] {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+a[title="hide tabs"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f05c";
+}
+
+a[title="hide tabs"] img {
+  display: none;
+}
+
+a[title="show send to options"]:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 0 dotted;
+}
+
+.btn-default a[title="show send to options"]:after {
+  border-top-color: #ffffff;
+}
+
+.btn-primary a[title="show send to options"]:after,
+.btn-success a[title="show send to options"]:after,
+.btn-warning a[title="show send to options"]:after,
+.btn-danger a[title="show send to options"]:after,
+.btn-info a[title="show send to options"]:after {
+  border-top-color: #fff;
+}
+
+a[title="show send to options"] img {
+  display: none;
+}
+
+.EXLTabContent {
+  height: 20em;
+  border: 1px solid #dddddd;
+  position: relative;
+  z-index: 1;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.EXLTabContent div.EXLDetailsLinks {
+  background-image: none;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: static;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .EXLDetailsTabContent div.EXLDetailsLinks {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks ul {
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin-left: 12.5px;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksTitle a {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet {
+  background-image: none;
+  margin-top: 0;
+  margin-right: 8px;
+}
+
+.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f138";
+}
+
+.EXLDetailsTabContent div.EXLDetailsContent {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: static;
+  z-index: 1;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .EXLDetailsTabContent div.EXLDetailsContent {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+
+.icon-remove-circle.close {
+  float: none;
+}
+
+.EXLResultTabs {
+  padding-left: 0;
+}
+
 .EXLPopup.EXLEmailPopup #mailFormId,
 .EXLPopup.EXLEmailPopup #mailFormId > table {
   position: absolute;
@@ -8679,7 +9135,7 @@ fieldset[disabled] #EXLCancelPersonalRankData.active {
 #exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback,
 .EXLSystemFeedback > .EXLSystemFeedback {
   padding: 15px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: #fcf8e3;
@@ -8776,7 +9232,7 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
 .EXLMoreTab,
 .EXLTabsRibbon div li.EXLLocationsTab,
 #exlidUserAreaRibbon li span.EXLUserAreaStart {
-  display: none;
+  display: none !important;
 }
 
 #exlidUserAreaRibbon li {
@@ -8940,7 +9396,7 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
 
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -8966,7 +9422,7 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
 
 .EXLMyAccountTabsRibbon div .EXLMyAccountTabs > li > a {
   margin-right: 2px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -9148,11 +9604,11 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
   width: auto;
   border: none;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -9165,7 +9621,7 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  padding: 14px 16px;
+  padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
@@ -9376,7 +9832,7 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
 .EXLRequestSystemFeedback,
 .EXLMyAccountMainContainer div.EXLMyPersonalSettings div.EXLRequestSystemFeedback {
   padding: 15px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -9708,7 +10164,7 @@ body > div:after,
 }
 
 .no-svg .scholar-one-search {
-  background-image: url('../images/scholar-one-search.png');
+  background-image: url('../dist/images/scholar-one-search.png');
 }
 
 @media (max-width: 756px) {
@@ -9793,7 +10249,7 @@ body > div:after,
 
 #exlidMainMenuRibbon .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -9950,7 +10406,7 @@ body > div:after,
 
 #exlidUserAreaRibbon .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -10210,7 +10666,7 @@ body > div:after,
 
 #exlidMainMenuRibbon .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -10304,7 +10760,7 @@ body > div:after,
 }
 
 #exlidHeaderTile {
-  width: 100%;
+  width: auto;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -10322,48 +10778,58 @@ body > div:after,
 
 .EXLSearchWrapper {
   clear: both;
-}
-
-.EXLSearchWrapper:before,
-.EXLSearchWrapper:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLSearchWrapper:after {
-  clear: both;
-}
-
-.EXLSearchWrapper:before,
-.EXLSearchWrapper:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLSearchWrapper:after {
-  clear: both;
-}
-
-#exlidSearchTile {
-  background-image: none;
-  border: none;
-  font-size: inherit;
-  width: auto;
-  position: relative;
-  min-height: 1px;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media (min-width: 768px) {
-  #exlidSearchTile {
-    float: left;
-    width: 100%;
-  }
+.EXLSearchWrapper:before,
+.EXLSearchWrapper:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLSearchWrapper:after {
+  clear: both;
+}
+
+.EXLSearchWrapper:before,
+.EXLSearchWrapper:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLSearchWrapper:after {
+  clear: both;
+}
+
+.EXLSearchWrapper:before,
+.EXLSearchWrapper:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLSearchWrapper:after {
+  clear: both;
+}
+
+.EXLSearchWrapper:before,
+.EXLSearchWrapper:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLSearchWrapper:after {
+  clear: both;
 }
 
 #exlidSearchRibbon {
@@ -10372,12 +10838,10 @@ body > div:after,
   position: relative;
   z-index: 1000;
   min-height: 50px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   background-color: #cc0000;
   border-color: #ab0000;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 #exlidSearchRibbon:before,
@@ -10529,28 +10993,60 @@ body > div:after,
   display: none;
 }
 
-#exlidSearchRibbon div.EXLSearchFieldRibbon {
-  border: none;
-  float: none;
-  background: none;
-  height: auto;
-  max-height: 39px;
-  overflow: hidden;
+#exlidSearchRibbon input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-#exlidSearchRibbon input {
-  width: auto;
+#exlidSearchRibbon input:-moz-placeholder {
+  color: #999999;
+}
+
+#exlidSearchRibbon input::-moz-placeholder {
+  color: #999999;
+}
+
+#exlidSearchRibbon input:-ms-input-placeholder {
+  color: #999999;
+}
+
+#exlidSearchRibbon input::-webkit-input-placeholder {
+  color: #999999;
+}
+
+#exlidSearchRibbon input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#exlidSearchRibbon input[disabled],
+#exlidSearchRibbon input[readonly],
+fieldset[disabled] #exlidSearchRibbon input {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+textarea#exlidSearchRibbon input {
   height: auto;
-  padding: 8px 12px;
 }
 
 #exlidSearchRibbon input#search_field {
-  width: 100%;
-  margin-right: 0px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  border: 1px solid #cccccc;
-  min-height: 39px;
 }
 
 #exlidSearchRibbon input.submit {
@@ -10559,11 +11055,11 @@ body > div:after,
   background-color: #2c3e50;
   border-color: #2c3e50;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -10577,9 +11073,7 @@ body > div:after,
   -o-user-select: none;
   user-select: none;
   height: auto;
-  min-height: 39px;
   overflow: hidden;
-  margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -10671,20 +11165,81 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 #exlidSearchRibbon fieldset {
-  border-color: #ab0000;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-right: 0px;
-  padding-left: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 10px 15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  #exlidSearchRibbon fieldset {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  #exlidSearchRibbon fieldset {
+    float: left;
+    width: 66.66666666666666%;
+  }
 }
 
 @media (min-width: 1200px) {
   #exlidSearchRibbon fieldset {
     float: left;
     width: 66.66666666666666%;
+  }
+}
+
+@media (min-width: 768px) {
+  #exlidSearchRibbon fieldset .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  #exlidSearchRibbon fieldset .form-control {
+    display: inline-block;
+  }
+
+  #exlidSearchRibbon fieldset .radio,
+  #exlidSearchRibbon fieldset .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  #exlidSearchRibbon fieldset .radio input[type="radio"],
+  #exlidSearchRibbon fieldset .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #exlidSearchRibbon fieldset .form-group {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  #exlidSearchRibbon fieldset {
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
   }
 }
 
@@ -10699,11 +11254,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   }
 }
 
-.EXLSearchFieldRibbonFormSubmitSearch {
-  width: auto;
-  max-width: 12%;
-}
-
 .EXLSearchFieldRibbonFormFields {
   width: 88%;
   height: auto;
@@ -10712,7 +11262,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 .EXLSearchFieldRibbonFormSelectedCollection {
   width: 40.001%;
   height: auto;
-  max-height: 39px;
   overflow: hidden;
   border-left: none;
   border-right: 1px solid #a7a9aa;
@@ -10730,11 +11279,10 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 
 .EXLSearchFieldRibbonFormSelectedCollection a {
   display: inline-block;
-  padding: 8px 12px;
-  margin-bottom: 0;
+  padding: 6px 12px;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -10749,7 +11297,10 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   color: #ffffff;
   background-color: #a7a9aa;
   border-color: #a7a9aa;
-  height: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
   border-radius: 0;
   background-image: none;
   text-overflow: ellipsis;
@@ -10874,14 +11425,18 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: static;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  .EXLSearchFieldRibbonAdvancedSearchLink,
+  .EXLSearchFieldRibbonBrowseSearchLink,
+  .EXLSearchFieldRibbonAtoZLink {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
   .EXLSearchFieldRibbonAdvancedSearchLink,
   .EXLSearchFieldRibbonBrowseSearchLink,
   .EXLSearchFieldRibbonAtoZLink {
@@ -10896,10 +11451,9 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 .EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks,
 .EXLSearchFieldRibbonBrowseSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks,
 .EXLSearchFieldRibbonAtoZLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
-  padding: 0;
-  font-size: inherit;
+  padding: 15px 15px;
   color: #ffffff;
-  display: inline;
+  display: block;
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink a:hover,
@@ -10939,7 +11493,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 
 .EXLSearchFieldRibbonFormCollectionsList .divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -10949,7 +11503,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
 }
@@ -10964,7 +11518,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   position: relative;
   z-index: 1000;
   min-height: 50px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   background-image: none;
   background-color: #cc0000;
@@ -11040,10 +11594,10 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   display: block;
   width: 100%;
-  height: 37px;
-  padding: 8px 12px;
+  height: 34px;
+  padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
   background-color: #ffffff;
@@ -11200,11 +11754,11 @@ textarea#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   background-color: #2c3e50;
   border-color: #2c3e50;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -11217,7 +11771,7 @@ textarea#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  padding: 14px 16px;
+  padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
@@ -11634,7 +12188,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul .nav-divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -11655,11 +12209,11 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -11848,11 +12402,11 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -12008,7 +12562,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   position: relative;
   z-index: 1000;
   min-height: 50px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid transparent;
   padding: 0 0 0 0;
   border-top: none;
@@ -12085,10 +12639,10 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormSearchFor input[name="searchTxt"]#search_field {
   display: block;
   width: 100%;
-  height: 37px;
-  padding: 8px 12px;
+  height: 34px;
+  padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
   background-color: #ffffff;
@@ -12163,11 +12717,11 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
 
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -12279,7 +12833,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
 
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormBrowseList .divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -12289,7 +12843,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
 }
@@ -12319,11 +12873,11 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
 
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -12516,7 +13070,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
   font-size: inherit;
   line-height: inherit;
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   max-width: 100%;
 }
 
@@ -12527,7 +13081,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 #exlidBrowseResultsEnteries > tbody > tr > td,
 #exlidBrowseResultsEnteries > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
@@ -12741,11 +13295,11 @@ td.EXLMyShelfStar i {
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -12908,7 +13462,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul .divider {
   height: 1px;
-  margin: 9.5px 0;
+  margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -12918,7 +13472,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
 }
@@ -12942,7 +13496,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
 }
@@ -13191,18 +13745,6 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   }
 }
 
-.EXLResultsList .EXLResultNumber {
-  display: block;
-  font-size: 10px;
-  color: #999999;
-  float: left;
-  margin-top: 15px;
-  margin-left: 15px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-}
-
 .EXLResultsList em.EXLResultStatusAvailable,
 .EXLResultsList em.EXLResultStatusNotAvailable {
   color: #333333;
@@ -13263,6 +13805,17 @@ iframe {
   position: static;
 }
 
+.EXLResultNumber {
+  font-size: 10px;
+  color: #999999;
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+
 .EXLTabsRibbon {
   border-bottom: none;
   height: auto;
@@ -13301,11 +13854,11 @@ iframe {
 a.EXLBriefResultsDisplayMultipleLink {
   color: #cc0000;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -13464,490 +14017,6 @@ fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
   height: auto;
 }
 
-a.report-a-problem {
-  float: right;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  float: none;
-  opacity: 0.5;
-  color: #e67e22;
-}
-
-a.report-a-problem:hover,
-a.report-a-problem:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-buttona.report-a-problem {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
-
-a.report-a-problem i {
-  font-size: 20px;
-}
-
-a.report-a-problem:hover,
-a.report-a-problem:focus {
-  color: #e67e22;
-  opacity: 1.0;
-  text-decoration: none!important;
-}
-
-.EXLResultTabContainer div.EXLTabHeader {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  margin-left: -15px;
-  margin-right: -15px;
-  max-height: 50em;
-  background-image: none;
-  background-color: #f5f5f5;
-  border: 1px solid #dddddd;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.EXLResultTabContainer div.EXLTabHeader:before,
-.EXLResultTabContainer div.EXLTabHeader:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLResultTabContainer div.EXLTabHeader:after {
-  clear: both;
-}
-
-.EXLResultTabContainer div.EXLTabHeader:before,
-.EXLResultTabContainer div.EXLTabHeader:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLResultTabContainer div.EXLTabHeader:after {
-  clear: both;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding: 0;
-  padding-top: 0;
-}
-
-@media (min-width: 1200px) {
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
-    float: left;
-    width: 41.66666666666667%;
-  }
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent a {
-  display: inline-block;
-  padding: 8px 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
-  background-color: #f5f5f5;
-  padding-right: 0;
-  height: auto;
-  border-top: 1px solid #ddd;
-  margin-top: -1px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: static;
-}
-
-@media (min-width: 1200px) {
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
-    float: left;
-    width: 58.333333333333336%;
-  }
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
-  clear: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  list-style: none;
-  font-size: 14px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList.pull-right {
-  right: 0;
-  left: auto;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .divider {
-  height: 1px;
-  margin: 9.5px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.528571429;
-  color: #333333;
-  white-space: nowrap;
-}
-
-@media (max-width: 768px) {
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .caret {
-    border-top: 0 dotted;
-    border-bottom: 4px solid #000000;
-    content: "";
-  }
-
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .dropdown-menu {
-    top: auto;
-    bottom: 100%;
-    margin-bottom: 1px;
-  }
-
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-default .caret {
-    border-bottom-color: #ffffff;
-  }
-
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-primary .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-success .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-warning .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-danger .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-info .caret {
-    border-bottom-color: #fff;
-  }
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li span {
-  height: auto;
-  background-image: none;
-  border-right: none;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  float: right !important;
-  float: right;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
-  clear: both;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
-  clear: both;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li {
-  position: relative;
-  display: block;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:hover,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a {
-  color: #999999;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:hover,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:focus {
-  color: #999999;
-  text-decoration: none;
-  background-color: transparent;
-  cursor: not-allowed;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:hover,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:focus {
-  background-color: #eeeeee;
-  border-color: #cc0000;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a .caret,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:hover .caret,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:focus .caret {
-  border-top-color: #800000;
-  border-bottom-color: #800000;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .nav-divider {
-  height: 1px;
-  margin: 9.5px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a > img {
-  max-width: none;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-large,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-spin,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul a {
-  border-right: 1px solid #cccccc;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > ol span {
-  float: none;
-}
-
-a[title="open this item in a new window"]:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f08e";
-}
-
-a[title="open this item in a new window"] img {
-  display: none;
-}
-
-a[title="hide tabs"] {
-  float: right;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  border-right: none !important;
-}
-
-a[title="hide tabs"]:hover,
-a[title="hide tabs"]:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-buttona[title="hide tabs"] {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
-
-a[title="hide tabs"]:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f05c";
-}
-
-a[title="hide tabs"] img {
-  display: none;
-}
-
-a[title="show send to options"]:after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  border-bottom: 0 dotted;
-}
-
-.btn-default a[title="show send to options"]:after {
-  border-top-color: #ffffff;
-}
-
-.btn-primary a[title="show send to options"]:after,
-.btn-success a[title="show send to options"]:after,
-.btn-warning a[title="show send to options"]:after,
-.btn-danger a[title="show send to options"]:after,
-.btn-info a[title="show send to options"]:after {
-  border-top-color: #fff;
-}
-
-a[title="show send to options"] img {
-  display: none;
-}
-
-.EXLTabContent {
-  height: 20em;
-  border: 1px solid #dddddd;
-  position: relative;
-  z-index: 1;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.EXLTabContent div.EXLDetailsLinks {
-  background-image: none;
-}
-
-.EXLDetailsTabContent div.EXLDetailsLinks {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: static;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 1200px) {
-  .EXLDetailsTabContent div.EXLDetailsLinks {
-    float: left;
-    width: 33.33333333333333%;
-  }
-}
-
-.EXLDetailsTabContent div.EXLDetailsLinks ul {
-  height: auto;
-  width: auto;
-  padding: 0;
-  margin-left: 12.5px;
-}
-
-.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksTitle a {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-}
-
-.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet {
-  background-image: none;
-  margin-top: 0;
-  margin-right: 8px;
-}
-
-.EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f138";
-}
-
-.EXLDetailsTabContent div.EXLDetailsContent {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: static;
-  z-index: 1;
-  margin: 0;
-}
-
-@media (min-width: 1200px) {
-  .EXLDetailsTabContent div.EXLDetailsContent {
-    float: left;
-    width: 66.66666666666666%;
-  }
-}
-
-.icon-remove-circle.close {
-  float: none;
-}
-
 body.EXLFullView .EXLResultsNavigation {
   display: none;
 }
@@ -14031,11 +14100,11 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -14201,11 +14270,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -14371,11 +14440,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -14541,11 +14610,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 
 .svg .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -14711,11 +14780,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table .folder_deta
 
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_email {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -14881,11 +14950,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_ema
 
 .svg .MyAccount .eShelf_title + noscript + table a.eShelf_print {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -15147,11 +15216,11 @@ fieldset[disabled] .svg .MyAccount .eShelf_title + noscript + table a.eShelf_pri
 
 .svg .MyAccount .eShelf_title + noscript + table .buttonGo a {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -15399,7 +15468,7 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody:after {
 
 table.itemsListTable {
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 table.itemsListTable > thead > tr > th,
@@ -15409,7 +15478,7 @@ table.itemsListTable > thead > tr > td,
 table.itemsListTable > tbody > tr > td,
 table.itemsListTable > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
@@ -15497,7 +15566,7 @@ table.itemsListTable thead > tr > td,
 table.itemsListTH tbody > tr > td,
 table.itemsListTable tbody > tr > td {
   padding: 8px !important;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
 }
 
 table.itemsListTH thead > tr > th:last-of-type,
@@ -15767,11 +15836,11 @@ fieldset[disabled] .folders_new .folderActions ul li a {
   width: auto;
   border: none;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.528571429;
+  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -15931,8 +16000,6 @@ table.folderName.EXLEShelfFolderContentsTable {
   font-size: 14px;
   margin-left: -15px;
   margin-right: -15px;
-  width: auto;
-  margin-top: 6em;
 }
 
 #exlidHomeContainer:before,
@@ -15957,12 +16024,6 @@ table.folderName.EXLEShelfFolderContentsTable {
 
 #exlidHomeContainer:after {
   clear: both;
-}
-
-@media (min-width: 768px) {
-  #exlidHomeContainer {
-    margin-top: 2em;
-  }
 }
 
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
@@ -15970,7 +16031,6 @@ table.folderName.EXLEShelfFolderContentsTable {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: static;
 }
 
 @media (min-width: 1200px) {
@@ -15985,7 +16045,6 @@ table.folderName.EXLEShelfFolderContentsTable {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: static;
   margin-left: 0;
 }
 
@@ -16052,11 +16111,18 @@ table.folderName.EXLEShelfFolderContentsTable {
 
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2,
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
-  width: auto;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2,
+  #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+    float: left;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {

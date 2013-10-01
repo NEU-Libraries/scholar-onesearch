@@ -19,9 +19,6 @@ module.exports = function(grunt) {
         less: {
           files: 'less/**/*.less',
           tasks: ['less:development', 'autoprefixer:dist'],
-          options: {
-            interrupt: true,
-          },
         },
         js:{
           files: 'js/**/*.js',
@@ -40,7 +37,7 @@ module.exports = function(grunt) {
     },
     less: {
       options: {
-          paths: ["less"],
+          paths: ["less/**/*"],
       },
       development: {
         files: {

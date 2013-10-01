@@ -108,7 +108,16 @@
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 @font-size-mini:          ceil(@font-size-base * 0.75); // ~11px
 
-@line-height-base:        1.528571429; // 20/14
+
+@font-size-h1:            floor(@font-size-base * 2.60); // ~36px
+@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+@font-size-h3:            ceil(@font-size-base * 1.70); // ~24px
+@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+
+
+@line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
 @headings-font-weight:    500;
@@ -119,24 +128,34 @@
 // -------------------------
 // Based on 14px font-size and 1.428 line-height (~20px to start)
 
-@padding-base-vertical:          8px;
+@padding-base-vertical:          6px;
 @padding-base-horizontal:        12px;
 
-@padding-large-vertical:         14px;
+@padding-large-vertical:         10px;
 @padding-large-horizontal:       16px;
 
 @padding-small-vertical:         5px;
 @padding-small-horizontal:       10px;
 
+@line-height-large:              1.33;
+@line-height-small:              1.5;
+
 @border-radius-base:             4px;
 @border-radius-large:            6px;
 @border-radius-small:            3px;
 
+@component-active-color:         #fff;
 @component-active-bg:            @brand-primary;
+
+@caret-width-base:               4px;
+@caret-width-large:              5px;
 
 
 // Tables
 // -------------------------
+
+@table-cell-padding:                 8px;
+@table-condensed-cell-padding:       5px;
 
 @table-bg:                           transparent; // overall background-color
 @table-bg-accent:                    #f9f9f9; // for striping
@@ -186,16 +205,22 @@
 @input-bg:                       #fff;
 @input-bg-disabled:              @gray-lighter;
 
+@input-color:                    @gray;
 @input-border:                   #ccc;
 @input-border-radius:            @border-radius-base;
+@input-border-focus:             #66afe9;
 
-@input-color-placeholder:       @gray-light;
+@input-color-placeholder:        @gray-light;
 
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2));
-@input-height-large:             (@line-height-computed + (@padding-large-vertical * 2));
-@input-height-small:             (@line-height-computed + (@padding-small-vertical * 2));
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-large:             (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
-@form-actions-bg:                #f5f5f5;
+@legend-color:                   @gray-dark;
+@legend-border-color:            #e5e5e5;
+
+@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-border-color: @input-border;
 
 
 // Dropdowns
@@ -518,3 +543,8 @@
 // ---------------------------------------------------
 
 @primo-legacy-base-url: "http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/";
+@brand-logo-svg: '../dist/images/scholar-one-search.svg';
+@brand-logo-png: '../dist/images/scholar-one-search.png';
+
+@brand-parent-logo-svg: '../dist/images/nu-libraries-logo.svg';
+@brand-parent-logo-png: '../images/nu-libraries-logo.png';

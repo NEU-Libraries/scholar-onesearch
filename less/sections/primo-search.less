@@ -3,18 +3,9 @@
 .EXLSearchWrapper{
   clear: both;
   .clearfix();
-
+  .container-fixed;
 }
 
-////// ---- SEARCH AREA -------------
-#exlidSearchTile{
-  background-image: none;
-  border: none;
-  font-size: inherit;
-  width: auto;
-   // .container-fixed();
-  .make-sm-column(12);
-}
 
 
 
@@ -24,32 +15,20 @@
   width: auto;
   .navbar;
   .navbar-default;
-  padding-right: 15px;
-  padding-left: 15px;
   div.EXLSearchTabsContainer{
     display: none;
   }
   div.EXLSearchFieldRibbon{
-    border: none;
-    float: none;
-    background: none;
-    height: auto;
-    max-height: 39px;
-    overflow: hidden;
+
 
   }
   input{
-    width: auto;
-    height: auto;
-    padding: 8px 12px;
+    .form-control;
   }
   input#search_field{
-    width: 100%;
-    margin-right: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    border: 1px solid @input-border;
-    min-height: 39px;
+
   }
   input.submit{
     width: 100%;
@@ -57,19 +36,20 @@
     .btn;
 
     height: auto;
-    min-height: 39px;
+
     overflow: hidden;
-    margin-left: -1px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
   //
   fieldset{
-    .navbar-form;
+
+    // width: 100%;
+    .make-sm-column(12);
+    .make-md-column(8);
     .make-lg-column(8);
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-top: 8px;
+
+    .make-navbar-form();
   }
 }
 .EXLSearchForm .EXLSearchFieldRibbonFormSearchFor{
@@ -79,10 +59,10 @@
     width: 50%;
   }
 }
-.EXLSearchFieldRibbonFormSubmitSearch{
-  width: auto;
-  max-width: 12%;
-}
+// .EXLSearchFieldRibbonFormSubmitSearch{
+//   width: auto;
+//   max-width: 12%;
+// }
 
 .EXLSearchFieldRibbonFormFields{
   width: 88%;
@@ -93,7 +73,6 @@
   height: auto;
   width: 40.001%;
   height: auto;
-  max-height: 39px;
   overflow: hidden;
   border-left: none;
   border-right: 1px solid @btn-default-border;
@@ -106,7 +85,9 @@
   a{
     .btn;
     .btn-default;
-    height: auto;
+    .navbar-btn;
+    margin-top: 0;
+    margin-bottom: 0;
     border-radius: 0;
     background-image: none;
     text-overflow: ellipsis;
@@ -124,18 +105,12 @@
 .EXLSearchFieldRibbonAdvancedSearchLink,
 .EXLSearchFieldRibbonBrowseSearchLink,
 .EXLSearchFieldRibbonAtoZLink{
-  .make-lg-column(2);
-  position: static;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
+  .make-sm-column(12);
+  .make-md-column(2);
   a, a.EXLSearchFieldRibbonAdvancedTwoLinks{
-    padding: 0;
-    font-size: inherit;
+    padding: @navbar-padding-vertical @navbar-padding-horizontal;
     color: @navbar-default-link-color;
-    display: inline;
+    display: block;
     &:hover {
       color: @navbar-default-link-hover-color;
     }

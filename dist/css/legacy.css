@@ -1,35 +1,3 @@
-.reset {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-}
-
-.heavy-reset {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
-  background: none;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  font-size: inherit;
-}
-
 /*  @file less/legacy-primo-dist-default-3-0.less
  *
  *  Reference file autored by ExLibris in their default styling
@@ -302,6 +270,7 @@ pre.sourcecode {
   text-shadow: none;
   background-color: transparent;
   border: 0;
+  margin-bottom: 0;
 }
 
 /*Skip To Main Content Styles*/
@@ -610,64 +579,12 @@ pre.sourcecode {
   text-decoration: underline;
 }
 
-/* ----------Search Box--------------- */
-
-#exlidSearchTile {
-  clear: left;
-  border-bottom: 1px solid #adb9c2;
-  border-top: 1px solid #adb9c2;
-  background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_searchPanel.png");
-  background-repeat: repeat-x;
-  height: 66px;
-  font-size: 80%;
-  width: 100%;
-}
-
 /* ----------Embedded Search Box Styles--------------- */
-
-#exlidEmbeddedSearch {
-  margin: 0.5em;
-}
-
-#exlidEmbeddedSearch #exlidSearchTile {
-  border: 1px solid #adb9c2;
-}
 
 /* ----------Search Ribbon Styles--------------- */
 
-#exlidSearchRibbon {
-  float: left;
-  margin-top: 0.5em;
-  width: 55em /*55em 70%*/;
-  padding-left: 1em;
-}
-
-#exlidSearchRibbon div.EXLSearchFieldRibbon {
-  background-color: #FFFFFF;
-  height: 26px;
-  border: 1px solid #8fb9d0;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  float: left;
-  display: block;
-}
-
-#exlidSearchRibbon fieldset {
-  float: left;
-  width: 90%;
-}
-
 #exlidSearchRibbon legend {
   display: none;
-}
-
-#exlidSearchRibbon input {
-  width: 96%;
-  border: 1px solid #ffffff;
-  height: 20px;
-  padding-top: 0.2em;
-  padding-left: 0.6em;
 }
 
 #exlidSearchRibbon input.EXLSearchFieldMaximized {
@@ -675,21 +592,6 @@ pre.sourcecode {
 }
 
 /*in case there is only one search scope*/
-
-#exlidSearchRibbon input.submit {
-  background-color: #e87107;
-  background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_orange.png");
-  background-repeat: repeat-x;
-  margin: 0em;
-  width: 100%;
-  color: #FFFFFF;
-  font-weight: normal;
-  height: 26px;
-  cursor: pointer;
-  padding-bottom: 0.3em;
-  padding-right: 0.6em;
-  padding-left: 0.6em;
-}
 
 .EXLSearchFieldRibbonFormSubmitSearch {
   float: left;
@@ -1006,26 +908,6 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 
 /*----- Advanced Search -----*/
 
-.EXLSearchFieldRibbonAdvancedSearchLink {
-  float: right;
-  width: 9%;
-  white-space: nowrap;
-}
-
-* html .EXLSearchFieldRibbonAdvancedSearchLink {
-  clear: left;
-  padding-left: 0.5em;
-  padding-top: 0.5em;
-}
-
-/*for ie6*/
-
-.EXLSearchFieldRibbonAdvancedSearchLink a,
-a.EXLFullResultsHeaderBackToBriefResultsLink {
-  display: block;
-  padding-top: 1.8em;
-}
-
 /*Advanced Search Form*/
 
 #exlidAdvancedSearchTile {
@@ -1039,22 +921,6 @@ a.EXLFullResultsHeaderBackToBriefResultsLink {
   height: auto;
   background-color: #f4f7f8;
   width: 100%;
-}
-
-#exlidAdvancedSearchRibbon {
-  width: 97%;
-  margin-left: 1em;
-  margin-right: 0.5em;
-}
-
-#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbon {
-  background-color: #FFFFFF;
-  clear: both;
-  min-height: 9em;
-  border: 1px solid #8fb9d0;
-  width: 100%;
-  padding: 1em 1em 0.5em 0em;
-  margin: 0px;
 }
 
 #exlidAdvancedSearchRibbon fieldset fieldset {
@@ -1211,39 +1077,6 @@ a.EXLFullResultsHeaderBackToBriefResultsLink {
   margin-bottom: 0.2em;
   float: left;
   width: 65%;
-}
-
-.EXLSearchFieldRibbonBrowseSearchLink {
-  float: right;
-  width: 9%;
-  white-space: nowrap;
-}
-
-* html .EXLSearchFieldRibbonBrowseSearchLink {
-  clear: left;
-  padding-left: 0.5em;
-  padding-top: 0.5em;
-}
-
-/*for ie6*/
-
-.EXLSearchFieldRibbonBrowseSearchLink a {
-  display: block;
-  font-size: 80%;
-}
-
-* html .EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
-  clear: left;
-  padding-left: 0.5em;
-  padding-top: 0.5em;
-}
-
-/*for ie6*/
-
-.EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
-  display: block;
-  padding-top: 1.8em;
-  font-size: 80%;
 }
 
 div.EXLResultsContainer div.EXLBrowseResultsTileNoFacets {
@@ -3775,20 +3608,6 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   line-height: 120%;
   font-size: 100%;
   display: inline;
-}
-
-.EXLTabsRibbon div li.EXLResultTab {
-  border: 0px solid #CCCCCC;
-  border-bottom: 0px;
-  height: 15px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  float: left;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
-  margin-right: 2px;
-  color: #9B9B9B;
 }
 
 .EXLTabsRibbon div li.EXLResultTab a {
@@ -7051,18 +6870,6 @@ body.EXLFullView div.EXLBackToResults {
 
 /*Home Page Styles*/
 
-#exlidHomeContainer {
-  width: 76em;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.5em;
-  margin-top: auto;
-  clear: right;
-  font-size: 80%;
-  color: #777676;
-}
-
 #exlidHomeContainer div.EXLHomeBlockContainer1 {
   width: 100%;
   display: inline-block;
@@ -7103,58 +6910,6 @@ body.EXLFullView div.EXLBackToResults {
 
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p {
   width: 100%;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p a {
-  display: block;
-  line-height: 170%;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 div.EXLHomeListsContainer {
-  margin-top: 1em;
-  background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/home_main_visual.jpg");
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  width: 35em;
-  float: left;
-  padding-top: 9em;
-  padding-left: 0.5em;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 div.EXLHomeListsContainer ul {
-  list-style: none;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 div.EXLHomeListsContainer li {
-  line-height: 140%;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 div.EXLHomeTopicsContainer {
-  float: left;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 div.EXLHomeQuickLinksContainer {
-  float: left;
-  margin-left: 5em;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 {
-  width: 35em;
-  float: left;
-  margin-left: 2em;
-  padding-left: 1em;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 div.EXLHomeNewsContainer ul {
-  list-style: none;
-}
-
-#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 div.EXLHomeNewsContainer li {
-  background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_arrow_orange.png");
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
-  text-indent: 1em;
-  line-height: 150%;
 }
 
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 div.EXLHomeServicesContainer {
@@ -7877,12 +7632,6 @@ body.EXLFullView div.EXLBackToResults {
   display: inline;
 }
 
-.EXLResultNumber {
-  display: none;
-  text-align: center;
-  vertical-align: middle;
-}
-
 /* .searchword {padding:0em 0.1em 0em 0.1em; background-color:#fdfbd9; border:1px solid #f7d851; } /* fancier */
 
 .searchword {
@@ -8027,27 +7776,7 @@ body.EXLFullView div.EXLBackToResults {
   border: none;
 }
 
-.EXLFacebookIframe {
-  overflow: hidden;
-  width: 110px;
-  height: 50px;
-  margin-left: -30px;
-  clear: both;
-  float: right;
-  margin-top: -16px;
-  margin-top: 25px;
-  margin-bottom: -30px;
-}
-
 /*Personalized Ranking Lightbox*/
-
-.EXLPersonalizedRanking {
-  width: 100%;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  z-index: 2000;
-}
 
 .EXLLightbox {
   border: 1px solid #b8b8b8;
