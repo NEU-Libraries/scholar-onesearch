@@ -1,14 +1,18 @@
+
+
+
 // Adding support for IE10 and Windows Phone 8
 // http://getbootstrap.com/getting-started/#browsers
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement("style")
+  var msViewportStyle = document.createElement("style");
   msViewportStyle.appendChild(
     document.createTextNode(
       "@-ms-viewport{width:auto!important}"
     )
-  )
-  document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+  );
+  document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
 }
+
 
 
 var scholarOneSearch = (function(){
@@ -116,7 +120,7 @@ var scholarOneSearch = (function(){
   var addActiveStates = function(){
     var $activeStatesTargets = $('.EXLFindDBListHeaderAtoZSelected > a');
     $activeStatesTargets.addClass('active');
-  }
+  };
 
   //handle the radio clicks of the dropdown menus on Primo
 
@@ -125,13 +129,13 @@ var scholarOneSearch = (function(){
     $radios.click(function(){
       $radios.removeAttr('checked');
     });
-  }
+  };
 
   // Build the draggable handle.
   var draggable = function(){
     $('#draggable').html('<i class="icon-resize-vertical"></i>').find('img').hide();
     $('#demoLibId').before($('#draggable'));
-  }
+  };
 
 
   //Build the page functions.

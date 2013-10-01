@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
 
+  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js'];
   // Project configuration.
   grunt.initConfig({
 
@@ -8,8 +9,8 @@ module.exports = function(grunt) {
     uglify: {
         my_target: {
           files: {
-            'dist/js/sos-app.min.js': ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js']
-          }
+            'dist/js/sos-app.min.js': jsFiles,
+          },
         }
     },
 
@@ -19,11 +20,14 @@ module.exports = function(grunt) {
           tasks: 'less:development',
         },
         livereload: {
-          files: 'dist/css/**',
+          files: 'dist/**/*',
           options: {
             livereload: true,
           },
-
+        },
+        js:{
+          files: 'js/**/*.js',
+          tasks: ['uglify', 'jshint']
         }
     },
     less: {
@@ -39,7 +43,9 @@ module.exports = function(grunt) {
       production: {
         options: {
           paths: ["less"],
-          yuicompress: true
+          yuicompress: true,
+          report: 'gzip',
+          strictImports: true
         },
         files: {
           "dist/css/style.css": "less/style.less"
@@ -94,6 +100,17 @@ module.exports = function(grunt) {
         src: ['dist/css/**/*.css']
       }
     },
+    jshint:{
+      files: ['js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js', 'Grutfile.js'],
+      options: {
+        force: true,
+        reporter: 'jslint',
+        reporterOutput: 'report/jshint.xml',
+        globals: {
+          jQuery: true,
+        },
+      },
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -106,7 +123,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   // Default task(s).
 
-  grunt.registerTask('default', ['uglify','less:production']);
+  grunt.registerTask('default', ['watch']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
 };
