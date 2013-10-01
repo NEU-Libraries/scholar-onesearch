@@ -11072,7 +11072,6 @@ textarea#exlidSearchRibbon input {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  height: auto;
   overflow: hidden;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -11169,8 +11168,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: -15px;
-  margin-right: -15px;
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -11260,11 +11257,11 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection {
-  width: 40.001%;
+  width: 40%;
   height: auto;
   overflow: hidden;
   border-left: none;
-  border-right: 1px solid #a7a9aa;
+  border-right: none;
 }
 
 @media (max-width: 756px) {
@@ -11278,6 +11275,15 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a {
+  display: block;
+  width: 100%;
+  height: 34px;
+  color: #555555;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   display: inline-block;
   padding: 6px 12px;
   font-size: 14px;
@@ -11286,6 +11292,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
   white-space: nowrap;
@@ -11302,9 +11309,41 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
-  background-image: none;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:-moz-placeholder {
+  color: #999999;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a::-moz-placeholder {
+  color: #999999;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:-ms-input-placeholder {
+  color: #999999;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.EXLSearchFieldRibbonFormSelectedCollection a[disabled],
+.EXLSearchFieldRibbonFormSelectedCollection a[readonly],
+fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+textarea.EXLSearchFieldRibbonFormSelectedCollection a {
+  height: auto;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a:focus {
@@ -11514,6 +11553,10 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   }
 }
 
+.EXLSearchFieldRibbonFormSubmitSearch {
+  margin-left: -1px;
+}
+
 #exlidAdvancedSearchTile {
   position: relative;
   z-index: 1000;
@@ -11696,6 +11739,7 @@ textarea#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   line-height: normal;
   text-indent: 0;
   display: block;
+  width: auto;
 }
 
 @media (min-width: 1000px) {

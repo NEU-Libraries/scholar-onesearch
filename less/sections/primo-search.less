@@ -35,7 +35,6 @@
     .btn-info;
     .btn;
 
-    height: auto;
 
     overflow: hidden;
     border-top-left-radius: 0;
@@ -59,10 +58,7 @@
     width: 50%;
   }
 }
-// .EXLSearchFieldRibbonFormSubmitSearch{
-//   width: auto;
-//   max-width: 12%;
-// }
+
 
 .EXLSearchFieldRibbonFormFields{
   width: 88%;
@@ -71,11 +67,11 @@
 
 .EXLSearchFieldRibbonFormSelectedCollection{
   height: auto;
-  width: 40.001%;
+  width: 40%;
   height: auto;
   overflow: hidden;
   border-left: none;
-  border-right: 1px solid @btn-default-border;
+  border-right: none;
   @media(max-width: 756px){
     width: 50%;
   }
@@ -83,13 +79,13 @@
     padding-left: 0;
   }
   a{
+    .form-control;
     .btn;
     .btn-default;
     .navbar-btn;
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 0;
-    background-image: none;
     text-overflow: ellipsis;
     overflow: hidden;
     &:after{
@@ -127,7 +123,9 @@
 
 
 
-
+.EXLSearchFieldRibbonFormSubmitSearch {
+  margin-left: -1px;
+}
 
 
 
