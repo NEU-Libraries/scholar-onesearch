@@ -9256,6 +9256,35 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
   font-size: inherit;
 }
 
+#exlidHeaderContainer {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#exlidHeaderContainer:before,
+#exlidHeaderContainer:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+#exlidHeaderContainer:after {
+  clear: both;
+}
+
+#exlidHeaderContainer:before,
+#exlidHeaderContainer:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+#exlidHeaderContainer:after {
+  clear: both;
+}
+
 .EXLMyAccountTabsRibbon {
   height: auto;
   border-bottom: none;
@@ -10013,130 +10042,6 @@ body {
 
 body.EXLEshelfFullRecord {
   background-color: #FFF;
-}
-
-#contentEXL,
-body > div,
-#exlidSearchTile.EXLSearchEJorunals {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #FFFFFF;
-  border-right: 1px solid #8c8c8a;
-  border-left: 1px solid #8c8c8a;
-  padding: 0 1em;
-}
-
-#contentEXL:before,
-body > div:before,
-#exlidSearchTile.EXLSearchEJorunals:before,
-#contentEXL:after,
-body > div:after,
-#exlidSearchTile.EXLSearchEJorunals:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-#contentEXL:after,
-body > div:after,
-#exlidSearchTile.EXLSearchEJorunals:after {
-  clear: both;
-}
-
-#contentEXL:before,
-body > div:before,
-#exlidSearchTile.EXLSearchEJorunals:before,
-#contentEXL:after,
-body > div:after,
-#exlidSearchTile.EXLSearchEJorunals:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-#contentEXL:after,
-body > div:after,
-#exlidSearchTile.EXLSearchEJorunals:after {
-  clear: both;
-}
-
-@media (max-width: 756px) {
-  #contentEXL,
-  body > div,
-  #exlidSearchTile.EXLSearchEJorunals {
-    padding: 0;
-    border: none;
-  }
-}
-
-#contentEXL {
-  min-height: 100%;
-}
-
-body > div,
-.EXLFooterTile {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-body > div:before,
-.EXLFooterTile:before,
-body > div:after,
-.EXLFooterTile:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-body > div:after,
-.EXLFooterTile:after {
-  clear: both;
-}
-
-body > div:before,
-.EXLFooterTile:before,
-body > div:after,
-.EXLFooterTile:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-body > div:after,
-.EXLFooterTile:after {
-  clear: both;
-}
-
-@media screen and (min-width: 768px) {
-  #contentEXL,
-  body > div,
-  .EXLFooterTile {
-    max-width: 728px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #contentEXL,
-  body > div,
-  .EXLFooterTile {
-    max-width: 940px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #contentEXL,
-  body > div,
-  .EXLFooterTile {
-    max-width: 1170px;
-  }
 }
 
 .nu-lib-logo {

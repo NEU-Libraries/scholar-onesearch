@@ -315,22 +315,6 @@ pre.sourcecode {
   margin-left: 1em;
 }
 
-/*-------------topbar-------------*/
-
-#exlidHeaderContainer {
-  height: auto;
-  width: 100%;
-  background-color: #FFFFFF;
-}
-
-#exlidHeaderTile {
-  width: 18%;
-  float: left;
-  padding-left: 0.8em;
-  padding-top: 0.8em;
-  padding-bottom: 0.3em;
-}
-
 /*-------------MainNav-------------*/
 
 #exlidMainMenuTile div.EXLMainMenuContainer {
@@ -2892,30 +2876,6 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 
 .EXLClearFix {
   display: block;
-}
-
-/*BriefContainer */
-
-.EXLResultsContainer {
-  width: auto;
-  height: auto;
-  padding-left: 0.5em;
-  padding-right: 1em;
-  padding-top: 1.5em;
-  margin-top: auto /*for ie7*/;
-  clear: right;
-}
-
-/*BriefContainer - Records List */
-
-.EXLResultsContainer div.EXLResultsTile {
-  width: 78%;
-  float: right;
-  border-left: 1px solid #D7DDE3;
-  padding-left: 1%;
-  background-color: #FFFFFF;
-  margin-top: 0em;
-  margin-bottom: 2em;
 }
 
 /*Records List Header*/
