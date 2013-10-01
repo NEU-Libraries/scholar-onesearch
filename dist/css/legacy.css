@@ -687,19 +687,6 @@ div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
   display: none;
 }
 
-#exlidSearchTile.EXLSearchEJorunals {
-  border-top: 3px solid #f4762d;
-  margin-top: -4px;
-  height: 80px;
-  background-position: bottom;
-  background-color: #e2e8eb;
-  background-image: none;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#e2e8eb);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(100%, #e2e8eb));
-  background-image: -webkit-linear-gradient(top, #ffffff 0, #e2e8eb 100%);
-  background-image: linear-gradient(top, #ffffff 0, #e2e8eb 100%);
-}
-
 #exlidSearchTile.EXLSearchEJorunals fieldset {
   margin-left: 11em;
   margin-top: 0.2em;
@@ -6957,21 +6944,6 @@ body.EXLFullView div.EXLBackToResults {
   padding-left: 0.4em;
   line-height: 120%;
   margin-right: 5.5em;
-}
-
-/*Footer Styles*/
-
-.EXLFooterTile {
-  min-height: 60px;
-  height: auto;
-  margin: 0 0 0 0;
-  border-top: 1px solid #cfcfcf;
-  background-color: #ffffff;
-  font-size: 80%;
-  display: inline-block;
-  width: 100%;
-  background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_footer.png");
-  background-repeat: repeat-x;
 }
 
 .EXLFooterTile div.EXLFooterLinksContainer {

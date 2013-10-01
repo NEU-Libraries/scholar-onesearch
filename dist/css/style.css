@@ -761,7 +761,8 @@ address {
   line-height: 1.428571429;
 }
 
-.container {
+.container,
+body {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -938,7 +939,8 @@ address {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container,
+  body {
     width: 750px;
   }
 
@@ -1138,7 +1140,8 @@ address {
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container,
+  body {
     width: 970px;
   }
 
@@ -1350,7 +1353,8 @@ address {
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  body {
     width: 1170px;
   }
 
@@ -9256,6 +9260,17 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
   font-size: inherit;
 }
 
+html {
+  background-color: #e9e8e5;
+  min-width: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  border-right: 1px solid #8c8c8a;
+  border-left: 1px solid #8c8c8a;
+}
+
 #exlidHeaderContainer {
   margin-left: -15px;
   margin-right: -15px;
@@ -9282,6 +9297,10 @@ li#exlidMainMenuItem2.EXLMainMenuItem,
 }
 
 #exlidHeaderContainer:after {
+  clear: both;
+}
+
+.EXLContent {
   clear: both;
 }
 
@@ -10033,15 +10052,6 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
 .MyAccount #exlidAdvancedSearchTile {
   margin-right: 0;
   margin-left: 0;
-}
-
-body {
-  background-color: #e9e8e5;
-  min-width: inherit;
-}
-
-body.EXLEshelfFullRecord {
-  background-color: #FFF;
 }
 
 .nu-lib-logo {
@@ -12304,8 +12314,6 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   background-image: none;
   border-top: none;
   height: auto;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset {
@@ -14001,9 +14009,40 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
 
 .EXLFooterTile,
 #EXLFooterTile {
-  margin: 0 auto;
-  background-image: none;
-  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.EXLFooterTile:before,
+#EXLFooterTile:before,
+.EXLFooterTile:after,
+#EXLFooterTile:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLFooterTile:after,
+#EXLFooterTile:after {
+  clear: both;
+}
+
+.EXLFooterTile:before,
+#EXLFooterTile:before,
+.EXLFooterTile:after,
+#EXLFooterTile:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLFooterTile:after,
+#EXLFooterTile:after {
+  clear: both;
 }
 
 .svg .MyAccount .eShelf_title + noscript + table {

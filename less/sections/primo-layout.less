@@ -1,4 +1,18 @@
 //@todo move layout styles into this file.
+html{
+   background-color: @brand-gray;
+   min-width: inherit;
+}
+
+body{
+  &:extend(.container);
+  background-color: @body-bg;
+  border-right: 1px solid #8c8c8a;
+  border-left: 1px solid #8c8c8a;
+}
 #exlidHeaderContainer{
   .make-row();
+}
+.EXLContent{
+  clear: both;
 }

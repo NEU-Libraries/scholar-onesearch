@@ -1,6 +1,3 @@
-
-
-
 // Adding support for IE10 and Windows Phone 8
 // http://getbootstrap.com/getting-started/#browsers
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {

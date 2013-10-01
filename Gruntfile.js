@@ -15,7 +15,6 @@ module.exports = function(grunt) {
     },
 
     watch: {
-
         less: {
           files: 'less/**/*.less',
           tasks: ['less:development', 'autoprefixer:dist'],
@@ -172,6 +171,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
+  grunt.registerTask('deploy-staging', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'uglify' , 'sftp:staging']);
 };
 
 
