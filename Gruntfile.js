@@ -23,10 +23,13 @@ module.exports = function(grunt) {
             interrupt: true,
           },
         },
-
         js:{
           files: 'js/**/*.js',
           tasks: ['uglify', 'jshint'],
+        },
+        images: {
+          files: 'images/**/*',
+          tasks: ['svgmin','imagemin']
         },
         livereload: {
           files: 'dist/**/*',
@@ -137,8 +140,22 @@ module.exports = function(grunt) {
           dest: 'dist/images'                  // Destination path prefix
         }],
       }
-
     },
+    svgmin: {                       // Task
+        options: {                  // Configuration that will be passed directly to SVGO
+          plugins: [{
+            removeViewBox: false
+          }]
+        },
+        dist: {                         // Target
+          files: [{                   // Dictionary of files
+            expand: true,           // Enable dynamic expansion.
+            cwd: 'images',         // Src matches are relative to this path.
+            src: ['**/*.svg'],      // Actual pattern(s) to match.
+            dest: 'dist/images',           // Destination path prefix.
+          }]
+        },
+      },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -151,6 +168,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-svgmin');
 
   // Default task(s).
 
