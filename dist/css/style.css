@@ -7565,105 +7565,6 @@ table {
 @viewport {
   width: device-width;
 }
-.EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {
-  display: none;
-}
-#exlidMainMenuTile div.EXLLanguagesContainer {
-  display: none;
-}
-#exlidSearchBanner,
-.EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate {
-  display: none;
-}
-.EXLFacetContainer div.EXLFacetActions li.EXLFacetRSSAction {
-  display: none;
-}
-#exlidAdvancedSearchRibbon input.submit {
-  width: 8.5em;
-}
-.EXLResult .EXLReviewsTab {
-  display: none;
-}
-li#exlidMainMenuItem2.EXLMainMenuItem {
-  display: none;
-}
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel {
-  float: left;
-  width: auto;
-  text-align: right;
-  font-weight: bold;
-}
-#exlidMainMenuRibbon li.EXLLastItem {
-  display: none;
-}
-.EXLMoreTab {
-  display: none !important;
-}
-/* Adding more padding to the display all link */
-a.EXLBriefResultsDisplayMultipleLink {
-  display: inline-block;
-  margin-top: 1em;
-}
-/* Styling the general result list to have more padding */
-.EXLResult,
-.EXLResultsList td.EXLSummary {
-  padding: 10px 0;
-}
-.EXLResultsList td.EXLThumbnail {
-  padding-top: 1.2em;
-}
-.EXLResultsList td.EXLMyShelfStar {
-  padding-top: 1.4em;
-}
-#exlidSearchRibbon input {
-  border: none;
-  padding-top: 0.25em;
-  height: 22px;
-}
-#exlidTopLevelFacetsTile {
-  background-color: #f8f8f8;
-  border: 1px solid #e4e4e4;
-}
-.EXLFacetContainer {
-  padding: 0;
-  border: 1px solid #e4e4e4;
-}
-.EXLFacetContainer h4 {
-  background-color: #F8F8F8;
-  border-bottom: 1px solid #E4E4E4;
-  border-top: 1px solid #E4E4E4;
-  color: #000000;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 150%;
-  margin-bottom: 0.2em;
-  padding: 0 0 0 0.5em;
-  text-indent: 0;
-}
-.EXLFacetContainer h1 {
-  margin-bottom: 0;
-  font-size: 90%;
-}
-#exlidSearchRibbon input.submit {
-  background-color: #cc0000;
-  background-image: none;
-}
-#exlidHomeContainer h1,
-#exlidHomeContainer h2 {
-  color: #cc0000;
-}
-#exlidSearchRibbon div.EXLSearchFieldRibbon {
-  -o-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.EXLTabsRibbon div li.EXLLocationsTab {
-  display: none;
-}
-.EXLTabsRibbon div li.EXLResultTab {
-  padding-left: 0px;
-}
 *,
 *:before,
 *:after {
@@ -12458,133 +12359,6 @@ a [class*=" icon-"] {
 .nav-list [class*=" icon-"] {
   line-height: inherit;
 }
-/* EXTRAS
- * -------------------------- */
-/* Stacked and layered icon */
-.icon-stack {
-  position: relative;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
-  vertical-align: -35%;
-}
-.icon-stack [class^="icon-"],
-.icon-stack [class*=" icon-"] {
-  display: block;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  font-size: 1em;
-  line-height: inherit;
-  *line-height: 2em;
-}
-.icon-stack .icon-stack-base {
-  font-size: 2em;
-  *line-height: 1em;
-}
-/* Animated rotating icon */
-.icon-spin {
-  display: inline-block;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -webkit-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
-}
-/* Prevent stack and spinners from being taken inline when inside a link */
-a .icon-stack,
-a .icon-spin {
-  display: inline-block;
-  text-decoration: none;
-}
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  100% {
-    -moz-transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-  }
-}
-@-o-keyframes spin {
-  0% {
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -o-transform: rotate(359deg);
-  }
-}
-@-ms-keyframes spin {
-  0% {
-    -ms-transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(359deg);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
-/* Icon rotations and mirroring */
-.icon-rotate-90:before {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-}
-.icon-rotate-180:before {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-}
-.icon-rotate-270:before {
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  transform: rotate(270deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-.icon-flip-horizontal:before {
-  -webkit-transform: scale(-1, 1);
-  -moz-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-}
-.icon-flip-vertical:before {
-  -webkit-transform: scale(1, -1);
-  -moz-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  -o-transform: scale(1, -1);
-  transform: scale(1, -1);
-}
-/* ensure rotation occurs inside anchor tags */
-a .icon-rotate-90:before,
-a .icon-rotate-180:before,
-a .icon-rotate-270:before,
-a .icon-flip-horizontal:before,
-a .icon-flip-vertical:before {
-  display: inline-block;
-}
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 .icon-glass:before {
@@ -13687,6 +13461,1273 @@ a .icon-flip-vertical:before {
 .icon-renren:before {
   content: "\f18b";
 }
+ul,
+ol {
+  padding-left: 40px;
+}
+a:link,
+a:visited {
+  color: #cc0000;
+}
+/* primo-facets.less */
+#exlidFacetTile {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #exlidFacetTile {
+    float: left;
+    width: 25%;
+  }
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer:first-of-type {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer:last-of-type {
+  margin-bottom: 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a {
+  background-color: #fcfcfc;
+  padding: 10px 15px;
+  display: block;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:before,
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  clear: both;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:before,
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
+  clear: both;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:hover,
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:focus {
+  text-decoration: none;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:last-of-type {
+  border-bottom: 1px #dddddd solid;
+}
+.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a h4 {
+  border: none;
+  border-bottom: none;
+  background-color: #fcfcfc;
+  font-size: 13.5px;
+  display: block;
+  padding: 0;
+  max-width: 83%;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.EXLFacetContainer {
+  margin-bottom: 21px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  margin-bottom: 15px;
+}
+.EXLFacetContainer > .list-group {
+  margin-bottom: 0;
+}
+.EXLFacetContainer > .list-group .list-group-item {
+  border-width: 1px 0;
+}
+.EXLFacetContainer > .list-group .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.EXLFacetContainer > .list-group .list-group-item:last-child {
+  border-bottom: 0;
+}
+.EXLFacetContainer > .table,
+.EXLFacetContainer > .table-responsive {
+  margin-bottom: 0;
+}
+.EXLFacetContainer > .panel-body + .table,
+.EXLFacetContainer > .panel-body + .table-responsive {
+  border-top: 1px solid #dddddd;
+}
+.EXLFacetContainer > .table-bordered,
+.EXLFacetContainer > .table-responsive > .table-bordered {
+  border: 0;
+}
+.EXLFacetContainer > .table-bordered > thead > tr > th:first-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.EXLFacetContainer > .table-bordered > tbody > tr > th:first-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.EXLFacetContainer > .table-bordered > tfoot > tr > th:first-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.EXLFacetContainer > .table-bordered > thead > tr > td:first-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.EXLFacetContainer > .table-bordered > tbody > tr > td:first-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.EXLFacetContainer > .table-bordered > tfoot > tr > td:first-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+.EXLFacetContainer > .table-bordered > thead > tr > th:last-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.EXLFacetContainer > .table-bordered > tbody > tr > th:last-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.EXLFacetContainer > .table-bordered > tfoot > tr > th:last-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.EXLFacetContainer > .table-bordered > thead > tr > td:last-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.EXLFacetContainer > .table-bordered > tbody > tr > td:last-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.EXLFacetContainer > .table-bordered > tfoot > tr > td:last-child,
+.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+.EXLFacetContainer > .table-bordered > thead > tr:last-child > th,
+.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr:last-child > th,
+.EXLFacetContainer > .table-bordered > tbody > tr:last-child > th,
+.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.EXLFacetContainer > .table-bordered > tfoot > tr:last-child > th,
+.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+.EXLFacetContainer > .table-bordered > thead > tr:last-child > td,
+.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr:last-child > td,
+.EXLFacetContainer > .table-bordered > tbody > tr:last-child > td,
+.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.EXLFacetContainer > .table-bordered > tfoot > tr:last-child > td,
+.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+  border-bottom: 0;
+}
+.EXLFacetContainer h3,
+.EXLFacetContainer h1,
+.EXLFacetContainer h4 {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 0;
+}
+.EXLFacetContainer h1 {
+  font-size: 16px;
+}
+.EXLFacetContainer h3 {
+  font-size: 15px;
+}
+.EXLFacetContainer h4 {
+  font-size: 14.5px;
+}
+.EXLFacetContainer a i:hover {
+  text-decoration: none;
+}
+.EXLFacetContainer ol.EXLFacetsList {
+  margin-bottom: 0;
+  padding: 0px;
+  margin: 0px;
+}
+.EXLFacetContainer ol.EXLFacetsList .list-group-item {
+  border-width: 1px 0;
+}
+.EXLFacetContainer ol.EXLFacetsList .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.EXLFacetContainer ol.EXLFacetsList .list-group-item:last-child {
+  border-bottom: 0;
+}
+.EXLFacetContainer ol.EXLFacetsList li {
+  border-width: 1px 0;
+  padding-right: 15px;
+  border-left: none;
+  border-right: none;
+  height: auto;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.EXLFacetContainer ol.EXLFacetsList li:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.EXLFacetContainer ol.EXLFacetsList li:last-child {
+  border-bottom: 0;
+}
+.EXLFacetContainer ol.EXLFacetsList li.EXLAdditionalFacet {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.EXLFacetContainer ol.EXLFacetsList li.EXLFacetsDisplayMore {
+  margin-top: 0px;
+}
+.EXLFacetContainer ol.EXLFacetsList li a {
+  font-size: 13px;
+  display: inline-block;
+  width: 61%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.EXLFacetContainer ol.EXLFacetsList li span {
+  float: right;
+  clear: right;
+  text-align: right;
+  font-size: 11px;
+  display: inline-block;
+  max-width: 24%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.EXLFacetContainer div.EXLFacetActionsV2 {
+  margin-bottom: 0;
+}
+.EXLFacetContainer div.EXLFacetActionsV2 ul {
+  margin: 0;
+}
+.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetRSSAction,
+.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveSearchAction,
+.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveToEShelfAction {
+  background-image: none;
+  padding: 10px 30px 10px 15px;
+}
+.EXLRelatedSearchTopicFIELDfacet_creator {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: none;
+}
+.EXLRelatedSearchTopicFIELDfacet_topic {
+  border-radius: 0;
+  border-top: none;
+  border-bottom: none;
+}
+a[title="More "]:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 0 dotted;
+}
+.btn-default a[title="More "]:after {
+  border-top-color: #ffffff;
+}
+.btn-primary a[title="More "]:after,
+.btn-success a[title="More "]:after,
+.btn-warning a[title="More "]:after,
+.btn-danger a[title="More "]:after,
+.btn-info a[title="More "]:after {
+  border-top-color: #fff;
+}
+a[title="More "] img {
+  display: none;
+}
+.EXLRelatedSearchTopic {
+  display: none;
+}
+.EXLLightbox,
+#exlidFindDBTile {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  background-image: none;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+}
+.EXLLightbox div.EXLLightboxHeader,
+#exlidFindDBTile div.EXLLightboxHeader,
+.EXLLightbox div.EXLFindDBHeader,
+#exlidFindDBTile div.EXLFindDBHeader {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  background-image: none;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.528571429px;
+}
+.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle,
+#exlidFindDBTile div.EXLLightboxHeader span.EXLLightboxHeaderTitle,
+.EXLLightbox div.EXLFindDBHeader span.EXLLightboxHeaderTitle,
+#exlidFindDBTile div.EXLFindDBHeader span.EXLLightboxHeaderTitle {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.528571429;
+}
+.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle small,
+#exlidFindDBTile div.EXLLightboxHeader span.EXLLightboxHeaderTitle small,
+.EXLLightbox div.EXLFindDBHeader span.EXLLightboxHeaderTitle small,
+#exlidFindDBTile div.EXLFindDBHeader span.EXLLightboxHeaderTitle small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+.EXLLightbox div.EXLLightboxHeader a.EXLLightboxHeaderClose,
+#exlidFindDBTile div.EXLLightboxHeader a.EXLLightboxHeaderClose,
+.EXLLightbox div.EXLFindDBHeader a.EXLLightboxHeaderClose,
+#exlidFindDBTile div.EXLFindDBHeader a.EXLLightboxHeaderClose {
+  margin-top: 0.2em;
+  margin-right: 0.2em;
+}
+.EXLLightbox div.EXLLightboxFormContainer,
+#exlidFindDBTile div.EXLLightboxFormContainer,
+.EXLLightbox #searchDbForm,
+#exlidFindDBTile #searchDbForm,
+.EXLLightbox #searchDbFormTabs,
+#exlidFindDBTile #searchDbFormTabs {
+  font-size: inherit;
+  position: relative;
+  padding: 20px;
+}
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:before,
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
+  clear: both;
+}
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:before,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:before,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:before,
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
+.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
+#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
+  clear: both;
+}
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
+  clear: both;
+}
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
+  clear: both;
+}
+.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  #exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  .EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  #exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  .EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
+  #exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
+    float: left;
+    width: 50%;
+  }
+}
+.EXLLightbox .EXLLightboxFormButtons,
+#exlidFindDBTile .EXLLightboxFormButtons {
+  margin-top: 15px;
+  padding: 19px 20px 20px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.EXLLightbox .EXLLightboxFormButtons:before,
+#exlidFindDBTile .EXLLightboxFormButtons:before,
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
+  clear: both;
+}
+.EXLLightbox .EXLLightboxFormButtons:before,
+#exlidFindDBTile .EXLLightboxFormButtons:before,
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.EXLLightbox .EXLLightboxFormButtons:after,
+#exlidFindDBTile .EXLLightboxFormButtons:after {
+  clear: both;
+}
+.EXLLightbox .EXLLightboxFormButtons .btn + .btn,
+#exlidFindDBTile .EXLLightboxFormButtons .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.EXLLightbox .EXLLightboxFormButtons .btn-group .btn + .btn,
+#exlidFindDBTile .EXLLightboxFormButtons .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.EXLLightbox .EXLLightboxFormButtons .btn-block + .btn-block,
+#exlidFindDBTile .EXLLightboxFormButtons .btn-block + .btn-block {
+  margin-left: 0;
+}
+.EXLLighboxSubmitButton,
+.EXLLighboxCancelButton {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  font-size: inherit;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .EXLLighboxSubmitButton,
+  .EXLLighboxCancelButton {
+    float: left;
+    width: 16.666666666666664%;
+  }
+}
+.EXLLighboxSubmitButton span,
+.EXLLighboxCancelButton span {
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  margin: 0;
+  width: inherit;
+  text-align: left;
+  display: inline;
+}
+.EXLLighboxSubmitButton span a,
+.EXLLighboxCancelButton span a,
+.EXLLighboxSubmitButton span input,
+.EXLLighboxCancelButton span input {
+  height: auto;
+  padding: 0;
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.528571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.EXLLighboxSubmitButton span a:focus,
+.EXLLighboxCancelButton span a:focus,
+.EXLLighboxSubmitButton span input:focus,
+.EXLLighboxCancelButton span input:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.EXLLighboxSubmitButton span a:hover,
+.EXLLighboxCancelButton span a:hover,
+.EXLLighboxSubmitButton span input:hover,
+.EXLLighboxCancelButton span input:hover,
+.EXLLighboxSubmitButton span a:focus,
+.EXLLighboxCancelButton span a:focus,
+.EXLLighboxSubmitButton span input:focus,
+.EXLLighboxCancelButton span input:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.EXLLighboxSubmitButton span a:active,
+.EXLLighboxCancelButton span a:active,
+.EXLLighboxSubmitButton span input:active,
+.EXLLighboxCancelButton span input:active,
+.EXLLighboxSubmitButton span a.active,
+.EXLLighboxCancelButton span a.active,
+.EXLLighboxSubmitButton span input.active,
+.EXLLighboxCancelButton span input.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.EXLLighboxSubmitButton span a.disabled,
+.EXLLighboxCancelButton span a.disabled,
+.EXLLighboxSubmitButton span input.disabled,
+.EXLLighboxCancelButton span input.disabled,
+.EXLLighboxSubmitButton span a[disabled],
+.EXLLighboxCancelButton span a[disabled],
+.EXLLighboxSubmitButton span input[disabled],
+.EXLLighboxCancelButton span input[disabled],
+fieldset[disabled] .EXLLighboxSubmitButton span a,
+fieldset[disabled] .EXLLighboxCancelButton span a,
+fieldset[disabled] .EXLLighboxSubmitButton span input,
+fieldset[disabled] .EXLLighboxCancelButton span input {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.EXLLighboxSubmitButton span a [class^="icon-"].icon-large,
+.EXLLighboxCancelButton span a [class^="icon-"].icon-large,
+.EXLLighboxSubmitButton span input [class^="icon-"].icon-large,
+.EXLLighboxCancelButton span input [class^="icon-"].icon-large,
+.EXLLighboxSubmitButton span a [class*=" icon-"].icon-large,
+.EXLLighboxCancelButton span a [class*=" icon-"].icon-large,
+.EXLLighboxSubmitButton span input [class*=" icon-"].icon-large,
+.EXLLighboxCancelButton span input [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+.EXLLighboxSubmitButton span a [class^="icon-"].icon-spin,
+.EXLLighboxCancelButton span a [class^="icon-"].icon-spin,
+.EXLLighboxSubmitButton span input [class^="icon-"].icon-spin,
+.EXLLighboxCancelButton span input [class^="icon-"].icon-spin,
+.EXLLighboxSubmitButton span a [class*=" icon-"].icon-spin,
+.EXLLighboxCancelButton span a [class*=" icon-"].icon-spin,
+.EXLLighboxSubmitButton span input [class*=" icon-"].icon-spin,
+.EXLLighboxCancelButton span input [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+.EXLLighboxSubmitButton span a [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span a [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span input [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span input [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span a [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span a [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span input [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span input [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span a [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span a [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxSubmitButton span input [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span input [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxSubmitButton span a [class*=" icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span a [class*=" icon-"].pull-right.icon-2x,
+.EXLLighboxSubmitButton span input [class*=" icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span input [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+.EXLLighboxSubmitButton span a [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span a [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxSubmitButton span input [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span input [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxSubmitButton span a [class*=" icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span a [class*=" icon-"].icon-spin.icon-large,
+.EXLLighboxSubmitButton span input [class*=" icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span input [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit,
+.EXLLighboxCancelButton span a.EXLSubmit,
+.EXLLighboxSubmitButton span input.EXLSubmit,
+.EXLLighboxCancelButton span input.EXLSubmit {
+  height: auto;
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.528571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit:focus,
+.EXLLighboxCancelButton span a.EXLSubmit:focus,
+.EXLLighboxSubmitButton span input.EXLSubmit:focus,
+.EXLLighboxCancelButton span input.EXLSubmit:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit:hover,
+.EXLLighboxCancelButton span a.EXLSubmit:hover,
+.EXLLighboxSubmitButton span input.EXLSubmit:hover,
+.EXLLighboxCancelButton span input.EXLSubmit:hover,
+.EXLLighboxSubmitButton span a.EXLSubmit:focus,
+.EXLLighboxCancelButton span a.EXLSubmit:focus,
+.EXLLighboxSubmitButton span input.EXLSubmit:focus,
+.EXLLighboxCancelButton span input.EXLSubmit:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit:active,
+.EXLLighboxCancelButton span a.EXLSubmit:active,
+.EXLLighboxSubmitButton span input.EXLSubmit:active,
+.EXLLighboxCancelButton span input.EXLSubmit:active,
+.EXLLighboxSubmitButton span a.EXLSubmit.active,
+.EXLLighboxCancelButton span a.EXLSubmit.active,
+.EXLLighboxSubmitButton span input.EXLSubmit.active,
+.EXLLighboxCancelButton span input.EXLSubmit.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.EXLLighboxSubmitButton span a.EXLSubmit.disabled,
+.EXLLighboxCancelButton span a.EXLSubmit.disabled,
+.EXLLighboxSubmitButton span input.EXLSubmit.disabled,
+.EXLLighboxCancelButton span input.EXLSubmit.disabled,
+.EXLLighboxSubmitButton span a.EXLSubmit[disabled],
+.EXLLighboxCancelButton span a.EXLSubmit[disabled],
+.EXLLighboxSubmitButton span input.EXLSubmit[disabled],
+.EXLLighboxCancelButton span input.EXLSubmit[disabled],
+fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit,
+fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit,
+fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit,
+fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].icon-large,
+.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].icon-large,
+.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].icon-large,
+.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].icon-large,
+.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].icon-large,
+.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].icon-large,
+.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].icon-large,
+.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].icon-spin,
+.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].icon-spin,
+.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].icon-spin,
+.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].icon-spin,
+.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].icon-spin,
+.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].icon-spin,
+.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].icon-spin,
+.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
+.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].pull-right.icon-2x,
+.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].pull-right.icon-2x,
+.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].pull-right.icon-2x,
+.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].icon-spin.icon-large,
+.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].icon-spin.icon-large,
+.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].icon-spin.icon-large,
+.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit:hover,
+.EXLLighboxCancelButton span a.EXLSubmit:hover,
+.EXLLighboxSubmitButton span input.EXLSubmit:hover,
+.EXLLighboxCancelButton span input.EXLSubmit:hover,
+.EXLLighboxSubmitButton span a.EXLSubmit:focus,
+.EXLLighboxCancelButton span a.EXLSubmit:focus,
+.EXLLighboxSubmitButton span input.EXLSubmit:focus,
+.EXLLighboxCancelButton span input.EXLSubmit:focus,
+.EXLLighboxSubmitButton span a.EXLSubmit:active,
+.EXLLighboxCancelButton span a.EXLSubmit:active,
+.EXLLighboxSubmitButton span input.EXLSubmit:active,
+.EXLLighboxCancelButton span input.EXLSubmit:active,
+.EXLLighboxSubmitButton span a.EXLSubmit.active,
+.EXLLighboxCancelButton span a.EXLSubmit.active,
+.EXLLighboxSubmitButton span input.EXLSubmit.active,
+.EXLLighboxCancelButton span input.EXLSubmit.active,
+.open .dropdown-toggle.EXLLighboxSubmitButton span a.EXLSubmit,
+.open .dropdown-toggle.EXLLighboxCancelButton span a.EXLSubmit,
+.open .dropdown-toggle.EXLLighboxSubmitButton span input.EXLSubmit,
+.open .dropdown-toggle.EXLLighboxCancelButton span input.EXLSubmit {
+  color: #ffffff;
+  background-color: #a30000;
+  border-color: #8f0000;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit:active,
+.EXLLighboxCancelButton span a.EXLSubmit:active,
+.EXLLighboxSubmitButton span input.EXLSubmit:active,
+.EXLLighboxCancelButton span input.EXLSubmit:active,
+.EXLLighboxSubmitButton span a.EXLSubmit.active,
+.EXLLighboxCancelButton span a.EXLSubmit.active,
+.EXLLighboxSubmitButton span input.EXLSubmit.active,
+.EXLLighboxCancelButton span input.EXLSubmit.active,
+.open .dropdown-toggle.EXLLighboxSubmitButton span a.EXLSubmit,
+.open .dropdown-toggle.EXLLighboxCancelButton span a.EXLSubmit,
+.open .dropdown-toggle.EXLLighboxSubmitButton span input.EXLSubmit,
+.open .dropdown-toggle.EXLLighboxCancelButton span input.EXLSubmit {
+  background-image: none;
+}
+.EXLLighboxSubmitButton span a.EXLSubmit.disabled,
+.EXLLighboxCancelButton span a.EXLSubmit.disabled,
+.EXLLighboxSubmitButton span input.EXLSubmit.disabled,
+.EXLLighboxCancelButton span input.EXLSubmit.disabled,
+.EXLLighboxSubmitButton span a.EXLSubmit[disabled],
+.EXLLighboxCancelButton span a.EXLSubmit[disabled],
+.EXLLighboxSubmitButton span input.EXLSubmit[disabled],
+.EXLLighboxCancelButton span input.EXLSubmit[disabled],
+fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit,
+fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit,
+fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit,
+fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit,
+.EXLLighboxSubmitButton span a.EXLSubmit.disabled:hover,
+.EXLLighboxCancelButton span a.EXLSubmit.disabled:hover,
+.EXLLighboxSubmitButton span input.EXLSubmit.disabled:hover,
+.EXLLighboxCancelButton span input.EXLSubmit.disabled:hover,
+.EXLLighboxSubmitButton span a.EXLSubmit[disabled]:hover,
+.EXLLighboxCancelButton span a.EXLSubmit[disabled]:hover,
+.EXLLighboxSubmitButton span input.EXLSubmit[disabled]:hover,
+.EXLLighboxCancelButton span input.EXLSubmit[disabled]:hover,
+fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit:hover,
+fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit:hover,
+fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit:hover,
+fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit:hover,
+.EXLLighboxSubmitButton span a.EXLSubmit.disabled:focus,
+.EXLLighboxCancelButton span a.EXLSubmit.disabled:focus,
+.EXLLighboxSubmitButton span input.EXLSubmit.disabled:focus,
+.EXLLighboxCancelButton span input.EXLSubmit.disabled:focus,
+.EXLLighboxSubmitButton span a.EXLSubmit[disabled]:focus,
+.EXLLighboxCancelButton span a.EXLSubmit[disabled]:focus,
+.EXLLighboxSubmitButton span input.EXLSubmit[disabled]:focus,
+.EXLLighboxCancelButton span input.EXLSubmit[disabled]:focus,
+fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit:focus,
+fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit:focus,
+fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit:focus,
+fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit:focus,
+.EXLLighboxSubmitButton span a.EXLSubmit.disabled:active,
+.EXLLighboxCancelButton span a.EXLSubmit.disabled:active,
+.EXLLighboxSubmitButton span input.EXLSubmit.disabled:active,
+.EXLLighboxCancelButton span input.EXLSubmit.disabled:active,
+.EXLLighboxSubmitButton span a.EXLSubmit[disabled]:active,
+.EXLLighboxCancelButton span a.EXLSubmit[disabled]:active,
+.EXLLighboxSubmitButton span input.EXLSubmit[disabled]:active,
+.EXLLighboxCancelButton span input.EXLSubmit[disabled]:active,
+fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit:active,
+fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit:active,
+fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit:active,
+fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit:active,
+.EXLLighboxSubmitButton span a.EXLSubmit.disabled.active,
+.EXLLighboxCancelButton span a.EXLSubmit.disabled.active,
+.EXLLighboxSubmitButton span input.EXLSubmit.disabled.active,
+.EXLLighboxCancelButton span input.EXLSubmit.disabled.active,
+.EXLLighboxSubmitButton span a.EXLSubmit[disabled].active,
+.EXLLighboxCancelButton span a.EXLSubmit[disabled].active,
+.EXLLighboxSubmitButton span input.EXLSubmit[disabled].active,
+.EXLLighboxCancelButton span input.EXLSubmit[disabled].active,
+fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit.active,
+fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit.active,
+fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit.active,
+fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit.active {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+#EXLCancelPersonalRankData {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.528571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #a7a9aa;
+  border-color: #a7a9aa;
+}
+#EXLCancelPersonalRankData:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#EXLCancelPersonalRankData:hover,
+#EXLCancelPersonalRankData:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+#EXLCancelPersonalRankData:active,
+#EXLCancelPersonalRankData.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#EXLCancelPersonalRankData.disabled,
+#EXLCancelPersonalRankData[disabled],
+fieldset[disabled] #EXLCancelPersonalRankData {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#EXLCancelPersonalRankData [class^="icon-"].icon-large,
+#EXLCancelPersonalRankData [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+#EXLCancelPersonalRankData [class^="icon-"].icon-spin,
+#EXLCancelPersonalRankData [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+#EXLCancelPersonalRankData [class^="icon-"].pull-left.icon-2x,
+#EXLCancelPersonalRankData [class*=" icon-"].pull-left.icon-2x,
+#EXLCancelPersonalRankData [class^="icon-"].pull-right.icon-2x,
+#EXLCancelPersonalRankData [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+#EXLCancelPersonalRankData [class^="icon-"].icon-spin.icon-large,
+#EXLCancelPersonalRankData [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+#EXLCancelPersonalRankData:hover,
+#EXLCancelPersonalRankData:focus,
+#EXLCancelPersonalRankData:active,
+#EXLCancelPersonalRankData.active,
+.open .dropdown-toggle#EXLCancelPersonalRankData {
+  color: #ffffff;
+  background-color: #929596;
+  border-color: #888b8c;
+}
+#EXLCancelPersonalRankData:active,
+#EXLCancelPersonalRankData.active,
+.open .dropdown-toggle#EXLCancelPersonalRankData {
+  background-image: none;
+}
+#EXLCancelPersonalRankData.disabled,
+#EXLCancelPersonalRankData[disabled],
+fieldset[disabled] #EXLCancelPersonalRankData,
+#EXLCancelPersonalRankData.disabled:hover,
+#EXLCancelPersonalRankData[disabled]:hover,
+fieldset[disabled] #EXLCancelPersonalRankData:hover,
+#EXLCancelPersonalRankData.disabled:focus,
+#EXLCancelPersonalRankData[disabled]:focus,
+fieldset[disabled] #EXLCancelPersonalRankData:focus,
+#EXLCancelPersonalRankData.disabled:active,
+#EXLCancelPersonalRankData[disabled]:active,
+fieldset[disabled] #EXLCancelPersonalRankData:active,
+#EXLCancelPersonalRankData.disabled.active,
+#EXLCancelPersonalRankData[disabled].active,
+fieldset[disabled] #EXLCancelPersonalRankData.active {
+  background-color: #a7a9aa;
+  border-color: #a7a9aa;
+}
+#exliGreyOverlay {
+  max-width: 100%;
+}
+#exliWhiteContent {
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+}
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:before,
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  clear: both;
+}
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:before,
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
+  clear: both;
+}
+#exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1,
+#exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1,
+  #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 {
+    float: left;
+    width: 50%;
+  }
+}
+#exlidFindDBContainer {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  background-color: transparent;
+}
+#exlidFindDBTile {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  font-size: inherit;
+  min-height: 650px;
+}
+.EXLFindDBHeader h1 {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  height: auto;
+  width: auto;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 18px;
+  color: inherit;
+}
+.EXLFindDBHeader h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+.EXLPopup.EXLEmailPopup #mailFormId,
+.EXLPopup.EXLEmailPopup #mailFormId > table {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+#exlidHeaderSystemFeedback {
+  border-bottom: none;
+  border-top: none;
+  background-color: #ffffff;
+  text-align: inherit;
+  display: block;
+  margin-top: 0;
+}
+#exlidHeaderSystemFeedback strong {
+  padding: 0 0 0 0;
+  font-size: 100%;
+  background: none;
+  color: inherit;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback,
+.EXLSystemFeedback > .EXLSystemFeedback {
+  padding: 15px;
+  margin-bottom: 21px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+  color: #c09853;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback h4,
+.EXLSystemFeedback > .EXLSystemFeedback h4 {
+  margin-top: 0;
+  color: inherit;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback .alert-link,
+.EXLSystemFeedback > .EXLSystemFeedback .alert-link {
+  font-weight: bold;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > p,
+.EXLSystemFeedback > .EXLSystemFeedback > p,
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > ul,
+.EXLSystemFeedback > .EXLSystemFeedback > ul {
+  margin-bottom: 0;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > p + p,
+.EXLSystemFeedback > .EXLSystemFeedback > p + p {
+  margin-top: 5px;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback hr,
+.EXLSystemFeedback > .EXLSystemFeedback hr {
+  border-top-color: #f8e5be;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback .alert-link,
+.EXLSystemFeedback > .EXLSystemFeedback .alert-link {
+  color: #a47e3c;
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback a,
+.EXLSystemFeedback > .EXLSystemFeedback a {
+  font-weight: bold;
+  color: #a47e3c;
+}
+.svg a.EXLLightboxHeaderClose {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f05c";
+}
+.svg a.EXLLightboxHeaderClose:hover,
+.svg a.EXLLightboxHeaderClose:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+button.svg a.EXLLightboxHeaderClose {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.svg img[src="../images/icon_close_tabs.png"] {
+  opacity: 0;
+}
+.EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate,
+#exlidMainMenuTile div.EXLLanguagesContainer,
+#exlidSearchBanner,
+.EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterLastUpdate,
+.EXLFacetContainer div.EXLFacetActions li.EXLFacetRSSAction,
+.EXLResult .EXLReviewsTab,
+li#exlidMainMenuItem2.EXLMainMenuItem,
+#exlidMainMenuRibbon li.EXLLastItem,
+.EXLMoreTab,
+.EXLTabsRibbon div li.EXLLocationsTab,
 #exlidUserAreaRibbon li span.EXLUserAreaStart {
   display: none;
 }
@@ -13707,14 +14748,6 @@ a .icon-flip-vertical:before {
 .EXLFooterTile,
 .EXLFacetContainer div.EXLFacetActionsV2 {
   font-size: inherit;
-}
-ul,
-ol {
-  padding-left: 40px;
-}
-a:link,
-a:visited {
-  color: #cc0000;
 }
 .EXLMyAccountTabsRibbon {
   height: auto;
@@ -18306,1160 +19339,11 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
   position: absolute;
   margin: 0;
 }
-/* primo-facets.less */
-#exlidFacetTile {
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  #exlidFacetTile {
-    float: left;
-    width: 25%;
-  }
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer {
-  margin-bottom: 0;
-  border-radius: 0;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer:first-of-type {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer:last-of-type {
-  margin-bottom: 15px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a {
-  background-color: #fcfcfc;
-  padding: 10px 15px;
-  display: block;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:before,
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
-  clear: both;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:before,
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:after {
-  clear: both;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:hover,
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:focus {
-  text-decoration: none;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a:last-of-type {
-  border-bottom: 1px #dddddd solid;
-}
-.EXLFacetTile .EXLFacetList:nth-of-type(2) .EXLFacetContainer > a h4 {
-  border: none;
-  border-bottom: none;
-  background-color: #fcfcfc;
-  font-size: 13.5px;
-  display: block;
-  padding: 0;
-  max-width: 83%;
-  float: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.EXLFacetContainer {
-  margin-bottom: 21px;
-  background-color: #ffffff;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 0;
-  margin-bottom: 15px;
-}
-.EXLFacetContainer > .list-group {
-  margin-bottom: 0;
-}
-.EXLFacetContainer > .list-group .list-group-item {
-  border-width: 1px 0;
-}
-.EXLFacetContainer > .list-group .list-group-item:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.EXLFacetContainer > .list-group .list-group-item:last-child {
-  border-bottom: 0;
-}
-.EXLFacetContainer > .table,
-.EXLFacetContainer > .table-responsive {
-  margin-bottom: 0;
-}
-.EXLFacetContainer > .panel-body + .table,
-.EXLFacetContainer > .panel-body + .table-responsive {
-  border-top: 1px solid #dddddd;
-}
-.EXLFacetContainer > .table-bordered,
-.EXLFacetContainer > .table-responsive > .table-bordered {
-  border: 0;
-}
-.EXLFacetContainer > .table-bordered > thead > tr > th:first-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > th:first-child,
-.EXLFacetContainer > .table-bordered > tbody > tr > th:first-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-.EXLFacetContainer > .table-bordered > tfoot > tr > th:first-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-.EXLFacetContainer > .table-bordered > thead > tr > td:first-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > td:first-child,
-.EXLFacetContainer > .table-bordered > tbody > tr > td:first-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-.EXLFacetContainer > .table-bordered > tfoot > tr > td:first-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-  border-left: 0;
-}
-.EXLFacetContainer > .table-bordered > thead > tr > th:last-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > th:last-child,
-.EXLFacetContainer > .table-bordered > tbody > tr > th:last-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-.EXLFacetContainer > .table-bordered > tfoot > tr > th:last-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-.EXLFacetContainer > .table-bordered > thead > tr > td:last-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr > td:last-child,
-.EXLFacetContainer > .table-bordered > tbody > tr > td:last-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-.EXLFacetContainer > .table-bordered > tfoot > tr > td:last-child,
-.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-  border-right: 0;
-}
-.EXLFacetContainer > .table-bordered > thead > tr:last-child > th,
-.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr:last-child > th,
-.EXLFacetContainer > .table-bordered > tbody > tr:last-child > th,
-.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-.EXLFacetContainer > .table-bordered > tfoot > tr:last-child > th,
-.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-.EXLFacetContainer > .table-bordered > thead > tr:last-child > td,
-.EXLFacetContainer > .table-responsive > .table-bordered > thead > tr:last-child > td,
-.EXLFacetContainer > .table-bordered > tbody > tr:last-child > td,
-.EXLFacetContainer > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-.EXLFacetContainer > .table-bordered > tfoot > tr:last-child > td,
-.EXLFacetContainer > .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-  border-bottom: 0;
-}
-.EXLFacetContainer h3,
-.EXLFacetContainer h1,
-.EXLFacetContainer h4 {
-  padding: 10px 15px;
-  border-bottom: 1px solid transparent;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-  margin: 0;
-}
-.EXLFacetContainer h1 {
-  font-size: 16px;
-}
-.EXLFacetContainer h3 {
-  font-size: 15px;
-}
-.EXLFacetContainer h4 {
-  font-size: 14.5px;
-}
-.EXLFacetContainer a i:hover {
-  text-decoration: none;
-}
-.EXLFacetContainer ol.EXLFacetsList {
-  margin-bottom: 0;
-  padding: 0px;
-  margin: 0px;
-}
-.EXLFacetContainer ol.EXLFacetsList .list-group-item {
-  border-width: 1px 0;
-}
-.EXLFacetContainer ol.EXLFacetsList .list-group-item:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.EXLFacetContainer ol.EXLFacetsList .list-group-item:last-child {
-  border-bottom: 0;
-}
-.EXLFacetContainer ol.EXLFacetsList li {
-  border-width: 1px 0;
-  padding-right: 15px;
-  border-left: none;
-  border-right: none;
-  height: auto;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.EXLFacetContainer ol.EXLFacetsList li:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.EXLFacetContainer ol.EXLFacetsList li:last-child {
-  border-bottom: 0;
-}
-.EXLFacetContainer ol.EXLFacetsList li.EXLAdditionalFacet {
-  height: 0;
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  border: none;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.EXLFacetContainer ol.EXLFacetsList li.EXLFacetsDisplayMore {
-  margin-top: 0px;
-}
-.EXLFacetContainer ol.EXLFacetsList li a {
-  font-size: 13px;
-  display: inline-block;
-  width: 61%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.EXLFacetContainer ol.EXLFacetsList li span {
-  float: right;
-  clear: right;
-  text-align: right;
-  font-size: 11px;
-  display: inline-block;
-  max-width: 24%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.EXLFacetContainer div.EXLFacetActionsV2 {
-  margin-bottom: 0;
-}
-.EXLFacetContainer div.EXLFacetActionsV2 ul {
-  margin: 0;
-}
-.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetRSSAction,
-.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveSearchAction,
-.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveToEShelfAction {
-  background-image: none;
-  padding: 10px 30px 10px 15px;
-}
-.EXLRelatedSearchTopicFIELDfacet_creator {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom: none;
-}
-.EXLRelatedSearchTopicFIELDfacet_topic {
-  border-radius: 0;
-  border-top: none;
-  border-bottom: none;
-}
-a[title="More "]:after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  border-bottom: 0 dotted;
-}
-.btn-default a[title="More "]:after {
-  border-top-color: #ffffff;
-}
-.btn-primary a[title="More "]:after,
-.btn-success a[title="More "]:after,
-.btn-warning a[title="More "]:after,
-.btn-danger a[title="More "]:after,
-.btn-info a[title="More "]:after {
-  border-top-color: #fff;
-}
-a[title="More "] img {
-  display: none;
-}
-.EXLRelatedSearchTopic {
-  display: none;
-}
 .EXLFooterTile,
 #EXLFooterTile {
   margin: 0 auto;
   background-image: none;
   display: block;
-}
-.EXLLightbox,
-#exlidFindDBTile {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  background-image: none;
-  position: relative;
-  background-color: #ffffff;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  background-clip: padding-box;
-  outline: none;
-}
-.EXLLightbox div.EXLLightboxHeader,
-#exlidFindDBTile div.EXLLightboxHeader,
-.EXLLightbox div.EXLFindDBHeader,
-#exlidFindDBTile div.EXLFindDBHeader {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  background-image: none;
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-  min-height: 16.528571429px;
-}
-.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle,
-#exlidFindDBTile div.EXLLightboxHeader span.EXLLightboxHeaderTitle,
-.EXLLightbox div.EXLFindDBHeader span.EXLLightboxHeaderTitle,
-#exlidFindDBTile div.EXLFindDBHeader span.EXLLightboxHeaderTitle {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-  font-size: 18px;
-  margin: 0;
-  line-height: 1.528571429;
-}
-.EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle small,
-#exlidFindDBTile div.EXLLightboxHeader span.EXLLightboxHeaderTitle small,
-.EXLLightbox div.EXLFindDBHeader span.EXLLightboxHeaderTitle small,
-#exlidFindDBTile div.EXLFindDBHeader span.EXLLightboxHeaderTitle small {
-  font-weight: normal;
-  line-height: 1;
-  color: #999999;
-}
-.EXLLightbox div.EXLLightboxHeader a.EXLLightboxHeaderClose,
-#exlidFindDBTile div.EXLLightboxHeader a.EXLLightboxHeaderClose,
-.EXLLightbox div.EXLFindDBHeader a.EXLLightboxHeaderClose,
-#exlidFindDBTile div.EXLFindDBHeader a.EXLLightboxHeaderClose {
-  margin-top: 0.2em;
-  margin-right: 0.2em;
-}
-.EXLLightbox div.EXLLightboxFormContainer,
-#exlidFindDBTile div.EXLLightboxFormContainer,
-.EXLLightbox #searchDbForm,
-#exlidFindDBTile #searchDbForm,
-.EXLLightbox #searchDbFormTabs,
-#exlidFindDBTile #searchDbFormTabs {
-  font-size: inherit;
-  position: relative;
-  padding: 20px;
-}
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow,
-#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow,
-.EXLLightbox #searchDbForm div.EXLLightboxFormRow,
-#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow,
-.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow,
-#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
-#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
-.EXLLightbox #searchDbForm div.EXLLightboxFormRow:before,
-#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:before,
-.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:before,
-#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:before,
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
-  clear: both;
-}
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
-#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:before,
-.EXLLightbox #searchDbForm div.EXLLightboxFormRow:before,
-#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:before,
-.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:before,
-#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:before,
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-#exlidFindDBTile div.EXLLightboxFormContainer div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbForm div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbForm div.EXLLightboxFormRow:after,
-.EXLLightbox #searchDbFormTabs div.EXLLightboxFormRow:after,
-#exlidFindDBTile #searchDbFormTabs div.EXLLightboxFormRow:after {
-  clear: both;
-}
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection,
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection,
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection,
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection,
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection,
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
-  clear: both;
-}
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:before,
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection:after,
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after,
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection:after {
-  clear: both;
-}
-.EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-#exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-.EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-#exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-.EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-#exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;
-}
-@media (min-width: 1200px) {
-  .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-  #exlidFindDBTile div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-  .EXLLightbox #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-  #exlidFindDBTile #searchDbForm fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-  .EXLLightbox #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn],
-  #exlidFindDBTile #searchDbFormTabs fieldset.EXLLightboxFormDisciplineSelection ul[class^=EXLLightboxFormDisciplineSelectionColumn] {
-    float: left;
-    width: 50%;
-  }
-}
-.EXLLightbox .EXLLightboxFormButtons,
-#exlidFindDBTile .EXLLightboxFormButtons {
-  margin-top: 15px;
-  padding: 19px 20px 20px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: left;
-  margin-right: -20px;
-  margin-left: -20px;
-}
-.EXLLightbox .EXLLightboxFormButtons:before,
-#exlidFindDBTile .EXLLightboxFormButtons:before,
-.EXLLightbox .EXLLightboxFormButtons:after,
-#exlidFindDBTile .EXLLightboxFormButtons:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLLightbox .EXLLightboxFormButtons:after,
-#exlidFindDBTile .EXLLightboxFormButtons:after {
-  clear: both;
-}
-.EXLLightbox .EXLLightboxFormButtons:before,
-#exlidFindDBTile .EXLLightboxFormButtons:before,
-.EXLLightbox .EXLLightboxFormButtons:after,
-#exlidFindDBTile .EXLLightboxFormButtons:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.EXLLightbox .EXLLightboxFormButtons:after,
-#exlidFindDBTile .EXLLightboxFormButtons:after {
-  clear: both;
-}
-.EXLLightbox .EXLLightboxFormButtons .btn + .btn,
-#exlidFindDBTile .EXLLightboxFormButtons .btn + .btn {
-  margin-left: 5px;
-  margin-bottom: 0;
-}
-.EXLLightbox .EXLLightboxFormButtons .btn-group .btn + .btn,
-#exlidFindDBTile .EXLLightboxFormButtons .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-.EXLLightbox .EXLLightboxFormButtons .btn-block + .btn-block,
-#exlidFindDBTile .EXLLightboxFormButtons .btn-block + .btn-block {
-  margin-left: 0;
-}
-.EXLLighboxSubmitButton,
-.EXLLighboxCancelButton {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  font-size: inherit;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 1200px) {
-  .EXLLighboxSubmitButton,
-  .EXLLighboxCancelButton {
-    float: left;
-    width: 16.666666666666664%;
-  }
-}
-.EXLLighboxSubmitButton span,
-.EXLLighboxCancelButton span {
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  margin: 0;
-  width: inherit;
-  text-align: left;
-  display: inline;
-}
-.EXLLighboxSubmitButton span a,
-.EXLLighboxCancelButton span a,
-.EXLLighboxSubmitButton span input,
-.EXLLighboxCancelButton span input {
-  height: auto;
-  padding: 0;
-  display: inline-block;
-  padding: 8px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.528571429;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  display: block;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-.EXLLighboxSubmitButton span a:focus,
-.EXLLighboxCancelButton span a:focus,
-.EXLLighboxSubmitButton span input:focus,
-.EXLLighboxCancelButton span input:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.EXLLighboxSubmitButton span a:hover,
-.EXLLighboxCancelButton span a:hover,
-.EXLLighboxSubmitButton span input:hover,
-.EXLLighboxCancelButton span input:hover,
-.EXLLighboxSubmitButton span a:focus,
-.EXLLighboxCancelButton span a:focus,
-.EXLLighboxSubmitButton span input:focus,
-.EXLLighboxCancelButton span input:focus {
-  color: #ffffff;
-  text-decoration: none;
-}
-.EXLLighboxSubmitButton span a:active,
-.EXLLighboxCancelButton span a:active,
-.EXLLighboxSubmitButton span input:active,
-.EXLLighboxCancelButton span input:active,
-.EXLLighboxSubmitButton span a.active,
-.EXLLighboxCancelButton span a.active,
-.EXLLighboxSubmitButton span input.active,
-.EXLLighboxCancelButton span input.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.EXLLighboxSubmitButton span a.disabled,
-.EXLLighboxCancelButton span a.disabled,
-.EXLLighboxSubmitButton span input.disabled,
-.EXLLighboxCancelButton span input.disabled,
-.EXLLighboxSubmitButton span a[disabled],
-.EXLLighboxCancelButton span a[disabled],
-.EXLLighboxSubmitButton span input[disabled],
-.EXLLighboxCancelButton span input[disabled],
-fieldset[disabled] .EXLLighboxSubmitButton span a,
-fieldset[disabled] .EXLLighboxCancelButton span a,
-fieldset[disabled] .EXLLighboxSubmitButton span input,
-fieldset[disabled] .EXLLighboxCancelButton span input {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.EXLLighboxSubmitButton span a [class^="icon-"].icon-large,
-.EXLLighboxCancelButton span a [class^="icon-"].icon-large,
-.EXLLighboxSubmitButton span input [class^="icon-"].icon-large,
-.EXLLighboxCancelButton span input [class^="icon-"].icon-large,
-.EXLLighboxSubmitButton span a [class*=" icon-"].icon-large,
-.EXLLighboxCancelButton span a [class*=" icon-"].icon-large,
-.EXLLighboxSubmitButton span input [class*=" icon-"].icon-large,
-.EXLLighboxCancelButton span input [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-.EXLLighboxSubmitButton span a [class^="icon-"].icon-spin,
-.EXLLighboxCancelButton span a [class^="icon-"].icon-spin,
-.EXLLighboxSubmitButton span input [class^="icon-"].icon-spin,
-.EXLLighboxCancelButton span input [class^="icon-"].icon-spin,
-.EXLLighboxSubmitButton span a [class*=" icon-"].icon-spin,
-.EXLLighboxCancelButton span a [class*=" icon-"].icon-spin,
-.EXLLighboxSubmitButton span input [class*=" icon-"].icon-spin,
-.EXLLighboxCancelButton span input [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-.EXLLighboxSubmitButton span a [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span a [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span input [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span input [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span a [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span a [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span input [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span input [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span a [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span a [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxSubmitButton span input [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span input [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxSubmitButton span a [class*=" icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span a [class*=" icon-"].pull-right.icon-2x,
-.EXLLighboxSubmitButton span input [class*=" icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span input [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .18em;
-}
-.EXLLighboxSubmitButton span a [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span a [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxSubmitButton span input [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span input [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxSubmitButton span a [class*=" icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span a [class*=" icon-"].icon-spin.icon-large,
-.EXLLighboxSubmitButton span input [class*=" icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span input [class*=" icon-"].icon-spin.icon-large {
-  line-height: .8em;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit,
-.EXLLighboxCancelButton span a.EXLSubmit,
-.EXLLighboxSubmitButton span input.EXLSubmit,
-.EXLLighboxCancelButton span input.EXLSubmit {
-  height: auto;
-  display: inline-block;
-  padding: 8px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.528571429;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  color: #ffffff;
-  background-color: #cc0000;
-  border-color: #cc0000;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit:focus,
-.EXLLighboxCancelButton span a.EXLSubmit:focus,
-.EXLLighboxSubmitButton span input.EXLSubmit:focus,
-.EXLLighboxCancelButton span input.EXLSubmit:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit:hover,
-.EXLLighboxCancelButton span a.EXLSubmit:hover,
-.EXLLighboxSubmitButton span input.EXLSubmit:hover,
-.EXLLighboxCancelButton span input.EXLSubmit:hover,
-.EXLLighboxSubmitButton span a.EXLSubmit:focus,
-.EXLLighboxCancelButton span a.EXLSubmit:focus,
-.EXLLighboxSubmitButton span input.EXLSubmit:focus,
-.EXLLighboxCancelButton span input.EXLSubmit:focus {
-  color: #ffffff;
-  text-decoration: none;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit:active,
-.EXLLighboxCancelButton span a.EXLSubmit:active,
-.EXLLighboxSubmitButton span input.EXLSubmit:active,
-.EXLLighboxCancelButton span input.EXLSubmit:active,
-.EXLLighboxSubmitButton span a.EXLSubmit.active,
-.EXLLighboxCancelButton span a.EXLSubmit.active,
-.EXLLighboxSubmitButton span input.EXLSubmit.active,
-.EXLLighboxCancelButton span input.EXLSubmit.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.EXLLighboxSubmitButton span a.EXLSubmit.disabled,
-.EXLLighboxCancelButton span a.EXLSubmit.disabled,
-.EXLLighboxSubmitButton span input.EXLSubmit.disabled,
-.EXLLighboxCancelButton span input.EXLSubmit.disabled,
-.EXLLighboxSubmitButton span a.EXLSubmit[disabled],
-.EXLLighboxCancelButton span a.EXLSubmit[disabled],
-.EXLLighboxSubmitButton span input.EXLSubmit[disabled],
-.EXLLighboxCancelButton span input.EXLSubmit[disabled],
-fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit,
-fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit,
-fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit,
-fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].icon-large,
-.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].icon-large,
-.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].icon-large,
-.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].icon-large,
-.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].icon-large,
-.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].icon-large,
-.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].icon-large,
-.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].icon-spin,
-.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].icon-spin,
-.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].icon-spin,
-.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].icon-spin,
-.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].icon-spin,
-.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].icon-spin,
-.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].icon-spin,
-.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].pull-left.icon-2x,
-.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].pull-right.icon-2x,
-.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].pull-right.icon-2x,
-.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].pull-right.icon-2x,
-.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .18em;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span a.EXLSubmit [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxSubmitButton span input.EXLSubmit [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span input.EXLSubmit [class^="icon-"].icon-spin.icon-large,
-.EXLLighboxSubmitButton span a.EXLSubmit [class*=" icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span a.EXLSubmit [class*=" icon-"].icon-spin.icon-large,
-.EXLLighboxSubmitButton span input.EXLSubmit [class*=" icon-"].icon-spin.icon-large,
-.EXLLighboxCancelButton span input.EXLSubmit [class*=" icon-"].icon-spin.icon-large {
-  line-height: .8em;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit:hover,
-.EXLLighboxCancelButton span a.EXLSubmit:hover,
-.EXLLighboxSubmitButton span input.EXLSubmit:hover,
-.EXLLighboxCancelButton span input.EXLSubmit:hover,
-.EXLLighboxSubmitButton span a.EXLSubmit:focus,
-.EXLLighboxCancelButton span a.EXLSubmit:focus,
-.EXLLighboxSubmitButton span input.EXLSubmit:focus,
-.EXLLighboxCancelButton span input.EXLSubmit:focus,
-.EXLLighboxSubmitButton span a.EXLSubmit:active,
-.EXLLighboxCancelButton span a.EXLSubmit:active,
-.EXLLighboxSubmitButton span input.EXLSubmit:active,
-.EXLLighboxCancelButton span input.EXLSubmit:active,
-.EXLLighboxSubmitButton span a.EXLSubmit.active,
-.EXLLighboxCancelButton span a.EXLSubmit.active,
-.EXLLighboxSubmitButton span input.EXLSubmit.active,
-.EXLLighboxCancelButton span input.EXLSubmit.active,
-.open .dropdown-toggle.EXLLighboxSubmitButton span a.EXLSubmit,
-.open .dropdown-toggle.EXLLighboxCancelButton span a.EXLSubmit,
-.open .dropdown-toggle.EXLLighboxSubmitButton span input.EXLSubmit,
-.open .dropdown-toggle.EXLLighboxCancelButton span input.EXLSubmit {
-  color: #ffffff;
-  background-color: #a30000;
-  border-color: #8f0000;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit:active,
-.EXLLighboxCancelButton span a.EXLSubmit:active,
-.EXLLighboxSubmitButton span input.EXLSubmit:active,
-.EXLLighboxCancelButton span input.EXLSubmit:active,
-.EXLLighboxSubmitButton span a.EXLSubmit.active,
-.EXLLighboxCancelButton span a.EXLSubmit.active,
-.EXLLighboxSubmitButton span input.EXLSubmit.active,
-.EXLLighboxCancelButton span input.EXLSubmit.active,
-.open .dropdown-toggle.EXLLighboxSubmitButton span a.EXLSubmit,
-.open .dropdown-toggle.EXLLighboxCancelButton span a.EXLSubmit,
-.open .dropdown-toggle.EXLLighboxSubmitButton span input.EXLSubmit,
-.open .dropdown-toggle.EXLLighboxCancelButton span input.EXLSubmit {
-  background-image: none;
-}
-.EXLLighboxSubmitButton span a.EXLSubmit.disabled,
-.EXLLighboxCancelButton span a.EXLSubmit.disabled,
-.EXLLighboxSubmitButton span input.EXLSubmit.disabled,
-.EXLLighboxCancelButton span input.EXLSubmit.disabled,
-.EXLLighboxSubmitButton span a.EXLSubmit[disabled],
-.EXLLighboxCancelButton span a.EXLSubmit[disabled],
-.EXLLighboxSubmitButton span input.EXLSubmit[disabled],
-.EXLLighboxCancelButton span input.EXLSubmit[disabled],
-fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit,
-fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit,
-fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit,
-fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit,
-.EXLLighboxSubmitButton span a.EXLSubmit.disabled:hover,
-.EXLLighboxCancelButton span a.EXLSubmit.disabled:hover,
-.EXLLighboxSubmitButton span input.EXLSubmit.disabled:hover,
-.EXLLighboxCancelButton span input.EXLSubmit.disabled:hover,
-.EXLLighboxSubmitButton span a.EXLSubmit[disabled]:hover,
-.EXLLighboxCancelButton span a.EXLSubmit[disabled]:hover,
-.EXLLighboxSubmitButton span input.EXLSubmit[disabled]:hover,
-.EXLLighboxCancelButton span input.EXLSubmit[disabled]:hover,
-fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit:hover,
-fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit:hover,
-fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit:hover,
-fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit:hover,
-.EXLLighboxSubmitButton span a.EXLSubmit.disabled:focus,
-.EXLLighboxCancelButton span a.EXLSubmit.disabled:focus,
-.EXLLighboxSubmitButton span input.EXLSubmit.disabled:focus,
-.EXLLighboxCancelButton span input.EXLSubmit.disabled:focus,
-.EXLLighboxSubmitButton span a.EXLSubmit[disabled]:focus,
-.EXLLighboxCancelButton span a.EXLSubmit[disabled]:focus,
-.EXLLighboxSubmitButton span input.EXLSubmit[disabled]:focus,
-.EXLLighboxCancelButton span input.EXLSubmit[disabled]:focus,
-fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit:focus,
-fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit:focus,
-fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit:focus,
-fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit:focus,
-.EXLLighboxSubmitButton span a.EXLSubmit.disabled:active,
-.EXLLighboxCancelButton span a.EXLSubmit.disabled:active,
-.EXLLighboxSubmitButton span input.EXLSubmit.disabled:active,
-.EXLLighboxCancelButton span input.EXLSubmit.disabled:active,
-.EXLLighboxSubmitButton span a.EXLSubmit[disabled]:active,
-.EXLLighboxCancelButton span a.EXLSubmit[disabled]:active,
-.EXLLighboxSubmitButton span input.EXLSubmit[disabled]:active,
-.EXLLighboxCancelButton span input.EXLSubmit[disabled]:active,
-fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit:active,
-fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit:active,
-fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit:active,
-fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit:active,
-.EXLLighboxSubmitButton span a.EXLSubmit.disabled.active,
-.EXLLighboxCancelButton span a.EXLSubmit.disabled.active,
-.EXLLighboxSubmitButton span input.EXLSubmit.disabled.active,
-.EXLLighboxCancelButton span input.EXLSubmit.disabled.active,
-.EXLLighboxSubmitButton span a.EXLSubmit[disabled].active,
-.EXLLighboxCancelButton span a.EXLSubmit[disabled].active,
-.EXLLighboxSubmitButton span input.EXLSubmit[disabled].active,
-.EXLLighboxCancelButton span input.EXLSubmit[disabled].active,
-fieldset[disabled] .EXLLighboxSubmitButton span a.EXLSubmit.active,
-fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit.active,
-fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit.active,
-fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit.active {
-  background-color: #cc0000;
-  border-color: #cc0000;
-}
-#EXLCancelPersonalRankData {
-  display: inline-block;
-  padding: 8px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.528571429;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  color: #ffffff;
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
-}
-#EXLCancelPersonalRankData:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-#EXLCancelPersonalRankData:hover,
-#EXLCancelPersonalRankData:focus {
-  color: #ffffff;
-  text-decoration: none;
-}
-#EXLCancelPersonalRankData:active,
-#EXLCancelPersonalRankData.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-#EXLCancelPersonalRankData.disabled,
-#EXLCancelPersonalRankData[disabled],
-fieldset[disabled] #EXLCancelPersonalRankData {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-#EXLCancelPersonalRankData [class^="icon-"].icon-large,
-#EXLCancelPersonalRankData [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-#EXLCancelPersonalRankData [class^="icon-"].icon-spin,
-#EXLCancelPersonalRankData [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-#EXLCancelPersonalRankData [class^="icon-"].pull-left.icon-2x,
-#EXLCancelPersonalRankData [class*=" icon-"].pull-left.icon-2x,
-#EXLCancelPersonalRankData [class^="icon-"].pull-right.icon-2x,
-#EXLCancelPersonalRankData [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .18em;
-}
-#EXLCancelPersonalRankData [class^="icon-"].icon-spin.icon-large,
-#EXLCancelPersonalRankData [class*=" icon-"].icon-spin.icon-large {
-  line-height: .8em;
-}
-#EXLCancelPersonalRankData:hover,
-#EXLCancelPersonalRankData:focus,
-#EXLCancelPersonalRankData:active,
-#EXLCancelPersonalRankData.active,
-.open .dropdown-toggle#EXLCancelPersonalRankData {
-  color: #ffffff;
-  background-color: #929596;
-  border-color: #888b8c;
-}
-#EXLCancelPersonalRankData:active,
-#EXLCancelPersonalRankData.active,
-.open .dropdown-toggle#EXLCancelPersonalRankData {
-  background-image: none;
-}
-#EXLCancelPersonalRankData.disabled,
-#EXLCancelPersonalRankData[disabled],
-fieldset[disabled] #EXLCancelPersonalRankData,
-#EXLCancelPersonalRankData.disabled:hover,
-#EXLCancelPersonalRankData[disabled]:hover,
-fieldset[disabled] #EXLCancelPersonalRankData:hover,
-#EXLCancelPersonalRankData.disabled:focus,
-#EXLCancelPersonalRankData[disabled]:focus,
-fieldset[disabled] #EXLCancelPersonalRankData:focus,
-#EXLCancelPersonalRankData.disabled:active,
-#EXLCancelPersonalRankData[disabled]:active,
-fieldset[disabled] #EXLCancelPersonalRankData:active,
-#EXLCancelPersonalRankData.disabled.active,
-#EXLCancelPersonalRankData[disabled].active,
-fieldset[disabled] #EXLCancelPersonalRankData.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
-}
-#exliGreyOverlay {
-  max-width: 100%;
-}
-#exliWhiteContent {
-  background-color: transparent;
-  border-left: none;
-  border-right: none;
-}
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon:before,
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
-  clear: both;
-}
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon:before,
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-#exlidFindDBRibbon div.EXLFindDBFieldRibbon:after {
-  clear: both;
-}
-#exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1,
-#exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 1200px) {
-  #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1,
-  #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 {
-    float: left;
-    width: 50%;
-  }
-}
-#exlidFindDBContainer {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  background-color: transparent;
-}
-#exlidFindDBTile {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  font-size: inherit;
-  min-height: 650px;
-}
-.EXLFindDBHeader h1 {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.1;
-  font-size: 18px;
-  color: inherit;
-}
-.EXLFindDBHeader h1 small {
-  font-weight: normal;
-  line-height: 1;
-  color: #999999;
 }
 .svg .MyAccount .eShelf_title + noscript + table {
   font-size: inherit !important;
@@ -21203,41 +21087,6 @@ table.folderName.EXLEShelfFolderContentsTable {
   border-top: 1px solid #dddddd !important;
   border-collapse: separate;
 }
-.svg a.EXLLightboxHeaderClose {
-  float: right;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f05c";
-}
-.svg a.EXLLightboxHeaderClose:hover,
-.svg a.EXLLightboxHeaderClose:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-button.svg a.EXLLightboxHeaderClose {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
-.svg img[src="../images/icon_close_tabs.png"] {
-  opacity: 0;
-}
 #exlidHomeContainer {
   color: #333333;
   font-size: 14px;
@@ -21365,69 +21214,4 @@ button.svg a.EXLLightboxHeaderClose {
     float: left;
     width: 50%;
   }
-}
-.EXLPopup.EXLEmailPopup #mailFormId,
-.EXLPopup.EXLEmailPopup #mailFormId > table {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-}
-#exlidHeaderSystemFeedback {
-  border-bottom: none;
-  border-top: none;
-  background-color: #ffffff;
-  text-align: inherit;
-  display: block;
-  margin-top: 0;
-}
-#exlidHeaderSystemFeedback strong {
-  padding: 0 0 0 0;
-  font-size: 100%;
-  background: none;
-  color: inherit;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback,
-.EXLSystemFeedback > .EXLSystemFeedback {
-  padding: 15px;
-  margin-bottom: 21px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  background-color: #fcf8e3;
-  border-color: #fbeed5;
-  color: #c09853;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback h4,
-.EXLSystemFeedback > .EXLSystemFeedback h4 {
-  margin-top: 0;
-  color: inherit;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback .alert-link,
-.EXLSystemFeedback > .EXLSystemFeedback .alert-link {
-  font-weight: bold;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > p,
-.EXLSystemFeedback > .EXLSystemFeedback > p,
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > ul,
-.EXLSystemFeedback > .EXLSystemFeedback > ul {
-  margin-bottom: 0;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback > p + p,
-.EXLSystemFeedback > .EXLSystemFeedback > p + p {
-  margin-top: 5px;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback hr,
-.EXLSystemFeedback > .EXLSystemFeedback hr {
-  border-top-color: #f8e5be;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback .alert-link,
-.EXLSystemFeedback > .EXLSystemFeedback .alert-link {
-  color: #a47e3c;
-}
-#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback a,
-.EXLSystemFeedback > .EXLSystemFeedback a {
-  font-weight: bold;
-  color: #a47e3c;
 }

@@ -56,33 +56,63 @@
 
 // ## Core CSS
 
+// ### Base
+//
+@import "base/primo-scaffolding";
+
+// ### Components
+//
+@import "components/primo-facets";
+@import "components/primo-modal";
+@import "components/primo-save-query";
+@import "components/primo-email-popup";
+@import "components/primo-system-feedback";
+@import "components/primo-icons";
+
+
 // ### Resting unwanted properties
 // @TODO remove the need for these modules.
-@import "primo-reset.less";
+@import "utilities/primo-reset";
 
-// Layout styles
-@import "primo-layout";
+// ### Sections
+//
+@import "sections/primo-layout";
 
-//Base
-@import "primo-scaffolding";
-@import "primo-my-account";
-@import "primo-content";
-@import "primo-header";
-@import "primo-search";
-@import "primo-advanced-search";
-@import "primo-e-journal-a-z";
-@import "primo-browse-search";
-@import "primo-browse-list";
-@import "primo-results";
-@import "primo-full-result-view";
-@import "primo-facets";
-@import "primo-footer";
-@import "primo-modal";
-@import "primo-e-shelf";
-@import "primo-icons";
-@import "primo-save-query";
-@import "primo-home";
-@import "primo-email-popup";
-@import "primo-system-feedback";
+// My account
+@import "sections/primo-my-account";
 
+// Content for the home page
+@import "sections/primo-content";
 
+// Header styles
+@import "sections/primo-header";
+
+// Search form
+@import "sections/primo-search";
+
+// Advanced Search
+@import "sections/primo-advanced-search";
+
+// E-Journal Finder
+@import "sections/primo-e-journal-a-z";
+
+// Browse Search
+@import "sections/primo-browse-search";
+
+// Browse Search List
+@import "sections/primo-browse-list";
+
+// Results List
+@import "sections/primo-results";
+
+// Full view of result
+@import "sections/primo-full-result-view";
+
+// Footer
+@import "sections/primo-footer";
+
+// E-Shelf
+@import "sections/primo-e-shelf";
+
+// Homepage
+@import "sections/primo-home";
