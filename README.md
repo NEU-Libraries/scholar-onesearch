@@ -10,3 +10,20 @@ Credits to:
 * [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
 
 To compile LESS check out the documentation at [LESS Project Page](http://lesscss.org/), but I used [recess](https://github.com/twitter/recess).
+
+
+### LESS Structure
+
+```
+- less
+  |- library
+  |- legacy
+  |-
+
+  |- vendor
+    * bootstrap-map.less
+    * font-awesome-map.less
+  |- brand
+  |- sections
+  |- components
+```

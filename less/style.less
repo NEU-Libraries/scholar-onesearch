@@ -1,3 +1,6 @@
+// Licenses
+// If you find unatributed code please file and issue and we will address this immediately!
+
 /*
 * Bootstrap v3.0.0 by @fat and @mdo
 * Copyright 2013 Twitter, Inc.
@@ -6,51 +9,80 @@
 * Designed and built with all the love in the world by @mdo and @fat.
 */
 
-@import "../bootstrap/less/variables.less";
-@import "primo-variables.less";
-@import "../bootstrap/less/mixins";
-@import "primo-mixins";
 
-// Reset
-@import "../bootstrap/less/normalize.less";
-@import "../bootstrap/less/print.less";
+
+// ## Libraries
+//make sure that aren't missing variables;
+@import "../bootstrap/less/variables.less";
+//import customized variables.
+@import "library/primo-variables";
+
+@import "../bootstrap/less/mixins";
+@import "library/primo-mixins";
+
+
+// ## Legacy
+//
+// legacy code first to allow overrides later in the code.
+//
+// As the project is completed these files should only be used as references unaltered files are available under `legacy/reference-master/`
+// as the vendor updates the CSS there should be a patch mad to the floowing LESS files and remcompile this global stylesheet.
+//
+// Note that these stylesheets have been **EDITED** but they should
+@import "legacy/primo-dist-calendar";
+@import "legacy/primo-dist-default-3-0";
+
+
+// ## Reset
+@import "../bootstrap/less/normalize";
+@import "../bootstrap/less/print";
 
 //Fix for Windows Phone 8 and Internet Explorer 10
 //http://getbootstrap.com/getting-started/#browsers
-@import "primo-browser-support";
+@import "utilities/primo-browser-support";
+
 
 //adding the old styles here.
-@import "nu-old-style.less";
-
-//Importing styles from Bootstrap
-@import "bootstrap-map.less";
+@import "legacy/nu-old-style";
 
 
-@import "font-awesome-map";
+// ## Vendor Library Mappings
+//
+// Imports moved over to save a few lines here
+//
+@import "vendor/bootstrap-map";
+@import "vendor/font-awesome-map";
 
 
-// Core CSS
+// ## Core CSS
+
+// ### Resting unwanted properties
+// @TODO remove the need for these modules.
 @import "primo-reset.less";
-@import "primo-layout.less";
+
+// Layout styles
+@import "primo-layout";
+
+//Base
 @import "primo-scaffolding";
-@import "primo-my-account.less";
-@import "primo-content.less";
-@import "primo-header.less";
-@import "primo-search.less";
-@import "primo-advanced-search.less";
-@import "primo-e-journal-a-z.less";
-@import "primo-browse-search.less";
-@import "primo-browse-list.less";
-@import "primo-results.less";
-@import "primo-full-result-view.less";
-@import "primo-facets.less";
-@import "primo-footer.less";
-@import "primo-modal.less";
-@import "primo-e-shelf.less";
-@import "primo-icons.less";
-@import "primo-save-query.less";
-@import "primo-home.less";
-@import "primo-email-popup.less";
+@import "primo-my-account";
+@import "primo-content";
+@import "primo-header";
+@import "primo-search";
+@import "primo-advanced-search";
+@import "primo-e-journal-a-z";
+@import "primo-browse-search";
+@import "primo-browse-list";
+@import "primo-results";
+@import "primo-full-result-view";
+@import "primo-facets";
+@import "primo-footer";
+@import "primo-modal";
+@import "primo-e-shelf";
+@import "primo-icons";
+@import "primo-save-query";
+@import "primo-home";
+@import "primo-email-popup";
 @import "primo-system-feedback";
 
 
