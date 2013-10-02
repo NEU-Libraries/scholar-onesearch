@@ -112,34 +112,33 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   }
 }
 
-// //// Dropdown menu gradients
-// //// Not just for browse
 
-// #exlidAdvancedSearchRibbon,
-// .EXLSearchFieldRibbonFormCollectionsList,
-// #exlidSearchRibbon{
-//   div.EXLDynamicSelectBodyRadio a label,
-//   div.EXLDynamicSelectBodyRadio div label{
-//     display: block;
-//     padding: 3px 20px;
-//     clear: both;
-//     font-weight: normal;
-//     line-height: 1.528571429;
-//     color: #333333!important;
-//     white-space: nowrap;
-//     margin-bottom: 0;
-//     &:hover,
-//     &:focus{
-//       text-decoration: none;
-//       color: @dropdown-link-hover-color;
-//       background-color: @dropdown-link-hover-bg;
-//     }
-//   }
-//   div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
-//   div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label{
-//     color: @dropdown-link-active-color;
-//     text-decoration: none;
-//     outline: 0;
-//     background-color: @dropdown-link-active-bg;
-//   }
-// }
+//Mapping over the dropdown menu styles
+#exlidAdvancedSearchRibbon,
+.EXLSearchFieldRibbonFormCollectionsList,
+#exlidSearchRibbon{
+  div.EXLDynamicSelectBodyRadio a label,
+  div.EXLDynamicSelectBodyRadio div label{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.528571429;
+    color: #333333!important;
+    white-space: nowrap;
+    margin-bottom: 0;
+    &:hover,
+    &:focus{
+      text-decoration: none;
+      color: @dropdown-link-hover-color !important;
+      background-color: @dropdown-link-hover-bg;
+    }
+  }
+  div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
+  div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label{
+    color: @dropdown-link-active-color !important;
+    text-decoration: none;
+    outline: 0;
+    background-color: @dropdown-link-active-bg;
+  }
+}

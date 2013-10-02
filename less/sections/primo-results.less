@@ -80,14 +80,7 @@ td.EXLMyShelfStar{
         top: auto;
         left: auto;
         display: block;
-        li.EXLSortByLink,
-        li.EXLSortByLinkSelected{
-          .reset;
-          line-height: inherit;
-          color: inherit;
-        }
-        li.EXLSortByLink a,
-        li.EXLSortByLinkSelected{
+        li > a{
           display: block;
           padding: 3px 20px;
           clear: both;
@@ -95,20 +88,26 @@ td.EXLMyShelfStar{
           line-height: @line-height-base;
           color: @dropdown-link-color;
           white-space: nowrap; // prevent links from randomly breaking onto new lines
-          &:hover, &:focus{
+          &:hover,
+          &:focus {
             text-decoration: none;
             color: @dropdown-link-hover-color;
-            #gradient > .vertical(@dropdown-link-hover-bg, darken(@dropdown-link-hover-bg, 5%));
-
+            background-color: @dropdown-link-hover-bg;
           }
         }
-        //this is the selected scope or the active scope.
-        li.EXLSortByLinkSelected{
-          color: @dropdown-link-active-color;
-          text-decoration: none;
-          outline: 0;
-          #gradient > .vertical(@dropdown-link-active-bg, darken(@dropdown-link-active-bg, 5%));
+        .EXLSortByLinkSelected{
+          padding: 3px 20px;
+          &,
+          &:hover,
+          &:focus {
+            color: @dropdown-link-active-color;
+            text-decoration: none;
+            outline: 0;
+            background-color: @dropdown-link-active-bg;
+          }
         }
+
+
       }
     }
   }

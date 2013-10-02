@@ -11145,6 +11145,11 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   line-height: .8em;
 }
 
+#exlidSearchRibbon input.submit:hover,
+#exlidSearchRibbon input.submit:focus {
+  color: #ffffff;
+}
+
 #exlidSearchRibbon fieldset {
   position: relative;
   min-height: 1px;
@@ -12960,6 +12965,51 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
   border-top-color: #fff;
 }
 
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a label,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a label,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a label,
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div label,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div label,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div label {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.528571429;
+  color: #333333!important;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a label:hover,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a label:hover,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a label:hover,
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div label:hover,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div label:hover,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div label:hover,
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a label:focus,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a label:focus,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a label:focus,
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div label:focus,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div label:focus,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div label:focus {
+  text-decoration: none;
+  color: #ffffff !important;
+  background-color: #cc0000;
+}
+
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
+#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label,
+.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label,
+#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label {
+  color: #ffffff !important;
+  text-decoration: none;
+  outline: 0;
+  background-color: #cc0000;
+}
+
 /* Primo Browse List */
 
 #exlidBrowseResultsEnteries {
@@ -13373,21 +13423,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   white-space: nowrap;
 }
 
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLink,
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLinkSelected {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  line-height: inherit;
-  color: inherit;
-}
-
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLink a,
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLinkSelected {
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li > a {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -13397,30 +13433,24 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   white-space: nowrap;
 }
 
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLink a:hover,
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLinkSelected:hover,
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLink a:focus,
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLinkSelected:focus {
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li > a:hover,
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#cc0000), to(#b30000));
-  background-image: -webkit-linear-gradient(top, #cc0000, 0%, #b30000, 100%);
-  background-image: -webkit-linear-gradient(top, #cc0000 0%, #b30000 100%);
-  background-image: linear-gradient(to bottom, #cc0000 0%, #b30000 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffb30000', GradientType=0);
+  background-color: #cc0000;
 }
 
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul li.EXLSortByLinkSelected {
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul .EXLSortByLinkSelected {
+  padding: 3px 20px;
+}
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul .EXLSortByLinkSelected,
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul .EXLSortByLinkSelected:hover,
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul .EXLSortByLinkSelected:focus {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#cc0000), to(#b30000));
-  background-image: -webkit-linear-gradient(top, #cc0000, 0%, #b30000, 100%);
-  background-image: -webkit-linear-gradient(top, #cc0000 0%, #b30000 100%);
-  background-image: linear-gradient(to bottom, #cc0000 0%, #b30000 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffb30000', GradientType=0);
+  background-color: #cc0000;
 }
 
 .EXLResultsHeader div.EXLResultsNavigation {
