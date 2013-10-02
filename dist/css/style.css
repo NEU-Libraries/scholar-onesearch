@@ -8769,6 +8769,7 @@ a.report-a-problem:focus {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  padding: 0 0;
   color: #333333;
   background-color: #f5f5f5;
   border-color: #dddddd;
@@ -8925,11 +8926,24 @@ a.report-a-problem:focus {
   float: left;
 }
 
+.EXLTabContent {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
 .EXLTabContent iframe {
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 20em;
-  border: none;
+  height: 100%;
+}
+
+.EXLDetailsTabContent {
+  padding-top: 0;
 }
 
 .EXLTabHeaderButtons,
