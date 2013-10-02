@@ -1,36 +1,25 @@
 // --- Full view ------
 
-body.EXLFullView{
+.EXLFullView{
+  .EXLResultsTile{
+    .make-sm-column(12);
+    .make-md-column(12);
+    .make-lg-column(12);
+  }
+  .EXLResultsList{
+    border: none;
+  }
+  //remove the pagination on fullrecord view;
   .EXLResultsNavigation{
     display: none;
   }
-  div.EXLTabContent{
-    border: 1px solid #dddddd;
-    border-top: none;
+  .EXLResultTabContainer{
+    margin-bottom: 0;
   }
-  .EXLResultsContainer > .EXLResultsTile{
-    border: none;
-    .EXLResultsFooter{
-      background-color: @body-bg;
-      border: none;
-    }
-  }
-  div.EXLBackToResults{
-    font-size: 14px;
-  }
-} 
+}
 
-body.EXLFullView div.EXLTabHeaderButtons {
-  li{
-    &:hover,
-    &:focus{
-      background-color: transparent;
-    }
-  }
-  ol.EXLTabHeaderButtonSendToList{
-    background-color: @body-bg;
-    position: absolute;
-    margin: 0;
-  }
-
+a#backToResultsBtn{
+  display: block;
+  float: left;
+  padding: @nav-link-padding;
 }

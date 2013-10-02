@@ -2206,7 +2206,7 @@ textarea.input-lg {
 
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -2228,9 +2228,9 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  color: #ffffff;
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 
 .btn-default:hover,
@@ -2238,9 +2238,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #ffffff;
-  background-color: #929596;
-  border-color: #888b8c;
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
 }
 
 .btn-default:active,
@@ -2264,14 +2264,14 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 
 .btn-primary {
   color: #ffffff;
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 .btn-primary:hover,
@@ -2281,7 +2281,7 @@ fieldset[disabled] .btn-default.active {
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #a30000;
-  border-color: #8f0000;
+  border-color: #750000;
 }
 
 .btn-primary:active,
@@ -2306,13 +2306,13 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 .btn-warning {
   color: #ffffff;
   background-color: #f0ad4e;
-  border-color: #f0ad4e;
+  border-color: #eea236;
 }
 
 .btn-warning:hover,
@@ -2322,7 +2322,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-warning {
   color: #ffffff;
   background-color: #ed9c28;
-  border-color: #eb9316;
+  border-color: #d58512;
 }
 
 .btn-warning:active,
@@ -2347,13 +2347,13 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
   background-color: #f0ad4e;
-  border-color: #f0ad4e;
+  border-color: #eea236;
 }
 
 .btn-danger {
   color: #ffffff;
   background-color: #e74c3c;
-  border-color: #e74c3c;
+  border-color: #e43725;
 }
 
 .btn-danger:hover,
@@ -2363,7 +2363,7 @@ fieldset[disabled] .btn-warning.active {
 .open .dropdown-toggle.btn-danger {
   color: #ffffff;
   background-color: #df2e1b;
-  border-color: #cd2a19;
+  border-color: #b62516;
 }
 
 .btn-danger:active,
@@ -2388,13 +2388,13 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
   background-color: #e74c3c;
-  border-color: #e74c3c;
+  border-color: #e43725;
 }
 
 .btn-success {
   color: #ffffff;
   background-color: #16a085;
-  border-color: #16a085;
+  border-color: #138a72;
 }
 
 .btn-success:hover,
@@ -2404,7 +2404,7 @@ fieldset[disabled] .btn-danger.active {
 .open .dropdown-toggle.btn-success {
   color: #ffffff;
   background-color: #117c67;
-  border-color: #0f6a58;
+  border-color: #0c5446;
 }
 
 .btn-success:active,
@@ -2429,13 +2429,13 @@ fieldset[disabled] .btn-success:active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
   background-color: #16a085;
-  border-color: #16a085;
+  border-color: #138a72;
 }
 
 .btn-info {
   color: #ffffff;
   background-color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: #233140;
 }
 
 .btn-info:hover,
@@ -2445,7 +2445,7 @@ fieldset[disabled] .btn-success.active {
 .open .dropdown-toggle.btn-info {
   color: #ffffff;
   background-color: #1e2a36;
-  border-color: #161f29;
+  border-color: #0d1318;
 }
 
 .btn-info:active,
@@ -2470,7 +2470,7 @@ fieldset[disabled] .btn-info:active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
   background-color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: #233140;
 }
 
 .btn-link {
@@ -2717,7 +2717,7 @@ input[type="button"].btn-block {
 }
 
 .btn-default .caret {
-  border-top-color: #ffffff;
+  border-top-color: #333333;
 }
 
 .btn-primary .caret,
@@ -2729,7 +2729,7 @@ input[type="button"].btn-block {
 }
 
 .dropup .btn-default .caret {
-  border-bottom-color: #ffffff;
+  border-bottom-color: #333333;
 }
 
 .dropup .btn-primary .caret,
@@ -7687,7 +7687,7 @@ a[title="More "]:after {
 }
 
 .btn-default a[title="More "]:after {
-  border-top-color: #ffffff;
+  border-top-color: #333333;
 }
 
 .btn-primary a[title="More "]:after,
@@ -8088,7 +8088,7 @@ a[title="More "] img {
 .EXLLighboxCancelButton span a:focus,
 .EXLLighboxSubmitButton span input:focus,
 .EXLLighboxCancelButton span input:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -8201,7 +8201,7 @@ fieldset[disabled] .EXLLighboxCancelButton span input {
   user-select: none;
   color: #ffffff;
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 .EXLLighboxSubmitButton span a.EXLSubmit:focus,
@@ -8221,7 +8221,7 @@ fieldset[disabled] .EXLLighboxCancelButton span input {
 .EXLLighboxCancelButton span a.EXLSubmit:focus,
 .EXLLighboxSubmitButton span input.EXLSubmit:focus,
 .EXLLighboxCancelButton span input.EXLSubmit:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -8331,7 +8331,7 @@ fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit {
 .open .dropdown-toggle.EXLLighboxCancelButton span input.EXLSubmit {
   color: #ffffff;
   background-color: #a30000;
-  border-color: #8f0000;
+  border-color: #750000;
 }
 
 .EXLLighboxSubmitButton span a.EXLSubmit:active,
@@ -8410,7 +8410,7 @@ fieldset[disabled] .EXLLighboxCancelButton span a.EXLSubmit.active,
 fieldset[disabled] .EXLLighboxSubmitButton span input.EXLSubmit.active,
 fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit.active {
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 #EXLCancelPersonalRankData {
@@ -8432,9 +8432,9 @@ fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit.active {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  color: #ffffff;
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 
 #EXLCancelPersonalRankData:focus {
@@ -8445,7 +8445,7 @@ fieldset[disabled] .EXLLighboxCancelButton span input.EXLSubmit.active {
 
 #EXLCancelPersonalRankData:hover,
 #EXLCancelPersonalRankData:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -8493,9 +8493,9 @@ fieldset[disabled] #EXLCancelPersonalRankData {
 #EXLCancelPersonalRankData:active,
 #EXLCancelPersonalRankData.active,
 .open .dropdown-toggle#EXLCancelPersonalRankData {
-  color: #ffffff;
-  background-color: #929596;
-  border-color: #888b8c;
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
 }
 
 #EXLCancelPersonalRankData:active,
@@ -8519,8 +8519,8 @@ fieldset[disabled] #EXLCancelPersonalRankData:active,
 #EXLCancelPersonalRankData.disabled.active,
 #EXLCancelPersonalRankData[disabled].active,
 fieldset[disabled] #EXLCancelPersonalRankData.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 
 #exliGreyOverlay {
@@ -8958,7 +8958,7 @@ a.report-a-problem:focus {
 
 .EXLTabHeaderContent a {
   display: block;
-  padding: 10px 4px;
+  padding: 10px 5px;
 }
 
 a[title="open this item in a new window"]:before {
@@ -9031,7 +9031,7 @@ a[title="show send to options"]:after {
 }
 
 .btn-default a[title="show send to options"]:after {
-  border-top-color: #ffffff;
+  border-top-color: #333333;
 }
 
 .btn-primary a[title="show send to options"]:after,
@@ -9746,7 +9746,7 @@ body {
   padding-right: 0;
   color: #ffffff;
   background-color: #16a085;
-  border-color: #16a085;
+  border-color: #138a72;
 }
 
 .EXLMyAccountMainContainer form input.submit:focus {
@@ -9757,7 +9757,7 @@ body {
 
 .EXLMyAccountMainContainer form input.submit:hover,
 .EXLMyAccountMainContainer form input.submit:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -9807,7 +9807,7 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit {
 .open .dropdown-toggle.EXLMyAccountMainContainer form input.submit {
   color: #ffffff;
   background-color: #117c67;
-  border-color: #0f6a58;
+  border-color: #0c5446;
 }
 
 .EXLMyAccountMainContainer form input.submit:active,
@@ -9832,7 +9832,7 @@ fieldset[disabled] .EXLMyAccountMainContainer form input.submit:active,
 .EXLMyAccountMainContainer form input.submit[disabled].active,
 fieldset[disabled] .EXLMyAccountMainContainer form input.submit.active {
   background-color: #16a085;
-  border-color: #16a085;
+  border-color: #138a72;
 }
 
 .EXLMyAccountMainContainer form input.submit#EXLMyAccountSaveSettings {
@@ -11035,7 +11035,7 @@ textarea#exlidSearchRibbon input {
   width: 100%;
   color: #ffffff;
   background-color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: #233140;
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -11066,7 +11066,7 @@ textarea#exlidSearchRibbon input {
 .open .dropdown-toggle#exlidSearchRibbon input.submit {
   color: #ffffff;
   background-color: #1e2a36;
-  border-color: #161f29;
+  border-color: #0d1318;
 }
 
 #exlidSearchRibbon input.submit:active,
@@ -11091,7 +11091,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit:active,
 #exlidSearchRibbon input.submit[disabled].active,
 fieldset[disabled] #exlidSearchRibbon input.submit.active {
   background-color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: #233140;
 }
 
 #exlidSearchRibbon input.submit:focus {
@@ -11102,7 +11102,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit.active {
 
 #exlidSearchRibbon input.submit:hover,
 #exlidSearchRibbon input.submit:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -11257,15 +11257,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a {
-  display: block;
-  width: 100%;
-  height: 34px;
-  color: #555555;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   display: inline-block;
   padding: 6px 12px;
   font-size: 14px;
@@ -11284,48 +11275,13 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   -o-user-select: none;
   user-select: none;
   color: #ffffff;
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  background-color: #2c3e50;
+  border-color: #233140;
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a:-moz-placeholder {
-  color: #999999;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a::-moz-placeholder {
-  color: #999999;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a:-ms-input-placeholder {
-  color: #999999;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a::-webkit-input-placeholder {
-  color: #999999;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a:focus {
-  border-color: #66afe9;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a[disabled],
-.EXLSearchFieldRibbonFormSelectedCollection a[readonly],
-fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-}
-
-textarea.EXLSearchFieldRibbonFormSelectedCollection a {
-  height: auto;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a:focus {
@@ -11336,7 +11292,7 @@ textarea.EXLSearchFieldRibbonFormSelectedCollection a {
 
 .EXLSearchFieldRibbonFormSelectedCollection a:hover,
 .EXLSearchFieldRibbonFormSelectedCollection a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -11385,8 +11341,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a {
 .EXLSearchFieldRibbonFormSelectedCollection a.active,
 .open .dropdown-toggle.EXLSearchFieldRibbonFormSelectedCollection a {
   color: #ffffff;
-  background-color: #929596;
-  border-color: #888b8c;
+  background-color: #1e2a36;
+  border-color: #0d1318;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a:active,
@@ -11410,33 +11366,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a:active,
 .EXLSearchFieldRibbonFormSelectedCollection a.disabled.active,
 .EXLSearchFieldRibbonFormSelectedCollection a[disabled].active,
 fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection a:after {
-  margin-left: 0;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  border-bottom: 0 dotted;
-}
-
-.btn-default .EXLSearchFieldRibbonFormSelectedCollection a:after {
-  border-top-color: #ffffff;
-}
-
-.btn-primary .EXLSearchFieldRibbonFormSelectedCollection a:after,
-.btn-success .EXLSearchFieldRibbonFormSelectedCollection a:after,
-.btn-warning .EXLSearchFieldRibbonFormSelectedCollection a:after,
-.btn-danger .EXLSearchFieldRibbonFormSelectedCollection a:after,
-.btn-info .EXLSearchFieldRibbonFormSelectedCollection a:after {
-  border-top-color: #fff;
+  background-color: #2c3e50;
+  border-color: #233140;
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink,
@@ -11533,10 +11464,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   .EXLSearchFieldRibbonFormCollectionsList {
     left: 10%;
   }
-}
-
-.EXLSearchFieldRibbonFormSubmitSearch {
-  margin-left: -1px;
 }
 
 #exlidAdvancedSearchTile {
@@ -11778,7 +11705,7 @@ textarea#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   width: 100%;
   color: #ffffff;
   background-color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: #233140;
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -11811,7 +11738,7 @@ textarea#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
 .open .dropdown-toggle#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit {
   color: #ffffff;
   background-color: #1e2a36;
-  border-color: #161f29;
+  border-color: #0d1318;
 }
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:active,
@@ -11836,7 +11763,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit[disabled].active,
 fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit.active {
   background-color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: #233140;
 }
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:focus {
@@ -11847,7 +11774,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:hover,
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.submit:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -12258,7 +12185,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   border-radius: 3px;
   color: #ffffff;
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus {
@@ -12269,7 +12196,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -12319,7 +12246,7 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 .open .dropdown-toggle#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a {
   color: #ffffff;
   background-color: #a30000;
-  border-color: #8f0000;
+  border-color: #750000;
 }
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:active,
@@ -12344,7 +12271,7 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a[disabled].active,
 fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a.active {
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
@@ -12445,7 +12372,7 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   user-select: none;
   color: #ffffff;
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -12462,7 +12389,7 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:hover,
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -12512,7 +12439,7 @@ fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFiel
 .open .dropdown-toggle.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a {
   color: #ffffff;
   background-color: #a30000;
-  border-color: #8f0000;
+  border-color: #750000;
 }
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:active,
@@ -12537,7 +12464,7 @@ fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFiel
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a[disabled].active,
 fieldset[disabled] .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a.active {
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
@@ -12770,7 +12697,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
 
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:hover,
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -12913,9 +12840,9 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  color: #ffffff;
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
   border-radius: 0;
   height: auto;
   background-image: none;
@@ -12929,7 +12856,7 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
 
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:hover,
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -12977,9 +12904,9 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:active,
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a.active,
 .open .dropdown-toggle.EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a {
-  color: #ffffff;
-  background-color: #929596;
-  border-color: #888b8c;
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
 }
 
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:active,
@@ -13003,8 +12930,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a.disabled.active,
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a[disabled].active,
 fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 
 .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:after {
@@ -13022,7 +12949,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 }
 
 .btn-default .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:after {
-  border-top-color: #ffffff;
+  border-top-color: #333333;
 }
 
 .btn-primary .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:after,
@@ -13031,61 +12958,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 .btn-danger .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:after,
 .btn-info .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse a:after {
   border-top-color: #fff;
-}
-
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a label,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a label,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a label,
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div label,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div label,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div label {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.528571429;
-  color: #333333!important;
-  white-space: nowrap;
-  margin-bottom: 0;
-}
-
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a label:hover,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a label:hover,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a label:hover,
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div label:hover,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div label:hover,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div label:hover,
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a label:focus,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a label:focus,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a label:focus,
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div label:focus,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div label:focus,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div label:focus {
-  color: #ffffff !important;
-  text-decoration: none;
-  background-color: #b30000;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc0000), to(#b30000));
-  background-image: -webkit-linear-gradient(top, #cc0000, #b30000);
-  background-image: linear-gradient(to bottom, #cc0000, #b30000);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffb30000', GradientType=0);
-}
-
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
-#exlidAdvancedSearchRibbon div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label,
-.EXLSearchFieldRibbonFormCollectionsList div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label,
-#exlidSearchRibbon div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label {
-  color: #ffffff !important;
-  text-decoration: none;
-  outline: 0;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#cc0000), to(#b30000));
-  background-image: -webkit-linear-gradient(top, #cc0000, 0%, #b30000, 100%);
-  background-image: -webkit-linear-gradient(top, #cc0000 0%, #b30000 100%);
-  background-image: linear-gradient(to bottom, #cc0000 0%, #b30000 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ffb30000', GradientType=0);
 }
 
 /* Primo Browse List */
@@ -13196,7 +13068,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
   clear: both;
 }
 
-.EXLResultsContainer div.EXLResultsTile {
+.EXLResultsContainer .EXLResultsTile {
   width: 100%;
   position: relative;
   min-height: 1px;
@@ -13208,7 +13080,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
 }
 
 @media (min-width: 992px) {
-  .EXLResultsContainer div.EXLResultsTile {
+  .EXLResultsContainer .EXLResultsTile {
     float: left;
     width: 75%;
   }
@@ -13341,7 +13213,7 @@ td.EXLMyShelfStar i {
   border-radius: 3px;
   color: #ffffff;
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
   background-image: none;
 }
 
@@ -13353,7 +13225,7 @@ td.EXLMyShelfStar i {
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:hover,
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -13403,7 +13275,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 .open .dropdown-toggle.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a {
   color: #ffffff;
   background-color: #a30000;
-  border-color: #8f0000;
+  border-color: #750000;
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:active,
@@ -13428,7 +13300,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a[disabled].active,
 fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a.active {
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:after {
@@ -13445,7 +13317,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 }
 
 .btn-default .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:after {
-  border-top-color: #ffffff;
+  border-top-color: #333333;
 }
 
 .btn-primary .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:after,
@@ -13895,9 +13767,9 @@ a.EXLBriefResultsDisplayMultipleLink {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  color: #ffffff;
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -13916,7 +13788,7 @@ a.EXLBriefResultsDisplayMultipleLink:focus {
 a.EXLBriefResultsDisplayMultipleLink:hover,
 .EXLTabsRibbon div li.EXLResultTab a:focus,
 a.EXLBriefResultsDisplayMultipleLink:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -13984,9 +13856,9 @@ a.EXLBriefResultsDisplayMultipleLink:active,
 a.EXLBriefResultsDisplayMultipleLink.active,
 .open .dropdown-toggle.EXLTabsRibbon div li.EXLResultTab a,
 .open .dropdown-togglea.EXLBriefResultsDisplayMultipleLink {
-  color: #ffffff;
-  background-color: #929596;
-  border-color: #888b8c;
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
 }
 
 .EXLTabsRibbon div li.EXLResultTab a:active,
@@ -14028,8 +13900,8 @@ a.EXLBriefResultsDisplayMultipleLink.disabled.active,
 a.EXLBriefResultsDisplayMultipleLink[disabled].active,
 fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a.active,
 fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 
 .EXLTabsRibbon div li.EXLResultTab,
@@ -14041,37 +13913,50 @@ fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
   height: auto;
 }
 
-body.EXLFullView .EXLResultsNavigation {
+.EXLFullView .EXLResultsTile {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .EXLFullView .EXLResultsTile {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .EXLFullView .EXLResultsTile {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .EXLFullView .EXLResultsTile {
+    float: left;
+    width: 100%;
+  }
+}
+
+.EXLFullView .EXLResultsList {
+  border: none;
+}
+
+.EXLFullView .EXLResultsNavigation {
   display: none;
 }
 
-body.EXLFullView div.EXLTabContent {
-  border: 1px solid #dddddd;
-  border-top: none;
+.EXLFullView .EXLResultTabContainer {
+  margin-bottom: 0;
 }
 
-body.EXLFullView .EXLResultsContainer > .EXLResultsTile {
-  border: none;
-}
-
-body.EXLFullView .EXLResultsContainer > .EXLResultsTile .EXLResultsFooter {
-  background-color: #ffffff;
-  border: none;
-}
-
-body.EXLFullView div.EXLBackToResults {
-  font-size: 14px;
-}
-
-body.EXLFullView div.EXLTabHeaderButtons li:hover,
-body.EXLFullView div.EXLTabHeaderButtons li:focus {
-  background-color: transparent;
-}
-
-body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
-  background-color: #ffffff;
-  position: absolute;
-  margin: 0;
+a#backToResultsBtn {
+  display: block;
+  float: left;
+  padding: 10px 15px;
 }
 
 .EXLFooterTile,
@@ -14197,7 +14082,7 @@ body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14264,7 +14149,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_cut_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14367,7 +14252,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14434,7 +14319,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_copy_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14537,7 +14422,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14604,7 +14489,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_paste_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14707,7 +14592,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14774,7 +14659,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:hover,
 .MyAccount .eShelf_title + noscript + table .folder_details a.eShelf_delete_but:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14877,7 +14762,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .folder_details a
 
 .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
 .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -14944,7 +14829,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_email {
 
 .MyAccount .eShelf_title + noscript + table a.eShelf_email:hover,
 .MyAccount .eShelf_title + noscript + table a.eShelf_email:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -15047,7 +14932,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_email {
 
 .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
 .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -15114,7 +14999,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_print {
 
 .MyAccount .eShelf_title + noscript + table a.eShelf_print:hover,
 .MyAccount .eShelf_title + noscript + table a.eShelf_print:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -15294,7 +15179,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_print {
   border-radius: 3px;
   color: #ffffff;
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
   margin-top: 4px;
   margin-left: 4px;
 }
@@ -15307,7 +15192,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table a.eShelf_print {
 
 .MyAccount .eShelf_title + noscript + table .buttonGo a:hover,
 .MyAccount .eShelf_title + noscript + table .buttonGo a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -15357,7 +15242,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a {
 .open .dropdown-toggle.MyAccount .eShelf_title + noscript + table .buttonGo a {
   color: #ffffff;
   background-color: #a30000;
-  border-color: #8f0000;
+  border-color: #750000;
 }
 
 .MyAccount .eShelf_title + noscript + table .buttonGo a:active,
@@ -15382,7 +15267,7 @@ fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a:activ
 .MyAccount .eShelf_title + noscript + table .buttonGo a[disabled].active,
 fieldset[disabled] .MyAccount .eShelf_title + noscript + table .buttonGo a.active {
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 .MyAccount .eShelf_title + noscript + table .noteBubble h3 {
@@ -15896,7 +15781,7 @@ fieldset[disabled] .folders_new .folderActions ul li a {
   border-radius: 3px;
   color: #ffffff;
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 .folders_new input.newFolders_submit:focus,
@@ -15910,7 +15795,7 @@ fieldset[disabled] .folders_new .folderActions ul li a {
 .folders_new input.newFolders_submit_o:hover,
 .folders_new input.newFolders_submit:focus,
 .folders_new input.newFolders_submit_o:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -15980,7 +15865,7 @@ fieldset[disabled] .folders_new input.newFolders_submit_o {
 .open .dropdown-toggle.folders_new input.newFolders_submit_o {
   color: #ffffff;
   background-color: #a30000;
-  border-color: #8f0000;
+  border-color: #750000;
 }
 
 .folders_new input.newFolders_submit:active,
@@ -16023,7 +15908,7 @@ fieldset[disabled] .folders_new input.newFolders_submit_o:active,
 fieldset[disabled] .folders_new input.newFolders_submit.active,
 fieldset[disabled] .folders_new input.newFolders_submit_o.active {
   background-color: #cc0000;
-  border-color: #cc0000;
+  border-color: #b30000;
 }
 
 table.folderName.EXLEShelfFolderContentsTable {
