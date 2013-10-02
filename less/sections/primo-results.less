@@ -231,13 +231,18 @@ th.EXLResultNumber{
     border: none !important;
   }
   td.EXLThumbnail{
-    .make-md-column(2);
+    .make-sm-column(4);
+    .make-md-column(4);
+    .make-lg-column(2);
   }
   td.EXLMyShelfStar{
-    .make-md-column(1);
+    .make-sm-column(2);
+    .make-lg-column(1);
   }
   td.EXLSummary{
-    .make-md-column(9);
+    .make-sm-column(12);
+    .make-md-column(12);
+    .make-lg-column(9);
   }
 
 
@@ -312,15 +317,16 @@ th.EXLResultNumber{
     background: none;
     border: none;
     a{
-      .btn.active;
-      background-color: #9a9c9d;
-      border-color: #8d9091;
+      /// @TODO  Add this active state styling dynamically.
+      color: #333333;
+      background-color: #ebebeb;
+      border-color: #adadad;
+      .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
     }
   }
 }
 
-.EXLTabsRibbon div li.EXLResultTab a, a.EXLBriefResultsDisplayMultipleLink{
-  color: @link-color;
+.EXLTabsRibbon a{
   .btn;
   .btn-default;
   .btn-sm;

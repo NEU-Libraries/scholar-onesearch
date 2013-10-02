@@ -13640,7 +13640,21 @@ th.EXLResultNumber {
   padding-right: 15px;
 }
 
+@media (min-width: 768px) {
+  .EXLResultsList td.EXLThumbnail {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+
 @media (min-width: 992px) {
+  .EXLResultsList td.EXLThumbnail {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+
+@media (min-width: 1200px) {
   .EXLResultsList td.EXLThumbnail {
     float: left;
     width: 16.666666666666664%;
@@ -13654,7 +13668,14 @@ th.EXLResultNumber {
   padding-right: 15px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  .EXLResultsList td.EXLMyShelfStar {
+    float: left;
+    width: 16.666666666666664%;
+  }
+}
+
+@media (min-width: 1200px) {
   .EXLResultsList td.EXLMyShelfStar {
     float: left;
     width: 8.333333333333332%;
@@ -13668,7 +13689,21 @@ th.EXLResultNumber {
   padding-right: 15px;
 }
 
+@media (min-width: 768px) {
+  .EXLResultsList td.EXLSummary {
+    float: left;
+    width: 100%;
+  }
+}
+
 @media (min-width: 992px) {
+  .EXLResultsList td.EXLSummary {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
   .EXLResultsList td.EXLSummary {
     float: left;
     width: 75%;
@@ -13769,16 +13804,13 @@ th.EXLResultNumber {
 }
 
 .EXLTabsRibbon div li.EXLResultSelectedTab a {
-  outline: 0;
-  background-image: none;
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  background-color: #9a9c9d;
-  border-color: #8d9091;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a,
-a.EXLBriefResultsDisplayMultipleLink {
-  color: #cc0000;
+.EXLTabsRibbon a {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -13807,36 +13839,28 @@ a.EXLBriefResultsDisplayMultipleLink {
   margin-bottom: 3px;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a:focus,
-a.EXLBriefResultsDisplayMultipleLink:focus {
+.EXLTabsRibbon a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a:hover,
-a.EXLBriefResultsDisplayMultipleLink:hover,
-.EXLTabsRibbon div li.EXLResultTab a:focus,
-a.EXLBriefResultsDisplayMultipleLink:focus {
+.EXLTabsRibbon a:hover,
+.EXLTabsRibbon a:focus {
   color: #333333;
   text-decoration: none;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a:active,
-a.EXLBriefResultsDisplayMultipleLink:active,
-.EXLTabsRibbon div li.EXLResultTab a.active,
-a.EXLBriefResultsDisplayMultipleLink.active {
+.EXLTabsRibbon a:active,
+.EXLTabsRibbon a.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-.EXLTabsRibbon div li.EXLResultTab a.disabled,
-a.EXLBriefResultsDisplayMultipleLink.disabled,
-.EXLTabsRibbon div li.EXLResultTab a[disabled],
-a.EXLBriefResultsDisplayMultipleLink[disabled],
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a,
-fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink {
+.EXLTabsRibbon a.disabled,
+.EXLTabsRibbon a[disabled],
+fieldset[disabled] .EXLTabsRibbon a {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -13844,92 +13868,59 @@ fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink {
   box-shadow: none;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-large,
-a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-large,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-large,
-a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-large {
+.EXLTabsRibbon a [class^="icon-"].icon-large,
+.EXLTabsRibbon a [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-spin,
-a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-spin,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin,
-a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-spin {
+.EXLTabsRibbon a [class^="icon-"].icon-spin,
+.EXLTabsRibbon a [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].pull-left.icon-2x,
-a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].pull-left.icon-2x,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].pull-left.icon-2x,
-a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].pull-left.icon-2x,
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].pull-right.icon-2x,
-a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].pull-right.icon-2x,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].pull-right.icon-2x,
-a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].pull-right.icon-2x {
+.EXLTabsRibbon a [class^="icon-"].pull-left.icon-2x,
+.EXLTabsRibbon a [class*=" icon-"].pull-left.icon-2x,
+.EXLTabsRibbon a [class^="icon-"].pull-right.icon-2x,
+.EXLTabsRibbon a [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a [class^="icon-"].icon-spin.icon-large,
-a.EXLBriefResultsDisplayMultipleLink [class^="icon-"].icon-spin.icon-large,
-.EXLTabsRibbon div li.EXLResultTab a [class*=" icon-"].icon-spin.icon-large,
-a.EXLBriefResultsDisplayMultipleLink [class*=" icon-"].icon-spin.icon-large {
+.EXLTabsRibbon a [class^="icon-"].icon-spin.icon-large,
+.EXLTabsRibbon a [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a:hover,
-a.EXLBriefResultsDisplayMultipleLink:hover,
-.EXLTabsRibbon div li.EXLResultTab a:focus,
-a.EXLBriefResultsDisplayMultipleLink:focus,
-.EXLTabsRibbon div li.EXLResultTab a:active,
-a.EXLBriefResultsDisplayMultipleLink:active,
-.EXLTabsRibbon div li.EXLResultTab a.active,
-a.EXLBriefResultsDisplayMultipleLink.active,
-.open .dropdown-toggle.EXLTabsRibbon div li.EXLResultTab a,
-.open .dropdown-togglea.EXLBriefResultsDisplayMultipleLink {
+.EXLTabsRibbon a:hover,
+.EXLTabsRibbon a:focus,
+.EXLTabsRibbon a:active,
+.EXLTabsRibbon a.active,
+.open .dropdown-toggle.EXLTabsRibbon a {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a:active,
-a.EXLBriefResultsDisplayMultipleLink:active,
-.EXLTabsRibbon div li.EXLResultTab a.active,
-a.EXLBriefResultsDisplayMultipleLink.active,
-.open .dropdown-toggle.EXLTabsRibbon div li.EXLResultTab a,
-.open .dropdown-togglea.EXLBriefResultsDisplayMultipleLink {
+.EXLTabsRibbon a:active,
+.EXLTabsRibbon a.active,
+.open .dropdown-toggle.EXLTabsRibbon a {
   background-image: none;
 }
 
-.EXLTabsRibbon div li.EXLResultTab a.disabled,
-a.EXLBriefResultsDisplayMultipleLink.disabled,
-.EXLTabsRibbon div li.EXLResultTab a[disabled],
-a.EXLBriefResultsDisplayMultipleLink[disabled],
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a,
-fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink,
-.EXLTabsRibbon div li.EXLResultTab a.disabled:hover,
-a.EXLBriefResultsDisplayMultipleLink.disabled:hover,
-.EXLTabsRibbon div li.EXLResultTab a[disabled]:hover,
-a.EXLBriefResultsDisplayMultipleLink[disabled]:hover,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:hover,
-fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink:hover,
-.EXLTabsRibbon div li.EXLResultTab a.disabled:focus,
-a.EXLBriefResultsDisplayMultipleLink.disabled:focus,
-.EXLTabsRibbon div li.EXLResultTab a[disabled]:focus,
-a.EXLBriefResultsDisplayMultipleLink[disabled]:focus,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:focus,
-fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink:focus,
-.EXLTabsRibbon div li.EXLResultTab a.disabled:active,
-a.EXLBriefResultsDisplayMultipleLink.disabled:active,
-.EXLTabsRibbon div li.EXLResultTab a[disabled]:active,
-a.EXLBriefResultsDisplayMultipleLink[disabled]:active,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a:active,
-fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink:active,
-.EXLTabsRibbon div li.EXLResultTab a.disabled.active,
-a.EXLBriefResultsDisplayMultipleLink.disabled.active,
-.EXLTabsRibbon div li.EXLResultTab a[disabled].active,
-a.EXLBriefResultsDisplayMultipleLink[disabled].active,
-fieldset[disabled] .EXLTabsRibbon div li.EXLResultTab a.active,
-fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
+.EXLTabsRibbon a.disabled,
+.EXLTabsRibbon a[disabled],
+fieldset[disabled] .EXLTabsRibbon a,
+.EXLTabsRibbon a.disabled:hover,
+.EXLTabsRibbon a[disabled]:hover,
+fieldset[disabled] .EXLTabsRibbon a:hover,
+.EXLTabsRibbon a.disabled:focus,
+.EXLTabsRibbon a[disabled]:focus,
+fieldset[disabled] .EXLTabsRibbon a:focus,
+.EXLTabsRibbon a.disabled:active,
+.EXLTabsRibbon a[disabled]:active,
+fieldset[disabled] .EXLTabsRibbon a:active,
+.EXLTabsRibbon a.disabled.active,
+.EXLTabsRibbon a[disabled].active,
+fieldset[disabled] .EXLTabsRibbon a.active {
   background-color: #ffffff;
   border-color: #cccccc;
 }
