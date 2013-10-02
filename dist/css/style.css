@@ -8664,277 +8664,280 @@ a.report-a-problem:focus {
   text-decoration: none!important;
 }
 
-.EXLResultTabContainer div.EXLTabHeader {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  margin-left: -15px;
-  margin-right: -15px;
-  max-height: 50em;
-  background-image: none;
-  background-color: #f5f5f5;
-  border: 1px solid #dddddd;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.EXLResultTabContainer div.EXLTabHeader:before,
-.EXLResultTabContainer div.EXLTabHeader:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLResultTabContainer div.EXLTabHeader:after {
-  clear: both;
-}
-
-.EXLResultTabContainer div.EXLTabHeader:before,
-.EXLResultTabContainer div.EXLTabHeader:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.EXLResultTabContainer div.EXLTabHeader:after {
-  clear: both;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding: 0;
-  padding-top: 0;
-}
-
-@media (min-width: 1200px) {
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent {
-    float: left;
-    width: 41.66666666666667%;
-  }
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderContent a {
-  display: inline-block;
-  padding: 8px 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
-  background-color: #f5f5f5;
-  padding-right: 0;
-  height: auto;
-  border-top: 1px solid #ddd;
-  margin-top: -1px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: static;
-}
-
-@media (min-width: 1200px) {
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons {
-    float: left;
-    width: 58.333333333333336%;
-  }
-}
-
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
-  clear: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  list-style: none;
-  font-size: 14px;
+.EXLResultTabContainer {
+  margin-bottom: 20px;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-color: #dddddd;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList.pull-right {
-  right: 0;
-  left: auto;
+.EXLResultTabContainer > .list-group {
+  margin-bottom: 0;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .divider {
-  height: 1px;
-  margin: 9px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
+.EXLResultTabContainer > .list-group .list-group-item {
+  border-width: 1px 0;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.428571429;
+.EXLResultTabContainer > .list-group .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.EXLResultTabContainer > .list-group .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.EXLResultTabContainer > .table,
+.EXLResultTabContainer > .table-responsive {
+  margin-bottom: 0;
+}
+
+.EXLResultTabContainer > .panel-body + .table,
+.EXLResultTabContainer > .panel-body + .table-responsive {
+  border-top: 1px solid #dddddd;
+}
+
+.EXLResultTabContainer > .table-bordered,
+.EXLResultTabContainer > .table-responsive > .table-bordered {
+  border: 0;
+}
+
+.EXLResultTabContainer > .table-bordered > thead > tr > th:first-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.EXLResultTabContainer > .table-bordered > tbody > tr > th:first-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.EXLResultTabContainer > .table-bordered > tfoot > tr > th:first-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.EXLResultTabContainer > .table-bordered > thead > tr > td:first-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.EXLResultTabContainer > .table-bordered > tbody > tr > td:first-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.EXLResultTabContainer > .table-bordered > tfoot > tr > td:first-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+
+.EXLResultTabContainer > .table-bordered > thead > tr > th:last-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.EXLResultTabContainer > .table-bordered > tbody > tr > th:last-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.EXLResultTabContainer > .table-bordered > tfoot > tr > th:last-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.EXLResultTabContainer > .table-bordered > thead > tr > td:last-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.EXLResultTabContainer > .table-bordered > tbody > tr > td:last-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.EXLResultTabContainer > .table-bordered > tfoot > tr > td:last-child,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+
+.EXLResultTabContainer > .table-bordered > thead > tr:last-child > th,
+.EXLResultTabContainer > .table-responsive > .table-bordered > thead > tr:last-child > th,
+.EXLResultTabContainer > .table-bordered > tbody > tr:last-child > th,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.EXLResultTabContainer > .table-bordered > tfoot > tr:last-child > th,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+.EXLResultTabContainer > .table-bordered > thead > tr:last-child > td,
+.EXLResultTabContainer > .table-responsive > .table-bordered > thead > tr:last-child > td,
+.EXLResultTabContainer > .table-bordered > tbody > tr:last-child > td,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.EXLResultTabContainer > .table-bordered > tfoot > tr:last-child > td,
+.EXLResultTabContainer > .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+  border-bottom: 0;
+}
+
+.EXLResultTabContainer > .panel-heading {
   color: #333333;
-  white-space: nowrap;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
 }
 
-@media (max-width: 768px) {
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .caret {
-    border-top: 0 dotted;
-    border-bottom: 4px solid #000000;
-    content: "";
-  }
-
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .dropdown-menu {
-    top: auto;
-    bottom: 100%;
-    margin-bottom: 1px;
-  }
-
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-default .caret {
-    border-bottom-color: #ffffff;
-  }
-
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-primary .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-success .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-warning .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-danger .caret,
-  .EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList .btn-info .caret {
-    border-bottom-color: #fff;
-  }
+.EXLResultTabContainer > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons li span {
-  height: auto;
-  background-image: none;
-  border-right: none;
+.EXLResultTabContainer > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #dddddd;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul {
-  margin: 0;
-  padding: 0;
-  float: none;
-  clear: none;
-  height: auto;
-  width: auto;
-  border: none;
-  float: right !important;
-  float: right;
+.EXLTabHeader {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+
+.EXLTabHeader + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
+}
+
+.EXLTabHeader:before,
+.EXLTabHeader:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLTabHeader:after {
+  clear: both;
+}
+
+.EXLTabHeader:before,
+.EXLTabHeader:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLTabHeader:after {
+  clear: both;
+}
+
+.EXLTabHeader ul {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  float: right;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+.EXLTabHeader ul:before,
+.EXLTabHeader ul:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+.EXLTabHeader ul:after {
   clear: both;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:before,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+.EXLTabHeader ul:before,
+.EXLTabHeader ul:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul:after {
+.EXLTabHeader ul:after {
   clear: both;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li {
+.EXLTabHeader ul:before,
+.EXLTabHeader ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLTabHeader ul:after {
+  clear: both;
+}
+
+.EXLTabHeader ul:before,
+.EXLTabHeader ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.EXLTabHeader ul:after {
+  clear: both;
+}
+
+.EXLTabHeader ul > li {
   position: relative;
   display: block;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a {
+.EXLTabHeader ul > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:hover,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a:focus {
+.EXLTabHeader ul > li > a:hover,
+.EXLTabHeader ul > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a {
+.EXLTabHeader ul > li.disabled > a {
   color: #999999;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:hover,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li.disabled > a:focus {
+.EXLTabHeader ul > li.disabled > a:hover,
+.EXLTabHeader ul > li.disabled > a:focus {
   color: #999999;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:hover,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:focus {
+.EXLTabHeader ul .open > a,
+.EXLTabHeader ul .open > a:hover,
+.EXLTabHeader ul .open > a:focus {
   background-color: #eeeeee;
   border-color: #cc0000;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a .caret,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:hover .caret,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .open > a:focus .caret {
+.EXLTabHeader ul .open > a .caret,
+.EXLTabHeader ul .open > a:hover .caret,
+.EXLTabHeader ul .open > a:focus .caret {
   border-top-color: #800000;
   border-bottom-color: #800000;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul .nav-divider {
+.EXLTabHeader ul .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > a > img {
+.EXLTabHeader ul > li > a > img {
   max-width: none;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-large,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-large {
+.EXLTabHeader ul [class^="icon-"].icon-large,
+.EXLTabHeader ul [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class^="icon-"].icon-spin,
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul [class*=" icon-"].icon-spin {
+.EXLTabHeader ul [class^="icon-"].icon-spin,
+.EXLTabHeader ul [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul a {
-  border-right: 1px solid #cccccc;
+.EXLTabHeader ul > li {
+  float: left;
 }
 
-.EXLResultTabContainer div.EXLTabHeader div.EXLTabHeaderButtons ul > li > ol span {
-  float: none;
+.EXLTabHeaderButtons,
+.EXLTabHeaderContent {
+  width: 50%;
+  float: left;
+}
+
+.EXLTabHeaderButtons {
+  float: right;
+}
+
+.EXLTabHeaderContent a {
+  display: block;
+  padding: 10px 4px;
 }
 
 a[title="open this item in a new window"]:before {
@@ -9023,7 +9026,6 @@ a[title="show send to options"] img {
 }
 
 .EXLTabContent {
-  height: 20em;
   border: 1px solid #dddddd;
   position: relative;
   z-index: 1;
@@ -9108,6 +9110,55 @@ a[title="show send to options"] img {
 
 .EXLResultTabs {
   padding-left: 0;
+}
+
+.EXLTabHeaderButtonSendToList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+
+.EXLTabHeaderButtonSendToList.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.EXLTabHeaderButtonSendToList .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.EXLTabHeaderButtonSendToList > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.EXLTabHeaderButtonSendToList a:hover,
+.EXLTabHeaderButtonSendToList a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #cc0000;
 }
 
 .EXLPopup.EXLEmailPopup #mailFormId,
@@ -13607,13 +13658,17 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   color: #2c3e50;
 }
 
-.EXLResult .EXLTabContent iframe {
-  position: static;
-  line-height: 2em;
-}
-
-.EXLResult .EXLTabContent iframe .viewIt {
-  line-height: 2em !important;
+th.EXLResultNumber {
+  font: 0/0 a !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
 
 .EXLResultsList {
@@ -13759,10 +13814,6 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 
 .coverImageDiv {
   margin: -1px;
-}
-
-iframe {
-  position: static;
 }
 
 .EXLResultNumber {

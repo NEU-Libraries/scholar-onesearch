@@ -22,7 +22,7 @@
 }
 
 .EXLHide, .EXLHiddenCue {
-  .text-hide();
+  .text-hide()!important;
   margin-bottom: 0;
 }
 
@@ -2913,12 +2913,12 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   text-decoration: none;
 }
 
-/*Records List Footer*/
-.EXLResultsFooter {
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  height: 18px;
-}
+// /*Records List Footer*/
+// .EXLResultsFooter {
+//   margin-top: 0.5em;
+//   margin-bottom: 1em;
+//   height: 18px;
+// }
 
 /*top level facets*/
 #exlidTopLevelFacetsTile {
@@ -3682,200 +3682,200 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 
 /*tab header*/
 /*selected tab header actions*/
-.EXLResultTabContainer div.EXLTabHeader {
-  background-color: #f1f1f1;
-  background-image: url("@{primo-legacy-base-url}../images/bg_strip_brief_tabs_header.png");
-  background-repeat: repeat-x;
-  border-bottom: 1px solid #e1e1e1;
-  min-height: 27px;
-  height: auto;
-  max-height: 5em;
-  border-left: 1px solid #8fb9d0;
-  border-right: 1px solid #8fb9d0;
-  display: block;
-}
+// .EXLResultTabContainer div.EXLTabHeader {
+//   background-color: #f1f1f1;
+//   background-image: url("@{primo-legacy-base-url}../images/bg_strip_brief_tabs_header.png");
+//   background-repeat: repeat-x;
+//   border-bottom: 1px solid #e1e1e1;
+//   min-height: 27px;
+//   height: auto;
+//   max-height: 5em;
+//   border-left: 1px solid #8fb9d0;
+//   border-right: 1px solid #8fb9d0;
+//   display: block;
+// }
 
-* html .EXLResultTabContainer div.EXLTabHeader {
-  height: 27px;
-} /* for ie6 */
-.EXLTabHeader div.EXLTabHeaderContent {
-  padding: 0.3em;
-  width: 75%;
-  color: #adb9c2;
-  padding-top: 0.5em;
-  padding-left: 0.5em;
-  float: left;
-}
+// * html .EXLResultTabContainer div.EXLTabHeader {
+//   height: 27px;
+// } /* for ie6 */
+// .EXLTabHeader div.EXLTabHeaderContent {
+//   padding: 0.3em;
+//   width: 75%;
+//   color: #adb9c2;
+//   padding-top: 0.5em;
+//   padding-left: 0.5em;
+//   float: left;
+// }
 
-.EXLTabHeader div.EXLTabHeaderContent em {
-  color: #000000;
-  font-weight: normal;
-  padding-right: 0.8em;
-}
+// .EXLTabHeader div.EXLTabHeaderContent em {
+//   color: #000000;
+//   font-weight: normal;
+//   padding-right: 0.8em;
+// }
 
-.EXLTabHeader div.EXLTabHeaderContent span {
-  padding: 0.3em;
-  width: auto;
-}
+// .EXLTabHeader div.EXLTabHeaderContent span {
+//   padding: 0.3em;
+//   width: auto;
+// }
 
-.EXLTabHeader div.EXLTabHeaderContent span a {
-  color: #000000;
-}
+// .EXLTabHeader div.EXLTabHeaderContent span a {
+//   color: #000000;
+// }
 
-.EXLTabHeader div.EXLTabHeaderContent span.selected {
-  background-color: #FFFFFF;
-  border: 1px solid #8fb9d0;
-  display: inline;
-  height: 20px;
-  padding: 0px 5px 0px 5px;
-}
+// .EXLTabHeader div.EXLTabHeaderContent span.selected {
+//   background-color: #FFFFFF;
+//   border: 1px solid #8fb9d0;
+//   display: inline;
+//   height: 20px;
+//   padding: 0px 5px 0px 5px;
+// }
 
-.EXLTabHeader div.EXLTabHeaderContent span.selected a {
-  font-weight: bold;
-}
-
-
+// .EXLTabHeader div.EXLTabHeaderContent span.selected a {
+//   font-weight: bold;
+// }
 
 
 
-/*header buttons: send to menu, popout and hide tabs ribbon*/
-.EXLTabHeader div.EXLTabHeaderButtons {
-  padding: 0em;
-  width: auto;
-  float: right;
-  text-align: right;
-  height: 18px;
-}
 
-.EXLTabHeader div.EXLTabHeaderButtons ul {
-  float: right;
-  margin-bottom: 9px;
-}
 
-.EXLTabHeader div.EXLTabHeaderButtons li {
-  list-style: none;
-  float: left;
-  height: 18px;
-  background-image: url("@{primo-legacy-base-url}../images/bg_strip_tab_header_buttons.png");
-  border-right: 1px solid #e1e1e1;
-  position: relative;
-}
+// /*header buttons: send to menu, popout and hide tabs ribbon*/
+// .EXLTabHeader div.EXLTabHeaderButtons {
+//   padding: 0em;
+//   width: auto;
+//   float: right;
+//   text-align: right;
+//   height: 18px;
+// }
 
-.EXLTabHeader div.EXLTabHeaderButtons li span {
-  background-image: url("@{primo-legacy-base-url}../images/bg_diagonal_sendTo.png");
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
-  display: inline;
-  float: left;
-}
+// .EXLTabHeader div.EXLTabHeaderButtons ul {
+//   float: right;
+//   margin-bottom: 9px;
+// }
 
-.EXLTabHeader div.EXLTabHeaderButtons li a {
-  padding: 0.2em 0.4em 0.2em 0.4em;
-}
+// .EXLTabHeader div.EXLTabHeaderButtons li {
+//   list-style: none;
+//   float: left;
+//   height: 18px;
+//   background-image: url("@{primo-legacy-base-url}../images/bg_strip_tab_header_buttons.png");
+//   border-right: 1px solid #e1e1e1;
+//   position: relative;
+// }
 
-.EXLTabHeaderButtonSendTo {
-  padding-right: 0em;
-  text-align: left;
-}
+// .EXLTabHeader div.EXLTabHeaderButtons li span {
+//   background-image: url("@{primo-legacy-base-url}../images/bg_diagonal_sendTo.png");
+//   background-repeat: no-repeat;
+//   width: 18px;
+//   height: 18px;
+//   display: inline;
+//   float: left;
+// }
 
-.EXLTabHeaderButtonSendTo img {
-  padding-left: 0em;
-  padding-right: 0.4em;
-}
+// .EXLTabHeader div.EXLTabHeaderButtons li a {
+//   padding: 0.2em 0.4em 0.2em 0.4em;
+// }
+
+// .EXLTabHeaderButtonSendTo {
+//   padding-right: 0em;
+//   text-align: left;
+// }
+
+// .EXLTabHeaderButtonSendTo img {
+//   padding-left: 0em;
+//   padding-right: 0.4em;
+// }
 
 .EXLTabHeaderHiddenButton {
   display: none;
 }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
-  width: 165px;
-  background-color: #FFFF00;
-  border: 1px solid #e1e1e1;
-  border-bottom: none;
-  position: absolute;
-  right: 0px;
-  margin-top: 1px;
-  border-top: 1px solid #e1e1e1;
-  z-index: 100;
-  clear: both;
-  display: none/*change to block on mouse over*/;
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
+//   width: 165px;
+//   background-color: #FFFF00;
+//   border: 1px solid #e1e1e1;
+//   border-bottom: none;
+//   position: absolute;
+//   right: 0px;
+//   margin-top: 1px;
+//   border-top: 1px solid #e1e1e1;
+//   z-index: 100;
+//   clear: both;
+//   display: none/*change to block on mouse over*/;
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li {
-  float: left;
-  background-image: none;
-  display: block;
-  clear: both;
-  border: none;
-  z-index: 100;
-  width: 100%;
-  white-space: nowrap;
-  border-bottom: 1px solid #e1e1e1;
-  border-left: 1px solid #e1e1e1;
-  border-right: 1px solid #e1e1e1;
-  background-color: #ffffff;
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li {
+//   float: left;
+//   background-image: none;
+//   display: block;
+//   clear: both;
+//   border: none;
+//   z-index: 100;
+//   width: 100%;
+//   white-space: nowrap;
+//   border-bottom: 1px solid #e1e1e1;
+//   border-left: 1px solid #e1e1e1;
+//   border-right: 1px solid #e1e1e1;
+//   background-color: #ffffff;
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span {
-  float: left;
-  background-image: none;
-  padding-left: 0.5em;
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span {
+//   float: left;
+//   background-image: none;
+//   padding-left: 0.5em;
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToLabel {
-  float: left;
-  padding-right: 0.5em;
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToLabel {
+//   float: left;
+//   padding-right: 0.5em;
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:link {
-  color: #373737;
-  cursor: pointer;
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:link {
+//   color: #373737;
+//   cursor: pointer;
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:hover {
-  text-decoration: underline;
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:hover {
+//   text-decoration: underline;
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIcon {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_myShelf.png");
-  background-repeat: no-repeat;
-  width: 16px;
-  display: inline;
-  float: right;
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIcon {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_myShelf.png");
+//   background-repeat: no-repeat;
+//   width: 16px;
+//   display: inline;
+//   float: right;
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconMyShelf {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_myShelf.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconMyShelf {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_myShelf.png");
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconMail {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_mail.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconMail {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_mail.png");
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconSMS {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_sms.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconSMS {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_sms.png");
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconPrint {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_print.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconPrint {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_print.png");
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconDelicious {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_delicious.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconDelicious {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_delicious.png");
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconConnotea {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_connotea.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconConnotea {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_connotea.png");
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconRefworks {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_refworks.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconRefworks {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_refworks.png");
+// }
 
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconEndnote {
-  background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_endNote.png");
-}
+// .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconEndnote {
+//   background-image: url("@{primo-legacy-base-url}../images/icon_sendTo_endNote.png");
+// }
 
 /*---View Online Tab Styles---*/
 .EXLViewOnlineTabContent {
@@ -5405,76 +5405,76 @@ body.EXLFullView div.EXLLocationsTabContent {
   height: 100%;
 }
 
-body.EXLFullView div.EXLTabsRibbon {
-  width: 98%;
-  margin-left: auto;
-  margin-right: auto;
-}
+// body.EXLFullView div.EXLTabsRibbon {
+//   width: 98%;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
-body.EXLFullView div.EXLResultTabContainer {
-  width: 98%;
-  margin-left: auto;
-  margin-right: auto;
-}
+// body.EXLFullView div.EXLResultTabContainer {
+//   width: 98%;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
-body.EXLFullView div.EXLResultTabContainer {
-}
-/*send to styls - full view*/
-body.EXLFullView .EXLTabHeaderButtonSendTo {
-  padding-right: 0em;
-  text-align: left;
-  width: 178px;
-}
+// body.EXLFullView div.EXLResultTabContainer {
+// }
+// /*send to styls - full view*/
+// body.EXLFullView .EXLTabHeaderButtonSendTo {
+//   padding-right: 0em;
+//   text-align: left;
+//   width: 178px;
+// }
 
-body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
-  width: 160px;
-  background-color: #FFFF00;
-  border: 1px solid #e1e1e1;
-  border-top: none;
-  border-bottom: none;
-  position: relative;
-  left: 16px;
-  z-index: 100;
-  clear: both;
-  display: none/*change to block on mouse click*/;
-}
+// body.EXLFullView div.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
+//   width: 160px;
+//   background-color: #FFFF00;
+//   border: 1px solid #e1e1e1;
+//   border-top: none;
+//   border-bottom: none;
+//   position: relative;
+//   left: 16px;
+//   z-index: 100;
+//   clear: both;
+//   display: none/*change to block on mouse click*/;
+// }
 
-body.EXLFullView div.EXLTabHeaderButtons li:hover {
-  background-color: #fffbc3;
-}
+// body.EXLFullView div.EXLTabHeaderButtons li:hover {
+//   background-color: #fffbc3;
+// }
 
-body.EXLFullView div.EXLTabContent {
-  height: 100%;
-}
+// body.EXLFullView div.EXLTabContent {
+//   height: 100%;
+// }
 
-body.EXLFullView div.EXLResultsList {
-  height: 100%;
-  border-top: none;
-}
+// body.EXLFullView div.EXLResultsList {
+//   height: 100%;
+//   border-top: none;
+// }
 
-body.EXLFullView div.EXLTabContent {
-  min-height: 17em;
-  height: auto;
-  border: 1px solid #8fb9d0;
-  border-top: none;
-  margin-bottom: 1em;
-}
+// body.EXLFullView div.EXLTabContent {
+//   min-height: 17em;
+//   height: auto;
+//   border: 1px solid #8fb9d0;
+//   border-top: none;
+//   margin-bottom: 1em;
+// }
 
-body.EXLFullView #exlidHeaderSystemFeedback {
-  display: block/*change to display:none to hide system feedback*/;
-}
+// body.EXLFullView #exlidHeaderSystemFeedback {
+//   display: block/*change to display:none to hide system feedback*/;
+// }
 
-body.EXLFullView div.EXLResultsFooter {
-  width: 98%;
-  margin-left: auto;
-  margin-right: auto;
-}
+// body.EXLFullView div.EXLResultsFooter {
+//   width: 98%;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
-body.EXLFullView div.EXLBackToResults {
-  font-size: 80%;
-  float: left;
-  width: 30%;
-}
+// body.EXLFullView div.EXLBackToResults {
+//   font-size: 80%;
+//   float: left;
+//   width: 30%;
+// }
 
 
 /*facets*/
@@ -7573,11 +7573,11 @@ body.EXLFullView div.EXLBackToResults {
   display: none;
 }
 
-/* fix to request headers after snippets feature addition: */
-.EXLTabHeaderContent em {
-  display: inline;
-  line-height: normal;
-}
+//* fix to request headers after snippets feature addition: */
+// .EXLTabHeaderContent em {
+//   display: inline;
+//   line-height: normal;
+// }
 
 /* special language-specific fixes: */
 
