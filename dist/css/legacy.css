@@ -3638,15 +3638,6 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   clear: left;
 }
 
-.EXLResult .EXLTabContent iframe {
-  height: 17em;
-  width: 100%;
-}
-
-.EXLFullView .EXLResult .EXLTabContent iframe {
-  height: 30em;
-}
-
 .EXLTabsRibbon div li.EXLRecommendTabDisable {
   display: none;
 }
@@ -4513,13 +4504,6 @@ table.EXLFormCalendar td a:hover {
 div.EXLCloseCalendar {
   font-size: 80%;
   line-height: 200%;
-}
-
-.EXLTabContent {
-  height: 17em;
-  border: 1px solid #8fb9d0;
-  border-top: none;
-  clear: both;
 }
 
 /*Details Tab Styles*/

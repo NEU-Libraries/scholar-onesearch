@@ -32,7 +32,14 @@ a.report-a-problem{
     }
   }
 }
-
+.EXLTabContent{
+  iframe{
+    max-width: 100%;
+    width: 100%;
+    min-height: 20em;
+    border: none;
+  }
+}
 
 .EXLTabHeaderButtons
 , .EXLTabHeaderContent{
@@ -77,15 +84,7 @@ a[title="show send to options"]{
     display: none;
   }
 }
-.EXLTabContent{
-  border: 1px solid @panel-border;
-  position: relative;
-  z-index: 1;
-  .border-bottom-radius(4px);
-  div.EXLDetailsLinks{
-    background-image: none;
-  }
-}
+
 
 .EXLDetailsTabContent{
   div.EXLDetailsLinks{
@@ -140,5 +139,13 @@ a[title="show send to options"]{
       color: @dropdown-link-hover-color;
       background-color: @dropdown-link-hover-bg;
     }
+  }
+}
+
+
+
+.EXLDetailsContent{
+  ul{
+    padding-left: 0;
   }
 }
