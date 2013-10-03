@@ -231,16 +231,19 @@ th.EXLResultNumber{
     border: none !important;
   }
   td.EXLThumbnail{
-    .make-sm-column(4);
-    .make-md-column(4);
+    .make-xs-column(4);
+    .make-md-column(2);
     .make-lg-column(2);
   }
   td.EXLMyShelfStar{
-    .make-sm-column(2);
+
+    .make-xs-column(4);
+    .make-md-column(2);
     .make-lg-column(1);
   }
   td.EXLSummary{
-    .make-sm-column(12);
+    width: 100%;
+    .make-xs-column(12);
     .make-md-column(12);
     .make-lg-column(9);
   }
@@ -280,6 +283,9 @@ th.EXLResultNumber{
     overflow: hidden;
     border-radius: 3px;
   }
+}
+.EXLThumbnailCaption{
+  .text-hide();
 }
 
 //adding negative margin so that the borders overlap.

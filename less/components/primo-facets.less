@@ -1,57 +1,62 @@
 /* primo-facets.less */
 
 
-#exlidFacetTile{
-  width: 100%;
-  .make-md-column(3);
-}
+
 // ------ Facet Tile --------
+
+//Using the accessible hide tecnique here.
+.EXLFacetsTitle{
+  .sr-only();
+}
 .EXLFacetTile{
-  .EXLFacetList:nth-of-type(2){
-    .EXLFacetContainer{
-      margin-bottom: 0;
-      border-radius: 0;
-      &:first-of-type{
-        .border-top-radius(@panel-border-radius);
-      }
-      &:last-of-type{
-        margin-bottom: 15px;
-        .border-bottom-radius(@panel-border-radius);
-      }
-      > a{
-        background-color: #fcfcfc;
-        padding: 10px 15px;
-        display: block;
-        .make-row();
-        &:hover,
-        &:focus{
-          text-decoration: none;
-        }
-        &:last-of-type{
-          border-bottom: 1px @list-group-border solid;
-        }
-        h4{
-          border: none;
-          border-bottom: none;
-          background-color: #fcfcfc;
-          font-size: 13.5px;
-          display: block;
-          padding: 0;
-          max-width: 83%;
-          float: left;
-          .text-overflow();
-        }//end h4
-      }//end a
-    }
-  }
+  .make-xs-column(12);
+  .make-md-column(3);
+  // .EXLFacetList:nth-of-type(2){
+  //   .EXLFacetContainer{
+  //     margin-bottom: 0;
+  //     border-radius: 0;
+  //     &:first-of-type{
+  //       .border-top-radius(@panel-border-radius);
+  //     }
+  //     &:last-of-type{
+  //       margin-bottom: 15px;
+  //       .border-bottom-radius(@panel-border-radius);
+  //     }
+  //     > a{
+  //       background-color: #fcfcfc;
+  //       padding: 10px 15px;
+  //       display: block;
+  //       .make-row();
+  //       &:hover,
+  //       &:focus{
+  //         text-decoration: none;
+  //       }
+  //       &:last-of-type{
+  //         border-bottom: 1px @list-group-border solid;
+  //       }
+  //       h4{
+  //         border: none;
+  //         border-bottom: none;
+  //         background-color: #fcfcfc;
+  //         font-size: 13.5px;
+  //         display: block;
+  //         padding: 0;
+  //         max-width: 83%;
+  //         float: left;
+  //         .text-overflow();
+  //       }//end h4
+  //     }//end a
+  //   }
+  // }
 }
 .EXLFacetContainer{
   .panel;
-  padding: 0;
-  margin-bottom: 15px;
+  .panel-default;
+  // padding: 0;
+  // margin-bottom: 15px;
   h3, h1, h4{
     .panel-heading;
-    margin: 0;
+    // margin: 0;
   }
   h1{
     font-size: 16px;
