@@ -38,15 +38,23 @@
   .EXLFacetContainer{
     border-radius: 0;
     margin-bottom: -1px;
-    border-bottom: 0;
+    border-bottom-width: 0;
     &:last-child{
       .border-bottom-radius(@panel-border-radius);
       margin-bottom: @line-height-computed;
+      border-bottom-width: 1px;
+      .EXLFacet:last-child, .EXLFacetHeader:last-child, .EXLFacetsDisplayMore:last-child{
+        .border-bottom-radius(@list-group-border-radius);
+      }
     }
     &:first-child{
       .border-top-radius(@panel-border-radius);
     }
+    .EXLFacet:last-child, .EXLFacetHeader:last-child, .EXLFacetsDisplayMore:last-child{
+      .border-bottom-radius(0);
+    }
   }
+
 }
 
 .EXLFacetsList{
@@ -57,8 +65,10 @@
 , .EXLFacetHeader
 , .EXLFacetsDisplayMore{
   .list-group-item;
+  a{
+    color: @list-group-link-color;
 
-
+  }
   border-width: 1px 0;
   // Remove border radius for top one
   &:first-child {
@@ -75,27 +85,62 @@
 }
 .EXLFacetHeader{
   padding: 0 0 0 0;
-}
-
-
-
-.EXLFacetsDisplayMore{
-  img{
-    display: none;
+  a:hover,
+  a:focus{
+    text-decoration: none;
   }
 }
 
 
 
+.EXLFacetsDisplayMore{
+  a{
+    display: block;
+    color: @list-group-link-color;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  img{
+    display: none;
+  }
+}
+
+// @TODO
+// Clear out these institutional customizations  and style these.
+#exlidSuggestedList{
+  display: none;
+}
+
+.EXLParenthesis
+, .EXLFacetCount{
+  .text-muted;
+  .small;
+}
 
 
-
-
-
-
-
-
-
+.EXLFacetActionsV2{
+    ul{
+      .list-group;
+      margin-bottom: 0;
+      li{
+        .list-group-item;
+        border-width: 1px 0;
+        // Remove border radius for top one
+        &:first-child {
+          .border-top-radius(0);
+        }
+        // But keep it for the last one
+        &:last-child {
+          border-bottom: 0;
+        }
+        a{
+          color: @list-group-link-color;
+        }
+      }
+    }
+}
 
 
 //   .EXLFacetList:nth-of-type(2){
@@ -198,19 +243,7 @@
 //       }
 //     }
 //   }
-//   div.EXLFacetActionsV2{
-//     ul{
-//       margin: 0;
-//     }
-//     margin-bottom: 0;
-//     li.EXLFacetRSSAction,
-//     li.EXLFacetSaveSearchAction,
-//     li.EXLFacetSaveToEShelfAction,
-//     {
-//       background-image: none;
-//       padding: 10px 30px 10px 15px
-//     }
-//   }
+//   div.
 // }
 // //removing the border radius on facet containers that are related.
 // .EXLRelatedSearchTopicFIELDfacet_creator{

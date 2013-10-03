@@ -65,19 +65,23 @@ var scholarOneSearch = (function(){
       if( i > 0 && class ){
 
           //refactor this code to to wrap the li item instead>
-          $(this).find('li.EXLFacetsDisplayMore').addClass('EXLAdditionalFacet');
-          var $link = $('<a href="#expandFacet'+ (i + 1) +'" title="Expland list" class="facet-heading facet-expand"/>');
+          $(this).find('li.EXLFacetsDisplayMore').addClass('EXLAdditionalFacet')
+          var $target = $(this).find('h4');
+          var $link = $('<a href="#expandFacet'+ (i + 1) +'" title="Expland ' + $target.text() +' list" class="facet-heading facet-expand"/>');
           var $icon = $('<i class="icon-expand-alt icon-large pull-right"/>');
           $link.click(function(){
             $(this).parents('.EXLFacetContainer').find('li.EXLFacet, li.EXLFacetsDisplayMore').toggleClass('EXLAdditionalFacet');
             $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
           });
-          var $target = $(this).find('h4');
+
           $target.addClass("list-group-item-heading").wrap($link).append($icon);
           $(this).find('a.facet-heading.facet-expand').wrap('<li class="EXLFacetHeader"/>').tooltip();
           $(this).find('ol.EXLFacetsList').prepend($(this).find('li.list-group-item'));
       }
     });
+    $('li.EXLFacetsDisplayMore').find('a').html('Show more options<i class="icon-gear icon-large pull-right"/>').attr({
+        title: "Refine your search more."
+    }).tooltip();
   };
 
   var  eShelfIcons = function(){
