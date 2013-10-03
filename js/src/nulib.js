@@ -57,17 +57,19 @@ var scholarOneSearch = (function(){
   //
   var buildFacetCollapse = function(){
     var i = 1;
-    $('li.EXLFacetsDisplayMore').hide();
+
     //Creating a collapse group.
     $('#facetList > .EXLFacetContainer').each(function(i){
       if( i > 0 ){
-        var $link = $('<a href="#expandFacet'+ (i + 1) +'"/></a>');
+        var $link = $('<li class="list-group-item"><a href="#expandFacet'+ (i + 1) +'" /></a><li>');
         var $icon = $('<i class="icon-expand-alt icon-large pull-right"></i>');
         $link.click(function(){
           $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
           $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
         });
-        $(this).find('h4').wrap($link).after($icon);
+        var $target = $(this).find('h4');
+        $target.addClass("list-group-item-heading").wrap($link).append($icon);
+        $(this).find('ol.EXLFacetsList').prepend($(this).find('li.list-group-item'));
       }
     });
   };

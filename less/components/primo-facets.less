@@ -11,139 +11,202 @@
 .EXLFacetTile{
   .make-xs-column(12);
   .make-md-column(3);
-  // .EXLFacetList:nth-of-type(2){
-  //   .EXLFacetContainer{
-  //     margin-bottom: 0;
-  //     border-radius: 0;
-  //     &:first-of-type{
-  //       .border-top-radius(@panel-border-radius);
-  //     }
-  //     &:last-of-type{
-  //       margin-bottom: 15px;
-  //       .border-bottom-radius(@panel-border-radius);
-  //     }
-  //     > a{
-  //       background-color: #fcfcfc;
-  //       padding: 10px 15px;
-  //       display: block;
-  //       .make-row();
-  //       &:hover,
-  //       &:focus{
-  //         text-decoration: none;
-  //       }
-  //       &:last-of-type{
-  //         border-bottom: 1px @list-group-border solid;
-  //       }
-  //       h4{
-  //         border: none;
-  //         border-bottom: none;
-  //         background-color: #fcfcfc;
-  //         font-size: 13.5px;
-  //         display: block;
-  //         padding: 0;
-  //         max-width: 83%;
-  //         float: left;
-  //         .text-overflow();
-  //       }//end h4
-  //     }//end a
-  //   }
-  // }
 }
+
+
+
+
+
 .EXLFacetContainer{
   .panel;
   .panel-default;
-  // padding: 0;
-  // margin-bottom: 15px;
-  h3, h1, h4{
+  & > h1
+  , & > h2
+  , & > h3
+  , & > h4{
     .panel-heading;
-    // margin: 0;
-  }
-  h1{
-    font-size: 16px;
-  }
-  h3{
-    font-size: 15px;
-  }
-  h4{
-    font-size: 14.5px;
-  }
-  a i:hover{
-    text-decoration: none;
-  }
-  ol.EXLFacetsList{
-    .list-group;
-    padding: 0px;
-    margin: 0px;
-    li{
-      .list-group-item;
-      padding-right: 15px;
-      border-left: none;
-      border-right: none;
-      height: auto;
-      .transition(all 0.35s ease);
-      &.EXLAdditionalFacet{
-        height: 0;
-        position: relative;
-        overflow: hidden;
-        padding: 0;
-        border: none;
-        .transition(all 0.35s ease);
-      }
-      &.EXLFacetsDisplayMore{
-        margin-top: 0px;
-      }
-      a{
-        font-size: 13px;
-        display: inline-block;
-        width: 61%;
-        text-overflow: ellipsis;
-        overflow: hidden;
-      }
-      span{
-        float: right;
-        clear: right;
-        text-align: right;
-        font-size: 11px;
-        display: inline-block;
-        max-width: 24%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-  }
-  div.EXLFacetActionsV2{
-    ul{
-      margin: 0;
-    }
-    margin-bottom: 0;
-    li.EXLFacetRSSAction,
-    li.EXLFacetSaveSearchAction,
-    li.EXLFacetSaveToEShelfAction,
-    {
-      background-image: none;
-      padding: 10px 30px 10px 15px
-    }
+    .panel-title;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    .border-top-radius(@panel-border-radius - 1);
   }
 }
-//removing the border radius on facet containers that are related.
-.EXLRelatedSearchTopicFIELDfacet_creator{
-  .border-bottom-radius(0);
-  border-bottom: none;
+
+
+.EXLFacetsList{
+  .list-group;
+  margin-bottom: 0;
 }
-.EXLRelatedSearchTopicFIELDfacet_topic{
-  border-radius: 0;
-  border-top: none;
-  border-bottom: none;
-}
-//Styling the more link to not have the stupid blue arrow.
-a[title="More "]{
-  &:after{
-    .caret;
+.EXLFacet
+, .EXLFacetsDisplayMore{
+  .list-group-item;
+  border-width: 1px 0;
+
+  // Remove border radius for top one
+  &:first-child {
+    .border-top-radius(0);
   }
-  img{
-    display: none;
+  // But keep it for the last one
+  &:last-child {
+    border-bottom: 0;
   }
 }
-.EXLRelatedSearchTopic{
-  display: none;
+.EXLAdditionalFacet{
+  .sr-only();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   .EXLFacetList:nth-of-type(2){
+//     .EXLFacetContainer{
+//       margin-bottom: 0;
+//       border-radius: 0;
+//       &:first-of-type{
+//         .border-top-radius(@panel-border-radius);
+//       }
+//       &:last-of-type{
+//         margin-bottom: 15px;
+//         .border-bottom-radius(@panel-border-radius);
+//       }
+//       > a{
+//         background-color: @panel-heading-bg;
+//         padding: 10px 15px;
+//         display: block;
+//         .make-row();
+//         &:hover,
+//         &:focus{
+//           text-decoration: none;
+//         }
+//         &:last-of-type{
+//           border-bottom: 1px @list-group-border solid;
+//         }
+//         h4{
+//           border: none;
+//           border-bottom: none;
+//           background-color: @panel-heading-bg;
+//           font-size: 13.5px;
+//           display: block;
+//           padding: 0;
+//           max-width: 83%;
+//           float: left;
+//           .text-overflow();
+//         }//end h4
+//       }//end a
+//     }
+//   }
+// }
+// .EXLFacetContainer{
+//   .panel;
+//   .panel-default;
+//   // padding: 0;
+//   // margin-bottom: 15px;
+//   h3, h1, h4{
+//     .panel-heading;
+//     margin: 0;
+//   }
+//   h1{
+//     font-size: 16px;
+//   }
+//   h3{
+//     font-size: 15px;
+//   }
+//   h4{
+//     font-size: 14.5px;
+//   }
+//   a i:hover{
+//     text-decoration: none;
+//   }
+//   ol.EXLFacetsList{
+//     .list-group;
+//     padding: 0px;
+//     margin: 0px;
+//     li{
+//       .list-group-item;
+//       padding-right: 15px;
+//       border-left: none;
+//       border-right: none;
+//       height: auto;
+//       .transition(all 0.35s ease);
+//       &.EXLAdditionalFacet{
+//         height: 0;
+//         position: relative;
+//         overflow: hidden;
+//         padding: 0;
+//         border: none;
+//         .transition(all 0.35s ease);
+//       }
+//       &.EXLFacetsDisplayMore{
+//         margin-top: 0px;
+//       }
+//       a{
+//         font-size: 13px;
+//         display: inline-block;
+//         width: 61%;
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//       }
+//       span{
+//         float: right;
+//         clear: right;
+//         text-align: right;
+//         font-size: 11px;
+//         display: inline-block;
+//         max-width: 24%;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//       }
+//     }
+//   }
+//   div.EXLFacetActionsV2{
+//     ul{
+//       margin: 0;
+//     }
+//     margin-bottom: 0;
+//     li.EXLFacetRSSAction,
+//     li.EXLFacetSaveSearchAction,
+//     li.EXLFacetSaveToEShelfAction,
+//     {
+//       background-image: none;
+//       padding: 10px 30px 10px 15px
+//     }
+//   }
+// }
+// //removing the border radius on facet containers that are related.
+// .EXLRelatedSearchTopicFIELDfacet_creator{
+//   .border-bottom-radius(0);
+//   border-bottom: none;
+// }
+// .EXLRelatedSearchTopicFIELDfacet_topic{
+//   border-radius: 0;
+//   border-top: none;
+//   border-bottom: none;
+// }
+// //Styling the more link to not have the stupid blue arrow.
+// a[title="More "]{
+//   &:after{
+//     .caret;
+//   }
+//   img{
+//     display: none;
+//   }
+// }
+// .EXLRelatedSearchTopic{
+//   display: none;
+// }

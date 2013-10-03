@@ -7504,164 +7504,144 @@ a:visited {
   border-bottom-color: #dddddd;
 }
 
-.EXLFacetContainer h3,
-.EXLFacetContainer h1,
-.EXLFacetContainer h4 {
+.EXLFacetContainer > h1,
+.EXLFacetContainer > h2,
+.EXLFacetContainer > h3,
+.EXLFacetContainer > h4 {
   color: #333333;
   background-color: #f5f5f5;
   border-color: #dddddd;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
-.EXLFacetContainer h3 + .panel-collapse .panel-body,
-.EXLFacetContainer h1 + .panel-collapse .panel-body,
-.EXLFacetContainer h4 + .panel-collapse .panel-body {
+.EXLFacetContainer > h1 + .panel-collapse .panel-body,
+.EXLFacetContainer > h2 + .panel-collapse .panel-body,
+.EXLFacetContainer > h3 + .panel-collapse .panel-body,
+.EXLFacetContainer > h4 + .panel-collapse .panel-body {
   border-top-color: #dddddd;
 }
 
-.EXLFacetContainer h1 {
-  font-size: 16px;
+.EXLFacetContainer > h1 > a,
+.EXLFacetContainer > h2 > a,
+.EXLFacetContainer > h3 > a,
+.EXLFacetContainer > h4 > a {
+  color: inherit;
 }
 
-.EXLFacetContainer h3 {
-  font-size: 15px;
-}
-
-.EXLFacetContainer h4 {
-  font-size: 14.5px;
-}
-
-.EXLFacetContainer a i:hover {
-  text-decoration: none;
-}
-
-.EXLFacetContainer ol.EXLFacetsList {
+.EXLFacetsList {
+  margin-bottom: 20px;
+  padding-left: 0;
   margin-bottom: 0;
-  padding: 0px;
-  margin: 0px;
 }
 
-.EXLFacetContainer ol.EXLFacetsList .list-group-item {
-  border-width: 1px 0;
-}
-
-.EXLFacetContainer ol.EXLFacetsList .list-group-item:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.EXLFacetContainer ol.EXLFacetsList .list-group-item:last-child {
-  border-bottom: 0;
-}
-
-.EXLFacetContainer ol.EXLFacetsList li {
-  border-width: 1px 0;
-  padding-right: 15px;
-  border-left: none;
-  border-right: none;
-  height: auto;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-.EXLFacetContainer ol.EXLFacetsList li:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.EXLFacetContainer ol.EXLFacetsList li:last-child {
-  border-bottom: 0;
-}
-
-.EXLFacetContainer ol.EXLFacetsList li.EXLAdditionalFacet {
-  height: 0;
+.EXLFacet,
+.EXLFacetsDisplayMore {
   position: relative;
-  overflow: hidden;
-  padding: 0;
-  border: none;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-width: 1px 0;
 }
 
-.EXLFacetContainer ol.EXLFacetsList li.EXLFacetsDisplayMore {
-  margin-top: 0px;
+.EXLFacet:first-child,
+.EXLFacetsDisplayMore:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
-.EXLFacetContainer ol.EXLFacetsList li a {
-  font-size: 13px;
-  display: inline-block;
-  width: 61%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.EXLFacetContainer ol.EXLFacetsList li span {
-  float: right;
-  clear: right;
-  text-align: right;
-  font-size: 11px;
-  display: inline-block;
-  max-width: 24%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.EXLFacetContainer div.EXLFacetActionsV2 {
+.EXLFacet:last-child,
+.EXLFacetsDisplayMore:last-child {
   margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
-.EXLFacetContainer div.EXLFacetActionsV2 ul {
-  margin: 0;
+.EXLFacet > .badge,
+.EXLFacetsDisplayMore > .badge {
+  float: right;
 }
 
-.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetRSSAction,
-.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveSearchAction,
-.EXLFacetContainer div.EXLFacetActionsV2 li.EXLFacetSaveToEShelfAction {
-  background-image: none;
-  padding: 10px 30px 10px 15px;
+.EXLFacet > .badge + .badge,
+.EXLFacetsDisplayMore > .badge + .badge {
+  margin-right: 5px;
 }
 
-.EXLRelatedSearchTopicFIELDfacet_creator {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom: none;
+a.EXLFacet,
+a.EXLFacetsDisplayMore {
+  color: #555555;
 }
 
-.EXLRelatedSearchTopicFIELDfacet_topic {
-  border-radius: 0;
-  border-top: none;
-  border-bottom: none;
+a.EXLFacet .list-group-item-heading,
+a.EXLFacetsDisplayMore .list-group-item-heading {
+  color: #333333;
 }
 
-a[title="More "]:after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  border-bottom: 0 dotted;
+a.EXLFacet:hover,
+a.EXLFacetsDisplayMore:hover,
+a.EXLFacet:focus,
+a.EXLFacetsDisplayMore:focus {
+  text-decoration: none;
+  background-color: #f5f5f5;
 }
 
-.btn-default a[title="More "]:after {
-  border-top-color: #333333;
+.EXLFacet.active,
+.EXLFacetsDisplayMore.active,
+.EXLFacet.active:hover,
+.EXLFacetsDisplayMore.active:hover,
+.EXLFacet.active:focus,
+.EXLFacetsDisplayMore.active:focus {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #cc0000;
 }
 
-.btn-primary a[title="More "]:after,
-.btn-success a[title="More "]:after,
-.btn-warning a[title="More "]:after,
-.btn-danger a[title="More "]:after,
-.btn-info a[title="More "]:after {
-  border-top-color: #fff;
+.EXLFacet.active .list-group-item-heading,
+.EXLFacetsDisplayMore.active .list-group-item-heading,
+.EXLFacet.active:hover .list-group-item-heading,
+.EXLFacetsDisplayMore.active:hover .list-group-item-heading,
+.EXLFacet.active:focus .list-group-item-heading,
+.EXLFacetsDisplayMore.active:focus .list-group-item-heading {
+  color: inherit;
 }
 
-a[title="More "] img {
-  display: none;
+.EXLFacet.active .list-group-item-text,
+.EXLFacetsDisplayMore.active .list-group-item-text,
+.EXLFacet.active:hover .list-group-item-text,
+.EXLFacetsDisplayMore.active:hover .list-group-item-text,
+.EXLFacet.active:focus .list-group-item-text,
+.EXLFacetsDisplayMore.active:focus .list-group-item-text {
+  color: #ff9999;
 }
 
-.EXLRelatedSearchTopic {
-  display: none;
+.EXLFacet:first-child,
+.EXLFacetsDisplayMore:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.EXLFacet:last-child,
+.EXLFacetsDisplayMore:last-child {
+  border-bottom: 0;
+}
+
+.EXLAdditionalFacet {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
 
 .EXLLightbox,
