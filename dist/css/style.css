@@ -4285,12 +4285,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #953b39;
 }
 
-.list-group {
+.list-group,
+.EXLFacetsList {
   margin-bottom: 20px;
   padding-left: 0;
 }
 
-.list-group-item {
+.list-group-item,
+.EXLFacet,
+.EXLFacetsDisplayMore {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -7535,91 +7538,12 @@ a:visited {
 }
 
 .EXLFacetsList {
-  margin-bottom: 20px;
-  padding-left: 0;
   margin-bottom: 0;
 }
 
 .EXLFacet,
 .EXLFacetsDisplayMore {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  margin-bottom: -1px;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
   border-width: 1px 0;
-}
-
-.EXLFacet:first-child,
-.EXLFacetsDisplayMore:first-child {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.EXLFacet:last-child,
-.EXLFacetsDisplayMore:last-child {
-  margin-bottom: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.EXLFacet > .badge,
-.EXLFacetsDisplayMore > .badge {
-  float: right;
-}
-
-.EXLFacet > .badge + .badge,
-.EXLFacetsDisplayMore > .badge + .badge {
-  margin-right: 5px;
-}
-
-a.EXLFacet,
-a.EXLFacetsDisplayMore {
-  color: #555555;
-}
-
-a.EXLFacet .list-group-item-heading,
-a.EXLFacetsDisplayMore .list-group-item-heading {
-  color: #333333;
-}
-
-a.EXLFacet:hover,
-a.EXLFacetsDisplayMore:hover,
-a.EXLFacet:focus,
-a.EXLFacetsDisplayMore:focus {
-  text-decoration: none;
-  background-color: #f5f5f5;
-}
-
-.EXLFacet.active,
-.EXLFacetsDisplayMore.active,
-.EXLFacet.active:hover,
-.EXLFacetsDisplayMore.active:hover,
-.EXLFacet.active:focus,
-.EXLFacetsDisplayMore.active:focus {
-  z-index: 2;
-  color: #ffffff;
-  background-color: #cc0000;
-  border-color: #cc0000;
-}
-
-.EXLFacet.active .list-group-item-heading,
-.EXLFacetsDisplayMore.active .list-group-item-heading,
-.EXLFacet.active:hover .list-group-item-heading,
-.EXLFacetsDisplayMore.active:hover .list-group-item-heading,
-.EXLFacet.active:focus .list-group-item-heading,
-.EXLFacetsDisplayMore.active:focus .list-group-item-heading {
-  color: inherit;
-}
-
-.EXLFacet.active .list-group-item-text,
-.EXLFacetsDisplayMore.active .list-group-item-text,
-.EXLFacet.active:hover .list-group-item-text,
-.EXLFacetsDisplayMore.active:hover .list-group-item-text,
-.EXLFacet.active:focus .list-group-item-text,
-.EXLFacetsDisplayMore.active:focus .list-group-item-text {
-  color: #ff9999;
 }
 
 .EXLFacet:first-child,
