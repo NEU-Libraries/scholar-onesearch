@@ -15,33 +15,51 @@
 
 
 
-
-
 .EXLFacetContainer{
   .panel;
   .panel-default;
-  & > h1
-  , & > h2
-  , & > h3
-  , & > h4{
+   h1
+  , h2
+  , h3
+  , h4{
     .panel-heading;
     .panel-title;
     padding: 10px 15px;
     border-bottom: 1px solid transparent;
     .border-top-radius(@panel-border-radius - 1);
   }
+  h1{
+    border-bottom-color: @panel-default-border;
+  }
 }
 
+
+#refine + .EXLFacetList{
+  .EXLFacetContainer{
+    border-radius: 0;
+    margin-bottom: -1px;
+    border-bottom: 0;
+    &:last-child{
+      .border-bottom-radius(@panel-border-radius);
+      margin-bottom: @line-height-computed;
+    }
+    &:first-child{
+      .border-top-radius(@panel-border-radius);
+    }
+  }
+}
 
 .EXLFacetsList{
   &:extend(.list-group);
   margin-bottom: 0;
 }
 .EXLFacet
+, .EXLFacetHeader
 , .EXLFacetsDisplayMore{
-  &:extend(.list-group-item);
-  border-width: 1px 0;
+  .list-group-item;
 
+
+  border-width: 1px 0;
   // Remove border radius for top one
   &:first-child {
     .border-top-radius(0);
@@ -50,16 +68,22 @@
   &:last-child {
     border-bottom: 0;
   }
+
 }
 .EXLAdditionalFacet{
   .sr-only();
 }
+.EXLFacetHeader{
+  padding: 0 0 0 0;
+}
 
 
 
-
-
-
+.EXLFacetsDisplayMore{
+  img{
+    display: none;
+  }
+}
 
 
 

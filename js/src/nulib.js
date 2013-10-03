@@ -65,19 +65,17 @@ var scholarOneSearch = (function(){
       if( i > 0 && class ){
 
           //refactor this code to to wrap the li item instead>
-          var $link = $('<li class="list-group-item"><a href="#expandFacet'+ (i + 1) +'" data-toggle="tooltip" title="Expland list" /></a><li>');
-          var $icon = $('<i class="icon-expand-alt icon-large pull-right"></i>');
+          $(this).find('li.EXLFacetsDisplayMore').addClass('EXLAdditionalFacet');
+          var $link = $('<a href="#expandFacet'+ (i + 1) +'" title="Expland list" class="facet-heading facet-expand"/>');
+          var $icon = $('<i class="icon-expand-alt icon-large pull-right"/>');
           $link.click(function(){
-            $(this).parents('.EXLFacetContainer').find('li.EXLFacet').toggleClass('EXLAdditionalFacet');
+            $(this).parents('.EXLFacetContainer').find('li.EXLFacet, li.EXLFacetsDisplayMore').toggleClass('EXLAdditionalFacet');
             $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
           });
-
           var $target = $(this).find('h4');
           $target.addClass("list-group-item-heading").wrap($link).append($icon);
+          $(this).find('a.facet-heading.facet-expand').wrap('<li class="EXLFacetHeader"/>').tooltip();
           $(this).find('ol.EXLFacetsList').prepend($(this).find('li.list-group-item'));
-          $(this).find('a[data-toggle="tooltip"]').tooltip({
-            placement: "right"
-          });
       }
     });
   };
