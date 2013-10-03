@@ -13248,6 +13248,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedBrowse .EXLSearchFieldRibbon
   float: right !important;
   float: right;
   border-left: none;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {
@@ -13314,7 +13315,7 @@ td.EXLMyShelfStar i {
 @media (min-width: 1200px) {
   .EXLResultsHeader div.EXLResultsNumbers {
     float: left;
-    width: 66.66666666666666%;
+    width: 75%;
   }
 }
 
@@ -13325,8 +13326,11 @@ td.EXLMyShelfStar i {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
   position: static;
-  margin: 9px 0;
+  margin: 12px 0;
+  font-weight: normal;
 }
 
 @media (min-width: 1200px) {
@@ -13341,6 +13345,8 @@ td.EXLMyShelfStar i {
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+  margin-top: 4px;
+  margin-bottom: 4px;
   width: 100%;
   position: relative;
   min-height: 1px;
@@ -13580,6 +13586,9 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-right: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
   position: static;
   text-align: center;
   border-radius: 4px;
@@ -13589,7 +13598,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 @media (min-width: 1200px) {
   .EXLResultsHeader div.EXLResultsNavigation {
     float: left;
-    width: 33.33333333333333%;
+    width: 25%;
   }
 }
 
@@ -13761,6 +13770,7 @@ th.EXLResultNumber {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 0.6em;
 }
 
 @media (min-width: 992px) {
@@ -13888,11 +13898,11 @@ th.EXLResultNumber {
 }
 
 .EXLResultNumber {
-  font-size: 10px;
+  font-size: 85%;
   color: #999999;
   float: left;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 0.6em;
+  margin-left: 0.6em;
   position: absolute;
   width: 15px;
   height: 15px;

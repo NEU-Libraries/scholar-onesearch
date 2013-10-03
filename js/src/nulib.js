@@ -79,6 +79,7 @@ var scholarOneSearch = (function(){
           $(this).find('ol.EXLFacetsList').prepend($(this).find('li.list-group-item'));
       }
     });
+
     $('li.EXLFacetsDisplayMore').find('a').html('Show more options<i class="icon-gear icon-large pull-right"/>').attr({
         title: "Refine your search more."
     }).tooltip();

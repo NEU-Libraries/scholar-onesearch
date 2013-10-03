@@ -15,7 +15,7 @@
   .make-md-column(9);
   .pull-right;
   border-left: none;
-
+  margin-bottom: 20px;
 
 }
 
@@ -43,21 +43,26 @@ td.EXLMyShelfStar{
   padding-bottom: 8px;
   div.EXLResultsNumbers{
     width: 100%;
-    .make-lg-column(8);
+    .make-lg-column(9);
     position: static;
     //Results header showing the number of results found.
     h1{
       color: @text-color;
       font-size: 12px;
       .make-lg-column(7);
+      padding-left: 0;
+      padding-right: 0;
       position: static;
-      margin: 9px 0;
+      margin: 12px 0;
+      font-weight: normal;
       em{
         color: @text-color;
       }
     }
     //styling the result dropdown as a button toggle for sorted by menu.
     div.EXLResultsSortBy{
+      margin-top: 4px;
+      margin-bottom: 4px;
       width: 100%;
       .make-sm-column(5);
       //position: static;
@@ -115,7 +120,10 @@ td.EXLMyShelfStar{
   //Pagination styles
   div.EXLResultsNavigation{
     width: 100%;
-    .make-lg-column(4);
+    .make-lg-column(3);
+    padding-right: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
     position: static;
     text-align: center;
     border-radius: 4px;
@@ -234,6 +242,7 @@ th.EXLResultNumber{
     .make-xs-column(4);
     .make-md-column(2);
     .make-lg-column(2);
+    padding-top: 0.6em;
   }
   td.EXLMyShelfStar{
 
@@ -294,11 +303,11 @@ th.EXLResultNumber{
 }
 
 .EXLResultNumber{
-  font-size: 10px;
+  .small;
   .text-muted;
   float: left;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: 0.6em;
+  margin-left: 0.6em;
   position: absolute;
   width: 15px;
   height: 15px;
@@ -360,10 +369,5 @@ a.EXLBriefResultsDisplayMultipleLink{
 
 
 
-// h3, p{
-//   &:empty{
-//     display: none;
-//   }
-// }
 
 
