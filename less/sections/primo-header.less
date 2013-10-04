@@ -38,10 +38,7 @@
   }
 }
 
-#exlidMainMenuRibbon{
-  .nav;
-  .nav-pills;
-}
+
 
 .EXLHeader{
   padding-top: 1em;
@@ -70,6 +67,13 @@
     margin: 0 0.25em 0.25em 0;
     border-radius: 5px;
     display: none;
+  }
+  a{
+    color: @primo-header-nav-link-color;
+    &:hover,
+    &:focus{
+      color: @primo-header-nav-link-hover-color;
+    }
   }
   li{
     font-size: inherit;
@@ -148,50 +152,74 @@
   .float-left-small-screen;
 }
 //Main menu tile
-#exlidMainMenuTile{
+.EXLMainMenu{
+  .make-xs-column(12);
+  .make-md-column(5);
+  .make-md-column-offset(3);
   .make-lg-column(5);
   .make-lg-column-offset(3);
-  width: 100%;
+
   margin-bottom: 1em;
-  div.EXLMainMenuContainer{
-    float: none;
-    width: auto;
-  }
 }
 
-#exlidMainMenuRibbon{
-  .nav;
-  .nav-pills;
-  .pull-right;
-  padding: 0;
-  height: auto;
-  margin: 0.25em 0;
-  li{
-    font-size: inherit;
-    margin: 0;
-    &.EXLMainMenuItemSelected span a{
-      color: #fff;
-      background-color: @component-active-bg;
-      background-image: none;
-      border: none;
-    }
-    span{
-      border: none;
-      a{
-        font-size: inherit;
-        padding: 10px 15px !important;
-        &:hover,
-        &:focus{
-          color: #fff;
-          background-color: @component-active-bg;
-          background-image: none;
-        }
+.EXLMainMenuContainer{
+  float: none;
+  width: auto;
+  ul{
+    .nav;
+    .nav-pills;
+    float: right;
+    a{
+      color: @primo-header-nav-link-color;
+      position: relative;
+      display: block;
+      padding: @nav-link-padding;
+      border-radius: @nav-pills-border-radius;
+      &:hover,
+      &:focus {
+        color: @primo-header-nav-link-hover-color;
+        text-decoration: none;
+        background-color: @nav-link-hover-bg;
       }
-
     }
   }
-  .float-left-small-screen;
 }
+
+
+
+// #exlidMainMenuRibbon{
+//   .nav;
+//   .nav-pills;
+//   .pull-right;
+//   padding: 0;
+//   height: auto;
+//   margin: 0.25em 0;
+//   li{
+//     font-size: inherit;
+//     margin: 0;
+//     &.EXLMainMenuItemSelected span a{
+//       color: #fff;
+//       background-color: @component-active-bg;
+//       background-image: none;
+//       border: none;
+//     }
+//     span{
+//       border: none;
+//       a{
+//         font-size: inherit;
+//         padding: 10px 15px !important;
+//         &:hover,
+//         &:focus{
+//           color: #fff;
+//           background-color: @component-active-bg;
+//           background-image: none;
+//         }
+//       }
+
+//     }
+//   }
+//   .float-left-small-screen;
+// }
 
 
 

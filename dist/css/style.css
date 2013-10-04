@@ -10273,133 +10273,6 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
   }
 }
 
-#exlidMainMenuRibbon {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-#exlidMainMenuRibbon:before,
-#exlidMainMenuRibbon:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-#exlidMainMenuRibbon:after {
-  clear: both;
-}
-
-#exlidMainMenuRibbon:before,
-#exlidMainMenuRibbon:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-#exlidMainMenuRibbon:after {
-  clear: both;
-}
-
-#exlidMainMenuRibbon > li {
-  position: relative;
-  display: block;
-}
-
-#exlidMainMenuRibbon > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-
-#exlidMainMenuRibbon > li > a:hover,
-#exlidMainMenuRibbon > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-
-#exlidMainMenuRibbon > li.disabled > a {
-  color: #999999;
-}
-
-#exlidMainMenuRibbon > li.disabled > a:hover,
-#exlidMainMenuRibbon > li.disabled > a:focus {
-  color: #999999;
-  text-decoration: none;
-  background-color: transparent;
-  cursor: not-allowed;
-}
-
-#exlidMainMenuRibbon .open > a,
-#exlidMainMenuRibbon .open > a:hover,
-#exlidMainMenuRibbon .open > a:focus {
-  background-color: #eeeeee;
-  border-color: #cc0000;
-}
-
-#exlidMainMenuRibbon .open > a .caret,
-#exlidMainMenuRibbon .open > a:hover .caret,
-#exlidMainMenuRibbon .open > a:focus .caret {
-  border-top-color: #800000;
-  border-bottom-color: #800000;
-}
-
-#exlidMainMenuRibbon .nav-divider {
-  height: 1px;
-  margin: 9px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-
-#exlidMainMenuRibbon > li > a > img {
-  max-width: none;
-}
-
-#exlidMainMenuRibbon [class^="icon-"].icon-large,
-#exlidMainMenuRibbon [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-
-#exlidMainMenuRibbon [class^="icon-"].icon-spin,
-#exlidMainMenuRibbon [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-
-#exlidMainMenuRibbon > li {
-  float: left;
-}
-
-#exlidMainMenuRibbon > li > a {
-  border-radius: 4px;
-}
-
-#exlidMainMenuRibbon > li + li {
-  margin-left: 2px;
-}
-
-#exlidMainMenuRibbon > li.active > a,
-#exlidMainMenuRibbon > li.active > a:hover,
-#exlidMainMenuRibbon > li.active > a:focus {
-  color: #ffffff;
-  background-color: #cc0000;
-}
-
-#exlidMainMenuRibbon > li.active > a .caret,
-#exlidMainMenuRibbon > li.active > a:hover .caret,
-#exlidMainMenuRibbon > li.active > a:focus .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
-}
-
-#exlidMainMenuRibbon [class^="icon-"],
-#exlidMainMenuRibbon [class*=" icon-"],
-#exlidMainMenuRibbon [class^="icon-"].icon-large,
-#exlidMainMenuRibbon [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-
 .EXLHeader {
   padding-top: 1em;
 }
@@ -10567,6 +10440,15 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
   display: none;
 }
 
+#exlidUserAreaRibbon a {
+  color: #555555;
+}
+
+#exlidUserAreaRibbon a:hover,
+#exlidUserAreaRibbon a:focus {
+  color: #3b3b3b;
+}
+
 #exlidUserAreaRibbon li {
   font-size: inherit;
   padding: 0px;
@@ -10662,198 +10544,188 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
   }
 }
 
-#exlidMainMenuTile {
+.EXLMainMenu {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
   margin-bottom: 1em;
 }
 
+@media (min-width: 992px) {
+  .EXLMainMenu {
+    float: left;
+    width: 41.66666666666667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .EXLMainMenu {
+    margin-left: 25%;
+  }
+}
+
 @media (min-width: 1200px) {
-  #exlidMainMenuTile {
+  .EXLMainMenu {
     float: left;
     width: 41.66666666666667%;
   }
 }
 
 @media (min-width: 1200px) {
-  #exlidMainMenuTile {
+  .EXLMainMenu {
     margin-left: 25%;
   }
 }
 
-#exlidMainMenuTile div.EXLMainMenuContainer {
+.EXLMainMenuContainer {
   float: none;
   width: auto;
 }
 
-#exlidMainMenuRibbon {
+.EXLMainMenuContainer ul {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  float: right !important;
   float: right;
-  padding: 0;
-  height: auto;
-  margin: 0.25em 0;
 }
 
-#exlidMainMenuRibbon:before,
-#exlidMainMenuRibbon:after {
+.EXLMainMenuContainer ul:before,
+.EXLMainMenuContainer ul:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-#exlidMainMenuRibbon:after {
+.EXLMainMenuContainer ul:after {
   clear: both;
 }
 
-#exlidMainMenuRibbon:before,
-#exlidMainMenuRibbon:after {
+.EXLMainMenuContainer ul:before,
+.EXLMainMenuContainer ul:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-#exlidMainMenuRibbon:after {
+.EXLMainMenuContainer ul:after {
   clear: both;
 }
 
-#exlidMainMenuRibbon > li {
+.EXLMainMenuContainer ul > li {
   position: relative;
   display: block;
 }
 
-#exlidMainMenuRibbon > li > a {
+.EXLMainMenuContainer ul > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 
-#exlidMainMenuRibbon > li > a:hover,
-#exlidMainMenuRibbon > li > a:focus {
+.EXLMainMenuContainer ul > li > a:hover,
+.EXLMainMenuContainer ul > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
 
-#exlidMainMenuRibbon > li.disabled > a {
+.EXLMainMenuContainer ul > li.disabled > a {
   color: #999999;
 }
 
-#exlidMainMenuRibbon > li.disabled > a:hover,
-#exlidMainMenuRibbon > li.disabled > a:focus {
+.EXLMainMenuContainer ul > li.disabled > a:hover,
+.EXLMainMenuContainer ul > li.disabled > a:focus {
   color: #999999;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
 
-#exlidMainMenuRibbon .open > a,
-#exlidMainMenuRibbon .open > a:hover,
-#exlidMainMenuRibbon .open > a:focus {
+.EXLMainMenuContainer ul .open > a,
+.EXLMainMenuContainer ul .open > a:hover,
+.EXLMainMenuContainer ul .open > a:focus {
   background-color: #eeeeee;
   border-color: #cc0000;
 }
 
-#exlidMainMenuRibbon .open > a .caret,
-#exlidMainMenuRibbon .open > a:hover .caret,
-#exlidMainMenuRibbon .open > a:focus .caret {
+.EXLMainMenuContainer ul .open > a .caret,
+.EXLMainMenuContainer ul .open > a:hover .caret,
+.EXLMainMenuContainer ul .open > a:focus .caret {
   border-top-color: #800000;
   border-bottom-color: #800000;
 }
 
-#exlidMainMenuRibbon .nav-divider {
+.EXLMainMenuContainer ul .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
 
-#exlidMainMenuRibbon > li > a > img {
+.EXLMainMenuContainer ul > li > a > img {
   max-width: none;
 }
 
-#exlidMainMenuRibbon [class^="icon-"].icon-large,
-#exlidMainMenuRibbon [class*=" icon-"].icon-large {
+.EXLMainMenuContainer ul [class^="icon-"].icon-large,
+.EXLMainMenuContainer ul [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-#exlidMainMenuRibbon [class^="icon-"].icon-spin,
-#exlidMainMenuRibbon [class*=" icon-"].icon-spin {
+.EXLMainMenuContainer ul [class^="icon-"].icon-spin,
+.EXLMainMenuContainer ul [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-#exlidMainMenuRibbon > li {
+.EXLMainMenuContainer ul > li {
   float: left;
 }
 
-#exlidMainMenuRibbon > li > a {
+.EXLMainMenuContainer ul > li > a {
   border-radius: 4px;
 }
 
-#exlidMainMenuRibbon > li + li {
+.EXLMainMenuContainer ul > li + li {
   margin-left: 2px;
 }
 
-#exlidMainMenuRibbon > li.active > a,
-#exlidMainMenuRibbon > li.active > a:hover,
-#exlidMainMenuRibbon > li.active > a:focus {
+.EXLMainMenuContainer ul > li.active > a,
+.EXLMainMenuContainer ul > li.active > a:hover,
+.EXLMainMenuContainer ul > li.active > a:focus {
   color: #ffffff;
   background-color: #cc0000;
 }
 
-#exlidMainMenuRibbon > li.active > a .caret,
-#exlidMainMenuRibbon > li.active > a:hover .caret,
-#exlidMainMenuRibbon > li.active > a:focus .caret {
+.EXLMainMenuContainer ul > li.active > a .caret,
+.EXLMainMenuContainer ul > li.active > a:hover .caret,
+.EXLMainMenuContainer ul > li.active > a:focus .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
 
-#exlidMainMenuRibbon [class^="icon-"],
-#exlidMainMenuRibbon [class*=" icon-"],
-#exlidMainMenuRibbon [class^="icon-"].icon-large,
-#exlidMainMenuRibbon [class*=" icon-"].icon-large {
+.EXLMainMenuContainer ul [class^="icon-"],
+.EXLMainMenuContainer ul [class*=" icon-"],
+.EXLMainMenuContainer ul [class^="icon-"].icon-large,
+.EXLMainMenuContainer ul [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
-#exlidMainMenuRibbon li {
-  font-size: inherit;
-  margin: 0;
+.EXLMainMenuContainer ul a {
+  color: #555555;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
 }
 
-#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a {
-  color: #fff;
-  background-color: #cc0000;
-  background-image: none;
-  border: none;
-}
-
-#exlidMainMenuRibbon li span {
-  border: none;
-}
-
-#exlidMainMenuRibbon li span a {
-  font-size: inherit;
-  padding: 10px 15px !important;
-}
-
-#exlidMainMenuRibbon li span a:hover,
-#exlidMainMenuRibbon li span a:focus {
-  color: #fff;
-  background-color: #cc0000;
-  background-image: none;
-}
-
-@media (max-width: 756px) {
-  #exlidMainMenuRibbon {
-    float: left;
-    clear: left;
-  }
+.EXLMainMenuContainer ul a:hover,
+.EXLMainMenuContainer ul a:focus {
+  color: #3b3b3b;
+  text-decoration: none;
+  background-color: #eeeeee;
 }
 
 #exlidMainMenuRibbon #exlidMainMenuItem1,
@@ -13755,7 +13627,7 @@ th.EXLResultNumber {
   clear: both;
 }
 
-.EXLResultsList tr#exlidResult9 {
+.EXLResultsList tr:last-of-type {
   border-bottom: none;
 }
 
