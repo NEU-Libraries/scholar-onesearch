@@ -119,3 +119,83 @@
 
 
 
+
+
+#exlidFacetsLightboxContainer{
+    &:extend(.modal-dialog);
+    display: block;
+}
+.EXLFacetsLightbox{
+  &:extend(.modal-content);
+  .EXLSubmit{
+    .btn;
+    .btn-success;
+  }
+  .EXLReset{
+    .btn;
+    .btn-danger;
+  }
+}
+.EXLFacetsLightboxHeader{
+  &:extend(.modal-header);
+  h1{
+    .modal-title;
+    .h4;
+  }
+}
+
+
+
+#exlidFacetsLightboxListWrapper{
+  position: relative;
+  padding: @modal-inner-padding;
+}
+
+.EXLFacetsLightboxTabsRibbon{
+
+  .clearfix();
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid @modal-header-border-color;
+  span{
+    width: 15%;
+    display: block;
+    float: left;
+    clear: right;
+    .text-overflow();
+    &:last-child{
+      text-align: left;
+      width: auto;
+    }
+  }
+
+}
+
+.EXLFacetsLightboxList{
+  label{
+    .sr-only;
+  }
+  fieldset{
+    .clearfix();
+    padding: 10px 0;
+    border-bottom: 1px solid @modal-header-border-color;
+  }
+  .EXLCheckboxGroup{
+    width: 15%;
+    min-width: ;
+    float: left;
+    text-align: center;
+  }
+  .label{
+    text-align: left;
+  }
+}
+
+#exliWhiteContent{
+  &:extend(.modal);
+}
+
+// @TODO fix the dialog header buttons.
+.EXLFacetsLightboxHeaderButtons{
+  display: none;
+}

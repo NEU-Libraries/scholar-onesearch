@@ -67,11 +67,19 @@ var scholarOneSearch = (function(){
           //refactor this code to to wrap the li item instead>
           $(this).find('li.EXLFacetsDisplayMore').addClass('EXLAdditionalFacet')
           var $target = $(this).find('h4');
-          var $link = $('<a href="#expandFacet'+ (i + 1) +'" title="Expland ' + $target.text() +' list" class="facet-heading facet-expand"/>');
+          var $link = $('<a href="#expandFacet'+ (i + 1) +'" title="Expand ' + $target.text() +' list" class="facet-heading facet-expand"/>');
           var $icon = $('<i class="icon-expand-alt icon-large pull-right"/>');
           $link.click(function(){
             $(this).parents('.EXLFacetContainer').find('li.EXLFacet, li.EXLFacetsDisplayMore').toggleClass('EXLAdditionalFacet');
             $(this).find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
+            $(this).toggleClass('collapsed-facet');
+              if( $(this).hasClass('collapsed-facet')){
+                $(this).tooltip('destroy').attr('title',  'Collapse '+ $target.text() +' list' ).tooltip();
+              }
+              else{
+                $(this).tooltip('destroy').attr('title',  'Expand '+ $target.text() +' list' ).tooltip();
+              }
+
           });
 
           $target.addClass("list-group-item-heading").wrap($link).append($icon);
