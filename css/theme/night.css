@@ -16,8 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   font-weight: 200;
-  letter-spacing: -0.02em;
-  color: #eeeeee; }
+  color: #333333; }
 
 ::selection {
   color: white;
@@ -33,7 +32,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   color: #eeeeee;
   font-family: "Montserrat", Impact, sans-serif;
   line-height: 0.9em;
@@ -71,7 +70,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eeeeee;
+  border: 4px solid #333333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;

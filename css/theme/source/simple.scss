@@ -27,7 +27,7 @@ $headingColor: #000;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
-$linkColor: #00008B;
+$linkColor: #CC0000;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
@@ -36,3 +36,16 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+
+//My overrides
+
+.reveal section h1 img{
+  border: none;
+  box-shadow: none;
+}
+
+.reveal cite{
+  font-style: italic;
+  font-size: 60%;
+}

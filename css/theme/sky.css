@@ -25,7 +25,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 36px;
   font-weight: 200;
-  letter-spacing: -0.02em;
   color: #333333; }
 
 ::selection {
@@ -42,7 +41,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   color: #333333;
   font-family: "Quicksand", sans-serif;
   line-height: 0.9em;
