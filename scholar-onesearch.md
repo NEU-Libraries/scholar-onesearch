@@ -66,8 +66,62 @@ Note:
 </ul>
 
 Note:
-* Scalable the code is not scalable in the sense 
+Scalable the code is not scalable in the sense 
 
+---
+### Scalable
+
+```css
+ #exlidAdvancedSearchTile
+  #exlidAdvancedSearchRibbon 
+    div.EXLSearchFieldRibbonFormFieldsGroup1
+      div.EXLAdvancedSearchFormRow
+        .EXLAdvancedSearchFormRowInlineInput:first-of-type input,
+#exlidAdvancedSearchTile
+  #exlidAdvancedSearchRibbon
+    div.EXLSearchFieldRibbonFormFieldsGroup1
+      div.EXLAdvancedSearchFormRow
+        .EXLAdvancedSearchFormRowInlineInput:first-of-type select {
+  margin-left: 0;
+}
+```
+
+**Don't do this!**
+Note: If the default CSS is structured in such a way that you need to override the style of elements with such long selectors, it restricts an organization from extending and adding features as the Primo implemention grows.
+
+---
+
+### Modularity
+
+```
+  {.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerSelectedTab}
+  AND {.EXLFindDBTabsRibbon div li.EXLFindDBSelectedTab} share 15 rules
+  
+  {.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerTab}
+  AND {.EXLFindDBTabsRibbon div li.EXLFindDBTab} share 12 rules
+  
+  {* html #exliGreyOverlay iframe} 
+  AND {* html #exliLoadingFdb iframe} share 12 rules
+```
+**Don't repeat yourself**
+
+---
+
+### Semantic
+![Screen shot of source HTML highlighting two DIV elements with matching ID attributes](img-src/duplicate-ids.png)
+
+Note: Simple issues like using duplicate IDs in the HTML markup create a barrier for primo adopting institutions to be able to tailor their experience to their users.
+
+---
+
+### Performance
+
+<iframe width="1280" height="720" src="//www.youtube.com/embed/I2MJiJxGQsY" frameborder="0" allowfullscreen data-autoplay class="stretch"></iframe>
+
+---
+### Responsive Design
+
+![Responsive animation of how the default design changes per the screen size.](img-src/responsive-layouts.gif)
 ----
 
 ### The CSS
@@ -78,9 +132,7 @@ Note:
 
 ### Web Standards
 
-![Screen shot of source HTML highlighting two DIV elements with matching ID attributes](img-src/duplicate-ids.png)
-Note: Simple issues like using duplicate IDs in the HTML markup create a barrier for primo adopting institutions to be able to tailor their experience to their users.
-----
+
 
 ### Usability
 
