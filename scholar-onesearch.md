@@ -4,7 +4,7 @@
 
 *Tackling the Primo user experience.*
 
-#### Northeastern University, Universtiy Libraries
+#### [Northeastern University, Universtiy Libraries](http://library.northeastern.edu)
 
 ##### Steven Bassett - [@bassettsj](http://twitter.com/bassettsj)
 
@@ -15,8 +15,23 @@
 http://neu-libraries.github.io/scholar-onesearch
 
 ----
+## About Scholar OneSearch
 
-## ~~Bashing~~
+![Screen shot of Scholar OneSearch with results from a search for 'genetics'](/img-src/screenshot-sos-search.png "Scholar OneSearch")
+
+Note:
+>With the launch of Alma on July 1, 2013, Northeastern University Libraries introduced the new Scholar OneSearch, a Primo installation featuring responsive and user-friendly design.
+
+>Scholar OneSearch also improves upon some of the features in the standard Primo release, including a reorganized page header, collapsable facets in the left-hand “refine my results” sidebar, and integrated feedback into each search result.
+
+---
+![Screen shot of scholar onesearch showing a redesigned modal](/img-src/sos-modal.png)
+---
+![Screen shot of scholar onesearch on a smaller screen](/img-src/sos-smallscreen.png)
+---
+----
+
+## ~~Bashing~~ Ex Libris
 
 ![Boy bulling other children by kicking soccer ball onto a metal soccer where the other children are hiding for protection ""](img-src/bully.jpg)
 
@@ -24,20 +39,22 @@ http://neu-libraries.github.io/scholar-onesearch
 Note: Northeastern University Librares is not bashing ExLibris as a company the purpose of this presentation is to bring in some new ideas while using the current Primo platform and UI, but trying to optimize the user experience as much as we can within the constraints of the project.
 
 ----
-## The Problem
-
-Does not follow web design best practices:
+## The problem with the default.
 
 <ul>
-  <li class="fragment">Scalable</li>
-  <li class="fragment">Modular</li>
-  <li class="fragment">Semeantic</li>
-  <li class="fragment">Preformanace</li>
-  <li class="fragment">Responsive</li>
+  <li class="fragment">Not
+    <ul>
+      <li class="fragment">Scalable</li>
+      <li class="fragment">Modular</li>
+      <li class="fragment">Semantic</li>
+      <li class="fragment">Performanent</li>
+      <li class="fragment">Responsive</li>
+    </ul>
+  </li>
 </ul>
 
 Note:
-* Scalabale the code is not scalable.
+* Scalable the code is not scalable in the sense 
 
 ----
 
@@ -49,7 +66,7 @@ Note:
 
 ### Web Standards
 
-![Screen shot of source HTML hightlighting two DIV elements with matching ID attributes](img-src/duplicate-ids.png)
+![Screen shot of source HTML highlighting two DIV elements with matching ID attributes](img-src/duplicate-ids.png)
 Note: Simple issues like using duplicate IDs in the HTML markup create a barrier for primo adopting institutions to be able to tailor their experience to their users.
 ----
 
@@ -60,7 +77,7 @@ Note: Simple issues like using duplicate IDs in the HTML markup create a barrier
 
 
 ----
-## The Contstraints
+## The Constraints
 
 ----
 ### `<HTML/>`
