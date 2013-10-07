@@ -1,5 +1,5 @@
 <h1>
-  <img src="/img-src/scholar-one-search.svg" alt="Scholar OneSearch"/>
+  <img src="img-src/scholar-one-search.svg" alt="Scholar OneSearch"/>
 </h1>
 
 *Tackling the Primo user experience.*
@@ -26,7 +26,7 @@ Note: Northeastern University Librares is not bashing ExLibris as a company the 
 ----
 ## About Scholar OneSearch
 
-![Screen shot of Scholar OneSearch with results from a search for 'genetics'](/img-src/screenshot-sos-search.png "Scholar OneSearch")
+![Screen shot of Scholar OneSearch with results from a search for 'genetics'](img-src/screenshot-sos-search.png "Scholar OneSearch")
 
 Note:
 >With the launch of Alma on July 1, 2013, Northeastern University Libraries introduced the new Scholar OneSearch, a Primo installation featuring responsive and user-friendly design.
@@ -35,19 +35,19 @@ Note:
 
 ---
 #### Updated components
-![Screen shot of scholar onesearch showing a redesigned modal](/img-src/sos-modal.png)
+![Screen shot of scholar onesearch showing a redesigned modal](img-src/sos-modal.png)
 Note:
 ---
 #### Use of iconography
 
-![Screen shot of Scholar OneSearch showing the e-shelf view enhanced with icons to help convey meaning](/img-src/sos-e-bookshelf.png)
+![Screen shot of Scholar OneSearch showing the e-shelf view enhanced with icons to help convey meaning](img-src/sos-e-bookshelf.png)
 ---
 
 #### Responsive Design
-![Screen shot of scholar onesearch on a smaller screen](/img-src/sos-smallscreen.png)
+![Screen shot of scholar onesearch on a smaller screen](img-src/sos-smallscreen.png)
 ---
 #### Added Features
-![Screen shot of scholar onesearch's report a problem buttonn](/img-src/report-a-problem.png)
+![Screen shot of scholar onesearch's report a problem buttonn](img-src/report-a-problem.png)
 ----
 
 ## The problem with the default.
