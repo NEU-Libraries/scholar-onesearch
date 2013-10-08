@@ -21,33 +21,9 @@ http://neu-libraries.github.io/scholar-onesearch
 ![Boy bulling other children by kicking soccer ball onto a metal soccer where the other children are hiding for protection ""](img-src/bully.jpg)
 
 <cite>[Flickr/trixer](http://www.flickr.com/photos/trixer/3531445744)</cite>
+
 Note: Northeastern University Librares is not bashing ExLibris as a company the purpose of this presentation is to bring in some new ideas while using the current Primo platform and UI, but trying to optimize the user experience as much as we can within the constraints of the project.
 
-----
-## About Scholar OneSearch
-
-![Screen shot of Scholar OneSearch with results from a search for 'genetics'](img-src/screenshot-sos-search.png "Scholar OneSearch")
-
-Note:
->With the launch of Alma on July 1, 2013, Northeastern University Libraries introduced the new Scholar OneSearch, a Primo installation featuring responsive and user-friendly design.
-
->Scholar OneSearch also improves upon some of the features in the standard Primo release, including a reorganized page header, collapsable facets in the left-hand “refine my results” sidebar, and integrated feedback into each search result.
-
----
-#### Updated components
-![Screen shot of scholar onesearch showing a redesigned modal](img-src/sos-modal.png)
-Note:
----
-#### Use of iconography
-
-![Screen shot of Scholar OneSearch showing the e-shelf view enhanced with icons to help convey meaning](img-src/sos-e-bookshelf.png)
----
-
-#### Responsive Design
-![Screen shot of scholar onesearch on a smaller screen](img-src/sos-smallscreen.png)
----
-#### Added Features
-![Screen shot of scholar onesearch's report a problem buttonn](img-src/report-a-problem.png)
 ----
 
 ## The problem with the default.
@@ -60,7 +36,9 @@ Note:
       <li class="fragment">Semantic</li>
       <li class="fragment">Performanent</li>
       <li class="fragment">Responsive</li>
+      <li class="fragment">Inflexible</li>
       <li class="fragment">Not Retina Ready</li>
+      
     </ul>
   </li>
 </ul>
@@ -103,14 +81,24 @@ Note: If the default CSS is structured in such a way that you need to override t
   {* html #exliGreyOverlay iframe} 
   AND {* html #exliLoadingFdb iframe} share 12 rules
 ```
+
 **Don't repeat yourself**
 
 ---
 
 ### Semantic
+
 ![Screen shot of source HTML highlighting two DIV elements with matching ID attributes](img-src/duplicate-ids.png)
 
-Note: Simple issues like using duplicate IDs in the HTML markup create a barrier for primo adopting institutions to be able to tailor their experience to their users.
+Note: Simple issues like using duplicate IDs in the HTML markup create a barrier for Primo adopting institutions to be able to tailor their experience to their users.
+
+--- 
+
+### Semantic CSS
+
+![CSS Lint - CSS Ling found 28 errors and 1549 warnings. How can we fix it? See the details below.](img-src/css-issues.png)
+    
+Note:
 
 ---
 
@@ -119,32 +107,129 @@ Note: Simple issues like using duplicate IDs in the HTML markup create a barrier
 <iframe width="1280" height="720" src="//www.youtube.com/embed/I2MJiJxGQsY" frameborder="0" allowfullscreen data-autoplay class="stretch"></iframe>
 
 ---
+
 ### Responsive Design
 
+*Well sort of*
+
 ![Responsive animation of how the default design changes per the screen size.](img-src/responsive-layouts.gif)
+
+There are really only two breakpoints in the design.
+
+Note:
+
+---
+
+### Inflexible
+
+What if you don't want all of primo's features?
+
+```css
+/* Removing location tab using CSS */
+.EXLTabsRibbon div li.EXLLocationsTab {
+  display:none
+}
+
+```
+
+---
+
+### Retina Ready
+
+![Screen shots comparing pixilated logos and icons versus vector basesd images.](img-src/retina-images.png)
+
 ----
 
-### The CSS
-
-![CSS Lint - CSS Ling found 28 errors and 1549 warnings. How can we fix it? See the details below.](img-src/css-issues.png)
-    
-----
-
-### Web Standards
-
-
-
-### Usability
-
-----
-### ~~Responsive~~ Web Design
+## About Scholar OneSearch
 
 
 ----
-## The Constraints
+
+### Our Previous process
+
+Business as Usual
+* Overriding with specificity
+* Not using a CSS preprocessor
+* Little inclusion of client-side JS
+
+--- 
+
+### Results
+
+
+<div class="fragment fade-in">
+    ![Screen shot of the first user interface released, it is showing a user interface that is almost identical to the default look and feel](img-src/pre-sos-screenshot.png)
+</div>
+<p class="fragment fade-in">
+  No real  advantage over the default styles.
+</p>
+
+Note: The minute changes made in the design to help make the Primo interface match our organization's needs and identity  were not only ineffective but painstaking to take time to override the icon clad and ill crafted styles.
+
+
 
 ----
-### `<HTML/>`
+## The First Release
+
+## The Process
+
+Reevaluated and included some contributed libraries:
+- [Bootstrap](http://getbootstrap.com/)
+- [LESS - CSS Preprocessor](http://lesscss.org/)
+- [Font-Awesome Icon Font](http://fontawesome.io/)
+- [jQuery](http://jquery.com/)
+- [Modernizr](http://modernizr.com/)
+
+
+
+
+### Tools Used
+
+![Screen shot of Scholar OneSearch with results from a search for 'genetics'](img-src/screenshot-sos-search.png "Scholar OneSearch")
+
+Note:
+>With the launch of Alma on July 1, 2013, Northeastern University Libraries introduced the new Scholar OneSearch, a Primo installation featuring responsive and user-friendly design.
+
+>Scholar OneSearch also improves upon some of the features in the standard Primo release, including a reorganized page header, collapsable facets in the left-hand “refine my results” sidebar, and integrated feedback into each search result.
+
+---
+
+### Updated components
+
+![Screen shot of scholar onesearch showing a redesigned modal](img-src/sos-modal.png)
+
+Note:
+
+---
+
+### Use of iconography
+
+![Screen shot of Scholar OneSearch showing the e-shelf view enhanced with icons to help convey meaning](img-src/sos-e-bookshelf.png)
+
+---
+
+### Responsive Design
+
+![Screen shot of scholar onesearch on a smaller screen](img-src/sos-smallscreen.png)
+
+---
+
+### Added Features
+
+![Screen shot of scholar onesearch's report a problem buttonn](img-src/report-a-problem.png)
+
+---
+
+- `Primo_default.3.0.css` + `bootstrap.css` + `additional-styles.css` = BIGGER Problem
+
+
+
+
+
+--- 
+
+### Res
+
 
 ----
 ### JavaScript
