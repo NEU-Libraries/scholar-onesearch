@@ -4,9 +4,9 @@
 
 *Tackling the Primo user experience.*
 
-#### [Northeastern University, Universtiy Libraries](http://library.northeastern.edu)
+### [Northeastern University Libraries](http://library.northeastern.edu)
 
-##### Steven Bassett - [@bassettsj](http://twitter.com/bassettsj)
+#### Steven Bassett - [@bassettsj](http://twitter.com/bassettsj)
 
 ----
 
@@ -22,25 +22,20 @@ http://neu-libraries.github.io/scholar-onesearch
 
 <cite>[Flickr/trixer](http://www.flickr.com/photos/trixer/3531445744)</cite>
 
-Note: Northeastern University Librares is not bashing ExLibris as a company the purpose of this presentation is to bring in some new ideas while using the current Primo platform and UI, but trying to optimize the user experience as much as we can within the constraints of the project.
+Note: Northeastern University Libraries is not bashing ExLibris as a company the purpose of this presentation is to bring in some new ideas while using the current Primo platform and UI, but trying to optimize the user experience as much as we can within the constraints of the project.
 
 ----
 
-## The problem with the default.
+### The default "Front-End" is not ###
 
 <ul>
-  <li class="fragment">Not
-    <ul>
-      <li class="fragment">Scalable</li>
-      <li class="fragment">Modular</li>
-      <li class="fragment">Semantic</li>
-      <li class="fragment">Performanent</li>
-      <li class="fragment">Responsive</li>
-      <li class="fragment">Inflexible</li>
-      <li class="fragment">Not Retina Ready</li>
-      
-    </ul>
-  </li>
+  <li class="fragment">Scalable</li>
+  <li class="fragment">Modular</li>
+  <li class="fragment">Semantic</li>
+  <li class="fragment">Performant</li>
+  <li class="fragment">Responsive</li>
+  <li class="fragment">Flexible</li>
+  <li class="fragment">Retina Ready</li>
 </ul>
 
 Note:
@@ -65,7 +60,7 @@ Scalable the code is not scalable in the sense
 ```
 
 **Don't do this!**
-Note: If the default CSS is structured in such a way that you need to override the style of elements with such long selectors, it restricts an organization from extending and adding features as the Primo implemention grows.
+Note: If the default CSS is structured in such a way that you need to override the style of elements with such long selectors, it restricts an organization from extending and adding features as the Primo implementation grows.
 
 ---
 
@@ -120,17 +115,24 @@ Note:
 
 ---
 
-### Inflexible
+### Flexible
 
-What if you don't want all of primo's features?
+What if you don't want all of to change the primary color in the design?
 
-```css
-/* Removing location tab using CSS */
-.EXLTabsRibbon div li.EXLLocationsTab {
-  display:none
-}
+![screen shot showing the search bar with an orange button](img-src/default-flexibility.png)
+
 
 ```
+ Search for "#e87107"
+ ....
+ 1797: .EXLMyAccountMainContainer form input.submit { 
+        background-color:#e87107;  
+      }
+ .... 
+
+38 matches across 4 files
+```
+
 
 ---
 
@@ -195,13 +197,13 @@ Reevaluated and included some contributed libraries:
 Note:
 >With the launch of Alma on July 1, 2013, Northeastern University Libraries introduced the new Scholar OneSearch, a Primo installation featuring responsive and user-friendly design.
 
->Scholar OneSearch also improves upon some of the features in the standard Primo release, including a reorganized page header, collapsable facets in the left-hand “refine my results” sidebar, and integrated feedback into each search result.
+>Scholar OneSearch also improves upon some of the features in the standard Primo release, including a reorganized page header, collapsible facets in the left-hand “refine my results” sidebar, and integrated feedback into each search result.
 
 ---
 
 ### Use of iconography
 
-![Screen shot of Scholar OneSearch showing the e-shelf view enhanced with icons to help convey meaning](img-src/sos-e-bookshelf.png)
+![Screen shot of Scholar OneSearch showing the e-shelf view enhanced with icons to help convey meaning ](img-src/sos-e-bookshelf.png)
 
 ---
 
@@ -367,7 +369,7 @@ Test for support and load fixes, eg [`respond.js`](https://github.com/scottjehl/
 
 [![Grunt logo of a wart hog](img-src/grunt-logo.svg)](http://gruntjs.com/)
 
----
+
 
 ### Tasks ✔
 
@@ -423,15 +425,29 @@ If your interested in this project, [star it, fork it and/or use it][sos-gh-page
 
 ----
 
+### Solutions for Ex Libris ###
+
+* Base theme, *not* a complete theme.
+* Provide CSS in a pre-processor format for flexibility.
+* [Scalable and Modular Architecture for CSS ](http://smacss.com/).
+* Allow for user contributions and suggestions directly, similar to github.
+
+----
+
 ### Further Resources
 
 * Bootstrap 3.x
 * LESS
 * CSS Lint
 * JShint
-* Scalable and Modular CSS
+* Scalable and Modular Architecture for CSS
 * Responsive Design
 * Modernizr
 * Respond.js
 * Grunt.js Task Runner
 * Learn jQuery
+
+
+----
+
+
