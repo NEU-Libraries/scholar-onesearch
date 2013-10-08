@@ -369,7 +369,7 @@ Test for support and load fixes, eg [`respond.js`](https://github.com/scottjehl/
 
 [![Grunt logo of a wart hog](img-src/grunt-logo.svg)](http://gruntjs.com/)
 
-
+---
 
 ### Tasks ✔
 
