@@ -21,9 +21,9 @@
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Lato', sans-serif;
-$mainColor: #000;
-$headingFont: 'News Cycle', Impact, sans-serif;
-$headingColor: #000;
+$mainColor: #2c3e50;//#000;
+$headingFont: $mainFont;//'News Cycle', Impact, sans-serif;
+$headingColor: $mainColor;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;

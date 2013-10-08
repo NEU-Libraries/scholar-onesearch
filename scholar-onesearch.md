@@ -190,20 +190,12 @@ Reevaluated and included some contributed libraries:
 
 ### The Results
 
-![Screen shot of Scholar OneSearch with results from a search for 'genetics'](img-src/screenshot-sos-search.png "Scholar OneSearch")
+![Screen shot of Scholar OneSearch with results from a search for 'genetics'](img-src/sos-v1-results.png "Scholar OneSearch")
 
 Note:
 >With the launch of Alma on July 1, 2013, Northeastern University Libraries introduced the new Scholar OneSearch, a Primo installation featuring responsive and user-friendly design.
 
 >Scholar OneSearch also improves upon some of the features in the standard Primo release, including a reorganized page header, collapsable facets in the left-hand “refine my results” sidebar, and integrated feedback into each search result.
-
----
-
-### Updated components
-
-![Screen shot of scholar onesearch showing a redesigned modal](img-src/sos-modal.png)
-
-Note:
 
 ---
 
@@ -228,18 +220,25 @@ Note:
 
 ## Evaluating the Result
 
-* `Primo_default.3.0.css` + `bootstrap.css` + `additional-styles.css` = BIGGER Problem
-* Bloating the page weight
-* Much of the new theme is used to "de-suck" the original design.
-
+* Pros
+  * _More_ responsive
+  * Updated Iconography
+  * Closer to the Northeastern brand
+  * Modern feel
+  * Issue reporting
+* Cons
+  * Greater complexity in CSS
+  * Fatter page weights
+  * Unmaintainable in the long term
 
 ---- 
 
 ## Evaluating the process
 #### Design Smarter, *Not* Harder
-* Adding too much bloat
-* Not enough separation with client libraries
-* Not enough automation in the build process.
+
+* Automate
+* Simplify
+* Organize
 
 ----
 
@@ -251,60 +250,188 @@ Note:
 - `CSS`
 - `application.js`
 
---- 
+----
+
+### Organizing style sheets
+
+```
+less/
+  |-base/
+  |-components/
+  |-legacy/
+  |-library/
+  |-sections/
+  |-utilities/
+  |-vendor/
+  - legacy.less
+  - style.less
+```
+
+Note:
+
+----
+
+###Separate Library Code
+
+* [Bootstrap (3.x)](http://getbootstrap.com)
+* [Font-Awesome (3.2.1)](http://fontawesome.io)
+
+```less
+// Core CSS
+@import "../../bootstrap/less/scaffolding";
+@import "../../bootstrap/less/type";
+//@import "../../bootstrap/less/code";
+```
+
+Note:
+Allowing for upgrading in the future, using a simple git submodule as a way to manage the vendors package. Alternatively could have used another package manager.
+
+- Select what components are needed for the project.
+
+----
+
+### `LESS` Variables and Mixins
+
+```less
+//variables
+@brand-primary:         #CC0000; // Northeastern's Red
+
+//mix-ins
+.EXLResultsTile{
+  .make-lg-column(9); //creating a grid
+}
+```
+
+Customization and time saving utilties.
+Note:
+
+----
+
+### Removing legacy styles progressively
+
+```less
+#exlidSkipToSystemFeedback a:active, #exlidSkipToSystemFeedback a:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin-left: 1em;
+}
 
 
----- 
-Future/Current Release
+// /*-------------topbar-------------*/
+// #exlidHeaderContainer {
+//   height: auto;
+//   width: 100%;
+//   background-color: #FFFFFF;
+// }
+
+```
+Note:
+Blocking out entire sections of the legacy code can be easily managed by using LESS style comments to reduce the complexity of the code.
+
+----
+
+### Organizing Application JavaScript
+
+```js
+var scholarOneSearch = (function(){
+  var reportAProblem = function(){...}; 
+  var init = function(){ ... }; // Initializing functions
+  return {
+    init: init,
+    buildFacetCollapse: buildFacetCollapse
+  };
+})();
+
+window.scholarOneSearch = scholarOneSearch;
+$(document).ready(scholarOneSearch.init);
+```
+<small>[The Module Pattern](http://learn.jquery.com/code-organization/concepts/)</small>
+
+Note:
+Even though the simplicity of the javascript hardly requires much oranization, starting a project that is expected to grow with organization im mind is a great ideas.
+
+----
+
+### Legacy Browser Support
+
+*What about IE7?*
+
+[![Modernizr logo](img-src/modernizr.png)](http://modernizr.com/)
+
+Test for support and load fixes, eg [`respond.js`](https://github.com/scottjehl/Respond)
+
+----
+
+### Automate
+
+[![Grunt logo of a wart hog](img-src/grunt-logo.svg)](http://gruntjs.com/)
+
+---
+
+### Tasks ✔
+
+![Grunt running scripts to minify images, compile CSS and Javascript and then deploy the assets to the staging environment](img-src/grunt-example.png)
+
+----
+
+### Future/Current Release
+ 
+![Screen shot of Scholar OneSearch with results from a search for 'genetics'](img-src/screenshot-sos-search.png "Scholar OneSearch")
 
 
 ---
+
 ### Responsive Design
 
 ![Screen shot of scholar onesearch on a smaller screen](img-src/sos-smallscreen.png)
 
 ---
 
+### Updated components
 
+![Screen shot of scholar onesearch showing a redesigned modal](img-src/sos-modal.png)
 
-----
-### JavaScript
-
-----
-### Legacy CSS
-
+Note:
 
 ----
-## Design Process
+## The future?
 
+<ul>
+  <li class="fragment">Is there a need?</li>
+  <li class="fragment">Collaboration</li>
+  <li class="fragment">Working with Ex Libris</li>
+</ul>
 
-----
-## Tooling
+---
 
-----
-### Bootstrap
+### Is there a need?
 
-----
-### Less CSS
+[![Github animation of a book with a fork being copied](img-src/fork-us.gif)]( https://github.com/NEU-Libraries/scholar-onesearch)
 
-----
-### grunt.js
+If your interested in this project, [star it, fork it and/or use it][sos-gh-page], or you can [let us know.](http://library.northeastern.edu/contact)
 
-----
-### Modernizr
+[sos-gh-page]: https://github.com/NEU-Libraries/scholar-onesearch "Scholar OneSearch Project Page - Github"
 
-----
-### jQuery
+---
 
+### Collaboration
 
-----
-## What was learned
-
-----
-## The Future?
+- Feature parody through tracking changes in primo upgrades.
+- Progressive updates following best practices
+- Even feature additions in the future built in a modular pattern.
 
 ----
-### Community Buy In
 
-----
-### Collaboration to build a new default alternative
+### Further Resources
+
+* Bootstrap 3.x
+* LESS
+* CSS Lint
+* JShint
+* Scalable and Modular CSS
+* Responsive Design
+* Modernizr
+* Respond.js
+* Grunt.js Task Runner
+* Learn jQuery
