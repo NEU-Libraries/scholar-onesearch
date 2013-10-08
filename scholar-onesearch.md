@@ -169,21 +169,30 @@ Note: The minute changes made in the design to help make the Primo interface mat
 
 
 ----
+
 ## The First Release
 
-## The Process
+---
+
+### The Process
+
+* Changes and desires to change the user-experience out-weighed the old process.
+* Looked to tool to fill the gaps
+
+---
+### Tools Used
 
 Reevaluated and included some contributed libraries:
+
 - [Bootstrap](http://getbootstrap.com/)
 - [LESS - CSS Preprocessor](http://lesscss.org/)
 - [Font-Awesome Icon Font](http://fontawesome.io/)
 - [jQuery](http://jquery.com/)
 - [Modernizr](http://modernizr.com/)
 
+---- 
 
-
-
-### Tools Used
+### The Results
 
 ![Screen shot of Scholar OneSearch with results from a search for 'genetics'](img-src/screenshot-sos-search.png "Scholar OneSearch")
 
@@ -218,17 +227,32 @@ Note:
 
 ![Screen shot of scholar onesearch's report a problem buttonn](img-src/report-a-problem.png)
 
----
+---- 
 
-- `Primo_default.3.0.css` + `bootstrap.css` + `additional-styles.css` = BIGGER Problem
-
-
+## Evluating the Result
 
 
+* `Primo_default.3.0.css` + `bootstrap.css` + `additional-styles.css` = BIGGER Problem
+* Bloating the page weight
+* Much of the new theme is used to "de-suck" the original design.
+
+
+---- 
+
+
+### What you can't change
+- `</HTML>`
+- `vendor.js`
+
+### & what can change
+- `CSS`
+- `application.js`
 
 --- 
 
-### Res
+
+
+
 
 
 ----
