@@ -140,14 +140,10 @@ What if you don't want all of primo's features?
 
 ----
 
-## About Scholar OneSearch
-
-
-----
-
 ### Our Previous process
 
 Business as Usual
+
 * Overriding with specificity
 * Not using a CSS preprocessor
 * Little inclusion of client-side JS
@@ -219,9 +215,10 @@ Note:
 
 ### Responsive Design
 
-![Screen shot of scholar onesearch on a smaller screen](img-src/sos-smallscreen.png)
+![Screen shot of animation of the different layouts on smaller screens](img-src/rwd-sos-v1.gif)
 
 ---
+
 
 ### Added Features
 
@@ -229,8 +226,7 @@ Note:
 
 ---- 
 
-## Evluating the Result
-
+## Evaluating the Result
 
 * `Primo_default.3.0.css` + `bootstrap.css` + `additional-styles.css` = BIGGER Problem
 * Bloating the page weight
@@ -239,6 +235,13 @@ Note:
 
 ---- 
 
+## Evaluating the process
+#### Design Smarter, *Not* Harder
+* Adding too much bloat
+* Not enough separation with client libraries
+* Not enough automation in the build process.
+
+----
 
 ### What you can't change
 - `</HTML>`
@@ -251,7 +254,16 @@ Note:
 --- 
 
 
+---- 
+Future/Current Release
 
+
+---
+### Responsive Design
+
+![Screen shot of scholar onesearch on a smaller screen](img-src/sos-smallscreen.png)
+
+---
 
 
 
