@@ -103,23 +103,6 @@
   padding-right: 0.8em;
 }
 
-/*search tabs*/
-
-#exlidSearchRibbon div.EXLSearchTabsContainer {
-  display: block;
-  height: 16px;
-}
-
-/*container height when there are no predefined search tabs*/
-
-#exlidSearchTabs {
-  padding-left: 0em;
-  border: none;
-  float: left;
-  z-index: 100;
-  position: relative;
-}
-
 #exlidSearchTabs {
   padding: 0;
   margin: 0;
@@ -251,20 +234,6 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 
 .EXLResultsListAlmaAz div.EXLREeviewsViewAllLink {
   display: none;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection {
-  width: 39%;
-  float: left;
-  margin-top: 0em;
-  cursor: pointer;
-  border-left: 1px solid #c0c0c0;
-  height: 26px;
-}
-
-* html .EXLSearchFieldRibbonFormSelectedCollection {
-  overflow: hidden;
-  line-height: 200%;
 }
 
 .EXLSearchFieldRibbonFormFields iframe {
@@ -525,15 +494,6 @@ div.EXLResultsContainer div.EXLBrowseResultsTileNoFacets {
 
 div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   display: none;
-}
-
-.EXLSearchFieldRibbonFormSelectedBrowse {
-  width: 20em;
-  float: left;
-  margin-top: 0em;
-  cursor: pointer;
-  border: 1px solid #8FB9D0;
-  height: 26px;
 }
 
 * html .EXLSearchFieldRibbonFormSelectedBrowse {
@@ -4282,12 +4242,6 @@ div.EXLCloseCalendar {
   float: left;
   font-size: 90%;
   padding-left: 0.5em;
-}
-
-label,
-fieldset,
-legend {
-  color: #000000;
 }
 
 .EXLLocationsDataFrame * {

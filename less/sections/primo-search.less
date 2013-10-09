@@ -15,12 +15,16 @@
   width: auto;
   .navbar;
   .navbar-default;
-  div.EXLSearchTabsContainer{
+  .EXLSearchTabsContainer{
     display: none;
   }
-  div.EXLSearchFieldRibbon{
+  .EXLSearchFieldRibbon{
 
-
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
   }
   input{
     .form-control;
@@ -31,7 +35,6 @@
 
   }
   input.submit{
-    width: 100%;
     .btn-info;
     .btn;
 
@@ -44,7 +47,6 @@
       color: @btn-info-color;
     }
   }
-  //
   fieldset{
 
     // width: 100%;
@@ -54,32 +56,33 @@
     .make-lg-column(6);
 
     .make-navbar-form();
+
   }
 }
 .EXLSearchForm .EXLSearchFieldRibbonFormSearchFor{
   padding-right: 0px;
-  width: 60%;
-  @media(max-width: 756px){
-    width: 50%;
-  }
+  //width: 60%;
+  // @media(max-width: 756px){
+  //   width: 50%;
+  // }
 }
 
 
 .EXLSearchFieldRibbonFormFields{
-  width: 88%;
+  //width: 88%;
   height: auto;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection{
   height: auto;
-  width: 40%;
+  // width: 40%;
   height: auto;
   overflow: hidden;
   border-left: none;
   border-right: none;
-  @media(max-width: 756px){
-    width: 50%;
-  }
+  // @media(max-width: 756px){
+  //   width: 50%;
+  // }
   .EXLSearchFieldRibbonFormSelectedCollectionLabel{
     padding-left: 0;
   }
