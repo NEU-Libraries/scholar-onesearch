@@ -17,7 +17,7 @@
 
   .EXLSearchFieldRibbon{
 
-    @media (min-width: 768px) {
+    @media (min-width: @grid-float-breakpoint) {
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle;
@@ -29,7 +29,7 @@
   input,
   #showMoreOptions{
     margin-bottom: 5px;
-    @media (min-width: 768px){
+    @media (min-width: @grid-float-breakpoint){
       margin-bottom: 0;
       &#search_field{
         min-width: 300px;
@@ -37,7 +37,7 @@
     }
   }
   input#search_field{
-    @media (min-width: 768px){
+    @media (min-width: @grid-float-breakpoint){
       min-width: 300px;
     }
   }
@@ -54,16 +54,11 @@
   }
   fieldset{
 
-    // // width: 100%;
-    // .make-xs-column(12);
-    // .make-sm-column(12);
-    // .make-md-column(8);
-    // .make-lg-column(6);
     padding: 10px (@navbar-padding-horizontal * 2 );
     &:extend(.navbar-form);
     &:extend(.navbar-left);
-    @media (min-width: 768px) {
-      padding: 10px @navbar-padding-horizontal;
+    @media (min-width: @grid-float-breakpoint) {
+      padding: 0px @navbar-padding-horizontal;
       .EXLSearchFieldRibbonFormFields,
       .EXLSearchFieldRibbonFormSearchFor,
       #scopesList,
@@ -86,7 +81,7 @@
     .btn;
     .btn-info;
     display: block;
-    @media (min-width: 768px){
+    @media (min-width: @grid-float-breakpoint){
       display: inline-block;
     }
   }
@@ -96,8 +91,7 @@
 .EXLSearchFieldRibbonAdvancedSearchLink,
 .EXLSearchFieldRibbonBrowseSearchLink,
 .EXLSearchFieldRibbonAtoZLink{
-  .make-sm-column(12);
-  .make-md-column(2);
+  display: inline-block;
   a, a.EXLSearchFieldRibbonAdvancedTwoLinks{
     padding: @navbar-padding-vertical @navbar-padding-horizontal;
     color: @navbar-default-link-color;

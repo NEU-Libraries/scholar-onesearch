@@ -11574,7 +11574,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 
 @media (min-width: 768px) {
   #exlidSearchRibbon fieldset {
-    padding: 10px 15px;
+    padding: 0px 15px;
   }
 
   #exlidSearchRibbon fieldset .EXLSearchFieldRibbonFormFields,
@@ -11709,28 +11709,7 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
 .EXLSearchFieldRibbonAdvancedSearchLink,
 .EXLSearchFieldRibbonBrowseSearchLink,
 .EXLSearchFieldRibbonAtoZLink {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media (min-width: 768px) {
-  .EXLSearchFieldRibbonAdvancedSearchLink,
-  .EXLSearchFieldRibbonBrowseSearchLink,
-  .EXLSearchFieldRibbonAtoZLink {
-    float: left;
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .EXLSearchFieldRibbonAdvancedSearchLink,
-  .EXLSearchFieldRibbonBrowseSearchLink,
-  .EXLSearchFieldRibbonAtoZLink {
-    float: left;
-    width: 16.666666666666664%;
-  }
+  display: inline-block;
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink a,
@@ -11982,17 +11961,25 @@ textarea#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   width: auto;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks,
   #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
     position: relative;
-    bottom: 60px;
-    margin-bottom: -60px;
+    bottom: 50px;
+    margin-bottom: -50px;
   }
 }
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks {
-  margin-right: 80px;
+  float: left;
+  margin-left: 25px;
+}
+
+@media (min-width: 992px) {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks {
+    bottom: 90px;
+    margin-bottom: -90px;
+  }
 }
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {

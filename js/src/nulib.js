@@ -196,9 +196,9 @@ var scholarOneSearch = (function(){
         searchString = searchString.replace(/\"/g, '&quot;');
         searchString = searchString.replace(/\'/g, "\\'");
 
-
+        var $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
         //add the worldcat link
-        $('.EXLSearchFieldRibbonFormLinks').append('<div id="WorldCatAdvancedDiv"><a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link">Search Worldcat</a></div>');
+        $('.EXLSearchFieldRibbonFormLinks').append($link);
       }
 
     }else{ //basic search
@@ -208,9 +208,11 @@ var scholarOneSearch = (function(){
         //escape quotes
         searchTerm = searchTerm.replace(/\"/g, '&quot;');
         searchTerm = searchTerm.replace(/\'/g, "\\'");
+        var $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
 
         //add the worldcat links
-        $('.EXLSearchFieldRibbonAdvancedSearchLink').before('<div id="WorldCatBasicDiv"><a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link">Worldcat Search for: ' + searchTerm + ' </a></div>');
+        $('.EXLSearchFieldRibbonAdvancedSearchLink').before($link);
+        $link.wrap('<div class="EXLSearchFieldRibbonAdvancedSearchLink"/>');
 
 
       }
@@ -259,6 +261,7 @@ var scholarOneSearch = (function(){
     $('#draggable').html('<i class="icon-resize-vertical"></i>').find('img').hide();
     $('#demoLibId').before($('#draggable'));
   };
+
 
 
   //Build the page functions.

@@ -41,18 +41,23 @@
       text-indent: 0;
       display: block;
       width: auto;
-      @media (min-width: 1000px) {
+      @media (min-width: @screen-md) {
         position: relative;
-        bottom: 60px;
-        margin-bottom: -60px;
+        bottom: 50px;
+        margin-bottom: -50px;
       }
     } //.EXLSearchFieldRibbonFormLinks,
-    //div.EXLSearchFieldRibbonFormSubmitSearc
+      //div.EXLSearchFieldRibbonFormSubmitSearc
 
 
   .EXLSearchFieldRibbonFormLinks{
-    margin-right: 80px;
-    //style link a bs .nav-link
+    float: left;
+    margin-left: 25px;
+    @media (min-width: @screen-md) {
+      bottom: 90px;
+      margin-bottom: -90px;
+      //style link a bs .nav-link
+    }
     a{
       display: block;
       color: @navbar-default-link-color;
