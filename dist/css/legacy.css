@@ -91,10 +91,6 @@
 
 /*in case there is only one search scope*/
 
-.EXLSearchFieldRibbonFormSubmitSearch {
-  float: left;
-}
-
 #exlidSearchBanner {
   float: right;
   margin-top: 0.5em;
@@ -247,21 +243,6 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   left: 28em;
   display: block;
   height: 3em;
-}
-
-.EXLSearchFieldRibbonFormCollectionsList {
-  float: left;
-  margin-top: 0em;
-  cursor: pointer;
-  width: auto;
-  position: relative;
-  left: 60%;
-  top: 2px;
-  border: 1px solid #c0c0c0;
-  z-index: 1000;
-  background-color: #ffffff;
-  display: block;
-  clear: both;
 }
 
 * html .EXLSearchFieldRibbonFormCollectionsList {

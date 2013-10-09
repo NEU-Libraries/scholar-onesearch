@@ -11,13 +11,10 @@
 
 // Styling as a navbar component.
 #exlidSearchRibbon{
-  float: none;
-  width: auto;
+
   .navbar;
   .navbar-default;
-  .EXLSearchTabsContainer{
-    display: none;
-  }
+
   .EXLSearchFieldRibbon{
 
     @media (min-width: 768px) {
@@ -29,10 +26,20 @@
   input{
     .form-control;
   }
+  input,
+  #showMoreOptions{
+    margin-bottom: 5px;
+    @media (min-width: 768px){
+      margin-bottom: 0;
+      &#search_field{
+        min-width: 300px;
+      }
+    }
+  }
   input#search_field{
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-
+    @media (min-width: 768px){
+      min-width: 300px;
+    }
   }
   input.submit{
     .btn-info;
@@ -40,8 +47,6 @@
 
 
     overflow: hidden;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     &:hover,
     &:focus{
       color: @btn-info-color;
@@ -49,51 +54,41 @@
   }
   fieldset{
 
-    // width: 100%;
-    .make-xs-column(12);
-    .make-sm-column(12);
-    .make-md-column(8);
-    .make-lg-column(6);
-
-    .make-navbar-form();
-
+    // // width: 100%;
+    // .make-xs-column(12);
+    // .make-sm-column(12);
+    // .make-md-column(8);
+    // .make-lg-column(6);
+    padding: 10px (@navbar-padding-horizontal * 2 );
+    &:extend(.navbar-form);
+    &:extend(.navbar-left);
+    @media (min-width: 768px) {
+      padding: 10px @navbar-padding-horizontal;
+      .EXLSearchFieldRibbonFormFields,
+      .EXLSearchFieldRibbonFormSearchFor,
+      #scopesList,
+      .EXLSearchFieldRibbonFormSubmitSearch{
+        display: inline-block;
+      }
+    }
   }
 }
-.EXLSearchForm .EXLSearchFieldRibbonFormSearchFor{
-  padding-right: 0px;
-  //width: 60%;
-  // @media(max-width: 756px){
-  //   width: 50%;
-  // }
-}
 
 
-.EXLSearchFieldRibbonFormFields{
-  //width: 88%;
-  height: auto;
-}
+
 
 .EXLSearchFieldRibbonFormSelectedCollection{
-  height: auto;
-  // width: 40%;
-  height: auto;
-  overflow: hidden;
-  border-left: none;
-  border-right: none;
-  // @media(max-width: 756px){
-  //   width: 50%;
-  // }
+
   .EXLSearchFieldRibbonFormSelectedCollectionLabel{
     padding-left: 0;
   }
   a{
     .btn;
     .btn-info;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-radius: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    display: block;
+    @media (min-width: 768px){
+      display: inline-block;
+    }
   }
 
 }
@@ -115,10 +110,8 @@
 
 .EXLSearchFieldRibbonFormCollectionsList{
   .dropdown-menu;
-  left: 52%;
-  @media(max-width: 756px){
-    left: 10%;
-  }
+  left: initial;
+  top: initial;
 }
 
 

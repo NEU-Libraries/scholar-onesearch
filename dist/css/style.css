@@ -3745,7 +3745,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar-left {
+  .navbar-left,
+  #exlidSearchRibbon fieldset {
     float: left !important;
     float: left;
   }
@@ -3756,7 +3757,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 
-.navbar-form {
+.navbar-form,
+#exlidSearchRibbon fieldset {
   margin-left: -15px;
   margin-right: -15px;
   padding: 10px 15px;
@@ -3800,7 +3802,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar-form {
+  .navbar-form,
+  #exlidSearchRibbon fieldset {
     width: auto;
     border: 0;
     margin-left: 0;
@@ -11213,8 +11216,6 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
 }
 
 #exlidSearchRibbon {
-  float: none;
-  width: auto;
   position: relative;
   z-index: 1000;
   min-height: 50px;
@@ -11369,10 +11370,6 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
   color: #e6e6e6;
 }
 
-#exlidSearchRibbon .EXLSearchTabsContainer {
-  display: none;
-}
-
 @media (min-width: 768px) {
   #exlidSearchRibbon .EXLSearchFieldRibbon {
     display: inline-block;
@@ -11432,9 +11429,27 @@ textarea#exlidSearchRibbon input {
   height: auto;
 }
 
-#exlidSearchRibbon input#search_field {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+#exlidSearchRibbon input,
+#exlidSearchRibbon #showMoreOptions {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  #exlidSearchRibbon input,
+  #exlidSearchRibbon #showMoreOptions {
+    margin-bottom: 0;
+  }
+
+  #exlidSearchRibbon input#search_field,
+  #exlidSearchRibbon #showMoreOptions#search_field {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  #exlidSearchRibbon input#search_field {
+    min-width: 300px;
+  }
 }
 
 #exlidSearchRibbon input.submit {
@@ -11460,8 +11475,6 @@ textarea#exlidSearchRibbon input {
   -o-user-select: none;
   user-select: none;
   overflow: hidden;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 #exlidSearchRibbon input.submit:hover,
@@ -11556,91 +11569,20 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 }
 
 #exlidSearchRibbon fieldset {
-  float: left;
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding: 10px 15px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  padding: 10px 30px;
 }
 
 @media (min-width: 768px) {
   #exlidSearchRibbon fieldset {
-    float: left;
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  #exlidSearchRibbon fieldset {
-    float: left;
-    width: 66.66666666666666%;
-  }
-}
-
-@media (min-width: 1200px) {
-  #exlidSearchRibbon fieldset {
-    float: left;
-    width: 50%;
-  }
-}
-
-@media (min-width: 768px) {
-  #exlidSearchRibbon fieldset .form-group {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
+    padding: 10px 15px;
   }
 
-  #exlidSearchRibbon fieldset .form-control {
+  #exlidSearchRibbon fieldset .EXLSearchFieldRibbonFormFields,
+  #exlidSearchRibbon fieldset .EXLSearchFieldRibbonFormSearchFor,
+  #exlidSearchRibbon fieldset #scopesList,
+  #exlidSearchRibbon fieldset .EXLSearchFieldRibbonFormSubmitSearch {
     display: inline-block;
   }
-
-  #exlidSearchRibbon fieldset .radio,
-  #exlidSearchRibbon fieldset .checkbox {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-
-  #exlidSearchRibbon fieldset .radio input[type="radio"],
-  #exlidSearchRibbon fieldset .checkbox input[type="checkbox"] {
-    float: none;
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  #exlidSearchRibbon fieldset {
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    box-shadow: none;
-  }
-}
-
-.EXLSearchForm .EXLSearchFieldRibbonFormSearchFor {
-  padding-right: 0px;
-}
-
-.EXLSearchFieldRibbonFormFields {
-  height: auto;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollection {
-  height: auto;
-  overflow: hidden;
-  border-left: none;
-  border-right: none;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection .EXLSearchFieldRibbonFormSelectedCollectionLabel {
@@ -11650,6 +11592,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
 .EXLSearchFieldRibbonFormSelectedCollection a {
   display: inline-block;
   padding: 6px 12px;
+  margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.428571429;
@@ -11668,11 +11611,7 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   color: #ffffff;
   background-color: #2c3e50;
   border-color: #233140;
-  margin-top: 0;
-  margin-bottom: 0;
-  border-radius: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  display: block;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a:focus {
@@ -11761,6 +11700,12 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   border-color: #233140;
 }
 
+@media (min-width: 768px) {
+  .EXLSearchFieldRibbonFormSelectedCollection a {
+    display: inline-block;
+  }
+}
+
 .EXLSearchFieldRibbonAdvancedSearchLink,
 .EXLSearchFieldRibbonBrowseSearchLink,
 .EXLSearchFieldRibbonAtoZLink {
@@ -11826,7 +11771,8 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
-  left: 52%;
+  left: initial;
+  top: initial;
 }
 
 .EXLSearchFieldRibbonFormCollectionsList.pull-right {
@@ -11849,12 +11795,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
-}
-
-@media (max-width: 756px) {
-  .EXLSearchFieldRibbonFormCollectionsList {
-    left: 10%;
-  }
 }
 
 #exlidAdvancedSearchTile {
