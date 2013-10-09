@@ -9699,6 +9699,490 @@ a[title="show send to options"] img {
   padding-left: 0;
 }
 
+body.EXLQueryEditlayout.query {
+  background-color: #e9e8e5;
+}
+
+body.EXLQueryEditlayout.query table {
+  font-size: inherit;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-color: #dddddd;
+}
+
+body.EXLQueryEditlayout.query table > .list-group {
+  margin-bottom: 0;
+}
+
+body.EXLQueryEditlayout.query table > .list-group .list-group-item {
+  border-width: 1px 0;
+}
+
+body.EXLQueryEditlayout.query table > .list-group .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+body.EXLQueryEditlayout.query table > .list-group .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+body.EXLQueryEditlayout.query table > .table,
+body.EXLQueryEditlayout.query table > .table-responsive {
+  margin-bottom: 0;
+}
+
+body.EXLQueryEditlayout.query table > .panel-body + .table,
+body.EXLQueryEditlayout.query table > .panel-body + .table-responsive {
+  border-top: 1px solid #dddddd;
+}
+
+body.EXLQueryEditlayout.query table > .table-bordered,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered {
+  border: 0;
+}
+
+body.EXLQueryEditlayout.query table > .table-bordered > thead > tr > th:first-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > thead > tr > th:first-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tbody > tr > th:first-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tfoot > tr > th:first-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+body.EXLQueryEditlayout.query table > .table-bordered > thead > tr > td:first-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > thead > tr > td:first-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tbody > tr > td:first-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tfoot > tr > td:first-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+
+body.EXLQueryEditlayout.query table > .table-bordered > thead > tr > th:last-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > thead > tr > th:last-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tbody > tr > th:last-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tfoot > tr > th:last-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+body.EXLQueryEditlayout.query table > .table-bordered > thead > tr > td:last-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > thead > tr > td:last-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tbody > tr > td:last-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+body.EXLQueryEditlayout.query table > .table-bordered > tfoot > tr > td:last-child,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+
+body.EXLQueryEditlayout.query table > .table-bordered > thead > tr:last-child > th,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > thead > tr:last-child > th,
+body.EXLQueryEditlayout.query table > .table-bordered > tbody > tr:last-child > th,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+body.EXLQueryEditlayout.query table > .table-bordered > tfoot > tr:last-child > th,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+body.EXLQueryEditlayout.query table > .table-bordered > thead > tr:last-child > td,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > thead > tr:last-child > td,
+body.EXLQueryEditlayout.query table > .table-bordered > tbody > tr:last-child > td,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+body.EXLQueryEditlayout.query table > .table-bordered > tfoot > tr:last-child > td,
+body.EXLQueryEditlayout.query table > .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+  border-bottom: 0;
+}
+
+body.EXLQueryEditlayout.query table > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+
+body.EXLQueryEditlayout.query table > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
+}
+
+body.EXLQueryEditlayout.query table > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #dddddd;
+}
+
+body.EXLQueryEditlayout.query .EXLPopupTitleBar {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-color: #dddddd;
+  background-color: #f5f5f5;
+}
+
+body.EXLQueryEditlayout.query h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: 24px;
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+body.EXLQueryEditlayout.query h2 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+body.EXLQueryEditlayout.query h2 > a {
+  color: inherit;
+}
+
+body.EXLQueryEditlayout.query .whatis {
+  width: auto;
+  display: inline-block;
+}
+
+body.EXLQueryEditlayout.query .whatis a {
+  color: #555555;
+}
+
+body.EXLQueryEditlayout.query #queryName,
+body.EXLQueryEditlayout.query #toEmail,
+body.EXLQueryEditlayout.query input[type="text"] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+body.EXLQueryEditlayout.query #queryName:-moz-placeholder,
+body.EXLQueryEditlayout.query #toEmail:-moz-placeholder,
+body.EXLQueryEditlayout.query input[type="text"]:-moz-placeholder {
+  color: #999999;
+}
+
+body.EXLQueryEditlayout.query #queryName::-moz-placeholder,
+body.EXLQueryEditlayout.query #toEmail::-moz-placeholder,
+body.EXLQueryEditlayout.query input[type="text"]::-moz-placeholder {
+  color: #999999;
+}
+
+body.EXLQueryEditlayout.query #queryName:-ms-input-placeholder,
+body.EXLQueryEditlayout.query #toEmail:-ms-input-placeholder,
+body.EXLQueryEditlayout.query input[type="text"]:-ms-input-placeholder {
+  color: #999999;
+}
+
+body.EXLQueryEditlayout.query #queryName::-webkit-input-placeholder,
+body.EXLQueryEditlayout.query #toEmail::-webkit-input-placeholder,
+body.EXLQueryEditlayout.query input[type="text"]::-webkit-input-placeholder {
+  color: #999999;
+}
+
+body.EXLQueryEditlayout.query #queryName:focus,
+body.EXLQueryEditlayout.query #toEmail:focus,
+body.EXLQueryEditlayout.query input[type="text"]:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+body.EXLQueryEditlayout.query #queryName[disabled],
+body.EXLQueryEditlayout.query #toEmail[disabled],
+body.EXLQueryEditlayout.query input[type="text"][disabled],
+body.EXLQueryEditlayout.query #queryName[readonly],
+body.EXLQueryEditlayout.query #toEmail[readonly],
+body.EXLQueryEditlayout.query input[type="text"][readonly],
+fieldset[disabled] body.EXLQueryEditlayout.query #queryName,
+fieldset[disabled] body.EXLQueryEditlayout.query #toEmail,
+fieldset[disabled] body.EXLQueryEditlayout.query input[type="text"] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+textareabody.EXLQueryEditlayout.query #queryName,
+textareabody.EXLQueryEditlayout.query #toEmail,
+textareabody.EXLQueryEditlayout.query input[type="text"] {
+  height: auto;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] table {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 20px;
+  display: inline-block;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tbody,
+body.EXLQueryEditlayout.query form[name="queryForm"] tr,
+body.EXLQueryEditlayout.query form[name="queryForm"] td {
+  display: inline-block;
+  width: 100%;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tr {
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2),
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) {
+  width: 50%;
+  float: left;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:first-child,
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:first-child {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(2),
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(2),
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(3),
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(3) {
+  display: block;
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(2) label,
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(2) label,
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(3) label,
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(3) label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(2)[disabled],
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(2)[disabled],
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(3)[disabled],
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(3)[disabled],
+fieldset[disabled] body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(2),
+fieldset[disabled] body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(2),
+fieldset[disabled] body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(2) td:nth-child(3),
+fieldset[disabled] body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:nth-child(3) {
+  cursor: not-allowed;
+}
+
+body.EXLQueryEditlayout.query form[name="queryForm"] tr:nth-child(3) td:first-child {
+  height: 21px;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQueryNoResultsTitle {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div,
+body.EXLQueryEditlayout.query .error.EXLHighlightError {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+  color: #c09853;
+  background-image: none;
+}
+
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div h4,
+body.EXLQueryEditlayout.query .error.EXLHighlightError h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div .alert-link,
+body.EXLQueryEditlayout.query .error.EXLHighlightError .alert-link {
+  font-weight: bold;
+}
+
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div > p,
+body.EXLQueryEditlayout.query .error.EXLHighlightError > p,
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div > ul,
+body.EXLQueryEditlayout.query .error.EXLHighlightError > ul {
+  margin-bottom: 0;
+}
+
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div > p + p,
+body.EXLQueryEditlayout.query .error.EXLHighlightError > p + p {
+  margin-top: 5px;
+}
+
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div hr,
+body.EXLQueryEditlayout.query .error.EXLHighlightError hr {
+  border-top-color: #f8e5be;
+}
+
+body.EXLQueryEditlayout.query .EXLQuerySaveMessage > div .alert-link,
+body.EXLQueryEditlayout.query .error.EXLHighlightError .alert-link {
+  color: #a47e3c;
+}
+
+body.EXLQueryEditlayout.query #noResults {
+  widht: 50%;
+}
+
+body.EXLQueryEditlayout.query #noResults td {
+  display: block;
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+body.EXLQueryEditlayout.query #noResults td label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+body.EXLQueryEditlayout.query #noResults td[disabled],
+fieldset[disabled] body.EXLQueryEditlayout.query #noResults td {
+  cursor: not-allowed;
+}
+
+body.EXLQueryEditlayout.query .inner-table tr {
+  width: 50%;
+  float: left;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #16a085;
+  border-color: #138a72;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+  height: auto;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:hover,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:active,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.active {
+  outline: 0;
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.disabled,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit[disabled],
+fieldset[disabled] body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class^="icon-"].icon-large,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class^="icon-"].icon-spin,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class^="icon-"].pull-left.icon-2x,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class*=" icon-"].pull-left.icon-2x,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class^="icon-"].pull-right.icon-2x,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class^="icon-"].icon-spin.icon-large,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:hover,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:focus,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:active,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.active,
+.open .dropdown-togglebody.EXLQueryEditlayout.query .EXLUpdateQuerySubmit {
+  color: #ffffff;
+  background-color: #117c67;
+  border-color: #0c5446;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:active,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.active,
+.open .dropdown-togglebody.EXLQueryEditlayout.query .EXLUpdateQuerySubmit {
+  background-image: none;
+}
+
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.disabled,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit[disabled],
+fieldset[disabled] body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.disabled:hover,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit[disabled]:hover,
+fieldset[disabled] body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:hover,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.disabled:focus,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit[disabled]:focus,
+fieldset[disabled] body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:focus,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.disabled:active,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit[disabled]:active,
+fieldset[disabled] body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit:active,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.disabled.active,
+body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit[disabled].active,
+fieldset[disabled] body.EXLQueryEditlayout.query .EXLUpdateQuerySubmit.active {
+  background-color: #16a085;
+  border-color: #138a72;
+}
+
 .EXLPopup.EXLEmailPopup #mailFormId,
 .EXLPopup.EXLEmailPopup #mailFormId > table {
   position: absolute;

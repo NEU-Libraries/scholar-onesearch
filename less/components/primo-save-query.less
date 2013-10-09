@@ -1,3 +1,110 @@
-body.EXLQueryEditlayout{
-  
+// Save Query Dialog box horrible CSS Overrides
+
+body.EXLQueryEditlayout.query{
+  background-color: @query-edit-background-color;
+  table{
+    font-size: inherit;
+    .panel;
+    .panel-default;
+  }
+
+  //acts as the panel header
+  .EXLPopupTitleBar{
+    .panel-heading;
+    border-bottom-color: @panel-default-border;
+    background-color: @panel-default-heading-bg;
+  }
+
+  // this is the popup title
+  h2{
+    .h3;
+    padding-left: 0;
+    padding-top: 0;
+    .panel-title;
+  }
+  .whatis{
+    width: auto;
+    display: inline-block;
+    a{
+      color:@query-edit-link-color;
+    }
+  }
+  #queryName,
+  #toEmail,
+  input[type="text"]{
+    .form-control;
+  }
+  form[name="queryForm"]{
+    table{
+      width: 100%;
+      height: auto;
+      margin: 0 0 0 0;
+      padding: 20px;
+      display: inline-block;
+    }
+    tbody
+    , tr
+    , td{
+      display: inline-block;
+      width: 100%;
+    }
+    tr{
+      padding: 8px 10px;
+      .form-group;
+      width: 100%;
+      &:nth-child(2),
+      &:nth-child(3){
+        width: 50%;
+        float: left;
+        td{
+          &:first-child{
+            //style like a label;
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+          }
+          &:nth-child(2),
+          &:nth-child(3){
+            .checkbox;
+          }
+        }
+      }
+      //adjusting the height;
+      &:nth-child(3){
+        td:first-child{
+          height: 21px;
+        }
+      }
+    }
+  }
+  .EXLUpdateQueryNoResultsTitle{
+    //style like a label;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .EXLQuerySaveMessage > div,
+  .error.EXLHighlightError{
+    .alert;
+    .alert-warning;
+    background-image: none;
+  }
+  #noResults{
+    widht: 50%;
+    td{
+      .checkbox;
+    }
+  }
+  .inner-table{
+    tr{
+      width: 50%;
+      float: left;
+    }
+  }
+  .EXLUpdateQuerySubmit{
+    .btn;
+    .btn-success;
+    .btn-lg;
+    height: auto;
+  }
 }
