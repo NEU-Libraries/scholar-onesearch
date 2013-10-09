@@ -199,6 +199,7 @@ var scholarOneSearch = (function(){
       }
 
 
+
       if (searchString !== ''){
         //replace space with +
         searchString = searchString.replace(/ /g, '+');
@@ -277,6 +278,12 @@ var scholarOneSearch = (function(){
   };
 
 
+  var handleModals = function(){
+    $('#exliWhiteContent').change(function(){
+      console.log($(this));
+    });
+  }
+
 
   //Build the page functions.
   var init = function(){
@@ -290,6 +297,7 @@ var scholarOneSearch = (function(){
     handleRadio();
     addToolTips();
     worldCatLinks();
+    handleModals();
   };
 
   return {
