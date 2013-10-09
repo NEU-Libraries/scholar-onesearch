@@ -1,9 +1,16 @@
+/*  @file less/legacy-primo-dist-default-3-0.less
+ *
+ *  Reference file autored by ExLibris in their default styling
+ *
+ */
+
 /*!
 * Primo Default Styles v3
 * Copyright 2013 Exlibris, Inc.
 *
-*
 */
+
+/*-------------Primo CSS Document-------------*/
 
 .no_wrap {
   white-space: nowrap;
@@ -22,11 +29,13 @@
   margin-bottom: 0;
 }
 
+/*Skip To Main Content Styles*/
+
 #exlidSkipToContent a,
 #exlidSkipToContent a:hover,
 #exlidSkipToContent a:visited {
   position: absolute;
-  left: 0;
+  left: 0px;
   top: -100px;
   width: 1px;
   height: 1px;
@@ -41,11 +50,13 @@
   margin-left: 1em;
 }
 
+/*Skip To System Message Styles*/
+
 #exlidSkipToSystemFeedback a,
 #exlidSkipToSystemFeedback a:hover,
 #exlidSkipToSystemFeedback a:visited {
   position: absolute;
-  left: 0;
+  left: 0px;
   top: -100px;
   width: 1px;
   height: 1px;
@@ -60,6 +71,16 @@
   margin-left: 1em;
 }
 
+/*-------------MainNav-------------*/
+
+/*---------Languages Nav--------*/
+
+/* ----------Sub Nav Bar---------------*/
+
+/* ----------Embedded Search Box Styles--------------- */
+
+/* ----------Search Ribbon Styles--------------- */
+
 #exlidSearchRibbon legend {
   display: none;
 }
@@ -68,26 +89,32 @@
   width: 98%;
 }
 
+/*in case there is only one search scope*/
+
 .EXLSearchFieldRibbonFormSubmitSearch {
   float: left;
 }
 
 #exlidSearchBanner {
   float: right;
-  margin-top: .5em;
+  margin-top: 0.5em;
   width: auto;
   text-align: right;
-  padding-right: .8em;
+  padding-right: 0.8em;
 }
+
+/*search tabs*/
 
 #exlidSearchRibbon div.EXLSearchTabsContainer {
   display: block;
   height: 16px;
 }
 
+/*container height when there are no predefined search tabs*/
+
 #exlidSearchTabs {
-  padding-left: 0;
-  border: 0;
+  padding-left: 0em;
+  border: none;
   float: left;
   z-index: 100;
   position: relative;
@@ -98,57 +125,48 @@
   margin: 0;
   list-style-type: none;
   float: left;
-  color: #555;
+  color: #555555;
   height: 16px;
   clear: right;
 }
 
 #exlidSearchTabs li {
   float: left;
-  padding-left: 0;
+  padding-left: 0em;
   padding-right: 1.2em;
 }
 
 #exlidSearchTabs li {
-  border: 0 solid #ccc;
-  border-bottom: 0;
+  border: 0px solid #CCCCCC;
+  border-bottom: 0px;
   height: 16px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  padding-left: .8em;
-  padding-right: .8em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   margin-right: 2px;
-  color: #9b9b9b;
+  color: #9B9B9B;
 }
 
 #exlidSearchTabs li.EXLSearchTabSelected {
-  color: #000;
+  color: #000000;
   border: 1px solid #8fb9d0;
   border-bottom: 1px solid #f6f6f6;
-  background-color: #fff;
+  background-color: #FFFFFF;
   height: 15px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_search_tabs.png");
   background-repeat: repeat-x;
   text-align: center;
   font-weight: bold;
   vertical-align: middle;
-  padding-left: .8em;
-  padding-right: .8em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   margin-right: 4px;
   background-color: #f6f6f6;
 }
 
-.EXLSearchFieldRibbonFormFields {
-  float: left;
-  width: 91%;
-  height: 26px;
-}
-
-.EXLSearchFieldRibbonFormSearchFor {
-  float: left;
-  width: 60%;
-}
+/*in case there is only one search scope*/
 
 .EXLSearchFieldRibbonFormSearchForMaximized .EXLSearchFieldRibbonFormSearchFor {
   width: 100%;
@@ -162,6 +180,8 @@
   display: none;
 }
 
+/*for ejournals A-Z search panel*/
+
 div.EXLResultsContainer div.EXLALMAResultsTileNoFacets {
   width: 100%;
 }
@@ -172,12 +192,12 @@ div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
 
 #exlidSearchTile.EXLSearchEJorunals fieldset {
   margin-left: 11em;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
 
 #exlidSearchTile.EXLSearchEJorunals fieldset label {
   position: absolute;
-  margin-top: .5em;
+  margin-top: 0.5em;
   margin-left: -11em;
 }
 
@@ -209,7 +229,7 @@ div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li.EXLSearchEJorunalsListAtoZSelected {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_AtoZ.png");
   background-repeat: no-repeat;
-  background-position: 45% 0;
+  background-position: 45% 0%;
 }
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li a {
@@ -220,13 +240,13 @@ div.EXLALMAResultsTileNoFacets td.EXLThumbnail {
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li a:hover {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_AtoZ.png");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 0%;
 }
 
 div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_AtoZ.png");
   background-repeat: no-repeat;
-  background-position: 45% 0;
+  background-position: 45% 0%;
 }
 
 .EXLResultsListAlmaAz div.EXLREeviewsViewAllLink {
@@ -236,7 +256,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 .EXLSearchFieldRibbonFormSelectedCollection {
   width: 39%;
   float: left;
-  margin-top: 0;
+  margin-top: 0em;
   cursor: pointer;
   border-left: 1px solid #c0c0c0;
   height: 26px;
@@ -245,37 +265,6 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 * html .EXLSearchFieldRibbonFormSelectedCollection {
   overflow: hidden;
   line-height: 200%;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollectionLabel {
-  display: inline-block;
-  height: 100%;
-  padding-left: .5em;
-  width: 100%;
-  overflow: hidden;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollectionLabel a {
-  color: #32322f;
-  display: inline-block;
-  line-height: 210%;
-  width: 100%;
-  height: 100%;
-  background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_open_subMenu.png");
-  background-repeat: no-repeat;
-  background-position: 96% 50%;
-}
-
-* html .EXLSearchFieldRibbonFormSelectedCollectionLabel a {
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 0;
-  height: 23px;
-}
-
-.EXLSearchFieldRibbonFormSelectedCollectionLabel a:hover {
-  text-decoration: none;
 }
 
 .EXLSearchFieldRibbonFormFields iframe {
@@ -293,7 +282,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 
 .EXLSearchFieldRibbonFormCollectionsList {
   float: left;
-  margin-top: 0;
+  margin-top: 0em;
   cursor: pointer;
   width: auto;
   position: relative;
@@ -301,7 +290,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   top: 2px;
   border: 1px solid #c0c0c0;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #ffffff;
   display: block;
   clear: both;
 }
@@ -313,6 +302,8 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   z-index: 999;
 }
 
+/*for ie6*/
+
 #exlidSearchRibbon div.EXLDynamicSelectBodyRadio div {
   line-height: 180%;
   width: 100%;
@@ -321,7 +312,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 }
 
 #exlidSearchRibbon div.EXLDynamicSelectBodyRadio div.EXLDynamicSelectBodyRadioTopBorder {
-  border-top: 1px dashed #ccc;
+  border-top: 1px dashed #cccccc;
   font-weight: bold;
 }
 
@@ -341,7 +332,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   width: 100%;
   white-space: nowrap;
   cursor: pointer;
-  padding-left: .5em;
+  padding-left: 0.5em;
   padding-right: 1.5em;
 }
 
@@ -351,9 +342,13 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 
 .EXLSearchFieldRibbonFormLimitList {
   float: left;
-  margin-top: .1em;
+  margin-top: 0.1em;
   cursor: pointer;
 }
+
+/*----- Advanced Search -----*/
+
+/*Advanced Search Form*/
 
 #exlidAdvancedSearchTile {
   clear: left;
@@ -361,7 +356,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   border-top: 1px solid #adb9c2;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_searchPanel.png");
   background-repeat: repeat-x;
-  padding: 1em 0 1em 0;
+  padding: 1em 0em 1em 0em;
   font-size: 80%;
   height: auto;
   background-color: #f4f7f8;
@@ -369,7 +364,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 }
 
 #exlidAdvancedSearchRibbon fieldset fieldset {
-  padding-left: 0;
+  padding-left: 0em;
   display: block;
 }
 
@@ -381,8 +376,8 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   width: auto;
   border: 1px solid #8fb9d0;
   height: auto;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 100%;
 }
 
@@ -394,8 +389,8 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   width: 20em;
   border: 1px solid #8fb9d0;
   height: 1.5em;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 1em;
 }
 
@@ -403,16 +398,16 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
   float: left;
   width: 39em;
   height: auto;
-  margin-right: 0;
-  padding-left: .5em;
+  margin-right: 0em;
+  padding-left: 0.5em;
 }
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
   float: left;
   width: 34em;
   height: auto;
-  border-left: 1px solid #ccc;
-  margin-left: 0;
+  border-left: 1px solid #cccccc;
+  margin-left: 0em;
 }
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 select {
@@ -435,11 +430,11 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 }
 
 #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow {
-  margin: 0;
+  margin: 0em;
   float: left;
   width: 100%;
-  padding-bottom: .5em;
-  margin-left: .5em;
+  padding-bottom: 0.5em;
+  margin-left: 0.5em;
 }
 
 #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRowHide {
@@ -457,12 +452,14 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormRowInlineInput a {
   display: inline;
   white-space: nowrap;
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
-*:first-child+html #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormRowInlineInput a {
+/*IE7 only hack*/
+
+*:first-child + html #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormRowInlineInput a {
   display: inline;
-  margin-left: .3em;
+  margin-left: 0.3em;
   white-space: normal;
 }
 
@@ -475,7 +472,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 #exlidAdvancedSearchRibbon div.EXLAdvancedSearchFormRow span.EXLAdvancedSearchFormDateRangeRow input {
   width: 4em;
   height: 1.75em;
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: left;
 }
 
@@ -495,27 +492,29 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected {
 }
 
 #exlidAdvancedSearchRibbon input.submit {
-  border: 1px solid #fff;
-  padding: 0;
+  border: 1px solid #ffffff;
+  padding: 0em;
   display: block;
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_orange.png");
   background-repeat: repeat-x;
-  margin: 0;
+  margin: 0em;
   width: 8.5em;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: normal;
   height: 24px;
   cursor: pointer;
 }
 
+/*Browse results styles*/
+
 .EXLResultsHeader h1 {
   color: #8c8c8c;
   font-weight: bold;
   font-size: 80%;
-  padding: 0 0 0 1em;
-  margin: 0;
-  margin-bottom: .2em;
+  padding: 0em 0em 0em 1em;
+  margin: 0px;
+  margin-bottom: 0.2em;
   float: left;
   width: 65%;
 }
@@ -531,9 +530,9 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 .EXLSearchFieldRibbonFormSelectedBrowse {
   width: 20em;
   float: left;
-  margin-top: 0;
+  margin-top: 0em;
   cursor: pointer;
-  border: 1px solid #8fb9d0;
+  border: 1px solid #8FB9D0;
   height: 26px;
 }
 
@@ -542,25 +541,13 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   line-height: 200%;
 }
 
-.EXLSearchFieldRibbonFormBrowseList {
-  float: left;
-  margin-top: 0;
-  cursor: pointer;
-  width: 20em;
-  position: relative;
-  top: 2px;
-  border: 1px solid #c0c0c0;
-  z-index: 1000;
-  background-color: #fff;
-  display: block;
-  clear: both;
-}
-
 * html .EXLSearchFieldRibbonFormBrowseList {
   position: absolute;
   top: 110px;
   z-index: 999;
 }
+
+/*for ie6*/
 
 .EXLSearchFieldRibbonFormSelectedCollectionLabel a.EXLBrowseListnoArrow {
   color: #32322f;
@@ -577,22 +564,24 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   float: left;
   width: 100%;
   overflow: hidden;
-  margin-top: 0;
+  margin-top: 0em;
   height: 23px;
 }
 
+/*for ie6*/
+
 .EXLSearchFieldRibbonFormSelectedLabelBrowse {
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
 #exlidAdvancedSearchRibbon div.EXLBrowseFieldRibbon {
-  background-color: #fff;
+  background-color: #FFFFFF;
   clear: both;
   min-height: 3em;
   border: 1px solid #8fb9d0;
   width: 100%;
-  padding: 1em 1em .5em 1em;
-  margin: 0;
+  padding: 1em 1em 0.5em 1em;
+  margin: 0px;
 }
 
 #exlidAdvancedSearchRibbon div.EXLDynamicSelectOnlyOneScope {
@@ -613,7 +602,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   width: 100%;
   white-space: nowrap;
   cursor: pointer;
-  padding-left: .5em;
+  padding-left: 0.5em;
   padding-right: 1.5em;
 }
 
@@ -626,8 +615,8 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 .EXLAdvancedBrowseRibbon {
-  margin-top: .5em;
-  width: 55em;
+  margin-top: 0.5em;
+  width: 55em /*55em 70%*/;
 }
 
 .EXLAdvancedBrowseRibbon div.EXLDynamicSelectBodyRadio div {
@@ -642,7 +631,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   width: 100%;
   line-height: 210%;
   vertical-align: bottom;
-  padding-left: .6em;
+  padding-left: 0.6em;
 }
 
 .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
@@ -659,19 +648,19 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   clear: left;
   padding-bottom: 1.5em;
   font-size: 80%;
-  padding-left: .3em;
+  padding-left: 0.3em;
 }
 
 .EXLResultsListBrowseLine th {
   padding: 5px 10px 5px 10px;
   text-align: left;
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid #DFDFDF;
 }
 
 .EXLResultsListBrowseLine td {
   padding: 6px 10px 6px 10px;
   text-align: left;
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid #DFDFDF;
 }
 
 .EXLResultsListBrowseLine th.EXLBrowseResultsHeaderHeadingsTitle {
@@ -707,17 +696,17 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 .EXLResultsListBrowseLine td span.EXLBrowseResultsDataHeadingsEntry {
-  color: #0075b0;
-  padding-top: 0;
+  color: #0075B0;
+  padding-top: 0px;
 }
 
 .EXLResultsListBrowseLine td span.EXLBrowseResultsDataHeadingsEntry span.EXlBrowseFirstPhrase {
   padding-right: 1em;
-  color: #32322f;
+  color: #32322F;
 }
 
 .EXLResultsListBrowse span.EXLBrowseResultsDataHeadingsEntry em {
-  color: #000;
+  color: #000000;
 }
 
 .EXLResultsListBrowse span.EXLBrowseResultsDataHeadingsEntry em.EXlBrowseFirstPhrase {
@@ -729,7 +718,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 #exlidBrowseResultsEnteries tr.EXLBrowseZebra {
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
 }
 
 #resultsNumbersTile #exlidBrowseFooterNavigation {
@@ -740,18 +729,22 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   font-size: 80%;
   float: left;
   width: 65%;
-  margin: 0 0 .2em;
+  margin: 0 0 0.2em;
   padding: 0 0 0 1em;
 }
+
+/*Find Databases Styles*/
 
 .EXLformFindDBIframe {
   position: absolute;
   top: 50px;
   left: 25%;
-  background-color: #0f9;
+  background-color: #00FF99;
   z-index: 300;
   background-color: #f4f7f8;
 }
+
+/*iframe*/
 
 #exlidFindDBContainer {
   background-color: #ecf0f3;
@@ -762,12 +755,12 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 
 #exlidFindDBTile {
   clear: left;
-  padding: 0;
+  padding: 0 0 0 0;
   font-size: 80%;
   height: 450px;
   width: 96%;
   border: 1px solid #d4d4d4;
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
 }
@@ -784,21 +777,21 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  -moz-opacity: .6;
-  opacity: .60;
+  -moz-opacity: 0.6;
+  opacity: 0.60;
   filter: alpha(opacity=60);
 }
 
 #exliGreyOverlay {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   width: 100%;
   height: 100%;
-  background-color: #ccc;
+  background-color: #cccccc;
   z-index: 1001;
-  -moz-opacity: .8;
-  opacity: .80;
+  -moz-opacity: 0.8;
+  opacity: 0.80;
   filter: alpha(opacity=80);
 }
 
@@ -814,8 +807,8 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  -moz-opacity: .6;
-  opacity: .60;
+  -moz-opacity: 0.6;
+  opacity: 0.60;
   filter: alpha(opacity=60);
 }
 
@@ -829,7 +822,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 
 .exliLoadingFdbMoreInfo {
   height: 75px;
-  background-color: #fff6d4;
+  background-color: #FFF6D4;
   z-index: 1002;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_loading_find_db.gif");
   background-repeat: no-repeat;
@@ -842,6 +835,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 * html #exliGreyOverlay iframe {
+  /* ie6 hack to enable the lightbox to work*/
   display: block;
   z-index: -1;
   -webkit-filter: mask();
@@ -857,6 +851,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 * html #exliLoadingFdb iframe {
+  /* ie6 hack to enable the lightbox to work*/
   display: block;
   z-index: -1;
   -webkit-filter: mask();
@@ -875,25 +870,35 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   display: none;
 }
 
+/* Do not use the iframe hack when not in ie6*/
+
 #exliLoadingFdb iframe {
   display: none;
 }
 
+/* Do not use the iframe hack when not in ie6*/
+
 * html #exliGreyOverlay {
+  /* ie6 hack to enable the lightbox to work*/
   position: absolute;
 }
 
 * html #exliWhiteContent {
+  /* ie6 hack to enable the lightbox to work*/
   position: absolute;
 }
 
 * html #exlidPleaseWaitContainer {
+  /* ie6 hack to enable the lightbox to work*/
   position: absolute;
 }
 
 * html .exliLoadingFdb {
+  /* ie6 hack to enable the lightbox to work*/
   position: absolute;
 }
+
+/*header*/
 
 .EXLFindDBHeader {
   width: 100%;
@@ -905,19 +910,19 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 .EXLFindDBHeader h1 {
   float: left;
   font-size: 100%;
-  color: #000;
+  color: #000000;
   line-height: 300%;
   padding-left: 1em;
 }
 
 .EXLFindDBHeader div.EXLFindDBHeaderButtons {
-  padding: 0;
+  padding: 0em;
   width: 35%;
   float: right;
   text-align: right;
   height: 18px;
-  padding-top: .8em;
-  margin-right: .5em;
+  padding-top: 0.8em;
+  margin-right: 0.5em;
 }
 
 .EXLFindDBHeader div.EXLFindDBHeaderButtons ul {
@@ -929,7 +934,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   list-style: none;
   float: left;
   height: 18px;
-  border-right: 0 solid #e1e1e1;
+  border-right: 0px solid #e1e1e1;
 }
 
 .EXLFindDBHeader div.EXLFindDBHeaderButtons li span {
@@ -942,7 +947,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 .EXLFindDBHeader div.EXLFindDBHeaderButtons li a {
-  padding: .2em .2em .2em .2em;
+  padding: 0.2em 0.2em 0.2em 0.2em;
   cursor: pointer;
   text-decoration: none;
 }
@@ -968,13 +973,15 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 .EXLFindDBHeader div.EXLFindDBHeaderButtons li a span.EXLFindDBHeaderButtonClose {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_close_tabs.png");
   background-position: center;
-  margin-left: 0;
+  margin-left: 0em;
 }
+
+/*form*/
 
 #exlidFindDBRibbon {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0em;
+  margin-right: 0em;
   clear: left;
 }
 
@@ -982,12 +989,12 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   clear: both;
   min-height: 9em;
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 0 0 0 0;
+  margin: 0px;
 }
 
 #exlidFindDBRibbon fieldset fieldset {
-  padding-left: 0;
+  padding-left: 0em;
   display: block;
 }
 
@@ -999,8 +1006,8 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   width: 7em;
   border: 1px solid #8fb9d0;
   height: auto;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 100%;
 }
 
@@ -1008,8 +1015,8 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   width: 17.5em;
   border: 1px solid #8fb9d0;
   height: 1.5em;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 1em;
 }
 
@@ -1029,8 +1036,8 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   float: left;
   width: 25em;
   height: auto;
-  margin-right: 0;
-  padding-left: .5em;
+  margin-right: 0em;
+  padding-left: 0.5em;
 }
 
 #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1 label {
@@ -1040,7 +1047,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1 span.EXLFindDBCheckbox {
-  padding-top: .5em;
+  padding-top: 0.5em;
   display: inline-block;
 }
 
@@ -1049,8 +1056,8 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   height: auto;
   margin-left: 5em;
   float: left;
-  margin-right: .5em;
-  border: 0;
+  margin-right: 0.5em;
+  border: none;
 }
 
 #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup1 span.EXLFindDBCheckbox label {
@@ -1064,8 +1071,8 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   float: left;
   width: auto;
   height: auto;
-  border-left: 1px solid #ccc;
-  margin-left: 0;
+  border-left: 1px solid #cccccc;
+  margin-left: 0em;
 }
 
 * html #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 {
@@ -1078,6 +1085,7 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 #exlidFindDBRibbon div.EXLFindDBFieldRibbonFormFieldsGroup2 select {
+  /* ie8 and bellow hack to make the select not cut long values*/
   width: 22.3em\9;
   height: 1.7em\9;
 }
@@ -1090,17 +1098,19 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 #exlidFindDBRibbon div.EXLFindDBFormRow {
-  margin: 0;
+  margin: 0em;
   float: none;
   clear: both;
   width: 100%;
-  padding-bottom: .5em;
-  margin-left: .5em;
+  padding-bottom: 0.5em;
+  margin-left: 0.5em;
 }
 
 #exlidFindDBRibbon div.EXLFindDBFormRow fieldset span.EXLFindDBFormRowInlineInput {
   display: inline;
 }
+
+/*submit buttons*/
 
 #exlidFindDBContainer div.EXLFindDBFieldRibbonFormSubmitSearch {
   float: left;
@@ -1120,15 +1130,15 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 #exlidFindDBContainer input.EXLSubmit {
-  border: 1px solid #fff;
-  padding: 0 .5em 0 .5em;
+  border: 1px solid #ffffff;
+  padding: 0em 0.5em 0em 0.5em;
   display: block;
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_orange.png");
   background-repeat: repeat-x;
-  margin: 0;
+  margin: 0em;
   width: auto;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: normal;
   height: 24px;
   cursor: pointer;
@@ -1138,30 +1148,32 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   float: left;
   display: inline;
   border: 1px solid #adb9c2;
-  margin-left: .2em;
+  margin-left: 0.2em;
   clear: none;
 }
+
+/*tabs*/
 
 .EXLFindDBTabsRibbon {
   height: 28px;
   border-bottom: 2px solid #f4762d;
-  padding: 0;
+  padding: 0px;
   padding-top: 2.5em;
-  margin: 0;
-  background-color: #fff;
+  margin: 0 0 0 0;
+  background-color: #FFFFFF;
 }
 
 .EXLFindDBTabsRibbon div {
   width: 90%;
-  margin: 0;
+  margin: 0px;
   clear: left;
   float: left;
-  margin-left: 0;
+  margin-left: 0em;
 }
 
 .EXLFindDBTabsRibbon div ul {
-  margin-left: .8em;
-  margin-bottom: 0;
+  margin-left: 0.8em;
+  margin-bottom: 0em;
 }
 
 .EXLFindDBTabsRibbon div li {
@@ -1173,17 +1185,17 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 .EXLFindDBTabsRibbon div li.EXLFindDBTab {
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  border: 1px solid #CCCCCC;
+  border-bottom: 0px;
   height: 27px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   float: left;
-  padding-left: .2em;
-  padding-right: .2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
   margin-right: 4px;
-  color: #9b9b9b;
+  color: #9B9B9B;
 }
 
 .EXLFindDBTabsRibbon div li.EXLFindDBTab a {
@@ -1205,10 +1217,10 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
   float: left;
   font-weight: bold;
   text-decoration: none;
-  padding-left: .8em;
-  padding-right: .8em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   margin-right: 4px;
-  color: #fff;
+  color: #ffffff;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_orange.png");
   background-repeat: repeat-x;
 }
@@ -1218,23 +1230,27 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 }
 
 .EXLFindDBTabsRibbon div li.EXLFindDBSelectedTab a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .EXLFindDBTabsRibbon div li.EXLFindDBFirstTab {
-  padding-left: 0;
+  padding-left: 0em;
 }
 
 .EXLFindDBTabsRibbon div li.EXLFindDBFirstSelectedTab {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
+
+/*list of databases header*/
 
 #exlidFindDBTile div.EXLFindDBListHeader {
   background-color: #f8f8f8;
   height: 26px;
   border-bottom: 1px solid #e1e1e1;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ffffff;
 }
+
+/*A-Z links*/
 
 div.EXLFindDBListHeaderAtoZ {
   text-align: center;
@@ -1258,38 +1274,45 @@ div.EXLFindDBListHeaderAtoZ li {
 div.EXLFindDBListHeaderAtoZ li.EXLFindDBListHeaderAtoZSelected {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_AtoZ.png");
   background-repeat: no-repeat;
-  background-position: 45% 0;
+  background-position: 45% 0%;
 }
 
 div.EXLFindDBListHeaderAtoZ li a {
   display: inline-block;
+  /*padding:0em 0.48em 0em 0.48em;*/
   width: 1.6em;
 }
 
 div.EXLFindDBListHeaderAtoZ li a:hover {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_AtoZ.png");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 0%;
 }
+
+/*header links*/
 
 #exlidFindDBTile div div.EXLFindDBListHeaderLinks {
   width: auto;
   color: #adb9c2;
-  padding-left: .7em;
+  padding-left: 0.7em;
   line-height: 200%;
 }
 
 #exlidFindDBTile div div.EXLFindDBListHeaderLinks span {
-  padding: .3em;
+  padding: 0.3em;
   width: auto;
 }
+
+/*list of databases container*/
 
 #exlidFindDBTile div.EXLFindDBListContainer {
   height: 179px;
   overflow: auto;
   overflow-x: hidden;
-  margin-top: .1em;
+  margin-top: 0.1em;
 }
+
+/*system feedback*/
 
 #exlidFindDBTile div.EXLFindDBListContainer div.EXLFindDBFeedback {
   width: 100%;
@@ -1301,12 +1324,12 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 }
 
 #exlidFindDBTile div.EXLFindDBListContainer div.EXLFindDBFeedback strong {
-  padding: .5em 1.5em .5em .6em;
+  padding: 0.5em 1.5em 0.5em 0.6em;
   display: block;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
 
@@ -1322,12 +1345,12 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 }
 
 #exlidFindDBTile div.EXLFindDBListContainer div.EXLFindDBFeedbackResults strong {
-  padding: 1em 1.5em 1em .6em;
+  padding: 1em 1.5em 1em 0.6em;
   display: block;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
 
@@ -1335,18 +1358,20 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   display: none;
 }
 
+/*list of databases*/
+
 #exlidFindDBTile div.EXLFindDBList {
   text-align: left;
   width: auto;
   clear: left;
-  padding-top: .5em;
+  padding-top: 0.5em;
   padding-bottom: 1em;
 }
 
 #exlidFindDBTile div.EXLFindDBList div.EXLFindDBListRow {
-  border: 0;
-  padding: .1em 0 .1em 0;
-  margin: 0;
+  border: none;
+  padding: 0.1em 0em 0.1em 0em;
+  margin: 0px;
   display: block;
   clear: both;
   line-height: 150%;
@@ -1366,7 +1391,7 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 #exlidFindDBTile div.EXLFindDBList div.EXLFindDBCheckbox input {
   width: 1em;
   height: 1em;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
 
 #exlidFindDBTile div.EXLFindDBList div.EXLFindDBListTitle {
@@ -1380,8 +1405,10 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 
 #exlidFindDBTile div.EXLFindDBList div.EXLFindDBListTitleNoAccess label span {
   color: #919193;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
+
+/*style for restricted db title*/
 
 #exlidFindDBTile div.EXLFindDBList div.EXLFindDBListShowInfo {
   width: auto;
@@ -1393,7 +1420,7 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   background-color: #fff6d4;
   border-top: 1px solid #f5e1b8;
   border-bottom: 1px solid #f5e1b8;
-  padding: .2em 2em .5em 3em;
+  padding: 0.2em 2em 0.5em 3em;
 }
 
 #exlidFindDBTile div.EXLFindDBList div.EXLFindDBListInfo p strong {
@@ -1409,6 +1436,8 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   vertical-align: bottom;
   max-height: 1.5em;
 }
+
+/*sets*/
 
 .selectedSet {
   background-color: #fff899;
@@ -1445,7 +1474,7 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 }
 
 #exlidFindDBContainer #exlidNewSetCreation {
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 #exlidFindDBContainer #exlidSubmitNewSet {
@@ -1462,11 +1491,11 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 }
 
 #AddToSet ul {
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
   display: block;
   clear: both;
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding-left: 2em;
   list-style-type: none;
   position: absolute;
@@ -1483,7 +1512,7 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   height: 178px;
   overflow: hidden;
   overflow-x: hidden;
-  margin-top: .1em;
+  margin-top: 0.1em;
   border-right: 1px solid #e1e1e1;
 }
 
@@ -1493,68 +1522,70 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   height: 154px;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin-top: .1em;
+  margin-top: 0.1em;
 }
 
 #exlidFindDBTile div.EXLFindDBListContainerMyDatabases div.EXLFindDBListContainer div.EXLFindDBList div.EXLFindDBListTitle {
   width: 84%;
 }
 
+/*list of sets*/
+
 #exlidFindDBTile div.EXLFindDBSets {
   text-align: left;
   width: auto;
   clear: left;
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
   height: 100%;
   overflow: auto;
 }
 
 #exlidFindDBTile div.EXLFindDBSets ul {
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
   display: block;
   clear: both;
 }
 
 #exlidFindDBTile div.EXLFindDBSets ul li {
   list-style-type: none;
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid #e1e1e1;
-  padding: .3em .5em .3em .5em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
   clear: left;
 }
 
+/*white-space: -moz-pre-wrap; /* Mozilla, since 1999
+   white-space: -pre-wrap; /* Opera 4-6
+    white-space: -o-pre-wrap; /* Opera 7
+    word-wrap: break-word; 
 #exlidFindDBTile div.EXLFindDBSets ul li a {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
-
 #exlidFindDBTile div.EXLFindDBSets ul li.EXLFindDBSetsTitleSelected {
   background-color: #fff6d4;
 }
-
 #exlidFindDBTile div.EXLFindDBSets ul li strong {
   white-space: pre-wrap;
   display: block;
 }
-
 #exlidFindDBTile div.EXLFindDBSets ul li em {
   color: #f4762d;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
-
 #exlidFindDBTile div.EXLFindDBSets ul li span {
   font-size: 90%;
 }
-
 #exlidFindDBTile div.EXLFindDBSets ul li a.EXLFindDBSetsTitleDelete {
-  margin-right: .1em;
+  margin-right: 0.1em;
   margin-top: -1em;
-  border: 0 solid red;
+  border: 0px solid red;
   float: right;
   clear: right;
 }
+/*list of databases header*/
 
 .EXLFindDBMyDatabasesHeaderContainer {
   width: 100%;
@@ -1565,15 +1596,15 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   background-color: #f8f8f8;
   height: 26px;
   border-bottom: 1px solid #e1e1e1;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ffffff;
   width: 80%;
   float: left;
-  color: #000;
+  color: #000000;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeader div.EXLFindDBEditSetHeaderContent {
   width: auto;
-  color: #000;
+  color: #000000;
   padding-left: 1em;
   line-height: 200%;
   border-right: 1px solid #e1e1e1;
@@ -1583,8 +1614,8 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   width: 17.5em;
   border: 1px solid #8fb9d0;
   height: 1.5em;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 1em;
   margin-right: 1em;
 }
@@ -1609,10 +1640,10 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   border: 1px solid #cbcbcb;
   position: relative;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #FFFFFF;
   left: 21.5em;
-  padding-left: .4em;
-  padding-top: .5em;
+  padding-left: 0.4em;
+  padding-top: 0.5em;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeader div.EXLFindDBEditSetHeaderContent div.EXLFindDBEditSetHeaderNoteHide {
@@ -1623,25 +1654,25 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   width: 240px;
   background-color: #fff6d4;
   border: 1px solid #f5e1b8;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
   font-family: Arial;
   font-size: 1em;
-  padding: .2em;
+  padding: 0.2em;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBSetsHeader {
   background-color: #f8f8f8;
   height: 26px;
   border-bottom: 1px solid #e1e1e1;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ffffff;
   width: 20%;
   float: left;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBSetsHeader div.EXLFindDBListHeaderTitle {
   width: auto;
-  color: #000;
-  padding-left: .7em;
+  color: #000000;
+  padding-left: 0.7em;
   line-height: 200%;
   border-right: 1px solid #e1e1e1;
 }
@@ -1650,16 +1681,18 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   font-weight: normal;
 }
 
+/*add to set*/
+
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent span.EXLFindDBEditSetHeaderAddtoSet {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_facet_arrow_open.png");
   background-repeat: no-repeat;
   background-position: 90% 50%;
   padding-right: 1.8em;
   border: 1px solid #bdbcbd;
-  background-color: #fff;
-  padding-left: .5em;
-  padding-top: .1em;
-  padding-bottom: .1em;
+  background-color: #FFFFFF;
+  padding-left: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent div.EXLFindDBEditSetHeaderAddtoSetEdit {
@@ -1669,8 +1702,8 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   border: 1px solid #cbcbcb;
   position: relative;
   z-index: 999;
-  background-color: #fff;
-  left: 0;
+  background-color: #FFFFFF;
+  left: 0em;
   top: -0.3em;
   background-color: #f8f8f8;
 }
@@ -1682,19 +1715,19 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent div.EXLFindDBEditSetHeaderAddtoSetEdit legend {
   float: left;
   width: 100%;
-  color: #000;
+  color: #000000;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent div.EXLFindDBEditSetHeaderAddtoSetEdit legend span {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-weight: bold;
-  padding-left: 0;
+  padding-left: 0em;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent div.EXLFindDBEditSetHeaderAddtoSetEdit fieldset.EXLMyDBExistingSet {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid #ebebeb;
-  background-color: #fff;
+  background-color: #ffffff;
   clear: left;
 }
 
@@ -1702,9 +1735,9 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   float: left;
   clear: left;
   width: 1em;
-  padding: 0;
-  margin-left: .5em;
-  border: 0;
+  padding: 0em;
+  margin-left: 0.5em;
+  border: none;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent div.EXLMyDBSelectSet label {
@@ -1713,20 +1746,20 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent div.EXLMyDBSelectSet label em {
-  color: #f4762d;
-  letter-spacing: .1em;
+  color: #F4762D;
+  letter-spacing: 0.1em;
   font-weight: normal;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent fieldset.EXLMyDBNewSet {
-  margin: 0;
-  padding: 0;
+  margin: 0em;
+  padding: 0em;
   margin-bottom: 1em;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent fieldset.EXLMyDBNewSet div.EXLMyDBCreateSet {
-  border: 0 solid #ccc;
-  margin-left: .5em;
+  border: 0px solid #cccccc;
+  margin-left: 0.5em;
 }
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent fieldset.EXLMyDBNewSet div.EXLMyDBCreateSet input.EXLMyDBCreateSetTitle {
@@ -1737,10 +1770,12 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 
 .EXLFindDBMyDatabasesHeaderContainer div.EXLFindDBEditSetHeaderContent fieldset.EXLMyDBNewSet div.EXLMyDBCreateSet input.EXLSubmit {
   left: -1em;
-  left: 0;
+  left: 0em;
   position: relative;
   vertical-align: text-top;
 }
+
+/* Citation Linker styles */
 
 #exlidCitationLinkerContainer {
   background-color: #ecf0f3;
@@ -1751,12 +1786,12 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 
 #exlidCitationLinkerTile {
   clear: left;
-  padding: 0;
+  padding: 0 0 0 0;
   font-size: 80%;
   height: auto;
   width: 96%;
   border: 1px solid #d4d4d4;
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1773,14 +1808,16 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  -moz-opacity: .6;
-  opacity: .60;
+  -moz-opacity: 0.6;
+  opacity: 0.60;
   filter: alpha(opacity=60);
 }
 
 #exlidCitationLinkerListWrapper {
   clear: both;
 }
+
+/*header*/
 
 .EXLCitationLinkerHeader {
   width: 100%;
@@ -1792,19 +1829,19 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 .EXLCitationLinkerHeader h1 {
   float: left;
   font-size: 100%;
-  color: #000;
+  color: #000000;
   line-height: 300%;
   padding-left: 1em;
 }
 
 .EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons {
-  padding: 0;
+  padding: 0em;
   width: 35%;
   float: right;
   text-align: right;
   height: 18px;
-  padding-top: .8em;
-  margin-right: .5em;
+  padding-top: 0.8em;
+  margin-right: 0.5em;
 }
 
 .EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons ul {
@@ -1816,7 +1853,7 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   list-style: none;
   float: left;
   height: 18px;
-  border-right: 0 solid #e1e1e1;
+  border-right: 0px solid #e1e1e1;
 }
 
 .EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li span {
@@ -1829,7 +1866,7 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 }
 
 .EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a {
-  padding: .2em .2em .2em .2em;
+  padding: 0.2em 0.2em 0.2em 0.2em;
   cursor: pointer;
   text-decoration: none;
 }
@@ -1855,13 +1892,15 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
 .EXLCitationLinkerHeader div.EXLCitationLinkerHeaderButtons li a span.EXLCitationLinkerHeaderButtonClose {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_close_tabs.png");
   background-position: center;
-  margin-left: 0;
+  margin-left: 0em;
 }
+
+/*form*/
 
 #exlidCitationLinkerRibbon {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0em;
+  margin-right: 0em;
   clear: left;
 }
 
@@ -1869,12 +1908,12 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   clear: both;
   min-height: 9em;
   width: 100%;
-  padding: 2em 0 0 0;
-  margin: 0;
+  padding: 2em 0em 0em 0em;
+  margin: 0px;
 }
 
 #exlidCitationLinkerRibbon fieldset fieldset {
-  padding-left: 0;
+  padding-left: 0em;
   display: block;
 }
 
@@ -1886,8 +1925,8 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   width: 7em;
   border: 1px solid #8fb9d0;
   height: auto;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 100%;
 }
 
@@ -1895,8 +1934,8 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   width: 17.5em;
   border: 1px solid #8fb9d0;
   height: 1.5em;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 1em;
 }
 
@@ -1916,8 +1955,8 @@ div.EXLFindDBListHeaderAtoZ li a:hover {
   float: left;
   width: 30em;
   height: auto;
-  margin-right: 0;
-  padding-left: .5em;
+  margin-right: 0em;
+  padding-left: 0.5em;
 }
 
 div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
@@ -1938,7 +1977,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 #exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup1 span.EXLCitationLinkerCheckbox {
-  padding-top: .5em;
+  padding-top: 0.5em;
   display: inline-block;
 }
 
@@ -1947,8 +1986,8 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   height: auto;
   margin-left: 5em;
   float: left;
-  margin-right: .5em;
-  border: 0;
+  margin-right: 0.5em;
+  border: none;
 }
 
 #exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup1 span.EXLCitationLinkerCheckbox label {
@@ -1962,7 +2001,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   float: left;
   width: auto;
   height: auto;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #cccccc;
   margin-left: 1.7em;
 }
 
@@ -1976,6 +2015,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 #exlidCitationLinkerRibbon div.EXLCitationLinkerFieldRibbonFormFieldsGroup2 select {
+  /* ie8 and bellow hack to make the select not cut long values*/
   width: 22.3em\9;
   height: 1.7em\9;
 }
@@ -1988,17 +2028,19 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 #exlidCitationLinkerRibbon div.EXLCitationLinkerFormRow {
-  margin: 0;
+  margin: 0em;
   float: none;
   clear: both;
   width: 100%;
-  padding-bottom: .5em;
-  margin-left: .5em;
+  padding-bottom: 0.5em;
+  margin-left: 0.5em;
 }
 
 #exlidCitationLinkerRibbon div.EXLCitationLinkerFormRow fieldset span.EXLCitationLinkerFormRowInlineInput {
   display: inline;
 }
+
+/*submit buttons*/
 
 #exlidCitationLinkerContainer div.EXLCitationLinkerFieldRibbonFormSubmitSearch {
   float: left;
@@ -2013,7 +2055,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   display: inline;
   clear: none;
   border: 1px solid #adb9c2;
-  margin-left: 0;
+  margin-left: 0em;
 }
 
 #exlidCitationLinkerContainer div.EXLCitationLinkerFieldRibbonFormSubmitSelected {
@@ -2026,40 +2068,42 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 #exlidCitationLinkerContainer input.EXLSubmit {
-  border: 1px solid #fff;
-  padding: 0 .5em 0 .5em;
+  border: 1px solid #ffffff;
+  padding: 0em 0.5em 0em 0.5em;
   display: block;
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_orange.png");
   background-repeat: repeat-x;
-  margin: 0;
+  margin: 0em;
   width: 80px;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: normal;
   height: 24px;
   cursor: pointer;
 }
 
+/*tabs*/
+
 .EXLCitationLinkerTabsRibbon {
   height: 28px;
   border-bottom: 2px solid #f4762d;
-  padding: 0;
+  padding: 0px;
   padding-top: 2.5em;
-  margin: 0;
-  background-color: #fff;
+  margin: 0 0 0 0;
+  background-color: #FFFFFF;
 }
 
 .EXLCitationLinkerTabsRibbon div {
   width: 90%;
-  margin: 0;
+  margin: 0px;
   clear: left;
   float: left;
-  margin-left: 0;
+  margin-left: 0em;
 }
 
 .EXLCitationLinkerTabsRibbon div ul {
-  margin-left: .8em;
-  margin-bottom: 0;
+  margin-left: 0.8em;
+  margin-bottom: 0em;
 }
 
 .EXLCitationLinkerTabsRibbon div li {
@@ -2071,17 +2115,17 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 .EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerTab {
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  border: 1px solid #CCCCCC;
+  border-bottom: 0px;
   height: 27px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   float: left;
-  padding-left: .2em;
-  padding-right: .2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
   margin-right: 4px;
-  color: #9b9b9b;
+  color: #9B9B9B;
 }
 
 .EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerTab a {
@@ -2103,10 +2147,10 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   float: left;
   font-weight: bold;
   text-decoration: none;
-  padding-left: .8em;
-  padding-right: .8em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   margin-right: 4px;
-  color: #fff;
+  color: #ffffff;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_orange.png");
   background-repeat: repeat-x;
 }
@@ -2116,35 +2160,41 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 .EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerSelectedTab a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerFirstTab {
-  padding-left: 0;
+  padding-left: 0em;
 }
 
 .EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerFirstSelectedTab {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
+
+/*list of databases header*/
 
 #exlidCitationLinkerTile div.EXLCitationLinkerListHeader {
   background-color: #f8f8f8;
   height: 26px;
   border-bottom: 1px solid #e1e1e1;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ffffff;
 }
+
+/*header links*/
 
 #exlidCitationLinkerTile div div.EXLCitationLinkerListHeaderLinks {
   width: auto;
   color: #adb9c2;
-  padding-left: .7em;
+  padding-left: 0.7em;
   line-height: 200%;
 }
 
 #exlidCitationLinkerTile div div.EXLCitationLinkerListHeaderLinks span {
-  padding: .3em;
+  padding: 0.3em;
   width: auto;
 }
+
+/*Header - System Feedback Styles*/
 
 #exlidHeaderSystemFeedback {
   width: 100%;
@@ -2152,34 +2202,36 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   border-top: 1px solid #e1e1e1;
   background-color: #fffbc3;
   text-align: center;
-  display: block;
+  display: block /*change to display: block to show system feedback*/;
   margin-top: -1px;
 }
 
 #exlidHeaderSystemFeedback strong {
-  padding: .5em .5em .5em 1.5em;
+  padding: 0.5em 0.5em 0.5em 1.5em;
   display: block;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: bold;
   font-size: 80%;
 }
+
+/*Header - Search Limits Styles*/
 
 #exlidHeaderSearchLimits {
   width: 100%;
   border-bottom: 1px solid #f3f3f3;
   background-color: #f3f3f3;
-  color: #666;
+  color: #666666;
   height: 2em;
-  display: block;
+  display: block /*change to display: block to show system feedback*/;
 }
 
 #exlidHeaderSearchLimits fieldset {
-  padding: .5em 0 0 1em;
+  padding: 0.5em 0em 0em 1em;
   display: block;
-  color: #666;
+  color: #666666;
   font-weight: bold;
   font-size: 80%;
   width: 70%;
@@ -2188,19 +2240,20 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 #exlidHeaderSearchLimits fieldset legend {
   display: inline;
   width: auto;
-  padding-top: .6em;
-  color: #666;
+  padding-top: 0.6em;
+  color: #666666;
 }
 
 #exlidHeaderSearchLimits span.EXLHeaderSearchLimitsFields {
   width: 50%;
   position: relative;
+  /*left:10em; top:-1.2em; position:absolute; top:10.2em; left:11em; */
 }
 
 #exlidHeaderSearchLimits select {
   border: 1px solid #7f9db9;
   height: 1.65em;
-  color: #666;
+  color: #666666;
 }
 
 #exlidHeaderSearchLimits label {
@@ -2230,6 +2283,10 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   text-align: center;
 }
 
+/*   -------------ClearFix ----------- */
+
+/*Fixes Div in Div problems*/
+
 .EXLClearFix:after {
   clear: both;
   content: ".";
@@ -2242,17 +2299,23 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   display: inline-block;
 }
 
+/* Hides from IE-mac \ */
+
 * html .EXLClearFix {
   height: 1%;
 }
+
+/* End hide from IE-mac  */
 
 .EXLClearFix {
   display: block;
 }
 
+/*Records List Header*/
+
 .EXLResultsHeader {
   display: block;
-  border: 0 solid blue;
+  border: 0px solid blue;
   width: 100%;
   padding-top: 2px;
 }
@@ -2261,15 +2324,15 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   color: #8c8c8c;
   font-weight: bold;
   font-size: 80%;
-  padding: 0 0 0 1em;
-  margin: 0;
-  margin-bottom: .2em;
+  padding: 0em 0em 0em 1em;
+  margin: 0px;
+  margin-bottom: 0.2em;
   float: left;
   width: 65%;
 }
 
 .EXLResultsHeader h1 em {
-  color: #000;
+  color: #000000;
 }
 
 .EXLResultsHeader div.EXLResultsNumbers {
@@ -2281,7 +2344,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
   float: right;
   font-size: 80%;
-  padding: 0;
+  padding: 0em;
   display: block;
   z-index: 100;
   position: relative;
@@ -2296,7 +2359,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a {
-  margin-left: .5em;
+  margin-left: 0.5em;
   padding-right: 1em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_sendTo.png");
   background-repeat: no-repeat;
@@ -2317,7 +2380,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   border: 1px solid #e1e1e1;
   display: inline;
   margin-top: 2px;
-  padding: 0 .5em .1em .3em;
+  padding: 0em 0.5em 0.1em 0.3em;
   background-color: #efefef;
   width: 7em;
   position: absolute;
@@ -2333,7 +2396,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 .EXLResultsHeader div.EXLResultsNumbers li img {
-  padding: 0 .4em 0 .3em;
+  padding: 0em 0.4em 0em 0.3em;
 }
 
 .EXLResultsHeader div.EXLResultsNumbers li a:hover {
@@ -2342,29 +2405,32 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 
 .EXLResultsHeader div.EXLResultsNavigation {
   font-size: 80%;
-  margin: 0;
-  padding: 0 0 0 1em;
+  margin: 0px;
+  padding: 0em 0em 0em 1em;
   float: right;
   width: 20%;
   text-align: right;
 }
 
 .EXLBriefResultsPagination {
-  padding: 0 .1em 0 .1em;
+  padding: 0em 0.1em 0em 0.1em;
 }
 
 .EXLBriefResultsPagination:hover {
   text-decoration: none;
 }
 
+/*top level facets*/
+
 #exlidTopLevelFacetsTile {
   clear: left;
   vertical-align: text-top;
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
   height: 1.8em;
   display: block;
+  /* default should be display:none*/
 }
 
 #exlidTopLevelFacetsTile div.EXLToplevelFacetsContainer {
@@ -2383,9 +2449,9 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 #exlidToplevelFacetsRibbon {
-  padding-top: .2em;
-  padding-right: .2em;
-  padding-left: .4em;
+  padding-top: 0.2em;
+  padding-right: 0.2em;
+  padding-left: 0.4em;
   width: auto;
 }
 
@@ -2394,44 +2460,46 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   font-size: 80%;
   font-weight: normal;
   float: left;
-  margin: .2em .2em 0 .2em;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0.2em 0.2em 0em 0.2em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 #exlidToplevelFacetsRibbon li a {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 #exlidToplevelFacetsRibbon li span {
-  color: #555;
+  color: #555555;
   border-right: 1px solid #e2e2e2;
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 #exlidToplevelFacetsRibbon li span span {
-  color: #8c8d8c;
-  margin-left: 0;
+  color: #8C8D8C;
+  margin-left: 0em;
   font-size: 100%;
-  border: 0;
+  border: none;
 }
 
 #exlidToplevelFacetsRibbon li.EXLTopLevelFacetLastItem span {
-  border: 0;
+  border: none;
 }
+
+/*Refined By Ribbon*/
 
 .EXLRefinementRibbon {
   clear: both;
   background-color: #f8f8f8;
   border-top: 1px solid #e4e4e4;
-  border-bottom: 0;
+  border-bottom: none;
   color: #32322f;
   font-size: 80%;
   height: auto;
   vertical-align: text-bottom;
-  display: inline-block;
+  display: inline-block /* default should be display:none*/;
   width: 100%;
 }
 
@@ -2439,28 +2507,28 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   display: block;
   float: left;
   clear: right;
-  margin-top: .5em;
+  margin-top: 0.5em;
   margin-left: 1em;
   width: auto;
   white-space: nowrap;
 }
 
 .EXLRefinementRibbon div.EXLRefinementsList {
-  padding: 0 1em .3em 0;
+  padding: 0em 1em 0.3em 0em;
   float: left;
   width: 80%;
 }
 
 .EXLRefinementRibbon span.EXLRemoveRefinement {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #d7d9da;
   color: #424e53;
   height: 20px;
   margin: 0;
-  padding-left: .5em;
-  margin-left: .5em;
+  padding-left: 0.5em;
+  margin-left: 0.5em;
   display: inline-block;
-  margin-top: .3em;
+  margin-top: 0.3em;
 }
 
 .EXLRefinementRibbon div a {
@@ -2474,19 +2542,21 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 
 .EXLRefinementRibbon span img {
   vertical-align: bottom;
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
+
+/*Refined By Ribbon with Exclude*/
 
 .EXLRefinementRibbonWithExclude {
   clear: both;
   background-color: #f8f8f8;
   border-top: 1px solid #e4e4e4;
-  border-bottom: 0;
+  border-bottom: none;
   color: #32322f;
   font-size: 80%;
   height: auto;
   vertical-align: text-bottom;
-  display: inline-block;
+  display: inline-block /* default should be display:none*/;
   width: 100%;
 }
 
@@ -2494,40 +2564,40 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   display: block;
   float: left;
   clear: right;
-  margin-top: .5em;
+  margin-top: 0.5em;
   margin-left: 1em;
   width: auto;
   white-space: nowrap;
 }
 
 .EXLRefinementRibbonWithExclude div.EXLRefinementsList {
-  padding: 0 1em .3em 0;
+  padding: 0em 1em 0.3em 0em;
   float: left;
   width: 80%;
 }
 
 .EXLRefinementRibbonWithExclude span.EXLRemoveRefinement {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #d7d9da;
   color: #424e53;
   height: auto;
   margin: 0;
-  padding-left: .5em;
-  margin-left: .5em;
+  padding-left: 0.5em;
+  margin-left: 0.5em;
   display: inline-block;
-  margin-top: .3em;
+  margin-top: 0.3em;
 }
 
 .EXLRefinementRibbonWithExclude div a {
   color: #424e53;
   border-left: 1px solid #d7d9da;
-  padding-left: .5em;
+  padding-left: 0.5em;
   line-height: 150%;
 }
 
 .EXLRefinementRibbonWithExclude div a.EXLFirstRefinementElement {
-  border: 0;
-  padding-left: 0;
+  border: none;
+  padding-left: 0em;
 }
 
 .EXLRefinementRibbonWithExclude div a:hover {
@@ -2537,7 +2607,7 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 
 .EXLRefinementRibbonWithExclude span img {
   vertical-align: middle;
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
 
 .EXLRefinementRibbonWithExclude div a.EXLExcludedElement strong {
@@ -2548,11 +2618,13 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
   text-decoration: line-through;
 }
 
+/*Results Table*/
+
 .EXLResultsList {
   clear: left;
   font-size: 80%;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
   border-top: 1px solid #e4e4e4;
   width: 100%;
 }
@@ -2563,9 +2635,9 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 
 .EXLResultsList h2 {
   font-size: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: .5em;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 0.5em;
 }
 
 .EXLResultsList h3 {
@@ -2578,25 +2650,25 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 }
 
 .EXLResultsList p.EXLResultSnippet b.searchword {
-  color: #000;
+  color: #000000;
 }
 
 .EXLResultsList span.EXLResultVersionFound {
-  color: #e87107;
+  color: #E87107;
   font-weight: bold;
 }
 
 body.EXLFullView div.EXLResultsList h1.EXLResultTitle {
   font-size: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: .5em;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 0.5em;
 }
 
 body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   font-size: 100%;
   font-weight: normal;
-  padding-top: 0;
+  padding-top: 0em;
 }
 
 .EXLResultsList div.EXLSummaryContainer {
@@ -2608,6 +2680,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   float: left;
   width: 77%;
 }
+
+/*FRBR*/
 
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
   float: right;
@@ -2622,7 +2696,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_diagonal_frbr.png");
   background-repeat: no-repeat;
   width: 22px;
-  background-color: #fff;
+  background-color: #ffffff;
   background-position: center;
   display: block;
   height: 22px;
@@ -2634,10 +2708,14 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   display: none;
 }
 
+/*for rtl interface*/
+
 .EXLResultsList cite a {
-  padding: 0 .5em 0 .1em;
+  padding: 0em 0.5em 0em 0.1em;
   line-height: 160%;
 }
+
+/*New Result - Remote Search - after fetch more results */
 
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultNew {
   float: right;
@@ -2651,7 +2729,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_diagonal_new_result.png");
   background-repeat: no-repeat;
   width: 22px;
-  background-color: #fff;
+  background-color: #ffffff;
   background-position: center;
   display: block;
   height: 22px;
@@ -2663,76 +2741,85 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   display: none;
 }
 
+/*for rtl interface*/
+
 .EXLResultsList td.EXLThumbnail img {
-  padding: 0;
-  margin: 0;
-  border: 0;
+  padding: 0em;
+  margin: 0px;
+  border: none;
   vertical-align: bottom;
   width: 38px;
   height: 56px;
+  /*background-image changes according to available book covers or different material types*/
 }
 
 .EXLResultsList td.EXLMyShelfStar {
   width: 1.5em;
-  padding-top: .6em;
-  padding-bottom: .5em;
+  padding-top: 0.6em;
+  padding-bottom: 0.5em;
   text-align: left;
 }
 
 .EXLResultsList td.EXLSummary {
-  padding-top: 0;
+  padding-top: 0em;
 }
+
+/*
+  PRM_18049 adding image and removing color
+*/
 
 .EXLResultsList em.EXLResultStatusAvailable {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_available.png");
   background-repeat: no-repeat;
-  background-position: 0 3px;
+  background-position: 0px 3px;
   padding-left: 15px;
-  color: #000;
+  color: #000000;
 }
 
 .EXLResultsList em.EXLResultStatusNotAvailable {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_unavailable_grey.png");
   background-repeat: no-repeat;
-  background-position: 0 3px;
+  background-position: 0px 3px;
   padding-left: 15px;
-  color: #000;
+  color: #000000;
 }
 
 .EXLResultsList em.EXLResultStatusMaybeAvailable {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_yellow.png");
   background-repeat: no-repeat;
-  background-position: 0 3px;
+  background-position: 0px 3px;
   padding-left: 15px;
-  color: #000;
+  color: #000000;
 }
 
 .EXLResultsList span.EXLAvailabilityLibraryName {
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
 
 .EXLResultsList span.EXLAvailabilityCollectionName {
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
 
 .EXLResultsList span.EXLAvailabilityCallNumber {
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
 
 .EXLResultsList span.EXLAvailabilityRTAupdating {
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
+
+/*  classic thumbnails */
 
 .multipleCoverImageContainer {
   position: relative;
   margin: auto;
   width: 38px;
   height: 56px;
-  font-size: 0;
+  font-size: 0px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_book.png");
   background-repeat: no-repeat;
   border: 1px solid #bdbcbd;
@@ -2750,9 +2837,13 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_book.png");
 }
 
+/*  PRM-14854 Add new resource type 'Research Dataset' to Primo so that it can be used in PC */
+
 .EXLResultMediaTYPEresearch_dataset .multipleCoverImageContainer {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_research_dataset.png");
 }
+
+/*  PRM-17351 Add technical report resource type in Primo Central and Primo */
 
 .EXLResultMediaTYPEtechnical_report .multipleCoverImageContainer {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_other.png");
@@ -2820,34 +2911,37 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 
 .coverImageDiv {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
 }
 
 .popThumbnailToTop {
-  z-index: 1000!important;
+  z-index: 1000 !important;
 }
 
+/*Record Tabs*/
+
 .EXLTabsRibbon {
-  height: 1.25em;
+  height: 1.25em /*17px*/;
   border-bottom: 1px solid #8fb9d0;
-  padding: 0;
+  padding: 0px;
   padding-top: 1em;
-  margin: 0;
+  margin: 0 0 0 0;
   clear: left;
 }
 
 .EXLTabsRibbon div {
+  /*height:1em;*/
   width: 90%;
-  margin: 0;
+  margin: 0px;
   clear: left;
   float: left;
-  margin-left: 0;
+  margin-left: 0em;
 }
 
 .EXLTabsRibbon div ul {
-  margin-left: 0;
-  margin-bottom: 0;
+  margin-left: 0em;
+  margin-bottom: 0em;
 }
 
 .EXLTabsRibbon div li {
@@ -2857,13 +2951,13 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLTabsRibbonClosed {
-  border-bottom: 0;
-  margin-bottom: .5em;
+  border-bottom: none;
+  margin-bottom: 0.5em;
   clear: left;
 }
 
 .EXLTabsRibbonClosed div li.EXLResultFirstTab {
-  padding-left: 0;
+  padding-left: 0em;
 }
 
 .EXLResultTabContainerClosed {
@@ -2875,6 +2969,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   display: none;
 }
 
+/*Loading Animation - Tab Content*/
+
 .EXLTabLoading {
   width: 100%;
   text-align: center;
@@ -2883,6 +2979,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/*citation Loading gif */
 
 .EXLCitationTabLoading {
   text-align: center;
@@ -2893,13 +2991,15 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-position: center;
 }
 
+/*Tab Lightbox style*/
+
 .EXLTabLoadingLightBox {
   width: 100%;
   text-align: center;
   height: 19.4em;
-  background-color: #ccc;
+  background-color: #cccccc;
   z-index: 100;
-  -moz-opacity: .4;
+  -moz-opacity: 0.4;
   opacity: .40;
   filter: alpha(opacity=40);
   filter: "alpha(opacity=40)";
@@ -2915,18 +3015,18 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   font-size: 100%;
   float: right;
   position: relative;
-  top: 0;
+  top: 0px;
   text-align: center;
   z-index: 2000;
 }
 
 .EXLTabLoadingLightBoxFeedback strong {
-  padding: .5em 1.5em .5em .6em;
+  padding: 0.5em 1.5em 0.5em 0.6em;
   display: block;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: normal;
   width: auto;
   text-align: center;
@@ -2934,6 +3034,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   margin-right: auto;
   white-space: nowrap;
 }
+
+/*Tabs Messagees placeholder - Refresh locations list */
 
 .EXLTabMessage {
   width: 100%;
@@ -2944,14 +3046,16 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLTabMessage strong {
-  padding: .5em 1.5em .5em .6em;
+  padding: 0.5em 1.5em 0.5em 0.6em;
   display: block;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
+
+/*Tabs Forms - Form Validation, System Feedback Styles*/
 
 .EXLTabFormValidationFeedback {
   width: 100%;
@@ -2961,48 +3065,56 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLTabFormValidationFeedback strong {
-  padding: .5em 1.5em .5em .6em;
+  padding: 0.5em 1.5em 0.5em 0.6em;
   display: block;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
+
+/*tab header*/
+
+/*selected tab header actions*/
 
 .EXLTabHeaderHiddenButton {
   display: none;
 }
+
+/*---View Online Tab Styles---*/
 
 .EXLViewOnlineTabContent {
   overflow: auto;
   overflow-x: hidden;
 }
 
+/*multiple online sources */
+
 .EXLViewOnlineTabContent div.EXLViewOnlineLinks {
   float: left;
   width: 60%;
-  margin: .5em;
+  margin: 0.5em;
   height: auto;
-  padding: .5em;
+  padding: 0.5em;
   padding-bottom: 1em;
 }
 
 .EXLViewOnlineTabContent div.EXLViewOnlineLinks em {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .EXLViewOnlineTabContent div.EXLViewOnlineLinks ul {
   height: 100%;
-  padding: .5em 1em 1em .5em;
+  padding: 0.5em 1em 1em 0.5em;
   width: auto;
   list-style-type: none;
 }
 
 .EXLViewOnlineTabContent div.EXLViewOnlineLinks li {
-  padding-top: 0;
+  padding-top: 0px;
   padding-bottom: 3px;
-  padding-right: 0;
+  padding-right: 0px;
 }
 
 .EXLViewOnlineTabContent div.EXLViewOnlineLinks li span.EXLViewOnlineLinksTitle a {
@@ -3021,6 +3133,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   text-decoration: none;
 }
 
+/*multiple online sources tips*/
+
 .EXLViewOnlineTabContent div.EXLRequestTipsList {
   float: right;
   width: 30%;
@@ -3035,28 +3149,28 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLViewOnlineTabContent div.EXLRequestTipsList em {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-size: 90%;
 }
 
 .EXLViewOnlineTabContent div.EXLRequestTipsList ul {
   height: 100%;
-  padding: .5em 1em 1em .5em;
+  padding: 0.5em 1em 1em 0.5em;
   width: 100%;
 }
 
 .EXLViewOnlineTabContent div.EXLRequestTipsList li {
   list-style: none;
-  padding-top: 0;
-  padding-right: 0;
+  padding-top: 0px;
+  padding-right: 0px;
   font-size: 90%;
   margin-bottom: 1em;
   float: left;
 }
 
 .EXLViewOnlineTabContent div.EXLRequestTipsList li span.EXLRequestTipsBullet {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_arrow_orange_tip.png");
   background-repeat: no-repeat;
   width: 15px;
@@ -3073,6 +3187,10 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   float: left;
 }
 
+/*Request Tab Styles*/
+
+/*Form Styles*/
+
 .EXLRequestTabContent {
   overflow: auto;
   overflow-x: hidden;
@@ -3081,7 +3199,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 .EXLRequestTabContent form {
   padding: 0;
   margin: 0;
-  padding-left: .5em;
+  padding-left: 0.5em;
   margin-top: 1em;
   float: left;
   width: 60%;
@@ -3090,15 +3208,15 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 .EXLRequestTabContent table {
   margin-bottom: 1em;
   border-collapse: separate;
-  border-spacing: 0;
+  border-spacing: 0em;
 }
 
 .EXLRequestTabContent table caption {
   text-align: left;
   font-weight: bold;
-  color: #000;
-  padding-bottom: .8em;
-  text-indent: .5em;
+  color: #000000;
+  padding-bottom: 0.8em;
+  text-indent: 0.5em;
 }
 
 .EXLRequestTabContent table th {
@@ -3107,16 +3225,16 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   text-align: left;
   font-weight: normal;
   width: 10em;
-  padding-top: 0;
+  padding-top: 0em;
   display: inline;
   vertical-align: text-top;
 }
 
 .EXLRequestTabContent form table td {
-  border: 0;
+  border: none;
   text-align: left;
-  padding-top: 0;
-  padding-bottom: .3em;
+  padding-top: 0em;
+  padding-bottom: 0.3em;
 }
 
 .EXLRequestTabContent form select,
@@ -3141,12 +3259,12 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabContent form input.EXLRequestTabFormCheckbox {
-  border: 0;
+  border: 0px;
   height: auto;
 }
 
 .EXLRequestTabContent form td img {
-  margin-left: .2em;
+  margin-left: 0.2em;
 }
 
 .EXLRequestTabContent form td img.EXLBtnCalendar {
@@ -3154,10 +3272,12 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabContent form td span.EXLMandatory {
-  color: #c00;
+  color: #CC0000;
   float: right;
-  width: .8em;
+  width: 0.8em;
 }
+
+/*style for mandatory fields*/
 
 .EXLRequestTabContent form td span.EXLFieldError {
   float: left;
@@ -3168,17 +3288,21 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-position: center;
 }
 
+/*style for mandatory fields*/
+
+/*styles for form with radio buttons - voyager requests*/
+
 .EXLRequestTabContent form td.EXLRequestTabFormRadio {
-  padding-top: 0;
+  padding-top: 0em;
   width: 1.5em;
 }
 
 .EXLRequestTabContent form td.EXLRequestTabFormRadio input {
-  border: 0;
+  border: none;
 }
 
 .EXLRequestTabContent form td fieldset div {
-  padding-bottom: .1em;
+  padding-bottom: 0.1em;
 }
 
 .EXLRequestTabContent form td fieldset legend {
@@ -3200,6 +3324,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 .EXLRequestTabContent form td fieldset input {
   display: block;
   width: 55%;
+  /*margin-bottom:0.2em*/
 }
 
 .EXLRequestTabContent form td label.EXLHiddenLabel {
@@ -3216,39 +3341,45 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabContent form td fieldset div.EXLSpecifyIssueDisabled input {
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #d7d7d7;
 }
 
 .EXLRequestTabContent form td select.EXLSpecifyIssueDisabled {
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #d7d7d7;
 }
+
+/*styles for ILL request form*/
+
+/*radio buttons styles*/
 
 .EXLRequestTabContent form td.EXLRequestTabFormRadioFieldset fieldset span {
   float: left;
   clear: right;
-  margin-right: .8em;
+  margin-right: 0.8em;
 }
 
 .EXLRequestTabContent form td.EXLRequestTabFormRadioFieldset fieldset span input {
-  border: 0;
+  border: none;
   height: auto;
   width: auto;
   float: left;
   clear: right;
-  margin-right: .2em;
+  margin-right: 0.2em;
 }
 
 .EXLRequestTabContent form td.EXLRequestTabFormRadioFieldset fieldset span label {
-  border: 0;
+  border: none;
   height: auto;
   width: auto;
 }
 
 .EXLRequestTabContent form tr.EXLRequestTabFormHideRow {
-  display: none;
+  display: none /*change to display:inline to show rows*/;
 }
+
+/*copyright statement*/
 
 .EXLRequestTabContent div.EXLRequestTabFormRowLinkButtons {
   height: auto;
@@ -3261,7 +3392,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   font-size: 90%;
   margin-left: 1em;
   margin-right: auto;
-  margin-top: .5em;
+  margin-top: 0.5em;
   float: left;
   clear: right;
 }
@@ -3276,8 +3407,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabFormButtonLink span a {
-  padding: 0 .5em 0 .5em;
-  color: #fff;
+  padding: 0em 0.5em 0em 0.5em;
+  color: #FFFFFF;
   font-weight: normal;
   height: 20px;
   cursor: pointer;
@@ -3299,6 +3430,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-color: #f1f1f1;
 }
 
+/*copyright iframe*/
+
 .EXLRequestCopyright {
   width: auto;
   padding: 1em 1.5em 1em 1em;
@@ -3312,20 +3445,20 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   width: auto;
   height: 22px;
   float: left;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .EXLRequestTabContent form input.submit {
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_submit_temp.png");
   background-repeat: repeat-x;
-  margin-left: 0;
+  margin-left: 0em;
   width: auto;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: normal;
   height: 22px;
   cursor: pointer;
-  padding: 0 .5em 0 .5em;
+  padding: 0em 0.5em 0em 0.5em;
   border: 1px solid #7f9db9;
   display: inline;
 }
@@ -3340,8 +3473,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabContent form a.reset {
-  padding: 0 .5em 0 .5em;
-  color: #fff;
+  padding: 0em 0.5em 0em 0.5em;
+  color: #FFFFFF;
   font-weight: normal;
   height: 20px;
   cursor: pointer;
@@ -3354,6 +3487,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 .EXLRequestTabContent form a.reset:hover {
   text-decoration: none;
 }
+
+/*Single Tip Styles*/
 
 .EXLRequestTabContent div.EXLRequestTip {
   float: right;
@@ -3370,6 +3505,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-position: bottom;
 }
 
+/*Multiple Tip Styles*/
+
 .EXLRequestTabContent div.EXLRequestTipsList {
   float: right;
   width: 30%;
@@ -3384,20 +3521,20 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabContent div.EXLRequestTipsList em {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-size: 90%;
 }
 
 .EXLRequestTabContent div.EXLRequestTipsList ul {
   height: 100%;
-  padding: .5em 1em 1em .5em;
+  padding: 0.5em 1em 1em 0.5em;
   width: 100%;
 }
 
 .EXLRequestTabContent div.EXLRequestTipsList li {
   list-style: none;
-  padding-top: 0;
-  padding-right: 0;
+  padding-top: 0px;
+  padding-right: 0px;
   font-size: 90%;
   margin-bottom: 1em;
   float: left;
@@ -3405,8 +3542,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabContent div.EXLRequestTipsList li span.EXLRequestTipsBullet {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_arrow_orange_tip.png");
   background-repeat: no-repeat;
   width: 15px;
@@ -3423,12 +3560,16 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   float: left;
 }
 
+/*My Library Card - iframe*/
+
 .EXLMyAccountMainContainer iframe.EXLMyAccountLibraryCardIframe {
   overflow: scroll;
   margin-bottom: -2em;
   width: 100%;
   height: 40em;
 }
+
+/* General Tab System Feedback Styles */
 
 .EXLResult .EXLSystemFeedback {
   float: left;
@@ -3445,9 +3586,11 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: bold;
 }
+
+/*Request System Feedback Styles*/
 
 .EXLRequestTabContent div.EXLRequestSystemFeedback {
   float: left;
@@ -3464,16 +3607,18 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: bold;
 }
 
+/*Request Tab- Short Loan Styles*/
+
 .EXLRequestTabFormRow {
-  margin: 0;
+  margin: 0em;
   float: left;
   width: 100%;
-  padding-bottom: .5em;
-  margin-left: .5em;
+  padding-bottom: 0.5em;
+  margin-left: 0.5em;
 }
 
 .EXLRequestTabFormRow label {
@@ -3488,8 +3633,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabFormRow fieldset {
-  border: 0;
-  margin: 0;
+  border: none;
+  margin: 0em;
   padding-left: 1em;
 }
 
@@ -3505,6 +3650,8 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   display: block;
 }
 
+/*select date*/
+
 .EXLRequestTabFormRow fieldset span.EXLRequestTabFormRowInlineInput {
   display: inline;
 }
@@ -3514,12 +3661,12 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   height: 21px;
   width: auto;
   vertical-align: bottom;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .EXLRequestTabFormRow fieldset span.EXLRequestTabFormRowInlineInput label {
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
   line-height: 160%;
 }
 
@@ -3527,9 +3674,11 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   vertical-align: text-bottom;
 }
 
+/*select time slot*/
+
 .EXLRequestTabFormRow fieldset span.EXLRequestTabFormRowTimeSlot {
   display: block;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   background-color: #f7f7f7;
   float: left;
   clear: both;
@@ -3544,7 +3693,7 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabFormRow fieldset span.EXLRequestTabFormRowTimeSlotFirst {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
 }
 
 .EXLRequestTabFormRow fieldset span.EXLRequestTabFormRowTimeSlotEmpty input {
@@ -3556,10 +3705,10 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLRequestTabFormRow fieldset span.EXLRequestTabFormRowTimeSlot input {
-  border: 0;
+  border: none;
   height: auto;
   width: auto;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .EXLRequestTabFormRow fieldset span.EXLRequestTabTimeSlotDisabled label {
@@ -3583,14 +3732,16 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 
 .EXLRequestTabFormRow fieldset span.EXLMandatoryFieldset {
   display: inline;
-  color: #c00;
-  margin-right: .5em;
+  color: #CC0000;
+  margin-right: 0.5em;
   clear: right;
 }
 
 .EXLRequestTabFormRowButtons {
   padding-left: 1em;
 }
+
+/*Request tab - calendar styles*/
 
 .EXLformCalendarIframe {
   position: absolute;
@@ -3602,14 +3753,14 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   border: 1px solid #e87107;
   width: 10em;
   text-align: center;
-  padding-left: .3em;
-  padding-right: .3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_calendar_caption.png");
   background-repeat: repeat-x;
 }
 
 .EXLFormCalendar {
-  color: #bbb;
+  color: #bbbbbb;
   font-size: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -3617,9 +3768,9 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 }
 
 .EXLFormCalendar caption {
-  border-bottom-color: #f3f4f4;
-  color: #fff;
-  padding-top: .2em;
+  border-bottom-color: #F3F4F4;
+  color: #FFFFFF;
+  padding-top: 0.2em;
 }
 
 .EXLFormCalendar tr.EXLFormCalendarNav td a {
@@ -3637,19 +3788,19 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
 .EXLFormCalendar tr.EXLFormCalendarNav td a.EXLFormCalendarNavPrev {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_prev.png");
   background-repeat: no-repeat;
-  background-position: 0 50%;
-  padding-left: .2em;
+  background-position: 0% 50%;
+  padding-left: 0.2em;
 }
 
 .EXLFormCalendar tr.EXLFormCalendarNav td a.EXLFormCalendarNavNext {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_next.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
 table.EXLFormCalendar th {
-  color: #000;
+  color: #000000;
 }
 
 table.EXLFormCalendar td {
@@ -3669,7 +3820,7 @@ table.EXLFormCalendar td span.EXLFormCalendarDateDisabled {
 table.EXLFormCalendar td a {
   background-color: #f5e1b8;
   display: block;
-  color: #000;
+  color: #000000;
 }
 
 table.EXLFormCalendar td a:hover {
@@ -3681,6 +3832,8 @@ div.EXLCloseCalendar {
   font-size: 80%;
   line-height: 200%;
 }
+
+/*Details Tab Styles*/
 
 .EXLDetailsTabContent {
   overflow: auto;
@@ -3700,11 +3853,11 @@ div.EXLCloseCalendar {
 }
 
 .EXLDetailsTabContent div.EXLDetailsContent li {
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 .EXLDetailsTabContent div.EXLDetailsContent li strong {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .EXLDetailsTabContent div.EXLDetailsLinks {
@@ -3715,30 +3868,30 @@ div.EXLCloseCalendar {
   background-repeat: repeat-x;
   background-position: bottom;
   height: auto;
-  padding: .5em;
+  padding: 0.5em;
   padding-bottom: 1em;
 }
 
 .EXLDetailsTabContent div.EXLDetailsLinks em {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .EXLDetailsTabContent div.EXLDetailsLinks ul {
   height: 100%;
-  padding: .5em 1em 1em .5em;
+  padding: 0.5em 1em 1em 0.5em;
   width: 100%;
 }
 
 .EXLDetailsTabContent div.EXLDetailsLinks li {
   list-style: none;
-  padding-top: 0;
+  padding-top: 0px;
   padding-bottom: 3px;
-  padding-right: 0;
+  padding-right: 0px;
 }
 
 .EXLDetailsTabContent div.EXLDetailsLinks li span.EXLDetailsLinksBullet {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_arrow_grey.png");
   background-repeat: no-repeat;
   width: 10px;
@@ -3755,35 +3908,39 @@ div.EXLCloseCalendar {
   float: left;
 }
 
+/*Details Tab TOC Styles*/
+
+/* option1 table*/
+
 .EXLDetailsTabContent table {
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0em;
 }
 
 .EXLDetailsTabContent table table {
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0em;
 }
 
 .EXLDetailsTabContent table td {
-  border: 0;
-  padding: .2em 0 .2em .8em;
-  margin: 0;
+  border: none;
+  padding: 0.2em 0em 0.2em 0.8em;
+  margin: 0px;
 }
 
 .EXLDetailsTabContent table th {
   text-align: left;
-  padding: .2em 0 .2em .8em;
+  padding: 0.2em 0em 0.2em 0.8em;
   border-bottom: 1px solid #e0e2e5;
 }
 
 .EXLDetailsTabContent table td.EXLTOCPageNumber {
-  padding-right: .5em;
+  padding-right: 0.5em;
   font-weight: normal;
 }
 
 .EXLDetailsTabContent table th.EXLTOCPageNumber {
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
 .EXLDetailsTabContent table tr.EXLDetailsTableRowBgColor {
@@ -3803,8 +3960,10 @@ div.EXLCloseCalendar {
 }
 
 .EXLDetailsTabContent table tr:hover th {
-  background-color: #fff;
+  background-color: #ffffff;
 }
+
+/*Reviews & Tags Tab Styles*/
 
 .EXLReviewsTagsTabContent {
   overflow: auto;
@@ -3830,13 +3989,13 @@ div.EXLCloseCalendar {
   height: 16px;
   display: block;
   float: left;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .EXLReviewsContent cite {
   font-weight: bold;
   font-style: normal;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
   float: left;
   width: 83%;
 }
@@ -3854,19 +4013,19 @@ div.EXLCloseCalendar {
 
 .EXLReviewsContent p {
   border-bottom: 1px solid #dadfe5;
-  margin-bottom: .4em;
-  padding-bottom: .4em;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 .EXLTagsContainer {
   float: right;
-  margin: 1em 1em 1em 0;
+  margin: 1em 1em 1em 0em;
 }
 
 .EXLTagsContainer p {
   border-bottom: 1px solid #dadfe5;
-  margin-bottom: .4em;
-  padding-bottom: .4em;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 .EXLTagsContainer p span.EXLTagIcon {
@@ -3876,7 +4035,7 @@ div.EXLCloseCalendar {
   height: 16px;
   display: block;
   float: left;
-  margin-right: .4em;
+  margin-right: 0.4em;
 }
 
 .EXLTagsLinks {
@@ -3884,7 +4043,7 @@ div.EXLCloseCalendar {
   clear: both;
   width: 200px;
   border: 1px solid #e1e1e1;
-  margin: .5em 1em .5em 1em;
+  margin: 0.5em 1em 0.5em 1em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_tags_links.png");
   background-repeat: repeat-x;
   background-position: bottom;
@@ -3904,9 +4063,9 @@ div.EXLCloseCalendar {
 }
 
 .EXLTagsLinks div span.EXLTagsLinksHeader {
-  padding-left: .2em;
+  padding-left: 0.2em;
   vertical-align: bottom;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-bottom: 1px solid #e1e1e1;
   border-left: 1px solid #e1e1e1;
   width: 176px;
@@ -3917,20 +4076,20 @@ div.EXLCloseCalendar {
 
 .EXLTagsLinks div span.EXLTagsLinksHeader em {
   float: left;
-  padding-top: .1em;
-  padding-left: .2em;
+  padding-top: 0.1em;
+  padding-left: 0.2em;
 }
 
 .EXLTagsLinks div span.EXLTagsLinksHeader a {
   float: right;
-  padding-right: .5em;
+  padding-right: 0.5em;
   font-size: 90%;
-  padding-top: .2em;
+  padding-top: 0.2em;
 }
 
 .EXLTagsLinks ul {
   height: 100%;
-  padding: 1em 1em 0 1em;
+  padding: 1em 1em 0em 1em;
   width: 90%;
   clear: left;
 }
@@ -3940,20 +4099,24 @@ div.EXLCloseCalendar {
   display: inline;
 }
 
+/*Closed tags style*/
+
 .EXLTagsLinksClosed {
-  padding-bottom: 0;
+  padding-bottom: 0em;
 }
 
 .EXLTagsLinksClosed div span.EXLTagsLinksHeader {
-  border-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 0;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
   height: 22px;
 }
 
 .EXLTagsLinksClosed ul {
   display: none;
 }
+
+/*Post your review styles*/
 
 .EXLReviewTabReviewFormContainer {
   width: 100%;
@@ -3964,15 +4127,15 @@ div.EXLCloseCalendar {
 }
 
 .EXLReviewTabReviewForm {
-  margin: 0 0 0 1em;
+  margin: 0em 0em 0em 1em;
 }
 
 .EXLReviewTabFormRow {
-  margin: 0;
+  margin: 0em;
   float: left;
   width: 96%;
-  padding-top: 0;
-  margin-left: .5em;
+  padding-top: 0em;
+  margin-left: 0.5em;
 }
 
 .EXLReviewTabFormRow select {
@@ -3980,7 +4143,7 @@ div.EXLCloseCalendar {
   height: 19px;
   width: auto;
   vertical-align: bottom;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .EXLReviewTabFormRow input {
@@ -3993,7 +4156,7 @@ div.EXLCloseCalendar {
 
 .EXLReviewTextArea {
   width: auto;
-  margin: 0 2em 0 0;
+  margin: 0em 2em 0em 0em;
 }
 
 .EXLReviewTextArea label {
@@ -4006,9 +4169,9 @@ div.EXLCloseCalendar {
   width: 100%;
   font-family: Arial;
   font-size: 90%;
-  padding: .2em .5em .2em .2em;
-  margin-top: .2em;
-  color: #444;
+  padding: 0.2em 0.5em 0.2em 0.2em;
+  margin-top: 0.2em;
+  color: #444444;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_review_textArea.png");
   line-height: 200%;
   height: 8em;
@@ -4026,8 +4189,8 @@ div.EXLCloseCalendar {
   height: 22px;
   float: left;
   clear: both;
-  margin-top: .9em;
-  margin-right: .5em;
+  margin-top: 0.9em;
+  margin-right: 0.5em;
 }
 
 .EXLReviewFormButtonCancel {
@@ -4038,19 +4201,21 @@ div.EXLCloseCalendar {
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_submit_temp.png");
   background-repeat: repeat-x;
-  margin-left: 0;
+  margin-left: 0em;
   width: 65px;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: normal;
   height: 22px;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
 }
 
 .EXLReviewFormButtonCancel input {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_grey.png");
   background-color: #bebebe;
 }
+
+/*Locations Tab Styles*/
 
 .EXLLocationListContainer {
   overflow: auto;
@@ -4068,16 +4233,17 @@ div.EXLCloseCalendar {
 .EXLLocationList {
   float: left;
   width: 100%;
-  margin: 0 1em 0 0;
+  margin: 0em 1em 0em 0em;
   display: block;
   border-bottom: 1px solid #dadfe5;
   vertical-align: text-top;
+  /* height:23px; */
 }
 
 .EXLLocationsDataFrame input {
-  background-color: #f4762d;
-  border: 1px solid #7f9db9;
-  color: #fff;
+  background-color: #F4762D;
+  border: 1px solid #7F9DB9;
+  color: #FFFFFF;
   cursor: pointer;
   font-size: 90%;
   font-weight: normal;
@@ -4101,7 +4267,7 @@ div.EXLCloseCalendar {
 }
 
 .EXLLocationsDataFrame select {
-  border: 1px solid #7f9db9;
+  border: 1px solid #7F9DB9;
   margin-left: 2px;
   margin-right: 2px;
 }
@@ -4115,13 +4281,13 @@ div.EXLCloseCalendar {
 .EXLLocationsDataFrame fieldset {
   float: left;
   font-size: 90%;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 label,
 fieldset,
 legend {
-  color: #000;
+  color: #000000;
 }
 
 .EXLLocationsDataFrame * {
@@ -4132,9 +4298,9 @@ legend {
 
 .EXLLocationsTitle {
   float: left;
-  padding-left: .5em;
-  padding-top: .3em;
-  margin-top: 0;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  margin-top: 0em;
   vertical-align: top;
   width: 30%;
   text-align: right;
@@ -4142,17 +4308,17 @@ legend {
 }
 
 .EXLLocationsTitle img.EXLLocationsIcon {
-  padding-top: 0;
-  padding-right: .5em;
+  padding-top: 0em;
+  padding-right: 0.5em;
   vertical-align: top;
 }
 
 .EXLLocationInfo {
   float: right;
   width: 63%;
-  padding-left: .5em;
-  padding-top: .3em;
-  margin-top: 0;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  margin-top: 0em;
   vertical-align: top;
 }
 
@@ -4183,7 +4349,7 @@ legend {
   display: block;
   clear: both;
   margin-left: 2.5em;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 .EXLLocationsMoreInfo strong {
@@ -4195,14 +4361,16 @@ legend {
   background-repeat: no-repeat;
   background-position: 100% 50%;
   padding-right: 1.5em;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
+
+/*OPAC via Link popout icon*/
 
 .EXLLocationsTabContent h4 {
   float: left;
   clear: both;
-  margin-left: .5em;
-  margin-top: .5em;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
   font-size: 100%;
   width: 100%;
   white-space: nowrap;
@@ -4210,7 +4378,7 @@ legend {
 }
 
 .EXLLocationsTabContent div.EXLLocationListLastItem {
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable {
@@ -4221,24 +4389,24 @@ legend {
 
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable caption {
   text-align: left;
-  padding-top: .3em;
-  padding-bottom: .3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   padding-left: 2.4em;
   padding-right: 2em;
 }
 
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable th {
-  padding-top: .2em;
-  padding-bottom: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0em;
   border-bottom: 1px solid #e0e2e5;
   padding-right: 1em;
   text-align: left;
 }
 
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable td {
-  border: 0;
-  padding: .1em 0 .1em 0;
-  margin: 0;
+  border: none;
+  padding: 0.1em 0em 0.1em 0em;
+  margin: 0px;
 }
 
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable tr.EXLLocationTableRowBgColor {
@@ -4247,7 +4415,7 @@ legend {
 
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable li {
   display: inline;
-  padding-right: .5em;
+  padding-right: 0.5em;
   white-space: nowrap;
 }
 
@@ -4287,18 +4455,18 @@ legend {
 
 .EXLLocationTableHeaderActions {
   width: auto;
-  padding-left: .3em;
+  padding-left: 0.3em;
 }
 
 .EXLLocationsTabContent div.EXLLocationViewAllLink {
   background-color: #e3f3ff;
   text-align: center;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .EXLLocationsTabContent div.EXLLocationViewAllLink span {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #aebac4;
   height: 20px;
 }
@@ -4306,8 +4474,8 @@ legend {
 .EXLLocationsTabContent div.EXLLocationViewAllLink span a {
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 .EXLLocationsTabContent div.EXLLocationViewAllLink span a:hover {
@@ -4331,12 +4499,12 @@ legend {
   text-align: left;
   float: left;
   width: 1em;
-  margin-right: 0;
+  margin-right: 0em;
 }
 
 .EXLLocationsTitle a.EXLLocationsIcon img {
-  padding-top: 0;
-  padding-right: 0;
+  padding-top: 0em;
+  padding-right: 0em;
   vertical-align: top;
 }
 
@@ -4345,13 +4513,15 @@ legend {
   background-repeat: no-repeat;
   background-position: 100% 50%;
   padding-right: 1.5em;
-  padding-left: 0;
+  padding-left: 0em;
 }
 
+/*OPAC via Link popout icon*/
+
 .dataFrame input {
-  background-color: #f4762d;
-  border: 1px solid #7f9db9;
-  color: #fff;
+  background-color: #F4762D;
+  border: 1px solid #7F9DB9;
+  color: #FFFFFF;
   cursor: pointer;
   font-size: 90%;
   font-weight: normal;
@@ -4360,9 +4530,11 @@ legend {
   width: auto;
 }
 
+/*location table actions - request options*/
+
 .EXLLocationTableActions {
   vertical-align: top;
-  padding: 0;
+  padding: 0em;
   width: 15em;
 }
 
@@ -4371,7 +4543,7 @@ legend {
 }
 
 .EXLLocationTableActions li {
-  padding: 0 0 0 .5em;
+  padding: 0em 0em 0em 0.5em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/vseparator_actions_nav.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -4382,15 +4554,21 @@ legend {
   background-image: none;
 }
 
+/*Recommendations Tab Styles*/
+
 .EXLRecommendationsTabContent {
   overflow: auto;
   overflow-x: hidden;
 }
 
+/*More Tab Styles*/
+
 .EXLMoreTabContent {
   overflow: auto;
   overflow-x: hidden;
 }
+
+/*Main Menu*/
 
 .EXLMyAccountMainMenuTile {
   width: 12.5em;
@@ -4398,33 +4576,33 @@ legend {
 }
 
 .EXLMyAccountMainMenuContainer ol {
-  margin: 0 .5em 0 .5em;
+  margin: 0em 0.5em 0em 0.5em;
   border: 1px solid #d4d4d4;
   list-style-position: outside;
   list-style: none;
-  padding: 1em 1em 1em 0;
-  background-color: #fff;
+  padding: 1em 1em 1em 0em;
+  background-color: #FFFFFF;
   height: 9.5em;
 }
 
 .EXLMyAccountMainMenuContainer ol li {
   font-size: 80%;
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-bottom: 0em;
+  padding-top: 0em;
   line-height: 200%;
   font-weight: bold;
-  color: #444;
+  color: #444444;
 }
 
 .EXLMyAccountMainMenuContainer ol li a,
 .EXLMyAccountMainMenuContainer ol li a:visited {
   font-weight: bold;
-  color: #444;
+  color: #444444;
 }
 
 .EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuBullet {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-image: none;
   background-repeat: no-repeat;
   width: 17px;
@@ -4438,8 +4616,8 @@ legend {
 }
 
 .EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuBulletSelected {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_myAccount_menu.png");
   background-repeat: no-repeat;
   width: 17px;
@@ -4454,16 +4632,16 @@ legend {
 
 .EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuTitle {
   width: 80%;
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
 
 .EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuCounter {
   font-size: 90%;
   width: 10%;
   text-align: right;
-  color: #8c8d8c;
+  color: #8C8D8C;
   font-weight: normal;
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
 
 .EXLMyAccountMainMenuContainer ol li.EXLMyAccountMainMenuWarning span {
@@ -4472,16 +4650,18 @@ legend {
 }
 
 .EXLMyAccountMainMenuContainer ol li.EXLMyAccountMainMenuWarning span.EXLMyAccountMainMenuCounter {
-  padding-left: 0;
+  padding-left: 0em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_exclamation.png");
   background-repeat: no-repeat;
   display: inline-block;
   background-position: 100% 55%;
 }
 
+/*Main Content */
+
 .EXLMyAccountMainContainer {
-  border: 1px solid #d7dde3;
-  background-color: #fff;
+  border: 1px solid #D7DDE3;
+  background-color: #FFFFFF;
   margin-left: 14.5em;
   width: auto;
   font-size: 90%;
@@ -4502,29 +4682,29 @@ legend {
 .EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle {
   width: auto;
   float: left;
-  padding-top: .7em;
+  padding-top: 0.7em;
   padding-left: 2%;
 }
 
 .EXLMyAccountMainHeaderTitle div.EXLMyAccountMainHeaderContent {
   width: auto;
-  color: #000;
-  padding-bottom: .1em;
-  padding-top: .1em;
+  color: #000000;
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
 }
 
 .EXLMyAccountMainHeaderTitle div.EXLMyAccountMainHeaderContent span {
   width: auto;
-  color: #000;
+  color: #000000;
   margin-right: 1em;
   display: block;
   float: left;
   border: 1px solid #fcfcfd;
-  padding: 1px 0 1px 0;
+  padding: 1px 0px 1px 0px;
 }
 
 .EXLMyAccountMainHeaderTitle div.EXLMyAccountMainHeaderContent span.EXLMyAccountMainHeaderContentSelected {
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #8fb9d0;
   display: inline;
   padding: 1px 5px 1px 5px;
@@ -4538,7 +4718,7 @@ legend {
 
 .EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle h1 span {
   font-weight: normal;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .EXLMyAccountMainHeaderTitle div.EXLMyAccountMainHeaderContent span.EXLMyAccountMainHeaderContentSeparator {
@@ -4550,8 +4730,8 @@ legend {
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountMainHeaderButtons {
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0px;
   width: 35%;
   float: right;
   text-align: right;
@@ -4561,20 +4741,22 @@ legend {
   display: none;
 }
 
+/*Carmit - can be used for local help link, currently not in use*/
+
 .EXLMyAccountMainContainer table {
   text-align: left;
   width: 96%;
   font-size: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .EXLMyAccountMainContainer table caption {
   text-align: left;
-  padding-top: .3em;
-  padding-bottom: .8em;
-  margin-top: .5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.8em;
+  margin-top: 0.5em;
 }
 
 .EXLMyAccountMainContainer table caption.EXLCaptionSystemFeedback {
@@ -4582,26 +4764,26 @@ legend {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: normal;
   border: 1px solid #e1e1e1;
-  padding: .5em 0 .5em .5em;
+  padding: 0.5em 0em 0.5em 0.5em;
 }
 
 .EXLMyAccountMainContainer table th {
   border-bottom: 1px solid #e0e2e5;
-  padding-top: .2em;
-  padding-bottom: 0;
-  color: #000;
+  padding-top: 0.2em;
+  padding-bottom: 0em;
+  color: #000000;
   width: auto;
   padding-right: 1.5em;
   vertical-align: bottom;
 }
 
 .EXLMyAccountMainContainer table td {
-  border: 0;
-  padding: .1em 0 .1em 0;
-  margin: 0;
+  border: none;
+  padding: 0.1em 0em 0.1em 0em;
+  margin: 0px;
   vertical-align: text-top;
   padding-right: 1em;
 }
@@ -4622,24 +4804,28 @@ legend {
   font-weight: normal;
   width: auto;
   vertical-align: text-top;
-  border-bottom: 1px solid #d7dde3;
+  border-bottom: 1px solid #D7DDE3;
 }
 
 .EXLMyAccountMainContainer table.EXLMyAccountTableDetails th {
   font-weight: bold;
-  border: 0;
+  border: none;
   width: 10em;
   white-space: nowrap;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0em;
+  padding-bottom: 0em;
   vertical-align: text-top;
   border-bottom: 1px solid #edf1f5;
   color: #32312e;
 }
 
+/*My Queries*/
+
 .EXLMyQueriesContainer div.EXLMyAccountMainMenuTile {
   width: 14.5em;
 }
+
+/*Main Menu*/
 
 .EXLMyQueriesContainer div.EXLMyAccountMainContainer {
   margin-left: 16.5em;
@@ -4650,27 +4836,33 @@ legend {
 }
 
 .EXLMyQueriesContainer div.EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuCounter {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .EXLMyAccountMainContainer table.EXLMyAccountTable td.EXLMyAccountTableRSSLink img {
-  background-color: #3c6;
+  background-color: #33CC66;
   vertical-align: text-top;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
+
+/*My Library Card - iframe*/
 
 .EXLMyAccountMainContainer iframe.EXLMyAccountLibraryCardIframe {
   overflow: scroll;
   margin-bottom: -2em;
 }
 
+/*----------------My Shelf Styles-------------*/
+
+/*my shelf table - actions menu header buttons: send to menu, popout and hide tabs ribbon**/
+
 .EXLMyAccountMainHeader div.EXLMyShelfTableHeaderButtons {
-  padding: 0;
+  padding: 0em;
   width: 35%;
   float: right;
   text-align: right;
   height: 18px;
-  padding-top: .8em;
+  padding-top: 0.8em;
 }
 
 .EXLMyAccountMainHeader div.EXLMyShelfTableHeaderButtons ul {
@@ -4689,7 +4881,7 @@ legend {
   list-style: none;
   float: left;
   height: 18px;
-  border-right: 0 solid #e1e1e1;
+  border-right: 0px solid #e1e1e1;
 }
 
 .EXLMyAccountMainHeader div.EXLMyShelfTableHeaderButtons li span {
@@ -4702,8 +4894,8 @@ legend {
 }
 
 .EXLMyAccountMainHeader div.EXLMyShelfTableHeaderButtons li a {
-  padding: .2em .2em .2em .2em;
-  color: #000;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -4717,40 +4909,40 @@ legend {
 
 .EXLMyAccountMainHeader div.EXLMyShelfTableHeaderButtons li a span.EXLMyShelfTableHeaderButtonCopy {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_my_shelf_copy.png");
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .EXLMyAccountMainHeader div.EXLMyShelfTableHeaderButtons li a span.EXLMyShelfTableHeaderButtonPaste {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_my_shelf_paste.png");
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .EXLMyAccountMainHeader div.EXLMyShelfTableHeaderButtons li a span.EXLMyShelfTableHeaderButtonDelete {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_my_shelf_delete.png");
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .EXLMyShelfTableHeaderButtonSendTo {
-  padding-right: .5em;
+  padding-right: 0.5em;
   text-align: left;
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .EXLMyShelfTableHeaderButtonSendTo img {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .EXLMyShelfTableHeaderButtons ol.EXLMyShelfTableHeaderButtonSendToList {
   width: 95px;
-  background-color: #ff0;
+  background-color: #FFFF00;
   border: 1px solid #e1e1e1;
   position: relative;
-  left: 0;
+  left: 0px;
   top: 2px;
   z-index: 100;
   clear: both;
-  display: none;
+  display: none /*change to block on mouse over*/;
 }
 
 .EXLMyShelfTableHeaderButtons ol.EXLMyShelfTableHeaderButtonSendToList li {
@@ -4758,23 +4950,23 @@ legend {
   background-image: none;
   display: block;
   clear: both;
-  border: 0;
+  border: none;
   z-index: 100;
   width: 100%;
   white-space: nowrap;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .EXLMyShelfTableHeaderButtons ol.EXLMyShelfTableHeaderButtonSendToList li span {
   float: left;
   background-image: none;
-  padding-left: 0;
-  text-indent: .2em;
+  padding-left: 0em;
+  text-indent: 0.2em;
 }
 
 .EXLMyShelfTableHeaderButtons ol.EXLMyShelfTableHeaderButtonSendToList li span.EXLButtonSendToLabel {
   float: left;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
 .EXLMyShelfTableHeaderButtons ol.EXLMyShelfTableHeaderButtonSendToList li a:link {
@@ -4822,9 +5014,31 @@ legend {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_sendTo_endnote.png");
 }
 
+/*my shelf menu styles*/
+
+.EXLMyShelfContainer div.EXLMyAccountMainMenuTile {
+  /*width:14.5em;*/
+}
+
+/*Main Menu*/
+
+.EXLMyShelfContainer div.EXLMyAccountMainContainer {
+  /*margin-left:16.5em;*/
+}
+
+.EXLMyShelfContainer div.EXLMyAccountMainMenuContainer ol {
+  /*height:3em; */
+}
+
+.EXLMyShelfContainer div.EXLMyAccountMainMenuContainer ol li span.EXLMyAccountMainMenuCounter {
+  /*padding-left:0.5em*/
+}
+
 .EXLMyAccountMainContainer table tr.EXLMyShelfTableRowBgColor {
   background-color: #f3f3f7;
 }
+
+/*my shelf table column width*/
 
 .EXLMyAccountMainContainer table th.EXLMyShelfTableType {
   padding-right: 1.5em;
@@ -4833,6 +5047,8 @@ legend {
 .EXLMyAccountMainContainer table th.EXLMyShelfTableAdded {
   padding-right: 1.5em;
 }
+
+/*item note*/
 
 .EXLMyShelfContainer div.EXLMyAccountMainContainer table td.EXLMyShelfCellNote a {
   cursor: pointer;
@@ -4845,7 +5061,7 @@ legend {
 }
 
 .EXLMyShelfContainer div.EXLMyAccountMainContainer table td.EXLMyShelfCellNote a span.EXLMyShelfCellNoteIcon {
-  margin-left: .5em;
+  margin-left: 0.5em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_item_note2.png");
   background-repeat: no-repeat;
   width: 16px;
@@ -4855,7 +5071,7 @@ legend {
 }
 
 .EXLMyShelfContainer div.EXLMyAccountMainContainer table td.EXLMyShelfCellNote a span.EXLMyShelfCellNoteIconEdit {
-  margin-left: .5em;
+  margin-left: 0.5em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_item_note_edit2.png");
   background-repeat: no-repeat;
   width: 16px;
@@ -4864,19 +5080,23 @@ legend {
   float: left;
 }
 
+/*checkbox styles*/
+
 .EXLMyShelfContainer div.EXLMyAccountMainContainer table td.EXLMyShelfCellCheckbox {
   width: 2%;
 }
 
 .EXLMyShelfContainer div.EXLMyAccountMainContainer table td.EXLMyShelfCellCheckbox input {
   width: auto;
-  border: 0;
-  margin-right: .5em;
+  border: none;
+  margin-right: 0.5em;
 }
 
 .EXLMyShelfContainer div.EXLMyAccountMainContainer table td.EXLMyShelfCellCheckbox label {
   display: none;
 }
+
+/*Folder Note*/
 
 .EXLMyShelfContainer div.EXLMyAccountMainContainer div.EXLMyShelfFolderNote {
   width: 96%;
@@ -4886,7 +5106,7 @@ legend {
 .EXLMyShelfContainer div.EXLMyAccountMainContainer div.EXLMyShelfFolderNote label {
   display: block;
   font-size: 80%;
-  color: #444;
+  color: #444444;
 }
 
 .EXLMyShelfContainer div.EXLMyAccountMainContainer div.EXLMyShelfFolderNote input {
@@ -4896,12 +5116,12 @@ legend {
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_submit_temp.png");
   background-repeat: repeat-x;
-  margin-left: 0;
+  margin-left: 0em;
   width: 65px;
-  color: #fff;
+  color: #FFFFFF;
   border: 1px solid #f4762d;
   height: 22px;
-  margin-top: .3em;
+  margin-top: 0.3em;
   display: none;
 }
 
@@ -4911,9 +5131,9 @@ legend {
   width: 100%;
   font-family: Arial;
   font-size: 80%;
-  padding: .2em;
-  margin-top: .2em;
-  color: #444;
+  padding: 0.2em;
+  margin-top: 0.2em;
+  color: #444444;
 }
 
 .EXLMyAccountMainTableLinks {
@@ -4942,8 +5162,8 @@ legend {
 }
 
 .EXLMyAccountButtonLink span a {
-  padding: 0 .5em 0 .5em;
-  color: #fff;
+  padding: 0em 0.5em 0em 0.5em;
+  color: #FFFFFF;
   font-weight: normal;
   height: 20px;
   cursor: pointer;
@@ -4957,6 +5177,8 @@ legend {
   text-decoration: none;
 }
 
+/*Default Message Style - used when there are no blocks and messages*/
+
 .EXLMyAccountDefaultMessageContainer {
   width: 96%;
   margin: 1em auto 1em auto;
@@ -4964,18 +5186,21 @@ legend {
   height: 15em;
 }
 
+/*Messages Styles*/
+
 .EXLMyAccountMessage {
   width: 96%;
   border: 1px solid #e1e1e1;
   margin: 1em auto 1em auto;
   font-size: 90%;
   background-image: none;
+  /*optional different message icon*/
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 .EXLMyAccountMessage span {
-  padding: .6em 2em .6em .6em;
+  padding: 0.6em 2em 0.6em 0.6em;
   display: block;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_tags_links.png");
   background-repeat: repeat-x;
@@ -4985,16 +5210,19 @@ legend {
 .EXLMyAccountMessage h2 {
   font-weight: bold;
   font-size: 90%;
-  padding: .6em 2em .6em .6em;
+  padding: 0.6em 2em 0.6em 0.6em;
 }
 
 .EXLMyAccountBlock {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_block.png");
 }
 
+/*Personal Settings Form Styles*/
+
 .EXLMyAccountFormContainer {
   width: 96%;
   padding-top: 1em;
+  /*min-height:17em - change according to number of fields in the form;*/
   min-height: 30em;
 }
 
@@ -5021,11 +5249,11 @@ legend {
   text-align: left;
   font-weight: normal;
   display: inline;
-  border: 0;
+  border: none;
   line-height: 200%;
   display: block;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   margin-right: 2em;
 }
 
@@ -5036,7 +5264,7 @@ legend {
 }
 
 .EXLMyAccountMainContainer form table.EXLMyAccountForm td {
-  border: 0;
+  border: none;
   text-align: left;
 }
 
@@ -5062,16 +5290,18 @@ legend {
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_submit_temp.png");
   background-repeat: repeat-x;
-  margin-left: 0;
+  margin-left: 0em;
   width: 10em;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: normal;
   height: 22px;
   cursor: pointer;
-  border: 1px solid #fff;
-  padding-left: .5em;
-  padding-right: .5em;
+  border: 1px solid #ffffff;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
+
+/*Personal Settings Passwords Update styles*/
 
 .EXLMyAccountMainContainer table.EXLMyAccountForm tr.PSPasswordsHiddableRow {
   display: none;
@@ -5081,11 +5311,13 @@ legend {
   font-weight: bold;
 }
 
+/*Personal Settings System Feedback Styles*/
+
 .EXLMyAccountMainContainer div.EXLMyPersonalSettings div.EXLRequestSystemFeedback {
   float: left;
   width: 80%;
   border: 1px solid #e1e1e1;
-  margin: .5em;
+  margin: 0.5em;
   text-align: center;
   background-color: #fffbc3;
 }
@@ -5096,7 +5328,7 @@ legend {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_system_feedback.png");
   background-repeat: repeat-x;
   background-position: bottom;
-  color: #000;
+  color: #000000;
   font-weight: normal;
 }
 
@@ -5108,40 +5340,42 @@ legend {
   font-weight: bold;
 }
 
+/*Tip Styles*/
+
 .EXLMyAccountMainContainer div.EXLMyAccountTips {
   float: right;
   width: 35%;
   border: 1px solid #e1e1e1;
-  margin: .5em 0 1em 1em;
+  margin: 0.5em 0em 1em 1em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_details_links.png");
   background-repeat: repeat-x;
   background-position: bottom;
   height: auto;
-  padding: .5em 1em 0 .5em;
+  padding: 0.5em 1em 0em 0.5em;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips em {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-size: 90%;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips ul {
   height: 100%;
-  padding: .5em 0 1em .5em;
+  padding: 0.5em 0em 1em 0.5em;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips li {
   list-style: none;
-  padding-top: 0;
-  padding-right: 0;
+  padding-top: 0px;
+  padding-right: 0px;
   font-size: 90%;
   margin-bottom: 1em;
   float: left;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_arrow_orange_tip.png");
   background-repeat: no-repeat;
   width: 15px;
@@ -5164,8 +5398,8 @@ legend {
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips form table {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips form th {
@@ -5179,7 +5413,7 @@ legend {
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips form select {
-  width: auto;
+  width: auto /*7em*/;
   line-height: normal;
   vertical-align: top;
 }
@@ -5188,8 +5422,8 @@ legend {
   font-size: 90%;
   color: #32322f;
   font-weight: bold;
-  text-indent: 0;
-  margin-bottom: .5em;
+  text-indent: 0em;
+  margin-bottom: 0.5em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips label {
@@ -5197,9 +5431,11 @@ legend {
   line-height: normal;
 }
 
+/*My Account Tabs*/
+
 .EXLMyAccountTabsRibbon div ul {
-  margin-left: .8em;
-  margin-bottom: 0;
+  margin-left: 0.8em;
+  margin-bottom: 0em;
 }
 
 .EXLMyAccountTabsRibbon div li {
@@ -5210,17 +5446,17 @@ legend {
 }
 
 .EXLMyAccountTabsRibbon div li.EXLMyAccountTab {
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  border: 1px solid #CCCCCC;
+  border-bottom: 0px;
   height: 27px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   float: left;
-  padding-left: .8em;
-  padding-right: .8em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   margin-right: 4px;
-  color: #9b9b9b;
+  color: #9B9B9B;
 }
 
 .EXLMyAccountTabsRibbon div li.EXLMyAccountTab a {
@@ -5233,16 +5469,18 @@ legend {
 }
 
 .EXLMyAccountTabsRibbon div li.EXLMyAccountSelectedTab a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .EXLMyAccountTabsRibbon div li.EXLMyAccountFirstTab {
-  padding-left: 0;
+  padding-left: 0em;
 }
 
 .EXLMyAccountTabsRibbon div li.EXLMyAccountFirstSelectedTab {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
+
+/*Home Page Styles*/
 
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 div.EXLHomeServicesContainer {
   margin-top: 1em;
@@ -5251,7 +5489,7 @@ legend {
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 div.EXLHomeServicesContainer p a {
   display: block;
   line-height: 100%;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 #exlidHomeContainer div.EXLHomeBlockContainer2 div.EXLContentBlock3 {
@@ -5289,12 +5527,12 @@ legend {
 }
 
 #exlidHomeContainer div.EXLContentBlock3 h4 {
-  padding-left: .3em;
-  padding-top: .2em;
+  padding-left: 0.3em;
+  padding-top: 0.2em;
 }
 
 #exlidHomeContainer div.EXLContentBlock3 p {
-  padding-left: .3em;
+  padding-left: 0.3em;
   line-height: 120%;
 }
 
@@ -5322,12 +5560,12 @@ legend {
 }
 
 #exlidHomeContainer div.EXLContentBlock4 h4 {
-  padding-left: .4em;
-  padding-top: .2em;
+  padding-left: 0.4em;
+  padding-top: 0.2em;
 }
 
 #exlidHomeContainer div.EXLContentBlock4 p {
-  padding-left: .4em;
+  padding-left: 0.4em;
   line-height: 120%;
   margin-right: 5.5em;
 }
@@ -5351,11 +5589,11 @@ legend {
 }
 
 .EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterAutoUpdate {
-  padding-top: .2em;
+  padding-top: 0.2em;
 }
 
 .EXLFooterTile div.EXLFooterUpdateContainer div.EXLFooterAutoUpdate input {
-  margin-right: .2em;
+  margin-right: 0.2em;
   vertical-align: middle;
 }
 
@@ -5364,26 +5602,26 @@ legend {
   display: block;
   float: left;
   clear: both;
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
   padding-top: 1em;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .EXLFooterTile li {
   float: left;
-  text-indent: .5em;
-  padding-right: .8em;
+  text-indent: 0.5em;
+  padding-right: 0.8em;
   border-right: 1px solid #e2e2e2;
 }
 
 .EXLFooterTile li.EXLFooterLastLink {
-  border-right: 0;
+  border-right: none;
 }
 
 .EXLFooterTile ul.EXLFooterLinksList2 {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   width: 100%;
 }
 
@@ -5391,23 +5629,27 @@ legend {
   color: #4a4d51;
 }
 
+/* Please Wait styles*/
+
 .EXLPleaseWaitIframe {
   position: absolute;
   top: 50px;
   left: 30%;
-  background-color: #0f9;
+  background-color: #00FF99;
   z-index: 300;
   background-color: #f4f7f8;
 }
 
+/*iframe - remove after implmentation*/
+
 #exlidLightbox {
-  background-color: #ccc;
-  padding-top: .5em;
-  opacity: .9;
+  background-color: #cccccc;
+  padding-top: 0.5em;
+  opacity: 0.9;
   filter: alpha(opacity=90);
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   min-width: 100%;
   min-height: 100%;
   z-index: 1000;
@@ -5423,20 +5665,22 @@ legend {
   background-color: #ecf0f3;
   width: 500px;
   height: 260px;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
 #exlidPleaseWaitTile {
   clear: left;
-  padding: 0;
+  padding: 0 0 0 0;
   font-size: 80%;
   height: 250px;
   width: 96%;
   border: 1px solid #d4d4d4;
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
 }
+
+/*header*/
 
 .EXLPleaseWaitHeader {
   width: 100%;
@@ -5448,10 +5692,12 @@ legend {
 .EXLPleaseWaitHeader h1 {
   float: left;
   font-size: 100%;
-  color: #000;
+  color: #000000;
   line-height: 300%;
   padding-left: 1em;
 }
+
+/*list*/
 
 .EXLPleaseWaitList {
   width: 92%;
@@ -5468,12 +5714,12 @@ legend {
   list-style: none;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_square_orange.png");
   background-repeat: no-repeat;
-  background-position: 2% .9em;
+  background-position: 2% 0.9em;
   display: block;
   float: left;
   width: 100%;
-  padding-top: .4em;
-  padding-bottom: .5em;
+  padding-top: 0.4em;
+  padding-bottom: 0.5em;
 }
 
 .EXLPleaseWaitList li.EXLPleaseWaitListFirstItem {
@@ -5487,13 +5733,15 @@ legend {
 }
 
 .EXLPleaseWaitList li strong {
-  margin-left: .5em;
+  margin-left: 0.5em;
   float: left;
   line-height: 130%;
   width: 70%;
   clear: right;
   display: inline;
 }
+
+/*progress bar*/
 
 .EXLPleaseWaitProgressBar {
   width: 64%;
@@ -5503,7 +5751,7 @@ legend {
   height: 8px;
   padding: 1px;
   display: block;
-  clip: rect(50px,250px,100px,50px);
+  clip: rect(50px, 250px, 100px, 50px);
 }
 
 .EXLPleaseWaitProgressBarContainer {
@@ -5514,21 +5762,24 @@ legend {
 }
 
 .EXLPleaseWaitProgressBarFiller {
-  width: 0;
+  width: 0%;
   height: 100%;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_progress_bar_on.png");
   background-repeat: repeat-x;
   width: 20%;
+  /* change width from 0 to 100 to show progress*/
   background-color: #e87107;
 }
+
+/*suggested searches*/
 
 .EXLSuggestedSearchesTile {
   width: 100%;
   display: block;
-  color: #000;
+  color: #000000;
   border-bottom: 1px solid #e4e4e4;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   background-color: #f8f8f8;
 }
 
@@ -5538,22 +5789,22 @@ legend {
 }
 
 .EXLSuggestedSearchesTile div.EXLSuggestedSearchesList {
-  margin-top: 0;
+  margin-top: 0em;
 }
 
 .EXLSuggestedSearchesContainer {
-  margin-bottom: 0;
-  padding: 0;
+  margin-bottom: 0em;
+  padding: 0 0 0 0;
   display: block;
   width: 100%;
 }
 
 .EXLSuggestedSearchesContainer h3 {
-  color: #000;
+  color: #000000;
   font-weight: normal;
   font-size: 80%;
-  padding: 0;
-  text-indent: 0;
+  padding: 0em;
+  text-indent: 0em;
   padding-left: 1em;
   display: inline-block;
   line-height: 100%;
@@ -5562,40 +5813,43 @@ legend {
 
 .EXLSuggestedSearchesContainer ol {
   display: inline-block;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .EXLSuggestedSearchesContainer li a {
-  text-indent: 0;
-  margin-right: .7em;
-  padding-left: .5em;
+  text-indent: 0em;
+  margin-right: 0.7em;
+  padding-left: 0.5em;
 }
 
 .EXLSuggestedSearchesContainer ol li {
-  margin-left: 0;
-  padding: 0;
+  margin-left: 0em;
+  padding: 0em;
   font-size: 80%;
   line-height: 100%;
-  color: #8c8d8c;
+  color: #8C8D8C;
   list-style: none;
   display: inline;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/vseparator_sub_nav.png");
   background-repeat: no-repeat;
   background-position: right;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .EXLSuggestedSearchesDescription {
   display: none;
-  font-size: .8em;
+  /*display:block*/
+  font-size: 0.8em;
   margin: 7px;
 }
+
+/* lightbox styles - confirm delete request*/
 
 .EXLLighboxConfirmContainer {
   background-color: #ecf0f3;
   width: 375px;
   height: 130px;
-  padding-top: .5em;
+  padding-top: 0.5em;
   position: fixed;
   top: 10em;
   left: 30%;
@@ -5607,9 +5861,11 @@ legend {
   height: 120px;
   width: 358px;
   border: 1px solid #d4d4d4;
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin: auto;
 }
+
+/*header*/
 
 .EXLLighboxConfirmHeader {
   width: 100%;
@@ -5621,17 +5877,19 @@ legend {
 .EXLLighboxConfirmHeader h1 {
   float: left;
   font-size: 100%;
-  color: #000;
+  color: #000000;
   line-height: 300%;
   padding-left: 1em;
 }
 
 .EXLLighboxConfirm p {
-  padding: 0 0 0 1em;
-  margin: 0;
+  padding: 0em 0em 0em 1em;
+  margin: 0em;
   width: 100%;
   float: left;
 }
+
+/*buttons*/
 
 .EXLLighboxConfirmContainer div.EXLLighboxConfirmLinkButtons {
   height: auto;
@@ -5644,7 +5902,7 @@ legend {
   font-size: 90%;
   margin-left: 1em;
   margin-right: auto;
-  margin-top: .5em;
+  margin-top: 0.5em;
   float: left;
   clear: right;
 }
@@ -5659,8 +5917,8 @@ legend {
 }
 
 .EXLLighboxConfirmContainer div.EXLLighboxConfirmButtonLink span input {
-  padding: 0 .5em 0 .5em;
-  color: #fff;
+  padding: 0em 0.5em 0em 0.5em;
+  color: #FFFFFF;
   font-weight: normal;
   height: 20px;
   cursor: pointer;
@@ -5682,10 +5940,16 @@ legend {
   cursor: wait;
 }
 
+/*Facets Lightbox Styles*/
+
+/* .searchword {padding:0em 0.1em 0em 0.1em; background-color:#fdfbd9; border:1px solid #f7d851; } /* fancier */
+
 .EXLParenthesis {
   direction: ltr;
   unicode-bidi: embed;
 }
+
+/* Used for the debug textareas */
 
 #debugLogFooter {
   margin: auto;
@@ -5698,16 +5962,34 @@ legend {
 }
 
 #debugLogFooter textarea {
-  border: solid 1px #e1e1e1;
+  border: solid 1px #E1E1E1;
 }
 
 #debugLogFooter div {
   padding: 7px;
 }
 
+/*
+.EXLLogo{background-color: #bbddff;}
+#exlidHeaderTile{width:100%;}
+.EXLSearchWrapper{clear:both;}
+#exlidMainMenuTile {clear:none; z-index:20;margin-top:0px}
+#exlidUserAreaTile {position:absolute;right:0px;top:0px;z-index:20;}
+.EXLResultsList tr.EXLResult td div.EXLTabsRibbonClosed {display:none }
+.EXLResultsList tr.EXLResult td div.EXLTabsRibbonClosed li.EXLResultTab a{color:#FFFFFF; }
+.EXLResultsList tr:hover.EXLResult td div.EXLTabsRibbonClosed li.EXLResultTab a{color:#0075b0; }
+.EXLResultsList td.EXLResultNumber {vertical-align: middle; display:table-cell; *display:block; width:1%;}
+.EXLResultsContainer div.EXLResultsTile { padding-right:1%; border-right: 1px solid #D7DDE3; border-left:none; float:left;}
+.EXLFacetTile {float:right;}
+*/
+
+/* unfortunate fix for FF3.5 */
+
 #exlidHeaderSearchLimits fieldset legend {
   display: none;
 }
+
+/* special language-specific fixes: */
 
 .EXLCurrentLang_fr_FR .EXLMyAccountMainContainer {
   margin-left: 18.5em;
@@ -5725,10 +6007,12 @@ legend {
   width: 16.5em;
 }
 
+/*expand location info*/
+
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable td.EXLShowInfo a {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_locations_arrow.png");
   background-repeat: no-repeat;
-  background-position: 0 10%;
+  background-position: 0% 10%;
   padding-left: 1.5em;
   display: block;
 }
@@ -5736,7 +6020,7 @@ legend {
 .EXLLocationsTabContent div.EXLLocationList table.EXLLocationTable td.EXLHideInfo a {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_locations_arrow_expand.png");
   background-repeat: no-repeat;
-  background-position: 0 40%;
+  background-position: 0% 40%;
   padding-left: 1.5em;
 }
 
@@ -5744,7 +6028,7 @@ legend {
   width: 100%;
   display: block;
   padding-left: 1.5em;
-  padding-bottom: .2em;
+  padding-bottom: 0.2em;
   position: relative;
   position: static;
 }
@@ -5759,13 +6043,15 @@ legend {
   width: 10em;
 }
 
+/*Advanced search pre filters - peer reviewed, full text*/
+
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonPreFilters {
   min-height: 12em;
   overflow: auto;
 }
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonPreFilters div.EXLAdvancedSearchFormRowPrefilters fieldset {
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonPreFilters div.EXLAdvancedSearchFormRowPrefilters fieldset span label {
@@ -5776,20 +6062,22 @@ legend {
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonPreFilters div.EXLAdvancedSearchFormRowPrefilters fieldset span input {
   width: auto;
   height: auto;
-  margin-left: 0;
-  margin-right: 0;
-  border: 0;
+  margin-left: 0em;
+  margin-right: 0em;
+  border: none;
 }
+
+/*Personalized Ranking Lightbox*/
 
 .EXLLightbox {
   border: 1px solid #b8b8b8;
   height: auto;
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
   -moz-border-radius-topleft: 4px;
   -moz-border-radius-topright: 4px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/lightbox_footer_bg.png");
   background-repeat: repeat-x;
   background-position: bottom;
@@ -5807,7 +6095,7 @@ legend {
 }
 
 .EXLLightbox div.EXLLightboxHeader span.EXLLightboxHeaderTitle {
-  color: #000;
+  color: #000000;
   font-weight: bold;
   font-size: 90%;
   line-height: 210%;
@@ -5819,7 +6107,7 @@ legend {
 .EXLLightbox div.EXLLightboxHeader a.EXLLightboxHeaderClose {
   float: right;
   margin-right: 1em;
-  margin-top: .6em;
+  margin-top: 0.6em;
   clear: left;
   display: inline;
   width: 10%;
@@ -5844,10 +6132,10 @@ legend {
 
 .EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow {
   vertical-align: top;
-  padding-top: .3em;
-  padding-bottom: .3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   display: block;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer div.EXLLightboxFormRow label {
@@ -5859,10 +6147,10 @@ legend {
 
 .EXLLightbox div.EXLLightboxFormContainer p {
   background-color: #f1f1f1;
-  padding: 1.5em 1em .5em 0;
+  padding: 1.5em 1em 0.5em 0em;
   color: #7b7b79;
   font-size: 90%;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer select {
@@ -5872,26 +6160,26 @@ legend {
   border: 1px solid #c7c7c7;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/lightbox_footer_bg.png");
   background-repeat: repeat-x;
-  margin-left: 0;
+  margin-left: 0em;
   font-family: Arial;
   font-size: 90%;
-  margin-top: 0;
+  margin-top: 0em;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer input[type="text"] {
-  padding: 2px 0 2px 0;
+  padding: 2px 0px 2px 0px;
   color: #000;
   border: 1px solid #c7c7c7;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/lightbox_footer_bg.png");
   background-repeat: repeat-x;
-  margin-left: 0;
+  margin-left: 0em;
   width: 198px;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection {
   margin-left: 10.2em;
   border: 1px solid #c7c7c7;
-  padding: .5em;
+  padding: 0.5em;
   width: 44em;
   margin-top: -1em;
 }
@@ -5907,7 +6195,7 @@ legend {
 
 .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection .EXLLightboxFormDisciplineSelectionColumn2 {
   float: right;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul li {
@@ -5917,7 +6205,7 @@ legend {
 }
 
 .EXLLightbox div.EXLLightboxFormContainer fieldset.EXLLightboxFormDisciplineSelection ul li label {
-  padding-left: .2em;
+  padding-left: 0.2em;
   white-space: nowrap;
   width: auto;
   display: inline;
@@ -5929,15 +6217,15 @@ legend {
 }
 
 .EXLLightboxFormButtons {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .EXLLighboxSubmitButton {
   width: auto;
   font-size: 90%;
-  margin-left: 0;
+  margin-left: 0em;
   margin-right: auto;
-  margin-top: .5em;
+  margin-top: 0.5em;
   float: left;
   clear: right;
 }
@@ -5952,8 +6240,8 @@ legend {
 }
 
 .EXLLighboxSubmitButton span .EXLSubmit {
-  padding: 0 .5em 0 .5em;
-  color: #fff;
+  padding: 0em 0.5em 0em 0.5em;
+  color: #FFFFFF;
   font-weight: normal;
   height: 20px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../bg_strip_btn_orange.png");
@@ -5966,8 +6254,8 @@ legend {
 }
 
 .EXLLighboxSubmitButton span input {
-  padding: 0 .5em 0 .5em;
-  color: #fff;
+  padding: 0em 0.5em 0em 0.5em;
+  color: #FFFFFF;
   font-weight: normal;
   height: 20px;
   cursor: pointer;
@@ -5980,8 +6268,8 @@ legend {
 }
 
 .EXLLighboxCancelButton span {
-  margin-left: .5em;
-  margin-left: 0;
+  margin-left: 0.5em;
+  margin-left: 0em;
 }
 
 .EXLLighboxCancelButton span input {
@@ -5995,26 +6283,28 @@ legend {
   float: right;
   line-height: 150%;
   font-size: 100%;
-  margin-top: .7em;
+  margin-top: 0.7em;
   margin-right: 2.5em;
 }
+
+/*Personalized Ranking Styles My Account*/
 
 .EXLMyAccountMainContainer div.EXLMyAccountRanking {
   float: right;
   width: 35%;
   border: 1px solid #e1e1e1;
-  margin: .5em 0 1em 1em;
+  margin: 0.5em 0em 1em 1em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_details_links.png");
   background-repeat: repeat-x;
   background-position: bottom;
   height: auto;
-  padding: .5em 1em .5em .5em;
+  padding: 0.5em 1em 0.5em 0.5em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountRanking table {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountRanking strong {
@@ -6022,7 +6312,7 @@ legend {
   color: #32322f;
   font-weight: bold;
   display: block;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountRanking th {
@@ -6030,13 +6320,15 @@ legend {
   white-space: normal;
   line-height: 150%;
   vertical-align: text-top;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountRanking a.EXLEditPersonalizedRankingProfile {
   font-weight: bold;
   line-height: 200%;
 }
+
+/*Personal Settings Form Styles*/
 
 .EXLMyAccountFormContainer {
   width: 96%;
@@ -6066,11 +6358,11 @@ legend {
   text-align: left;
   font-weight: normal;
   display: inline;
-  border: 0;
+  border: none;
   line-height: 200%;
   display: block;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   margin-right: 2em;
   vertical-align: text-top;
 }
@@ -6082,7 +6374,7 @@ legend {
 }
 
 .EXLMyAccountMainContainer form table.EXLMyAccountForm td {
-  border: 0;
+  border: none;
   text-align: left;
 }
 
@@ -6108,51 +6400,53 @@ legend {
   background-color: #e87107;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_submit_temp.png");
   background-repeat: repeat-x;
-  margin-left: 0;
+  margin-left: 0em;
   width: auto;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: normal;
   height: 22px;
   cursor: pointer;
-  border: 1px solid #fff;
-  padding-left: .5em;
-  padding-right: .5em;
+  border: 1px solid #ffffff;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
+
+/*Tip Styles*/
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips {
   float: right;
   width: 35%;
   border: 1px solid #e1e1e1;
-  margin: .5em 0 1em 1em;
+  margin: 0.5em 0em 1em 1em;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_details_links.png");
   background-repeat: repeat-x;
   background-position: bottom;
   height: auto;
-  padding: .5em 1em 0 .5em;
+  padding: 0.5em 1em 0em 0.5em;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips em {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-size: 90%;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips ul {
   height: 100%;
-  padding: .5em 0 1em .5em;
+  padding: 0.5em 0em 1em 0.5em;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips li {
   list-style: none;
-  padding-top: 0;
-  padding-right: 0;
+  padding-top: 0px;
+  padding-right: 0px;
   font-size: 90%;
   margin-bottom: 1em;
   float: left;
 }
 
 .EXLMyAccountMainContainer div.EXLMyAccountTips li span.EXLMyAccountTipsBullet {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bullet_arrow_orange_tip.png");
   background-repeat: no-repeat;
   width: 15px;
@@ -6175,8 +6469,8 @@ legend {
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips form table {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 0em;
+  margin: 0em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips form th {
@@ -6190,7 +6484,7 @@ legend {
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips form select {
-  width: auto;
+  width: auto /*7em*/;
   line-height: normal;
   vertical-align: top;
 }
@@ -6199,8 +6493,8 @@ legend {
   font-size: 90%;
   color: #32322f;
   font-weight: bold;
-  text-indent: 0;
-  margin-bottom: .5em;
+  text-indent: 0em;
+  margin-bottom: 0.5em;
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips label {
@@ -6208,11 +6502,13 @@ legend {
   line-height: normal;
 }
 
+/*RIS PushTo*/
+
 .EXLPopupImportCitationContainer {
   background-color: #ecf0f3;
   width: 375px;
   height: 130px;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
 .EXLPopupImportCitation {
@@ -6220,9 +6516,11 @@ legend {
   height: 120px;
   width: 358px;
   border: 1px solid #d4d4d4;
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin: auto;
 }
+
+/*header*/
 
 .EXLPopupImportCitationHeader {
   width: 100%;
@@ -6234,19 +6532,19 @@ legend {
 .EXLPopupImportCitationHeader h1 {
   float: left;
   font-size: 100%;
-  color: #000;
+  color: #000000;
   line-height: 300%;
   padding-left: 1em;
 }
 
 .EXLPopupImportCitation div.EXLPopupRow {
-  padding: 0 0 0 1em;
-  margin: 0;
+  padding: 0em 0em 0em 1em;
+  margin: 0em;
   width: 100%;
   float: left;
-  margin-top: 0;
+  margin-top: 0em;
   margin-bottom: 1em;
-  margin-bottom: 0;
+  margin-bottom: 0em;
   padding-top: 2em;
 }
 
@@ -6254,10 +6552,12 @@ legend {
   width: auto;
   border: 1px solid #8fb9d0;
   height: auto;
-  padding-top: 0;
-  padding-left: 0;
+  padding-top: 0em;
+  padding-left: 0em;
   font-size: 100%;
 }
+
+/*buttons*/
 
 .EXLPopupImportCitationContainer div.EXLPopupImportCitationLinkButtons {
   height: auto;
@@ -6271,7 +6571,7 @@ legend {
   font-size: 90%;
   margin-left: 1em;
   margin-right: auto;
-  margin-top: .5em;
+  margin-top: 0.5em;
   float: left;
   clear: right;
 }
@@ -6286,8 +6586,8 @@ legend {
 }
 
 .EXLPopupImportCitationContainer div.EXLPopupImportCitationButtonLink span input {
-  padding: 0 .5em 0 .5em;
-  color: #fff;
+  padding: 0em 0.5em 0em 0.5em;
+  color: #FFFFFF;
   font-weight: normal;
   height: 20px;
   cursor: pointer;
@@ -6309,6 +6609,8 @@ legend {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/bg_strip_btn_grey.png");
 }
 
+/*my account sort*/
+
 #LoansTable tr th.headerSortUp {
   background-image: url("http://onesearch-test.library.northeastern.edu/primo_library/libweb/css/../images/icon_arrow_sort.png");
   background-repeat: no-repeat;
@@ -6326,6 +6628,8 @@ legend {
   background-repeat: no-repeat;
   background-position: 90%;
 }
+
+/*Fines and Fees total balance */
 
 .EXLMyAccountMainContainer table td.EXLMyAccountFinesBalanceRow {
   border-top: 1px solid #e0e2e5;

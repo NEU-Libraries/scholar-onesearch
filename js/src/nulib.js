@@ -202,14 +202,13 @@ var scholarOneSearch = (function(){
       }
 
     }else{ //basic search
-      if ($('#search_field').val() != ''){
+      if ($('#search_field').val() !== ''){
         var searchTerm = $('#search_field').val();
 
         //escape quotes
         searchTerm = searchTerm.replace(/\"/g, '&quot;');
         searchTerm = searchTerm.replace(/\'/g, "\\'");
 
-        console.log(worldCatBaseUrl);
         //add the worldcat links
         $('.EXLSearchFieldRibbonAdvancedSearchLink').before('<div id="WorldCatBasicDiv"><a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link">Worldcat Search for: ' + searchTerm + ' </a></div>');
 
@@ -217,7 +216,7 @@ var scholarOneSearch = (function(){
       }
 
     }
-  }
+  };
 
 
 
@@ -225,7 +224,7 @@ var scholarOneSearch = (function(){
     $('a.EXLBriefResultsPaginationLinkNext > img').after('<i class="icon-circle-arrow-right"></i>');
     $('a.EXLBriefResultsPaginationLinkPrevious:first-of-type > img').after('<i class="icon-circle-arrow-left"></i>');
     //just adding a special character to the submit button;
-    $('#goButton').val("➜");
+    //$('#goButton').val("➜");
     //adding an icon before the RSS link;
     $('form[name="rssForm"]').prepend('<i class="icon-rss"></i>');
     $('.EXLFacetSaveSearchAction > a').before('<i class="icon-save"/>');
@@ -273,7 +272,7 @@ var scholarOneSearch = (function(){
     addActiveStates();
     handleRadio();
     addToolTips();
-    worldCatLinks()
+    worldCatLinks();
   };
 
   return {
@@ -293,4 +292,6 @@ var scholarOneSearch = (function(){
 
   window.scholarOneSearch = scholarOneSearch;
   $(document).ready(scholarOneSearch.init);
+
+
 
