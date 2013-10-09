@@ -60,12 +60,12 @@ var scholarOneSearch = (function(){
 
     //Creating a collapse group.
     $('#facetList > .EXLFacetContainer').each(function(i){
+      //find out if we should add the collapse
+      var hasAdditionalFacetes = $(this).find("ol.EXLFacetsList > li").hasClass("EXLAdditionalFacet");
 
-      var class = $(this).find("ol.EXLFacetsList > li").hasClass("EXLAdditionalFacet");
-      if( i > 0 && class ){
-
+      if( i > 0 && hasAdditionalFacetes ){
           //refactor this code to to wrap the li item instead>
-          $(this).find('li.EXLFacetsDisplayMore').addClass('EXLAdditionalFacet')
+          $(this).find('li.EXLFacetsDisplayMore').addClass('EXLAdditionalFacet');
           var $target = $(this).find('h4');
           var $link = $('<a href="#expandFacet'+ (i + 1) +'" title="Expand ' + $target.text() +' list" class="facet-heading facet-expand"/>');
           var $icon = $('<i class="icon-expand-alt icon-large pull-right"/>');
@@ -113,45 +113,47 @@ var scholarOneSearch = (function(){
     }).tooltip();
   };
 
+
+
   //Javascript to develop/test worldcat search link in primo
   //Robin Schaaf, 1/9/2013
   //University of Notre Dame Hesburgh Libraries
 
 
   var worldCatLinks = function(){
+    var worldCatBaseUrl = "http://northeastern.worldcat.org/search?q=" ;
+
+    function getWCIndex(exSearch){
+      switch (exSearch){
+      case 'any':
+        return 'kw';
+      case 'title':
+        return 'ti';
+      case 'creator':
+        return 'au';
+      case 'sub':
+        return 'su';
+      case 'isbn':
+        return 'bn';
+      case 'issn':
+        return 'n2';
+      case 'lsr03':
+        return 'se';
+      case 'lsr04':
+        return 'ut';
+      case 'lsr06':
+        return 'pb';
+      case 'lsr05':
+        return 'lc';
+      default:
+        return 'kw';
+      }
+
+    }
+
     if ($('#exlidAdvancedSearchRibbon').length){
 
       var searchString='';
-
-
-      function getWCIndex(exSearch){
-        switch (exSearch){
-        case 'any':
-          return 'kw';
-        case 'title':
-          return 'ti';
-        case 'creator':
-          return 'au';
-        case 'sub':
-          return 'su';
-        case 'isbn':
-          return 'bn';
-        case 'issn':
-          return 'n2';
-        case 'lsr03':
-          return 'se';
-        case 'lsr04':
-          return 'ut';
-        case 'lsr06':
-          return 'pb';
-        case 'lsr05':
-          return 'lc';
-        default:
-          return 'kw';
-        }
-
-      }
-
 
 
       //loop through each advanced search row
@@ -159,10 +161,10 @@ var scholarOneSearch = (function(){
         //as long as free text is entered
         if( ($('#input_freeText' + index).length) && ($('#input_freeText' + index).val() !== '')){
           //the dropdowns start with 1
-          ddIndex = index + 1;
+          var ddIndex = index + 1;
           //convert the search type from what's in the dropdown
           //to worldcat's term
-          wcIndex = getWCIndex($('#exlidInput_scope_' + ddIndex).val());
+          var wcIndex = getWCIndex($('#exlidInput_scope_' + ddIndex).val());
 
           //for 'constains'search
           var operator = '%3A';
@@ -194,15 +196,12 @@ var scholarOneSearch = (function(){
         searchString = searchString.replace(/\"/g, '&quot;');
         searchString = searchString.replace(/\'/g, "\\'");
 
-        //expand width of parent container
-
 
         //add the worldcat link
-        $('body ').append('<div id="WorldCatAdvancedDiv"><a onclick="javascript:window.open(\'http://www.worldcat.org/search?q=' + searchString + '\');" href="javascript:void(0);" class="navbar-link">Worldcat Search for:'+ +'</a></div>');
+        $('.EXLSearchFieldRibbonFormLinks').append('<div id="WorldCatAdvancedDiv"><a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link">Search Worldcat</a></div>');
       }
 
     }else{ //basic search
-
       if ($('#search_field').val() != ''){
         var searchTerm = $('#search_field').val();
 
@@ -210,12 +209,9 @@ var scholarOneSearch = (function(){
         searchTerm = searchTerm.replace(/\"/g, '&quot;');
         searchTerm = searchTerm.replace(/\'/g, "\\'");
 
-
-        //expand width of parent container
-        $('.EXLSearchTabsContainer').css('width','100%');
-
-        //add the worldcat link
-        $('.EXLSearchFieldRibbonAdvancedSearchLink').before('<div id="WorldCatBasicDiv"><a onclick="javascript:window.open(\'http://www.worldcat.org/search?q=' + searchTerm + '\');" href="javascript:void(0);" class="navbar-link">Worldcat Search for: ' + searchTerm + ' </a></div>');
+        console.log(worldCatBaseUrl);
+        //add the worldcat links
+        $('.EXLSearchFieldRibbonAdvancedSearchLink').before('<div id="WorldCatBasicDiv"><a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link">Worldcat Search for: ' + searchTerm + ' </a></div>');
 
 
       }
@@ -238,8 +234,6 @@ var scholarOneSearch = (function(){
     $('a.EXLFirstRefinementElement').find('#removeFacet').hide().before('<i class="icon-remove-circle close"/>');
     $('img[src="../images/folders_close_inpage.gif"]').hide().before('<i class="icon-folder-close"></i>');
     $('img[src="../images/folders_open.gif"]').hide().before('<i class="icon-folder-open"></i>');
-    //$('img[src="../images/full_note.gif"]').hide().before('<i class="icon-comment"></i>');
-    //$('img[src="../images/empty_note.gif"]').hide().before('<i class="icon-comment-alt"></i>');
   };
 
   var addToolTips = function(){
