@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         },
         js:{
           files: 'js/**/*.js',
-          tasks: ['uglify', 'jshint'],
+          tasks: ['concat', 'jshint'],
         },
         images: {
           files: 'images/**/*',
@@ -152,6 +152,15 @@ module.exports = function(grunt) {
           }]
         },
       },
+    concat: {
+      js: {
+        files: {
+          'dist/js/sos-app.js': jsFiles,
+          'dist/js/respond.min.js': 'js/vendor/respond/respond.min.js'
+        },
+      },
+    },
+
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -165,6 +174,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
 
   // Default task(s).
 

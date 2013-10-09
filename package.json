@@ -25,6 +25,7 @@
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-autoprefixer": "~0.3.0",
     "grunt-contrib-imagemin": "~0.3.0",
-    "grunt-svgmin": "~0.2.0"
+    "grunt-svgmin": "~0.2.0",
+    "grunt-contrib-concat": "~0.3.0"
   }
 }
