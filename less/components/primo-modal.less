@@ -1,13 +1,8 @@
 .EXLLightbox,
 #exlidFindDBTile{
-  .reset;
-  background-image: none;
   .modal-content;
-
   div.EXLLightboxHeader,
   div.EXLFindDBHeader{
-    .reset;
-    background-image: none;
     .modal-header;
     //reset the modal header text to hormal sizing;
     span.EXLLightboxHeaderTitle{
@@ -22,51 +17,34 @@
   div.EXLLightboxFormContainer,
   #searchDbForm,
   #searchDbFormTabs{
-    font-size: inherit;
+
     .modal-body;
-    div.EXLLightboxFormRow{
-      .make-row();
-    }
     fieldset.EXLLightboxFormDisciplineSelection{
-      .reset;
-      .make-row();
+
       //make them six column wide
       ul[class^=EXLLightboxFormDisciplineSelectionColumn]{
         .make-lg-column(6);
         margin: 0;
+        list-style: none;
       }//end lists
     }//end fieldset.EXLLightboxFormDisciplineSelection
 
   }
   .EXLLightboxFormButtons{
     .modal-footer;
-    padding-left: 0;
-    padding-right: 0;
     text-align: left;
-    margin-right: -20px;
-    margin-left: -20px;
   }
 
 }
 
 .EXLLighboxSubmitButton, .EXLLighboxCancelButton{
-  .reset;
-  font-size: inherit;
-  .make-lg-column(2);
+
+  display: inline-block;
   span {
-    .reset;
-    margin: 0;
-    width: inherit;
-    text-align: left;
-    display: inline;
     a, input{
-      height: auto;
-      padding: 0;
       .btn;
-      .btn-block;
       &.EXLSubmit{
-        height: auto;
-        .btn;
+
         .btn-primary;
       }
     }
@@ -130,11 +108,11 @@
   &:extend(.modal-content);
   .EXLSubmit{
     .btn;
-    .btn-success;
+    .btn-primary;
   }
   .EXLReset{
     .btn;
-    .btn-danger;
+    .btn-default;
   }
 }
 .EXLFacetsLightboxHeader{
@@ -207,5 +185,18 @@
   float: left;
   clear: right;
   margin: 0.5em 0.5em 0 0;
+}
+
+#exliWhiteContent{
+  > div{
+    &:extend(.modal-dialog);
+
+    .EXLLightbox{
+      &:extend(.modal-content);
+    }
+  }
+  #exliGreyOverlay{
+    display: none;
+  }
 }
 

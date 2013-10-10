@@ -15,14 +15,14 @@ To compile LESS check out the documentation at [LESS Project Page](http://lesscs
 ### LESS Structure
 
 ```
-- less
-  |- library
-  |- legacy
-
-  |- vendor
-    * bootstrap-map.less
-    * font-awesome-map.less
-  |- brand
-  |- sections
-  |- components
+less/
+  |-base/
+  |-components/
+  |-legacy/
+  |-library/
+  |-sections/
+  |-utilities/
+  |-vendor/
+  - legacy.less
+  - style.less
 ```

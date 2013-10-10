@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         },
         options: {
           yuicompress: true,
-          report: 'gzip',
+          report: 'min',
           strictImports: true
         },
       }
