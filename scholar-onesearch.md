@@ -46,7 +46,7 @@ Note: Northeastern University Libraries is not bashing ExLibris as a company the
 
 ----
 
-### The default "Front-End" is not ###
+### The "Front-End" should be ###
 
 <ul>
   <li class="fragment">Modular / Scalable</li>
