@@ -12556,6 +12556,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ {
   width: auto;
+  margin-bottom: 1em;
 }
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul {
@@ -12652,6 +12653,11 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   display: inline-block;
 }
 
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li {
+  float: left;
+  display: inline-block;
+}
+
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a {
   display: inline-block;
   padding: 6px 12px;
@@ -12678,6 +12684,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   color: #ffffff;
   background-color: #cc0000;
   border-color: #b30000;
+  border-radius: 0;
 }
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus {
@@ -12766,9 +12773,14 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   border-color: #b30000;
 }
 
-#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:hover,
-#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li > a:focus {
-  background-image: none;
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li:first-child a {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+#exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ ul > li:last-child a {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAtoZ li {
@@ -12781,17 +12793,16 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   width: auto;
 }
 
-.EXLAlmaAz .EXLSearchFieldRibbonFormFields {
-  width: 88%;
-}
-
-.EXLAlmaAz .EXLSearchFieldRibbonFormFields .EXLSearchFieldRibbonFormSearchFor {
-  width: 100%;
+.EXLAlmaAz .EXLSearchWrapper {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .EXLAlmaAz #exlidSearchRibbon {
   margin-bottom: 0;
   margin-top: 0;
+  border-color: transparent;
+  min-height: inherit;
 }
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals {
@@ -12803,13 +12814,12 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 }
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset {
-  margin-left: auto;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 0;
-  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (min-width: 1200px) {
@@ -12820,16 +12830,20 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
 }
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset label {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   border: 0;
 }
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink {
   margin-top: 0;
   margin-left: auto;
+  margin-bottom: 20px;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -12871,6 +12885,7 @@ fieldset[disabled] #exlidSearchTile.EXLSearchEJorunals .EXLSearchEJorunalsListAt
   border-radius: 3px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  border-top-color: transparent;
 }
 
 .EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink a:focus {

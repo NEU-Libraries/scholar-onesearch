@@ -2,16 +2,24 @@
 #exlidSearchTile.EXLSearchEJorunals {
   .EXLSearchEJorunalsListAtoZ{
    width: auto;
+   margin-bottom: 1em;
    ul{
     .nav;
     //Make the A-Z Link nav fit 12 column spans
-    & > li > a{
-      .btn;
-      .btn-sm;
-      .btn-primary;
-      &:hover,
-      &:focus{
-        background-image: none;
+    & > li{
+      float: left;
+      display: inline-block;
+      > a{
+        .btn;
+        .btn-sm;
+        .btn-primary;
+        border-radius: 0;
+      }
+      &:first-child a{
+        .border-left-radius(@border-radius-small);
+      }
+      &:last-child a{
+        .border-right-radius(@border-radius-small);
       }
     }
 
@@ -25,19 +33,21 @@
     width: auto;
     }
   }
+
 }
 
 //Selecting the body for the search field styles scope
 .EXLAlmaAz{
-  .EXLSearchFieldRibbonFormFields{
-    width: 88%;
-    .EXLSearchFieldRibbonFormSearchFor{
-      width: 100%;
-    }
+  .EXLSearchWrapper{
+    padding-left: 0;
+    padding-right: 0;
   }
+
   #exlidSearchRibbon{
     margin-bottom: 0;
     margin-top: 0;
+    border-color: transparent;
+    min-height: inherit;
   }
   #exlidSearchTile.EXLSearchEJorunals{
     background: none;
@@ -47,12 +57,11 @@
     height: auto;
     //reset the fieldset to be a navbar again
     fieldset{
-      margin-left: auto;
       .make-lg-column(12);
-      padding-left: 0;
-      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
       label{
-        .hide-text();
+        .sr-only();
       }
     }//end field set
 
@@ -60,14 +69,18 @@
     .EXLSearchFieldRibbonSimpleSearchLink{
       margin-top: 0;
       margin-left: auto;
+      margin-bottom: 20px;
       .make-lg-column(3);
       a{
         .btn;
         .btn-primary;
         .btn-sm;
         .border-top-radius(0);
+        border-top-color: transparent;
       }
+
     }
+
   }
 
 
