@@ -2,7 +2,7 @@
   <img src="img-src/scholar-one-search.svg" alt="Scholar OneSearch"/>
 </h1>
 
-*Tackling the Primo user experience.*
+*Tackling the Primo Front-End.*
 
 ### [Northeastern University Libraries](http://library.northeastern.edu)
 
@@ -13,6 +13,26 @@
 ## Slides Available
 
 http://neu-libraries.github.io/scholar-onesearch
+
+----
+
+## What is the *Front-end*?
+
+> A mix of programming and layout that powers the visuals and interactions of the web.
+
+<cite>
+[What Is: Front-End Web Development](http://blog.generalassemb.ly/what-is-front-end-web-development/)
+</cite>
+
+
+Components of the web today `<HTML/>`, `CSS` & `JavaScript`.
+
+Note:
+Pretend a website is a car. There are a lot of things inside of a car that help it run – make it speed up, slow down, even keep on the lights. All of these things you can’t really see – but are really important – that’s the back-end.
+
+But then there are items that you directly use in the car to make it go: your gas and brake pedals, the steering wheel. And there are also a lot of things on that car that make it fun to drive and cool to look at: a racing stripe, a slick leather interior. All the stuff you can directly touch, see or hear? That’s the front end.
+
+Cite: http://blog.generalassemb.ly/what-is-front-end-web-development/
 
 ----
 
@@ -29,20 +49,28 @@ Note: Northeastern University Libraries is not bashing ExLibris as a company the
 ### The default "Front-End" is not ###
 
 <ul>
-  <li class="fragment">Scalable</li>
-  <li class="fragment">Modular</li>
-  <li class="fragment">Semantic</li>
+  <li class="fragment">Modular / Scalable</li>
+  <li class="fragment">Standards Compliant</li>
   <li class="fragment">Performant</li>
   <li class="fragment">Responsive</li>
-  <li class="fragment">Flexible</li>
-  <li class="fragment">Retina Ready</li>
 </ul>
 
 Note:
-Scalable the code is not scalable in the sense 
+
+* Scalable
+    * Unable to extend classes and components
+* Modular
+    * Cannot
+* Semantic
+    * The use of HTHL elements and attributes are not correct against modern web standards.
+* Performant
+  *  
+* Responsive
+* Flexible
+* Retina Ready
 
 ---
-### Scalable
+### Scalable / Modular
 
 ```css
  #exlidAdvancedSearchTile
@@ -59,12 +87,16 @@ Scalable the code is not scalable in the sense
 }
 ```
 
-**Don't do this!**
-Note: If the default CSS is structured in such a way that you need to override the style of elements with such long selectors, it restricts an organization from extending and adding features as the Primo implementation grows.
+Extending styles become chaotic at best.
+
+Note: If the default CSS is structured in such a way that you need to override the style of elements with such long selectors, it restricts an organization from extending and adding features as the Primo implementation grows or by trying to tailor their primo instance. The default styles are written in a way that overriding the properties requires so much hacking that the system becomes unmanageable.
+
+
+
 
 ---
 
-### Modularity
+### Scalable / Modular
 
 ```
   {.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerSelectedTab}
@@ -76,12 +108,34 @@ Note: If the default CSS is structured in such a way that you need to override t
   {* html #exliGreyOverlay iframe} 
   AND {* html #exliLoadingFdb iframe} share 12 rules
 ```
+Results from [CSSCSS](http://zmoazeni.github.io/csscss/).
 
-**Don't repeat yourself**
+Note:
+
 
 ---
 
-### Semantic
+### Scalable / Modular
+
+What if you don't want all of to change the primary color in the design?
+
+![screen shot showing the search bar with an orange button](img-src/default-flexibility.png)
+
+```
+ Search for "#e87107"
+ ....
+ 1797: .EXLMyAccountMainContainer form input.submit { 
+        background-color:#e87107;  
+      }
+ .... 
+
+38 matches across 4 files
+```
+
+---
+
+
+### Web Standards
 
 ![Screen shot of source HTML highlighting two DIV elements with matching ID attributes](img-src/duplicate-ids.png)
 
@@ -89,7 +143,7 @@ Note: Simple issues like using duplicate IDs in the HTML markup create a barrier
 
 --- 
 
-### Semantic CSS
+### Web Standards
 
 ![CSS Lint - CSS Ling found 28 errors and 1549 warnings. How can we fix it? See the details below.](img-src/css-issues.png)
     
@@ -103,11 +157,11 @@ Note:
 
 ---
 
-### Responsive Design
+### Responsive
 
 *Well sort of*
 
-![Responsive animation of how the default design changes per the screen size.](img-src/responsive-layouts.gif)
+[![Responsive animation of how the default design changes per the screen size.](img-src/responsive-layouts.gif)](http://goo.gl/dlaVbp "Spring Load - Example of layouts")
 
 There are really only two breakpoints in the design.
 
@@ -115,28 +169,7 @@ Note:
 
 ---
 
-### Flexible
-
-What if you don't want all of to change the primary color in the design?
-
-![screen shot showing the search bar with an orange button](img-src/default-flexibility.png)
-
-
-```
- Search for "#e87107"
- ....
- 1797: .EXLMyAccountMainContainer form input.submit { 
-        background-color:#e87107;  
-      }
- .... 
-
-38 matches across 4 files
-```
-
-
----
-
-### Retina Ready
+### Responsive *Images*
 
 ![Screen shots comparing pixilated logos and icons versus vector basesd images.](img-src/retina-images.png)
 
@@ -154,13 +187,10 @@ Business as Usual
 
 ### Results
 
+![Screen shot of the first user interface released, it is showing a user interface that is almost identical to the default look and feel](img-src/pre-sos-screenshot.png)
 
-<div class="fragment fade-in">
-    ![Screen shot of the first user interface released, it is showing a user interface that is almost identical to the default look and feel](img-src/pre-sos-screenshot.png)
-</div>
-<p class="fragment fade-in">
-  No real  advantage over the default styles.
-</p>
+No real  advantage over the default styles.
+
 
 Note: The minute changes made in the design to help make the Primo interface match our organization's needs and identity  were not only ineffective but painstaking to take time to override the icon clad and ill crafted styles.
 
@@ -170,6 +200,8 @@ Note: The minute changes made in the design to help make the Primo interface mat
 
 ## The First Release
 
+
+
 ---
 
 ### The Process
@@ -178,9 +210,8 @@ Note: The minute changes made in the design to help make the Primo interface mat
 * Looked to tool to fill the gaps
 
 ---
-### Tools Used
 
-Reevaluated and included some contributed libraries:
+### Tools Used
 
 - [Bootstrap](http://getbootstrap.com/)
 - [LESS - CSS Preprocessor](http://lesscss.org/)
@@ -275,6 +306,7 @@ Note:
 
 ###Separate Library Code
 
+For Example
 * [Bootstrap (3.x)](http://getbootstrap.com)
 * [Font-Awesome (3.2.1)](http://fontawesome.io)
 
@@ -283,7 +315,8 @@ Note:
 @import "../../bootstrap/less/scaffolding";
 @import "../../bootstrap/less/type";
 //@import "../../bootstrap/less/code";
-```
+``` 
+Stored in separate git submodules.
 
 Note:
 Allowing for upgrading in the future, using a simple git submodule as a way to manage the vendors package. Alternatively could have used another package manager.
@@ -304,12 +337,19 @@ Allowing for upgrading in the future, using a simple git submodule as a way to m
 }
 ```
 
-Customization and time saving utilties.
+Customization and time saving utilities.
+
 Note:
+
+---
+### `LESS` Variables change ###
+
+![Animation of the Scholar OneSearch layout changing between a red primary color for elements to a purple color](img-src/changing-colors.gif)
+
 
 ----
 
-### Removing legacy styles progressively
+### *Legacy* Styles
 
 ```less
 #exlidSkipToSystemFeedback a:active, #exlidSkipToSystemFeedback a:focus {
@@ -318,8 +358,7 @@ Note:
   height: auto;
   margin-left: 1em;
 }
-
-
+// NO LONGER DELIVERED TO THE BROWSER
 // /*-------------topbar-------------*/
 // #exlidHeaderContainer {
 //   height: auto;
@@ -331,13 +370,31 @@ Note:
 Note:
 Blocking out entire sections of the legacy code can be easily managed by using LESS style comments to reduce the complexity of the code.
 
+
+---
+
+### *Legacy* Styles
+
+```
+Running "less:production" (less) task
+File dist/css/style.css created.
+Original: 436832 bytes.
+Minified: 383544 bytes.
+File dist/css/legacy.css created.
+Original: 148370 bytes.
+Minified: 121066 bytes.
+
+Done, without errors.
+```
+
+
 ----
 
 ### Organizing Application JavaScript
 
 ```js
 var scholarOneSearch = (function(){
-  var reportAProblem = function(){...}; 
+  var buildFacetCollapse = function(){...}; 
   var init = function(){ ... }; // Initializing functions
   return {
     init: init,
@@ -396,6 +453,12 @@ Test for support and load fixes, eg [`respond.js`](https://github.com/scottjehl/
 
 Note:
 
+---
+
+### Contributed Code
+
+![Screen shot showing a link with a tool tip reading search Worldcat for Moby Dick](img-src/worldcat-js.png)
+
 ----
 ## The future?
 
@@ -436,18 +499,16 @@ If your interested in this project, [star it, fork it and/or use it][sos-gh-page
 
 ### Further Resources
 
-* Bootstrap 3.x
-* LESS
-* CSS Lint
-* JShint
-* Scalable and Modular Architecture for CSS
-* Responsive Design
-* Modernizr
-* Respond.js
-* Grunt.js Task Runner
-* Learn jQuery
+* [Bootstrap - Front-end framework](http://getbootstrap.com/)
+* [LESS - CSS Preprocessorr](http://lesscss.org/)
+* [CSS Lint](http://csslint.net/)
+* [JShint](http://www.jshint.com/)
+* [Scalable and Modular Architecture for CSS](http://smacss.com)
+* [*Responsive Design* - A List Apart](http://alistapart.com/article/responsive-web-design)
+* [Modernizr - Feature Detection Library ](http://modernizr.com/)
+* [Respond.js - polyfill for min/max-width CSS3 Media Queries](https://github.com/scottjehl/Respond)
+* [Grunt.js  Task Runner ](http://gruntjs.com/)
+* [jQuery Learning Center ](http://learn.jquery.com/)
 
-
-----
 
 
