@@ -30,11 +30,11 @@ $ npm install -g grunt-cli
 
 * Use git to clone the source code and submodules.
 * Install node modules
+
 ```
 $ git clone --recursive -b develop https://github.com/NEU-Libraries/scholar-onesearch.git
 $ cd scholar-onesearch
 $ npm install
-
 ```
 
 
