@@ -42,12 +42,14 @@ module.exports = function(grunt) {
         files: {
           "dist/css/style.css": "less/style.less",
           "dist/css/legacy.css": "less/legacy.less",
+          "dist/css/alma-styles.css": "less/alma-styles.less",
         },
       },
       production: {
         files: {
           "dist/css/style.css": "less/style.less",
           "dist/css/legacy.css": "less/legacy.less",
+          "dist/css/alma-styles.css": "less/alma-styles.less",
         },
         options: {
           yuicompress: true,

@@ -4,19 +4,25 @@
   line-height: inherit;
   .table;
   max-width: 100%;
-  tbody > tr > td,
-  tbody > tr > th{
-    max-width: 99px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
+  margin-bottom: 0;
+  border-bottom: 1px solid @table-border-color;
+  tr{
+    border-left: 1px solid @table-border-color;
+    border-right: 1px solid @table-border-color;
   }
-  th{
-    width: auto !important;
+  tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: @table-bg-accent;
+    }
   }
 }
 
 .EXLBrowseList{
+  .EXLResultsContainer{
+    margin-left: 0;
+    margin-right: 0;
+  }
   .EXLNext,
   .EXLPrevious{
     font-size: 0;
@@ -32,3 +38,8 @@
   }
 }
 
+.EXLBrowseResultsTileNoFacets{
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}

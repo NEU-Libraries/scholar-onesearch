@@ -151,7 +151,10 @@ var scholarOneSearch = (function(){
 
     }
 
-    if ($('#exlidAdvancedSearchRibbon').length){
+    //declaring the variables before if/else
+    var $link;
+
+    if ($('#exlidAdvancedSearchRibbon').length && !$('#exlidAdvancedSearchRibbon').hasClass('EXLAdvancedBrowseRibbon')){
 
       var searchString='';
 
@@ -197,7 +200,7 @@ var scholarOneSearch = (function(){
         searchString = searchString.replace(/\"/g, '&quot;');
         searchString = searchString.replace(/\'/g, "\\'");
 
-        var $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+        $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
         //add the worldcat link
         $('.EXLSearchFieldRibbonFormLinks').append($link);
       }
@@ -209,7 +212,7 @@ var scholarOneSearch = (function(){
         //escape quotes
         searchTerm = searchTerm.replace(/\"/g, '&quot;');
         searchTerm = searchTerm.replace(/\'/g, "\\'");
-        var $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+        $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
 
         //add the worldcat links
         $('.EXLSearchFieldRibbonAdvancedSearchLink').before($link);
@@ -268,7 +271,7 @@ var scholarOneSearch = (function(){
     $('#exliWhiteContent').change(function(){
       console.log($(this));
     });
-  }
+  };
 
 
   //Build the page functions.

@@ -3,14 +3,45 @@ Scholar OneSearch
 #### Primo Frontend for Northeastern University Libraries
 
 
-This is the repository for the CSS and Javascript to override the default styles of Exlibiris's Primo appplication. The CSS is authored using the awesome Bootstrap project, I am hoping to incorporate the font-awesome project.
+This is the repository for the CSS and JavaScript to override the default styles of Exlibiris's Primo application. The CSS is authored using the awesome Bootstrap project, I am hoping to incorporate the font-awesome project.
 
-Credits to:
-* [bootstrap v3.0.0](https://github.com/twitter/bootstrap)
-* [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+Credit to:
+- [Bootstrap](http://getbootstrap.com/)
+- [LESS - CSS Preprocessor](http://lesscss.org/)
+- [Font-Awesome Icon Font](http://fontawesome.io/)
+- [jQuery](http://jquery.com/)
+- [Modernizr](http://modernizr.com/)
 
-To compile LESS check out the documentation at [LESS Project Page](http://lesscss.org/), but I used [recess](https://github.com/twitter/recess).
 
+
+
+## How to use:
+
+Dependencies: [Git](Git),  [Node.js](http://nodejs.org/) and [Grunt-cli](http://gruntjs.com/getting-started).
+
+If you use [Homebrew](https://github.com/mxcl/homebrew):
+
+```
+$ brew install git
+$ brew install node
+// then
+$ npm install -g grunt-cli
+```
+
+* Use git to clone the source code and submodules.
+* Install node modules
+```
+$ git clone --recursive -b develop https://github.com/NEU-Libraries/scholar-onesearch.git
+$ cd scholar-onesearch
+$ npm install
+
+```
+
+
+
+## For Developers
+
+@todo add documentation here ASAP
 
 ### LESS Structure
 

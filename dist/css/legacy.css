@@ -267,97 +267,6 @@ div.EXLBrowsResultsTileNoFacets td.EXLThumbnail {
 
 /*for ie6*/
 
-#exlidBrowseResultsEnteries {
-  width: 100%;
-  line-height: 2em;
-  clear: left;
-  padding-bottom: 1.5em;
-  font-size: 80%;
-  padding-left: 0.3em;
-}
-
-.EXLResultsListBrowseLine th {
-  padding: 5px 10px 5px 10px;
-  text-align: left;
-  border-bottom: 1px solid #DFDFDF;
-}
-
-.EXLResultsListBrowseLine td {
-  padding: 6px 10px 6px 10px;
-  text-align: left;
-  border-bottom: 1px solid #DFDFDF;
-}
-
-.EXLResultsListBrowseLine th.EXLBrowseResultsHeaderHeadingsTitle {
-  width: auto;
-}
-
-.EXLResultsListBrowseLine th.EXLBrowseResultsHeaderHeadingsCounter {
-  width: 8.5em;
-}
-
-.EXLResultsListBrowseLine th.EXLBrowseResultsHeaderHeadingsType {
-  width: 12em;
-}
-
-.EXLResultsListBrowseLine th.EXLBrowseResultsHeaderCallNumber1 {
-  width: 150px;
-}
-
-.EXLResultsListBrowseLine th.EXLBrowseResultsHeaderCallNumber2 {
-  width: 425px;
-}
-
-.EXLResultsListBrowseLine th.EXLBrowseResultsHeaderCallNumber3 {
-  width: 425px;
-}
-
-.EXLResultsListBrowseLine th.EXLBrowseResultsHeaderCallNumber4 {
-  width: 50px;
-}
-
-.EXLResultsListBrowseLine td.EXLBrowseResultsDataHeadingsCounter {
-  text-align: center;
-}
-
-.EXLResultsListBrowseLine td span.EXLBrowseResultsDataHeadingsEntry {
-  color: #0075B0;
-  padding-top: 0px;
-}
-
-.EXLResultsListBrowseLine td span.EXLBrowseResultsDataHeadingsEntry span.EXlBrowseFirstPhrase {
-  padding-right: 1em;
-  color: #32322F;
-}
-
-.EXLResultsListBrowse span.EXLBrowseResultsDataHeadingsEntry em {
-  color: #000000;
-}
-
-.EXLResultsListBrowse span.EXLBrowseResultsDataHeadingsEntry em.EXlBrowseFirstPhrase {
-  padding-right: 1em;
-}
-
-.EXLResultsListBrowse span.EXLBrowseResultsDataHeadingsEntry em.EXlBrowseLastPhrase {
-  padding-left: 1em;
-}
-
-#exlidBrowseResultsEnteries tr.EXLBrowseZebra {
-  background-color: #F8F8F8;
-}
-
-#resultsNumbersTile #exlidBrowseFooterNavigation {
-  display: none;
-}
-
-#exlidBrowseFooterNavigation {
-  font-size: 80%;
-  float: left;
-  width: 65%;
-  margin: 0 0 0.2em;
-  padding: 0 0 0 1em;
-}
-
 /*Find Databases Styles*/
 
 .EXLformFindDBIframe {
@@ -1994,11 +1903,6 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a:hover {
   text-decoration: none;
-}
-
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy div.EXLResultsSortByMenu {
-  float: right;
-  width: 13em;
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {

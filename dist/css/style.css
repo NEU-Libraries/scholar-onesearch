@@ -10854,7 +10854,7 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
 }
 
 .no-svg .scholar-one-search {
-  background-image: url('../dist/images/scholar-one-search.png');
+  background-image: url('../images/scholar-one-search.png');
 }
 
 @media (max-width: 756px) {
@@ -11561,7 +11561,7 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
   }
 }
 
-#exlidSearchRibbon input {
+#exlidSearchRibbon input[type="text"] {
   display: block;
   width: 100%;
   height: 34px;
@@ -11579,36 +11579,36 @@ a.EXLMyAccountMainMenuContainer ol li:focus {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-#exlidSearchRibbon input:-moz-placeholder {
+#exlidSearchRibbon input[type="text"]:-moz-placeholder {
   color: #999999;
 }
 
-#exlidSearchRibbon input::-moz-placeholder {
+#exlidSearchRibbon input[type="text"]::-moz-placeholder {
   color: #999999;
 }
 
-#exlidSearchRibbon input:-ms-input-placeholder {
+#exlidSearchRibbon input[type="text"]:-ms-input-placeholder {
   color: #999999;
 }
 
-#exlidSearchRibbon input::-webkit-input-placeholder {
+#exlidSearchRibbon input[type="text"]::-webkit-input-placeholder {
   color: #999999;
 }
 
-#exlidSearchRibbon input:focus {
+#exlidSearchRibbon input[type="text"]:focus {
   border-color: #66afe9;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-#exlidSearchRibbon input[disabled],
-#exlidSearchRibbon input[readonly],
-fieldset[disabled] #exlidSearchRibbon input {
+#exlidSearchRibbon input[type="text"][disabled],
+#exlidSearchRibbon input[type="text"][readonly],
+fieldset[disabled] #exlidSearchRibbon input[type="text"] {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
 
-textarea#exlidSearchRibbon input {
+textarea#exlidSearchRibbon input[type="text"] {
   height: auto;
 }
 
@@ -11768,10 +11768,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   }
 }
 
-.EXLSearchFieldRibbonFormSelectedCollection .EXLSearchFieldRibbonFormSelectedCollectionLabel {
-  padding-left: 0;
-}
-
 .EXLSearchFieldRibbonFormSelectedCollection a {
   display: inline-block;
   padding: 6px 12px;
@@ -11794,7 +11790,6 @@ fieldset[disabled] #exlidSearchRibbon input.submit {
   color: #ffffff;
   background-color: #2c3e50;
   border-color: #233140;
-  display: block;
 }
 
 .EXLSearchFieldRibbonFormSelectedCollection a:focus {
@@ -11881,12 +11876,6 @@ fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a:active,
 fieldset[disabled] .EXLSearchFieldRibbonFormSelectedCollection a.active {
   background-color: #2c3e50;
   border-color: #233140;
-}
-
-@media (min-width: 768px) {
-  .EXLSearchFieldRibbonFormSelectedCollection a {
-    display: inline-block;
-  }
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink,
@@ -13099,16 +13088,15 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
 }
 
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks {
-  margin-right: 8px;
   position: static;
-  margin-bottom: 8px;
-  margin-top: 10px;
   float: none;
   display: inline-block;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks a {
-  padding: 8px 15px;
+  padding: 15px;
 }
 
 form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm .EXLSearchFieldRibbonFormBrowseList {
@@ -13466,80 +13454,6 @@ fieldset[disabled] .EXLBrowseList .EXLSearchWrapper #exlidAdvancedSearchTile #ex
   }
 }
 
-/* Primo Browse List */
-
-#exlidBrowseResultsEnteries {
-  font-size: inherit;
-  line-height: inherit;
-  width: 100%;
-  margin-bottom: 20px;
-  max-width: 100%;
-}
-
-#exlidBrowseResultsEnteries > thead > tr > th,
-#exlidBrowseResultsEnteries > tbody > tr > th,
-#exlidBrowseResultsEnteries > tfoot > tr > th,
-#exlidBrowseResultsEnteries > thead > tr > td,
-#exlidBrowseResultsEnteries > tbody > tr > td,
-#exlidBrowseResultsEnteries > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.428571429;
-  vertical-align: top;
-  border-top: 1px solid #dddddd;
-}
-
-#exlidBrowseResultsEnteries > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
-}
-
-#exlidBrowseResultsEnteries > caption + thead > tr:first-child > th,
-#exlidBrowseResultsEnteries > colgroup + thead > tr:first-child > th,
-#exlidBrowseResultsEnteries > thead:first-child > tr:first-child > th,
-#exlidBrowseResultsEnteries > caption + thead > tr:first-child > td,
-#exlidBrowseResultsEnteries > colgroup + thead > tr:first-child > td,
-#exlidBrowseResultsEnteries > thead:first-child > tr:first-child > td {
-  border-top: 0;
-}
-
-#exlidBrowseResultsEnteries > tbody + tbody {
-  border-top: 2px solid #dddddd;
-}
-
-#exlidBrowseResultsEnteries .table {
-  background-color: #ffffff;
-}
-
-#exlidBrowseResultsEnteries tbody > tr > td,
-#exlidBrowseResultsEnteries tbody > tr > th {
-  max-width: 99px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-}
-
-#exlidBrowseResultsEnteries th {
-  width: auto !important;
-}
-
-.EXLBrowseList .EXLNext,
-.EXLBrowseList .EXLPrevious {
-  font-size: 0;
-  color: transparent;
-}
-
-.EXLBrowseList .EXLNext:hover,
-.EXLBrowseList .EXLPrevious:hover,
-.EXLBrowseList .EXLNext:focus,
-.EXLBrowseList .EXLPrevious:focus {
-  text-decoration: none;
-}
-
-.EXLBrowseList #resultsNumbersTile h1 {
-  margin-left: 0;
-  font-size: 14px;
-}
-
 /* primo-results.less */
 
 .EXLResultsContainer {
@@ -13574,7 +13488,7 @@ fieldset[disabled] .EXLBrowseList .EXLSearchWrapper #exlidAdvancedSearchTile #ex
   clear: both;
 }
 
-.EXLResultsContainer .EXLResultsTile {
+.EXLResultsTile {
   width: 100%;
   position: relative;
   min-height: 1px;
@@ -13587,7 +13501,7 @@ fieldset[disabled] .EXLBrowseList .EXLSearchWrapper #exlidAdvancedSearchTile #ex
 }
 
 @media (min-width: 992px) {
-  .EXLResultsContainer .EXLResultsTile {
+  .EXLResultsTile {
     float: left;
     width: 75%;
   }
@@ -13644,13 +13558,12 @@ td.EXLMyShelfStar i {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: static;
 }
 
 @media (min-width: 1200px) {
   .EXLResultsHeader div.EXLResultsNumbers {
     float: left;
-    width: 75%;
+    width: 66.66666666666666%;
   }
 }
 
@@ -13933,7 +13846,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
 @media (min-width: 1200px) {
   .EXLResultsHeader div.EXLResultsNavigation {
     float: left;
-    width: 25%;
+    width: 33.33333333333333%;
   }
 }
 
@@ -14517,6 +14430,91 @@ a.EXLBriefResultsDisplayMultipleLink[disabled].active,
 fieldset[disabled] a.EXLBriefResultsDisplayMultipleLink.active {
   background-color: #ffffff;
   border-color: #cccccc;
+}
+
+/* Primo Browse List */
+
+#exlidBrowseResultsEnteries {
+  font-size: inherit;
+  line-height: inherit;
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  margin-bottom: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+#exlidBrowseResultsEnteries > thead > tr > th,
+#exlidBrowseResultsEnteries > tbody > tr > th,
+#exlidBrowseResultsEnteries > tfoot > tr > th,
+#exlidBrowseResultsEnteries > thead > tr > td,
+#exlidBrowseResultsEnteries > tbody > tr > td,
+#exlidBrowseResultsEnteries > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+#exlidBrowseResultsEnteries > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+
+#exlidBrowseResultsEnteries > caption + thead > tr:first-child > th,
+#exlidBrowseResultsEnteries > colgroup + thead > tr:first-child > th,
+#exlidBrowseResultsEnteries > thead:first-child > tr:first-child > th,
+#exlidBrowseResultsEnteries > caption + thead > tr:first-child > td,
+#exlidBrowseResultsEnteries > colgroup + thead > tr:first-child > td,
+#exlidBrowseResultsEnteries > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+#exlidBrowseResultsEnteries > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+#exlidBrowseResultsEnteries .table {
+  background-color: #ffffff;
+}
+
+#exlidBrowseResultsEnteries tr {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+#exlidBrowseResultsEnteries tr:nth-child(odd) > td,
+#exlidBrowseResultsEnteries tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+.EXLBrowseList .EXLResultsContainer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.EXLBrowseList .EXLNext,
+.EXLBrowseList .EXLPrevious {
+  font-size: 0;
+  color: transparent;
+}
+
+.EXLBrowseList .EXLNext:hover,
+.EXLBrowseList .EXLPrevious:hover,
+.EXLBrowseList .EXLNext:focus,
+.EXLBrowseList .EXLPrevious:focus {
+  text-decoration: none;
+}
+
+.EXLBrowseList #resultsNumbersTile h1 {
+  margin-left: 0;
+  font-size: 14px;
+}
+
+.EXLBrowseResultsTileNoFacets {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
 }
 
 .EXLFullView .EXLResultsTile {

@@ -23,7 +23,7 @@
       vertical-align: middle;
     }
   }
-  input{
+  input[type="text"]{
     .form-control;
   }
   input,
@@ -71,27 +71,18 @@
 
 
 
-
 .EXLSearchFieldRibbonFormSelectedCollection{
-
-  .EXLSearchFieldRibbonFormSelectedCollectionLabel{
-    padding-left: 0;
-  }
   a{
     .btn;
     .btn-info;
-    display: block;
-    @media (min-width: @grid-float-breakpoint){
-      display: inline-block;
-    }
   }
-
 }
 
 .EXLSearchFieldRibbonAdvancedSearchLink,
 .EXLSearchFieldRibbonBrowseSearchLink,
 .EXLSearchFieldRibbonAtoZLink{
   display: inline-block;
+
   a, a.EXLSearchFieldRibbonAdvancedTwoLinks{
     padding: @navbar-padding-vertical @navbar-padding-horizontal;
     color: @navbar-default-link-color;
