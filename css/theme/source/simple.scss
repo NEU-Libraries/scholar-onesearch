@@ -49,3 +49,8 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   font-style: italic;
   font-size: 60%;
 }
+
+//trying to make sure it doesn't creep below the window.
+.reveal section img {
+  max-height: 16em;
+}

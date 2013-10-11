@@ -4,7 +4,7 @@
 
 *Tackling the Primo Front-End.*
 
-### [Northeastern University Libraries](http://library.northeastern.edu)
+#### [Northeastern University Libraries](http://library.northeastern.edu)
 
 #### Steven Bassett - [@bassettsj](http://twitter.com/bassettsj)
 
@@ -21,11 +21,19 @@ http://neu-libraries.github.io/scholar-onesearch
 > A mix of programming and layout that powers the visuals and interactions of the web.
 
 <cite>
-[What Is: Front-End Web Development](http://blog.generalassemb.ly/what-is-front-end-web-development/)
+[What Is: Front-End Web Developmentt](http://blog.generalassemb.ly/what-is-front-end-web-development/)
 </cite>
 
 
 Components of the web today `<HTML/>`, `CSS` & `JavaScript`.
+
+---
+
+![ Photo of the interior of a Kia Rio ](img-src/car-interior.jpg)
+
+<cite>
+  [Flickr/Selbe B](http://goo.gl/FJNPGJ)
+</cite>
 
 Note:
 Pretend a website is a car. There are a lot of things inside of a car that help it run – make it speed up, slow down, even keep on the lights. All of these things you can’t really see – but are really important – that’s the back-end.
@@ -38,7 +46,7 @@ Cite: http://blog.generalassemb.ly/what-is-front-end-web-development/
 
 ## ~~Bashing~~ Ex Libris
 
-![Boy bulling other children by kicking soccer ball onto a metal soccer where the other children are hiding for protection ""](img-src/bully.jpg)
+![Boy bulling other children by kicking soccer ball onto a metal soccer where the other children are hiding for protection ](img-src/bully.jpg)
 
 <cite>[Flickr/trixer](http://www.flickr.com/photos/trixer/3531445744)</cite>
 
@@ -57,17 +65,16 @@ Note: Northeastern University Libraries is not bashing ExLibris as a company the
 
 Note:
 
-* Scalable
-    * Unable to extend classes and components
-* Modular
-    * Cannot
-* Semantic
-    * The use of HTHL elements and attributes are not correct against modern web standards.
+* Modular / Scalable
+  * SMACCs - or Scalable Modular Architecture for CSS
+  *
+* Standards Compliant
+  * Open Web Standards
 * Performant
-  *  
+  * Front End Web Performance 
+  * 
 * Responsive
-* Flexible
-* Retina Ready
+  
 
 ---
 ### Scalable / Modular
@@ -90,9 +97,6 @@ Note:
 Extending styles become chaotic at best.
 
 Note: If the default CSS is structured in such a way that you need to override the style of elements with such long selectors, it restricts an organization from extending and adding features as the Primo implementation grows or by trying to tailor their primo instance. The default styles are written in a way that overriding the properties requires so much hacking that the system becomes unmanageable.
-
-
-
 
 ---
 
@@ -133,7 +137,6 @@ What if you don't want all of to change the primary color in the design?
 ```
 
 ---
-
 
 ### Web Standards
 
@@ -218,6 +221,13 @@ Note: The minute changes made in the design to help make the Primo interface mat
 - [Font-Awesome Icon Font](http://fontawesome.io/)
 - [jQuery](http://jquery.com/)
 - [Modernizr](http://modernizr.com/)
+
+Note:
+
+* Modernizr
+    * Feature detection library in JavaScript
+   
+
 
 ---- 
 
@@ -304,7 +314,7 @@ Note:
 
 ----
 
-###Separate Library Code
+### Separate Library Code
 
 For Example
 * [Bootstrap (3.x)](http://getbootstrap.com)
@@ -346,6 +356,10 @@ Note:
 
 ![Animation of the Scholar OneSearch layout changing between a red primary color for elements to a purple color](img-src/changing-colors.gif)
 
+Note:
+```
+@brand-primary: @whestria;//#CC0000;
+```
 
 ----
 

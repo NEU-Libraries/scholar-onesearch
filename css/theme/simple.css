@@ -139,3 +139,6 @@ body {
 .reveal cite {
   font-style: italic;
   font-size: 60%; }
+
+.reveal section img {
+  max-height: 16em; }
