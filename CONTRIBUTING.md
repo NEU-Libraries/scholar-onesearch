@@ -1,7 +1,7 @@
 How to contribute
 =================
 
-### Report an issue
+## Report an issue
 
 During our testing we will need to try tracking the issues that are found. It would be impossible for me, Steven, to find all of them, so this is where I need your help.
 
@@ -49,6 +49,12 @@ Copy and paste this into the issue body. Note you can add the screenshot by drag
 * 
 
 - - -
+## Feature Request
+
+Please use the issue queue to purpose new features for this project, but please use these guidelines.
+
+
+## Pull Request
 
 
 ### LESS Structure
