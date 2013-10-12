@@ -11,7 +11,7 @@ Credit to:
 - [Font-Awesome Icon Font](http://fontawesome.io/)
 - [jQuery](http://jquery.com/)
 - [Modernizr](http://modernizr.com/)
-
+- [scottjehl/Respond](https://github.com/scottjehl/Respond)
 
 
 
@@ -39,21 +39,6 @@ $ npm install
 
 
 
-## For Developers
+## How to Contribute
 
-@todo add documentation here ASAP
-
-### LESS Structure
-
-```
-less/
-  |-base/
-  |-components/
-  |-legacy/
-  |-library/
-  |-sections/
-  |-utilities/
-  |-vendor/
-  - legacy.less
-  - style.less
-```
+Please see the [Contribute.md](./CONTRIBUTING.md) document on how to contribute.
