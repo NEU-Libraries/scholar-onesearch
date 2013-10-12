@@ -46,3 +46,22 @@ Copy and paste this into the issue body. Note you can add the screenshot by drag
 
 * [Hot to take a screenshot](http://www.take-a-screenshot.org/)
 * [Find my browser information through javascript](http://www.quirksmode.org/js/detect.html)
+* 
+
+- - -
+
+
+### LESS Structure
+
+```
+less/
+  |-base/
+  |-components/
+  |-legacy/
+  |-library/
+  |-sections/
+  |-utilities/
+  |-vendor/
+  - legacy.less
+  - style.less
+```
