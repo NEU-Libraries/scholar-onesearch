@@ -16,44 +16,39 @@
   .navbar-default;
 
   .EXLSearchFieldRibbon{
-
     @media (min-width: @grid-float-breakpoint) {
       display: inline-block;
       margin-bottom: 0;
       vertical-align: middle;
     }
   }
+  input.submit{
+    .btn-info;
+    .btn;
+    &:hover,
+    &:focus{
+      color: @btn-info-color;
+    }
+  }
   input[type="text"]{
     .form-control;
   }
   input,
-  #showMoreOptions{
+  input[type="text"],
+  #showMoreOptions,
+  input.submit{
     margin-bottom: 5px;
+    display: block;
+    width: 100%;
     @media (min-width: @grid-float-breakpoint){
+      display: inline-block;
       margin-bottom: 0;
       &#search_field{
         min-width: 300px;
       }
     }
   }
-  input#search_field{
-    @media (min-width: @grid-float-breakpoint){
-      min-width: 300px;
-    }
-  }
-  input.submit{
-    .btn-info;
-    .btn;
-
-
-    overflow: hidden;
-    &:hover,
-    &:focus{
-      color: @btn-info-color;
-    }
-  }
   fieldset{
-
     padding: 10px (@navbar-padding-horizontal * 2 );
     &:extend(.navbar-form);
     &:extend(.navbar-left);
@@ -63,7 +58,7 @@
       .EXLSearchFieldRibbonFormSearchFor,
       #scopesList,
       .EXLSearchFieldRibbonFormSubmitSearch{
-        display: inline-block;
+        display: inline-block
       }
     }
   }
