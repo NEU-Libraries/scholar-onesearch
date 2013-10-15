@@ -13456,6 +13456,11 @@ fieldset[disabled] .EXLBrowseList .EXLSearchWrapper #exlidAdvancedSearchTile #ex
   }
 }
 
+.MyAccount .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+  position: static !important;
+  float: none;
+}
+
 /* primo-results.less */
 
 .EXLResultsContainer {
