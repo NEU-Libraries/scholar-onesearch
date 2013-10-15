@@ -12213,10 +12213,6 @@ textarea#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon select {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
   color: #ffffff;
   background-color: #2c3e50;
   border-color: #233140;
@@ -13458,7 +13454,14 @@ fieldset[disabled] .EXLBrowseList .EXLSearchWrapper #exlidAdvancedSearchTile #ex
 
 .MyAccount .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   position: static !important;
-  float: none;
+  float: none !important;
+}
+
+.MyAccount .EXLAdvancedBrowseRibbon div.EXLSearchFieldRibbonFormSubmitSearch input.submit {
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+  line-height: 1.428571429 !important;
+  border-radius: 4px !important;
 }
 
 /* primo-results.less */

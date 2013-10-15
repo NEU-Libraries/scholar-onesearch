@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js'];
+  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js'];
   // Project configuration.
   grunt.initConfig({
 

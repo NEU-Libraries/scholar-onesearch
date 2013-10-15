@@ -126,14 +126,17 @@ form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm
   }
 }
 
-
+// Fixes Edge case where the Advanced search styles are overriding the browse search styles all together.
+//
 
 .MyAccount{
   .EXLAdvancedBrowseRibbon{
     div.EXLSearchFieldRibbonFormSubmitSearch{
       position: static !important;
-      float: none;
-
+      float: none !important;
+      input.submit{
+        .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base)!important;
+      }
     }
   }
 }
