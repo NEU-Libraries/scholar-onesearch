@@ -1,0 +1,10 @@
+{
+  "name": "scholar-onesearch",
+  "version": "1.0.0",
+  "homepage": "https://github.com/NEU-Libraries/scholar-onesearch",
+  "authors": [
+    "Steven Bassett <steven.j.bassett@gmail.com>"
+  ],
+  "description": "Provides an alternative front-end UI for Ex Libris Primo search interface.",
+  "license": "MIT"
+}
