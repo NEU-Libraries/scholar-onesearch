@@ -2459,26 +2459,6 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {
   clear: left;
 }
 
-.EXLTabsRibbon div {
-  /*height:1em;*/
-  width: 90%;
-  margin: 0px;
-  clear: left;
-  float: left;
-  margin-left: 0em;
-}
-
-.EXLTabsRibbon div ul {
-  margin-left: 0em;
-  margin-bottom: 0em;
-}
-
-.EXLTabsRibbon div li {
-  line-height: 120%;
-  font-size: 100%;
-  display: inline;
-}
-
 .EXLTabsRibbonClosed {
   border-bottom: none;
   margin-bottom: 0.5em;

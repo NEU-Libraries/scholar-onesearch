@@ -9334,6 +9334,12 @@ a[title="show send to options"] img {
 
 .EXLResultTabs {
   padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.EXLResultTabs > li {
+  display: inline-block;
 }
 
 .EXLTabHeaderButtonSendToList {
