@@ -5,6 +5,11 @@
   "authors": [
     "Steven Bassett <steven.j.bassett@gmail.com>"
   ],
+  "main": "dist/**",
   "description": "Provides an alternative front-end UI for Ex Libris Primo search interface.",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+     "bootstrap": "3.0.0",
+     "font-awesome": "3.2.1"
+  }
 }
