@@ -14,9 +14,10 @@
   }
   td.folder_details{
     .make-lg-column(9);
+
     position: static;
     padding-right: 0;
-
+    padding-right: 0;
     overflow: hidden;
     @media (max-width: 768px){
       padding-left: 0;
@@ -55,6 +56,7 @@
     border: 1px solid @input-border;
     .make-lg-column(8);
     position: static;
+
   }
   .EXLEShelfFolderContentsTable{
     & > tbody {
@@ -65,6 +67,7 @@
       .make-lg-column(6);
       position: static;
       padding-left: 0;
+
     }
     tbody > tr{
 
@@ -109,7 +112,9 @@
     .border-not-top( 1px solid @table-border-color);
   }
 }
-
+.selectWidth.EXLEShelfFolderContentsPushTo{
+  padding-top: 8px;
+}
 
 
 .draggable{
@@ -127,14 +132,16 @@
 
 noscript + table[cellpadding="0"][cellspacing="0"] tbody{
   .container-fixed();
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .EXLEshelfDocumentDetailsIFrame{
  border-radius: @border-radius-base;
  border: 1px @table-border-color solid;
  .container-fixed();
-
-
+ width: ~"calc(100% - 30px)" !important;
+ float: none;
 }
 .folders_new li.selected{
   background: none;
@@ -228,9 +235,12 @@ a.eShelf_print span:hover{
 
 .folders_new{
   border: none;
-  .make-sm-column(12);
+  .make-xs-column(12);
   .make-md-column(6);
   .make-lg-column(3);
+  padding-left: 0;
+  padding-right: 0;
+  border: @table-border-color 1px solid;
   ol{
     margin: 0!important;
   }
@@ -320,4 +330,9 @@ table.folderName.EXLEShelfFolderContentsTable{
   height: auto;
   border-top: 1px solid @table-border-color !important;
   border-collapse: separate;
+}
+.EXLEshelfTitle + noscript + table{
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
 }

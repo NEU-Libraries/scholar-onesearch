@@ -1,5 +1,6 @@
 .EXLMyAccountContainer{
   .make-row();
+  padding-top: 20px;
 }
 
 // My Account tab ribbon styles.
@@ -71,7 +72,6 @@
     font-size: inherit;
   }
   div.EXLMyAccountMainHeader{
-    .make-lg-column(12);
     height: auto;
     background-color: transparent;
     border-bottom: none;
@@ -165,7 +165,7 @@
 }
 
 .EXLMyAccountFormContainer div.EXLMyAccountTips form select{
-  &:extend(form-control);
+  &:extend(.form-control);
   &:extend(select);
 }
 
@@ -191,9 +191,11 @@
 
 .EXLMyAccountMainMenuContainer {
   ol{
-    .reset;
     .list-group;
     border-radius: @list-group-border-radius;
+    a{
+      color: @list-group-link-color;
+    }
     li{
       font-size: inherit;
       .list-group-item;
@@ -204,11 +206,11 @@
         .border-bottom-radius(@list-group-border-radius);
       }
       span.EXLMyAccountMainMenuBulletSelected{
-        .reset;
         float: left;
         background-image: none;
         &:before{
           .icon("\f00c");
+          margin-right: 5px;
         }
         & + span a {
           color: @silver;
@@ -224,7 +226,11 @@
   display: none;
 }
 
-
+.EXLMyAccountMainMenuCounter{
+  float: right;
+  .small;
+  .text-muted;
+}
 .MyAccount{
   #exlidSearchTile,
   #exlidAdvancedSearchTile{
@@ -232,3 +238,66 @@
     margin-left: 0;
   }
 }
+
+.EXLMyAccountContainer{
+  select,
+  input[type="text"]{
+    .form-control;
+  }
+}
+.EXLMyAccountForm,
+.EXLMyAccountForm tbody{
+  display: block;
+  tr{
+    .form-group;
+    display: block;
+    .clearfix();
+  }
+}
+
+
+.EXLMyAccountMainHeaderButtons a{
+  .btn;
+  .btn-default;
+  float: right;
+}
+
+.EXLSessionQueriesWrapper,
+.EXLMyAccountMainContainer{
+  &:extend(.table-responsive);
+}
+
+.EXLMyAccountTable{
+  &:extend(.table);
+  .table;
+}
+
+
+img[alt="RSS Icon"]{
+  display: none;
+}
+
+a[title="RSS feed for this query"]{
+  &:before{
+    .icon(@rss);
+  }
+}
+
+
+
+
+a[title="delete this query"]{
+  &:before{
+    .icon(@remove);
+  }
+}
+
+
+a[title="edit the properties of this query (opens in a new window)"]{
+  &:before{
+    .icon(@refresh);
+  }
+}
+
+
+
