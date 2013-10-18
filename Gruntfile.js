@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js'];
+  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','lib/bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js'];
   // Project configuration.
   grunt.initConfig({
 
@@ -108,7 +108,7 @@ module.exports = function(grunt) {
       }
     },
     jshint:{
-      files: ['js/src/nulib.js' ,'js/src/frbrdisplayimprovements.js', 'Grutfile.js'],
+      files: ['js/src/nulib.js', 'Grutfile.js'],
       options: {
         force: true,
         reporter: 'jslint',
@@ -158,7 +158,7 @@ module.exports = function(grunt) {
       js: {
         files: {
           'dist/js/sos-app.js': jsFiles,
-          'dist/js/respond.min.js': 'js/vendor/respond/respond.min.js'
+          'dist/js/respond.min.js': 'lib/respond/respond.min.js'
         },
       },
     },
