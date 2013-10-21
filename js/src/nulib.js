@@ -32,26 +32,6 @@ var scholarOneSearch = (function(){
     $('a.report-a-problem').tooltip();
   };
 
-  var signinPopover  = function(){
-    if ( sessionStorage.getItem('popoverDissmiss') !== 'true'){
-      $('ul.EXLEShelfTileGuest > li.EXLSignOut').popover({
-      title: 'Why Sign In?<button="#exlidSignOut" id="nulib-signin-popover" class="close pull-right" onclick="scholarOneSearch.dismissSigninPopover()")">x</button>',
-      content: '<p>Get more results, personalized for you!</p>',
-      placement: 'bottom',
-      // trigger: 'manual',
-      html: true,
-      }).popover('show');
-    }
-    else{
-      return;
-    }
-  };
-
-  var dismissSigninPopover = function(){
-    $('ul.EXLEShelfTileGuest > li.EXLSignOut').popover('hide');
-    sessionStorage.setItem('popoverDissmiss', 'true');
-  };
-
   //move the a-to-z link item to the search bar.
   //buildNavBarNav();
   //
@@ -153,10 +133,10 @@ var scholarOneSearch = (function(){
 
     //declaring the variables before if/else
     var $link;
-
+    var searchString = '';
     if ($('#exlidAdvancedSearchRibbon').length && !$('#exlidAdvancedSearchRibbon').hasClass('EXLAdvancedBrowseRibbon')){
 
-      var searchString='';
+
 
 
       //loop through each advanced search row
@@ -229,8 +209,7 @@ var scholarOneSearch = (function(){
   var buildIcons = function(){
     $('a.EXLBriefResultsPaginationLinkNext > img').after('<i class="icon-circle-arrow-right"></i>');
     $('a.EXLBriefResultsPaginationLinkPrevious:first-of-type > img').after('<i class="icon-circle-arrow-left"></i>');
-    //just adding a special character to the submit button;
-    //$('#goButton').val("➜");
+
     //adding an icon before the RSS link;
     $('form[name="rssForm"]').prepend('<i class="icon-rss"></i>');
     $('.EXLFacetSaveSearchAction > a').before('<i class="icon-save"/>');
@@ -267,11 +246,6 @@ var scholarOneSearch = (function(){
   };
 
 
-  var handleModals = function(){
-    $('#exliWhiteContent').change(function(){
-      console.log($(this));
-    });
-  };
 
 
   //Build the page functions.
@@ -286,17 +260,10 @@ var scholarOneSearch = (function(){
     handleRadio();
     addToolTips();
     worldCatLinks();
-    handleModals();
   };
 
   return {
-    buildFacetCollapse: buildFacetCollapse,
-    signinPopover: signinPopover,
-    dismissSigninPopover: dismissSigninPopover,
-    eShelfIcons: eShelfIcons,
-    buildIcons: buildIcons,
-    init: init,
-    addToolTips: addToolTips
+    init: init
   };
 
 
@@ -304,8 +271,6 @@ var scholarOneSearch = (function(){
 })();
 
 
-  window.scholarOneSearch = scholarOneSearch;
-  $(document).ready(scholarOneSearch.init);
-
-
+window.scholarOneSearch = scholarOneSearch;
+$(document).ready(scholarOneSearch.init());
 
