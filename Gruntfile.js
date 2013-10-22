@@ -51,6 +51,7 @@ module.exports = function(grunt) {
           "dist/css/style.css": "less/style.less",
           "dist/css/legacy.css": "less/legacy.less",
           "dist/css/alma-styles.css": "less/alma-styles.less",
+          "dist/css/ie7.css": "less/ie7.less",
         },
         options: {
           yuicompress: true,
