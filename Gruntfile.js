@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','lib/bootstrap/js/tooltip.js','js/src/nulib.js'];
+  var jsFiles = ['lib/bootstrap/js/tooltip.js','js/src/nulib.js'];
   // Project configuration.
   grunt.initConfig({
 
@@ -10,9 +10,8 @@ module.exports = function(grunt) {
         js: {
           files: {
             'dist/js/sos-app.min.js': jsFiles,
-            'dist/js/selectivizr.min.js': 'lib/selectivizr/selectivizr.js'
           },
-        }
+        },
     },
 
     watch: {
@@ -172,7 +171,8 @@ module.exports = function(grunt) {
       },
       js:{
         files: [
-          {src: 'lib/selectivizr/selectivizr.js', dest: 'dist/js/selectivizr.js'}
+          {src: 'lib/selectivizr/selectivizr.js', dest: 'dist/js/selectivizr.js'},
+          {src:'js/vendor/modernizr/modernizr.onesearch-build.min.js', dest: 'dist/js/modernizr.onesearch-build.min.js'}
         ]
 
 

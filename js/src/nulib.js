@@ -11,31 +11,6 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 }
 
 
-// Avoid `console` errors in browsers that lack a console.
-(function() {
-    var method;
-    var noop = function () {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
-
-    while (length--) {
-        method = methods[length];
-
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
-    }
-}());
-
-
-
 var scholarOneSearch = (function(){
   "use strict";
 
@@ -210,8 +185,9 @@ var scholarOneSearch = (function(){
         $('.EXLSearchFieldRibbonFormLinks').append($link);
       }
 
-    }else{ //basic search
-      if ($('#search_field').val() !== ''){
+    }
+    else{ //basic search
+      if ($('#search_field').val().length > 0){
         searchTerm = $('#search_field').val();
 
         //escape quotes
@@ -240,7 +216,7 @@ var scholarOneSearch = (function(){
     $('.EXLFacetSaveSearchAction > a').before('<i class="icon-save"/>');
     $('.EXLFacetSaveToEShelfAction > a').before('<i class="icon-bookmark"/>');
     $('img[src="../images/icon_popout_tab.png"]').hide().after('<i class="icon-external-link"></i>');
-    $('a.EXLFirstRefinementElement').find('#removeFacet').hide().before('<i class="icon-remove-circle close"/>');
+    // $('a.EXLFirstRefinementElement').find('#removeFacet').hide().before('<i class="icon-remove-circle close"/>');
     $('img[src="../images/folders_close_inpage.gif"]').hide().before('<i class="icon-folder-close"></i>');
     $('img[src="../images/folders_open.gif"]').hide().before('<i class="icon-folder-open"></i>');
   };

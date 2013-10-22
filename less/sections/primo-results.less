@@ -30,17 +30,20 @@ td.EXLMyShelfStar{
 }
 
 //------- Results header-----
-.EXLResultsHeader{
+.EXLResultsHeader,
+.EXLRefinementRibbonWithExclude{
   .clearfix();
   clear: both;
   width: 100%;
   font-size: inherit;
   background-color: @panel-heading-bg;
   border: 1px solid @panel-border;
-  border-bottom: none;
-  .border-top-radius(@panel-border-radius);
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.EXLResultsHeader{
+  border-bottom: none;
+  .border-top-radius(@panel-border-radius);
   div.EXLResultsNumbers{
     width: 100%;
     .make-lg-column(8);
@@ -162,30 +165,53 @@ td.EXLMyShelfStar{
 
 //Facet refinement
 .EXLRefinementRibbonWithExclude{
-  font-size: inherit;
+  border-bottom: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.EXLRemoveRefinement{
+  padding: 5px 8px;
   color: inherit;
-  line-height: inherit;
+  background-color: #FFF;
+  border-radius: @border-radius-small;
+  text-transform: capitalize;
+  border: 1px solid @panel-border;
+}
 
-  span.EXLRemoveRefinement{
-    padding: 5px 8px;
-    color: inherit;
-    background-color: #FFF;
-    border-radius: @border-radius-small;
-    text-transform: uppercase;
-    a{
-      padding: 4px;
-      text-transform: none;
-      strong{
-        font-weight: 500;
-      }
-    }
-
+.EXLFirstRefinementElement{
+  padding: 4px;
+  text-transform: none;
+  color: @list-group-link-color;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: darken(@list-group-link-color, 10%);
   }
-  div a:hover{
-    color: inherit;
+  strong{
+    font-weight: 500;
+    &:after{
+      .icon(@remove-circle);
+      margin-left: 5px;
+    }
+  }
+
+}
+
+.EXLExcludedElement{
+  text-decoration: line-through;
+  &:hover,
+  &:focus{
+    text-decoration: line-through;
+  }
+  &:after{
+    text-decoration: none;
   }
 }
 
+#removeFacet{
+  display:none;
+}
 
 
 //------- Results footer ----
@@ -365,8 +391,5 @@ a.EXLBriefResultsDisplayMultipleLink{
   .btn-sm;
   margin-bottom: 0.5em;
 }
-
-
-
 
 
