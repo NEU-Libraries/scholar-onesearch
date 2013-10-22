@@ -11222,12 +11222,6 @@ a[title="edit the properties of this query (opens in a new window)"]:before {
   background-color: #eee;
 }
 
-#exlidMainMenuRibbon #exlidMainMenuItem1,
-#exlidMainMenuRibbon #exlidMainMenuItem4,
-#exlidMainMenuRibbon #exlidMainMenuItem5 {
-  display: none;
-}
-
 #exlidHeaderTile {
   width: auto;
   position: relative;

@@ -1,15 +1,16 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','lib/bootstrap/dist/js/bootstrap.min.js','js/src/nulib.js'];
+  var jsFiles = ['js/vendor/modernizr/modernizr.onsearch-build.min.js','lib/bootstrap/js/tooltip.js','js/src/nulib.js'];
   // Project configuration.
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
     stagingServer: grunt.file.readJSON('stagingServer.json'),
     uglify: {
-        my_target: {
+        js: {
           files: {
             'dist/js/sos-app.min.js': jsFiles,
+            'dist/js/selectivizr.min.js': 'lib/selectivizr/selectivizr.js'
           },
         }
     },
@@ -162,13 +163,27 @@ module.exports = function(grunt) {
         },
       },
     },
+    copy:{
+      html:{
+        files: [
+          {src: 'static_htmls/*', dest: 'dist/'}
+        ]
+      },
+      js:{
+        files: [
+          {src: 'lib/selectivizr/selectivizr.js', dest: 'dist/js/selectivizr.js'}
+        ]
+
+
+      }
+    }
+
 
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-ssh');
   grunt.loadNpmTasks('grunt-contrib-csslint');
@@ -177,6 +192,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
 
   // Default task(s).
@@ -184,7 +200,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
-  grunt.registerTask('deploy-staging', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'uglify' , 'sftp:staging']);
+  grunt.registerTask('deploy-staging', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'concat', 'uglify' , 'copy', 'sftp:staging']);
 };
 
 

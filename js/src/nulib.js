@@ -11,6 +11,30 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 }
 
 
+// Avoid `console` errors in browsers that lack a console.
+(function() {
+    var method;
+    var noop = function () {};
+    var methods = [
+        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+        'timeStamp', 'trace', 'warn'
+    ];
+    var length = methods.length;
+    var console = (window.console = window.console || {});
+
+    while (length--) {
+        method = methods[length];
+
+        // Only stub undefined methods.
+        if (!console[method]) {
+            console[method] = noop;
+        }
+    }
+}());
+
+
 
 var scholarOneSearch = (function(){
   "use strict";
@@ -134,6 +158,7 @@ var scholarOneSearch = (function(){
     //declaring the variables before if/else
     var $link;
     var searchString = '';
+    var searchTerm = '';
     if ($('#exlidAdvancedSearchRibbon').length && !$('#exlidAdvancedSearchRibbon').hasClass('EXLAdvancedBrowseRibbon')){
 
 
@@ -180,19 +205,19 @@ var scholarOneSearch = (function(){
         searchString = searchString.replace(/\"/g, '&quot;');
         searchString = searchString.replace(/\'/g, "\\'");
 
-        $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+        $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="../customized/NUdev/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
         //add the worldcat link
         $('.EXLSearchFieldRibbonFormLinks').append($link);
       }
 
     }else{ //basic search
       if ($('#search_field').val() !== ''){
-        var searchTerm = $('#search_field').val();
+        searchTerm = $('#search_field').val();
 
         //escape quotes
         searchTerm = searchTerm.replace(/\"/g, '&quot;');
         searchTerm = searchTerm.replace(/\'/g, "\\'");
-        $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="http://primo-dev.mine.nu/scholar-onesearch/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+        $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="../customized/NUdev/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
 
         //add the worldcat links
         $('.EXLSearchFieldRibbonAdvancedSearchLink').before($link);

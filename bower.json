@@ -11,6 +11,8 @@
   "devDependencies": {
     "bootstrap": "~3.0.0",
     "font-awesome": "~3.2.1",
-    "respond": "~1.3.0"
+    "respond": "~1.3.0",
+    "requirejs": "~2.1.9",
+    "selectivizr": "~1.0.2"
   }
 }
