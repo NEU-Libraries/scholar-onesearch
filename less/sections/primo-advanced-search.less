@@ -99,15 +99,19 @@
   //left group of form fields
   div.EXLSearchFieldRibbonFormFieldsGroup1{
     margin-top: 15px;
-    padding-right: 0;
     div.EXLAdvancedSearchFormRow{
       .make-row();
-      padding-right: 0;
-      select
-      , input{
-        .make-md-column(3.75);
-        .make-md-column-offset(0.25)
+
+      .EXLAdvancedSearchFormRowInlineInput{
+        .make-xs-column(12);
+        .make-md-column(4);
+        padding: 0 0 0 0;
+        @media (min-width: @screen-md) {
+          padding: 0 15px 0 0;
+        }
       }
+
+
 
     }
 
@@ -180,14 +184,20 @@
       margin-left: 0;
       padding-left: 0;
     }
-    @media (max-width: 756px){
-      border-left: none;
-      label{
-        margin-left: auto;
-      }
+    #scopesListAdvanced{
+      .make-md-column(8);
     }
-  } //div.EXLSearchFieldRibbonFormFieldsGroup2
-  #scopesListAdvanced{
-    .make-md-column(7);
+  }
+}
+
+
+
+.EXLAdvancedSearch{
+  select,
+  input{
+    margin-bottom: 5px;
+    @media (min-width: @screen-md) {
+      margin-bottom: 0;
+    }
   }
 }

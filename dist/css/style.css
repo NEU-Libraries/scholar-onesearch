@@ -11091,26 +11091,13 @@ a[title="edit the properties of this query (opens in a new window)"]:before {
 @media (min-width:992px) {
   .EXLMainMenu {
     float: left;
-    width: 41.66666666666667%;
+    width: 58.333333333333336%;
   }
 }
 
 @media (min-width:992px) {
   .EXLMainMenu {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width:1200px) {
-  .EXLMainMenu {
-    float: left;
-    width: 41.66666666666667%;
-  }
-}
-
-@media (min-width:1200px) {
-  .EXLMainMenu {
-    margin-left: 25%;
+    margin-left: 8.333333333333332%;
   }
 }
 
@@ -12214,13 +12201,11 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 {
   margin-top: 15px;
-  padding-right: 0;
 }
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow {
   margin-left: -15px;
   margin-right: -15px;
-  padding-right: 0;
 }
 
 #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow:before,
@@ -12243,26 +12228,26 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   clear: both;
 }
 
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select,
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding: 0;
 }
 
 @media (min-width:992px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select,
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput {
     float: left;
-    width: 31.25%;
+    width: 33.33333333333333%;
   }
 }
 
 @media (min-width:992px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow select,
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow input {
-    margin-left: 2.083333333333333%;
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup1 div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput {
+    padding: 0 15px 0 0;
   }
 }
 
@@ -12407,17 +12392,7 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
   padding-left: 0;
 }
 
-@media (max-width:756px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 {
-    border-left: none;
-  }
-
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 label {
-    margin-left: auto;
-  }
-}
-
-#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon #scopesListAdvanced {
+#exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 #scopesListAdvanced {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -12425,9 +12400,21 @@ fieldset[disabled] #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon input.sub
 }
 
 @media (min-width:992px) {
-  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon #scopesListAdvanced {
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormFieldsGroup2 #scopesListAdvanced {
     float: left;
-    width: 58.333333333333336%;
+    width: 66.66666666666666%;
+  }
+}
+
+.EXLAdvancedSearch select,
+.EXLAdvancedSearch input {
+  margin-bottom: 5px;
+}
+
+@media (min-width:992px) {
+  .EXLAdvancedSearch select,
+  .EXLAdvancedSearch input {
+    margin-bottom: 0;
   }
 }
 

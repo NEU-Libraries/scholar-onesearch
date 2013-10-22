@@ -385,20 +385,8 @@
 
 }(window.jQuery);
 
-// Adding support for IE10 and Windows Phone 8
-// http://getbootstrap.com/getting-started/#browsers
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement("style");
-  msViewportStyle.appendChild(
-    document.createTextNode(
-      "@-ms-viewport{width:auto!important}"
-    )
-  );
-  document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-}
-
-
-var scholarOneSearch = (function(){
+$( document ).ready(function() {
+  var scholarOneSearch = (function(){
   "use strict";
 
   //build report a problem links;
@@ -573,8 +561,7 @@ var scholarOneSearch = (function(){
       }
 
     }
-    else{ //basic search
-      if ($('#search_field').val().length > 0){
+    else if ( $('#search_field').val().length > 0 && typeof jQuery !== 'undefined'){
         searchTerm = $('#search_field').val();
 
         //escape quotes
@@ -586,9 +573,9 @@ var scholarOneSearch = (function(){
         $('.EXLSearchFieldRibbonAdvancedSearchLink').before($link);
         $link.wrap('<div class="EXLSearchFieldRibbonAdvancedSearchLink"/>');
 
-
-      }
-
+    }
+    else{
+      return;
     }
   };
 
@@ -647,18 +634,19 @@ var scholarOneSearch = (function(){
     addActiveStates();
     handleRadio();
     addToolTips();
-    worldCatLinks();
   };
 
   return {
-    init: init
+    init: init,
+    worldCatLinks: worldCatLinks
   };
 
 
 
-})();
+  })();
+  scholarOneSearch.init();
+
+});
 
 
-window.scholarOneSearch = scholarOneSearch;
-$(document).ready(scholarOneSearch.init());
 
