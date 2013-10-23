@@ -107,6 +107,7 @@ small,
 .EXLParenthesis,
 .EXLFacetCount,
 .EXLMyAccountMainMenuCounter,
+.EXLThumbnailCaption,
 .EXLResultNumber {
   font-size: 80%;
 }
@@ -458,6 +459,7 @@ small,
 .EXLParenthesis,
 .EXLFacetCount,
 .EXLMyAccountMainMenuCounter,
+.EXLThumbnailCaption,
 .EXLResultNumber {
   font-size: 85%;
 }
@@ -14013,11 +14015,9 @@ th.EXLResultNumber {
 }
 
 .EXLThumbnailCaption {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+  color: #999;
+  text-align: center;
+  margin: 2px 15px;
 }
 
 .coverImageDiv {

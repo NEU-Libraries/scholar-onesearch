@@ -10,6 +10,7 @@ module.exports = function(grunt) {
         js: {
           files: {
             'dist/js/sos-app.min.js': jsFiles,
+            'dist/js/modernizr.min.js': 'js/vendor/modernizr/modernizr.js',
           },
         },
     },
@@ -172,7 +173,7 @@ module.exports = function(grunt) {
       js:{
         files: [
           {src: 'lib/selectivizr/selectivizr.js', dest: 'dist/js/selectivizr.js'},
-          {src:'js/vendor/modernizr/modernizr.onesearch-build.min.js', dest: 'dist/js/modernizr.onesearch-build.min.js'}
+          {src:'js/vendor/modernizr/modernizr.js', dest: 'dist/js/modernizr.js'}
         ]
 
 
