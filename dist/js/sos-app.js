@@ -590,7 +590,6 @@ $( document ).ready(function() {
       $('.EXLFacetSaveSearchAction > a').before('<i class="icon-save"/>');
       $('.EXLFacetSaveToEShelfAction > a').before('<i class="icon-bookmark"/>');
       $('img[src="../images/icon_popout_tab.png"]').hide().after('<i class="icon-external-link"></i>');
-
       // $('a.EXLFirstRefinementElement').find('#removeFacet').hide().before('<i class="icon-remove-circle close"/>');
       $('img[src="../images/folders_close_inpage.gif"]').hide().before('<i class="icon-folder-close"></i>');
       $('img[src="../images/folders_open.gif"]').hide().before('<i class="icon-folder-open"></i>');

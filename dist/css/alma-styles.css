@@ -59,7 +59,7 @@ a:hover {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 abbr[title] {
@@ -90,7 +90,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace,serif;
+  font-family: monospace, serif;
   font-size: 1em;
 }
 
@@ -137,7 +137,7 @@ figure {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: .35em .625em .75em;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
@@ -213,10 +213,10 @@ table {
 
 @media print {
   * {
-    text-shadow: none!important;
-    color: #000!important;
-    background: transparent!important;
-    box-shadow: none!important;
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   a,
@@ -254,7 +254,7 @@ table {
   }
 
   img {
-    max-width: 100%!important;
+    max-width: 100% !important;
   }
 
 @page {
@@ -279,12 +279,12 @@ table {
 
   .table td,
   .table th {
-    background-color: #fff!important;
+    background-color: #fff !important;
   }
 
-  .btn>.caret,
-  .dropup>.btn>.caret {
-    border-top-color: #000!important;
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
   }
 
   .label {
@@ -292,12 +292,12 @@ table {
   }
 
   .table {
-    border-collapse: collapse!important;
+    border-collapse: collapse !important;
   }
 
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd!important;
+    border: 1px solid #ddd !important;
   }
 }
 
@@ -330,15 +330,15 @@ table {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333;
-  background-color: #fff;
+  color: #333333;
+  background-color: #ffffff;
 }
 
 input,
@@ -358,7 +358,7 @@ textarea {
 }
 
 a {
-  color: #c00;
+  color: #cc0000;
   text-decoration: none;
 }
 
@@ -391,11 +391,11 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.428571429;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
   border-radius: 4px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -409,7 +409,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
 }
 
 .sr-only {
@@ -434,7 +434,7 @@ p {
   line-height: 1.4;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .lead {
     font-size: 21px;
   }
@@ -449,11 +449,11 @@ cite {
 }
 
 .text-muted {
-  color: #999;
+  color: #999999;
 }
 
 .text-primary {
-  color: #c00;
+  color: #cc0000;
 }
 
 .text-warning {
@@ -496,7 +496,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -515,7 +515,7 @@ h6 small,
 .h6 small {
   font-weight: normal;
   line-height: 1;
-  color: #999;
+  color: #999999;
 }
 
 h1,
@@ -582,7 +582,7 @@ h4 small,
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 ul,
@@ -608,7 +608,7 @@ ol ol {
   list-style: none;
 }
 
-.list-inline>li {
+.list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
@@ -631,7 +631,7 @@ dd {
   margin-left: 0;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -649,7 +649,9 @@ dd {
   .dl-horizontal dd:before,
   .dl-horizontal dd:after {
     content: " ";
+    /* 1 */
     display: table;
+    /* 2 */
   }
 
   .dl-horizontal dd:after {
@@ -660,7 +662,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #999;
+  border-bottom: 1px dotted #999999;
 }
 
 abbr.initialism {
@@ -671,7 +673,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eee;
+  border-left: 5px solid #eeeeee;
 }
 
 blockquote p {
@@ -687,7 +689,7 @@ blockquote p:last-child {
 blockquote small {
   display: block;
   line-height: 1.428571429;
-  color: #999;
+  color: #999999;
 }
 
 blockquote small:before {
@@ -697,7 +699,7 @@ blockquote small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eee;
+  border-right: 5px solid #eeeeee;
   border-left: 0;
 }
 
@@ -738,7 +740,9 @@ address {
 .container:before,
 .container:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 
 .container:after {
@@ -753,7 +757,9 @@ address {
 .row:before,
 .row:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 
 .row:after {
@@ -876,7 +882,7 @@ address {
   width: 100%;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .container {
     max-width: 750px;
   }
@@ -1076,7 +1082,7 @@ address {
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .container {
     max-width: 970px;
   }
@@ -1288,7 +1294,7 @@ address {
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }

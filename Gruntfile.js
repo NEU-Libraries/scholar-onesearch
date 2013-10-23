@@ -54,9 +54,8 @@ module.exports = function(grunt) {
           "dist/css/ie7.css": "less/ie7.less",
         },
         options: {
-          yuicompress: true,
           report: 'min',
-          strictImports: true
+          ieCompat: true
         },
       }
     },
@@ -178,6 +177,17 @@ module.exports = function(grunt) {
 
 
       }
+    },
+    cssmin:{
+      minify:{
+          expand: true,
+          cwd: 'dist/css/',
+          //src: ['*.css', '!*.min.css'],
+          src: ['*.css'],
+
+          dest: 'dist/css/',
+          // ext: '.min.css'
+      }
     }
 
 
@@ -195,6 +205,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 
   // Default task(s).
@@ -202,7 +213,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
-  grunt.registerTask('deploy-staging', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'concat', 'uglify' , 'copy', 'sftp:staging']);
+  grunt.registerTask('deploy-staging', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'cssmin', 'concat', 'uglify' , 'copy', 'sftp:staging']);
 };
 
 

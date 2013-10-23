@@ -31,22 +31,7 @@
   }//div.EXLSearchFieldRibbonPreFilters
 
     //resetting the div to conserve more space
-    .EXLSearchFieldRibbonFormLinks,
-    div.EXLSearchFieldRibbonFormSubmitSearch{
-      //save on space and move it up to the pervious div
-      border: none;
-      float: right;
-      margin-right: 15px;
-      line-height: normal;
-      text-indent: 0;
-      display: block;
-      width: auto;
-      @media (min-width: @screen-md) {
-        position: relative;
-        bottom: 50px;
-        margin-bottom: -50px;
-      }
-    } //.EXLSearchFieldRibbonFormLinks,
+
       //div.EXLSearchFieldRibbonFormSubmitSearc
 
 
@@ -199,5 +184,41 @@
     @media (min-width: @screen-md) {
       margin-bottom: 0;
     }
+  }
+}
+
+//// This is a tricky area have to be specific since the app doesn't distinguish from Browse and Advanced search very well
+//
+//
+
+.EXLAdvancedSearch{
+  .EXLSearchFieldRibbonFormLinks,
+  .EXLSearchFieldRibbonFormSubmitSearch{
+    //save on space and move it up to the pervious div
+    border: none;
+    float: left;
+    margin-right: 15px;
+    line-height: normal;
+    text-indent: 0;
+    display: block;
+    width: auto;
+    @media (min-width: @screen-md) {
+      position: relative;
+      bottom: 50px;
+      margin-bottom: -50px;
+      float: none;
+    }
+  } //.EXLSearchFieldRibbonFormLinks,
+  .EXLSearchFieldRibbonFormSubmitSearch{
+    float: right;
+  }
+}
+
+
+
+.EXLAdvancedSearch .EXLAdvancedBrowseRibbon {
+  .EXLBrowseFieldRibbon + .EXLSearchFieldRibbonFormSubmitSearch{
+    position: static;
+    float: none;
   }
 }
