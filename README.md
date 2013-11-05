@@ -26,15 +26,17 @@ $ brew install git
 $ brew install node
 // then
 $ npm install -g grunt-cli
+$ npm install -g bower
 ```
 
 * Use git to clone the source code and submodules.
 * Install node modules
 
 ```
-$ git clone --recursive -b develop https://github.com/NEU-Libraries/scholar-onesearch.git
+$ git clone  https://github.com/NEU-Libraries/scholar-onesearch.git
 $ cd scholar-onesearch
 $ npm install
+$ bower install
 ```
 
 
