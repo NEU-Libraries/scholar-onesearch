@@ -1,0 +1,6 @@
+{
+    "path": "/path/to/target",
+    "host": "localhost",
+    "username": "username",
+    "password": "password"
+}
