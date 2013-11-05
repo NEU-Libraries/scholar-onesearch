@@ -5,7 +5,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
+    prodServer: grunt.file.readJSON('prodServer.json'),
     stagingServer: grunt.file.readJSON('stagingServer.json'),
+    devServer: grunt.file.readJSON('devServer.json'),
     uglify: {
         js: {
           files: {
@@ -70,6 +72,20 @@ module.exports = function(grunt) {
          }
        },
     sftp: {
+      prod: {
+        files: {
+          "./": "dist/**"
+        },
+        options: {
+          path: '<%= prodServer.path %>',
+          host: '<%= prodServer.host %>',
+          username: '<%= prodServer.username %>',
+          password: '<%= prodServer.password %>',
+          srcBasePath: "dist/",
+          ignoreErrors: true,
+          createDirectories: true,
+        },
+      },
       staging: {
         files: {
           "./": "dist/**"
@@ -79,6 +95,20 @@ module.exports = function(grunt) {
           host: '<%= stagingServer.host %>',
           username: '<%= stagingServer.username %>',
           password: '<%= stagingServer.password %>',
+          srcBasePath: "dist/",
+          ignoreErrors: true,
+          createDirectories: true,
+        },
+      },
+      dev: {
+        files: {
+          "./": "dist/**"
+        },
+        options: {
+          path: '<%= devServer.path %>',
+          host: '<%= devServer.host %>',
+          username: '<%= devServer.username %>',
+          password: '<%= devServer.password %>',
           srcBasePath: "dist/",
           ignoreErrors: true,
           createDirectories: true,
@@ -210,10 +240,13 @@ module.exports = function(grunt) {
 
   // Default task(s).
 
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'cssmin', 'concat', 'uglify' , 'copy']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
-  grunt.registerTask('deploy-staging', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'cssmin', 'concat', 'uglify' , 'copy', 'sftp:staging']);
+  grunt.registerTask('deploy-prod', ['default', 'sftp:prod']);
+  grunt.registerTask('deploy-staging', ['default', 'sftp:staging']);
+  grunt.registerTask('deploy-dev', ['default', 'sftp:dev']);
+
 };
 
 

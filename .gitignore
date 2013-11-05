@@ -1,5 +1,7 @@
 node_modules
 npm-debug.log
 stagingServer.json
+devServer.json
+prodServer.json
 report
 lib
