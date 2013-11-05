@@ -46,6 +46,8 @@ module.exports = function(grunt) {
           "dist/css/style.css": "less/style.less",
           "dist/css/legacy.css": "less/legacy.less",
           "dist/css/alma-styles.css": "less/alma-styles.less",
+          "dist/css/ie7.css": "less/ie7.less",
+
         },
       },
       production: {
@@ -56,7 +58,6 @@ module.exports = function(grunt) {
           "dist/css/ie7.css": "less/ie7.less",
         },
         options: {
-          report: 'min',
           ieCompat: true
         },
       }
@@ -151,7 +152,7 @@ module.exports = function(grunt) {
     },
     autoprefixer: {
       options: {
-        browsers: ['last 2 version', 'ie 8', 'ie 7']
+        browsers: ['last 2 version', 'ie 8', 'ie 7', 'ie 9', 'ie 10']
       },
       dist: {
         expand: true,
