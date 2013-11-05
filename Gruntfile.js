@@ -219,6 +219,16 @@ module.exports = function(grunt) {
           dest: 'dist/css/',
           // ext: '.min.css'
       }
+    },
+    bless:{
+      css:{
+        options: {
+          compress: true,
+        },
+        files:{
+          "dist/css/style.css" : "dist/css/style.css"
+        }
+      }
     }
 
 
@@ -237,11 +247,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-bless');
 
 
   // Default task(s).
 
-  grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'cssmin', 'concat', 'uglify' , 'copy']);
+  grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'bless' , 'concat', 'uglify' , 'copy']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
   grunt.registerTask('deploy-prod', ['default', 'sftp:prod']);
