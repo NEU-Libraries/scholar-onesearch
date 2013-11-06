@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     watch: {
         less: {
           files: 'less/**/*.less',
-          tasks: ['less:development', 'autoprefixer:dist'],
+          tasks: ['less:development', 'autoprefixer:dist', 'bless:develop' ],
         },
         js:{
           files: 'js/**/*.js',
@@ -214,22 +214,27 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'dist/css/',
           //src: ['*.css', '!*.min.css'],
-          src: ['*.css'],
+          src: ['*.css',"!*blessed*.css"],
 
           dest: 'dist/css/',
           // ext: '.min.css'
       }
     },
     bless:{
-      css:{
-        options: {
-          compress: true,
-        },
-        files:{
+      files:{
           "dist/css/style.css" : "dist/css/style.css"
+      },
+      prod:{
+        options: {
+          compress: true
         }
-      }
-    }
+      },
+      develop:{
+        options: {
+          compress: false
+        },
+      },
+    },
 
 
   });
@@ -252,7 +257,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
 
-  grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', 'bless' , 'concat', 'uglify' , 'copy']);
+  grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat', 'uglify' , 'copy']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
   grunt.registerTask('deploy-prod', ['default', 'sftp:prod']);
