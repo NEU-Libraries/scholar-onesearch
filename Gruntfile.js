@@ -5,9 +5,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
-    prodServer: grunt.file.readJSON('prodServer.json'),
-    stagingServer: grunt.file.readJSON('stagingServer.json'),
-    devServer: grunt.file.readJSON('devServer.json'),
+    prodServer: grunt.file.readJSON('conf/prodServer.json'),
+    stagingServer: grunt.file.readJSON('conf/stagingServer.json'),
+    devServer: grunt.file.readJSON('conf/devServer.json'),
     uglify: {
         js: {
           files: {
