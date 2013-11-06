@@ -1,3 +1,7 @@
+.folder_details .itemsList{
+  height: 178px;
+}
+
 
 //modernizr scope
 .MyAccount .eShelf_title + noscript + table{
@@ -8,20 +12,6 @@
 
   td{
     vertical-align: top;
-  }
-  tr:first-of-type{
-
-  }
-  td.folder_details{
-    .make-lg-column(9);
-
-    position: static;
-    padding-right: 0;
-    padding-right: 0;
-    overflow: hidden;
-    @media (max-width: 768px){
-      padding-left: 0;
-    }
   }
   .folder_details .itemsList_left{
     border-left: none;
@@ -142,6 +132,7 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody{
  .container-fixed();
  width: ~"calc(100% - 30px)" !important;
  float: none;
+ height: 450px;
 }
 .folders_new li.selected{
   background: none;
@@ -158,6 +149,7 @@ noscript + table[cellpadding="0"][cellspacing="0"] tbody{
 table.itemsListTable{
   .table;
   .table-condensed;
+  margin-bottom: 0;
 
 }
 
@@ -231,15 +223,32 @@ a.eShelf_email span:hover,
 a.eShelf_print span:hover{
   text-decoration: none;
 }
+.folder_details{
+  display: block;
+  .make-xs-column(12);
+  .make-sm-column(12);
+  .make-md-column(9);
+  .make-lg-column(9);
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 300px;
+  @media (min-width: @screen-md){
+    padding-left: 15px;
+  }
+}
+
 
 
 .folders_new{
+  display: block;
   border: none;
   .make-xs-column(12);
-  .make-md-column(6);
+  .make-sm-column(12);
+  .make-md-column(3);
   .make-lg-column(3);
   padding-left: 0;
   padding-right: 0;
+  min-height: 300px;
   border: @table-border-color 1px solid;
   ol{
     margin: 0!important;
@@ -254,7 +263,7 @@ a.eShelf_print span:hover{
   & > ul{
   & > ol,
   & > li{
-      .make-lg-column(12);
+      .clearfix();
       padding-right: 0;
       padding-left: 0;
     }
@@ -341,5 +350,6 @@ table.folderName.EXLEShelfFolderContentsTable{
 //fixing the note bubble alignment issues.
 .noteBubble {
   margin-top: -280px;
+  z-index: 1001;
 }
 
