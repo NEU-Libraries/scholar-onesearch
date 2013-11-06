@@ -13767,7 +13767,7 @@ fieldset[disabled] .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy 
   line-height: 1.3;
 }
 
-.EXLResultsList h2 {
+.EXLResultTitle {
   color: #2c3e50;
   font-size: 18px;
   margin-top: 5px;
