@@ -19,7 +19,8 @@ Credit to:
 
 Dependencies: [Git](Git),  [Node.js](http://nodejs.org/) and [Grunt-cli](http://gruntjs.com/getting-started).
 
-If you use [Homebrew](https://github.com/mxcl/homebrew):
+### Install Dependencies
+If you use [Homebrew](https://github.com/mxcl/homebrew) on a Mac:
 
 ```
 $ brew install git
@@ -29,8 +30,11 @@ $ npm install -g grunt-cli
 $ npm install -g bower
 ```
 
-* Use git to clone the source code and submodules.
+### Install components
+
+* Use git to clone this repository
 * Install node modules
+* Install bower components
 
 ```
 $ git clone  https://github.com/NEU-Libraries/scholar-onesearch.git
@@ -38,6 +42,16 @@ $ cd scholar-onesearch
 $ npm install
 $ bower install
 ```
+
+### Grunt Tasks
+Configure your deploy tasks first review the `conf/exampleServer.json` and modify the Grunt tasks accordingly.
+
+```
+
+$ grunt less:development //compiles the less using a defined task
+
+```
+
 
 
 

@@ -62,16 +62,6 @@ module.exports = function(grunt) {
         },
       }
     },
-    sshexec: {
-        stagingPull: {
-           command: 'cd <%= stagingServer.path %> && git pull -v',
-           options: {
-             host: '<%= stagingServer.host %>',
-             username: '<%= stagingServer.username %>',
-             password: '<%= stagingServer.password %>'
-           }
-         }
-       },
     sftp: {
       prod: {
         files: {
@@ -171,18 +161,18 @@ module.exports = function(grunt) {
         }],
       }
     },
-    svgmin: {                       // Task
-        options: {                  // Configuration that will be passed directly to SVGO
+    svgmin: {
+        options: {
           plugins: [{
             removeViewBox: false
           }]
         },
-        dist: {                         // Target
-          files: [{                   // Dictionary of files
-            expand: true,           // Enable dynamic expansion.
-            cwd: 'images',         // Src matches are relative to this path.
-            src: ['**/*.svg'],      // Actual pattern(s) to match.
-            dest: 'dist/images',           // Destination path prefix.
+        dist: {
+          files: [{
+            expand: true,
+            cwd: 'images',
+            src: ['**/*.svg'],
+            dest: 'dist/images',å
           }]
         },
       },
@@ -231,7 +221,6 @@ module.exports = function(grunt) {
       },
     },
     jade: {
-
       dev:{
         options: {
           pretty: true,
@@ -299,11 +288,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
 
 
-  // Default task(s).
+  // Default task.
 
   grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat', 'uglify' , 'copy']);
-  grunt.registerTask('watch-less', ['watch:less']);
-  grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
+
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
   grunt.registerTask('deploy-dev', ['default', 'jade:dev' ,'sftp:dev']);
