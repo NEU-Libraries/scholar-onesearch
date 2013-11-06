@@ -195,11 +195,6 @@ module.exports = function(grunt) {
       },
     },
     copy:{
-      html:{
-        files: [
-          {src: 'static_htmls/*', dest: 'dist/'}
-        ]
-      },
       js:{
         files: [
           {src: 'lib/selectivizr/selectivizr.js', dest: 'dist/js/selectivizr.js'},
@@ -235,6 +230,54 @@ module.exports = function(grunt) {
         },
       },
     },
+    jade: {
+
+      dev:{
+        options: {
+          pretty: true,
+          data:{
+            target: '<%= devServer %>',
+          }
+        },
+        files:[ {
+          expand: true,
+          flatten: true,
+          src: "templates/*.jade",
+          ext: ".html",
+          dest: 'dist/static_htmls/'
+        } ],
+      },
+      staging:{
+        options: {
+          pretty: true,
+          data:{
+            target: '<%= stagingServer %>',
+          }
+        },
+        files:[ {
+          expand: true,
+          flatten: true,
+          src: "templates/*.jade",
+          ext: ".html",
+          dest: 'dist/static_htmls/'
+        } ],
+      },
+      prod:{
+        options: {
+          pretty: true,
+          data:{
+            target: '<%= prodServer %>',
+          }
+        },
+        files:[ {
+          expand: true,
+          flatten: true,
+          src: "templates/*.jade",
+          ext: ".html",
+          dest: 'dist/static_htmls/'
+        } ],
+      },
+    }
 
 
   });
@@ -253,6 +296,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-bless');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
 
   // Default task(s).
@@ -260,9 +304,9 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat', 'uglify' , 'copy']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('pull-staging', ['sshexec:stagingPull']);
-  grunt.registerTask('deploy-prod', ['default', 'sftp:prod']);
-  grunt.registerTask('deploy-staging', ['default', 'sftp:staging']);
-  grunt.registerTask('deploy-dev', ['default', 'sftp:dev']);
+  grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
+  grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
+  grunt.registerTask('deploy-dev', ['default', 'jade:dev' ,'sftp:dev']);
 
 };
 

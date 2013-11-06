@@ -1,0 +1,44 @@
+//nu_header start
+
+//if IE 7
+  link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css')
+
+script.
+  // Avoid `console` errors in browsers that lack a console.
+  (function() {
+  var method;
+  var noop = function () {};
+  var methods = [
+  'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+  'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+  'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+  'timeStamp', 'trace', 'warn'
+  ];
+  var length = methods.length;
+  var console = (window.console = window.console || {});
+  while (length--) {
+  method = methods[length];
+  // Only stub undefined methods.
+  if (!console[method]) {
+  console[method] = noop;
+  }
+  }
+  }());
+  // Adding support for IE10 and Windows Phone 8
+  // http://getbootstrap.com/getting-started/#browsers
+  if (navigator.userAgent.match(/IEMobile\\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+  document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+  }
+
+script(src= target.assetPath + '/js/modernizr.min.js')
+
+unless target.name === "Production"
+  h1= target.name
+a.nu-lib-logo(href='http://library.northeastern.edu', title='Notheastern Univerity, University Libraries Homepage')
+  span.text-hide Northeastern University, University Libraries
+
+a.logo.scholar-one-search(href='search.do', title='New Search')
+  span.text-hide Scholar OneSearch
+//nu_header end
