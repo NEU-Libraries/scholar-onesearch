@@ -5,3 +5,4 @@ devServer.json
 prodServer.json
 report
 lib
+dist

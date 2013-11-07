@@ -209,16 +209,16 @@ module.exports = function(grunt) {
       prod:{
         options: {
           compress: true,
-          cacheBuster: false
+          imports: false
         },
         files:{
-            "dist/css/style-blessd.css" : "dist/css/style.css"
+            "dist/css/style-blessed.css" : "dist/css/style.css"
         },
       },
       develop:{
         options: {
           compress: true,
-          cacheBuster: false
+          imports: false
         },
         files:{
             "dist/css/style-blessed.css" : "dist/css/style.css"
@@ -271,6 +271,9 @@ module.exports = function(grunt) {
           dest: 'dist/static_htmls/'
         } ],
       },
+    },
+    clean: {
+      files: ['dist'],
     }
 
 
@@ -291,11 +294,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-bless');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
 
   // Default task.
 
-  grunt.registerTask('default', ['svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat', 'uglify' , 'copy']);
+  grunt.registerTask('default', [ 'clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat', 'uglify' , 'copy']);
 
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
