@@ -209,7 +209,7 @@ module.exports = function(grunt) {
       prod:{
         options: {
           compress: true,
-          imports: false
+          cacheBuster: false
         },
         files:{
             "dist/css/style-blessd.css" : "dist/css/style.css"
@@ -217,7 +217,8 @@ module.exports = function(grunt) {
       },
       develop:{
         options: {
-          compress: false
+          compress: true,
+          cacheBuster: false
         },
         files:{
             "dist/css/style-blessed.css" : "dist/css/style.css"

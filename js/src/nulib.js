@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   var scholarOneSearch = (function(){
-    "use strict";
+    'use strict';
     /**
      * Finds the URL path of the assets by finding the source of this script script#sos-app-js
      * @return {string} asset path
@@ -9,7 +9,8 @@ $( document ).ready(function() {
       var url = $('script#sos-app-js').attr('src').toString();
       url = url.slice(0, url.search('js/'));
       return url;
-    }
+    };
+
     //build report a problem links;
     var reportAProblem = function(){
       var $results = $('#exlidResultsTable tr.EXLResult');
@@ -36,7 +37,7 @@ $( document ).ready(function() {
       //Creating a collapse group.
       $('#facetList > .EXLFacetContainer').each(function(i){
         //find out if we should add the collapse
-        var hasAdditionalFacetes = $(this).find("ol.EXLFacetsList > li").hasClass("EXLAdditionalFacet");
+        var hasAdditionalFacetes = $(this).find('ol.EXLFacetsList > li').hasClass('EXLAdditionalFacet');
 
         if( i > 0 && hasAdditionalFacetes ){
             //refactor this code to to wrap the li item instead>
@@ -148,7 +149,7 @@ $( document ).ready(function() {
             //for 'constains'search
             var operator = '%3A';
             //for 'exact' search
-            if ($('#exlidInput_precisionOperator_' + ddIndex).val() == 'exact'){
+            if ($('#exlidInput_precisionOperator_' + ddIndex).val() === 'exact'){
               operator = '%3D';
             }
 
@@ -159,7 +160,7 @@ $( document ).ready(function() {
 
 
         //also language search
-        if ($('#exlidInput_language_').val() != 'all_items'){
+        if ($('#exlidInput_language_').val() !== 'all_items'){
           searchString += 'ln' + '%3A' + $('#exlidInput_language_').val() + ' ';
         }
 
@@ -247,12 +248,8 @@ $( document ).ready(function() {
       }
 
       Modernizr.load({
-        test: Modernizr.mq() && (typeof respond != 'undefined'),
-
-        nope: ['https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'],
-        complete: function(){
-          console.log('respond.min loaded');
-        }
+        test: ( (Modernizr.mediaqueries) && (typeof respond === 'undefined') ),
+        nope: ['https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js']
       });
     };
     /**
@@ -261,21 +258,21 @@ $( document ).ready(function() {
      */
     var alertOutdatedBrowser = function(){
       $('#exlidHeaderSystemFeedback').append('<div class="alert alert-danger"><strong>You\'re Using an Outdated Web Browser</strong><br>In order to experience this website properly, please upgrade. Learn more at <a href="http://wiserbrowser.com">www.wiserbrowser.com</a></div>');
-    }
+    };
 
     var addEshelfClasses = function(){
-      if( $('link[href*="my_shelf"]') ){
+      if( $('link[href*="my_shelf"]') && !$('body').hasClass('sos-eshelf') ){
         // Un comment this on  if you need to  remove the old my_shelf Css
         // $('link[href*="my_shelf"]').detach();
 
         $('body').addClass('sos-eshelf');
-
+        console.log('added sos-eshelf class to body');
       }
-    }
+    };
 
     //Build the page functions.
     var init = function(){
-      assettUrl();
+      addEshelfClasses();
       $('#search_field').attr('placeholder','Search...');
       draggable();
       eShelfIcons();

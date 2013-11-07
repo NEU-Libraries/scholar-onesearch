@@ -4,7 +4,8 @@
 
 
 //modernizr scope
-body.MyAccount.sos-eshelf #exlidMyAccountContainer > table{
+body.MyAccount.sos-eshelf #exlidMyAccountContainer > table,
+body.MyAccount .eShelf_title + noscript + table{
   font-size: inherit !important;
   vertical-align: middle !important;
   font-family: @font-family-base !important;
@@ -25,96 +26,98 @@ body.MyAccount.sos-eshelf #exlidMyAccountContainer > table{
   td{
     vertical-align: top;
   }
-  .folder_details .itemsList_left{
-    border-left: none;
+
+}
+
+
+.folder_details .itemsList_left{
+  border-left: none;
+}
+.folder_details h5{
+  display: none !important;
+}
+.folder_details a.eShelf_cut_but{
+  .make-font-awesome-eshelf("\f0c4");
+}
+.folder_details a.eShelf_copy_but {
+  .make-font-awesome-eshelf("\f0c5");
+}
+.folder_details a.eShelf_paste_but {
+  .make-font-awesome-eshelf("\f0ea");
+}
+.folder_details a.eShelf_delete_but {
+  .make-font-awesome-eshelf("\f00d");
+}
+a.eShelf_email{
+  .make-font-awesome-eshelf("\f003");
+}
+a.eShelf_print{
+  .make-font-awesome-eshelf("\f02f");
+}
+.folder_details .newManage_buts li{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.folder_details .selectWidth.EXLEShelfFolderContentsPushTo select{
+  font-size: 14px !important;
+  border: 1px solid @input-border;
+  .make-lg-column(8);
+  position: static;
+
+}
+.EXLEShelfFolderContentsTable{
+  & > tbody {
+    border: @table-border-color 1px solid;
   }
-  .folder_details h5{
-    display: none !important;
-  }
-  .folder_details a.eShelf_cut_but{
-    .make-font-awesome-eshelf("\f0c4");
-  }
-  .folder_details a.eShelf_copy_but {
-    .make-font-awesome-eshelf("\f0c5");
-  }
-  .folder_details a.eShelf_paste_but {
-    .make-font-awesome-eshelf("\f0ea");
-  }
-  .folder_details a.eShelf_delete_but {
-    .make-font-awesome-eshelf("\f00d");
-  }
-  a.eShelf_email{
-    .make-font-awesome-eshelf("\f003");
-  }
-  a.eShelf_print{
-    .make-font-awesome-eshelf("\f02f");
-  }
-  .folder_details .newManage_buts li{
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  }
-  .folder_details .selectWidth.EXLEShelfFolderContentsPushTo select{
-    font-size: 14px !important;
-    border: 1px solid @input-border;
-    .make-lg-column(8);
+  td.ulTd,
+  td.selectWidth.EXLEShelfFolderContentsPushTo{
+    .make-lg-column(6);
     position: static;
+    padding-left: 0;
 
   }
-  .EXLEShelfFolderContentsTable{
-    & > tbody {
-      border: @table-border-color 1px solid;
-    }
-    td.ulTd,
-    td.selectWidth.EXLEShelfFolderContentsPushTo{
-      .make-lg-column(6);
+  tbody > tr{
+
+    td.buttonsUl{
+      .make-lg-column(12);
       position: static;
-      padding-left: 0;
-
-    }
-    tbody > tr{
-
-      td.buttonsUl{
-        .make-lg-column(12);
-        position: static;
-        .EXLEShelfFolderContentsSendButtonList,
-        .newManage_buts{
-          display: block;
-          float: left;
-        }
-        .folder_details table.auto{
-          width: 100% !important;
+      .EXLEShelfFolderContentsSendButtonList,
+      .newManage_buts{
+        display: block;
+        float: left;
+      }
+      .folder_details table.auto{
+        width: 100% !important;
 
 
-        }
       }
     }
   }
-  .folder_details label{
-    .hide-text();
-  }
-  .folder_details table.auto {
-    width: 100%!important;
-  }
-  .buttonGo{
-    .make-lg-column(2);
-    border: none;
-    a{
-      .btn;
-      .btn-sm;
-      .btn-primary;
-      margin-top: 4px;
-      margin-left: 4px;
-    }
-  }
-  .noteBubble h3{
-    height: 47px;
-  }
-
-  .tableBorder{
-    .border-not-top( 1px solid @table-border-color);
+}
+.folder_details label{
+  .hide-text();
+}
+.folder_details table.auto {
+  width: 100%!important;
+}
+.buttonGo{
+  .make-lg-column(2);
+  border: none;
+  a{
+    .btn;
+    .btn-sm;
+    .btn-primary;
+    margin-top: 4px;
+    margin-left: 4px;
   }
 }
+.noteBubble h3{
+  height: 47px;
+}
 
+.tableBorder{
+  .border-not-top( 1px solid @table-border-color);
+}
 
 
 .selectWidth.EXLEShelfFolderContentsPushTo{
