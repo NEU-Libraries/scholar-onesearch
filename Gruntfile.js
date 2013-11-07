@@ -274,7 +274,7 @@ module.exports = function(grunt) {
     },
     clean: {
       files: ['dist'],
-    }
+    },
 
 
   });
@@ -304,7 +304,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
   grunt.registerTask('deploy-dev', ['default', 'jade:dev' ,'sftp:dev']);
-
+  grunt.registerTask('deploy-all', ['deploy-dev', 'deploy-staging','deploy-prod']);
 };
 
 
