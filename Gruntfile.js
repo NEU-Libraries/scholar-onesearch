@@ -208,10 +208,11 @@ module.exports = function(grunt) {
     bless:{
       prod:{
         options: {
-          compress: true
+          compress: true,
+          imports: false
         },
         files:{
-            "dist/css/style.css" : "dist/css/style.css"
+            "dist/css/style-blessd.css" : "dist/css/style.css"
         },
       },
       develop:{
@@ -219,7 +220,7 @@ module.exports = function(grunt) {
           compress: false
         },
         files:{
-            "dist/css/style.css" : "dist/css/style.css"
+            "dist/css/style-blessed.css" : "dist/css/style.css"
         },
       },
     },

@@ -3,6 +3,16 @@
 //if IE 7
   link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css')
 
+//if lte IE 9
+  link(rel='stylesheet', href=target.assetPath + 'css/style-blessed.css')
+
+//if lt IE 9
+  script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+  script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+
+script(src= target.assetPath + '/js/modernizr.min.js')
+
+
 // From HTML5BP plugins.js @link https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js#L1
 script.
   // Avoid `console` errors in browsers that lack a console.
@@ -50,7 +60,7 @@ script.
     document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
   }
 
-script(src= target.assetPath + '/js/modernizr.min.js')
+
 
 unless target.name === "Production"
   h1= target.name

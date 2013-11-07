@@ -1,7 +1,15 @@
 $( document ).ready(function() {
   var scholarOneSearch = (function(){
     "use strict";
-
+    /**
+     * Finds the URL path of the assets by finding the source of this script script#sos-app-js
+     * @return {string} asset path
+     */
+    var assettUrl = function(){
+      var url = $('script#sos-app-js').attr('src').toString();
+      url = url.slice(0, url.search('js/'));
+      return url;
+    }
     //build report a problem links;
     var reportAProblem = function(){
       var $results = $('#exlidResultsTable tr.EXLResult');
@@ -239,8 +247,12 @@ $( document ).ready(function() {
       }
 
       Modernizr.load({
-        test: Modernizr.mediaqueries,
-        nope: ['../customized/NUdev/js/respond.min.js']
+        test: Modernizr.mq() && (typeof respond != 'undefined'),
+
+        nope: ['https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'],
+        complete: function(){
+          console.log('respond.min loaded');
+        }
       });
     };
     /**
@@ -263,7 +275,7 @@ $( document ).ready(function() {
 
     //Build the page functions.
     var init = function(){
-      //addEshelfClasses();
+      assettUrl();
       $('#search_field').attr('placeholder','Search...');
       draggable();
       eShelfIcons();

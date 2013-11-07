@@ -21,7 +21,6 @@
 
   & > fieldset{
     .make-row();
-    margin-top: -2px;
   }
   div.EXLSearchFieldRibbonPreFilters{
     border: none;
@@ -67,11 +66,10 @@
   }
   input.submit{
    background-image: none;
-   width: 100%;
    .btn;
-   //.btn-lg;
    .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
    height: auto;
+   width: auto;
   }
 
   div.EXLAdvancedSearchFormRow{
@@ -217,7 +215,7 @@
 
 
 .EXLAdvancedSearch .EXLAdvancedBrowseRibbon {
-  .EXLBrowseFieldRibbon + .EXLSearchFieldRibbonFormSubmitSearch{
+  .EXLSearchFieldRibbonFormSubmitSearch{
     position: static;
     float: none;
   }
