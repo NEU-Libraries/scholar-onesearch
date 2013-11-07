@@ -4,12 +4,24 @@
 
 
 //modernizr scope
-.MyAccount .eShelf_title + noscript + table{
+body.MyAccount.sos-eshelf #exlidMyAccountContainer > table{
   font-size: inherit !important;
   vertical-align: middle !important;
   font-family: @font-family-base !important;
 
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
 
+  tbody{
+    .container-fixed();
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  tr{
+    display: block;
+  }
   td{
     vertical-align: top;
   }
@@ -102,6 +114,9 @@
     .border-not-top( 1px solid @table-border-color);
   }
 }
+
+
+
 .selectWidth.EXLEShelfFolderContentsPushTo{
   padding-top: 8px;
 }
@@ -120,11 +135,6 @@
 }
 
 
-noscript + table[cellpadding="0"][cellspacing="0"] tbody{
-  .container-fixed();
-  padding-right: 0;
-  padding-left: 0;
-}
 
 .EXLEshelfDocumentDetailsIFrame{
  border-radius: @border-radius-base;
@@ -340,11 +350,7 @@ table.folderName.EXLEShelfFolderContentsTable{
   border-top: 1px solid @table-border-color !important;
   border-collapse: separate;
 }
-.EXLEshelfTitle + noscript + table{
-  display: block;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 
 //fixing the note bubble alignment issues.

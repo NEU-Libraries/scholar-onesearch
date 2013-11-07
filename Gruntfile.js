@@ -172,7 +172,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'images',
             src: ['**/*.svg'],
-            dest: 'dist/images',å
+            dest: 'dist/images',
           }]
         },
       },
@@ -206,17 +206,20 @@ module.exports = function(grunt) {
       }
     },
     bless:{
-      files:{
-          "dist/css/style.css" : "dist/css/style.css"
-      },
       prod:{
         options: {
           compress: true
-        }
+        },
+        files:{
+            "dist/css/style.css" : "dist/css/style.css"
+        },
       },
       develop:{
         options: {
           compress: false
+        },
+        files:{
+            "dist/css/style.css" : "dist/css/style.css"
         },
       },
     },

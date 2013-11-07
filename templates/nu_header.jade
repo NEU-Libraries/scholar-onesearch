@@ -3,6 +3,7 @@
 //if IE 7
   link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css')
 
+// From HTML5BP plugins.js @link https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js#L1
 script.
   // Avoid `console` errors in browsers that lack a console.
   (function() {
@@ -24,12 +25,29 @@ script.
   }
   }
   }());
-  // Adding support for IE10 and Windows Phone 8
-  // http://getbootstrap.com/getting-started/#browsers
-  if (navigator.userAgent.match(/IEMobile\\/10\.0/)) {
-  var msViewportStyle = document.createElement("style");
-  msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
-  document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+
+script.
+  (function() {
+    var styleSheetList = document.styleSheets;
+    for (i = 0; i < styleSheetList.length; i++){
+      var href = styleSheetList[i].href;
+      href = href.toString();
+      if(href.search('my_shelf.css')){
+        document.body.className = (document.body.className + " sos-eshelf");
+
+        }
+      }
+    }());
+
+script.
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement("style")
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        "@-ms-viewport{width:auto!important}"
+      )
+    )
+    document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
   }
 
 script(src= target.assetPath + '/js/modernizr.min.js')

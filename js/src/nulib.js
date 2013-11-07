@@ -243,13 +243,27 @@ $( document ).ready(function() {
         nope: ['../customized/NUdev/js/respond.min.js']
       });
     };
-
+    /**
+     * Alerts the user that their browser isn't compatible with our support browsers and asks the user to upgrade.
+     *
+     */
     var alertOutdatedBrowser = function(){
       $('#exlidHeaderSystemFeedback').append('<div class="alert alert-danger"><strong>You\'re Using an Outdated Web Browser</strong><br>In order to experience this website properly, please upgrade. Learn more at <a href="http://wiserbrowser.com">www.wiserbrowser.com</a></div>');
     }
 
+    var addEshelfClasses = function(){
+      if( $('link[href*="my_shelf"]') ){
+        // Un comment this on  if you need to  remove the old my_shelf Css
+        // $('link[href*="my_shelf"]').detach();
+
+        $('body').addClass('sos-eshelf');
+
+      }
+    }
+
     //Build the page functions.
     var init = function(){
+      //addEshelfClasses();
       $('#search_field').attr('placeholder','Search...');
       draggable();
       eShelfIcons();
@@ -260,6 +274,7 @@ $( document ).ready(function() {
       handleRadio();
       addToolTips();
       handleMediaQuerySuport();
+
     };
 
     return {

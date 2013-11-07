@@ -6,14 +6,14 @@
     "Primo",
     "ExLibris"
   ],
-  "homepage": "http:// https://github.com/nu-lts/scholar-onesearch",
+  "homepage": "http:// https://github.com/NEU-libraries/scholar-onesearch",
   "repository": {
     "type": "git",
     "url": "git://github.com/nu-lts/scholar-onesearch.git"
   },
   "author": "Steven Bassett <steven.j.bassett@gmail.com> (http://bassettsj.github.io)",
   "bugs": {
-    "url": "https://github.com/bassettsj/primo-frontend/issues"
+    "url": "https://github.com/bassettsj/primo/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
