@@ -270,6 +270,7 @@ $( document ).ready(function() {
       }
     };
 
+
     //Build the page functions.
     var init = function(){
       addEshelfClasses();
@@ -297,3 +298,12 @@ $( document ).ready(function() {
 
 
 
+(function() {
+    var oldPrimoLightBox =  openPrimoLightBox;
+    openPrimoLightBox = function() {
+        // do some stuff
+        var result = oldVersion.apply(this, arguments);
+        console.log("Overrode the old function");
+        return result;
+    };
+})();

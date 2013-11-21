@@ -303,8 +303,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
-  grunt.registerTask('deploy-dev', ['default', 'jade:dev' ,'sftp:dev']);
-  grunt.registerTask('deploy-all', ['deploy-dev', 'deploy-staging','deploy-prod']);
+  grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev' ,'sftp:dev']);
 };
 
 
