@@ -269,7 +269,50 @@ $( document ).ready(function() {
         console.log('added sos-eshelf class to body');
       }
     };
+    /**
+     * Handle Accessibility Issues with SOS
+     *
+     */
+    var a11y = function(){
+      if( Modernizr != null ){
+        Modernizr.load({
+          test: false,
+          nope: ['//yatil-cdn.s3.amazonaws.com/accessifyhtml5.min.js'],
+          complete: function(){
 
+            //variable for the main container
+            var main;
+            //Query the Dom for the landmark roles to apply
+            if($('#exlidResultsContainer').length > 0 ){
+              main = '#exlidResultsContainer';
+            }else if ($('#exlidHomeContainer').length > 0 ){
+              main = '#exlidHomeContainer';
+            }else{
+              main = '#exlidMyAccountContainer';
+            }
+            var moreFixes = {
+              '.EXLSearchWrapper' : {'role': 'search'  },
+              '.EXLMyAccountTabsRibbon' : {'role': 'tablist'  },
+              '.EXLMyAccountSelectedTab' : {'role': 'tab'},
+              '.EXLMyAccountContainer' : {'role': 'tabpanel'},
+              '.tooltip': {'role' : 'tooltip'},
+              '.exlidFacetsLightboxContainer' : {'role': 'dialog'},
+              '#exlidFacetTile': {'role': 'complementary'},
+              '#showMoreOptions': {'aria-labeledby': '#scopesList .EXLHiddenCue'},
+              '.EXLThumbnail' : { 'aria-ignore': true }
+
+
+
+            }
+             AccessifyHTML5({
+              header:"#exlidHeaderContainer",
+              footer: '.EXLFooterTile',
+              main: main
+            }, moreFixes );
+          }
+        });
+      }
+    }
 
     //Build the page functions.
     var init = function(){
@@ -284,6 +327,7 @@ $( document ).ready(function() {
       handleRadio();
       addToolTips();
       handleMediaQuerySuport();
+      a11y();
 
     };
 
