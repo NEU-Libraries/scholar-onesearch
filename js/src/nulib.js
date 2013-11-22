@@ -68,40 +68,55 @@ $( document ).ready(function() {
           title: "Refine your search more."
       }).tooltip();
     };
-
+    // Build the eShelf icons
     var  eShelfIcons = function(){
-      function toggleEShelf(){
+      //helper function to toggle between label text;
+      function helpText(boolean){
+        var helpText = "e-Shelf Action. ";
+        var stub =  boolean ? 'Item in e-Shelf, click to remove' : 'Item not in e-Shelf, click to add';
+        helpText = helpText + stub;
+        return helpText;
+      }
+      function toggleEShelf(e){
         var newTitle =  ( $(this).data('eshelf') ) ?  'Add to e-Shelf' : 'In e-Shelf' ;
-        var newBoolean = !$(this).data('eshelf') ;
+        var newBoolean = !($(this).data('eshelf') );
+        alert('toggled to ' + newBoolean);
+        console.log($(this));
         $(this)
-          .data('eshelf', newBoolean)
+          .attr('data-eshelf', newBoolean)
             .attr( 'aria-checked' , newBoolean )
               .tooltip('destroy')
-                .attr('title',newTitle)
-                 .tooltip({title: newTitle});
-        $(this).find('i').toggleClass('icon-bookmark-empty', 'icon-bookmark');
+                .attr('title',newTitle);
+        $(this).find('i').toggleClass('icon-bookmark-empty').toggleClass('icon-bookmark');
+        $(this).find('.sr-only').text( helpText(newBoolean) );
       }
-      //iterate through each result for the id the e-shelf div
-      $('tr.EXLResult').each( function( index ){
-        var labelId = 'eShelfbuttonLabel' + index ;
-        var link = $(this).find('td.EXLMyShelfStar > a');
-        var img = link.find('img');
-        var eShelf = ( img.attr('alt') === "In e-Shelf" );
-        var icon = eShelf ? $('<i/>').addClass('icon-bookmark icon-large') : $('<i/>').addClass('icon-bookmark-empty icon-large');
-        link.data('eshelf' , eShelf )
-          .attr('aria-labeledby', labelId )
-          .attr( 'aria-role', 'checkbox')
-          .attr( 'aria-checked' , eShelf )
-          .addClass('btn btn-success btn-small')
-          .tooltip()
-            .on('click', toggleEShelf);
-        img
-          .after( $('<span id="' + labelId + '" class="sr-only" />').text('E-Shelf') )
-          .after( icon )
-          .hide();
+      var result = $('tr.EXLResult');
+      if (result.length > 0){
+        //iterate through each result for the id the e-shelf div
+        result.each( function( index ){
+          var labelId = 'eShelfbuttonLabel' + index ;
+          var link = $(this).find('td.EXLMyShelfStar > a');
+          var img = link.find('img');
+          var eShelf = ( img.attr('alt') === "In e-Shelf" );
+
+          var icon = eShelf ? $('<i/>').addClass('icon-bookmark icon-large') : $('<i/>').addClass('icon-bookmark-empty icon-large');
+          link.attr('data-eshelf' , eShelf )
+            .attr('id', 'eshelfLink' + index )
+            .attr('aria-labelledby', labelId )
+            .attr( 'aria-role', 'checkbox')
+            .attr( 'aria-checked' , eShelf )
+            .addClass('btn btn-success btn-small')
+            .tooltip()
+              .on('click', toggleEShelf);
+          img
+            .after( $('<span id="' + labelId + '" class="sr-only">' + helpText(eShelf) + '</span>' ) )
+            .after( icon )
+            .hide();
 
 
-      });
+        });
+
+      }
 
     };
 
