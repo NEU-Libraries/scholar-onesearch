@@ -77,18 +77,24 @@ $( document ).ready(function() {
         helpText = helpText + stub;
         return helpText;
       }
-      function toggleEShelf(e){
-        var newTitle =  ( $(this).data('eshelf') ) ?  'Add to e-Shelf' : 'In e-Shelf' ;
-        var newBoolean = !($(this).data('eshelf') );
-        alert('toggled to ' + newBoolean);
-        console.log($(this));
-        $(this)
+      function toggleEShelf(event){
+
+        var $link = $(this);
+        var newTitle =  ( $link.data('eshelf') ) ?  'Add to e-Shelf' : 'In e-Shelf' ;
+        var newBoolean = !( $link.data('eshelf') );
+
+
+        $link
           .attr('data-eshelf', newBoolean)
             .attr( 'aria-checked' , newBoolean )
-              .tooltip('destroy')
                 .attr('title',newTitle);
-        $(this).find('i').toggleClass('icon-bookmark-empty').toggleClass('icon-bookmark');
-        $(this).find('.sr-only').text( helpText(newBoolean) );
+        $link.tooltip({
+          title: newTitle
+          });
+        $link.find('i').toggleClass('icon-bookmark-empty').toggleClass('icon-bookmark');
+        $link.find('.sr-only').text( helpText(newBoolean) );
+        return $link;
+        event.stopPropagation();
       }
       var result = $('tr.EXLResult');
       if (result.length > 0){
@@ -107,7 +113,7 @@ $( document ).ready(function() {
             .attr( 'aria-checked' , eShelf )
             .addClass('btn btn-success btn-small')
             .tooltip()
-              .on('click', toggleEShelf);
+              .click(toggleEShelf);
           img
             .after( $('<span id="' + labelId + '" class="sr-only">' + helpText(eShelf) + '</span>' ) )
             .after( icon )
