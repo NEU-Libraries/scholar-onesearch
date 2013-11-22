@@ -70,23 +70,39 @@ $( document ).ready(function() {
     };
 
     var  eShelfIcons = function(){
-      $('img[alt="Add to e-Shelf"]').after('<i class="icon-bookmark-empty icon-large"></i>').hide();
-      $('img[alt="In e-Shelf"]').after('<i class="icon-bookmark icon-large"></i>').hide();
-      $('td.EXLMyShelfStar > a').addClass('btn btn-success btn-small').click(function(){
-        if ($(this).data('original-title') === "In e-Shelf"){
-            $(this).tooltip('destroy').attr('title','Add to e-Shelf').tooltip({title:'Add to e-Shelf'});
-        }
-        else{
-          $(this).tooltip('destroy').attr('title',"In e-Shelf").tooltip({title:'In e-Shelf'});
-        }
-        var $i  = $(this).children("i");
-        if ($i.hasClass('icon-bookmark-empty')){
-          $i.removeClass('icon-bookmark-empty').addClass('icon-bookmark');
-        }
-        else{
-          $i.removeClass('icon-bookmark').addClass('icon-bookmark-empty');
-        }
-      }).tooltip();
+      function toggleEShelf(){
+        var newTitle =  ( $(this).data('eshelf') ) ?  'Add to e-Shelf' : 'In e-Shelf' ;
+        var newBoolean = !$(this).data('eshelf') ;
+        $(this)
+          .data('eshelf', newBoolean)
+            .attr( 'aria-checked' , newBoolean )
+              .tooltip('destroy')
+                .attr('title',newTitle)
+                 .tooltip({title: newTitle});
+        $(this).find('i').toggleClass('icon-bookmark-empty', 'icon-bookmark');
+      }
+      //iterate through each result for the id the e-shelf div
+      $('tr.EXLResult').each( function( index ){
+        var labelId = 'eShelfbuttonLabel' + index ;
+        var link = $(this).find('td.EXLMyShelfStar > a');
+        var img = link.find('img');
+        var eShelf = ( img.attr('alt') === "In e-Shelf" );
+        var icon = eShelf ? $('<i/>').addClass('icon-bookmark icon-large') : $('<i/>').addClass('icon-bookmark-empty icon-large');
+        link.data('eshelf' , eShelf )
+          .attr('aria-labeledby', labelId )
+          .attr( 'aria-role', 'checkbox')
+          .attr( 'aria-checked' , eShelf )
+          .addClass('btn btn-success btn-small')
+          .tooltip()
+            .on('click', toggleEShelf);
+        img
+          .after( $('<span id="' + labelId + '" class="sr-only" />').text('E-Shelf') )
+          .after( icon )
+          .hide();
+
+
+      });
+
     };
 
 
@@ -299,7 +315,7 @@ $( document ).ready(function() {
               '.exlidFacetsLightboxContainer' : {'role': 'dialog'},
               '#exlidFacetTile': {'role': 'complementary'},
               '#showMoreOptions': {'aria-labeledby': '#scopesList .EXLHiddenCue'},
-              '.EXLThumbnail' : { 'aria-ignore': true }
+              '.EXLThumbnail' : { 'aria-hidden': true }
 
 
 
