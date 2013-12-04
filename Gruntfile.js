@@ -2,12 +2,17 @@ module.exports = function(grunt) {
 
   var jsFiles = ['lib/bootstrap/js/tooltip.js','js/src/nulib.js'];
   // Project configuration.
+  //
+
+  var target =  grunt.option('target') || 'dis/exampleServer.json'
+
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
     prodServer: grunt.file.readJSON('conf/prodServer.json'),
     stagingServer: grunt.file.readJSON('conf/stagingServer.json'),
     devServer: grunt.file.readJSON('conf/devServer.json'),
+    targetServer : grunt.file.readJSON(target),
     uglify: {
         js: {
           files: {
@@ -100,6 +105,20 @@ module.exports = function(grunt) {
           host: '<%= devServer.host %>',
           username: '<%= devServer.username %>',
           password: '<%= devServer.password %>',
+          srcBasePath: "dist/",
+          ignoreErrors: true,
+          createDirectories: true,
+        },
+      },
+      target: {
+        files: {
+          "./": "dist/**"
+        },
+        options: {
+          path: '<%= targetServer.path %>',
+          host: '<%= targetServer.host %>',
+          username: '<%= targetServer.username %>',
+          password: '<%= targetServer.password %>',
           srcBasePath: "dist/",
           ignoreErrors: true,
           createDirectories: true,
