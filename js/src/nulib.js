@@ -355,7 +355,7 @@ $( document ).ready(function() {
       var renewAllButton = $('#renewAllButton');
 
       renewAllButton.closest('td').before($('<td/><td/><td/><td/><td/><td/>'))
-      .find('a').addClass('btn btn-default btn-xs btn-block');
+      .find('a').addClass('btn btn-default btn-xs btn-block small');
 
     }
 
