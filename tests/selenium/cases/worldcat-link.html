@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://onesearch.northeastern.edu/primo_library/libweb/action/search.do?vid=NUprod" />
+<title>worldcat-link</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">worldcat-link</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[href=&quot;search.do&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=search_field</td>
+	<td>Nero Science</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=goButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a[onclick*=&quot;worldcat&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a[onclick*=&quot;worldcat&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=body#worldcat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=advancedSearchBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a[onclick*=&quot;worldcat&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=exlidInput_scope_2</td>
+	<td>label=Author/Creator</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input_freeText1</td>
+	<td>Smith</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=exlidInput_language_</td>
+	<td>label=French</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=goButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a[onclick*=&quot;worldcat&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=q</td>
+	<td>kw:Nero Science au:Smith ln:fre</td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
