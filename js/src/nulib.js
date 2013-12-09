@@ -39,7 +39,8 @@ $( document ).ready(function() {
         //find out if we should add the collapse
         var hasAdditionalFacetes = $(this).find('ol.EXLFacetsList > li').hasClass('EXLAdditionalFacet');
 
-        if( i > 0 && hasAdditionalFacetes ){
+        // if( i > 0 && hasAdditionalFacetes ){
+        if(hasAdditionalFacetes){
             //refactor this code to to wrap the li item instead>
             $(this).find('li.EXLFacetsDisplayMore').addClass('EXLAdditionalFacet');
             var $target = $(this).find('h4');
@@ -134,8 +135,10 @@ $( document ).ready(function() {
 
 
     var worldCatLinks = function(){
-      var worldCatBaseUrl = "http://northeastern.worldcat.org/search?q=" ;
-
+      var worldCatBaseUrl = 'http://northeastern.worldcat.org/search?q=' ;
+      if( worldcatLogo === undefined){
+        var worldcatLogo = '../customized/NUdev/images/worldcat-logo.png';
+      }
       function getWCIndex(exSearch){
         switch (exSearch){
         case 'any':
@@ -214,7 +217,7 @@ $( document ).ready(function() {
           searchString = searchString.replace(/\"/g, '&quot;');
           searchString = searchString.replace(/\'/g, "\\'");
 
-          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="../customized/NUdev/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="'+ worldcatLogo +'" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
           //add the worldcat link
           $('.EXLSearchFieldRibbonFormLinks').append($link);
         }
@@ -226,7 +229,7 @@ $( document ).ready(function() {
           //escape quotes
           searchTerm = searchTerm.replace(/\"/g, '&quot;');
           searchTerm = searchTerm.replace(/\'/g, "\\'");
-          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="../customized/NUdev/images/worldcat-logo.png" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="'+ worldcatLogo +'" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
 
           //add the worldcat links
           $('.EXLSearchFieldRibbonAdvancedSearchLink').before($link);

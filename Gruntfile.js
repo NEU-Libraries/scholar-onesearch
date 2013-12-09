@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   // Project configuration.
   //
 
-  var target =  grunt.option('target') || 'dis/exampleServer.json'
+  var target =  grunt.option('target') || 'conf/exampleServer.json';
 
   grunt.initConfig({
 
@@ -245,6 +245,21 @@ module.exports = function(grunt) {
       },
     },
     jade: {
+      target: {
+          options: {
+            pretty: true,
+            data:{
+              target: '<%= targetServer %>',
+            }
+          },
+          files:[ {
+            expand: true,
+            flatten: true,
+            src: "templates/*.jade",
+            ext: ".html",
+            dest: 'dist/static_htmls/'
+          } ],
+      },
       dev:{
         options: {
           pretty: true,
@@ -292,11 +307,9 @@ module.exports = function(grunt) {
       },
     },
     clean: {
-      files: ['dist'],
-    },
-
-
-  });
+      files: 'dist'
+    }
+});
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -319,7 +332,7 @@ module.exports = function(grunt) {
   // Default task.
 
   grunt.registerTask('default', [ 'clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat', 'uglify' , 'copy']);
-
+  grunt.registerTask('deploy',  ['default', 'jade:target', 'sftp:target']);
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
   grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev' ,'sftp:dev']);
