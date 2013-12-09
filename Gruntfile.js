@@ -331,7 +331,7 @@ module.exports = function(grunt) {
 
   // Default task.
 
-  grunt.registerTask('default', [ 'clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat', 'uglify' , 'copy']);
+  grunt.registerTask('default', [ 'clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "bless:prod", "cssmin", 'concat', 'uglify' , 'copy']);
   grunt.registerTask('deploy',  ['default', 'jade:target', 'sftp:target']);
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);

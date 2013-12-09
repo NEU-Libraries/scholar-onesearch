@@ -148,6 +148,9 @@
         .make-md-column(12);
         width: 100%;
         padding-left: 0;
+        &.EXLHide{
+          .sr-only();
+        }
       }
 
     }//
@@ -219,4 +222,10 @@
     position: static;
     float: none;
   }
+}
+
+
+
+.EXLAdvancedSearchFormDateRangeRow label.EXLHide{
+  .sr-only();
 }
