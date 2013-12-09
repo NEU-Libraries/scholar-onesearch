@@ -300,15 +300,7 @@ $( document ).ready(function() {
       $('#exlidHeaderSystemFeedback').append('<div class="alert alert-danger"><strong>You\'re Using an Outdated Web Browser</strong><br>In order to experience this website properly, please upgrade. Learn more at <a href="http://wiserbrowser.com">www.wiserbrowser.com</a></div>');
     };
 
-    var addEshelfClasses = function(){
-      if( $('link[href*="my_shelf"]') && !$('body').hasClass('sos-eshelf') ){
-        // Un comment this on  if you need to  remove the old my_shelf Css
-        // $('link[href*="my_shelf"]').detach();
 
-        $('body').addClass('sos-eshelf');
-        console.log('added sos-eshelf class to body');
-      }
-    };
     /**
      * Handle Accessibility Issues with SOS
      *
@@ -352,11 +344,32 @@ $( document ).ready(function() {
           }
         });
       }
+    };
+    /**
+     * See issue #100
+     * @link https://github.com/NEU-Libraries/scholar-onesearch/issues/100
+     *
+     * Shim function to fix issues only on the my account page.
+     */
+    var shimEXLMyAccountTableActions = function(){
+      var renewAllButton = $('#renewAllButton');
+
+      renewAllButton.closest('td').before($('<td/><td/><td/><td/><td/><td/>'))
+      .find('a').addClass('btn btn-default btn-xs btn-block');
+
     }
 
     //Build the page functions.
     var init = function(){
-      addEshelfClasses();
+      var href = window.location.href;
+      if(href.search('myAccountMenu.do') > 0 ){
+        shimEXLMyAccountTableActions();
+      }else if( href.search('basket.do')){
+        draggable();
+      }
+
+
+
       $('#search_field').attr('placeholder','Search...');
       draggable();
       eShelfIcons();
@@ -380,7 +393,9 @@ $( document ).ready(function() {
   scholarOneSearch.worldCatLinks();
 });
 
-
+/**
+ * Captures the old openPrimoLightBox function and just adds a no overflow class to the body element when the modal is open.
+ */
 
 (function() {
     var oldPrimoLightBox =  openPrimoLightBox;

@@ -43,10 +43,10 @@ script.
       var href = styleSheetList[i].href;
       if (href){
         href = href.toString();
-        if(href.search('my_shelf.css')){
+        if(href.search('my_shelf.css') > 0 ){
           document.body.className = (document.body.className + ' sos-eshelf');
-
-          }
+          return;
+        }
       }
 
       }
