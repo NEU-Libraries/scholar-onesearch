@@ -1,0 +1,205 @@
+.EXLLightbox,
+#exlidFindDBTile{
+  .modal-content;
+  div.EXLLightboxHeader,
+  div.EXLFindDBHeader{
+    .modal-header;
+    //reset the modal header text to hormal sizing;
+    span.EXLLightboxHeaderTitle{
+      .h4;
+      .modal-title;
+    }//end Headertext
+    a.EXLLightboxHeaderClose{
+      margin-top: 0.2em;
+      margin-right: 0.2em;
+    }
+  }
+  div.EXLLightboxFormContainer,
+  #searchDbForm,
+  #searchDbFormTabs{
+
+    .modal-body;
+    fieldset.EXLLightboxFormDisciplineSelection{
+
+      //make them six column wide
+      ul[class^=EXLLightboxFormDisciplineSelectionColumn]{
+        .make-lg-column(6);
+        margin: 0;
+        list-style: none;
+      }//end lists
+    }//end fieldset.EXLLightboxFormDisciplineSelection
+
+  }
+  .EXLLightboxFormButtons{
+    .modal-footer;
+    text-align: left;
+  }
+
+}
+
+.EXLLighboxSubmitButton, .EXLLighboxCancelButton{
+
+  display: inline-block;
+  span {
+    a, input{
+      .btn;
+      &.EXLSubmit{
+
+        .btn-primary;
+      }
+    }
+  }
+}
+
+#EXLCancelPersonalRankData{
+  background-image: none;
+  .btn;
+  .btn-default;
+}
+#exliGreyOverlay{
+  max-width: 100%;
+}
+
+#exliWhiteContent{
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+
+}
+
+#exlidFindDBRibbon{
+  div.EXLFindDBFieldRibbon{
+    .make-row();
+  }
+  div.EXLFindDBFieldRibbonFormFieldsGroup1,
+  div.EXLFindDBFieldRibbonFormFieldsGroup2{
+    .make-lg-column(6);
+  }
+}
+
+
+#exlidFindDBContainer{
+  .reset;
+  background-color: transparent;
+}
+#exlidFindDBTile{
+  .reset;
+  font-size: inherit;
+  min-height: 650px;
+
+}
+
+.EXLFindDBHeader h1{
+  .reset;
+  .h4;
+  color: inherit;
+}
+
+
+
+
+
+#exlidFacetsLightboxContainer{
+    &:extend(.modal-dialog);
+    display: block;
+}
+.EXLFacetsLightbox{
+  .clearfix();
+  &:extend(.modal-content);
+  .EXLSubmit{
+    .btn;
+    .btn-primary;
+  }
+  .EXLReset{
+    .btn;
+    .btn-default;
+  }
+}
+.EXLFacetsLightboxHeader{
+  &:extend(.modal-header);
+  h1{
+    .modal-title;
+    .h4;
+  }
+}
+
+
+
+#exlidFacetsLightboxListWrapper{
+  .clearfix();
+  position: relative;
+  padding: @modal-inner-padding;
+
+}
+
+.EXLFacetsLightboxTabsRibbon{
+  .clearfix();
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid @modal-header-border-color;
+  span{
+    width: 15%;
+    display: block;
+    float: left;
+    clear: right;
+    .text-overflow();
+    &:last-child{
+      text-align: left;
+      width: auto;
+    }
+  }
+
+}
+
+.EXLFacetsLightboxList{
+
+  label{
+    .sr-only;
+  }
+  fieldset{
+    .clearfix();
+    padding: 10px 0;
+    border-bottom: 1px solid @modal-header-border-color;
+  }
+  .EXLCheckboxGroup{
+    width: 15%;
+    float: left;
+    text-align: center;
+  }
+  .label{
+    text-align: left;
+  }
+}
+
+#exliWhiteContent{
+  &:extend(.modal);
+}
+
+// @TODO fix the dialog header buttons.
+.EXLFacetsLightboxHeaderButtons{
+  display: none;
+}
+
+.EXLFacetsLightboxFieldRibbonFormSubmitSelected,
+.EXLFacetsLightboxFieldRibbonFormResetSearch{
+  float: left;
+  clear: right;
+  margin: 0.5em 0.5em 0 0;
+}
+
+#exliWhiteContent{
+  > div{
+    &:extend(.modal-dialog);
+
+    .EXLLightbox{
+      &:extend(.modal-content);
+    }
+  }
+  #exliGreyOverlay{
+    display: none;
+  }
+}
+body.modal-open{
+  margin-right: auto;
+  margin-left: auto;
+}

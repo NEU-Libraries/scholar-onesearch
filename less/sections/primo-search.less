@@ -1,0 +1,105 @@
+/* primo-search */
+
+.EXLSearchWrapper{
+  clear: both;
+  .clearfix();
+  .container-fixed;
+}
+
+
+
+
+// Styling as a navbar component.
+#exlidSearchRibbon{
+
+  .navbar;
+  .navbar-default;
+
+  .EXLSearchFieldRibbon{
+    @media (min-width: @grid-float-breakpoint) {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+  }
+  input.submit{
+    .btn-info;
+    .btn;
+    &:hover,
+    &:focus{
+      color: @btn-info-color;
+    }
+  }
+  input[type="text"]{
+    .form-control;
+  }
+  input,
+  input[type="text"],
+  #showMoreOptions,
+  input.submit{
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    @media (min-width: @grid-float-breakpoint){
+      display: inline-block;
+      margin-bottom: 0;
+      &#search_field{
+        min-width: 300px;
+      }
+    }
+  }
+  fieldset{
+    padding: 10px (@navbar-padding-horizontal * 2 );
+    &:extend(.navbar-form);
+    &:extend(.navbar-left);
+    @media (min-width: @grid-float-breakpoint) {
+      padding: 0px @navbar-padding-horizontal;
+      .EXLSearchFieldRibbonFormFields,
+      .EXLSearchFieldRibbonFormSearchFor,
+      #scopesList,
+      .EXLSearchFieldRibbonFormSubmitSearch{
+        display: inline-block
+      }
+    }
+  }
+}
+
+
+
+.EXLSearchFieldRibbonFormSelectedCollection{
+  a{
+    .btn;
+    .btn-info;
+  }
+}
+
+.EXLSearchFieldRibbonAdvancedSearchLink,
+.EXLSearchFieldRibbonBrowseSearchLink,
+.EXLSearchFieldRibbonAtoZLink{
+  display: inline-block;
+
+  a, a.EXLSearchFieldRibbonAdvancedTwoLinks{
+    padding: @navbar-padding-vertical @navbar-padding-horizontal;
+    color: @navbar-default-link-color;
+    display: block;
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+}
+
+.EXLSearchFieldRibbonFormCollectionsList{
+  .dropdown-menu;
+  left: initial;
+  top: initial;
+}
+
+
+
+.EXLSearchFieldRibbonFormSelectedCollectionLabel a{
+  .dropdown-caret(@btn-primary-color);
+}
+
+
+
+

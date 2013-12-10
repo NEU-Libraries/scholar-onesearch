@@ -1,0 +1,402 @@
+/* primo-results.less */
+
+// Results container
+.EXLResultsContainer{
+  .make-row();
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+// ------ Results Tile --------
+
+.EXLResultsTile{
+  width: 100%;
+  .make-md-column(9);
+  .pull-right;
+  border-left: none;
+  margin-bottom: 20px;
+
+}
+
+//add to eShelf button
+td.EXLMyShelfStar{
+  .EXLResultsList &{
+   width: 4.5em;
+  }
+  i{
+    color: #FFFFFF;
+  }
+}
+
+//------- Results header-----
+.EXLResultsHeader,
+.EXLRefinementRibbonWithExclude{
+  .clearfix();
+  clear: both;
+  width: 100%;
+  font-size: inherit;
+  background-color: @panel-heading-bg;
+  border: 1px solid @panel-border;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.EXLResultsHeader{
+  border-bottom: none;
+  .border-top-radius(@panel-border-radius);
+  div.EXLResultsNumbers{
+    width: 100%;
+    .make-lg-column(8);
+    //Results header showing the number of results found.
+    h1{
+      color: @text-color;
+      font-size: 12px;
+      .make-lg-column(7);
+      padding-left: 0;
+      padding-right: 0;
+      position: static;
+      margin: 12px 0;
+      font-weight: normal;
+      em{
+        color: @text-color;
+      }
+    }
+    //styling the result dropdown as a button toggle for sorted by menu.
+    div.EXLResultsSortBy{
+      margin-top: 4px;
+      margin-bottom: 4px;
+      width: 100%;
+      .make-sm-column(5);
+      //position: static;
+      float: left;
+      span.EXLResultsSortByLabel{
+        margin-top: 4px;
+      }
+      span.EXLResultsSortBySelected a{
+        .btn;
+        .btn-sm;
+        .btn-primary;
+        background-image: none;
+        .dropdown-caret(@btn-primary-color);
+      }
+      ul{
+        .dropdown-menu;
+        top: auto;
+        left: auto;
+        display: block;
+        li > a{
+          display: block;
+          padding: 3px 20px;
+          clear: both;
+          font-weight: normal;
+          line-height: @line-height-base;
+          color: @dropdown-link-color;
+          white-space: nowrap; // prevent links from randomly breaking onto new lines
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: @dropdown-link-hover-color;
+            background-color: @dropdown-link-hover-bg;
+          }
+        }
+        .EXLSortByLinkSelected{
+          padding: 3px 20px;
+          &,
+          &:hover,
+          &:focus {
+            color: @dropdown-link-active-color;
+            text-decoration: none;
+            outline: 0;
+            background-color: @dropdown-link-active-bg;
+          }
+        }
+
+
+      }
+    }
+  }
+
+  //Pagination styles
+  div.EXLResultsNavigation{
+    width: 100%;
+    .make-lg-column(4);
+    padding-right: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    position: static;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 12px;
+    @media (max-width: 756px){
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    a, span{
+      float: left;
+      padding: 5px 10px;
+      background-color: #FFFFFF;
+      border: 1px solid #dddddd;
+      min-height: 30px;
+      &:hover,
+      &:focus{
+        background-color: #f5f5f5;
+      }
+      img{
+        display: none;
+      }
+      i{
+        font-size: 17px;
+        color: @gray;
+      }
+     &:first-child{
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+     }
+     &:last-child{
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+     }
+    }
+  }
+}
+
+//Facet refinement
+.EXLRefinementRibbonWithExclude{
+  border-bottom: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.EXLRemoveRefinement{
+  padding: 5px 8px;
+  color: inherit;
+  background-color: #FFF;
+  border-radius: @border-radius-small;
+  text-transform: capitalize;
+  border: 1px solid @panel-border;
+}
+
+.EXLFirstRefinementElement{
+  padding: 4px;
+  text-transform: none;
+  color: @list-group-link-color;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: darken(@list-group-link-color, 10%);
+  }
+  strong{
+    font-weight: 500;
+    &:after{
+      .icon(@remove-circle);
+      margin-left: 5px;
+    }
+  }
+
+}
+
+.EXLExcludedElement{
+  text-decoration: line-through;
+  &:hover,
+  &:focus{
+    text-decoration: line-through;
+  }
+  &:after{
+    text-decoration: none;
+  }
+}
+
+#removeFacet{
+  display:none;
+}
+
+
+//------- Results footer ----
+.EXLResultsFooter{
+  border-bottom: 1px solid @panel-border;
+  border-top: none;
+  .border-top-radius(0);
+  .border-bottom-radius(@panel-border-radius);
+}
+
+
+
+//------- Results Tile ------
+
+.searchword{
+  background-color: inherit;
+  border-bottom: 1px @gray-light dotted;
+}
+.EXLResultAvailability em{
+  font-style: normal;
+}
+.EXLResultFourthLine,
+.EXLResultAuthor{
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.3;
+}
+.EXLResultFourthLine{
+  font-size: 12px;
+}
+
+.EXLResultTitle{
+  color: @brand-info;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+th.EXLResultNumber{
+  .text-hide()!important;
+}
+/***DEBUG line 247 primo-results.less***/
+.EXLResultsList {
+  border: 1px solid @table-border-color;
+  div.EXLSummaryContainer div.EXLSummaryFields {
+    float: none;
+    width: auto;
+  }
+  tr{
+    border-bottom: 1px solid @table-border-color;
+    .make-row();
+    &:last-of-type{
+      border-bottom: none;
+    }
+  }
+  td{
+    border: none !important;
+  }
+  td.EXLThumbnail{
+    .make-xs-column(4);
+    .make-md-column(2);
+    .make-lg-column(2);
+    padding-top: 0.6em;
+  }
+  td.EXLMyShelfStar{
+
+    .make-xs-column(4);
+    .make-md-column(2);
+    .make-lg-column(1);
+  }
+  td.EXLSummary{
+    width: 100%;
+    .make-xs-column(12);
+    .make-md-column(12);
+    .make-lg-column(9);
+  }
+
+
+  em.EXLResultStatusAvailable,
+  em.EXLResultStatusNotAvailable{
+    color: @text-color;
+    padding-left: 0;
+  }
+  em.EXLResultStatusAvailable{
+    background-image: none;
+    &:before{
+      color: @brand-success;
+      .icon(@ok-circle);
+      vertical-align: -5%;
+      font-size: 1.5em;
+      margin-right: 5px;
+    }
+  }
+  em.EXLResultStatusNotAvailable{
+    background-image: none;
+    &:before{
+      color: @brand-danger;
+      .icon(@remove-circle);
+      vertical-align: -5%;
+      font-size: 1.5em;
+      margin-right: 5px;
+    }
+  }
+  .multipleCoverImageContainer,
+  td.EXLThumbnail img{
+    height: 56px * 1.4;
+    width: 38px * 1.4;
+    background-size: cover;
+    border: 1px solid @silver;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+}
+.EXLThumbnailCaption{
+  .small;
+  .text-muted;
+  text-align: center;
+  margin: 2px 15px;
+  display: block;
+}
+
+//adding negative margin so that the borders overlap.
+.coverImageDiv{
+  margin: -1px;
+}
+
+.EXLResultNumber{
+  .small;
+  .text-muted;
+  float: left;
+  margin-top: 0.6em;
+  margin-left: 0.6em;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+
+
+//Results tabs ribbon
+.EXLTabsRibbon{
+  border-bottom: none;
+  height: auto;
+  div,
+  div.tooltip{
+      width: auto;
+      float: none;
+      clear: none;
+      margin: auto;
+  }
+  div.tooltip-arrow{
+    .tooltip-arrow;
+  }
+  div li.EXLResultSelectedTab{
+    background: none;
+    border: none;
+    a{
+      /// @TODO  Add this active state styling dynamically.
+      color: #333333;
+      background-color: #ebebeb;
+      border-color: #adadad;
+      .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    }
+  }
+}
+
+.EXLTabsRibbon a{
+  .btn;
+  .btn-default;
+  .btn-sm;
+  margin-bottom: 3px;
+}
+
+.EXLTabsRibbon div li.EXLResultTab,
+.EXLTabsRibbon div li.EXLResultSelectedTab{
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  height: auto;
+}
+
+
+a.EXLBriefResultsDisplayMultipleLink{
+  .btn;
+  .btn-default;
+  .btn-sm;
+  margin-bottom: 0.5em;
+}
+
+
+

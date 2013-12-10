@@ -1,0 +1,156 @@
+form[action="/primo_library/libweb/action/search.do?fn=BrowseSearch"]#searchForm{
+  padding-left: 0;
+  padding-right: 0;
+  // container for the text field and the dopdown
+ .EXLAdvancedBrowseRibbon{
+    margin-top: 0;
+    a input{
+      display: none !important;
+    }
+  }
+  #exlidAdvancedSearchTile{
+    .navbar;
+    padding: 0 0 0 0;
+    border-top: none;
+    border-bottom: none;
+    .EXLAdvancedBrowseRibbon{
+      .container;
+    }
+  }
+
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon  > fieldset{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks{
+    position: static;
+    float: none;
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+    a{
+      padding: 15px;
+    }
+  }
+  .EXLSearchFieldRibbonFormBrowseList{
+    .dropdown-menu;
+    top: 45px;
+  }
+}
+
+//Unique component, this is the dropdown for browse selection.
+.EXLSearchFieldRibbonFormSelectedBrowse{
+  .EXLSearchFieldRibbonFormSelectedCollectionLabel.EXLSearchFieldRibbonFormSelectedLabelBrowse{
+    a{
+      .btn;
+      .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+    }
+  }
+}
+
+
+//Making the grid align properly.
+.EXLBrowseList .EXLSearchWrapper{
+  padding-right: 0;
+  padding-left: 0;
+  #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch{
+    position: static;
+    margin-bottom: 0;
+    float: none;
+    margin-right: 0;
+    input{
+      .btn;
+      .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+    }
+  }
+}
+
+//Mapping over the dropdown menu styles
+#exlidAdvancedSearchRibbon,
+.EXLSearchFieldRibbonFormCollectionsList,
+#exlidSearchRibbon{
+  div.EXLDynamicSelectBodyRadio a label,
+  div.EXLDynamicSelectBodyRadio div label{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.528571429;
+    color: #333333!important;
+    white-space: nowrap;
+    margin-bottom: 0;
+    &:hover,
+    &:focus{
+      text-decoration: none;
+      color: @dropdown-link-hover-color !important;
+      background-color: @dropdown-link-hover-bg;
+    }
+  }
+  div.EXLDynamicSelectBodyRadio a input[checked="checked"] + label,
+  div.EXLDynamicSelectBodyRadio div input[checked="checked"] + label{
+    color: @dropdown-link-active-color !important;
+    text-decoration: none;
+    outline: 0;
+    background-color: @dropdown-link-active-bg;
+  }
+}
+
+.EXLAdvancedBrowseRibbon{
+  input#search_field,
+  .EXLBrowseFieldRibbon,
+  .EXLSearchFieldRibbonFormFields,
+  div.EXLSearchFieldRibbonFormSubmitSearch,
+  .EXLSearchFieldRibbonFormSelectedBrowse,
+  .EXLSearchFieldRibbonFormSearchFor,
+  .EXLSearchFieldRibbonFormSelectedLabelBrowse a,
+  .EXLSearchFieldRibbonFormLinks a {
+    display: block !important;
+    @media (min-width: @grid-float-breakpoint) {
+      display: inline-block !important;
+    }
+  }
+}
+
+
+.EXLBrowseFieldRibbon,
+.EXLAdvancedBrowseRibbon .EXLSearchFieldRibbonFormSelectedBrowse{
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+
+@media (min-width: @grid-float-breakpoint) {
+  .EXLAdvancedBrowseRibbon .EXLSearchFieldRibbonFormSelectedBrowse{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+// Fixes Edge case where the Advanced search styles are overriding the browse search styles all together.
+//
+
+.MyAccount{
+  .EXLAdvancedBrowseRibbon{
+    div.EXLSearchFieldRibbonFormSubmitSearch{
+      position: static !important;
+      float: none !important;
+      input.submit{
+        .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base)!important;
+      }
+    }
+  }
+}
+
+.EXLSearchFieldRibbonFormSelectedLabelBrowse a{
+  .dropdown-caret(@btn-primary-color);
+}
+
+
+//remove underline on hover
+.EXLDynamicSelectBodyRadio a{
+  &:hover,
+  &:focus{
+    text-decoration: none;
+  }
+}

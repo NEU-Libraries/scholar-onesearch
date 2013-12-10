@@ -1,0 +1,25 @@
+// --- Full view ------
+
+.EXLFullView{
+  .EXLResultsTile{
+    .make-sm-column(12);
+    .make-md-column(12);
+    .make-lg-column(12);
+  }
+  .EXLResultsList{
+    border: none;
+  }
+  //remove the pagination on fullrecord view;
+  .EXLResultsNavigation{
+    display: none;
+  }
+  .EXLResultTabContainer{
+    margin-bottom: 0;
+  }
+}
+
+a#backToResultsBtn{
+  display: block;
+  float: left;
+  padding: @nav-link-padding;
+}

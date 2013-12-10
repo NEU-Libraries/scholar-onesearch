@@ -1,0 +1,303 @@
+.EXLMyAccountContainer{
+  .make-row();
+  padding-top: 20px;
+}
+
+// My Account tab ribbon styles.
+
+.EXLMyAccountTabsRibbon{
+
+  div{
+    position: static;
+    .EXLMyAccountTabs{
+      margin: 0.5em auto 0 auto;
+      li{
+        font-size: inherit;
+        line-height: inherit;
+      }
+      li.EXLMyAccountTab{
+
+        height: auto;
+        width: auto;
+        margin: auto;
+        margin-bottom: -1px;
+        padding: 0;
+        border: none;
+        text-align: inherit;
+        vertical-align: inherit;
+        a{
+          color: @link-color;
+          font-size: inherit;
+          &:hover,
+          &:focus{
+            color: @link-hover-color;
+          }
+        }
+
+      }
+      li.EXLMyAccountSelectedTab{
+        background: none;
+        border-bottom: none;
+        > a,
+        > a:hover,
+        > a:focus {
+          color: @gray;
+          background-color: @body-bg;
+          border: 1px solid #ddd;
+          border-bottom-color: transparent;
+          cursor: default;
+        }
+      }
+      .nav;
+      .nav-tabs;
+    }
+  }
+}
+
+
+//menu tile floated to the left
+.EXLMyAccountMainMenuTile{
+  .make-lg-column(3);
+  margin-top: 2em;
+}
+
+
+//
+.EXLMyAccountMainContainer{
+  .make-lg-column(9);
+  margin-left: auto;
+  border: none;
+
+  table{
+    font-size: inherit;
+  }
+  div.EXLMyAccountMainHeader{
+    height: auto;
+    background-color: transparent;
+    border-bottom: none;
+    font-size: inherit;
+    div.EXLMyAccountMainHeaderTitle{
+      .reset;
+      border-bottom: 1px @gray-lighter solid;
+      margin-bottom: 1em;
+      display: inline-block;
+      width: 100%;
+      h1,
+      span.EXLMyAccountMainHeaderContentSelected{
+        border: none;
+        margin: 0.5em 0em 1em 0em;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1;
+        color: @gray;
+      }
+    }
+  }//end div.EXLMyAccountMainHeader
+  //Form
+  form{
+    input{
+
+    }
+    span.submit{
+      .reset;
+      width: 100%;
+    }
+    input.submit{
+      .reset;
+      background-image: none;
+      .btn;
+      .btn-lg;
+      .btn-block;
+      .btn-success;
+      &#EXLMyAccountSaveSettings{
+        .btn-sm;
+      }
+    }
+  }//end form
+}
+//My account form container
+.EXLMyAccountFormContainer {
+  .make-lg-column(12);
+  font-size: inherit;
+  padding-top: inherit;
+  div.EXLMyPersonalSettings{
+    .make-lg-column(7);
+  }
+  div.EXLMyAccountTips,
+  div.EXLMyAccountRanking{
+    margin: 0;
+    .make-lg-column(5);
+    background-image: none;
+    overflow: hidden;
+    li{
+      span.EXLMyAccountTipsBullet{
+        background-image: none;
+        margin-top: 0;
+        &:before{
+          .icon("\f05a");
+        }
+      }
+    }
+  }
+  fieldset, label{
+    color: @text-color;
+
+  }
+  div.EXLMyAccountTips form,
+  div.EXLMyAccountRanking{
+    legend,
+    strong{
+      &:extend(legend);
+      font-weight: normal;
+    }
+  }
+  .EXLMyAccountForm{
+    display: inline-block;
+    th
+    ,td{
+      .make-lg-column(6);
+    }
+  }
+}
+
+.EXLMyAccountMainContainer table.EXLMyAccountForm th{
+  margin-right: 0;
+}
+
+.EXLMyAccountFormContainer div.EXLMyAccountTips form select{
+  &:extend(.form-control);
+  &:extend(select);
+}
+
+
+.EXLRequestSystemFeedback,
+.EXLMyAccountMainContainer div.EXLMyPersonalSettings div.EXLRequestSystemFeedback
+{
+  .alert;
+  span{
+    .reset;
+    color: inherit;
+    background-image: none;
+  }
+}
+
+.EXLMyAccountRanking table.EXLMyAccountForm{
+  th{
+    font-weight: bold;
+    color: @text-color;
+  }
+}
+
+
+.EXLMyAccountMainMenuContainer {
+  ol{
+    .list-group;
+    border-radius: @list-group-border-radius;
+    a{
+      color: @list-group-link-color;
+    }
+    li{
+      font-size: inherit;
+      .list-group-item;
+      &:first-of-type{
+        .border-top-radius(@list-group-border-radius);
+      }
+      &:last-of-type{
+        .border-bottom-radius(@list-group-border-radius);
+      }
+      span.EXLMyAccountMainMenuBulletSelected{
+        float: left;
+        background-image: none;
+        &:before{
+          .icon("\f00c");
+          margin-right: 5px;
+        }
+        & + span a {
+          color: @silver;
+          &:hover, &:focus{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+#exlidMyDatabasesTab{
+  display: none;
+}
+
+.EXLMyAccountMainMenuCounter{
+  float: right;
+  .small;
+  .text-muted;
+}
+.MyAccount{
+  #exlidSearchTile,
+  #exlidAdvancedSearchTile{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.EXLMyAccountContainer{
+  select,
+  input[type="text"]{
+    .form-control;
+  }
+}
+.EXLMyAccountForm,
+.EXLMyAccountForm tbody{
+  display: block;
+  tr{
+    .form-group;
+    display: block;
+    .clearfix();
+  }
+}
+
+
+.EXLMyAccountMainHeaderButtons a{
+  .btn;
+  .btn-default;
+  float: right;
+}
+
+.EXLSessionQueriesWrapper,
+.EXLMyAccountMainContainer{
+  &:extend(.table-responsive);
+}
+
+.EXLMyAccountTable{
+  &:extend(.table);
+  .table;
+}
+
+
+img[alt="RSS Icon"]{
+  display: none;
+}
+
+a[title="RSS feed for this query"]{
+  &:before{
+    .icon(@rss);
+  }
+}
+
+
+
+
+a[title="delete this query"]{
+  &:before{
+    .icon(@remove);
+  }
+}
+
+
+a[title="edit the properties of this query (opens in a new window)"]{
+  &:before{
+    .icon(@refresh);
+  }
+}
+
+
+

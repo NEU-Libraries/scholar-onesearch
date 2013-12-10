@@ -1,0 +1,20 @@
+// ## Libraries
+//make sure that aren't missing variables;
+@import "../lib/bootstrap/less/variables";
+//import customized variables.
+@import "library/primo-variables";
+
+@import "../lib/bootstrap/less/mixins";
+@import "library/primo-mixins";
+
+
+// ## Legacy
+//
+// legacy code first to allow overrides later in the code.
+//
+// As the project is completed these files should only be used as references unaltered files are available under `legacy/reference-master/`
+// as the vendor updates the CSS there should be a patch mad to the following LESS files and remcompile this global stylesheet.
+//
+// Note that these stylesheets have been **EDITED** but they should be
+//@import "legacy/primo-dist-calendar";
+@import "legacy/primo-dist-default-3-0";

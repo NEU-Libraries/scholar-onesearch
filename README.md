@@ -1,11 +1,60 @@
-<h2>Scholar OneSearch</h2>
-<h3>Primo Frontend for Northeastern University Libraries</h3>
+Scholar OneSearch
+==================
+#### Primo Frontend for Northeastern University Libraries
 
-- - -
-This is the repository for the CSS and Javascript to override the default styles of Exlibiris's Primo appplication. The CSS is authored using the awesome Bootstrap project, I am hoping to incorporate the font-awesome project as well, although challenging. 
 
-Credits to:
-* [bootstrap v3.0.0](https://github.com/twitter/bootstrap)
-* [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+This is the repository for the CSS and JavaScript to override the default styles of Exlibiris's Primo application. The CSS is authored using the awesome Bootstrap project, I am hoping to incorporate the font-awesome project.
 
-To compile LESS check out the documentation at [LESS Project Page](http://lesscss.org/), but I used [recess](https://github.com/twitter/recess).
+Credit to:
+- [Bootstrap](http://getbootstrap.com/)
+- [LESS - CSS Preprocessor](http://lesscss.org/)
+- [Font-Awesome Icon Font](http://fontawesome.io/)
+- [jQuery](http://jquery.com/)
+- [Modernizr](http://modernizr.com/)
+- [scottjehl/Respond](https://github.com/scottjehl/Respond)
+
+
+
+## How to use:
+
+Dependencies: [Git](Git),  [Node.js](http://nodejs.org/) and [Grunt-cli](http://gruntjs.com/getting-started).
+
+### Install Dependencies
+If you use [Homebrew](https://github.com/mxcl/homebrew) on a Mac:
+
+```
+$ brew install git
+$ brew install node
+// then
+$ npm install -g grunt-cli
+$ npm install -g bower
+```
+
+### Install components
+
+* Use git to clone this repository
+* Install node modules
+* Install bower components
+
+```
+$ git clone  https://github.com/NEU-Libraries/scholar-onesearch.git
+$ cd scholar-onesearch
+$ npm install
+$ bower install
+```
+
+### Grunt Tasks
+Configure your deploy tasks first review the `conf/exampleServer.json` and modify the Grunt tasks accordingly.
+
+```
+
+$ grunt less:development //compiles the less using a defined task
+
+```
+
+
+
+
+## How to Contribute
+
+Please see the [Contribute.md](./CONTRIBUTING.md) document on how to contribute.

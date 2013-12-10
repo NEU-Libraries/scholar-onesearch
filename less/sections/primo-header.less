@@ -1,0 +1,239 @@
+// Primo Header Styles
+// ----------------------
+
+
+
+.nu-lib-logo{
+  background: data-uri(@brand-parent-logo-svg) no-repeat top left;
+  background-size: contain;
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: 58px;
+  margin-bottom: 0.85em;
+  .no-svg &{
+    background-image: url(@brand-parent-logo-png);
+
+  }
+}
+
+
+.scholar-one-search{
+  background: data-uri(@brand-logo-svg) no-repeat top left;
+  background-size: contain;
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: 35px;
+  margin-bottom: 0.75em;
+  .no-svg &{
+    background-image: url(@brand-logo-png);
+  }
+}
+
+.float-left-small-screen{
+  @media (max-width: 756px){
+    float: left;
+    clear: left;
+  }
+}
+
+
+
+.EXLHeader{
+  padding-top: 1em;
+}
+
+
+.btn-group > .dropdown-toggle:not(:first-child) {
+  .border-left-radius(@border-radius-small);
+}
+
+
+#exlidUserAreaTile{
+  .make-md-column(5);
+  .make-md-column-offset(3);
+}
+
+//User ribbon
+#exlidUserAreaRibbon{
+  .nav;
+  .nav-pills;
+  .pull-right;
+  height: auto;
+  margin: 0.25em 0;
+  position: relative;
+  .EXLUserName{
+    margin: 0 0.25em 0.25em 0;
+    border-radius: 5px;
+    display: none;
+  }
+  a{
+    color: @primo-header-nav-link-color;
+    &:hover,
+    &:focus{
+      color: @primo-header-nav-link-hover-color;
+    }
+  }
+  li{
+    font-size: inherit;
+    padding: 0px;
+    height: auto;
+
+    // e-Shelf Iconography
+    span.EXLMyShelfStarSelected{
+
+      background-image: none;
+      margin: 0 0.25em 0 0;
+      padding: 0;
+      width: auto;
+      height: auto;
+      float: none;
+      &:before{
+      color: @brand-success;
+      .icon("\f02e");
+      vertical-align: -10%;
+      font-size: 4/3em;
+      }
+    }
+    //user account iconography
+    span.EXLUserNameDisplay{
+      &:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+        .icon("\f007");
+        color: @brand-info;
+
+        vertical-align: -10%;
+        font-size: 4/3em;
+      }
+    }
+    // my account link iconography
+    &.EXLMyAccount > a:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+
+        color: @asbestos;
+
+        .icon("\f085");
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+    }
+    // my account sign in for
+    &.EXLSignOut > a:before{
+        margin: 0 0.25em 0 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        float: none;
+
+        color: @brand-primary;
+        //.icon-off:before                  { content: "\f011"; }
+        .icon("\f011");
+        //make large!
+        vertical-align: -10%;
+        font-size: 4/3em;
+    }
+
+
+  }
+  li > .EXLUserNameDisplay{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+  }
+  .float-left-small-screen;
+}
+//Main menu tile
+.EXLMainMenu{
+  .make-xs-column(12);
+  .make-md-column(7);
+  .make-md-column-offset(1);
+  margin-bottom: 1em;
+}
+
+.EXLMainMenuContainer{
+  float: none;
+  width: auto;
+  ul{
+    .nav;
+    .nav-pills;
+    float: right;
+    a{
+      color: @primo-header-nav-link-color;
+      position: relative;
+      display: block;
+      padding: @nav-link-padding;
+      border-radius: @nav-pills-border-radius;
+      &:hover,
+      &:focus {
+        color: @primo-header-nav-link-hover-color;
+        text-decoration: none;
+        background-color: @nav-link-hover-bg;
+      }
+    }
+  }
+}
+
+
+
+// #exlidMainMenuRibbon{
+//   .nav;
+//   .nav-pills;
+//   .pull-right;
+//   padding: 0;
+//   height: auto;
+//   margin: 0.25em 0;
+//   li{
+//     font-size: inherit;
+//     margin: 0;
+//     &.EXLMainMenuItemSelected span a{
+//       color: #fff;
+//       background-color: @component-active-bg;
+//       background-image: none;
+//       border: none;
+//     }
+//     span{
+//       border: none;
+//       a{
+//         font-size: inherit;
+//         padding: 10px 15px !important;
+//         &:hover,
+//         &:focus{
+//           color: #fff;
+//           background-color: @component-active-bg;
+//           background-image: none;
+//         }
+//       }
+
+//     }
+//   }
+//   .float-left-small-screen;
+// }
+
+
+
+// Hide the new search link, the report a problem link and the help link.
+
+// #exlidMainMenuRibbon{
+//   #exlidMainMenuItem1,//new search
+//   #exlidMainMenuItem4,//Report a problem
+//   #exlidMainMenuItem5//Help
+//   {
+//     display: none;
+//   }
+// }
+
+
+
+#exlidHeaderTile{
+  width: auto;
+  .make-md-column(4);
+}

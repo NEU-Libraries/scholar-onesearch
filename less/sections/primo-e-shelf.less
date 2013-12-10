@@ -1,0 +1,364 @@
+.folder_details .itemsList{
+  height: 178px;
+}
+
+
+//modernizr scope
+body.MyAccount.sos-eshelf #exlidMyAccountContainer > table,
+body.MyAccount .eShelf_title + noscript + table{
+  font-size: inherit !important;
+  vertical-align: middle !important;
+  font-family: @font-family-base !important;
+
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  tbody{
+    .container-fixed();
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  tr{
+    display: block;
+  }
+  td{
+    vertical-align: top;
+  }
+
+}
+
+
+.folder_details .itemsList_left{
+  border-left: none;
+}
+.folder_details h5{
+  display: none !important;
+}
+.folder_details a.eShelf_cut_but{
+  .make-font-awesome-eshelf("\f0c4");
+}
+.folder_details a.eShelf_copy_but {
+  .make-font-awesome-eshelf("\f0c5");
+}
+.folder_details a.eShelf_paste_but {
+  .make-font-awesome-eshelf("\f0ea");
+}
+.folder_details a.eShelf_delete_but {
+  .make-font-awesome-eshelf("\f00d");
+}
+a.eShelf_email{
+  .make-font-awesome-eshelf("\f003");
+}
+a.eShelf_print{
+  .make-font-awesome-eshelf("\f02f");
+}
+.folder_details .newManage_buts li{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.folder_details .selectWidth.EXLEShelfFolderContentsPushTo select{
+  font-size: 14px !important;
+  border: 1px solid @input-border;
+  .make-lg-column(8);
+  position: static;
+
+}
+.EXLEShelfFolderContentsTable{
+  & > tbody {
+    border: @table-border-color 1px solid;
+  }
+  td.ulTd,
+  td.selectWidth.EXLEShelfFolderContentsPushTo{
+    .make-lg-column(6);
+    position: static;
+    padding-left: 0;
+
+  }
+  tbody > tr{
+
+    td.buttonsUl{
+      .make-lg-column(12);
+      position: static;
+      .EXLEShelfFolderContentsSendButtonList,
+      .newManage_buts{
+        display: block;
+        float: left;
+      }
+      .folder_details table.auto{
+        width: 100% !important;
+
+
+      }
+    }
+  }
+}
+.folder_details label{
+  .hide-text();
+}
+.folder_details table.auto {
+  width: 100%!important;
+}
+.buttonGo{
+  .make-lg-column(2);
+  border: none;
+  a{
+    .btn;
+    .btn-sm;
+    .btn-primary;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+}
+.noteBubble h3{
+  height: 47px;
+}
+
+.tableBorder{
+  .border-not-top( 1px solid @table-border-color);
+}
+
+
+.selectWidth.EXLEShelfFolderContentsPushTo{
+  padding-top: 8px;
+}
+
+
+.draggable{
+  text-align: center;
+  color: @link-color;
+  .border-top-radius(35px);
+  cursor: pointer;
+  background-color: @primo-defualt-gray;
+  border: solid 1px @primo-defualt-gray;
+  padding: 7px @padding-small-horizontal;
+  width: 120px;
+  margin: 10px auto -5px;
+}
+
+
+
+.EXLEshelfDocumentDetailsIFrame{
+ border-radius: @border-radius-base;
+ border: 1px @table-border-color solid;
+ .container-fixed();
+ width: ~"calc(100% - 30px)" !important;
+ float: none;
+ height: 450px;
+}
+.folders_new li.selected{
+  background: none;
+  &:before{
+    .icon(@folder-open)
+  }
+}
+
+
+.folders_new li{
+  padding-left: 0;
+}
+
+table.itemsListTable{
+  .table;
+  .table-condensed;
+  margin-bottom: 0;
+
+}
+
+.itemsListTable tr:hover{
+
+  background-color: @table-bg-hover;
+}
+
+
+.folder_details tr.selected td,
+.folders_new li.selected > *,
+.folders_new li a.selectedFolder{
+  background-color: @table-bg-accent;
+  color: @link-hover-color;
+}
+
+
+
+.folder_details tr.selected td,
+.folders_new li.selected{
+  color: @link-color;
+  > a{
+    background-color: @table-bg-accent;
+    color: @link-hover-color;
+  }
+  .selectedFolder{
+    border: 1px solid @link-hover-color;
+    padding: @padding-small-vertical @padding-small-horizontal;
+    border-radius: @border-radius-small;
+  }
+  > ul{
+    background-color: @body-bg;
+  }
+}
+
+.folder_details .itemsListTH,
+.folder_details .itemsListTable{
+  width: 100% !important;
+}
+
+.foldersOverflow{
+  padding: 0!important;
+}
+table.itemsListTH,
+table.itemsListTable{
+  thead > tr > th,
+  tbody > tr > th,
+  thead > tr > td,
+  tbody > tr > td {
+    padding: 8px !important;
+    line-height: @line-height-base;
+    &:last-of-type{
+      display: none;
+    }
+  }
+  .itemsList_left
+  .added, .type{
+    display: none;
+    @media (min-width: @screen-tablet){
+      display: table-cell;
+    }
+  }
+  .note{
+    display: none;
+    @media (min-width: @screen-desktop){
+      display: table-cell;
+    }
+  }
+}
+a.eShelf_email span:hover,
+a.eShelf_print span:hover{
+  text-decoration: none;
+}
+.folder_details{
+  display: block;
+  .make-xs-column(12);
+  .make-sm-column(12);
+  .make-md-column(9);
+  .make-lg-column(9);
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 300px;
+  @media (min-width: @screen-md){
+    padding-left: 15px;
+  }
+}
+
+
+
+.folders_new{
+  display: block;
+  border: none;
+  .make-xs-column(12);
+  .make-sm-column(12);
+  .make-md-column(3);
+  .make-lg-column(3);
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 300px;
+  border: @table-border-color 1px solid;
+  ol{
+    margin: 0!important;
+  }
+  li a{
+    color: @link-color;
+    &:hover,
+    &:focus{
+      color: @link-hover-color;
+    }
+  }
+  & > ul{
+  & > ol,
+  & > li{
+      .clearfix();
+      padding-right: 0;
+      padding-left: 0;
+    }
+    & > ol{
+      padding: 5px;
+
+      background-color: #f6f6f6;
+      border-bottom: 1px solid @table-border-color;
+    }
+  }
+  .folderActions{
+
+    ul {
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      padding-left: 0;
+      border-bottom: none;
+      li{
+        margin-right: 0;
+      }
+      li a{
+        .e-shelf-button-bar() !important;
+        &.newFolder_but:before{
+          .icon(@plus);
+          margin-right: 3px;
+        }
+        &.renameFolder_but:before,
+        &.renameFolder_butDisabled:before{
+          .icon(@terminal);
+          margin-right: 3px;
+        }
+        &.moveFolder_but:before{
+          .icon(@copy);
+          margin-right: 3px;
+        }
+        &.copyFolder_but:before{
+          .icon(@paste);
+          margin-right: 3px;
+        }
+        &.deleteFolder_but:before,
+        &.deleteFolder_butDisabled:before{
+          .icon(@remove);
+          margin-right: 3px;
+        }
+        &[class*="Disabled"]{
+          .disabled !important;
+        }
+      }
+    }
+  }
+}
+
+
+.folders_new input,
+.folders_new li ul .noNextBranch input{
+  border: 1px solid @input-border;
+}
+
+
+.folders_new input.newFolders_submit,
+.folders_new input.newFolders_submit_o{
+  .reset;
+  background-image: none;
+  .btn;
+  .btn-sm;
+  .btn-primary;
+}
+
+
+table.folderName.EXLEShelfFolderContentsTable{
+  height: auto;
+  border-top: 1px solid @table-border-color !important;
+  border-collapse: separate;
+}
+
+
+
+//fixing the note bubble alignment issues.
+.noteBubble {
+  margin-top: -280px;
+  z-index: 1001;
+}
+

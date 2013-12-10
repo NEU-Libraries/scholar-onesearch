@@ -1,0 +1,30 @@
+//Provides the system feedback with styles from the front-end framework;
+
+#exlidHeaderSystemFeedback{
+  border-bottom: none;
+  border-top: none;
+  background-color: @body-bg;
+  text-align: inherit;
+  display: block;
+  margin-top: 0;
+  & strong{
+    padding: 0 0 0 0;
+    font-size: 100%;
+    background: none;
+    color: inherit;
+  }
+}
+#exlidHeaderSystemFeedback > #exlidHeaderSystemFeedback,
+.EXLSystemFeedback > .EXLSystemFeedback,
+.EXLBrowseList #exlidHeaderSystemFeedback{
+  .alert;
+  .alert-warning;
+  a{
+    .alert-link;
+  }
+}
+
+
+.EXLHeader > .EXLSystemFeedback {
+  .container-fixed();
+}
