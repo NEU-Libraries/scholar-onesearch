@@ -46,7 +46,7 @@ Copy and paste this into the issue body. Note you can add the screenshot by drag
 
 * [Hot to take a screenshot](http://www.take-a-screenshot.org/)
 * [Find my browser information through javascript](http://www.quirksmode.org/js/detect.html)
-* 
+*
 
 - - -
 ## Feature Request
@@ -56,18 +56,6 @@ Please use the issue queue to purpose new features for this project, but please 
 
 ## Pull Request
 
+NU Libraries wants to share what we have in a modular fashion, at least 80% there. So  any pull requests to this project should make it less Northeastern specific and applicable to any other institution who uses ExLibrisis Primo discorvery tool. If you want to help contribute code, open an issue as question and let's talk about what you want to contribute and how we can work together.
 
-### LESS Structure
 
-```
-less/
-  |-base/
-  |-components/
-  |-legacy/
-  |-library/
-  |-sections/
-  |-utilities/
-  |-vendor/
-  - legacy.less
-  - style.less
-```
