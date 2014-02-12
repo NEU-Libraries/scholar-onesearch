@@ -7,3 +7,4 @@ report
 lib
 dist
 .grunt
+.DS_Store
