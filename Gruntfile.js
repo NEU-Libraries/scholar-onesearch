@@ -13,6 +13,8 @@ module.exports = function(grunt) {
     stagingServer: grunt.file.readJSON('conf/stagingServer.json'),
     devServer: grunt.file.readJSON('conf/devServer.json'),
     targetServer : grunt.file.readJSON(target),
+
+    // Uglifyjs minify / mangle the js for the Frontend.
     uglify: {
         js: {
           files: {
@@ -22,6 +24,7 @@ module.exports = function(grunt) {
         },
     },
 
+    // Watch for file changes then execute tasks
     watch: {
         less: {
           files: 'less/**/*.less',
@@ -67,6 +70,8 @@ module.exports = function(grunt) {
         },
       }
     },
+
+    // Deploys project assets to targets.
     sftp: {
       prod: {
         files: {
@@ -316,15 +321,17 @@ module.exports = function(grunt) {
       devServer: {
         options: {
           base: './dist',
-          port: '8888',
+          port: '80',
+          hostname: '*'
         }
       },
       // This target will run until you quit the task
       keepAlive:{
         options: {
           base: './dist',
-          port: '9999',
-          keepalive: true
+          port: '80',
+          keepalive: true,
+          hostname: '*'
         }
       }
     }
