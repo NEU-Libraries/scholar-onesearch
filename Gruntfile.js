@@ -321,6 +321,7 @@ module.exports = function(grunt) {
       devServer: {
         options: {
           base: './dist',
+          // if you run on port 80 you must run as `sudo`
           port: '80',
           hostname: '*'
         }
@@ -329,6 +330,7 @@ module.exports = function(grunt) {
       keepAlive:{
         options: {
           base: './dist',
+          // if you run on port 80 you must run as `sudo`
           port: '80',
           keepalive: true,
           hostname: '*'
