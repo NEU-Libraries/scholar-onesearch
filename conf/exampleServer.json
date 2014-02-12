@@ -1,6 +1,8 @@
 {
-    "path": "/path/to/target",
+    "path": "/path/to/target/on/server/to/place/assetts/with/SFTP",
     "host": "localhost",
     "username": "username",
-    "password": "password"
+    "password": "password",
+    "name" : "Example Environment  Name",
+    "assetPath" : "path/to/assets/from/the/browser/don't/end/in/slash"
 }
