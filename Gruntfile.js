@@ -308,10 +308,29 @@ module.exports = function(grunt) {
     },
     clean: {
       files: 'dist'
+    },
+    // Create a development server for serving assets to the ExLibris
+    // environment if available
+    connect: {
+      // This target will only run as long as the grunt tasks are running
+      devServer: {
+        options: {
+          base: './dist',
+          port: '8888',
+        }
+      },
+      // This target will run until you quit the task
+      keepAlive:{
+        options: {
+          base: './dist',
+          port: '9999',
+          keepalive: true
+        }
+      }
     }
 });
 
-  // Load the plugin that provides the "uglify" task.
+  // Load the contributed plugins/tasks for Grunt
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
@@ -327,11 +346,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bless');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
 
-  // Default task.
-
+  // Default task to build all the assets for the front end
   grunt.registerTask('default', [ 'clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "bless:prod", "cssmin", 'concat', 'uglify' , 'copy']);
+
+  // Watch the assets and serve them.
+  grunt.registerTask('watchServe', 'Watch for asset changes then serve the changes with a static server', ['connect:devServer', 'watch']);
   grunt.registerTask('deploy',  ['default', 'jade:target', 'sftp:target']);
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
