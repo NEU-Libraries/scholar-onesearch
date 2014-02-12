@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         js: {
           files: {
             'dist/js/sos-app.min.js': jsFiles,
-            'dist/js/modernizr.min.js': 'js/vendor/modernizr/modernizr.js',
+            'dist/js/modernizr.min.js' : 'js/vendor/modernizr/modernizr.js',
           },
         },
     },
@@ -366,7 +366,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy',  ['default', 'jade:target', 'sftp:target']);
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
-  grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev' ,'sftp:dev']);
+  grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev', 'uglify' ,'sftp:dev']);
 };
 
 
