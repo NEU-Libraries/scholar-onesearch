@@ -8,3 +8,11 @@ ul, ol{
 .small{
   &:extend(small);
 }
+
+
+
+.EXLHidden{
+  // Mixin to accessibly hide items, would be best to assume the hidden means just from sighted users,
+  // use display none for totally hidden for AT to be included
+  .sr-only();
+}
