@@ -41,6 +41,9 @@ script.
   }
   }());
 
+
+// Adds a body class to let the styles scope for the e-Shelf area.
+// Updated to just check for the string 'my_shelf'
 script.
   (function() {
     var styleSheetList = document.styleSheets;
@@ -48,7 +51,7 @@ script.
       var href = styleSheetList[i].href;
       if (href){
         href = href.toString();
-        if(href.search('my_shelf.css') > 0 ){
+        if(href.search('my_shelf') > 0 ){
           document.body.className = (document.body.className + ' sos-eshelf');
           return;
         }
