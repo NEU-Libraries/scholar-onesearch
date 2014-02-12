@@ -1,4 +1,9 @@
-$( document ).ready(function() {
+/**
+ * Scholar OneSearch JS file with-in a closure
+ *
+ */
+
+jQuery(function($) {
   var scholarOneSearch = (function(){
     'use strict';
     /**
@@ -392,6 +397,8 @@ $( document ).ready(function() {
   scholarOneSearch.init();
   scholarOneSearch.worldCatLinks();
 });
+
+
 
 /**
  * Captures the old openPrimoLightBox function and just adds a no overflow class to the body element when the modal is open.

@@ -320,7 +320,6 @@ module.exports = function(grunt) {
       // This target will only run as long as the grunt tasks are running
       devServer: {
         options: {
-          base: './dist',
           // if you run on port 80 you must run as `sudo`
           port: '80',
           hostname: '*'
@@ -329,14 +328,41 @@ module.exports = function(grunt) {
       // This target will run until you quit the task
       keepAlive:{
         options: {
-          base: './dist',
           // if you run on port 80 you must run as `sudo`
           port: '80',
           keepalive: true,
           hostname: '*'
         }
+      },
+      // This target will run until you quit the task
+      tests:{
+        options: {
+          port: '8888',
+        }
+      },
+    },
+    // Jasmine Spec Tests for Our App's Functions
+    // https://github.com/gruntjs/grunt-contrib-jasmine
+    // http://jasmine.github.io/
+    //
+    jasmine: {
+      sosspecs:{
+         src: 'js/src/nulib.js',
+         options:{
+          specs: 'spec/*Spec.js',
+          helpers: 'spec/*Helper.js',
+          keepRunner: true,
+          outfile: 'report/_SpecRunner.html',
+          host: 'http://127.0.0.1:8888',
+          vendor: [
+            'js/vendor/reference/primo-v4.5.1/primo_library_web.js',
+            'js/vendor/modernizr/modernizr.js',
+            'lib/bootstrap/js/tooltip.js'
+          ],
+         }
       }
     }
+
 });
 
   // Load the contributed plugins/tasks for Grunt
@@ -356,6 +382,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
 
 
   // Default task to build all the assets for the front end
@@ -367,6 +394,9 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
   grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev', 'uglify' ,'sftp:dev']);
+
+  // Run the Jasmine specs
+  grunt.registerTask('spec', 'Run the jasmine specifications from the test server', ['connect:tests','jasmine:sosspecs']);
 };
 
 
