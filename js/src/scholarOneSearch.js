@@ -31,7 +31,7 @@ jQuery(function($) {
         }
       },
       tabTemplate: function(){
-        return $('<a class="btn btn-small btn-link" href="" title=""  target="_blank"></a>')
+        return $('<a href="" title=""  target="_blank"></a>')
       },
 
 
@@ -131,16 +131,23 @@ jQuery(function($) {
       var c = config.permalLink;
       var url = [ window.location.origin ];
       url.push( c.path );
-      url.push( 'docId=' + result.id );
+      url.push( 'doc=' +  encodeURIComponent( result.id ) );
       url = url.join( '' );
       var $link = config.tabTemplate();
       var icon = c.icon();
+
       $link.attr({
         href: url
       }).text( c.text ).addClass('permalink');
+
       result.$el.find('ul.EXLResultTabs').append( $link );
-      $link.wrap('<li class="EXLResultTab sos-report-a-problem "/>');
+
+      $link.wrap('<li class="EXLResultTab sos-permalink "/>');
+
       $link.prepend( icon );
+
+
+
     };
 
     /**
