@@ -1,18 +1,17 @@
-a.report-a-problem{
-  .close;
-  float: none;
+.report-a-problem{
   opacity: 0.5;
-  color: @carrot;
-  i{
+
+  [class^="icon-"], [class*=" icon-"]{
     font-size: @report-a-problem-font-size;
   }
   &:hover,
   &:focus{
-    color: @carrot;
     opacity: 1.0;
-    text-decoration: none!important;
+
   }
+
 }
+
 
 .EXLResultTabContainer{
   .panel;
@@ -147,11 +146,14 @@ a[title="show send to options"]{
 
 .EXLResultTabs{
   padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
   > li{
     display: inline-block;
   }
+}
+
+.EXLResultTab{
+  margin-right: 2px;
 }
 
 .EXLTabHeaderButtonSendToList{

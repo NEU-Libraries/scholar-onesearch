@@ -18,7 +18,7 @@ jQuery(function($) {
       resultClass : 'EXLResult',
       permalLink: {
         icon: function() {
-          return $( '<i class="icon-link" aria-hidden="true"></i>' );
+          return $( '<span class="icon-link" aria-hidden="true"></span>' );
         },
         text: 'Permalink',
         path: '/primo_library/libweb/action/dlDisplay.do?',
@@ -27,12 +27,14 @@ jQuery(function($) {
         baseUrl: 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=',
         title: 'Report a problem',
         icon: function() {
-          return $( '<i class="icon-comments-alt" aria-hidden="true"></i><span class="sr-only">Report a problem with this resource</span>' );
+          return $( '<span class="icon-comments-alt" aria-hidden="true"></span><span class="sr-only">Report a problem with this resource</span>' );
         }
       },
       tabTemplate: function(){
         return $('<a class="btn btn-small btn-link" href="" title=""  target="_blank"></a>')
       },
+
+
     };
 
 
@@ -113,12 +115,17 @@ jQuery(function($) {
 
       result.$el.find('ul.EXLResultTabs').append($link);
 
-      $link.wrap('<li/>');
+      $link.wrap('<li class="EXLResultTab sos-report-a-problem" />');
 
       result.$el.find( '.report-a-problem' ).tooltip();
 
     };
 
+    /**
+     * Provides the permalink tab on the tabs ribbon
+     * @param  { Object } result result from prepare result.
+     * @return { Object }        Dom node
+     */
     var buildPemaLink = function( result ){
       //var url = 'hhttp://onesearch.northeastern.edu/primo_library/libweb/action/dlDisplay.do?vid=NU&docId=' + id;
       var c = config.permalLink;
@@ -132,10 +139,13 @@ jQuery(function($) {
         href: url
       }).text( c.text ).addClass('permalink');
       result.$el.find('ul.EXLResultTabs').append( $link );
-      $link.wrap('<li/>');
+      $link.wrap('<li class="EXLResultTab sos-report-a-problem "/>');
       $link.prepend( icon );
     };
 
+    /**
+     * handleResults returns a buildLinks function that adds tabs to the results tab
+     */
     var handleResults = function(){
       var buildLinks = function(){
         var result = prepareResult( $(this)  );
