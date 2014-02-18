@@ -31,7 +31,7 @@ jQuery(function($) {
         }
       },
       tabTemplate: function(){
-        return $('<a class="btn btn-small btn-link" href="" title="" ></a>')
+        return $('<a class="btn btn-small btn-link" href="" title=""  target="_blank"></a>')
       },
     };
 
@@ -105,11 +105,10 @@ jQuery(function($) {
       var url = config.reportAProblem.baseUrl + encodeURIComponent(titleStr);
 
       var $link = config.tabTemplate();
-      //var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"  data-toggle="tooltip" ><i class="icon-comments-alt"></a><li>');
+
       $link.attr({
         href: url,
-        title: config.reportAProblem.title,
-        target: '_blank'
+        title: config.reportAProblem.title
       }).addClass('report-a-problem').html( config.reportAProblem.icon() );
 
       result.$el.find('ul.EXLResultTabs').append($link);
@@ -127,15 +126,22 @@ jQuery(function($) {
       url.push( c.path );
       url.push( 'docId=' + result.id );
       url = url.join( '' );
-      console.log( url );
-
+      var $link = config.tabTemplate();
+      var icon = c.icon();
+      $link.attr({
+        href: url
+      }).text( c.text ).addClass('permalink');
+      result.$el.find('ul.EXLResultTabs').append( $link );
+      $link.wrap('<li/>');
+      $link.prepend( icon );
     };
 
     var handleResults = function(){
       var buildLinks = function(){
         var result = prepareResult( $(this)  );
-        reportAProblem( result );
         buildPemaLink( result );
+        reportAProblem( result );
+
 
       };
       var $results = $('.' + config.resultClass );
