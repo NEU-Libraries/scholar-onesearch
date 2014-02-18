@@ -17,9 +17,22 @@ jQuery(function($) {
     var config = {
       resultClass : 'EXLResult',
       permalLink: {
-        icon: 'icon-link',
-        text: 'Permalink'
-      }
+        icon: function() {
+          return $( '<i class="icon-link" aria-hidden="true"></i>' );
+        },
+        text: 'Permalink',
+        path: '/primo_library/libweb/action/dlDisplay.do?',
+      },
+      reportAProblem: {
+        baseUrl: 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=',
+        title: 'Report a problem',
+        icon: function() {
+          return $( '<i class="icon-comments-alt" aria-hidden="true"></i><span class="sr-only">Report a problem with this resource</span>' );
+        }
+      },
+      tabTemplate: function(){
+        return $('<a class="btn btn-small btn-link" href="" title="" ></a>')
+      },
     };
 
 
@@ -72,39 +85,57 @@ jQuery(function($) {
       }
       return title;
     };
+
+    var prepareResult = function( el ){
+      var $el = $(el);
+      var result = {
+        $el: $el,
+        id: getID( $el ),
+        title: getTitle( $el )
+      };
+
+      return result;
+    };
     //build report a problem links;
-    var reportAProblem = function( $el,  title , id ){
-      if ( typeof title === 'undefined '){
-        var title = getTitle( this );
-      }
-      if ( typeof id === 'undefined '){
-        var id = getID( this );
-      }
-      if ( typeof $el === 'undefined' ){
-        var $el = $(this);
-      }
+    var reportAProblem = function( result ){
+
 
       //The Document ID
-      var titleStr = title + ' (' + id + ')';
+      var titleStr = result.title + ' (' + result.id + ')';
+      var url = config.reportAProblem.baseUrl + encodeURIComponent(titleStr);
 
-      var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
+      var $link = config.tabTemplate();
+      //var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"  data-toggle="tooltip" ><i class="icon-comments-alt"></a><li>');
+      $link.attr({
+        href: url,
+        title: config.reportAProblem.title,
+        target: '_blank'
+      }).addClass('report-a-problem').html( config.reportAProblem.icon() );
 
-      var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"  data-toggle="tooltip" ><i class="icon-comments-alt"></a><li>');
-      $(this).find('ul.EXLResultTabs').append($link);
+      result.$el.find('ul.EXLResultTabs').append($link);
+
+      $link.wrap('<li/>');
+
+      result.$el.find( '.report-a-problem' ).tooltip();
 
     };
 
-    var buildPemaLink = function( $el,  title , id ){
-      var title
+    var buildPemaLink = function( result ){
+      //var url = 'hhttp://onesearch.northeastern.edu/primo_library/libweb/action/dlDisplay.do?vid=NU&docId=' + id;
+      var c = config.permalLink;
+      var url = [ window.location.origin ];
+      url.push( c.path );
+      url.push( 'docId=' + result.id );
+      url = url.join( '' );
+      console.log( url );
 
     };
 
     var handleResults = function(){
       var buildLinks = function(){
-        var title = getTitle( this );
-        var id = getID( this );
-        var $el = $(this);
-        reportAProblem( $el , title, id );
+        var result = prepareResult( $(this)  );
+        reportAProblem( result );
+        buildPemaLink( result );
 
       };
       var $results = $('.' + config.resultClass );
