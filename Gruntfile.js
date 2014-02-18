@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['lib/bootstrap/js/tooltip.js','js/src/scholarOneSearch.js'];
+  var jsFiles = [ 'lib/bootstrap/js/transition.js','lib/bootstrap/js/tooltip.js','js/src/scholarOneSearch.js'];
   // Project configuration.
   //
 
@@ -349,11 +349,12 @@ module.exports = function(grunt) {
       sosspecs:{
          src: 'js/src/scholarOneSearch.js',
          options:{
-          specs: 'spec/helloWorldSpec.js',
-          // helpers: 'spec/helpers/*.js',
+          specs: 'spec/scholarOneSearchSpec.js',
           keepRunner: true,
           outfile: 'report/_SpecRunner.html',
+          host: 'http://127.0.0.1:8888',
           vendor: [
+            'lib/jquery/jquery.js',
             'js/vendor/modernizr/modernizr.js',
             'lib/bootstrap/js/tooltip.js',
             'lib/jasmine-jquery/lib/jasmine-jquery.js'
@@ -396,7 +397,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev', 'uglify' ,'sftp:dev']);
 
   // Run the Jasmine specs
-  // grunt.registerTask('spec', 'Run the jasmine specifications from the test server', ['connect:tests','jasmine:sosspecs']);
+  grunt.registerTask('spec', 'Run the jasmine specifications from the test server', ['connect:tests','jasmine:sosspecs']);
 };
 
 

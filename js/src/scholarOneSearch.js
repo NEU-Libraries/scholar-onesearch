@@ -3,9 +3,22 @@
  *
  */
 
+if ( typeof jQuery === 'undefined' ){
+ throw new Error('jQuery was not found, this is a dependency make sure it is loaded in the front-end before this script');
+}
 jQuery(function($) {
   var scholarOneSearch = (function(){
     'use strict';
+
+    /**
+     * Default Config
+     * @type {Object}
+     */
+    var config = {
+      resultClass : 'EXLResult'
+    };
+
+
     /**
      * Finds the URL path of the assets by finding the source of this script script#sos-app-js
      * @return {string} asset path
@@ -16,12 +29,37 @@ jQuery(function($) {
       return url;
     };
 
+
+    var isResult = function( element ){
+      return $( element ).hasClass( config.resultClass );
+    };
+
+    var getID = function( resultElement ){
+
+      var id
+      , $result;
+      $result = $( resultElement );
+      if ( isResult( $result ) ){
+        id = $result.find('a.EXLResultRecordId').attr('id');
+      }
+      return id;
+
+    };
+
+    var getTitle = function( resultElement ){
+      var title = '';
+      var $result = $( resultElement );
+      if ( isResult( $result ) ){
+        title = $result.find('h2.EXLResultTitle').text().trim();
+      }
+      return title;
+    };
     //build report a problem links;
     var reportAProblem = function(){
-      var $results = $('#exlidResultsTable tr.EXLResult');
+      var $results = $('.' + config.resultClass );
       $results.each(function(){
-        var title = $(this).find('h2.EXLResultTitle').text().trim();
-        var id = $(this).find('a.EXLResultRecordId').attr('id');
+        var title = getTitle( this );
+        var id = getID( this )
         //The Document ID
         var titleStr = title + ' (' + id + ')';
 
@@ -175,7 +213,8 @@ jQuery(function($) {
       //declaring the variables before if/else
       var $link;
       var searchString = '';
-      var searchTerm = '';
+      var $searchField = $('#search_field');
+      var searchTerm = $searchField.val() || '';
       if ($('#exlidAdvancedSearchRibbon').length && !$('#exlidAdvancedSearchRibbon').hasClass('EXLAdvancedBrowseRibbon')){
 
 
@@ -228,8 +267,7 @@ jQuery(function($) {
         }
 
       }
-      else if ( $('#search_field').val().length > 0 && typeof jQuery !== 'undefined'){
-          searchTerm = $('#search_field').val();
+      else if ( searchTerm.length > 0 ){
 
           //escape quotes
           searchTerm = searchTerm.replace(/\"/g, '&quot;');
@@ -364,9 +402,15 @@ jQuery(function($) {
 
     }
 
+
+
     //Build the page functions.
-    var init = function(){
+    var init = function( settings ){
+      var settings = settings || {}
+      $.extend( config , settings )
+
       var href = window.location.href;
+
       if(href.search('myAccountMenu.do') > 0 ){
         shimEXLMyAccountTableActions();
       }else if( href.search('basket.do')){
@@ -391,11 +435,13 @@ jQuery(function($) {
 
     return {
       init: init,
-      worldCatLinks: worldCatLinks
+      worldCatLinks: worldCatLinks,
+      config : config
     };
   })();
   scholarOneSearch.init();
   scholarOneSearch.worldCatLinks();
+  console.log( scholarOneSearch.config );
 });
 
 
@@ -405,12 +451,14 @@ jQuery(function($) {
  */
 
 (function() {
+    var openPrimoLightBox = openPrimoLightBox || new Function();
     var oldPrimoLightBox =  openPrimoLightBox;
     openPrimoLightBox = function() {
       var result = oldPrimoLightBox.apply(this, arguments);
       $('body').addClass('modal-open');
       return result;
     };
+    var hideLightBox = hideLightBox || new Function();
     var oldhideLightBox = hideLightBox;
     hideLightBox = function(){
       var result = oldhideLightBox.apply(this, arguments);

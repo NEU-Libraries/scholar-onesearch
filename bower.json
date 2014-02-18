@@ -15,5 +15,6 @@
     "requirejs": "~2.1.9",
     "selectivizr": "~1.0.2",
     "jasmine-jquery": "~2.0.2"
+
   }
 }
