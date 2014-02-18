@@ -18,10 +18,20 @@ module.exports = function(grunt) {
     uglify: {
         js: {
           files: {
-            'dist/js/sos-app.min.js': jsFiles,
             'dist/js/modernizr.min.js' : 'js/vendor/modernizr/modernizr.js',
           },
         },
+        app:{
+          files:{
+            'dist/js/sos-app.min.js': jsFiles,
+          },
+          options: {
+            banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+                    '<%= grunt.template.today("yyyy-mm-dd") %> */'
+          }
+
+
+        }
     },
 
     // Watch for file changes then execute tasks

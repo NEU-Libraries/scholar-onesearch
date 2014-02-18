@@ -18,6 +18,7 @@ if target.name === "Development"
 script(src= target.assetPath + '/js/modernizr.min.js')
 
 
+
 // From HTML5BP plugins.js @link https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js#L1
 script.
   // Avoid `console` errors in browsers that lack a console.
@@ -75,7 +76,13 @@ script.
 
 
 unless target.name === "Production"
-  h1= target.name
+  - date = new Date()
+  h1
+    = target.name
+  .alert.alert-info
+    strong 
+      = date
+
 a.nu-lib-logo(href='http://library.northeastern.edu', title='Notheastern Univerity, University Libraries Homepage')
   span.text-hide Northeastern University, University Libraries
 
