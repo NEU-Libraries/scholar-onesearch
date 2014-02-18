@@ -15,7 +15,11 @@ jQuery(function($) {
      * @type {Object}
      */
     var config = {
-      resultClass : 'EXLResult'
+      resultClass : 'EXLResult',
+      permalLink: {
+        icon: 'icon-link',
+        text: 'Permalink'
+      }
     };
 
 
@@ -29,14 +33,24 @@ jQuery(function($) {
       return url;
     };
 
-
+    /**
+     * Checks to see if the given result is the set class of the DOM
+     * @param  { String, Object }  element to test to see if it matches
+     * @return {Boolean}         If it matches the node.
+     */
     var isResult = function( element ){
       return $( element ).hasClass( config.resultClass );
     };
 
+
+    /**
+     * Get the result ID from the DOM
+     * @param  {String Object} resultElement DOM node or
+     * @return {[type]}               [description]
+     */
     var getID = function( resultElement ){
 
-      var id
+      var id = ''
       , $result;
       $result = $( resultElement );
       if ( isResult( $result ) ){
@@ -45,7 +59,11 @@ jQuery(function($) {
       return id;
 
     };
-
+    /**
+     * Gets the title of a result DOM node
+     * @param  {String || Object } resultElement [description]
+     * @return {[type]}               [description]
+     */
     var getTitle = function( resultElement ){
       var title = '';
       var $result = $( resultElement );
@@ -55,22 +73,44 @@ jQuery(function($) {
       return title;
     };
     //build report a problem links;
-    var reportAProblem = function(){
-      var $results = $('.' + config.resultClass );
-      $results.each(function(){
+    var reportAProblem = function( $el,  title , id ){
+      if ( typeof title === 'undefined '){
         var title = getTitle( this );
-        var id = getID( this )
-        //The Document ID
-        var titleStr = title + ' (' + id + ')';
+      }
+      if ( typeof id === 'undefined '){
+        var id = getID( this );
+      }
+      if ( typeof $el === 'undefined' ){
+        var $el = $(this);
+      }
 
-        var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
+      //The Document ID
+      var titleStr = title + ' (' + id + ')';
 
-        var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"><i class="icon-comments-alt"></a><li>');
-        $(this).find('ul.EXLResultTabs').append($link);
-      });
-      $('a.report-a-problem').tooltip();
+      var url = 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=' + encodeURIComponent(titleStr);
+
+      var $link = $('<li><a class="report-a-problem  btn btn-small btn-link" href="' + url + '" title="Report a problem." target="_blank"  data-toggle="tooltip" ><i class="icon-comments-alt"></a><li>');
+      $(this).find('ul.EXLResultTabs').append($link);
+
     };
 
+    var buildPemaLink = function( $el,  title , id ){
+      var title
+
+    };
+
+    var handleResults = function(){
+      var buildLinks = function(){
+        var title = getTitle( this );
+        var id = getID( this );
+        var $el = $(this);
+        reportAProblem( $el , title, id );
+
+      };
+      var $results = $('.' + config.resultClass );
+      $results.each( buildLinks );
+
+    };
     //move the a-to-z link item to the search bar.
     //buildNavBarNav();
     //
@@ -423,7 +463,7 @@ jQuery(function($) {
       draggable();
       eShelfIcons();
       buildFacetCollapse();
-      reportAProblem();
+      handleResults();
       buildIcons();
       addActiveStates();
       handleRadio();
@@ -439,9 +479,13 @@ jQuery(function($) {
       config : config
     };
   })();
+  // You can override the modules setting using the init method.
+  // scholarOneSearch.init({
+  //   resultClass : 'tr.EXLResult'
+  // });
   scholarOneSearch.init();
   scholarOneSearch.worldCatLinks();
-  console.log( scholarOneSearch.config );
+
 });
 
 
