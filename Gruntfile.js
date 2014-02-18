@@ -347,17 +347,16 @@ module.exports = function(grunt) {
     //
     jasmine: {
       sosspecs:{
-         src: 'js/src/nulib.js',
+         src: 'js/src/scholarOneSearch.js',
          options:{
-          specs: 'spec/*Spec.js',
-          helpers: 'spec/*Helper.js',
+          specs: 'spec/helloWorldSpec.js',
+          // helpers: 'spec/helpers/*.js',
           keepRunner: true,
           outfile: 'report/_SpecRunner.html',
-          host: 'http://127.0.0.1:8888',
           vendor: [
-            'js/vendor/reference/primo-v4.5.1/primo_library_web.js',
             'js/vendor/modernizr/modernizr.js',
-            'lib/bootstrap/js/tooltip.js'
+            'lib/bootstrap/js/tooltip.js',
+            'lib/jasmine-jquery/lib/jasmine-jquery.js'
           ],
          }
       }
@@ -397,7 +396,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev', 'uglify' ,'sftp:dev']);
 
   // Run the Jasmine specs
-  grunt.registerTask('spec', 'Run the jasmine specifications from the test server', ['connect:tests','jasmine:sosspecs']);
+  // grunt.registerTask('spec', 'Run the jasmine specifications from the test server', ['connect:tests','jasmine:sosspecs']);
 };
 
 
