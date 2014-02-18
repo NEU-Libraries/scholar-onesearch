@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['lib/bootstrap/js/tooltip.js','js/src/nulib.js'];
+  var jsFiles = ['lib/bootstrap/js/tooltip.js','js/src/scholarOneSearch.js'];
   // Project configuration.
   //
 
@@ -383,6 +383,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-curl');
 
 
   // Default task to build all the assets for the front end
