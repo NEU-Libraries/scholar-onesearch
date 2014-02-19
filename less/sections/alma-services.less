@@ -1,0 +1,27 @@
+//  Alma Services Tab Styles
+
+
+a,
+a:link,
+a:visited {
+  &:extend( a );
+}
+
+::selection {
+  background: inherit;
+  color: inherit;
+}
+
+
+//.viewIt
+.tabContent{
+  .container-fixed();
+  li{
+    padding: 0 @padding-base-horizontal;
+  }
+}
+
+
+.internalTitle{
+  .h5;
+}

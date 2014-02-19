@@ -1,0 +1,617 @@
+@import "http://vcu-alma-primo.hosted.exlibrisgroup.com/primo_library/libweb/customized/css/vcu_uresolver.css";
+* {
+  border:none;
+  margin:0;
+  padding:0;
+}
+a:link, a:visited {
+  color:#2C4D82;
+}
+::selection {
+  background-color:#2C4D82;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  color:#FFFFFF;
+}
+body {
+  color:#32322F;
+  font-family:Arial, verdana, sans-serif;
+}
+.clearfix::after {
+  clear:both;
+  content:'.';
+  display:block;
+  height:0;
+  visibility:hidden;
+}
+.clearfix {
+  display:inline-block;
+}
+* html .clearfix {
+  height:1%;
+}
+.clearfix {
+  display:block;
+}
+html {
+  height:100%;
+}
+body {
+  background-color:#FFFFFF;
+  color:#32322F;
+  font-family:Arial, verdana;
+  font-size:80%;
+  height:100%;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+a:link, a:visited {
+  color:#0075B0;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+input, select, textarea {
+  border:1px solid #7F9DB9;
+  font-family:Arial, verdana;
+  width:auto;
+}
+textarea {
+  font-size:100%;
+}
+input {
+  height:18px;
+}
+.width5 {
+  width:5%;
+}
+.width10 {
+  width:10%;
+}
+.width15 {
+  width:15%;
+}
+.width20 {
+  width:20%;
+}
+.width24 {
+  width:24%;
+}
+.width30 {
+  width:30%;
+}
+.width40 {
+  width:40%;
+}
+.width50 {
+  width:50%;
+}
+.width48 {
+  width:48%;
+}
+.width60 {
+  width:60%;
+}
+.width72 {
+  width:72%;
+}
+.widthauto {
+  width:auto;
+}
+.tabcontent {
+  margin:0;
+}
+.tabcontent h1 {
+  font-size:100%;
+  margin-left:2em;
+  margin-top:1em;
+}
+.tabcontent h2 {
+  color:#555555;
+  font-size:100%;
+  margin-left:2em;
+  margin-top:1em;
+}
+.tabcontent ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.internaltitle {
+}
+.internalsection {
+  float:left;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.internalsection li {
+  float:left;
+  line-height:200%;
+  margin:0;
+  padding:0;
+}
+.internalsection2 li:first-child {
+  margin-left:0.5em;
+}
+.internalsection2 li {
+  margin-left:0.3em;
+}
+.internalsection2 li label {
+  font-weight:bold;
+  padding-right:0.5em;
+}
+.sectiontitle {
+  font-weight:700;
+  height:20px;
+}
+.nextline {
+  clear:left;
+  display:block;
+  line-height:110%;
+}
+.typenow {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/icon_getit_now.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  padding-left:20px;
+}
+.typerequest {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/icon_getit_request.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  padding-left:20px;
+}
+.typewait {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/icon_getit_wait.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  padding-left:20px;
+}
+.typeother {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/icon_getit_otherServices.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  padding-left:20px;
+}
+.typeholdings {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/icon_getit_holdings.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  padding-left:20px;
+}
+.rowactions {
+  float:right;
+  text-align:right;
+}
+ul.formview {
+  display:block;
+  margin-left:2em;
+  margin-top:0.3em;
+  width:95%;
+}
+.formview li {
+  margin-bottom:0.3em;
+}
+.formview li label {
+  display:inline-block;
+  font-weight:normal;
+}
+.formview li label::before {
+  color:#FF0000;
+  content:'*';
+  margin-right:0.5em;
+  visibility:hidden;
+}
+.formview li.requiredfield label::before {
+  color:red;
+  content:'*';
+  visibility:visible;
+}
+.formview li input[type="checkbox"], .formview li input[type="radio"] {
+  border:none;
+  height:auto;
+  margin-right:0.5em;
+  width:auto;
+}
+.formview input.dp-applied {
+  margin:0;
+}
+.formview a.dp-choose-date img {
+  margin-top:-1px;
+  vertical-align:middle;
+}
+.mandatory {
+  color:#FF0000;
+}
+.submitborder {
+  border:1px solid #7F9DB9;
+  display:inline-block;
+  height:20px;
+  margin-left:0.8em;
+  margin-right:0.5em;
+  padding:1px;
+  text-align:center;
+  vertical-align:text-top;
+  width:auto;
+}
+.submitborder input {
+  background-image:-webkit-linear-gradient(top, #FA8E51 0%, #F3742B 100%);
+  background-position:initial initial;
+  background-repeat:initial initial;
+  border:none;
+  color:#FFFFFF;
+  cursor:pointer;
+  display:block;
+  font-weight:normal;
+  height:20px;
+  line-height:160%;
+  padding:0 0.5em;
+}
+.resetcontainer {
+  border:1px solid #7F9DB9;
+  display:inline-block;
+  height:20px;
+  padding:1px;
+  text-align:center;
+  vertical-align:text-top;
+  width:auto;
+}
+.resetcontainer a {
+  background-color:#BCBCBC;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  color:#FFFFFF;
+  cursor:pointer;
+  display:inline-block;
+  font-weight:normal;
+  height:20px;
+  line-height:160%;
+  padding:0 0.5em;
+}
+.showmore {
+  background-color:#FFF6D4;
+  border:1px solid #F5E1B8;
+}
+.showmore span {
+  margin-right:3%;
+}
+.validationfeedback {
+  background-color:#FFF6D4;
+  border:1px solid #F5E1B8;
+  color:#D43B3B;
+  font-weight:700;
+}
+.systemfeedback {
+  background-color:#FFFBC3;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/bg_strip_system_feedback.png);
+  background-position:50% 100%;
+  background-repeat:repeat no-repeat;
+  border-bottom-color:#E1E1E1;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  color:#000000;
+  padding:0.5em 1.5em 0.5em 0.6em;
+}
+.typed table {
+  width:100%;
+}
+.typed table th {
+  border-bottom-color:#E0E2E5;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  color:#32322F;
+  height:26px;
+  padding-left:0.5em;
+  text-align:left;
+}
+.typed table tbody tr:hover, .typed2 table tbody tr:hover {
+}
+.typed table tbody tr td, .typed2 table tbody tr td {
+  background-color:#F6F6F6;
+  padding-bottom:0.3em;
+  padding-left:0.5em;
+  padding-top:0.3em;
+  vertical-align:top;
+}
+.typed table tbody tr:hover td, .typed2 table tbody tr:hover td {
+}
+.typed table tbody tr td:hover, .typed2 table tbody tr td:hover {
+}
+.typed table th.attention-table-title, .typed2 table th.attention-table-title {
+  background-color:#F2F2F2;
+}
+.typed table tbody tr.odd td {
+  background-color:#FFFFFF;
+  background-position:initial initial;
+  background-repeat:initial initial;
+}
+.typed table tbody tr.odd:hover td {
+  background-color:transparent;
+  background-position:initial initial;
+  background-repeat:initial initial;
+}
+.typed table th, .typed2 table th {
+}
+.typed table th input.sort {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/infra/images/sortable.png);
+  background-position:2px 50%;
+  background-repeat:no-repeat no-repeat;
+  color:#FFFFFF;
+  padding-left:14px;
+  text-decoration:none;
+  text-shadow:#092147 0 -1px;
+}
+.floatrigth {
+  float:right;
+}
+.typed table th input.sortedup {
+  background-image:url(http://alma.exlibrisgroup.com/infra/images/sortedUp.png);
+  color:#CCCCCC;
+}
+.typed table th input.sorteddown {
+  background-image:url(http://alma.exlibrisgroup.com/infra/images/sortedDown.png);
+  color:#CCCCCC;
+}
+.submitaslink, .typec .formdiv input.submitaslink {
+  background-attachment:scroll;
+  background-color:transparent;
+  background-image:none;
+  background-position:0 0;
+  background-repeat:repeat repeat;
+  border:medium none;
+  color:#0075B0;
+  cursor:pointer;
+  font-family:arial;
+  font-weight:400;
+  letter-spacing:0;
+  overflow:visible;
+  padding:0;
+  text-align:left;
+  text-decoration:none;
+  white-space:normal;
+  width:auto;
+}
+.submitasnolink, .typec .formdiv input.submitasnolink {
+  background-attachment:scroll;
+  background-color:transparent;
+  background-image:none;
+  background-position:0 0;
+  background-repeat:repeat repeat;
+  border:medium none;
+  color:#2C4D82;
+  cursor:pointer;
+  font-weight:400;
+  overflow:visible;
+  padding:0;
+  text-align:left;
+  white-space:normal;
+  width:auto;
+}
+.typei div.alignright .export {
+  background-image:-webkit-gradient(linear, 0 0%, 0 100%, from(#2C4D82), to(#143160));
+  background-position:initial initial;
+  background-repeat:initial initial;
+}
+div.alignright {
+  float:right;
+}
+.typei .buttonlink {
+  color:#2C4D82;
+}
+.typei div.alignright ul li a {
+  color:#2C4D82;
+}
+ul.pagination li.hideactions .openupperactions, li.hideactions .openupperactions ul.actionstohide {
+  background-color:transparent;
+  border:1px solid #CCCCCC;
+  height:auto;
+  width:auto;
+}
+.paginationcontainer {
+  background-color:#F6F6F6;
+  border-bottom-color:#E1E1E1;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  display:block;
+  float:none;
+  margin:0;
+  padding:0.5em 0 0;
+  width:100%;
+}
+.paginationcontainer ul {
+  background-color:#FFFFFF;
+  border-left-color:#E1E1E1;
+  border-left-width:1px;
+  border-right-color:#E1E1E1;
+  border-right-width:1px;
+  border-style:solid solid none;
+  border-top-color:#E1E1E1;
+  border-top-width:1px;
+  display:block;
+  margin-bottom:-1px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width:300px;
+}
+.pagination .buttonaction, .pagination .buttonaction input {
+  font-family:Arial;
+  min-width:0.9em;
+  padding:0 0.1em;
+  width:1.4em;
+}
+.pagination .selected {
+  background-color:#F0F1F8;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  border-color:#939393;
+}
+.typei ul.pagination li {
+  display:inline-block;
+  padding-top:0.5em;
+}
+.typei ul.pagination li .selected input {
+  color:#555555;
+  cursor:default;
+}
+.typei ul li.alignright {
+  float:right;
+  padding-right:0.2em;
+}
+.widgetcontainer .welcomemessage .alignright {
+  margin:0.1em 0.5em 0 0;
+  padding-left:0.4em;
+}
+.widgetcontainer .welcomemessage .alignright a {
+  font-weight:700;
+  margin-right:0.8em;
+}
+.widgetcontainer .welcomemessage .alignright a:hover {
+  text-decoration:none;
+}
+.roundleft, .widgetcontainer .welcomemessage .alignright {
+  border-bottom-left-radius:2px;
+  border-top-left-radius:2px;
+}
+.roundright, .widgetcontainer .welcomemessage .alignright {
+  border-bottom-right-radius:2px;
+  border-top-right-radius:2px;
+}
+.buttonactionadjacent {
+  border-right-style:none;
+}
+.arrowdown {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/css/icon_optionsMenu_down.png);
+  background-position:50% 50%;
+  background-repeat:no-repeat no-repeat;
+  display:inline-block;
+  width:8px;
+}
+.typei div.alignright ul li {
+  color:#555555;
+}
+.typei div.alignright {
+  height:26px;
+  line-height:26px;
+}
+.typei div.alignleft {
+  height:26px;
+  line-height:26px;
+}
+.typei div.alignright ul {
+  height:26px;
+  line-height:26px;
+}
+.typei div.alignright ul li {
+  height:26px;
+  line-height:26px;
+}
+.pagination .buttonaction, .pagination .buttonaction input {
+  cursor:pointer;
+  min-width:0.9em;
+  padding:0 0.1em;
+}
+.pagination .selected {
+  background-color:#F0F1F8;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  border-color:#939393;
+}
+span.arrow input {
+  text-indent:-1000em;
+  width:10px;
+}
+span.firstpage input {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/firstPage.png);
+  background-position:50% 50%;
+  background-repeat:no-repeat no-repeat;
+}
+span.previouspage input {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/previousPage.png);
+  background-position:50% 50%;
+  background-repeat:no-repeat no-repeat;
+}
+span.nextpage input {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/nextPage.png);
+  background-position:50% 50%;
+  background-repeat:no-repeat no-repeat;
+}
+span.lastpage input {
+  background-color:transparent;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/lastPage.png);
+  background-position:50% 50%;
+  background-repeat:no-repeat no-repeat;
+}
+.iframeheader {
+  background-color:#F1F1F1;
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/bg_strip_brief_tabs_header.png);
+  background-repeat:repeat no-repeat;
+  border-bottom-color:#E1E1E1;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  display:block;
+  height:auto;
+  max-height:5em;
+  min-height:27px;
+}
+.iframeheader form {
+  margin:0;
+  padding:0;
+}
+.iframeheader div.iframeheadercontent {
+  color:#ADB9C2;
+  float:left;
+  padding:0.2em 0.3em 0.3em 0.5em;
+  width:98%;
+}
+.iframeheader .iframeheadercontent em {
+  color:#000000;
+  font-style:normal;
+  font-weight:normal;
+  padding-right:0.2em;
+}
+.iframeheader div.iframeheadercontent input.popout {
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/icon_popout_tab.png);
+  background-position:100% 50%;
+  background-repeat:no-repeat no-repeat;
+  padding-right:1em;
+  width:auto;
+}
+.iframeheader div.iframeheadercontent span {
+  padding:0.3em 0.1em;
+  width:auto;
+}
+.iframeheader div.iframeheadercontent span.back {
+  background-image:url(http://alma.exlibrisgroup.com/view/branding_skin/icons/icon_arrow_prev.png);
+  background-position:0 50%;
+  background-repeat:no-repeat no-repeat;
+  display:inline-block;
+  float:right;
+  margin-top:1px;
+  padding:0 5px 0 1em;
+}
+.submitborderdisabled {
+  border:1px solid #BCBCBC;
+}
+.submitborderdisabled input[disabled] {
+  background-color:#BCBCBC;
+  background-image:none;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  cursor:auto;
+  filter:none;
+  text-shadow:#EBEBEB 0 -1px 1px;
+}
