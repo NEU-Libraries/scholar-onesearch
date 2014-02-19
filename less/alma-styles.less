@@ -22,13 +22,16 @@
 @import "@{bootstrap-less-path}/normalize";
 @import "@{bootstrap-less-path}/print";
 
-//Fix for Windows Phone 8 and Internet Explorer 10
-//http://getbootstrap.com/getting-started/#browsers
-@import "utilities/primo-browser-support";
+
 
 @import "@{bootstrap-less-path}/scaffolding";
 @import "@{bootstrap-less-path}/type";
-@import (reference) "@{bootstrap-less-path}/grid";
+@import "@{bootstrap-less-path}/grid";
+
 // @import (reference) "legacy/reference-master/vcu-mashup.css";
-// @import (reference) "legacy/reference-master/vcu-customizations.css";
+
+
+@import (reference) "style";
+
+
 @import 'sections/alma-services';
