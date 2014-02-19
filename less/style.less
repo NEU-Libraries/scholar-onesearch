@@ -6,21 +6,21 @@
 * Designed and built with all the love in the world by @mdo and @fat.
 */
 
-
+@bootstrap-less-path: "../lib/bootstrap/less";
 
 // ## Libraries
 //make sure that aren't missing variables;
-@import "../lib/bootstrap/less/variables.less";
+@import "@{bootstrap-less-path}/variables.less";
 //import customized variables.
 @import "library/primo-variables";
 
-@import "../lib/bootstrap/less/mixins";
+@import "@{bootstrap-less-path}/mixins";
 @import "library/primo-mixins";
 
 
 // ## Reset
-@import "../lib/bootstrap/less/normalize";
-@import "../lib/bootstrap/less/print";
+@import "@{bootstrap-less-path}/normalize";
+@import "@{bootstrap-less-path}/print";
 
 //Fix for Windows Phone 8 and Internet Explorer 10
 //http://getbootstrap.com/getting-started/#browsers
