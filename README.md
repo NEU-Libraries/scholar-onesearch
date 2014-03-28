@@ -56,7 +56,7 @@ $ grunt less:development //compiles the less using a defined task
   
   * Adjust JSON config file to set up local server parameters
   * Use Grunt/NODE.js to run a local server on port 80.
-  * assign NOcss2 to the NUdev view this is an entry with a bogus empty css file.
+  * In Primo BO - assign NOcss2 to the NUdev view this is an entry with a bogus empty css file.
   * load the CSS target via entries in the nu_header.html
 ```
 <link rel="stylesheet" href="http://<IP_OF_LOCALHOST>/css/legacy.css"/>
