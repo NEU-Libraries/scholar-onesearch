@@ -218,7 +218,7 @@ div.EXLSearchEJorunalsListAtoZ li.EXLFindDBListHeaderAtoZSelected { background-i
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks {float:left; display:inline; line-height:26px; text-indent:1em;}
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {float:left; display:inline; clear:both; border:1px solid #adb9c2; margin-top:-1px }
 #exlidAdvancedSearchRibbon input.submit  { border:1px solid #ffffff;  padding:0em; display:block; background-color:#e87107; background-image:url(../images/bg_strip_btn_orange.png); background-repeat:repeat-x;margin:0em; width:8.5em;  color:#FFFFFF; font-weight: normal;height:24px; cursor: pointer;}
-#exlidAdvancedSearchTile .EXLSearchFieldRibbonFormSubmitSearch{width:auto;}
+
 /*Browse results styles*/
 .EXLResultsHeader h1{  color:#8c8c8c; font-weight:bold; font-size:80%; padding:0em 0em 0em 1em; margin:0px; margin-bottom:0.2em; float:left;width:65%;}
 .EXLSearchFieldRibbonBrowseSearchLink { float:right; width:9%; white-space:nowrap; }
@@ -859,8 +859,6 @@ body.EXLFullView div.EXLResultsList h2.EXLResultAuthor {font-size:100%; font-wei
 .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconConnotea { background-image: url(../images/icon_sendTo_connotea.png);}
 .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconRefworks { background-image: url(../images/icon_sendTo_refworks.png);}
 .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconEndnote { background-image: url(../images/icon_sendTo_endNote.png); }
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconPermalink { background-image: url(../images/icon_sendTo_permalink.png);}
-.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li span.EXLButtonSendToIconCitation { background-image: url(../images/icon_sendTo_citation.png);}
 
 /*---View Online Tab Styles---*/
 .EXLViewOnlineTabContent {overflow:auto;overflow-x:hidden;}
@@ -1347,22 +1345,6 @@ color: #333333;   cursor: pointer;  font:80% Arial;
 
 /*My Account*/
 .EXLMyAccountContainer {width:auto;padding-left:0.4em;padding-right:1em;padding-top:1em; margin-top:0em/*for ie7*/; height:auto; background-color:#ecf0f3; border-top:1px solid #ffffff; padding-bottom:3em;}
-/*My account links */
-.EXLMyAccountLinksContainer{float:left;height: auto;padding-top:0.7em;padding-left:2em;min-width:40%;max-width:60%;}
-.EXLMyAccountLinksContainer span.EXLMyAccountMainHeaderContentSeparator{  float:left;padding-right:2em;display:inline-table;background-image:url(../images/vseparator_pixel.png); background-repeat: repeat-y;height:17px;width:1px; background-position:center  }
-.EXLMyAccountPayFineLinkContainer{min-width:16em;max-width:40em;float:left;height: auto;padding-top:0.7em;padding-left:2em;}
-.EXLMyAccountPayFineLinkContainer span.EXLMyAccountMainHeaderContentSeparator{  float:left;padding-right:2em;display:inline-table;background-image:url(../images/vseparator_pixel.png); background-repeat: repeat-y;height:17px;width:1px; background-position:center  }
-.EXLMyAccountPayFineLinkHeader{ padding-bottom:0.1em;padding-top:0.1em;height: auto;width: auto}
-.EXLMyAccountLinks{border: 1px solid #FCFCFD;color: #000000;display: block;float: left;margin-right: 1em;padding: 1px 0;max-width: 30em;min-width: 5em;width: auto;}
-.EXLMyAccountLinksHedaer{ padding-bottom:0.1em;padding-top:0.1em;height: auto;width: auto}
-.EXLMyAccountLinksHedaerContainer{padding-top: 0.1em;}
-.EXLMyAccountFinesBalanceLink span.EXLMyAccountLinks {padding-top:0.1em;}
-.EXLMyAccountMainContainer table td.EXLMyAccountFinesBalanceLink {vertical-align:bottom;}
-.EXLMyAccountMainContainer table td.EXLMyAccountFinesBalanceLink span.EXLMyAccountLinks {width:100%;}
-.EXLMyAccountLinks img{padding-left:0.5em;}
-
-.EXLMyAccountLinks .EXLMyAccountPayFineLinkText{font-weight: bold;color: black;font-size: 14px;}
-.EXLMyAccountLinks .EXLMyAccountPayFineLinkSum{font-weight: bold;color: red;font-size: 14px;}
 
 /*Main Menu*/
 .EXLMyAccountMainMenuTile{ width:12.5em; float:left;}
@@ -1903,32 +1885,6 @@ background-image: url(../images/bullet_arrow_orange_tip.png); background-repeat:
 .EXLPopupImportCitationContainer div.EXLPopupImportCitationButtonLink span input[disabled] {background-image:none; background-color:#d4d2d2; cursor:wait;}
 .EXLPopupImportCitationContainer div.EXLPopupImportCitationButtonCancel span input {background-image:url(images/bg_strip_btn_grey.png);}
 
-/*Permalink*/
-#exlidPopupPermalinkContainer{z-index: 1002;}
-.EXLPopupPermalinkContainer { float:right; clear:right;background-color:#ecf0f3; width:750px; height:130px; padding-top:0.5em;}
-.EXLPopupPermalink {  font-size:80%; height:120px; width:728px; border:1px solid #d4d4d4; background-color:#FFFFFF; margin:auto;}
-/*header*/
-.EXLPopupPermalinkHeader { width:100%; clear:both; display:block; height:1.5em;}
-.EXLPopupPermalinkHeader h1 { float:left; font-size:100%; color:#000000; line-height:300%; padding-left:1em; }
-.EXLPopupPermalink  div.EXLPopupRow{ padding:0em 0em 0em 1em; margin:0em; width:100%; float:left; margin-top:0em; margin-bottom:1em; margin-bottom:0em!ie; padding-top:2em!ie }
-/*buttons*/
-.EXLPopupPermalinkContainer div.EXLPopupPermalinkButtons { height:auto; width:80%; margin-top:2em;margin-top:1em!ie;}
-.EXLPermalinkURL {width:90%;}
-.EXLPermalinkURL  input { width:85%; border:1px solid #D3D3D3; height:20px; padding-top:0.2em;padding-left:0.6em; }
-
-.EXLPermalinkHeaderButtons { background-color: #FFFFFF; width:100%;  display:block; height:3em;}
-.EXLPermalinkHeaderButtons h1 { float:left; font-size:100%; color:#000000; line-height:300%; padding-left:1em}
-div.EXLPermalinkHeaderButtons { padding:0em; width:35%; float:right; text-align:right; height:18px; padding-top:0.8em ; margin-right:0.5em }
-div.EXLPermalinkHeaderButtons ul { float:right; margin-bottom:9px; }
-div.EXLPermalinkHeaderButtons li { list-style:none; float:left; height:18px; border-right:0px solid #e1e1e1;}
-div.EXLPermalinkHeaderButtons li span {background-image:none; background-repeat: no-repeat; width:18px; height:18px; display:inline; float:left; }
-div.EXLPermalinkHeaderButtons li a { padding:0.2em 0.2em 0.2em 0.2em; cursor:pointer; text-decoration:none	 }
-div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonCloseLabel { display:none  }
-div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonHelpLabel { display:inline  }
-div.EXLPermalinkHeaderButtons li a:hover span.EXLPermalinkHeaderButtonHelpLabel { text-decoration:underline  }
-div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonHelp {background-image:none; background-position: center;border-right:1px solid #e1e1e1; }
-div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonClose {background-image: url(../images/icon_close_tabs.png); background-position: center ;margin-left:0em}
-
 /*my account sort*/
 #LoansTable tr th.headerSortUp {background-image: url(../images/icon_arrow_sort.png); background-repeat:no-repeat;background-position:90%; }
 #LoansTable tr th.headerSortDown {background-image: url(../images/icon_arrow_sort_up.png);background-repeat:no-repeat;background-position:90%; }
@@ -1951,11 +1907,7 @@ div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonClose {backgroun
 .EXLDateRangeText {text-align: left;	margin-bottom: 25px;}
 .EXLDateRangeLine {margin-top:1em; margin-bottom:2em; padding-left:0.5em}
 .EXLToolTipStart { font-size: 80%; line-height: 120%; text-decoration: none; padding-top :1em; margin:-30px -10px;}
-/*IE7 only hack*/
-* + html .EXLToolTipStart { margin-top:-30px; margin-bottom: 0px; margin-left:-10px; margin-right:0px;}
 .EXLToolTipEnd { font-size: 80%; line-height: 120%; text-decoration: none; padding-top :2em; margin: -14px -10px;}
-/*IE7 only hack*/
-* + html .EXLToolTipEnd {  margin-bottom: 10px; margin-left:-10px; margin-right:0px;}
 .EXLSliderFromText {color: #8C8D8C; font-size:80%;}
 .EXLSliderToText {color: #8C8D8C; font-size:80%;}
 #slider-range {margin: 15px 20px 5px 12px;}
@@ -2044,94 +1996,3 @@ div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonClose {backgroun
 
 .EXLVBTooltipDetails .EXLVBTooltipDetailsTable .EXLVBTooltipDetailsVertitles .EXLVBTooltipDetailsTitles .EXLVBTooltipDetailsItemDetails{line-height: 1.5em;}
 
-
-
-/* Save Citation */
-#exlidSaveCitationtile {  z-index: 1002;float:right;clear:left;  padding:0em 0em 0em 0em; font-size:80%; height:250px; width:65%; border:8px solid #ECF0F3; background-color:#FFFFFF; margin-left:auto; margin-right:auto;}
-/*list of databases container*/
-#exlidSaveCitationtile div.EXLSaveCitationCiteContainer { width:78%;height:179px;overflow:auto;overflow-x:hidden; margin-top:0.1em}
-#exlidSaveCitationtile div.EXLSaveCitationListContainer { height:auto;overflow:auto;overflow-x:hidden; margin-top:0.1em}
-/*system feedback*/
-#exlidSaveCitationtile div.EXLSaveCitationListContainer div.EXLSaveCitationFeedback {width:100%;border-bottom:1px solid #e1e1e1;background-color:#fffbc3;font-size:100%; text-align:center; display:none }
-#exlidSaveCitationtile div.EXLSaveCitationListContainer div.EXLSaveCitationFeedback strong {padding:0.5em 1.5em 0.5em 0.6em; display:block; background-image:url(../images/bg_strip_system_feedback.png); background-repeat:repeat-x; background-position:bottom; color:#000000; font-weight:normal; }
-
-#exlidSaveCitationtile div.EXLSaveCitationListContainer div.EXLSaveCitationFeedbackResults {width:50%;border:1px solid #e1e1e1;background-color:#fffbc3;font-size:100%; text-align:center; margin-left:auto; margin-right:auto; margin-top:3.5em   }
-#exlidSaveCitationtile div.EXLSaveCitationListContainer div.EXLSaveCitationFeedbackResults strong {padding:1em 1.5em 1em 0.6em; display:block; background-image:url(../images/bg_strip_system_feedback.png); background-repeat:repeat-x; background-position:bottom; color:#000000; font-weight:normal; }
-#exlidSaveCitationtile div.EXLSaveCitationListContainer div.EXLSaveCitationFeedbackNoResults {display:none}
-.EXLSaveCitationReultsAreaHeaderContainer { width:100%; clear:right;   }
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationSetsHeader { background-color:#f8f8f8; height:26px; border-bottom:1px solid #e1e1e1;  border-top:1px solid #ffffff; width:20%; float:left;}
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationSetsHeader div.EXLSaveCitationListHeaderTitle {width:auto; color:#000000; padding-left:0.7em; line-height:200%;border-right:1px solid #e1e1e1;}
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationSetsHeader div.EXLSaveCitationListHeaderTitle strong { font-weight:normal;}
-
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader { background-color:#f8f8f8; height:26px; border-bottom:1px solid #e1e1e1;  border-top:1px solid #ffffff; width:80%; float:left; color:#000000; }
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader div.EXLSaveCitationEditSetHeaderContent{width:auto; color:#000000; padding-left:1em; line-height:200%;border-right:1px solid #e1e1e1;}
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader div.EXLSaveCitationEditSetHeaderContent input {width:17.5em; border:1px solid #8fb9d0; height:1.5em; padding-top:0em;padding-left:0em; font-size:1em; margin-right:1em}
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader div.EXLSaveCitationEditSetHeaderContent span.EXLSaveCitationEditSetHeaderNoteEmpty { background-image:url(../images/icon_item_note2.png); background-repeat:no-repeat; background-position:100% 50%; padding-right:1.4em;}
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader div.EXLSaveCitationEditSetHeaderContent span.EXLSaveCitationEditSetHeaderNoteFull { background-image:url(../images/icon_item_note_edit2.png);background-repeat:no-repeat; background-position:100% 50%; padding-right:1.4em;}
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader div.EXLSaveCitationEditSetHeaderContent div.EXLSaveCitationEditSetHeaderNoteEdit { width:255px; height:135px; border:1px solid #cbcbcb; position: relative; z-index:1000; background-color:#FFFFFF; left:21.5em;padding-left:0.4em; padding-top:0.5em;  }
-
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader div.EXLSaveCitationEditSetHeaderContent div.EXLSaveCitationEditSetHeaderNoteHide { display:none;}
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeader div.EXLSaveCitationEditSetHeaderContent div.EXLSaveCitationEditSetHeaderNoteEdit textarea { width:240px;  background-color:#fff6d4; border:1px solid #f5e1b8; margin-bottom:0.2em; font-family:Arial; font-size:1em; padding:0.2em;}
-
-
-.EXLSaveCitationReultsAreaHeaderContainer div.EXLSaveCitationEditSetHeaderContent fieldset.EXLMyDBNewSet { margin:0em; padding:0em; margin-bottom:1em;}
-
-
-#exlidSaveCitationtile div.EXLSaveCitationListContainerReultsArea { clear:left;}
-
-#exlidSaveCitationtile div.EXLSaveCitationList{ text-align:left; width:auto; clear:left; padding-top:0.5em; padding-bottom:1em   }
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListRow { border:none; padding:0.1em 0em 0.1em 0em; margin:0px; display:block; clear:both; line-height:150%;padding-left:1em ;padding-right:1.5em; height:10em;}
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListRowSelectText {height:2em;}
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListRowBgColor { background-color:#f3f3f7;}
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationCheckbox {width:2em; float:left; }
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationCheckbox input {  width:1em; height:1em; margin-top:0.2em}
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListTitle {width:39em; float:left }
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListTitle label { cursor:pointer; }
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListTitle span { cursor:pointer; }
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListTitleNoAccess label span { color:#919193; margin-left:0.5em }/*style for restricted db title*/
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListShowInfo {width:auto;display:inline-block;text-align:right;}
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListInfo { background-color:#fff6d4; border-top:1px solid #f5e1b8; border-bottom:1px solid #f5e1b8; padding:0.2em 2em 0.5em 3em }
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListInfo p strong { line-height:150%  }
-#exlidSaveCitationtile div.EXLSaveCitationList div.EXLSaveCitationListInfoHide { display:none}
-
-.EXLSaveCitationHeader { background-color: #FFFFFF;border-bottom: 2px solid #F4762D; width:100%; clear:both; display:block; height:3em;}
-.EXLSaveCitationHeader h1 { float:left; font-size:100%; color:#000000; line-height:300%; padding-left:1em}
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons { padding:0em; width:35%; float:right; text-align:right; height:18px; padding-top:0.8em ; margin-right:0.5em }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons ul { float:right; margin-bottom:9px; }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li { list-style:none; float:left; height:18px; border-right:0px solid #e1e1e1;}
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li span {background-image:none; background-repeat: no-repeat; width:18px; height:18px; display:inline; float:left; }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li a { padding:0.2em 0.2em 0.2em 0.2em; cursor:pointer; text-decoration:none	 }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li a span.EXLSaveCitationHeaderButtonCloseLabel { display:none  }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li a span.EXLSaveCitationHeaderButtonHelpLabel { display:inline  }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li a:hover span.EXLSaveCitationHeaderButtonHelpLabel { text-decoration:underline  }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li a span.EXLSaveCitationHeaderButtonHelp {background-image:none; background-position: center;border-right:1px solid #e1e1e1; }
-.EXLSaveCitationHeader div.EXLSaveCitationHeaderButtons li a span.EXLSaveCitationHeaderButtonClose {background-image: url(../images/icon_close_tabs.png); background-position: center ;margin-left:0em}
-
-#exlidSaveCitationtile div.EXLSaveCitationListContainer div.EXLSaveCitationSetsContainerLoggedIn{ width:22%; float:left; height:auto;overflow-y: scroll; overflow-x:hidden; margin-top:0.1em;}
-#exlidSaveCitationtile div.EXLSaveCitationSets{ text-align:left; width:auto; clear:left; padding:0em; margin:0em;height:173px;overflow: auto;overflow-x:hidden;}
-#exlidSaveCitationtile div.EXLSaveCitationSets ul {padding:0em; margin:0em; display:block; clear:both;}
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li { list-style-type:none; background-color:#ffffff ; border-bottom:1px solid #e1e1e1; padding:0.3em 0.5em 0.3em 0.5em;clear:left;}
-/*white-space: -moz-pre-wrap; /* Mozilla, since 1999
-   white-space: -pre-wrap; /* Opera 4-6
-    white-space: -o-pre-wrap; /* Opera 7
-    word-wrap: break-word; /* Internet Explorer 5.5+ }*/
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li a { color:#000000; text-decoration:none;}
-
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li.EXLSaveCitationSetsTitleSelected {background-color:#fff6d4; }
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li strong {white-space:pre-wrap;display:block; }
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li em { color:#f4762d; letter-spacing:0.1em;}
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li span {font-size:90%;}
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li a.EXLSaveCitationSetsTitleDelete { margin-right:0.1em; margin-top:-1em; border:0px solid red; float:right; clear:right; }
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li.EXLSaveCitationSetsTitleSelected {background-color:#fff6d4; }
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li strong {white-space:pre-wrap;display:block; }
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li em { color:#f4762d; letter-spacing:0.1em;}
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li span {font-size:90%;}
-#exlidSaveCitationtile div.EXLSaveCitationSets ul li a.EXLSaveCitationSetsTitleDelete { margin-right:0.1em; margin-top:-1em; border:0px solid red; float:right; clear:right; }
-
-
-#exlidSaveCitationContainer #exlidCiteContainer {height: 154px;}
-#exlidSaveCitationTile div.EXLSaveCitationListContainerMyDatabases div.EXLSaveCitationListContainer {float: left;width: 78%;}
-
-
-div.EXLSaveCitationListRow span.EXLSaveCitationEditSetHeaderAddtoSet {background-color: #FFFFFF;    background-position: 90% 50%;background-repeat: no-repeat;border: 1px solid #BDBCBD;padding: 0.1em 1.8em 0.1em 0.5em;}
-div.EXLSaveCitationListRow div.EXLFindDBEditSetHeaderContent {border-right: 1px solid #E1E1E1;color: #000000;line-height: 200%;padding-left: 1em;width: auto;}

@@ -21,8 +21,12 @@ jQuery(function($) {
           return $( '<span class="icon-link" aria-hidden="true"></span>' );
         },
         text: 'Permalink',
-        path: '/primo_library/libweb/action/dlDisplay.do?',
+	path: '/NUdev:',
+//ETO        path: '/primo_library/libweb/action/dlDisplay.do?vid=NUdev&',
+
       },
+
+
       reportAProblem: {
         baseUrl: 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=',
         title: 'Report a problem',
@@ -127,11 +131,13 @@ jQuery(function($) {
      * @return { Object }        Dom node
      */
     var buildPemaLink = function( result ){
-      //var url = 'hhttp://onesearch.northeastern.edu/primo_library/libweb/action/dlDisplay.do?vid=NU&docId=' + id;
+      //var url = 'hhttp://onesearch.northeastern.edu/primo_library/libweb/action/dlDisplay.do?vid=NU&docId=' + id + &fn=permalink;
       var c = config.permalLink;
       var url = [ window.location.origin ];
       url.push( c.path );
-      url.push( 'doc=' +  encodeURIComponent( result.id ) );
+      //url.push( encodeURIComponent( result.id ); //ETOadded
+//      url.push( 'docId=' +  encodeURIComponent( result.id +'&fn=permalink' ) );
+      url.push( '' + encodeURIComponent( result.id ) );	
       url = url.join( '' );
       var $link = config.tabTemplate();
       var icon = c.icon();
@@ -149,6 +155,7 @@ jQuery(function($) {
 
 
     };
+
 
     /**
      * handleResults returns a buildLinks function that adds tabs to the results tab
