@@ -2764,6 +2764,9 @@ div.EXLCitationLinkerFieldRibbonFormFieldsSubmit {
 //   padding-top: 1.5em;
 //   margin-top: auto/*for ie7*/;
 //   clear: right;
+// ETOadded
+// div.EXLResultsContainer:focus {outline:none;}
+// div.EXLResultsHeader:focus {outline:none;}
 // }
 
 
@@ -8287,7 +8290,7 @@ width:auto;
                 font-size: 80%; font-family: Arial;}
 .EXLSliderRefine {display: inline;}
 .EXLSliderRefine a ,.EXLSliderRefine a:hover{text-decoration: none; height:26px; width:96%; background-color: #2c3e50; margin:0; cursor: pointer;
-                padding: 0.1em 0.6em 0.2em; color: #ffffff; font-size: 80%; font-family: Arial; font-weight: normal; border: 1px solid #7f9db9;}
+                padding: 0.1em 0.6em 0.2em; color: #ffffff; font-size: 80%; font-family: Arial; font-weight: normal; border: 1px outset #7f9db9;}
 .EXLSliderContainer { width:90%; }
 .EXLDateRangeText {text-align: left;    margin-bottom: 25px;}
 .EXLDateRangeLine {margin-top:1em; margin-bottom:2em; padding-left:0.5em}
@@ -8299,9 +8302,9 @@ width:auto;
 .ui-slider-horizontal {height: .4em;}
 .ui-slider-horizontal .ui-slider-handle {top: -.25em;margin-left: -.4em;}
 .ui-slider .ui-slider-handle {width: 0.8em; height: 0.8em;}
-.datebox {border: solid 1px #0075B0;padding: 2px 3px 1px 3px;font-size: 80%;}
+.datebox {border: solid 1px #2c3e50;padding: 2px 3px 1px 3px;font-size: 80%;}
 .ui-widget-header {     border: 1px solid #aaaaaa;      background: #cccccc 50% 50% repeat-x;   color: #aaaaaa; font-weight: bold;}
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {color: #0075B0;text-decoration: none; outline:none;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {color: #2c3e50;text-decoration: none; outline:none;}
 
 /* Browseshelf styles */
 .multipleCoverImageBrowserShelfContainer {  background-image: url("../images/pixel.png");    background-repeat: no-repeat;    font-size: 0;    height: 56px;    margin: auto;    position: relative;    width: 38px;    margin: 10px;}
@@ -8379,7 +8382,7 @@ width:auto;
 
 /*Permalink*/
 #exlidPopupPermalinkContainer{z-index: 1002;}
-.EXLPopupPermalinkContainer { float:right; clear:right;background-color:#ecf0f3; width:750px; height:130px; padding-top:0.5em;}
+.EXLPopupPermalinkContainer { float:right; clear:right;background-color:#B9CEDF; width:750px; height:130px; padding-top:0.5em;}
 .EXLPopupPermalink {  font-size:80%; height:120px; width:728px; border:1px solid #d4d4d4; background-color:#FFFFFF; margin:auto;}
 
 /*header*/
@@ -8400,7 +8403,7 @@ div.EXLPermalinkHeaderButtons li { list-style:none; float:left; height:18px; bor
 div.EXLPermalinkHeaderButtons li span {background-image:none; background-repeat: no-repeat; width:18px; height:18px; display:inline; float:left; }
 div.EXLPermalinkHeaderButtons li a { padding:0.2em 0.2em 0.2em 0.2em; cursor:pointer; text-decoration:none	 }
 
-div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonCloseLabel 
+div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonCloseLabel { display:none  }
 div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonHelpLabel { display:inline  }
 div.EXLPermalinkHeaderButtons li a:hover span.EXLPermalinkHeaderButtonHelpLabel { text-decoration:underline  }
 div.EXLPermalinkHeaderButtons li a span.EXLPermalinkHeaderButtonHelp {background-image:none; background-position: center;border-right:1px solid #e1e1e1; }

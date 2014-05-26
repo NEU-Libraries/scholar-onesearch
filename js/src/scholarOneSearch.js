@@ -107,7 +107,7 @@ jQuery(function($) {
 
 
       //The Document ID
-      var titleStr = result.title + ' (' + result.id + ')';
+      var titleStr = result.title + ' (' + 'http://onesearch-test.library.neu.edu/NUdev:' + result.id + ')';
       var url = config.reportAProblem.baseUrl + encodeURIComponent(titleStr);
 
       var $link = config.tabTemplate();
@@ -427,7 +427,7 @@ jQuery(function($) {
     };
 
     var handleMediaQuerySuport = function(){
-      if(!Modernizr.mediaqueries){
+      if(!Modernizr.mediaqueries|!Modernizr.input.placeholder){
         alertOutdatedBrowser();
       }
 
@@ -441,7 +441,7 @@ jQuery(function($) {
      *
      */
     var alertOutdatedBrowser = function(){
-      $('#exlidHeaderSystemFeedback').append('<div class="alert alert-danger"><strong>You\'re Using an Outdated Web Browser</strong><br>In order to experience this website properly, please upgrade. Learn more at <a href="http://wiserbrowser.com">www.wiserbrowser.com</a></div>');
+      $('#exlidHeaderSystemFeedback').append('<div class="alert alert-danger"><strong>You\'re Using an Outdated Web Browser</strong><br>In order to experience this website properly, please upgrade. Learn more at <a href="http://whatbrowser.com">www.whatbrowser.com</a></div>');
     };
 
 
