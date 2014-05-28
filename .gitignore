@@ -8,5 +8,4 @@ lib
 dist
 .grunt
 .DS_Store
-.json
 .jsonX
