@@ -21,8 +21,8 @@ jQuery(function($) {
           return $( '<span class="icon-link" aria-hidden="true"></span>' );
         },
         text: 'Permalink',
-	path: '/NUdev:',
-//ETO        path: '/primo_library/libweb/action/dlDisplay.do?vid=NUdev&',
+	path: '/NU:',
+//ETO        path: '/primo_library/libweb/action/dlDisplay.do?vid=NU&',
 
       },
 
@@ -107,7 +107,7 @@ jQuery(function($) {
 
 
       //The Document ID
-      var titleStr = result.title + ' (' + 'http://onesearch-test.library.neu.edu/NUdev:' + result.id + ')';
+      var titleStr = result.title + ' (' + 'http://onesearch.library.neu.edu/NU:' + result.id + ')';
       var url = config.reportAProblem.baseUrl + encodeURIComponent(titleStr);
 
       var $link = config.tabTemplate();
@@ -281,7 +281,7 @@ jQuery(function($) {
     var worldCatLinks = function(){
       var worldCatBaseUrl = 'http://northeastern.worldcat.org/search?q=' ;
       if( worldcatLogo === undefined){
-        var worldcatLogo = '../customized/NUdev/images/worldcat-logo.png';
+        var worldcatLogo = '../customized/NU/images/worldcat-logo.png';
       }
       function getWCIndex(exSearch){
         switch (exSearch){
