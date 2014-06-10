@@ -3,6 +3,7 @@ npm-debug.log
 stagingServer.json
 devServer.json
 prodServer.json
+prodServer-old.json
 report
 lib
 dist
