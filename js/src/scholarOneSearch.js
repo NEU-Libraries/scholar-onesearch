@@ -132,8 +132,6 @@ jQuery(function($) {
     var buildPemaLink = function( result ){
       var c = config.permalLink;
       var url = [ window.location.origin ];
-      //url.push( c.path );
-      //url.push( 'docId=' +  encodeURIComponent( result.id )+'&fn=permalink'  );
       url.push( '/NU:' + encodeURIComponent(result.id) );
       url = url.join( '' );
       var $link = config.tabTemplate();
@@ -142,7 +140,6 @@ jQuery(function($) {
       $link.text(c.text).addClass('permalink');
       $link.attr("data-target", "#permalinkModal");
       $link.attr("data-toggle", "modal");
-      $link.attr("data-src", url);
       result.$el.find('ul.EXLResultTabs').append( $link );
 
       $link.wrap('<li class="EXLResultTab sos-permalink "/>');
@@ -152,8 +149,6 @@ jQuery(function($) {
         $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
         $('#permalinkModal').modal('toggle');
       });
-
-
     };
 
 
@@ -598,4 +593,19 @@ function helpText(boolean){
   var stub =  boolean ? 'Item in e-Shelf, click to remove' : 'Item not in e-Shelf, click to add';
   helpText = helpText + stub;
   return helpText;
+}
+
+//for permalink action button functionality
+//permalink open box function
+function openPermaLinkLbox(action,parameters,recordIndex,recordId){
+  var recordElement=$('#exlidResult'+recordIndex);
+  console.log("we clicked on permalink");
+  if(isFullDisplay()){
+    var recordElement=$('#resultsListNoId');
+  }
+  var url = [ window.location.origin ];
+  url.push( '/NU:' + encodeURIComponent(recordId) );
+  url = url.join( '' );
+  $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
+  $('#permalinkModal').modal('toggle');
 }
