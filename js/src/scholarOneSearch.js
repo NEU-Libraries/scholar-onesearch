@@ -213,25 +213,15 @@ jQuery(function($) {
           title: "Refine your search more."
       }).tooltip();
     };
+
     // Build the eShelf icons
     var  eShelfIcons = function(){
       //helper function to toggle between label text;
-      function helpText(boolean){
-        var helpText = "e-Shelf Action. ";
-        var stub =  boolean ? 'Item in e-Shelf, click to remove' : 'Item not in e-Shelf, click to add';
-        helpText = helpText + stub;
-        return helpText;
-      }
       function toggleEShelf(event){
-
         var $link = $(this);
-        //console.log($link.data('eshelf'));
         $link.data('eshelf', $link.data('eshelf') == 'true' ? 'false' : 'true');
-        //console.log($link.data('eshelf'));
         var newTitle =  ( $link.data('eshelf') == 'true') ?  'In e-Shelf' : 'Add to e-Shelf' ;
-        //console.log(newTitle);
         var newBoolean = ( $link.data('eshelf') == 'true') ?  false : true ;
-        //console.log(newBoolean);
 
         $link
           .attr('data-eshelf', newBoolean)
@@ -576,11 +566,36 @@ jQuery(function($) {
     }
 })(); */
 
-(function() {
-  $(".EXLButtonSendToMyShelfAdd").each(function() {
-    var addlink = $(this).find("a");
-    addlink.click(function() {
-      console.log("clicked add to eshelf");
-    })
-  })
-})();
+//modifying eshelf functionality to allow for toggling of icon
+function eshelfCreate(element,recordId,remote,scopes,index){
+  updateBasket(recordId,true,remote,scopes,index);
+  eshelfUpdate(element,true);
+  toggleshelf(element);
+  return false;
+}
+function eshelfRemove(element,recordId,remote,scopes,index){
+  updateBasket(recordId,false,remote,scopes,index);
+  eshelfUpdate(element,false);
+  toggleshelf(element);
+  return false;
+}
+function toggleshelf(element) {
+  var table = $(element).closest("td");
+  var eshelf = table.prev("td.EXLMyShelfStar");
+  var $link = eshelf.find("a");
+  $link.find('i').toggleClass('icon-bookmark-empty').toggleClass('icon-bookmark');
+  var newTitle =  ( $link.data('eshelf') == 'true') ?  'In e-Shelf' : 'Add to e-Shelf' ;
+  var newBoolean = ( $link.data('eshelf') == 'true') ?  false : true ;
+  $link
+    .attr('data-eshelf', newBoolean)
+      .attr( 'aria-checked' , newBoolean )
+        .attr('title', newTitle);
+  $link.tooltip('fixTitle');
+  $link.find('.sr-only').text( helpText(newBoolean) );
+}
+function helpText(boolean){
+  var helpText = "e-Shelf Action. ";
+  var stub =  boolean ? 'Item in e-Shelf, click to remove' : 'Item not in e-Shelf, click to add';
+  helpText = helpText + stub;
+  return helpText;
+}
