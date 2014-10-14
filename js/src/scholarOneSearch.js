@@ -149,7 +149,7 @@ jQuery(function($) {
       $link.removeAttr("href");
       $link.prepend( icon );
       $link.click(function(event) {
-        $("#permalinkLink").html('<input type="text" value="' + url +'" onclick="selectAllText(this);" disabled/>');
+        $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
         $('#permalinkModal').modal('toggle');
       });
 
