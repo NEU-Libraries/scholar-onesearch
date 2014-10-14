@@ -9,7 +9,7 @@ if ( typeof jQuery === 'undefined' ){
 jQuery(function($) {
   var scholarOneSearch = (function(){
     'use strict';
-
+    $('body').append('<div id="permalinkModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true"><div class="modal-dialog modal-vertical-centered"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" >Permalink</h4></div><div class="modal-body" id="permalinkLink"></div></div></div></div>');
     /**
      * Default Config
      * @type {Object}
@@ -132,24 +132,26 @@ jQuery(function($) {
     var buildPemaLink = function( result ){
       var c = config.permalLink;
       var url = [ window.location.origin ];
-      url.push( c.path );
-      url.push( 'docId=' +  encodeURIComponent( result.id )+'&fn=permalink'  );
+      //url.push( c.path );
+      //url.push( 'docId=' +  encodeURIComponent( result.id )+'&fn=permalink'  );
+      url.push( '/NU:' + encodeURIComponent(result.id) );
       url = url.join( '' );
       var $link = config.tabTemplate();
       var icon = c.icon();
 
-      $link.attr({
-        href: url
-      }).text( c.text ).addClass('permalink');
-      $link.attr("onclick", "boomCallToRum('sendTo_Permalink_2', false);javascript:openPermaLinkLbox('permalink','docId=" + result.id + "&fn=permalink','2','"+ result.id+"');return false;");
-      $link.attr("target", "_blank");
-
+      $link.text(c.text).addClass('permalink');
+      $link.attr("data-target", "#permalinkModal");
+      $link.attr("data-toggle", "modal");
+      $link.attr("data-src", url);
       result.$el.find('ul.EXLResultTabs').append( $link );
 
       $link.wrap('<li class="EXLResultTab sos-permalink "/>');
-
+      $link.removeAttr("href");
       $link.prepend( icon );
-
+      $link.click(function(event) {
+        $("#permalinkLink").html('<input type="text" value="' + url +'" onclick="selectAllText(this);" disabled/>');
+        $('#permalinkModal').modal('toggle');
+      });
 
 
     };
@@ -554,8 +556,9 @@ jQuery(function($) {
 
 /**
  * Captures the old openPrimoLightBox function and just adds a no overflow class to the body element when the modal is open.
- */
 
+/*I'm pretty sure this function doens't do anything*/
+/*
 (function() {
     var openPrimoLightBox = openPrimoLightBox || new Function();
     var oldPrimoLightBox =  openPrimoLightBox;
@@ -571,4 +574,13 @@ jQuery(function($) {
       $('body').removeClass('modal-open');
       return result;
     }
+})(); */
+
+(function() {
+  $(".EXLButtonSendToMyShelfAdd").each(function() {
+    var addlink = $(this).find("a");
+    addlink.click(function() {
+      console.log("clicked add to eshelf");
+    })
+  })
 })();
