@@ -21,9 +21,8 @@ jQuery(function($) {
           return $( '<span class="icon-link" aria-hidden="true"></span>' );
         },
         text: 'Permalink',
-	path: '/NU:',
-//ETO        path: '/primo_library/libweb/action/dlDisplay.do?vid=NU&',
-
+	//path: '/NU:',
+        path: '/primo_library/libweb/action/permalink.do?',
       },
 
 
@@ -131,13 +130,10 @@ jQuery(function($) {
      * @return { Object }        Dom node
      */
     var buildPemaLink = function( result ){
-      //var url = 'hhttp://onesearch.northeastern.edu/primo_library/libweb/action/dlDisplay.do?vid=NU&docId=' + id + &fn=permalink;
       var c = config.permalLink;
       var url = [ window.location.origin ];
       url.push( c.path );
-      //url.push( encodeURIComponent( result.id ); //ETOadded
-//      url.push( 'docId=' +  encodeURIComponent( result.id +'&fn=permalink' ) );
-      url.push( '' + encodeURIComponent( result.id ) );	
+      url.push( 'docId=' +  encodeURIComponent( result.id )+'&fn=permalink'  );
       url = url.join( '' );
       var $link = config.tabTemplate();
       var icon = c.icon();
@@ -145,6 +141,8 @@ jQuery(function($) {
       $link.attr({
         href: url
       }).text( c.text ).addClass('permalink');
+      $link.attr("onclick", "boomCallToRum('sendTo_Permalink_2', false);javascript:openPermaLinkLbox('permalink','docId=" + result.id + "&fn=permalink','2','"+ result.id+"');return false;");
+      $link.attr("target", "_blank");
 
       result.$el.find('ul.EXLResultTabs').append( $link );
 
@@ -225,17 +223,21 @@ jQuery(function($) {
       function toggleEShelf(event){
 
         var $link = $(this);
-        var newTitle =  ( $link.data('eshelf') ) ?  'Add to e-Shelf' : 'In e-Shelf' ;
-        var newBoolean = !( $link.data('eshelf') );
-
+        //console.log($link.data('eshelf'));
+        $link.data('eshelf', $link.data('eshelf') == 'true' ? 'false' : 'true');
+        //console.log($link.data('eshelf'));
+        var newTitle =  ( $link.data('eshelf') == 'true') ?  'In e-Shelf' : 'Add to e-Shelf' ;
+        //console.log(newTitle);
+        var newBoolean = ( $link.data('eshelf') == 'true') ?  false : true ;
+        //console.log(newBoolean);
 
         $link
           .attr('data-eshelf', newBoolean)
-            .attr( 'aria-checked' , newBoolean )
-                .attr('title',newTitle);
-        $link.tooltip({
-          title: newTitle
-          });
+            .attr( 'aria-checked' , newBoolean );
+        $link
+          .attr('title', newTitle);
+        $link.tooltip('fixTitle');
+
         $link.find('i').toggleClass('icon-bookmark-empty').toggleClass('icon-bookmark');
         $link.find('.sr-only').text( helpText(newBoolean) );
         return $link;
@@ -257,18 +259,18 @@ jQuery(function($) {
             .attr( 'aria-role', 'checkbox')
             .attr( 'aria-checked' , eShelf )
             .addClass('btn btn-success btn-small')
-            .tooltip()
+            .tooltip({
+              title: "Add to e-Shelf"
+            })
               .click(toggleEShelf);
           img
             .after( $('<span id="' + labelId + '" class="sr-only">' + helpText(eShelf) + '</span>' ) )
             .after( icon )
             .hide();
-
-
+                
         });
 
       }
-
     };
 
 
@@ -362,7 +364,7 @@ jQuery(function($) {
           searchString = searchString.replace(/\"/g, '&quot;');
           searchString = searchString.replace(/\'/g, "\\'");
 
-          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="'+ worldcatLogo +'" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchString + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for more results.">Search <img src="'+ worldcatLogo +'" width="22" height="22" alt=" "> Other Libraries</a>').tooltip();
           //add the worldcat link
           $('.EXLSearchFieldRibbonFormLinks').append($link);
         }
@@ -373,7 +375,7 @@ jQuery(function($) {
           //escape quotes
           searchTerm = searchTerm.replace(/\"/g, '&quot;');
           searchTerm = searchTerm.replace(/\'/g, "\\'");
-          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search WorldCat for ' + searchTerm + '">Search <img src="'+ worldcatLogo +'" width="22" height="22" alt=" "> WorldCat</a>').tooltip();
+          $link = $('<a onclick="javascript:window.open(\''+ worldCatBaseUrl + searchTerm + '\');" href="javascript:void(0);" class="navbar-link" title="Search Other Libraries for ' + searchTerm + '">Search <img src="'+ worldcatLogo +'" width="22" height="22" alt=" "> Other Libraries</a>').tooltip();
 
           //add the worldcat links
           $('.EXLSearchFieldRibbonAdvancedSearchLink').before($link);
@@ -455,7 +457,6 @@ jQuery(function($) {
           test: false,
           nope: ['//yatil-cdn.s3.amazonaws.com/accessifyhtml5.min.js'],
           complete: function(){
-
             //variable for the main container
             var main;
             //Query the Dom for the landmark roles to apply
