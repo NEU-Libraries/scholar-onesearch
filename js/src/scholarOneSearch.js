@@ -204,9 +204,19 @@ jQuery(function($) {
         }
       });
 
-      $('li.EXLFacetsDisplayMore').find('a').html('Show more options<i class="icon-gear icon-large pull-right"/>').attr({
+      /*$('li.EXLFacetsDisplayMore').find('a').html('Show more options<i class="icon-gear icon-large pull-right"/>').attr({
           title: "Refine your search more."
-      }).tooltip();
+      }).tooltip();*/
+          $('li.EXLFacetsDisplayMore').find('a').html('Show more options<i class="icon-gear icon-large pull-right"/>').attr({
+                title: "Refine your search more.",
+            }).attr('data-target','#exliWhiteContent').attr('data-toggle','modal').tooltip().click(function(e) {
+                $("#exliWhiteContent").addClass("modal").addClass("fade").attr("role","dialog").attr("aria-labelledby","modal");
+                populateMultipleFacetsLightBox($(this));
+                $("#exliGreyOverlay").hide();
+                $("#exliWhiteContent").css("z-index", "");
+                $("#exliWhiteContent").modal('toggle');
+            });
+
     };
 
     // Build the eShelf icons
@@ -595,11 +605,9 @@ function helpText(boolean){
   return helpText;
 }
 
-//for permalink action button functionality
-//permalink open box function
+//for permalink action link functionality
 function openPermaLinkLbox(action,parameters,recordIndex,recordId){
   var recordElement=$('#exlidResult'+recordIndex);
-  console.log("we clicked on permalink");
   if(isFullDisplay()){
     var recordElement=$('#resultsListNoId');
   }
@@ -609,3 +617,95 @@ function openPermaLinkLbox(action,parameters,recordIndex,recordId){
   $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
   $('#permalinkModal').modal('toggle');
 }
+
+/*for show more options modals THESE ARE DIRECTLY COPIED FROM THE PRIMO JS FILE EXCEPT FOR ONE MARKED ADDED LINE*/
+function populateMultipleFacetsLightBox(clickedElement){
+  addLightBoxDivs();
+  var currentFacetGroupId=$(clickedElement).parents('div.EXLFacetContainer').attr('id');
+  var currentFacetGroup=currentFacetGroupId.substring(10);
+  fn='multipleFacets';
+  openPrimoLightBox('search','multipleFacets','multipleFacetsXml','&facetGroupId='+currentFacetGroup,'isMultipleFacetsAjaxRequest=true');
+}
+function openPrimoLightBox(action,fn,elementReturned,additionalParameters,urlParameters,additionalSucessHandler,alignLightBox,clickedElement){
+  $('#exliWhiteContent').css('z-index','1002');
+  addLoadingLBox();
+  $('#exliLoadingFdb').css('top',0);
+  addLightBoxDivs(alignLightBox,clickedElement);
+  var timestamp=new Date().getTime();
+  var url="";
+  var mode=$('#mode').val();
+  if(action!="searchDB"){
+    url=action+".do"+"?fn="+fn+"&ts="+timestamp+additionalParameters;
+  } else {
+    url=action+".do"+"?fn="+fn+"&ts="+timestamp;
+    if(additionalParameters=="IamDeepLink"){
+      document.getElementById('flagForFindDbDeepLink').title="DeepLink";
+    }
+    else{
+      if(additionalParameters=="IamDeepLinkToMyDatabases"){
+        document.getElementById('flagForFindDbDeepLink').title="DeepLinkToMyDatabases";
+      } else {
+        document.getElementById('flagForFindDbDeepLink').title="NotADeepLink";
+      }
+    }
+  }
+  url=url+"&mode="+mode+"&"+urlParameters;
+  var data;
+  $.ajax({
+    url:url,
+    data:data,
+    dataType:'xml',
+    global:false,
+    beforeSend:function(request){
+      setAjaxRequestHeader(request);
+    },
+    error:function(request,errorType,exceptionOcurred){
+      if(errorType=='timeout'){
+        notifyAjaxTimeout();
+      } else {
+        generalAjaxError();
+      }
+      document.getElementById('exliLoadingFdb').style.display='none';
+      $('#exliLoadingFdb').css('top',0);
+      document.getElementById('exliGreyOverlay').style.display='none';
+      document.getElementById('exliWhiteContent').style.display='none';
+      return false;
+    },
+    success:function(data){
+      if(isAjaxXmlRedirect(data)){
+        handleAjaxXmlRedirect(data);
+      }
+      var elm=$(data).find(elementReturned);
+      var cdata=$(elm).text();
+      var n;
+      n=document.getElementById("exliWhiteContent");
+      if(additionalParameters=="IamDeepLinkToMyDatabases"&$(".EXLMyAccountSelectedTab").length>0){
+        var id=$(".EXLMyAccountSelectedTab").attr("id");
+        $("#"+id).removeClass("EXLMyAccountSelectedTab");
+        $("#exlidMyDatabasesTab").addClass("EXLMyAccountSelectedTab");
+        $("#savedSelectedMyAccountTab").attr("title",id);
+      }
+      var xmlText=cdata.replace(/\n\n/g,"\n").replace(/&lt;/g,"<").replace(/&gt;/g,">");
+      var newdiv=document.createElement("div");
+      newdiv.id='exliPrimoLightBoxdiv';
+      newdiv.innerHTML=xmlText;
+      n.innerHTML='';
+      $(n).append(newdiv);
+      $(n).find(".EXLReset").attr("data-dismiss","modal");/*ADDED*/
+      document.getElementById('exliLoadingFdb').style.display='none';
+      if(!alignLightBox){
+        $('#exliLoadingFdb').css('top',0);
+        $('#exliWhiteContent').show();
+        $('#exliPrimoLightBoxdiv').attr("tabindex",-1).focus();
+      } else {
+        setLBPosition(clickedElement,1);
+        $('#exliWhiteContent').show();
+        $('#exliWhiteContent').first('a').attr("tabindex",-1).focus();
+      }
+      if(additionalSucessHandler!=null){
+        additionalSucessHandler(additionalParameters);
+      }
+    }
+  });
+}
+
