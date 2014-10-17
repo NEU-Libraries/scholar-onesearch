@@ -133,7 +133,8 @@ jQuery(function($) {
     var buildPemaLink = function( result ){
       var c = config.permalLink;
       var url = [ window.location.origin ];
-      url.push( '/NU:' + encodeURIComponent(result.id) );
+      //url.push( '/NU:' + encodeURIComponent(result.id) );
+      url.push( '/NU:' + result.id );
       url = url.join( '' );
       var $link = config.tabTemplate();
       var icon = c.icon();
