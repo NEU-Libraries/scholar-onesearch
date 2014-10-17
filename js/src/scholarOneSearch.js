@@ -10,6 +10,7 @@ jQuery(function($) {
   var scholarOneSearch = (function(){
     'use strict';
     $('body').append('<div id="permalinkModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true"><div class="modal-dialog modal-vertical-centered"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" >Permalink</h4></div><div class="modal-body" id="permalinkLink"></div></div></div></div>');
+    $("html,body").scrollTop(0);
     /**
      * Default Config
      * @type {Object}
@@ -440,7 +441,7 @@ jQuery(function($) {
      *
      */
     var alertOutdatedBrowser = function(){
-      $('#exlidHeaderSystemFeedback').append('<div class="alert alert-danger"><strong>You\'re Using an Outdated Web Browser</strong><br>In order to experience this website properly, please upgrade. Learn more at <a href="http://whatbrowser.com">www.whatbrowser.com</a></div>');
+      $('#exlidHeaderContainer').append('<div class="alert alert-danger"><strong>You\'re Using an Outdated Web Browser</strong><br>In order to experience this website properly, please upgrade. Learn more at <a href="http://whatbrowser.com">www.whatbrowser.com</a></div>');
     };
 
 
