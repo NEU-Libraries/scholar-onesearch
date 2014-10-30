@@ -23,6 +23,7 @@
     .make-row();
   }
   div.EXLSearchFieldRibbonPreFilters{
+    display:inline-block;
     border: none;
     background: none;
     min-height: 1px;
@@ -82,6 +83,7 @@
   //left group of form fields
   div.EXLSearchFieldRibbonFormFieldsGroup1{
     margin-top: 15px;
+    padding-bottom:7px;
     div.EXLAdvancedSearchFormRow{
       .make-row();
 
@@ -229,6 +231,9 @@
 
 .EXLBooleanOperatorInput {
   margin-top: 8px;
+}
+.EXLBooleanOperatorInput.EXLHide {
+  display:none;
 }
 
 .EXLAdvancedSearchFormDateRangeRow label.EXLHide{
