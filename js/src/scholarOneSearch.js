@@ -346,7 +346,7 @@ jQuery(function($) {
 
 
         //also language search
-        if ($('#exlidInput_language_').val() !== 'all_items'){
+        if (($("#exlidInput_language_").length > 0) && ($('#exlidInput_language_').val() !== 'all_items')){
           searchString += 'ln' + '%3A' + $('#exlidInput_language_').val() + ' ';
         }
 
@@ -382,7 +382,7 @@ jQuery(function($) {
 
       }
       else{
-        return;
+        return false;
       }
     };
 
@@ -521,6 +521,10 @@ jQuery(function($) {
 
 
       $('#search_field').attr('placeholder','Search...');
+      //hides simple search link for nu_journals view
+      if ($("#vid").val() == 'NU_JOURNALS') {
+        $(".EXLSearchFieldRibbonFormLinks").hide();
+      }
       draggable();
       eShelfIcons();
       buildFacetCollapse();
