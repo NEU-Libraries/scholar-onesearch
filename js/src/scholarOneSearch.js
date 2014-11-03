@@ -525,6 +525,29 @@ jQuery(function($) {
       if ($("#vid").val() == 'NU_JOURNALS') {
         $(".EXLSearchFieldRibbonFormLinks").hide();
       }
+
+      $(".EXLCitationsTab a").click(function() {
+          window.setTimeout(citationlinks, 2000);
+        function citationlinks() { 
+          $(".EXLCitationsLinks").find("a").each(function() {
+            var href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
+            $(this).attr('href', href);
+          });
+        }
+      });
+      $(".EXLDetailsTab a").click(function() {
+        window.setTimeout(detailslinks, 2000);
+        function detailslinks() {
+          $(".EXLDetailsLinksTitle").find(".EXLFullDetailsOutboundLink").each(function() {
+            var href = $(this).attr('href');
+            if (href.indexOf("http://ezproxy") != 0) {
+              href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
+              $(this).attr('href', href);
+            }
+          });
+        }
+      });
+
       draggable();
       eShelfIcons();
       buildFacetCollapse();
@@ -576,6 +599,17 @@ jQuery(function($) {
       return result;
     }
 })(); */
+(function() {
+  window.setTimeout(outbound, 2000);
+})();
+
+//prepend ezproxy for outbound links
+function outbound() {
+  $(".EXLDetailsLinksTitle").find(".EXLFullDetailsOutboundLink").each(function() {
+    var href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
+    $(this).attr('href', href);
+  });
+}
 
 //modifying eshelf functionality to allow for toggling of icon
 function eshelfCreate(element,recordId,remote,scopes,index){
