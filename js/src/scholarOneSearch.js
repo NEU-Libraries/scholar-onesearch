@@ -525,8 +525,8 @@ jQuery(function($) {
       if ($("#vid").val() == 'NU_JOURNALS') {
         $(".EXLSearchFieldRibbonFormLinks").hide();
       }
-
-      $(".EXLCitationsTab a").click(function() {
+      //these two click functions should only apply to WOS links
+      /*$(".EXLCitationsTab a").click(function() {
           window.setTimeout(citationlinks, 2000);
         function citationlinks() { 
           $(".EXLCitationsLinks").find("a").each(function() {
@@ -546,7 +546,7 @@ jQuery(function($) {
             }
           });
         }
-      });
+      });*/
 
       draggable();
       eShelfIcons();
@@ -600,16 +600,32 @@ jQuery(function($) {
     }
 })(); */
 (function() {
-  window.setTimeout(outbound, 2000);
+  //window.setTimeout(outbound, 2000);
+        var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
+      if (viewonline.indexOf("fulltextlinktorsrc") >= 0) {
+        var rsrcsplit = viewonline.split(',');
+        var newhref = 'http://ezproxy.neu.edu/login?URL=' + rsrcsplit[rsrcsplit.length -1];
+        $(".EXLViewOnlineTab .EXLTabBoomId").val(newhref);
+        var viewbutton = $(".EXLViewOnlineTab").find("a");
+        viewbutton.attr("href", newhref);
+        viewbutton.attr("target", "_blank");
+        var iframe = $(".EXLContainer-viewOnlineTab").find("iframe");
+        iframe.attr('src', newhref);
+        var extlink = $(".EXLContainer-viewOnlineTab").find(".EXLTabHeaderContent a");
+        extlink.attr("href", newhref);
+      }
 })();
 
 //prepend ezproxy for outbound links
-function outbound() {
+/*function outbound() {
   $(".EXLDetailsLinksTitle").find(".EXLFullDetailsOutboundLink").each(function() {
-    var href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
-    $(this).attr('href', href);
+    var href = $(this).attr('href');
+    if (href.indexOf("webofknowledge") >=0 || href.indexOf("isiknowledge") >= 0) {
+      href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
+      $(this).attr('href', href);
+    }
   });
-}
+}*/
 
 //modifying eshelf functionality to allow for toggling of icon
 function eshelfCreate(element,recordId,remote,scopes,index){
