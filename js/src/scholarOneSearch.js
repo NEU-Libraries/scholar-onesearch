@@ -153,6 +153,23 @@ jQuery(function($) {
       });
     };
 
+    /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
+    var buildViewOnline = function( result ){
+         var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
+      if (viewonline.indexOf("fulltextlinktorsrc") >= 0) {
+        var rsrcsplit = viewonline.split(',');
+        var newhref = rsrcsplit[rsrcsplit.length -1].split(/&(.+)/)[0];
+        newhref = 'http://ezproxy.neu.edu/login?URL=' + newhref;
+        var viewbuttonhref = "http://onesearch-test.neu.edu/primo_library/libweb/action/dlDisplay.do?tabs=viewOnlineTab&vid=NUdev&docId=" + result.id + "&fn=permalink&gathStatTab=true";
+        $(".EXLViewOnlineTab .EXLTabBoomId").val(viewbuttonhref);
+        if ($(".EXLViewOnlineTab").hasClass("EXLResultSelectedTab")) {
+          var iframe = $(".EXLContainer-viewOnlineTab").find("iframe");
+          iframe.attr('src', newhref);
+          var extlink = $(".EXLContainer-viewOnlineTab").find(".EXLTabHeaderContent a");
+          extlink.attr("href", newhref);
+        }
+      }
+    }
 
     /**
      * handleResults returns a buildLinks function that adds tabs to the results tab
@@ -162,7 +179,7 @@ jQuery(function($) {
         var result = prepareResult( $(this)  );
         buildPemaLink( result );
         reportAProblem( result );
-
+        buildViewOnline( result);
 
       };
       var $results = $('.' + config.resultClass );
@@ -578,42 +595,18 @@ jQuery(function($) {
 
 
 
-/**
- * Captures the old openPrimoLightBox function and just adds a no overflow class to the body element when the modal is open.
-
-/*I'm pretty sure this function doens't do anything*/
-/*
-(function() {
-    var openPrimoLightBox = openPrimoLightBox || new Function();
-    var oldPrimoLightBox =  openPrimoLightBox;
-    openPrimoLightBox = function() {
-      var result = oldPrimoLightBox.apply(this, arguments);
-      $('body').addClass('modal-open');
-      return result;
-    };
-    var hideLightBox = hideLightBox || new Function();
-    var oldhideLightBox = hideLightBox;
-    hideLightBox = function(){
-      var result = oldhideLightBox.apply(this, arguments);
-      $('body').removeClass('modal-open');
-      return result;
-    }
-})(); */
 (function() {
   //window.setTimeout(outbound, 2000);
-        var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
-      if (viewonline.indexOf("fulltextlinktorsrc") >= 0) {
-        var rsrcsplit = viewonline.split(',');
-        var newhref = 'http://ezproxy.neu.edu/login?URL=' + rsrcsplit[rsrcsplit.length -1];
-        $(".EXLViewOnlineTab .EXLTabBoomId").val(newhref);
-        var viewbutton = $(".EXLViewOnlineTab").find("a");
-        viewbutton.attr("href", newhref);
-        viewbutton.attr("target", "_blank");
-        var iframe = $(".EXLContainer-viewOnlineTab").find("iframe");
-        iframe.attr('src', newhref);
-        var extlink = $(".EXLContainer-viewOnlineTab").find(".EXLTabHeaderContent a");
-        extlink.attr("href", newhref);
-      }
+  var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
+  if (viewonline.indexOf("fulltextlinktorsrc") >= 0) {
+    var viewbutton = $(".EXLViewOnlineTab").find("a");
+    viewbutton.click(function(event) {
+      var iframe = $(".EXLContainer-viewOnlineTab").find("iframe");
+      iframe.attr('src', newhref);
+      var extlink = $(".EXLContainer-viewOnlineTab").find(".EXLTabHeaderContent a");
+      extlink.attr("href", newhref);
+    });
+  }
 })();
 
 //prepend ezproxy for outbound links
