@@ -132,6 +132,9 @@ jQuery(function($) {
      */
     var buildPemaLink = function( result ){
       var c = config.permalLink;
+      if (!window.location.origin) {
+        window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+      }      
       var url = [ window.location.origin ];
       //url.push( '/NU:' + encodeURIComponent(result.id) );
       url.push( '/NU:' + result.id );
