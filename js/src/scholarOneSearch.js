@@ -545,6 +545,7 @@ jQuery(function($) {
       if ($("#vid").val() == 'NU_JOURNALS') {
         $(".EXLSearchFieldRibbonFormLinks").hide();
       }
+      $("#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks").append('<a href="search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&vid=NU_JOURNALS">Journal Title Search</a>');
       //these two click functions should only apply to WOS links
       /*$(".EXLCitationsTab a").click(function() {
           window.setTimeout(citationlinks, 2000);
