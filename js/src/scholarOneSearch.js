@@ -601,7 +601,7 @@ jQuery(function($) {
 (function() {
   //window.setTimeout(outbound, 2000);
   var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
-  if (viewonline.indexOf("fulltextlinktorsrc") >= 0) {
+  if (viewonline && viewonline.indexOf("fulltextlinktorsrc") >= 0) {
     var viewbutton = $(".EXLViewOnlineTab").find("a");
     viewbutton.click(function(event) {
       var iframe = $(".EXLContainer-viewOnlineTab").find("iframe");
