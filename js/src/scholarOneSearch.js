@@ -525,6 +525,7 @@ jQuery(function($) {
       //hides simple search link for nu_journals view
       if ($("#vid").val() == 'NU_JOURNALS') {
         $(".EXLSearchFieldRibbonFormLinks").hide();
+        $("#exlidSearchIn").prop("disabled", true);
       }
       $("#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks").append('<a href="search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&vid=NU_JOURNALS">Journal Title Search</a>');
 
