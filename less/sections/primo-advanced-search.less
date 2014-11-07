@@ -8,7 +8,7 @@
   //removing the padding to the top of the search tile
   padding: 0 0 0 0;
   clear: both;
-
+  border-radius:4px; //having border radius at all scaled sizes
 
 }//#exlidAdvancedSearchTile
 
@@ -39,8 +39,8 @@
     float: left;
     margin-left: 25px;
     @media (min-width: @screen-md) {
-      bottom: 90px;
-      margin-bottom: -90px;
+      bottom: 132px;
+      margin-bottom: -132px;
       //style link a bs .nav-link
     }
     a{
@@ -205,12 +205,13 @@
     text-indent: 0;
     display: block;
     width: auto;
-    clear:both;
+    clear:none;
     @media (min-width: @screen-md) {
       position: relative;
       bottom: 50px;
       margin-bottom: -50px;
       float: none;
+      clear:both;
     }
   } //.EXLSearchFieldRibbonFormLinks,
   .EXLSearchFieldRibbonFormSubmitSearch{
