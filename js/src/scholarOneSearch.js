@@ -527,7 +527,8 @@ jQuery(function($) {
         $(".EXLSearchFieldRibbonFormLinks").hide();
         $("#exlidSearchIn").prop("disabled", true);
       }
-      $("#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks").append('<a href="search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&vid=NU_JOURNALS">Journal Title Search</a>');
+      //add Journal Title Search Link to advanced search page (explictly not the browse search page which also uses the advancedsearchribbon class)
+      $("body").not(".EXLBrowseList").find("#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks").append('<a href="search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&vid=NU_JOURNALS">Journal Title Search</a>');
 
 
       draggable();
