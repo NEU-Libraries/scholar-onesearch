@@ -541,6 +541,8 @@ jQuery(function($) {
       addToolTips();
       handleMediaQuerySuport();
       a11y();
+      //for tooltip to stop jumping
+      $('[rel=tooltip]').tooltip({container: 'body'});
 
     };
 
