@@ -12,6 +12,7 @@ module.exports = function(grunt) {
     prodServer: grunt.file.readJSON('conf/prodServer.json'),
     stagingServer: grunt.file.readJSON('conf/stagingServer.json'),
     devServer: grunt.file.readJSON('conf/devServer.json'),
+    servicesServer: grunt.file.readJSON('conf/servicesServer.json'),
     targetServer : grunt.file.readJSON(target),
 
     // Uglifyjs minify / mangle the js for the Frontend.
@@ -92,6 +93,20 @@ module.exports = function(grunt) {
           host: '<%= prodServer.host %>',
           username: '<%= prodServer.username %>',
           password: '<%= prodServer.password %>',
+          srcBasePath: "dist/",
+          ignoreErrors: true,
+          createDirectories: true,
+        },
+      },
+      services: {
+        files: {
+          "./": "dist/**"
+        },
+        options: {
+          path: '<%= servicesServer.path %>',
+          host: '<%= servicesServer.host %>',
+          username: '<%= servicesServer.username %>',
+          password: '<%= servicesServer.password %>',
           srcBasePath: "dist/",
           ignoreErrors: true,
           createDirectories: true,
@@ -305,6 +320,21 @@ module.exports = function(grunt) {
           dest: 'dist/static_htmls/'
         } ],
       },
+      services:{
+        options: {
+          pretty: true,
+          data:{
+            target: '<%= servicesServer %>',
+          }
+        },
+        files:[ {
+          expand: true,
+          flatten: true,
+          src: "templates/*.jade",
+          ext: ".html",
+          dest: 'dist/static_htmls/'
+        } ],
+      },
       prod:{
         options: {
           pretty: true,
@@ -404,6 +434,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy',  ['default', 'jade:target', 'sftp:target']);
   grunt.registerTask('deploy-prod', ['default', 'jade:prod' ,'sftp:prod']);
   grunt.registerTask('deploy-staging', ['default', 'jade:staging', 'sftp:staging']);
+  grunt.registerTask('deploy-services', ['default', 'jade:services', 'sftp:services']);
   grunt.registerTask('deploy-dev', ['clean' , 'svgmin', 'imagemin', 'less:production', 'autoprefixer', "cssmin", "bless:prod" , 'concat' , 'copy' , 'jade:dev', 'uglify' ,'sftp:dev']);
 
   // Run the Jasmine specs
