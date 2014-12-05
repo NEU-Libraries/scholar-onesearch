@@ -299,5 +299,10 @@ a[title="edit the properties of this query (opens in a new window)"]{
   }
 }
 
+/*for special fines message*/
+#FinesAndFeesTable:after {
+  &:extend(.alert, .alert-warning);
+  content:'This page only displays fines for the current week. Please check your student account for other fines.';
+}
 
 
