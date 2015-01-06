@@ -552,6 +552,12 @@ jQuery(function($) {
       //add Journal Title Search Link to advanced search page (explictly not the browse search page which also uses the advancedsearchribbon class)
       $("body").not(".EXLBrowseList").find("#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks").append('<a href="search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&vid=NU_JOURNALS">Journal Title Search</a>');
       
+      //add message about paying Fines
+      if($("#FinesAndFeesTable")) {
+        $("<div class='alert alert-warning'>These are your library fines for this week only. For total fines, check your Northeastern Student Account or contact <a href='mailto:circulation@neu.edu'>circulation@neu.edu</a>.</div>").insertAfter("#FinesAndFeesTable");
+      }
+
+
       //these two click functions should only apply to WOS links
       /*$(".EXLCitationsTab a").click(function() {
           window.setTimeout(citationlinks, 2000);
