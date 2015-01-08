@@ -22,6 +22,53 @@
       a(href='#') Accessibility Statement &amp; Disclaimer
 if target.name === "Development"
   script#sos-app-js(src=target.assetPath + '/js/sos-app.js')
+  script.
+    (function() {
+    //Build the tour function
+    // Instance the tour
+    var tour = new Tour({
+    steps:[
+    {
+    element: "#search_field",
+    title: "Search field",
+    placement: "bottom",
+    content: "In this field you can enter your search term(s) whether it be a title, author, or other piece of information"
+    },
+    {
+    element: "#showMoreOptions",
+    title: "Choose a Search Scope",
+    placement: "bottom",
+    content: "Use the drop down menu to choose between different search scopes:<ul><li>Library Catalogs + Articles searches all NU Libraries content and beyond, including books, articles, journals, media, and more.</li><li>Library Catalogs searches print and electronic materials in local collections, except for articles.</li><li>Law Library Catalog searches the NU Law Library’s holdings.</li></ul>"
+    },
+    {
+    element: "#exlidSignIn a",
+    title: "Remember to Sign In",
+    placement: "left",
+    content: "Sign in to Scholar OneSearch with your myNEU credentials to see more complete results and to customize your search experience.",
+    },
+    /*{
+    path: "search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe",
+    element: "#exlidFacet0",
+    title: "Refine your Results",
+    placement: "right",
+    content: "Use any combination of filters after searching to find exactly the results you need.",
+    },
+    {
+    element: ".EXLResultsSortBy",
+    title: "Sort your Reults",
+    placement: "top",
+    content: "Order your search results by relevance, date, popularity, author, or title. "
+    }*/
+    ],
+    backdrop: true,
+    debug: true,
+    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><button class='tour-close close' data-role='end'></button><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>Prev</button><span data-role='separator'>|</span><button class='btn btn-default' data-role='next'>Next</button></div></nav></div>"
+    });
+    // Initialize the tour
+    tour.init();
+    // Start the tour
+    $("#tour_start").click(function(){tour.restart();});
+    }());
 else
   script#sos-app-js(src=target.assetPath + '/js/sos-app.min.js')
 if target.name === "Production"
