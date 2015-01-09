@@ -55,10 +55,10 @@ if target.name === "Development"
     content: "Sign in to Scholar OneSearch with your myNEU credentials to see more complete results and to customize your search experience.",
     //onNext: 'function(tour) { tour.start(); }'
     //next: 3,
-    //redirect: function(){document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe';},
+    onNext: function(){document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe'; return (new jQuery.Deferred()).promise(); tour.next();},
     },
     {
-    path: "search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe",
+    path: "/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe",
     element: "#exlidFacet0",
     title: "Refine your Results",
     placement: "right",
@@ -68,7 +68,7 @@ if target.name === "Development"
     //orphan:true
     },
     {
-    path: "search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe",
+    path: "/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe",
     element: ".EXLResultsSortBy",
     title: "Sort your Results",
     placement: "top",
