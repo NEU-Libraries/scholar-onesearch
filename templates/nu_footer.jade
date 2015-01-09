@@ -21,6 +21,8 @@
     li.EXLFooterLastLink
       a(href='#') Accessibility Statement &amp; Disclaimer
 if target.name === "Development"
+  .tour-link
+    a#tour_start Take a tour!
   script#sos-app-js(src=target.assetPath + '/js/sos-app.js')
   script.
     (function() {
@@ -30,6 +32,9 @@ if target.name === "Development"
     debug: true,
     autoscroll: true,
     template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><button class='tour-close close' data-role='end'></button><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>Prev</button><span data-role='separator'>|</span><button class='btn btn-default' data-role='next'>Next</button></div></nav></div>",
+    onEnd: function() {
+    document.location.href = "/";
+    },
     steps:[
     {
     element: "#search_field",
@@ -83,6 +88,20 @@ if target.name === "Development"
     title: "Report a Problem",
     placement: "top",
     content: "Let us know if something's not working"
+    },
+    {
+    element: "#exlidMainMenuRibbon",
+    title: "Other Helpful Resources",
+    placement: "bottom",
+    content: "Checkout these links for helpful resources",
+    backdropPadding: "left"
+    },
+    {
+    element: ".EXLSearchFieldRibbonBrowseSearchLink",
+    title: "Browse Search",
+    placement: "bottom",
+    content: "Explore by subject, title, author, or call number",
+    backdropPadding: "left"
     }
     ]
     });
