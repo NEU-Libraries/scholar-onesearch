@@ -527,6 +527,88 @@ jQuery(function($) {
     }
 
 
+    //For bootstrap Tour
+    //Build the tour function
+    var tour = new Tour({
+      backdrop: true,
+      debug: true,
+      autoscroll: true,
+      template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><button class='tour-close close' data-role='end'></button><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>Prev</button><span data-role='separator'></span><button class='btn btn-default' data-role='next'>Next</button><button class='btn btn-default' data-role='end'>End</button></div></nav></div>",
+      onEnd: function() {
+      document.location.href = "/";
+      },
+      steps:[
+      {
+      element: "#search_field",
+      title: "Search field",
+      placement: "bottom",
+      content: "In this field you can enter your search term(s) whether it be a title, author, or other piece of information",
+      backdropPadding: "left"
+      },
+      {
+      element: "#showMoreOptions",
+      title: "Choose a Search Scope",
+      placement: "bottom",
+      content: "Use the drop down menu to choose between different search scopes:<ul><li>Library Catalogs + Articles searches all NU Libraries content and beyond, including books, articles, journals, media, and more.</li><li>Library Catalogs searches print and electronic materials in local collections, except for articles.</li><li>Law Library Catalog searches the NU Law Library’s holdings.</li></ul>",
+      backdropPadding: "left"
+      },
+      {
+      element: "#exlidSignIn a",
+      title: "Remember to Sign In",
+      placement: "left",
+      content: "Sign in to Scholar OneSearch with your myNEU credentials to see more complete results and to customize your search experience.",
+      orphan:true,
+      onNext: function(){ 
+      document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=Frankenstein&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe#exlidFacet0';  tour.setCurrentStep(3); 
+      return (new jQuery.Deferred()).promise(); 
+      },
+      },
+      {
+      element: "#exlidFacet0",
+      title: "Refine your Results",
+      placement: "top",
+      content: "Use any combination of filters after searching to find exactly the results you need.",
+      onShown: function() {}
+      //orphan:true
+      },
+      {
+      element: "#resultsNumbersTile",
+      title: "Sort your Results",
+      placement: "top",
+      content: "Order your search results by relevance, date, popularity, author, or title. ",
+      orphan:true,
+      backdropPadding: "left"
+      },
+
+      {
+      element: "#exlidResult1 .EXLMyShelfStar",
+      title: "Add to e-Shelf",
+      placement: "bottom",
+      content: "Save items to your list of results. Sign in to make sure they’re saved for later",
+      },
+      {
+      element: "#exlidResult1 .sos-report-a-problem",
+      title: "Report a Problem",
+      placement: "top",
+      content: "Let us know if something's not working",
+      backdropPadding: "right"
+      },
+      {
+      element: "#exlidMainMenuRibbon",
+      title: "Other Helpful Resources",
+      placement: "bottom",
+      content: "Checkout these links for helpful resources",
+      backdropPadding: "left"
+      },
+      {
+      element: ".EXLSearchFieldRibbonBrowseSearchLink",
+      title: "Browse Search",
+      placement: "bottom",
+      content: "Explore by subject, title, author, or call number",
+      backdropPadding: "left"
+      }
+      ]
+    });
 
     //Build the page functions.
     var init = function( settings ){
@@ -591,6 +673,11 @@ jQuery(function($) {
       addToolTips();
       handleMediaQuerySuport();
       a11y();
+      // Initialize the tour
+      tour.init();
+      // Start the tour
+      $("#tour_start").click(function(){tour.restart();});
+
       //for tooltip to stop jumping
       $('[rel=tooltip]').tooltip({container: 'body'});
 
