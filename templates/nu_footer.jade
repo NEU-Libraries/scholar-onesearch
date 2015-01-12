@@ -31,7 +31,7 @@ if target.name === "Development"
     backdrop: true,
     debug: true,
     autoscroll: true,
-    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><button class='tour-close close' data-role='end'></button><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>Prev</button><span data-role='separator'>|</span><button class='btn btn-default' data-role='next'>Next</button></div></nav></div>",
+    template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><button class='tour-close close' data-role='end'></button><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>Prev</button><span data-role='separator'></span><button class='btn btn-default' data-role='next'>Next</button><button class='btn btn-default' data-role='end'>End</button></div></nav></div>",
     onEnd: function() {
     document.location.href = "/";
     },
@@ -74,7 +74,8 @@ if target.name === "Development"
     title: "Sort your Results",
     placement: "top",
     content: "Order your search results by relevance, date, popularity, author, or title. ",
-    orphan:true
+    orphan:true,
+    backdropPadding: "left"
     },
 
     {
@@ -87,7 +88,8 @@ if target.name === "Development"
     element: "#exlidResult1 .sos-report-a-problem",
     title: "Report a Problem",
     placement: "top",
-    content: "Let us know if something's not working"
+    content: "Let us know if something's not working",
+    backdropPadding: "right"
     },
     {
     element: "#exlidMainMenuRibbon",
