@@ -156,6 +156,17 @@ jQuery(function($) {
       });
     };
 
+        /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
+    var buildViewOnline = function( result ){
+         var viewonline = $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
+        var newhref = 'http://ezproxy.neu.edu/login?URL=' + viewonline;
+        if (newhref.indexOf("search.proquest.com") >= 0) {
+          newhref = newhref + '?accountid=12826';
+        }
+        console.log("viewbuttonhref is " + newhref);
+        $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
+    }
+
     /**
      * handleResults returns a buildLinks function that adds tabs to the results tab
      */
@@ -164,6 +175,7 @@ jQuery(function($) {
         var result = prepareResult( $(this)  );
         buildPemaLink( result );
         reportAProblem( result );
+        buildViewOnline( result );
 
       };
       var $results = $('.' + config.resultClass );
