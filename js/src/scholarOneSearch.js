@@ -156,26 +156,6 @@ jQuery(function($) {
       });
     };
 
-    /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe
-    var buildViewOnline = function( result ){
-         var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
-      if (viewonline.indexOf("fulltextlinktorsrc") >= 0) {
-        var rsrcsplit = viewonline.split(',');
-        var newhref = rsrcsplit[rsrcsplit.length -1].split(/&(.+)/)[0];
-        newhref = 'http://ezproxy.neu.edu/login?URL=' + newhref;
-        if (newhref.indexOf("search.proquest.com") >= 0) {
-          newhref = newhref + '?accountid=12826';
-        }
-        var viewbuttonhref = "http://onesearch-test.neu.edu/primo_library/libweb/action/dlDisplay.do?tabs=viewOnlineTab&vid=NUdev&docId=" + result.id + "&fn=permalink&gathStatTab=true";
-        $(".EXLViewOnlineTab .EXLTabBoomId").val(viewbuttonhref);
-        if ($(".EXLViewOnlineTab").hasClass("EXLResultSelectedTab")) {
-          var iframe = $(".EXLContainer-viewOnlineTab").find("iframe");
-          iframe.attr('src', newhref);
-          var extlink = $(".EXLContainer-viewOnlineTab").find(".EXLTabHeaderContent a");
-          extlink.attr("href", newhref);
-        }
-      }
-    }*/
         /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
     var buildViewOnline = function( result ){
          var viewonline = $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
@@ -649,30 +629,6 @@ jQuery(function($) {
         $("<div class='alert alert-warning'>These are your library fines for this week only. For total fines, check your Northeastern Student Account or contact <a href='mailto:circulation@neu.edu'>circulation@neu.edu</a>.</div>").insertAfter("#FinesAndFeesTable");
       }
 
-
-      //these two click functions should only apply to WOS links
-      /*$(".EXLCitationsTab a").click(function() {
-          window.setTimeout(citationlinks, 2000);
-        function citationlinks() { 
-          $(".EXLCitationsLinks").find("a").each(function() {
-            var href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
-            $(this).attr('href', href);
-          });
-        }
-      });
-      $(".EXLDetailsTab a").click(function() {
-        window.setTimeout(detailslinks, 2000);
-        function detailslinks() {
-          $(".EXLDetailsLinksTitle").find(".EXLFullDetailsOutboundLink").each(function() {
-            var href = $(this).attr('href');
-            if (href.indexOf("http://ezproxy") != 0) {
-              href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
-              $(this).attr('href', href);
-            }
-          });
-        }
-      });*/
-
       draggable();
       eShelfIcons();
       buildFacetCollapse();
@@ -707,33 +663,6 @@ jQuery(function($) {
   scholarOneSearch.worldCatLinks();
 
 });
-
-
-/*(function() {
-  //window.setTimeout(outbound, 2000);
-  
-  var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
-  if (viewonline && viewonline.indexOf("fulltextlinktorsrc") >= 0) {
-    var viewbutton = $(".EXLViewOnlineTab").find("a");
-    viewbutton.click(function(event) {
-      var iframe = $(".EXLContainer-viewOnlineTab").find("iframe");
-      iframe.attr('src', newhref);
-      var extlink = $(".EXLContainer-viewOnlineTab").find(".EXLTabHeaderContent a");
-      extlink.attr("href", newhref);
-    });
-  }
-})();*/
-
-//prepend ezproxy for outbound links, this would be way too long of a list to maintain
-/*function outbound() {
-  $(".EXLDetailsLinksTitle").find(".EXLFullDetailsOutboundLink").each(function() {
-    var href = $(this).attr('href');
-    if (href.indexOf("webofknowledge") >=0 || href.indexOf("isiknowledge") >= 0) {
-      href = 'http://ezproxy.neu.edu/login?URL=' + $(this).attr('href');
-      $(this).attr('href', href);
-    }
-  });
-}*/
 
 //modifying eshelf functionality to allow for toggling of icon
 function eshelfCreate(element,recordId,remote,scopes,index){
