@@ -156,7 +156,7 @@ jQuery(function($) {
       });
     };
 
-    /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
+    /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe
     var buildViewOnline = function( result ){
          var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
       if (viewonline.indexOf("fulltextlinktorsrc") >= 0) {
@@ -175,6 +175,16 @@ jQuery(function($) {
           extlink.attr("href", newhref);
         }
       }
+    }*/
+        /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
+    var buildViewOnline = function( result ){
+         var viewonline = $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
+        var newhref = 'http://ezproxy.neu.edu/login?URL=' + viewonline;
+        if (newhref.indexOf("search.proquest.com") >= 0) {
+          newhref = newhref + '?accountid=12826';
+        }
+        console.log("viewbuttonhref is " + newhref);
+        $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
     }
 
     /**
@@ -185,7 +195,7 @@ jQuery(function($) {
         var result = prepareResult( $(this)  );
         buildPemaLink( result );
         reportAProblem( result );
-        buildViewOnline( result);
+        buildViewOnline( result );
 
       };
       var $results = $('.' + config.resultClass );
@@ -699,8 +709,9 @@ jQuery(function($) {
 });
 
 
-(function() {
+/*(function() {
   //window.setTimeout(outbound, 2000);
+  
   var viewonline = $(".EXLViewOnlineTab .EXLTabBoomId").val();
   if (viewonline && viewonline.indexOf("fulltextlinktorsrc") >= 0) {
     var viewbutton = $(".EXLViewOnlineTab").find("a");
@@ -711,7 +722,7 @@ jQuery(function($) {
       extlink.attr("href", newhref);
     });
   }
-})();
+})();*/
 
 //prepend ezproxy for outbound links, this would be way too long of a list to maintain
 /*function outbound() {
