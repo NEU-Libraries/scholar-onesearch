@@ -14,6 +14,7 @@
 
   .navbar;
   .navbar-default;
+  border-radius: @border-radius-base;
 
   .EXLSearchFieldRibbon{
     @media (min-width: @grid-float-breakpoint) {
@@ -53,6 +54,7 @@
     padding: 10px (@navbar-padding-horizontal * 2 );
     &:extend(.navbar-form);
     &:extend(.navbar-left);
+    box-shadow: none;
     @media (min-width: @grid-float-breakpoint) {
       padding: 0px @navbar-padding-horizontal;
       .EXLSearchFieldRibbonFormFields,
@@ -76,6 +78,20 @@
 
 .EXLSearchFieldRibbonFormSearchClear {
   display:inline-block;
+  @media (max-width: @screen-small) {
+        float:right;
+        margin-top:-34px;
+      }
+}
+.EXLClearSimpleSearchBoxButtonClose:before {
+  font-family: FontAwesome;
+  content: @remove;
+  margin-left:-24px;
+}
+a.EXLClearSimpleSearchBoxButton {
+  color:@gray;
+  font-size:1.2em;
+  text-decoration:none;
 }
 
 .EXLClearSimpleSearchBoxButtonClose:before {

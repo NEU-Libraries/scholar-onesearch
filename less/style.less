@@ -7,6 +7,7 @@
 */
 
 @bootstrap-less-path: "../lib/bootstrap/less";
+@bootstrap-tour-path: "../lib/bootstrap-tour/src/less";
 
 // ## Libraries
 //make sure that aren't missing variables;
@@ -52,6 +53,7 @@
 @import "components/primo-email-popup";
 @import "components/primo-system-feedback";
 @import "components/primo-icons";
+@import "components/primo-tour";
 
 
 // ### Resting unwanted properties
@@ -100,3 +102,11 @@
 
 // Homepage
 @import "sections/primo-home";
+
+//bootstrap popover
+@import "@{bootstrap-less-path}/popovers";
+
+//Adding bootstrap-tour css
+@import "@{bootstrap-tour-path}/bootstrap-tour";
+
+
