@@ -417,7 +417,6 @@ jQuery(function($) {
 
     var addToolTips = function(){
       $("a#showMoreOptions, a.EXLSearchFieldRibbonAdvancedTwoLinks").tooltip();
-      //$("a.EXLMainMenuITEMdrs").attr('title', 'Digital Repository Service').tooltip({ title: "Digital Repository Service"});
     };
 
 
