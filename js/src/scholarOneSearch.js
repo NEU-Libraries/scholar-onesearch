@@ -549,7 +549,7 @@ jQuery(function($) {
       content: "Sign in to Scholar OneSearch with your myNEU credentials to see more complete results and to customize your search experience.",
       orphan:true,
       onNext: function(){ 
-      document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NUdev&frbg=&vl%28freeText0%29=neuroscience&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe#exlidFacet0';  tour.setCurrentStep(3); 
+      document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NU&frbg=&vl%28freeText0%29=neuroscience&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe#exlidFacet0';  tour.setCurrentStep(3); 
       return (new jQuery.Deferred()).promise(); 
       },
       },
