@@ -20,9 +20,9 @@
       a(href='#') Copyright &copy; 2009
     li.EXLFooterLastLink
       a(href='#') Accessibility Statement &amp; Disclaimer
-if target.name === "Development"
   .tour-link
     a#tour_start Take a tour!
+if target.name === "Development"
   script#sos-app-js(src=target.assetPath + '/js/sos-app.js')
 else
   script#sos-app-js(src=target.assetPath + '/js/sos-app.min.js')
