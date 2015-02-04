@@ -554,12 +554,10 @@ jQuery(function($) {
       },
       },
       {
-      element: "#exlidFacet0",
+      element: "#facetList",
       title: "Refine your Results",
       placement: "top",
-      content: "Use any combination of filters after searching to find exactly the results you need.",
-      onShown: function() {}
-      //orphan:true
+      content: "Use any combination of filters after searching to find exactly the results you need."
       },
       {
       element: "#resultsNumbersTile",
@@ -588,7 +586,8 @@ jQuery(function($) {
       title: "Other Helpful Resources",
       placement: "bottom",
       content: "Checkout these links for helpful resources",
-      backdropPadding: "left"
+      backdropPadding: "left",
+      onShown: function() { $("#exlidMainMenuRibbon").css("background", "#FFFFFF");}
       },
       {
       element: ".EXLSearchFieldRibbonBrowseSearchLink",
