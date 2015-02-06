@@ -2,17 +2,36 @@
 #exlidCitationLinkerContainer {
 	background:none;
 	height:auto;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	border-color: #ddd;
+	padding-top:0;
 	#exlidCitationLinkerTile {
 		border:none;
+		width:100%;
+		margin-bottom:10px;
 		.EXLCitationLinkerHeaderButtonAction {
 			display:none;
 		}
-		.EXLCitationLinkerHeader h1 {
-			&:extend(h1);
-			padding-left:0;
-		}
+		.EXLCitationLinkerHeader {
+			padding-left:2%;
+			padding-top:10px;
+			padding-bottom:10px;
+			background:#ddd;
+			height:4.5em;
+			h1 {
+				&:extend(h1);
+				&:extend(.EXLResultTitle);
+				padding-left:0;
+			}
+		} 
 		.EXLCitationLinkerTabsRibbon {
 			border:none;
+			div {
+				width:100%;
+			}
 		}
 		.EXLCitationLinkerTabs {
 			&:extend(.nav);
@@ -40,6 +59,7 @@
 		}
 		form {
 			&:extend(.form-horizontal);
+			padding-left:2%;
 			.EXLCitationLinkerFormRow {
 				&:extend(.form-group);
 				.EXLCitationLinkerFormRowInlineInput {
@@ -55,16 +75,43 @@
 					}
 				}
 			}
+			.EXLCitationLinkerFieldRibbon {
+				.make-row();
+				.EXLCitationLinkerFieldRibbonFormFieldsGroup1, .EXLCitationLinkerFieldRibbonFormFieldsGroup2 {
+					.make-xs-column(12);
+					.make-sm-column(12);
+					.make-md-column(6);
+					.make-lg-column(6);
+					border:none;
+				}
+				.EXLCitationLinkerFieldRibbonFormFieldsGroup1 {
+					//margin-left:15px;
+				}
+				.EXLCitationLinkerFieldRibbonFormFieldsGroup2 {
+					margin-left:-15px;
+					padding-left:0;
+					@media(max-width:@screen-medium) {
+						margin-left:4px;
+					}
+				}
+			}
+		}
+		.EXLCitationLinkerFieldRibbonFormSubmitSearch, .EXLCitationLinkerFieldRibbonFormClearSearch {
+			border:none;
+			input {
+				.btn;
+				height:auto;
+			}
 		}
 		.EXLCitationLinkerFieldRibbonFormSubmitSearch input {
-			.btn;
 			.btn-info;
-			height:auto;
 		}
 		.EXLCitationLinkerFieldRibbonFormClearSearch input {
-			.btn;
-			.btn-warning;
-			height:auto;
+			.btn-danger;
 		}
 	}
+}
+
+#dp-popup, .dp-popup {
+	//&:extend(.modal);
 }
