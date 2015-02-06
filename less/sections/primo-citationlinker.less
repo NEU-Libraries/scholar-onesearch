@@ -8,23 +8,50 @@
 		}
 		.EXLCitationLinkerHeader h1 {
 			&:extend(h1);
+			padding-left:0;
+		}
+		.EXLCitationLinkerTabsRibbon {
+			border:none;
 		}
 		.EXLCitationLinkerTabs {
 			&:extend(.nav);
 			&:extend(.nav-tabs);
-			border:none;
+			padding-bottom: 7px;
 			li {
 				border:none;
 				background:none;
+				float:none;
+				padding:0;
 				a {
 					color: #555;
 					cursor: default;
 					background-color: #fff;
 					border: 1px solid #ddd;
+					padding:10px;
+					border-top-right-radius: 4px;
+					border-top-left-radius: 4px;
+					font-size:14px;
 				}
 			}
 			li.EXLCitationLinkerSelectedTab a {
 				border-bottom-color: transparent;
+			}
+		}
+		form {
+			&:extend(.form-horizontal);
+			.EXLCitationLinkerFormRow {
+				&:extend(.form-group);
+				.EXLCitationLinkerFormRowInlineInput {
+					&:extend(.row);
+					label {
+						&:extend(.control-label);
+						&:extend(.col-sm-2);
+					}
+					input {
+						&:extend(.form-control);
+						&:extend(.col-sm-4);
+					}
+				}
 			}
 		}
 	}
