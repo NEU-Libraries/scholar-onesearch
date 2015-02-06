@@ -163,7 +163,6 @@ jQuery(function($) {
         if (newhref.indexOf("search.proquest.com") >= 0) {
           newhref = newhref + '?accountid=12826';
         }
-        console.log("viewbuttonhref is " + newhref);
         $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
     }
 
