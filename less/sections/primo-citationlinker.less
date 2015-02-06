@@ -1,6 +1,7 @@
 /*citation linker styling */
 #exlidCitationLinkerContainer {
 	background:none;
+	height:auto;
 	#exlidCitationLinkerTile {
 		border:none;
 		.EXLCitationLinkerHeaderButtonAction {
@@ -50,9 +51,20 @@
 					input {
 						&:extend(.form-control);
 						&:extend(.col-sm-4);
+						width:auto;
 					}
 				}
 			}
+		}
+		.EXLCitationLinkerFieldRibbonFormSubmitSearch input {
+			.btn;
+			.btn-info;
+			height:auto;
+		}
+		.EXLCitationLinkerFieldRibbonFormClearSearch input {
+			.btn;
+			.btn-warning;
+			height:auto;
 		}
 	}
 }
