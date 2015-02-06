@@ -1,0 +1,128 @@
+/*citation linker styling */
+#exlidCitationLinkerContainer {
+	background:none;
+	height:auto;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	border-color: #ddd;
+	padding-top:0;
+	#exlidCitationLinkerTile {
+		border:none;
+		width:100%;
+		margin-bottom:10px;
+		.EXLCitationLinkerHeaderButtonAction {
+			display:none;
+		}
+		.EXLCitationLinkerHeader {
+			padding-left:2%;
+			padding-top:10px;
+			padding-bottom:10px;
+			background:#ddd;
+			height:4.5em;
+			h1 {
+				&:extend(h1);
+				&:extend(.EXLResultTitle);
+				padding-left:0;
+			}
+		} 
+		.EXLCitationLinkerTabsRibbon {
+			border:none;
+			div {
+				width:100%;
+			}
+		}
+		.EXLCitationLinkerTabs {
+			&:extend(.nav);
+			&:extend(.nav-tabs);
+			padding-bottom: 7px;
+			li {
+				border:none;
+				background:none;
+				float:none;
+				padding:0;
+				a {
+					color: #555;
+					cursor: default;
+					background-color: #fff;
+					border: 1px solid #ddd;
+					padding:10px;
+					border-top-right-radius: 4px;
+					border-top-left-radius: 4px;
+					font-size:14px;
+				}
+			}
+			li.EXLCitationLinkerSelectedTab a {
+				border-bottom-color: transparent;
+			}
+		}
+		form {
+			&:extend(.form-horizontal);
+			padding-left:2%;
+			.EXLCitationLinkerFormRow {
+				&:extend(.form-group);
+				.EXLCitationLinkerFormRowInlineInput {
+					&:extend(.row);
+					label {
+						&:extend(.control-label);
+						&:extend(.col-sm-2);
+					}
+					input {
+						&:extend(.form-control);
+						&:extend(.col-sm-4);
+						width:auto;
+					}
+				}
+			}
+			.EXLCitationLinkerFieldRibbon {
+				.make-row();
+				.EXLCitationLinkerFieldRibbonFormFieldsGroup1, .EXLCitationLinkerFieldRibbonFormFieldsGroup2 {
+					.make-xs-column(12);
+					.make-sm-column(12);
+					.make-md-column(6);
+					.make-lg-column(6);
+					border:none;
+				}
+				.EXLCitationLinkerFieldRibbonFormFieldsGroup1 {
+					//margin-left:15px;
+				}
+				.EXLCitationLinkerFieldRibbonFormFieldsGroup2 {
+					margin-left:-15px;
+					padding-left:0;
+					@media(max-width:@screen-medium) {
+						margin-left:4px;
+					}
+				}
+			}
+		}
+		.EXLCitationLinkerFieldRibbonFormSubmitSearch, .EXLCitationLinkerFieldRibbonFormClearSearch {
+			border:none;
+			input {
+				.btn;
+				height:auto;
+			}
+		}
+		.EXLCitationLinkerFieldRibbonFormSubmitSearch input {
+			.btn-info;
+		}
+		.EXLCitationLinkerFieldRibbonFormClearSearch input {
+			.btn-danger;
+		}
+	}
+}
+#dp-popup {
+	position:absolute;
+	background: #ddd;
+	border:1px solid #000;
+	border-radius:4px;
+	padding:20px;
+	.dp-nav-prev a, .dp-nav-next a {
+		padding:5px;
+	}
+	.dp-calendar {
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+	}
+}
