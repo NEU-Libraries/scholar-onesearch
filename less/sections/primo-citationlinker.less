@@ -1,5 +1,31 @@
-.EXLCitationLinkerTabs {
-	&:extend(.nav);
-	&:extend(.nav-tabs);
-	
+/*citation linker styling */
+#exlidCitationLinkerContainer {
+	background:none;
+	#exlidCitationLinkerTile {
+		border:none;
+		.EXLCitationLinkerHeaderButtonAction {
+			display:none;
+		}
+		.EXLCitationLinkerHeader h1 {
+			&:extend(h1);
+		}
+		.EXLCitationLinkerTabs {
+			&:extend(.nav);
+			&:extend(.nav-tabs);
+			border:none;
+			li {
+				border:none;
+				background:none;
+				a {
+					color: #555;
+					cursor: default;
+					background-color: #fff;
+					border: 1px solid #ddd;
+				}
+			}
+			li.EXLCitationLinkerSelectedTab a {
+				border-bottom-color: transparent;
+			}
+		}
+	}
 }
