@@ -238,7 +238,7 @@ jQuery(function($) {
       //Adding the Sign-in Prompt on Brief results only
       if ($('#exlidSignOut').hasClass('EXLHidden') && $("#exlidFacetTile").length != 0) {
           var signInLink = $('#exlidSignIn a').attr('href');
-          var msg = "<a href='" + signInLink + "'>Sign in<a/> for enhanced features and results.";
+          var msg = "<a href='" + signInLink + "'>Sign in<a/> for enhanced features and complete results.";
           $('#exlidHeaderSystemFeedback').append('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback"><strong>' + msg + '</strong></div>');
       }
       //Hiding the Sign-blurb from the main page if signed in
