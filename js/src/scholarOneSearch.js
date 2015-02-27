@@ -136,8 +136,13 @@ jQuery(function($) {
         window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
       }
       var url = [ window.location.origin ];
-      //url.push( '/NU:' + encodeURIComponent(result.id) );
-      url.push( '/NU:' + result.id + '&tabs=requestTab');
+      //url.push( '/NU:' + result.id + '&tabs=requestTab');
+      //.EXLViewOnlineTab -> electronic, .EXLRequestTab -> print
+      if (result.$el.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
+        url.push( '/NU:' + result.id + '&tabs=viewOnlineTab');
+      } else if (result.$el.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
+        url.push( '/NU:' + result.id + '&tabs=requestTab');
+      }
       url = url.join( '' );
       var $link = config.tabTemplate();
       var icon = c.icon();
@@ -717,7 +722,12 @@ function openPermaLinkLbox(action,parameters,recordIndex,recordId){
     var recordElement=$('#resultsListNoId');
   }
   var url = [ window.location.origin ];
-  url.push( '/NU:' + encodeURIComponent(recordId) );
+  //url.push( '/NU:' + encodeURIComponent(recordId) + '&tabs=requestTab');
+  if (recordElement.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
+    url.push( '/NU:' + recordId + '&tabs=viewOnlineTab');
+  } else if (recordElement.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
+    url.push( '/NU:' + encodeURIComponent(recordId) + '&tabs=requestTab');
+  }
   url = url.join( '' );
   $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
   $('#permalinkModal').modal('toggle');
