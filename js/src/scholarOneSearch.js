@@ -134,10 +134,13 @@ jQuery(function($) {
       var c = config.permalLink;
       if (!window.location.origin) {
         window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
-      }      
+      }
       var url = [ window.location.origin ];
-      //url.push( '/NU:' + encodeURIComponent(result.id) );
-      url.push( '/NU:' + result.id );
+      if (result.$el.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
+        url.push( '/NU:' + result.id + '&tabs=viewOnlineTab');
+      } else if (result.$el.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
+        url.push( '/NU:' + result.id + '&tabs=requestTab');
+      }
       url = url.join( '' );
       var $link = config.tabTemplate();
       var icon = c.icon();
@@ -291,7 +294,7 @@ jQuery(function($) {
             .after( $('<span id="' + labelId + '" class="sr-only">' + helpText(eShelf) + '</span>' ) )
             .after( icon )
             .hide();
-                
+
         });
 
       }
@@ -560,9 +563,9 @@ jQuery(function($) {
       placement: "left",
       content: "Sign in to Scholar OneSearch with your myNEU credentials to see more complete results and to customize your search experience.",
       orphan:true,
-      onNext: function(){ 
-      document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NU&frbg=&vl%28freeText0%29=neuroscience&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe#exlidFacet0';  tour.setCurrentStep(3); 
-      return (new jQuery.Deferred()).promise(); 
+      onNext: function(){
+      document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NU&frbg=&vl%28freeText0%29=neuroscience&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe#exlidFacet0';  tour.setCurrentStep(3);
+      return (new jQuery.Deferred()).promise();
       },
       },
       {
@@ -716,7 +719,11 @@ function openPermaLinkLbox(action,parameters,recordIndex,recordId){
     var recordElement=$('#resultsListNoId');
   }
   var url = [ window.location.origin ];
-  url.push( '/NU:' + encodeURIComponent(recordId) );
+  if (recordElement.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
+    url.push( '/NU:' + recordId + '&tabs=viewOnlineTab');
+  } else if (recordElement.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
+    url.push( '/NU:' + recordId + '&tabs=requestTab');
+  }
   url = url.join( '' );
   $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
   $('#permalinkModal').modal('toggle');
@@ -812,4 +819,3 @@ function openPrimoLightBox(action,fn,elementReturned,additionalParameters,urlPar
     }
   });
 }
-
