@@ -9,7 +9,7 @@ if ( typeof jQuery === 'undefined' ){
 jQuery(function($) {
   var scholarOneSearch = (function(){
     'use strict';
-    $('body').append('<div id="permalinkModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true"><div class="modal-dialog modal-vertical-centered"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" >Permalink</h4></div><div class="modal-body" id="permalinkLink"></div></div></div></div>');
+    //$('body').append('<div id="permalinkModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true"><div class="modal-dialog modal-vertical-centered"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" >Permalink</h4></div><div class="modal-body" id="permalinkLink"></div></div></div></div>');
     $("html,body").scrollTop(0);
     /**
      * Default Config
@@ -17,14 +17,14 @@ jQuery(function($) {
      */
     var config = {
       resultClass : 'EXLResult',
-      permalLink: {
-        icon: function() {
-          return $( '<span class="icon-link" aria-hidden="true"></span>' );
-        },
-        text: 'Permalink',
+      //permalLink: {
+        //icon: function() {
+        //  return $( '<span class="icon-link" aria-hidden="true"></span>' );
+        //},
+        //text: 'Permalink',
 	//path: '/NU:',
-        path: '/primo_library/libweb/action/permalink.do?',
-      },
+      //  path: '/primo_library/libweb/action/permalink.do?',
+    //  },
 
 
       reportAProblem: {
@@ -130,34 +130,34 @@ jQuery(function($) {
      * @param  { Object } result result from prepare result.
      * @return { Object }        Dom node
      */
-    var buildPemaLink = function( result ){
-      var c = config.permalLink;
-      if (!window.location.origin) {
-        window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
-      }
-      var url = [ window.location.origin ];
-      if (result.$el.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
-        url.push( '/NU:' + result.id + '&tabs=viewOnlineTab');
-      } else if (result.$el.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
-        url.push( '/NU:' + result.id + '&tabs=requestTab');
-      }
-      url = url.join( '' );
-      var $link = config.tabTemplate();
-      var icon = c.icon();
-
-      $link.text(c.text).addClass('permalink');
-      $link.attr("data-target", "#permalinkModal");
-      $link.attr("data-toggle", "modal");
-      result.$el.find('ul.EXLResultTabs').append( $link );
-
-      $link.wrap('<li class="EXLResultTab sos-permalink "/>');
-      $link.removeAttr("href");
-      $link.prepend( icon );
-      $link.click(function(event) {
-        $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
-        $('#permalinkModal').modal('toggle');
-      });
-    };
+    // var buildPemaLink = function( result ){
+    //   var c = config.permalLink;
+    //   if (!window.location.origin) {
+    //     window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+    //   }
+    //   var url = [ window.location.origin ];
+    //   if (result.$el.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
+    //     url.push( '/NU:' + result.id + '&tabs=viewOnlineTab');
+    //   } else if (result.$el.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
+    //     url.push( '/NU:' + result.id + '&tabs=requestTab');
+    //   }
+    //   url = url.join( '' );
+    //   var $link = config.tabTemplate();
+    //   var icon = c.icon();
+    //
+    //   $link.text(c.text).addClass('permalink');
+    //   $link.attr("data-target", "#permalinkModal");
+    //   $link.attr("data-toggle", "modal");
+    //   result.$el.find('ul.EXLResultTabs').append( $link );
+    //
+    //   $link.wrap('<li class="EXLResultTab sos-permalink "/>');
+    //   $link.removeAttr("href");
+    //   $link.prepend( icon );
+    //   $link.click(function(event) {
+    //     $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
+    //     $('#permalinkModal').modal('toggle');
+    //   });
+    // };
 
         /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
     var buildViewOnline = function( result ){
@@ -176,7 +176,7 @@ jQuery(function($) {
     var handleResults = function(){
       var buildLinks = function(){
         var result = prepareResult( $(this)  );
-        buildPemaLink( result );
+        //buildPemaLink( result );
         reportAProblem( result );
         buildViewOnline( result );
 
@@ -535,85 +535,85 @@ jQuery(function($) {
 
     //For bootstrap Tour
     //Build the tour function
-    var tour = new Tour({
-      backdrop: true,
-      debug: true,
-      autoscroll: true,
-      template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><button class='tour-close close' data-role='end'></button><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>Prev</button><span data-role='separator'></span><button class='btn btn-default' data-role='next'>Next</button><button class='btn btn-default' data-role='end'>End</button></div></nav></div>",
-      onEnd: function() {
-      document.location.href = "/";
-      },
-      steps:[
-      {
-      element: "#search_field",
-      title: "Search field",
-      placement: "bottom",
-      content: "In this field you can enter your search term(s) whether it be a title, author, or other piece of information",
-      backdropPadding: "left"
-      },
-      {
-      element: "#showMoreOptions",
-      title: "Choose a Search Scope",
-      placement: "bottom",
-      content: "Use the drop down menu to choose between different search scopes:<ul><li>Library Catalogs + Articles searches all NU Libraries content and beyond, including books, articles, journals, media, and more.</li><li>Library Catalogs searches print and electronic materials in local collections, except for articles.</li><li>Law Library Catalog searches the NU Law Library’s holdings.</li></ul>",
-      backdropPadding: "left"
-      },
-      {
-      element: "#exlidSignIn a",
-      title: "Remember to Sign In",
-      placement: "left",
-      content: "Sign in to Scholar OneSearch with your myNEU credentials to see more complete results and to customize your search experience.",
-      orphan:true,
-      onNext: function(){
-      document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NU&frbg=&vl%28freeText0%29=neuroscience&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe#exlidFacet0';  tour.setCurrentStep(3);
-      return (new jQuery.Deferred()).promise();
-      },
-      },
-      {
-      element: "#facetList",
-      title: "Refine your Results",
-      placement: "top",
-      content: "Use any combination of filters after searching to find exactly the results you need."
-      },
-      {
-      element: "#resultsNumbersTile",
-      title: "Sort your Results",
-      placement: "top",
-      content: "Order your search results by relevance, date, popularity, author, or title. ",
-      orphan:true,
-      backdropPadding: "left"
-      },
-
-      {
-      element: "#exlidResult1 .EXLMyShelfStar",
-      title: "Add to e-Shelf",
-      placement: "bottom",
-      content: "Save items to your list of results. Sign in to make sure they’re saved for later",
-      },
-      {
-      element: "#exlidResult1 .sos-report-a-problem",
-      title: "Report a Problem",
-      placement: "top",
-      content: "Let us know if something's not working",
-      backdropPadding: "right"
-      },
-      {
-      element: "#exlidMainMenuRibbon",
-      title: "Other Helpful Resources",
-      placement: "bottom",
-      content: "Checkout these links for helpful resources",
-      backdropPadding: "left",
-      onShown: function() { $("#exlidMainMenuRibbon").css("background", "#FFFFFF");}
-      },
-      {
-      element: ".EXLSearchFieldRibbonBrowseSearchLink",
-      title: "Browse Search",
-      placement: "bottom",
-      content: "Explore by subject, title, author, or call number",
-      backdropPadding: "left"
-      }
-      ]
-    });
+    // var tour = new Tour({
+    //   backdrop: true,
+    //   debug: true,
+    //   autoscroll: true,
+    //   template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><button class='tour-close close' data-role='end'></button><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>Prev</button><span data-role='separator'></span><button class='btn btn-default' data-role='next'>Next</button><button class='btn btn-default' data-role='end'>End</button></div></nav></div>",
+    //   onEnd: function() {
+    //   document.location.href = "/";
+    //   },
+    //   steps:[
+    //   {
+    //   element: "#search_field",
+    //   title: "Search field",
+    //   placement: "bottom",
+    //   content: "In this field you can enter your search term(s) whether it be a title, author, or other piece of information",
+    //   backdropPadding: "left"
+    //   },
+    //   {
+    //   element: "#showMoreOptions",
+    //   title: "Choose a Search Scope",
+    //   placement: "bottom",
+    //   content: "Use the drop down menu to choose between different search scopes:<ul><li>Library Catalogs + Articles searches all NU Libraries content and beyond, including books, articles, journals, media, and more.</li><li>Library Catalogs searches print and electronic materials in local collections, except for articles.</li><li>Law Library Catalog searches the NU Law Library’s holdings.</li></ul>",
+    //   backdropPadding: "left"
+    //   },
+    //   {
+    //   element: "#exlidSignIn a",
+    //   title: "Remember to Sign In",
+    //   placement: "left",
+    //   content: "Sign in to Scholar OneSearch with your myNEU credentials to see more complete results and to customize your search experience.",
+    //   orphan:true,
+    //   onNext: function(){
+    //   document.location.href = '/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=NU&frbg=&vl%28freeText0%29=neuroscience&scp.scps=scope%3A%28NEU%29%2Cprimo_central_multiple_fe#exlidFacet0';  tour.setCurrentStep(3);
+    //   return (new jQuery.Deferred()).promise();
+    //   },
+    //   },
+    //   {
+    //   element: "#facetList",
+    //   title: "Refine your Results",
+    //   placement: "top",
+    //   content: "Use any combination of filters after searching to find exactly the results you need."
+    //   },
+    //   {
+    //   element: "#resultsNumbersTile",
+    //   title: "Sort your Results",
+    //   placement: "top",
+    //   content: "Order your search results by relevance, date, popularity, author, or title. ",
+    //   orphan:true,
+    //   backdropPadding: "left"
+    //   },
+    //
+    //   {
+    //   element: "#exlidResult1 .EXLMyShelfStar",
+    //   title: "Add to e-Shelf",
+    //   placement: "bottom",
+    //   content: "Save items to your list of results. Sign in to make sure they’re saved for later",
+    //   },
+    //   {
+    //   element: "#exlidResult1 .sos-report-a-problem",
+    //   title: "Report a Problem",
+    //   placement: "top",
+    //   content: "Let us know if something's not working",
+    //   backdropPadding: "right"
+    //   },
+    //   {
+    //   element: "#exlidMainMenuRibbon",
+    //   title: "Other Helpful Resources",
+    //   placement: "bottom",
+    //   content: "Checkout these links for helpful resources",
+    //   backdropPadding: "left",
+    //   onShown: function() { $("#exlidMainMenuRibbon").css("background", "#FFFFFF");}
+    //   },
+    //   {
+    //   element: ".EXLSearchFieldRibbonBrowseSearchLink",
+    //   title: "Browse Search",
+    //   placement: "bottom",
+    //   content: "Explore by subject, title, author, or call number",
+    //   backdropPadding: "left"
+    //   }
+    //   ]
+    // });
 
     //Build the page functions.
     var init = function( settings ){
@@ -655,9 +655,9 @@ jQuery(function($) {
       handleMediaQuerySuport();
       a11y();
       // Initialize the tour
-      tour.init();
+      //tour.init();
       // Start the tour
-      $("#tour_start").click(function(){tour.restart();});
+      //$("#tour_start").click(function(){tour.restart();});
 
       //for tooltip to stop jumping
       $('[rel=tooltip]').tooltip({container: 'body'});
@@ -714,21 +714,21 @@ function helpText(boolean){
 }
 
 //for permalink action link functionality
-function openPermaLinkLbox(action,parameters,recordIndex,recordId){
-  var recordElement=$('#exlidResult'+recordIndex);
-  if(isFullDisplay()){
-    var recordElement=$('#resultsListNoId');
-  }
-  var url = [ window.location.origin ];
-  if (recordElement.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
-    url.push( '/NU:' + recordId + '&tabs=viewOnlineTab');
-  } else if (recordElement.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
-    url.push( '/NU:' + recordId + '&tabs=requestTab');
-  }
-  url = url.join( '' );
-  $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
-  $('#permalinkModal').modal('toggle');
-}
+// function openPermaLinkLbox(action,parameters,recordIndex,recordId){
+//   var recordElement=$('#exlidResult'+recordIndex);
+//   if(isFullDisplay()){
+//     var recordElement=$('#resultsListNoId');
+//   }
+//   var url = [ window.location.origin ];
+//   if (recordElement.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
+//     url.push( '/NU:' + recordId + '&tabs=viewOnlineTab');
+//   } else if (recordElement.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
+//     url.push( '/NU:' + recordId + '&tabs=requestTab');
+//   }
+//   url = url.join( '' );
+//   $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
+//   $('#permalinkModal').modal('toggle');
+// }
 
 /*for show more options modals THESE ARE DIRECTLY COPIED FROM THE PRIMO JS FILE EXCEPT FOR ONE MARKED ADDED LINE*/
 function populateMultipleFacetsLightBox(clickedElement){
