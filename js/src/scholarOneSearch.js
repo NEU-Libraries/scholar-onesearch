@@ -658,7 +658,7 @@ jQuery(function($) {
       // Start the tour
       $("#tour_start").click(function(){
         tour.restart();
-        _gaq.push(['_trackEvent', 'Tour', 'Start', 'Tour Start']);
+        ga('send', 'event', 'tour', 'click', 'Tour start');
       });
 
       //for tooltip to stop jumping
