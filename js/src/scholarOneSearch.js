@@ -169,6 +169,16 @@ jQuery(function($) {
         $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
     }
 
+    var buildMap = function( result ){
+      var callnum = result.$el.find(".EXLAvailabilityCallNumber").html();
+      if (callnum) {
+        callnum = callnum.substring(1, 3);
+        console.log(callnum);
+      }
+    }
+
+
+
     /**
      * handleResults returns a buildLinks function that adds tabs to the results tab
      */
@@ -178,6 +188,7 @@ jQuery(function($) {
         buildPemaLink( result );
         reportAProblem( result );
         buildViewOnline( result );
+        buildMap( result );
 
       };
       var $results = $('.' + config.resultClass );
