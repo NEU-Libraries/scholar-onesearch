@@ -171,9 +171,10 @@ jQuery(function($) {
 
     var buildMap = function( result ){
       var callnum = result.$el.find(".EXLAvailabilityCallNumber").html();
-      if (callnum) {
-        callnum = callnum.substring(1, 3);
-        console.log(callnum);
+      if (callnum && typeof callnum != 'undefined') {
+        callnum = String(callnum).replace(/\s/g, "");
+        var thiscall = callnum.substring(1, 3);
+        console.log("this call num starts with " + thiscall);
       }
     }
 
