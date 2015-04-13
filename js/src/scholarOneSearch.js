@@ -169,12 +169,36 @@ jQuery(function($) {
         $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
     }
 
-    var buildMap = function( result ){
-      var callnum = result.$el.find(".EXLAvailabilityCallNumber").html();
-      if (callnum && typeof callnum != 'undefined') {
-        callnum = String(callnum).replace(/\s/g, "");
-        var thiscall = callnum.substring(1, 3);
-        console.log("this call num starts with " + thiscall);
+    function buildFindIt(result) {
+      console.log("made it to build find it ");
+      var libname = result.$el.find(".EXLAvailabilityLibraryName").html();
+      var collname = result.$el.find(".EXLAvailabilityCollectionName").html();
+      if (libname && typeof libname != 'undefined') {
+        libname = $.trim(libname);
+        if (collname && typeof collname != 'undefined') {
+          var findItLink;
+          collname = $.trim(collname);
+          if (libname == 'School of Law Library') {
+            findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-school-of-law-library";
+          } else if (libname == "Snell Library") {
+            if (collname == "Stacks") {
+              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-snell-stacks";
+            } else if (collname.toLowerCase().indexOf("archives") >= 0) {
+              findItLink = "http://librarydev.neu.edu/archives-special-collections/visitors";
+            } else if (collname.toLowerCase().indexOf("storage") >= 0) {
+              findItLink = "http://librarydev.neu.edu/services/borrow-renew/items-located-in-storage";
+            } else if (collname.toLowerCase().indexOf("periodical") >= 0) {
+              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-periodical-stacks";
+            } else {
+              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps";
+            }
+          } else {
+            findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps";
+          }
+          var resultavail = result.$el.find(".EXLResultAvailability");
+            findItLink = "<a href='" + findItLink + "' class='btn btn-default btn-xs' target='_blank'>Find It</a>";
+            resultavail.append(findItLink);
+        }
       }
     }
 
@@ -189,8 +213,7 @@ jQuery(function($) {
         buildPemaLink( result );
         reportAProblem( result );
         buildViewOnline( result );
-        buildMap( result );
-
+        buildFindIt( result );
       };
       var $results = $('.' + config.resultClass );
       $results.each( buildLinks );
