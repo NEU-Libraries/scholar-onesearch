@@ -97,9 +97,6 @@
           padding: 0 15px 0 0;
         }
       }
-
-
-
     }
 
     //hides the empty rows that are in this advanced search form.
@@ -226,7 +223,28 @@
   }
 }
 
-
+//this is to clean for issue #180 because on the e-shelf page it modifies an advanced or browse search to be a simple search of sorts
+.sos-eshelf #exlidAdvancedSearchTile #exlidAdvancedSearchRibbon {
+  div.EXLSearchFieldRibbonFormFieldsGroup1 {
+    .make-md-column(4);
+    div.EXLAdvancedSearchFormRow .EXLAdvancedSearchFormRowInlineInput {
+      margin-top:20px;
+      .make-md-column(6);
+    }
+  }
+  div.EXLSearchFieldRibbonFormLinks {
+    margin-top:60px;
+    a {
+      display:inline-block;
+      padding:10px;
+    }
+  }
+  .EXLSearchFieldRibbonFormSubmitSearch {
+    @media (min-width: @screen-md) {
+      margin-top:-40px;
+    }
+  }
+}
 
 .EXLAdvancedSearch .EXLAdvancedBrowseRibbon {
   .EXLSearchFieldRibbonFormSubmitSearch{
