@@ -161,12 +161,12 @@ jQuery(function($) {
 
         /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
     var buildViewOnline = function( result ){
-         var viewonline = $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
+         var viewonline = result.$el.find(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
         var newhref = 'http://ezproxy.neu.edu/login?URL=' + viewonline;
         if (newhref.indexOf("search.proquest.com") >= 0) {
           newhref = newhref + '?accountid=12826';
         }
-        $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
+        result.$el.find(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
     }
 
     function buildFindIt(result) {
