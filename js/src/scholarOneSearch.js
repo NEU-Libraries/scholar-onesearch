@@ -214,7 +214,9 @@ jQuery(function($) {
         buildPemaLink( result );
         reportAProblem( result );
         buildViewOnline( result );
-        buildFindIt( result );
+        setTimeout(function() {
+          buildFindIt(result);
+        }, 1000)
       };
       var $results = $('.' + config.resultClass );
       $results.each( buildLinks );
@@ -662,16 +664,6 @@ jQuery(function($) {
       }else if( href.search('basket.do')){
         draggable();
       }
-      //triggering findit after ajax calls to get updated status
-      $( document ).ajaxComplete(function() {
-        var $results = $('.' + config.resultClass );
-        $results.each( function() {
-          var result = prepareResult( $(this)  );
-          setTimeout(function() {
-            buildFindIt(result);
-          }, 1000);
-        });
-      });
 
       $('#search_field').attr('placeholder','Search...');
       //hides simple search link for nu_journals view
