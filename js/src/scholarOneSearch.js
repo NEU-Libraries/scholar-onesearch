@@ -170,7 +170,6 @@ jQuery(function($) {
     }
 
     function buildFindIt(result) {
-      console.log("made it to build find it ");
       var libname = result.$el.find(".EXLAvailabilityLibraryName").html();
       var collname = result.$el.find(".EXLAvailabilityCollectionName").html();
       if (libname && typeof libname != 'undefined') {
@@ -186,7 +185,7 @@ jQuery(function($) {
             } else if (collname.toLowerCase().indexOf("archives") >= 0) {
               findItLink = "http://librarydev.neu.edu/archives-special-collections/visitors";
             } else if (collname.toLowerCase().indexOf("storage") >= 0) {
-              findItLink = "http://librarydev.neu.edu/services/borrow-renew/items-located-in-storage";
+              findItLink = "";
             } else if (collname.toLowerCase().indexOf("periodical") >= 0) {
               findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-periodical-stacks";
             } else {
@@ -195,9 +194,11 @@ jQuery(function($) {
           } else {
             findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps";
           }
-          var resultavail = result.$el.find(".EXLResultAvailability");
-            findItLink = "<a href='" + findItLink + "' class='btn btn-default btn-xs' target='_blank'>Find It</a>";
+            var resultavail = result.$el.find(".EXLResultAvailability");
+            resultavail.find(".findit").remove();
+            findItLink = "<a href='" + findItLink + "' class='btn btn-default btn-xs findit' target='_blank'>Find It</a>";
             resultavail.append(findItLink);
+            if (collname.toLowerCase().indexOf("storage") >= 0) {resultavail.find(".findit").remove();}
         }
       }
     }
@@ -661,8 +662,16 @@ jQuery(function($) {
       }else if( href.search('basket.do')){
         draggable();
       }
-
-
+      //triggering findit after ajax calls to get updated status
+      $( document ).ajaxComplete(function() {
+        var $results = $('.' + config.resultClass );
+        $results.each( function() {
+          var result = prepareResult( $(this)  );
+          setTimeout(function() {
+            buildFindIt(result);
+          }, 1000);
+        });
+      });
 
       $('#search_field').attr('placeholder','Search...');
       //hides simple search link for nu_journals view
