@@ -70,7 +70,7 @@ td.EXLMyShelfStar{
       .make-sm-column(5);
       //position: static;
       float: left;
-      z-index: 2;	
+      z-index: 2;
       span.EXLResultsSortByLabel{
         margin-top: 4px;
       }
@@ -304,6 +304,9 @@ th.EXLResultNumber{
       margin-right: 5px;
     }
   }
+  em.EXLResultStatusAvailable + .btn {
+    display:inline-block;
+  }
   em.EXLResultStatusNotAvailable{
     background-image: none;
     &:before{
@@ -313,6 +316,9 @@ th.EXLResultNumber{
       font-size: 1.5em;
       margin-right: 5px;
     }
+  }
+  em.EXLResultStatusNotAvailable + .btn {
+    display:none;
   }
   .multipleCoverImageContainer,
   td.EXLThumbnail img{
@@ -399,6 +405,3 @@ a.EXLBriefResultsDisplayMultipleLink{
   .btn-sm;
   margin-bottom: 0.5em;
 }
-
-
-

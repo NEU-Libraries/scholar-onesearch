@@ -166,9 +166,44 @@ jQuery(function($) {
         if (newhref.indexOf("search.proquest.com") >= 0) {
           newhref = newhref + '?accountid=12826';
         }
-        console.log("viewbuttonhref is " + newhref);
         $(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
     }
+
+    function buildFindIt(result) {
+      var libname = result.$el.find(".EXLAvailabilityLibraryName").html();
+      var collname = result.$el.find(".EXLAvailabilityCollectionName").html();
+      if (libname && typeof libname != 'undefined') {
+        libname = $.trim(libname);
+        if (collname && typeof collname != 'undefined') {
+          var findItLink;
+          collname = $.trim(collname);
+          if (libname == 'School of Law Library') {
+            findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-school-of-law-library";
+          } else if (libname == "Snell Library") {
+            if (collname == "Stacks") {
+              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-snell-stacks";
+            } else if (collname.toLowerCase().indexOf("archives") >= 0) {
+              findItLink = "http://librarydev.neu.edu/archives-special-collections/visitors";
+            } else if (collname.toLowerCase().indexOf("storage") >= 0) {
+              findItLink = "";
+            } else if (collname.toLowerCase().indexOf("periodical") >= 0) {
+              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-periodical-stacks";
+            } else {
+              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps";
+            }
+          } else {
+            findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps";
+          }
+            var resultavail = result.$el.find(".EXLResultAvailability");
+            resultavail.find(".findit").remove();
+            findItLink = "<a href='" + findItLink + "' class='btn btn-default btn-xs findit' target='_blank'>Find It</a>";
+            resultavail.append(findItLink);
+            if (collname.toLowerCase().indexOf("storage") >= 0) {resultavail.find(".findit").remove();}
+        }
+      }
+    }
+
+
 
     /**
      * handleResults returns a buildLinks function that adds tabs to the results tab
@@ -179,7 +214,9 @@ jQuery(function($) {
         buildPemaLink( result );
         reportAProblem( result );
         buildViewOnline( result );
-
+        setTimeout(function() {
+          buildFindIt(result);
+        }, 1000)
       };
       var $results = $('.' + config.resultClass );
       $results.each( buildLinks );
@@ -627,8 +664,6 @@ jQuery(function($) {
       }else if( href.search('basket.do')){
         draggable();
       }
-
-
 
       $('#search_field').attr('placeholder','Search...');
       //hides simple search link for nu_journals view

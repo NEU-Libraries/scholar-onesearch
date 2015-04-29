@@ -149,6 +149,10 @@
     display: block;
     padding: 10px 15px;
   }
+  li.EXLSignOut > a {
+    border-radius:25px;
+    background: @nav-link-hover-bg;
+  }
   .float-left-small-screen;
 }
 //Main menu tile
@@ -166,12 +170,11 @@
     .nav;
     .nav-pills;
     float: right;
-    /*background: @panel-heading-bg;
-    border: 1px solid @panel-border;
-    border-radius: @nav-pills-border-radius;
+    background:none;
+    border:none;
     li:nth-of-type(1), li:nth-of-type(2) {
-      border-right: 1px solid @panel-border;
-    }*/
+      border:none;
+    }
     a{
       color: @primo-header-nav-link-color;
       position: relative;
@@ -184,9 +187,9 @@
         text-decoration: none;
         background-color: @nav-link-hover-bg;
       }
-      /*@media (max-width: @screen-tiny) {
+      @media (max-width: @screen-tiny) {
         padding: @table-condensed-cell-padding;
-      }*/
+      }
     }
   }
 }
