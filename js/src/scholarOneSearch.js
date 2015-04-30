@@ -178,21 +178,21 @@ jQuery(function($) {
           var findItLink;
           collname = $.trim(collname);
           if (libname == 'School of Law Library') {
-            findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-school-of-law-library";
+            findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps/where-to-find-library-materials-school-of-law-library";
           } else if (libname == "Snell Library") {
             if (collname == "Stacks") {
-              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-snell-stacks";
+              findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps/where-to-find-library-materials-snell-stacks";
             } else if (collname.toLowerCase().indexOf("archives") >= 0) {
-              findItLink = "http://librarydev.neu.edu/archives-special-collections/visitors";
+              findItLink = "http://library.northeastern.edu/archives-special-collections/visitors";
             } else if (collname.toLowerCase().indexOf("storage") >= 0) {
               findItLink = "";
             } else if (collname.toLowerCase().indexOf("periodical") >= 0) {
-              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps/where-to-find-library-materials-periodical-stacks";
+              findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps/where-to-find-library-materials-periodical-stacks";
             } else {
-              findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps";
+              findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps";
             }
           } else {
-            findItLink = "http://librarydev.neu.edu/about/maps-directions/floor-maps";
+            findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps";
           }
             var resultavail = result.$el.find(".EXLResultAvailability");
             resultavail.find(".findit").remove();
