@@ -199,6 +199,9 @@ jQuery(function($) {
             findItLink = "<a href='" + findItLink + "' class='btn btn-default btn-xs findit' target='_blank'>Find It</a>";
             resultavail.append(findItLink);
             if (collname.toLowerCase().indexOf("storage") >= 0) {resultavail.find(".findit").remove();}
+            if(resultavail.find(".EXLResultStatusAvailable").html().toLowerCase().indexOf("other locations") >= 0) {
+              resultavail.find(".findit").remove();
+            }
         }
       }
     }
