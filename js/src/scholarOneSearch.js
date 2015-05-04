@@ -189,10 +189,10 @@ jQuery(function($) {
             } else if (collname.toLowerCase().indexOf("periodical") >= 0) {
               findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps/where-to-find-library-materials-periodical-stacks";
             } else {
-              findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps";
+              findItLink = "http://library.northeastern.edu/about/maps-and-directions/floor-maps";
             }
           } else {
-            findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps";
+            findItLink = "http://library.northeastern.edu/about/maps-and-directions/floor-maps";
           }
             var resultavail = result.$el.find(".EXLResultAvailability");
             resultavail.find(".findit").remove();
