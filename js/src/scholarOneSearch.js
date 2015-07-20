@@ -206,6 +206,14 @@ jQuery(function($) {
       }
     }
 
+    function fixArchiveThumbnail(result){
+      if (result.hasClass('EXLResultMediaTYPEarchival_material')){
+        console.log(this is an archives material);
+        var thumbnail = result.find(".EXLThumbnailLinkMarker img");
+        thumbnail.attr("src", "../images/icon_archive.png");
+      }
+    }
+
 
 
     /**
@@ -217,6 +225,7 @@ jQuery(function($) {
         buildPemaLink( result );
         reportAProblem( result );
         buildViewOnline( result );
+        fixArchiveThumbnail( result );
         setTimeout(function() {
           buildFindIt(result);
         }, 1000)
