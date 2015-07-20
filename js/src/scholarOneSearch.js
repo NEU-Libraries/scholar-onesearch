@@ -208,7 +208,6 @@ jQuery(function($) {
 
     function fixArchiveThumbnail(result){
       if (result.hasClass('EXLResultMediaTYPEarchival_material')){
-        console.log(this is an archives material);
         var thumbnail = result.find(".EXLThumbnailLinkMarker img");
         thumbnail.attr("src", "../images/icon_archive.png");
       }
