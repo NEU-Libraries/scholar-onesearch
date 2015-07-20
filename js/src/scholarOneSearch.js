@@ -207,8 +207,8 @@ jQuery(function($) {
     }
 
     function fixArchiveThumbnail(result){
-      if (result.hasClass('EXLResultMediaTYPEarchival_material')){
-        var thumbnail = result.find(".EXLThumbnailLinkMarker img");
+      if (result.$el.hasClass('EXLResultMediaTYPEarchival_material')){
+        var thumbnail = result.$el.find(".EXLThumbnailLinkMarker img");
         thumbnail.attr("src", "../images/icon_archive.png");
       }
     }
