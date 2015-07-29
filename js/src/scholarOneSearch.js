@@ -199,8 +199,10 @@ jQuery(function($) {
             findItLink = "<a href='" + findItLink + "' class='btn btn-default btn-xs findit' target='_blank'>Find It</a>";
             resultavail.append(findItLink);
             if (collname.toLowerCase().indexOf("storage") >= 0) {resultavail.find(".findit").remove();}
-            if(resultavail.find(".EXLResultStatusAvailable") && resultavail.find(".EXLResultStatusAvailable").html().toLowerCase().indexOf("other locations") >= 0) {
-              resultavail.find(".findit").remove();
+            if(resultavail.find(".EXLResultStatusAvailable").html()){
+              if (resultavail.find(".EXLResultStatusAvailable").html().toLowerCase().indexOf("other locations") >= 0) {
+                resultavail.find(".findit").remove();
+              }
             }
         }
       }
@@ -241,6 +243,10 @@ jQuery(function($) {
 
       //Creating a collapse group.
       $('#facetList > .EXLFacetContainer').each(function(i){
+        if ($(this).find('ol.EXLFacetsList > li').hasClass('EXLAdditionalFacetEXLHiddenFacetCreationDate')){
+            $(this).find('ol.EXLFacetsList > li').addClass('EXLAdditionalFacet').addClass('EXLHiddenFacetCreationDate');
+        }//fix for issue#204
+
         //find out if we should add the collapse
         var hasAdditionalFacetes = $(this).find('ol.EXLFacetsList > li').hasClass('EXLAdditionalFacet');
 
@@ -267,6 +273,9 @@ jQuery(function($) {
             $target.addClass("list-group-item-heading").wrap($link).append($icon);
             $(this).find('a.facet-heading.facet-expand').wrap('<li class="EXLFacetHeader"/>').tooltip();
             $(this).find('ol.EXLFacetsList').prepend($(this).find('li.list-group-item'));
+            if ($(this).find('h4').html().indexOf('Material Type') >= 0){
+              $link.click();
+            }
         }
       });
 
