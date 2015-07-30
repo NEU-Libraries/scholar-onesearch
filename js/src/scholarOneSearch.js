@@ -267,14 +267,16 @@ jQuery(function($) {
                 else{
                   $(this).tooltip('destroy').attr('title',  'Expand '+ $target.text() +' list' ).tooltip();
                 }
-
             });
 
             $target.addClass("list-group-item-heading").wrap($link).append($icon);
             $(this).find('a.facet-heading.facet-expand').wrap('<li class="EXLFacetHeader"/>').tooltip();
             $(this).find('ol.EXLFacetsList').prepend($(this).find('li.list-group-item'));
-            if ($(this).find('h4').html().indexOf('Material Type') >= 0){
-              $link.click();
+            if ($(this).find('h4').html().indexOf("Material Type") >= 0){
+              $(this).find('li.EXLFacet, li.EXLFacetsDisplayMore').toggleClass('EXLAdditionalFacet');
+              $(this).find('.facet-heading').find('i').toggleClass('icon-expand-alt').toggleClass('icon-collapse-alt');
+              $(this).find('.facet-heading').toggleClass('collapsed-facet');
+              $(this).find('.facet-heading').tooltip('destroy').attr('title',  'Collapse '+ $target.text() +' list' ).tooltip();
             }
         }
       });
