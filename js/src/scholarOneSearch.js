@@ -28,7 +28,8 @@ jQuery(function($) {
 
 
       reportAProblem: {
-        baseUrl: 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=',
+        // baseUrl: 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=',
+        baseUrl: 'mailto:Library-Help@neu.edu?body=Please%20describe%20the%20problem%20you%20are%20experiencing.&Subject=',
         title: 'Report a problem',
         icon: function() {
           return $( '<span class="icon-comments-alt" aria-hidden="true"></span><span class="sr-only">Report a problem with this resource</span>' );
@@ -114,7 +115,8 @@ jQuery(function($) {
 
       $link.attr({
         href: url,
-        title: config.reportAProblem.title
+        title: config.reportAProblem.title,
+        target: "_top"
       }).addClass('report-a-problem').html( config.reportAProblem.icon() );
 
       result.$el.find('ul.EXLResultTabs').append($link);
