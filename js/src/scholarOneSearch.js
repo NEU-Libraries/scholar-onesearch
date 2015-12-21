@@ -652,6 +652,12 @@ jQuery(function($) {
       content: "Save items to your list of results. Sign in to make sure they’re saved for later",
       },
       {
+      element:"#exlidTabHeaderButtons1",
+      title:"View Online",
+      placement:"top",
+      content: "Here's where you'll find direct links to materials"
+      },
+      {
       element: "#exlidResult1 .sos-report-a-problem",
       title: "Report a Problem",
       placement: "top",
