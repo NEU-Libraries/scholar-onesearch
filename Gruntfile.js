@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
-  var jsFiles = [ 'lib/bootstrap/js/transition.js','lib/bootstrap/js/tooltip.js','lib/bootstrap/js/modal.js','lib/bootstrap/js/popover.js','lib/bootstrap-tour/build/js/bootstrap-tour.js','js/src/scholarOneSearch.js', 'lib/dateslider/dateslider.js'];
+  var jsFiles = [ 'lib/bootstrap/js/transition.js','lib/bootstrap/js/tooltip.js','lib/bootstrap/js/modal.js','lib/bootstrap/js/popover.js','lib/bootstrap-tour/build/js/bootstrap-tour.js','js/src/scholarOneSearch.js'];
+  //, 'lib/dateslider/dateslider.js'];
   // Project configuration.
   //
 
@@ -409,5 +410,3 @@ module.exports = function(grunt) {
   // Run the Jasmine specs
   grunt.registerTask('spec', 'Run the jasmine specifications from the test server', ['connect:tests','jasmine:sosspecs']);
 };
-
-
