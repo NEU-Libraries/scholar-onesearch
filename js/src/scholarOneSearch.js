@@ -28,8 +28,7 @@ jQuery(function($) {
 
 
       reportAProblem: {
-        // baseUrl: 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=',
-        baseUrl: 'mailto:Library-Help@neu.edu?body=Please%20describe%20the%20problem%20you%20are%20experiencing.&Subject=',
+        baseUrl: 'http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource=',
         title: 'Report a problem',
         icon: function() {
           return $( '<span class="icon-comments-alt" aria-hidden="true"></span><span class="sr-only">Report a problem with this resource</span>' );
