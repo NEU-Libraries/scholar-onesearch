@@ -305,12 +305,15 @@ jQuery(function($) {
       if ($('#exlidSignOut').hasClass('EXLHidden') && $("#exlidFacetTile").length != 0) {
           var signInLink = $('#exlidSignIn a').attr('href');
           var msg = "<a href='" + signInLink + "'>Sign in<a/> for enhanced features and complete results.";
-          $('#exlidHeaderSystemFeedback').append('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback"><strong>' + msg + '</strong></div>');
+          // $('#exlidHeaderSystemFeedback').append('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback"><strong>' + msg + '</strong></div>');
       }
       //Hiding the Sign-blurb from the main page if signed in
       if ($("#exlidSignIn").hasClass("EXLHidden")) {
           $("#signInHomeBody strong").hide();
       }
+      //Temporary message about downtime and temporary disable signin
+      msg = "Scholar OneSearch will be down for maintenance starting Sunday night, March 6, at midnight. Certain features may be unavailable.";
+      $('#exlidSearchTileWrapper').prepend('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback alert alert-warning"><strong>' + msg + '</strong></div>');
     };
     // Build the eShelf icons
     var  eShelfIcons = function(){
