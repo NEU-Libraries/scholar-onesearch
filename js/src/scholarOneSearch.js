@@ -313,7 +313,7 @@ jQuery(function($) {
       }
       //Temporary message about downtime and temporary disable signin
       msg = "Scholar OneSearch will be down for maintenance starting Sunday night, March 6, at midnight. Certain features may be unavailable.";
-      $('#exlidSearchTileWrapper').prepend('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback alert alert-warning"><strong>' + msg + '</strong></div>');
+      $('#exlidSearchTile').prepend('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback alert alert-warning"><strong>' + msg + '</strong></div>');
     };
     // Build the eShelf icons
     var  eShelfIcons = function(){
