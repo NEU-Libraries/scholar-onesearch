@@ -183,6 +183,8 @@ jQuery(function($) {
           } else if (libname == "Snell Library") {
             if (collname == "Stacks") {
               findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps/where-to-find-library-materials-snell-stacks";
+            } else if (collname.toLowerCase().indexOf("african american") >= 0) {
+              findItLink = "http://library.northeastern.edu/about/maps-directions/floor-maps/where-to-find-library-materialsjdoaai";
             } else if (collname.toLowerCase().indexOf("archives") >= 0) {
               findItLink = "http://library.northeastern.edu/archives-special-collections/visitors";
             } else if (collname.toLowerCase().indexOf("storage") >= 0) {
