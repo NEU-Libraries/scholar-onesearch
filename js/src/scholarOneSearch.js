@@ -580,6 +580,14 @@ jQuery(function($) {
         });
       }
     };
+
+    /*for changing the menu link on the e-journal finder page*/
+    var menuFix = function(){
+      if ($("body").hasClass("EXLAlmaAz")){
+        $("#exlidMainMenuItem1 .EXLMainMenuITEMATOZ").attr("href","http://onesearch.northeastern.edu/primo_library/libweb/action/search.do?mode=Advanced&ct=AdvancedSearch&dscnt=0&vid=NU_JOURNALS").text("Advanced Journal Search");
+      }
+    };
+
     /**
      * See issue #100
      * @link https://github.com/NEU-Libraries/scholar-onesearch/issues/100
@@ -720,6 +728,7 @@ jQuery(function($) {
       addToolTips();
       handleMediaQuerySuport();
       a11y();
+      menuFix();
       // Initialize the tour
       tour.init();
       // Start the tour
