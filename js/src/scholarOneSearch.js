@@ -605,7 +605,7 @@ jQuery(function($) {
     /* Add ILL Renewal link*/
     var addILLRenewal = function(){
       var menu = $('#exlidMyAccountMainMenuContainer');
-      menu.find("ol").append('<li><a href="https://ill.lib.neu.edu/illiad/snell/" target="_blank">Renew ILL</a></li>');
+      menu.find("ol").append('<li><a href="https://ill.lib.neu.edu/illiad/snell/illiad.dll?Action=10&Form=66" target="_blank">Renew ILLiad Items</a></li>');
     }
 
 
