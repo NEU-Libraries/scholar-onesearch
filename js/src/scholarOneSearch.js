@@ -371,7 +371,7 @@ jQuery(function($) {
 
 
     var worldCatLinks = function(){
-      var worldCatBaseUrl = 'http://northeastern.worldcat.org/search?q=' ;
+      var worldCatBaseUrl = 'https://northeastern.on.worldcat.org/search?databaseList=638&queryString=' ;
       if( worldcatLogo === undefined){
         var worldcatLogo = '../customized/NU/images/worldcat-logo.png';
       }
@@ -602,6 +602,12 @@ jQuery(function($) {
 
     }
 
+    /* Add ILL Renewal link*/
+    var addILLRenewal = function(){
+      var menu = $('#exlidMyAccountMainMenuContainer');
+      menu.find("ol").append('<li><a href="https://ill.lib.neu.edu/illiad/snell/">Renew ILL</a></li>');
+    }
+
 
     //For bootstrap Tour
     //Build the tour function
@@ -700,6 +706,7 @@ jQuery(function($) {
 
       if(href.search('myAccountMenu.do') > 0 ){
         shimEXLMyAccountTableActions();
+        addILLRenewal();
       }else if( href.search('basket.do')){
         draggable();
       }
