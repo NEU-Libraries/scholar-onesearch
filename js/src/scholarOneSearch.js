@@ -115,7 +115,7 @@ jQuery(function($) {
       $link.attr({
         href: url,
         title: config.reportAProblem.title,
-        target: "_top"
+        target: "_blank"
       }).addClass('report-a-problem').html( config.reportAProblem.icon() );
 
       result.$el.find('ul.EXLResultTabs').append($link);
