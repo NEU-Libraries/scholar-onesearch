@@ -497,6 +497,11 @@ jQuery(function($) {
       $("a#showMoreOptions, a.EXLSearchFieldRibbonAdvancedTwoLinks").tooltip();
     };
 
+    var moveUserName = function(){
+      var $el = $("#exlidUserAreaRibbon #exlidUserName");
+      $el.next().after($el);
+      $el.next().after($el);
+    };
 
     var addActiveStates = function(){
       var $activeStatesTargets = $('.EXLFindDBListHeaderAtoZSelected > a');
@@ -733,6 +738,7 @@ jQuery(function($) {
       addActiveStates();
       handleRadio();
       addToolTips();
+      moveUserName();
       handleMediaQuerySuport();
       a11y();
       menuFix();
