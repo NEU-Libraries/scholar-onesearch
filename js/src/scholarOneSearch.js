@@ -498,9 +498,13 @@ jQuery(function($) {
     };
 
     var moveUserName = function(){
-      var $el = $("#exlidUserAreaRibbon #exlidUserName");
-      $el.next().after($el);
-      $el.next().after($el);
+      $("#exlidUserAreaRibbon #exlidUserName").hide();
+      if ($("#exlidSignIn").hasClass("EXLHidden")) {
+        var $el = $("#exlidUserAreaRibbon #exlidUserName");
+        $el.next().after($el);
+        $el.next().after($el);
+        $("#exlidUserAreaRibbon #exlidUserName").show();
+      }
     };
 
     var addActiveStates = function(){
