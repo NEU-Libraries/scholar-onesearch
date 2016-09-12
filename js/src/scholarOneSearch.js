@@ -507,6 +507,22 @@ jQuery(function($) {
       }
     };
 
+    var fixSortOrder = function(){
+      var $el = $("#resultsFooterNoId .EXLResultsSortByMenuShow .EXLSortByLink:last-child");
+      if ($el.text().indexOf('Date-oldest') > -1) {
+        $el.prev().before($el);
+        $el.prev().before($el);
+        $el.prev().before($el);
+      }
+
+      var $el = $("#resultsNumbersTile .EXLResultsSortByMenuShow .EXLSortByLink:last-child");
+      if ($el.text().indexOf('Date-oldest') > -1) {
+        $el.prev().before($el);
+        $el.prev().before($el);
+        $el.prev().before($el);
+      }
+    };
+
     var addActiveStates = function(){
       var $activeStatesTargets = $('.EXLFindDBListHeaderAtoZSelected > a');
       $activeStatesTargets.addClass('active');
@@ -743,6 +759,7 @@ jQuery(function($) {
       handleRadio();
       addToolTips();
       moveUserName();
+      fixSortOrder();
       handleMediaQuerySuport();
       a11y();
       menuFix();
