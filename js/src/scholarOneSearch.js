@@ -140,7 +140,7 @@ jQuery(function($) {
       if (result.$el.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
         url.push( '/NU:' + result.id + '&tabs=viewOnlineTab');
       } else if (result.$el.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
-        url.push( '/NU:' + result.id + '&tabs=requestTab');
+        url.push( '/NU:' + result.id + '&tabs=requestTab&displayMode=full');
       }
       url = url.join( '' );
       var $link = config.tabTemplate();
@@ -835,7 +835,7 @@ function openPermaLinkLbox(action,parameters,recordIndex,recordId){
   if (recordElement.find('ul.EXLResultTabs .EXLViewOnlineTab').length != 0) {
     url.push( '/NU:' + recordId + '&tabs=viewOnlineTab');
   } else if (recordElement.find('ul.EXLResultTabs .EXLRequestTab').length != 0){
-    url.push( '/NU:' + recordId + '&tabs=requestTab');
+    url.push( '/NU:' + recordId + '&tabs=requestTab&displayMode=full');
   }
   url = url.join( '' );
   $("#permalinkLink").html('<input type="text" value="' + url +'" readonly="readonly" onclick="this.select();"/>');
