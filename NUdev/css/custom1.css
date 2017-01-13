@@ -13,3 +13,9 @@ prm-search > md-content.md-primoExplore-theme #main-results {
 
 div#facets, prm-search > md-content.md-primoExplore-theme > div:first-of-type { order: -1; }
 /*end move facets to left*/
+
+/*hide language dropdown*/
+prm-change-lang {
+  display:none;
+}
+/*end hide language dropdown*/
