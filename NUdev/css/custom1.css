@@ -75,3 +75,22 @@ prm-topbar {
   height: 85px;
 }
 /*end logo fixes*/
+
+/*worldcat passthrough*/
+prm-search-bar-after .md-button {
+  color: #fff;
+  font-weight: bold;
+  top: -6px;
+}
+prm-search-bar-after .md-button:hover, prm-search-bar-after .md-button:focus, prm-search-bar-after .md-button:hover:not([disabled]) {
+  color: #fff;
+  background-color: rgba(51,51,51,.1);
+}
+prm-search-bar-after .md-button img {
+  vertical-align: text-bottom;
+  padding-right: 2px;
+}
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
+  top: 45px;
+}
+/*end worldcat passthrough*/

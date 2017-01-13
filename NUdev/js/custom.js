@@ -2,6 +2,7 @@
     "use strict";
     'use strict';
 
+    //need to figure out how to pass in view code instead of hardcoding to NUdev for image path
 
     var app = angular.module('viewCustom', ['angularLoad']);
 
@@ -12,6 +13,34 @@
         /*var app = angular.module('centralCustom', ['angularLoad']);*/
 
     /****************************************************************************************************/
+
+
+    /*add worldcat passthrough*/
+    app.component('prmSearchBarAfter', {
+      template: '<md-button ng-click="$ctrl.worldcatPassthrough()" aria-label="Search Other Libraries">Search <img ng-src="/custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button>',
+      bindings: {parentCtrl: '<'},
+      controller: 'SearchBarAfterController',
+    });
+
+    app.controller('SearchBarAfterController', ['$window', function($window){
+      var vm = this;
+      vm.getQuery = getQuery;
+      vm.worldcatPassthrough = worldcatPassthrough;
+
+      function getQuery(){
+        return vm.parentCtrl.mainSearchField;
+      }
+
+      function worldcatPassthrough(){
+        $window.open("https://northeastern.on.worldcat.org/search?databaseList=638&queryString={{getQuery()}}");
+      }
+
+      angular.element(document).ready(function () {
+        //this moves the element up to where advanced search is
+        document.getElementsByClassName('search-elements-wrapper')[0].append(document.getElementsByTagName('prm-search-bar-after')[0]);
+      });
+    }]);
+    /*end add worldcat passthrough*/
 
 
     /*make lib logo clickable*/
