@@ -15,7 +15,10 @@ div#facets, prm-search > md-content.md-primoExplore-theme > div:first-of-type { 
 /*end move facets to left*/
 
 /*hide language dropdown*/
-prm-change-lang {
+prm-topbar prm-change-lang {
   display:none;
+}
+.user-button-text .user-language {
+  display: none;
 }
 /*end hide language dropdown*/
