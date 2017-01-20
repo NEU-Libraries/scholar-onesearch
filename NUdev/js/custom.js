@@ -17,7 +17,7 @@
 
     /*add worldcat passthrough*/
     app.component('prmSearchBarAfter', {
-      template: '<md-button ng-click="$ctrl.worldcatPassthrough()" aria-label="Search Other Libraries">Search <img ng-src="/custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button>',
+      template: '<md-button ng-click="$ctrl.worldcatPassthrough()" aria-label="Search Other Libraries">Search <img ng-src="custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button>',
       bindings: {parentCtrl: '<'},
       controller: 'SearchBarAfterController',
     });
@@ -32,7 +32,8 @@
       }
 
       function worldcatPassthrough(){
-        $window.open("https://northeastern.on.worldcat.org/search?databaseList=638&queryString={{getQuery()}}");
+        var query = getQuery();
+        $window.open("https://northeastern.on.worldcat.org/search?databaseList=638&queryString="+query);
       }
 
       angular.element(document).ready(function () {
@@ -45,11 +46,6 @@
 
     /*make lib logo clickable*/
     app.controller('prmLogoAfterController', [function () {
-      // var vm = this;
-      // vm.getIconLink = getIconLink;
-      // function getIconLink() {
-      //   return vm.parentCtrl.iconLink;
-      // }
     }]);
 
     app.component('prmLogoAfter',{
