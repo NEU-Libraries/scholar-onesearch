@@ -58,4 +58,39 @@
       '<img class="logo-image sos" alt="{{::(&apos;nui.header.LogoAlt&apos; | translate)}}" ng-src="custom/NUdev/img/sosbold.svg"/></a></div>'
     });
     /*end make lib logo clickable*/
+
+    /*add report a problem*/
+    app.controller('prmActionListAfterController', ['$scope', function($scope) {
+      var vm = this;
+      vm.$onInit = function() {
+        vm.prmActionCtrl.actionLabelNamesMap["report_a_problem"] = "Report a Problem";
+        vm.prmActionCtrl.actionIconNamesMap["report_a_problem"] = "report_a_problem";
+        vm.prmActionCtrl.actionIcons["report_a_problem"] = {
+          icon: "ic_announcement_24px",
+          iconSet: "action",
+          type: "svg"
+        };
+        if (!vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"]) { // ensure we aren't duplicating the entry
+          vm.prmActionCtrl.actionListService.requiredActionsList[8] = vm.prmActionCtrl.actionListService.requiredActionsList[7];
+          vm.prmActionCtrl.actionListService.requiredActionsList[7] = vm.prmActionCtrl.actionListService.requiredActionsList[6];
+          vm.prmActionCtrl.actionListService.requiredActionsList[6] = vm.prmActionCtrl.actionListService.requiredActionsList[5];
+          vm.prmActionCtrl.actionListService.requiredActionsList[5] = vm.prmActionCtrl.actionListService.requiredActionsList[4];
+          vm.prmActionCtrl.actionListService.requiredActionsList[4] = "report_a_problem";
+          vm.prmActionCtrl.actionListService.actionsToDisplay.unshift("report_a_problem");
+          vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"] = 4;
+        }
+        //TODO - eventually change this to prod permalink - or retrieve permalink from somewhere else instead of manually writing it
+        var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmActionCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmActionCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
+        vm.prmActionCtrl.onToggle["report_a_problem"] = function(){
+          window.open(url, '_blank');
+        };
+    };
+    }]);
+    app.component('prmActionListAfter', {
+      require: {
+        prmActionCtrl: '^prmActionList',
+      },
+      controller: 'prmActionListAfterController',
+    });
+    /*end add report a problem*/
 })();

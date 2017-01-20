@@ -36,8 +36,11 @@ prm-search-bar {
 prm-topbar .md-button, prm-topbar .md-button .item-content {
   color: #666;
 }
-prm-search-bookmark-filter #favorites-button, prm-user-area {
+prm-search-bookmark-filter #favorites-button {
   background-color: rgba(51,51,51,.45);
+}
+prm-user-area, md-fab-actions.md-toolbar-tools {
+  background-color: rgba(51,51,51,.45) !important;
 }
 prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
   font-weight: bold;
@@ -94,3 +97,9 @@ prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
   top: 45px;
 }
 /*end worldcat passthrough*/
+
+/*for report a problem*/
+.icon-tabs md-tab-item .button-text, .icon-tabs md-tab-item:not([disabled]) .button-text {
+  letter-spacing: .03em;
+}
+/*end report a problem */
