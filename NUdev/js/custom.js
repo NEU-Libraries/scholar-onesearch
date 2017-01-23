@@ -92,5 +92,42 @@
       },
       controller: 'prmActionListAfterController',
     });
+
+
+    app.controller('prmBriefResultContainerAfterController', ['$scope', function($scope){
+      var vm = this;
+      vm.$onInit = function() {
+        vm.prmBriefResultCtrl.upFrontActionsService.actionIconNamesMap["report_a_problem"] = "report_a_problem";
+        vm.prmBriefResultCtrl.upFrontActionsService.actionLabelNamesMap["report_a_problem"] = "Report a Problem";
+        vm.prmBriefResultCtrl.actionsIcons["report_a_problem"] = {
+          icon: "ic_announcement_24px",
+          iconSet: "action",
+          type: "svg"
+        };
+        var index = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList.length;
+        if (vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index - 1] != "report_a_problem") { // ensure we aren't duplicating the entry
+          vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index] = "report_a_problem";
+        }
+        //TODO - eventually change this to prod permalink - or retrieve permalink from somewhere else instead of manually writing it
+        var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmBriefResultCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmBriefResultCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
+        vm.prmBriefResultCtrl.openTab = function(e, t){
+          e.stopPropagation();
+          if (t == "report_a_problem"){
+            window.open(url, '_blank');
+          } else {
+            this.openItemMenu(e);
+            this.selectedAction = "none";
+            this.$scope.$apply();
+            this.selectedAction = t;
+          }
+        }
+      };
+    }]);
+    app.component('prmBriefResultContainerAfter', {
+      require: {
+        prmBriefResultCtrl: '^prmBriefResultContainer',
+      },
+      controller: 'prmBriefResultContainerAfterController'
+    });
     /*end add report a problem*/
 })();
