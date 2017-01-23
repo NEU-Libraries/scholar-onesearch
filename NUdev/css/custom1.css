@@ -103,3 +103,9 @@ prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
   letter-spacing: .03em;
 }
 /*end report a problem */
+
+/* to hide icons in personal account area*/
+prm-account-overview md-tab-content prm-icon.giant-icon {
+  display: none;
+}
+/*end hide icons in personal account area*/
