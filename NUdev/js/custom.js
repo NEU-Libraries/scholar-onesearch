@@ -40,6 +40,12 @@
         //this moves the element up to where advanced search is
         document.getElementsByClassName('search-elements-wrapper')[0].append(document.getElementsByTagName('prm-search-bar-after')[0]);
       });
+
+      /*show tabs and scopes by default */
+      vm.$onInit = function(){
+        vm.parentCtrl.showTabsAndScopes = 1;
+      }
+      /*end show tabs and scopes by default */
     }]);
     /*end add worldcat passthrough*/
 
