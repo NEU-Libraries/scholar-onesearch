@@ -44,6 +44,7 @@
       /*show tabs and scopes by default */
       vm.$onInit = function(){
         vm.parentCtrl.showTabsAndScopes = 1;
+        cm.parentCtrl.scopesDialerConfiguration.display = true;
       }
       /*end show tabs and scopes by default */
     }]);
@@ -66,7 +67,7 @@
       template: '<div class="product-logo product-logo-local" layout="row" layout-align="start center" layout-fill id="banner" tabindex="0" role="banner">' +
       '<a href="http://library.northeastern.edu">' +
       '<img class="logo-image" alt="{{::(&apos;nui.header.LogoAlt&apos; | translate)}}" ng-src="custom/NUdev/img/nu-libraries-logo.svg"/></a>' +
-      '<a href="/primo-explore?vid={{$ctrl.getView()}}">' +
+      '<a href="/primo-explore/?vid={{$ctrl.getView()}}">' +
       '<img class="logo-image sos" alt="{{::(&apos;nui.header.LogoAlt&apos; | translate)}}" ng-src="custom/NUdev/img/sosbold.svg"/></a></div>'
     });
     /*end make lib logo clickable*/
