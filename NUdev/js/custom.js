@@ -51,7 +51,13 @@
 
 
     /*make lib logo clickable*/
-    app.controller('prmLogoAfterController', [function () {
+    app.controller('prmLogoAfterController', ['$scope', '$window', function ($scope, $window) {
+      var vm = this;
+      vm.getView = getView;
+
+      function getView(){
+        return $window.appConfig.vid
+      }
     }]);
 
     app.component('prmLogoAfter',{
@@ -60,7 +66,7 @@
       template: '<div class="product-logo product-logo-local" layout="row" layout-align="start center" layout-fill id="banner" tabindex="0" role="banner">' +
       '<a href="http://library.northeastern.edu">' +
       '<img class="logo-image" alt="{{::(&apos;nui.header.LogoAlt&apos; | translate)}}" ng-src="custom/NUdev/img/nu-libraries-logo.svg"/></a>' +
-      '<a href="http://onesearch.northeastern.edu">' +
+      '<a href="/primo-explore?vid={{$ctrl.getView()}}">' +
       '<img class="logo-image sos" alt="{{::(&apos;nui.header.LogoAlt&apos; | translate)}}" ng-src="custom/NUdev/img/sosbold.svg"/></a></div>'
     });
     /*end make lib logo clickable*/
@@ -76,6 +82,7 @@
           iconSet: "action",
           type: "svg"
         };
+        //TODO - what about if something gets added to this list - may need to refactor for loop
         if (!vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"]) { // ensure we aren't duplicating the entry
           vm.prmActionCtrl.actionListService.requiredActionsList[8] = vm.prmActionCtrl.actionListService.requiredActionsList[7];
           vm.prmActionCtrl.actionListService.requiredActionsList[7] = vm.prmActionCtrl.actionListService.requiredActionsList[6];
@@ -110,9 +117,12 @@
           iconSet: "action",
           type: "svg"
         };
+        //TODO - what about if something gets added to this list - may need to refactor for loop
         var index = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList.length;
-        if (vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index - 1] != "report_a_problem") { // ensure we aren't duplicating the entry
-          vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index] = "report_a_problem";
+        if (vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[0] != "report_a_problem") { // ensure we aren't duplicating the entry
+          vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index - (index -2)] = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[1]
+          vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index - (index -1)] = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[0]
+          vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[0] = "report_a_problem";
         }
         //TODO - eventually change this to prod permalink - or retrieve permalink from somewhere else instead of manually writing it
         var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmBriefResultCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmBriefResultCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
