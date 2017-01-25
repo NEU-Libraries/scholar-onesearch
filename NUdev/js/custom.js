@@ -16,6 +16,7 @@
 
 
     /*add worldcat passthrough*/
+    //TODO - do not show worldcat passthrough until a search has been performed
     app.component('prmSearchBarAfter', {
       template: '<md-button ng-click="$ctrl.worldcatPassthrough()" aria-label="Search Other Libraries">Search <img ng-src="custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button>',
       bindings: {parentCtrl: '<'},
@@ -44,7 +45,6 @@
       /*show tabs and scopes by default */
       vm.$onInit = function(){
         vm.parentCtrl.showTabsAndScopes = 1;
-        cm.parentCtrl.scopesDialerConfiguration.display = true;
       }
       /*end show tabs and scopes by default */
     }]);
