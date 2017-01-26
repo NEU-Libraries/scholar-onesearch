@@ -80,6 +80,7 @@ prm-topbar {
 /*end logo fixes*/
 
 /*worldcat passthrough*/
+/*TODO fix scaling for search other libraries link and fix placement of link on mobile - add icon or something*/
 prm-search-bar-after .md-button {
   color: #fff;
   font-weight: bold;
@@ -109,3 +110,10 @@ prm-account-overview md-tab-content prm-icon.giant-icon {
   display: none;
 }
 /*end hide icons in personal account area*/
+
+/*for long tab name in full view*/
+prm-full-view .services-index-under .md-button {
+  white-space: normal;
+  line-height: 18px;
+}
+/*end long tab name in full view*/
