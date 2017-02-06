@@ -81,21 +81,35 @@ prm-topbar {
 
 /*worldcat passthrough*/
 /*TODO fix scaling for search other libraries link and fix placement of link on mobile - add icon or something*/
-prm-search-bar-after .md-button {
+#worldcat-button {
   color: #fff;
   font-weight: bold;
-  top: -6px;
+  display: none;
+  position: absolute;
+  left: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  min-height: 25px;
+  line-height: 25px;
 }
-prm-search-bar-after .md-button:hover, prm-search-bar-after .md-button:focus, prm-search-bar-after .md-button:hover:not([disabled]) {
+#worldcat-button:hover, #worldcat-button:focus, #worldcat-button:hover:not([disabled]) {
   color: #fff;
   background-color: rgba(51,51,51,.1);
 }
-prm-search-bar-after .md-button img {
+#worldcat-button img {
   vertical-align: text-bottom;
   padding-right: 2px;
 }
-prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
-  top: 45px;
+.advanced-mode #worldcat-button {
+  font-weight: normal;
+  color: #000;
+}
+prm-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-bar .search-switch-buttons .md-button.switch-to-simple {
+  top: 54px;
+  min-height: 25px;
+  line-height: 25px;
 }
 /*end worldcat passthrough*/
 
