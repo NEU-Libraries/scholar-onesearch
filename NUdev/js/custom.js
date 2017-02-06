@@ -16,20 +16,31 @@
 
 
     /*add worldcat passthrough*/
-    //TODO - do not show worldcat passthrough until a search has been performed
     app.component('prmSearchBarAfter', {
-      template: '<md-button ng-click="$ctrl.worldcatPassthrough()" aria-label="Search Other Libraries">Search <img ng-src="custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button>',
       bindings: {parentCtrl: '<'},
       controller: 'SearchBarAfterController',
     });
+    app.controller('SearchBarAfterController', ['$scope', function($scope){
+      var vm = this;
+      angular.element(document).ready(function () {
+        var node = document.getElementById('worldcat-button');
+        document.getElementsByClassName('search-elements-wrapper')[0].append(node);
+      });
+    }]);
 
-    app.controller('SearchBarAfterController', ['$window', function($window){
+    app.component('prmSearchAfter', {
+      template: '<md-button ng-click="$ctrl.worldcatPassthrough()" id="worldcat-button" aria-label="Search Other Libraries">Search <img ng-src="custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button>',
+      bindings: {parentCtrl: '<'},
+      controller: 'SearchAfterController',
+    });
+
+    app.controller('SearchAfterController', ['$window', function($window){
       var vm = this;
       vm.getQuery = getQuery;
       vm.worldcatPassthrough = worldcatPassthrough;
 
       function getQuery(){
-        return vm.parentCtrl.mainSearchField;
+        return vm.parentCtrl.searchFieldsService._mainSearch;
       }
 
       function worldcatPassthrough(){
@@ -37,10 +48,11 @@
         $window.open("https://northeastern.on.worldcat.org/search?databaseList=638&queryString="+query);
       }
 
-      angular.element(document).ready(function () {
-        //this moves the element up to where advanced search is
-        document.getElementsByClassName('search-elements-wrapper')[0].append(document.getElementsByTagName('prm-search-bar-after')[0]);
-      });
+      if (vm.parentCtrl.isSearchDone() == true){
+        document.getElementById('worldcat-button').style.display = 'block';
+      } else {
+        document.getElementById('worldcat-button').style.display = 'none';
+      }
 
       /*show tabs and scopes by default */
       vm.$onInit = function(){
@@ -147,4 +159,5 @@
       controller: 'prmBriefResultContainerAfterController'
     });
     /*end add report a problem*/
+    
 })();
