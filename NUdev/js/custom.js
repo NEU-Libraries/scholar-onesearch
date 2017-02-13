@@ -25,11 +25,24 @@
       angular.element(document).ready(function () {
         var node = document.getElementById('worldcat-button');
         document.getElementsByClassName('search-elements-wrapper')[0].append(node);
+        var mobile_node = document.getElementById('worldcat-mobile-button');
+        document.getElementsByClassName('search-actions')[0].children[0].classList.remove("hide-gt-xs");
+        document.getElementsByClassName('search-actions')[0].children[0].className += " hide-gt-sm";
+        document.getElementsByClassName('search-actions')[0].prepend(mobile_node);
+        if (!node.classList.contains("hide-sm")){
+          node.className += " hide-sm";
+        }
+        if (!node.classList.contains("hide-gt-sm")){
+          mobile_node.className += " hide-gt-sm";
+        }
+        document.getElementsByClassName('search-switch-buttons')[0].classList.remove("hide-xs");
+        document.getElementsByClassName('search-switch-buttons')[0].className += " hide-sm";
+        document.getElementsByClassName('search-elements-wrapper')[0].classList.remove("flex-sm-85");
       });
     }]);
 
     app.component('prmSearchAfter', {
-      template: '<md-button ng-click="$ctrl.worldcatPassthrough()" id="worldcat-button" aria-label="Search Other Libraries">Search <img ng-src="custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button>',
+      template: '<md-button ng-click="$ctrl.worldcatPassthrough()" id="worldcat-button" aria-label="Search Other Libraries">Search <img ng-src="custom/NUdev/img/worldcat-logo.png"/>Other Libraries</md-button><md-button ng-click="$ctrl.worldcatPassthrough()" id="worldcat-mobile-button" aria-label="Search Other Libraries"> <img ng-src="custom/NUdev/img/worldcat-logo.png"/> </md-button>',
       bindings: {parentCtrl: '<'},
       controller: 'SearchAfterController',
     });
@@ -48,15 +61,21 @@
         $window.open("https://northeastern.on.worldcat.org/search?databaseList=638&queryString="+query);
       }
 
-      if (vm.parentCtrl.isSearchDone() == true){
-        document.getElementById('worldcat-button').style.display = 'block';
-      } else {
-        document.getElementById('worldcat-button').style.display = 'none';
+      if (vm.parentCtrl.isSearchDone() == true && document.getElementsByTagName('primo-explore')[0].classList.contains("__gt-sm")){
+        document.getElementById('worldcat-button').classList.add("show-md"); // = 'block';
+      } else if (vm.parentCtrl.isSearchDone() != true) {
+        document.getElementById('worldcat-button').classList.add("hide");
       }
 
       /*show tabs and scopes by default */
       vm.$onInit = function(){
         vm.parentCtrl.showTabsAndScopes = 1;
+        if (!document.getElementById('worldcat-mobile-button').classList.contains("hide-gt-sm")){
+          document.getElementById('worldcat-mobile-button').className += " hide-gt-sm";
+        }
+        if (!document.getElementById('worldcat-button').classList.contains("hide-sm")){
+          document.getElementById('worldcat-button').className += " hide-sm";
+        }
       }
       /*end show tabs and scopes by default */
     }]);
@@ -159,5 +178,4 @@
       controller: 'prmBriefResultContainerAfterController'
     });
     /*end add report a problem*/
-    
 })();

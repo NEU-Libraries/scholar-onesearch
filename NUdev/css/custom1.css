@@ -80,11 +80,9 @@ prm-topbar {
 /*end logo fixes*/
 
 /*worldcat passthrough*/
-/*TODO fix scaling for search other libraries link and fix placement of link on mobile - add icon or something*/
 #worldcat-button {
   color: #fff;
   font-weight: bold;
-  display: none;
   position: absolute;
   left: 100%;
   padding-top: 0;
@@ -106,6 +104,20 @@ prm-topbar {
   font-weight: normal;
   color: #000;
 }
+#worldcat-mobile-button {
+  vertical-align: sub;
+}
+
+.__sm.__gt-xs .search-actions button.md-icon-button {
+  padding-top: 15px;
+}
+#worldcat-mobile-button img {
+  padding-top: 5px;
+}
+.__xs #worldcat-mobile-button img {
+  padding-top: 13px;
+}
+
 prm-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-bar .search-switch-buttons .md-button.switch-to-simple {
   top: 54px;
   min-height: 25px;
