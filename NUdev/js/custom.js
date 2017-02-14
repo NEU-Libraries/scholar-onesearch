@@ -178,4 +178,23 @@
       controller: 'prmBriefResultContainerAfterController'
     });
     /*end add report a problem*/
+
+    /*add proquest account id for service link*/
+    app.controller('prmServiceLinksAfterController', ['$scope', function($scope){
+      var vm = this;
+      vm.$onInit = function() {
+        angular.forEach(vm.prmServiceLinksCtrl.recordLinks, function(value, key){
+          if (value.linkURL.indexOf("search.proquest.com") >= 0){
+            value.linkURL = value.linkURL + "?accountid=12826";
+          }
+        });
+      };
+    }]);
+    app.component('prmServiceLinksAfter', {
+      require: {
+        prmServiceLinksCtrl: '^prmServiceLinks',
+      },
+      controller: 'prmServiceLinksAfterController'
+    });
+    /*ends add proquest account id for service link*/
 })();
