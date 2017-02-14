@@ -105,6 +105,7 @@ module.exports = function(grunt) {
         options: {
           path: '<%= stagingServer.path %>',
           host: '<%= stagingServer.host %>',
+          port: '10022',
           username: '<%= stagingServer.username %>',
           password: '<%= stagingServer.password %>',
           srcBasePath: "dist/",
@@ -118,6 +119,7 @@ module.exports = function(grunt) {
         },
         options: {
           path: '<%= devServer.path %>',
+          port: '10022',
           host: '<%= devServer.host %>',
           username: '<%= devServer.username %>',
           password: '<%= devServer.password %>',
@@ -133,6 +135,7 @@ module.exports = function(grunt) {
         options: {
           path: '<%= targetServer.path %>',
           host: '<%= targetServer.host %>',
+          port: '10022',
           username: '<%= targetServer.username %>',
           password: '<%= targetServer.password %>',
           srcBasePath: "dist/",
