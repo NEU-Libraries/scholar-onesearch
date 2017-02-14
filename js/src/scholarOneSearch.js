@@ -182,7 +182,7 @@ jQuery(function($) {
           single_newhref = single_newhref + '?accountid=12826';
         }
         result.$el.find(".EXLViewOnlineTab.EXLResultSelectedTabEXLResultTabIconPopout a").attr("href", single_newhref);
-        result.$el.find(".EXLContainer-viewOnlineTab .EXLTabHeaderContent a").attr("href". single_newhref);
+        result.$el.find(".EXLContainer-viewOnlineTab .EXLTabHeaderContent a").attr("href", single_newhref);
     }
 
     function buildFindIt(result) {
