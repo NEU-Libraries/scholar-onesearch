@@ -162,12 +162,19 @@ jQuery(function($) {
 
         /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
     var buildViewOnline = function( result ){
-         var viewonline = result.$el.find(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
+        var viewonline = result.$el.find(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
         var newhref = 'http://ezproxy.neu.edu/login?URL=' + viewonline;
         if (newhref.indexOf("search.proquest.com") >= 0) {
           newhref = newhref + '?accountid=12826';
         }
         result.$el.find(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
+        var single_viewonline = result.$el.find(".EXLViewOnlineTab.EXLResultSelectedTabEXLResultTabIconPopout a").attr(href);
+        var single_newhref = 'http://ezproxy.neu.edu/login?URL=' + single_viewonline;
+        if (single_newhref.indexOf("search.proquest.com") >= 0) {
+          single_newhref = single_newhref + '?accountid=12826';
+        }
+        result.$el.find(".EXLViewOnlineTab.EXLResultSelectedTabEXLResultTabIconPopout a").attr("href", single_newhref);
+        result.$el.find(".EXLContainer-viewOnlineTab .EXLTabHeaderContent a").attr("href". single_newhref);
     }
 
     function buildFindIt(result) {
