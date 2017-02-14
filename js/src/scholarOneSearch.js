@@ -182,8 +182,8 @@ jQuery(function($) {
       if (single_viewonline){
         single_viewonline = single_viewonline.attr("href");
         if (single_viewonline != undefined){
-          if (single_viewonline.indexOf("http://ezproxy.neu.edu/login") < 0){
-            var single_newhref = 'ezproxy.neu.edu/login?URL=' + single_viewonline;
+          if (single_viewonline.indexOf("ezproxy.neu.edu/login") < 0){
+            var single_newhref = 'http://ezproxy.neu.edu/login?URL=' + single_viewonline;
           } else {
             var single_newhref = single_viewonline;
           }
