@@ -163,7 +163,7 @@ jQuery(function($) {
         /*Build for viewOnline Button to function using ezproxy when external resource being loaded in iframe*/
     var buildViewOnline = function( result ){
         var viewonline = result.$el.find(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href");
-        if (viewonline.indexOf("ezproxy.neu.edu/login?URL=") < 0){
+        if (viewonline.indexOf("ezproxy.neu.edu/login") < 0){
           var newhref = 'http://ezproxy.neu.edu/login?URL=' + viewonline;
         } else {
           var newhref = viewonline;
@@ -173,7 +173,7 @@ jQuery(function($) {
         }
         result.$el.find(".EXLViewOnlineTab.EXLResultTabIconPopout a").attr("href", newhref);
         var single_viewonline = result.$el.find(".EXLViewOnlineTab.EXLResultSelectedTabEXLResultTabIconPopout a").attr(href);
-        if (single_viewonline.indexOf("http://ezproxy.neu.edu/login?URL=") < 0){
+        if (single_viewonline.indexOf("http://ezproxy.neu.edu/login") < 0){
           var single_newhref = 'ezproxy.neu.edu/login?URL=' + single_viewonline;
         } else {
           var single_newhref = viewonline;
