@@ -91,6 +91,7 @@ prm-topbar {
   margin-bottom: 0;
   min-height: 25px;
   line-height: 25px;
+  top: 0px;
 }
 #worldcat-button:hover, #worldcat-button:focus, #worldcat-button:hover:not([disabled]) {
   color: #fff;
