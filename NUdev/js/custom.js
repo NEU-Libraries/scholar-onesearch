@@ -197,4 +197,25 @@
       controller: 'prmServiceLinksAfterController'
     });
     /*ends add proquest account id for service link*/
+
+    /*add journal title search link to advanced search*/
+    app.controller('prmAdvancedSearchAfterController', ['$window', function($window){
+      var vm = this;
+      vm.journalTitleSearch = journalTitleSearch;
+      angular.element(document).ready(function () {
+        var node = document.getElementById("journal_title_search");
+        document.getElementsByTagName('prm-advanced-search')[0].children[0].children[0].children[1].children[1].append(node);
+      });
+
+      function journalTitleSearch(){
+        $window.open("http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/search?sortby=rank&vid=NU_JOURNALS&lang=en_US&mode=advanced");
+      }
+
+    }]);
+    app.component('prmAdvancedSearchAfter', {
+      bindings: {parentCtrl: '<'},
+      controller: 'prmAdvancedSearchAfterController',
+      template: '<md-button class="md-primary" ng-click="$ctrl.journalTitleSearch()" id="journal_title_search" aria-label="Journal Title Search">Journal Title Search</md-button>'
+    });
+    /*ends journal title search link to advanced search*/
 })();
