@@ -208,9 +208,20 @@
       });
 
       function journalTitleSearch(){
-        $window.open("http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/search?sortby=rank&vid=NU_JOURNALS&lang=en_US&mode=advanced");
+        var node = document.getElementById("journal_title_search");
+        if (node.textContent == "Journal Title Search"){
+          vm.parentCtrl.materialType.selection = vm.parentCtrl.materialType.options[2];
+          vm.parentCtrl.scope = vm.parentCtrl.scopesOptions[1];
+          vm.parentCtrl.rowArray[0].searchCategory = "title";
+          node.textContent = "Advanced Search";
+        } else {
+          vm.parentCtrl.materialType.selection = vm.parentCtrl.materialType.options[5];
+          vm.parentCtrl.scope = vm.parentCtrl.scopesOptions[0];
+          vm.parentCtrl.rowArray[0].searchCategory = "any";
+          var node = document.getElementById("journal_title_search");
+          node.textContent = "Journal Title Search";
+        }
       }
-
     }]);
     app.component('prmAdvancedSearchAfter', {
       bindings: {parentCtrl: '<'},
