@@ -63,6 +63,7 @@
 
       if (vm.parentCtrl.isSearchDone() == true && document.getElementsByTagName('primo-explore')[0].classList.contains("__gt-sm")){
         document.getElementById('worldcat-button').classList.add("show-md"); // = 'block';
+        document.getElementById('worldcat-button').classList.remove("hide");
       } else if (vm.parentCtrl.isSearchDone() != true) {
         document.getElementById('worldcat-button').classList.add("hide");
       }
@@ -76,6 +77,7 @@
         if (!document.getElementById('worldcat-button').classList.contains("hide-sm")){
           document.getElementById('worldcat-button').className += " hide-sm";
         }
+        document.getElementsByTagName('prm-search-after')[0].classList.add("hide"); //hide the prm-search-after since we move the buttons out of it for display
       }
       /*end show tabs and scopes by default */
     }]);
