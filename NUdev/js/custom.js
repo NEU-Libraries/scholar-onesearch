@@ -23,18 +23,23 @@
     app.controller('SearchBarAfterController', ['$scope', function($scope){
       var vm = this;
       angular.element(document).ready(function () {
+        vm.parentCtrl.showTabsAndScopes = 1;
         var node = document.getElementById('worldcat-button');
-        document.getElementsByClassName('search-elements-wrapper')[0].append(node);
+        if (node){
+          document.getElementsByClassName('search-elements-wrapper')[0].append(node);
+          if (!node.classList.contains("hide-sm")){
+            node.className += " hide-sm";
+          }
+        }
         var mobile_node = document.getElementById('worldcat-mobile-button');
+        if (mobile_node){
+          document.getElementsByClassName('search-actions')[0].prepend(mobile_node);
+          if (!mobile_node.classList.contains("hide-gt-sm")){
+            mobile_node.className += " hide-gt-sm";
+          }
+        }
         document.getElementsByClassName('search-actions')[0].children[0].classList.remove("hide-gt-xs");
         document.getElementsByClassName('search-actions')[0].children[0].className += " hide-gt-sm";
-        document.getElementsByClassName('search-actions')[0].prepend(mobile_node);
-        if (!node.classList.contains("hide-sm")){
-          node.className += " hide-sm";
-        }
-        if (!node.classList.contains("hide-gt-sm")){
-          mobile_node.className += " hide-gt-sm";
-        }
         document.getElementsByClassName('search-switch-buttons')[0].classList.remove("hide-xs");
         document.getElementsByClassName('search-switch-buttons')[0].className += " hide-sm";
         document.getElementsByClassName('search-elements-wrapper')[0].classList.remove("flex-sm-85");
@@ -166,8 +171,6 @@
             window.open(url, '_blank');
           } else {
             this.openItemMenu(e);
-            this.selectedAction = "none";
-            this.$scope.$apply();
             this.selectedAction = t;
           }
         }
