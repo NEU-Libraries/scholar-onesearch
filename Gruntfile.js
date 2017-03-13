@@ -91,6 +91,7 @@ module.exports = function(grunt) {
         options: {
           path: '<%= prodServer.path %>',
           host: '<%= prodServer.host %>',
+          port: '10022',
           username: '<%= prodServer.username %>',
           password: '<%= prodServer.password %>',
           srcBasePath: "dist/",
