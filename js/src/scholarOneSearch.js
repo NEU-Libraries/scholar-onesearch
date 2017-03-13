@@ -327,18 +327,16 @@ jQuery(function($) {
 
     // Persistent Sign In Message
     var signInReminder = function() {
-      var msg = "Scholar OneSearch will undergo scheduled maintenance between Sunday, March 5 and Friday, March 10. During this period, certain features such as eShelf and saved queries may be unavailable.";
       //Adding the Sign-in Prompt on Brief results only
       if ($('#exlidSignOut').hasClass('EXLHidden') && $("#exlidFacetTile").length != 0) {
         var signInLink = $('#exlidSignIn a').attr('href');
-        msg += "<hr/><a href='" + signInLink + "'>Sign in<a/> for enhanced features and complete results.";
-        // $('#exlidHeaderSystemFeedback').append('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback"><strong>' + msg + '</strong></div>');
+        var msg = "<a href='" + signInLink + "'>Sign in<a/> for enhanced features and complete results.";
+        $('#exlidHeaderSystemFeedback').append('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback"><strong>' + msg + '</strong></div>');
       }
-      $('#exlidHeaderSystemFeedback').prepend('<div id="exlidHeaderSystemFeedbackContent" class="EXLSystemFeedback alert alert-warning"><strong>' + msg + '</strong></div>');
-      //Hiding the Sign-blurb from the main page if signed in
-      // if ($("#exlidSignIn").hasClass("EXLHidden")) {
-      //     $("#signInHomeBody strong").hide();
-      // }
+      // Hiding the Sign-blurb from the main page if signed in
+      if ($("#exlidSignIn").hasClass("EXLHidden")) {
+          $("#signInHomeBody strong").hide();
+      }
     };
     // Build the eShelf icons
     var  eShelfIcons = function(){
