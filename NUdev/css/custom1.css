@@ -150,3 +150,10 @@ body.md-dialog-is-showing  {
     overflow-x:visible!important;
 }
 /*end fix for mystery gray bar from listserv*/
+
+/*move snowman paginator to right*/
+.__gt-md prm-page-nav-menu {
+  right: 1em;
+  left: auto;
+}
+/*end move snowman paginator to right*/
