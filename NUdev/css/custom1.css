@@ -144,3 +144,9 @@ prm-full-view .services-index-under .md-button {
   line-height: 18px;
 }
 /*end long tab name in full view*/
+
+/*start fix for mystery gray bar from listserv*/
+body.md-dialog-is-showing  {
+    overflow-x:visible!important;
+}
+/*end fix for mystery gray bar from listserv*/
