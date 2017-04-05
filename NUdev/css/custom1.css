@@ -157,3 +157,9 @@ body.md-dialog-is-showing  {
   left: auto;
 }
 /*end move snowman paginator to right*/
+
+/* hide barcode column */
+.itemsList #TABLE_DATA_item_list th:first-of-type, .itemsList #TABLE_DATA_item_list td:first-of-type {
+  display: none !important;
+}
+/* end hide barcode column */
