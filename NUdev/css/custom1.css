@@ -163,3 +163,8 @@ body.md-dialog-is-showing  {
   display: none !important;
 }
 /* end hide barcode column */
+
+/* hide tags */
+#tags {display:none;} 
+button[aria-label="Tags"]{display:none;} 
+/* end hide tags */
