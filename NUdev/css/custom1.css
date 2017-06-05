@@ -1,15 +1,3 @@
-/*hide language dropdown*/
-prm-topbar prm-change-lang {
-  display:none;
-}
-.user-button-text .user-language {
-  display: none;
-}
-.overlay-menu-content .vertical-divider:first-of-type, .overlay-menu-content .overlay-menu-item {
-  display: none;
-}
-/*end hide language dropdown*/
-
 /*change header bg colors*/
 prm-topbar .top-nav-bar {
   background-color: #f3f3f3;
