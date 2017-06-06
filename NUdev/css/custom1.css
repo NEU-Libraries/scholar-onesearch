@@ -102,6 +102,13 @@ prm-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-
 .icon-tabs md-tab-item .button-text, .icon-tabs md-tab-item:not([disabled]) .button-text {
   letter-spacing: .03em;
 }
+
+#report_a_problem .button-text {
+  white-space: normal;
+}
+#report_a_problem prm-icon {
+  padding-top: 10px;
+}
 /*end report a problem */
 
 /* to hide icons in personal account area*/
