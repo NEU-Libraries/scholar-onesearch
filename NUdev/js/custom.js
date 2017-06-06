@@ -136,9 +136,12 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           vm.prmActionCtrl.actionListService.actionsToDisplay.unshift("report_a_problem");
           vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"] = 4;
         }
-        //TODO - eventually change this to prod permalink - or retrieve permalink from somewhere else instead of manually writing it
-        var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmActionCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmActionCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
-        vm.prmActionCtrl.onToggle["report_a_problem"] = function(){
+        if (vm.prmActionCtrl.$state.$current.locals.globals.$stateParams.vid == "NU") { //if using prod view, use prod links
+          var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmBriefResultCtrl.item.pnx.display.title[0]+" (http://northeastern-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmActionCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
+        } else { //not prod view, don't use prod links
+          var url = "http://librarydev.neu.edu/get-help/tech-support/report-a-problem?resource="+vm.prmActionCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmActionCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
+        }
+        vm.prmActionCtrl.actionListService.onToggle["report_a_problem"] = function(){
           window.open(url, '_blank');
         };
     };
