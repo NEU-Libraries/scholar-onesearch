@@ -141,9 +141,18 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         } else { //not prod view, don't use prod links
           var url = "http://librarydev.neu.edu/get-help/tech-support/report-a-problem?resource="+vm.prmActionCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmActionCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
         }
-        vm.prmActionCtrl.actionListService.onToggle["report_a_problem"] = function(){
-          window.open(url, '_blank');
-        };
+        if (vm.prmActionCtrl.actionListService.onToggle){
+          vm.prmActionCtrl.actionListService.onToggle["report_a_problem"] = function(){
+            window.open(url, '_blank');
+          };
+        }
+        if (vm.prmActionCtrl.onToggle){
+          vm.prmActionCtrl.onToggle["report_a_problem"] = function(){
+            window.open(url, '_blank');
+          };
+        }
+
+
     };
     }]);
     app.component('prmActionListAfter', {
