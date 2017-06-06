@@ -103,11 +103,8 @@ prm-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-
   letter-spacing: .03em;
 }
 
-#report_a_problem .button-text {
+prm-action-list .button-text {
   white-space: normal;
-}
-#report_a_problem prm-icon {
-  padding-top: 10px;
 }
 /*end report a problem */
 
