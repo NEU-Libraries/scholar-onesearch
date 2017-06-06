@@ -164,12 +164,17 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         //TODO - what about if something gets added to this list - may need to refactor for loop
         var index = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList.length;
         if (vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[0] != "report_a_problem") { // ensure we aren't duplicating the entry
-          vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index - (index -2)] = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[1]
+          if (index > 1){
+              vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index - (index -2)] = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[1]
+          }
           vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[index - (index -1)] = vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[0]
           vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[0] = "report_a_problem";
         }
-        //TODO - eventually change this to prod permalink - or retrieve permalink from somewhere else instead of manually writing it
-        var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmBriefResultCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmBriefResultCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
+        if (vm.prmBriefResultCtrl.searchService.vid == "NU") { //if using prod view, use prod links
+          var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmBriefResultCtrl.item.pnx.display.title[0]+" (http://northeastern-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmBriefResultCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
+        } else { //not prod view, don't use prod links
+          var url = "http://librarydev.neu.edu/get-help/tech-support/report-a-problem?resource="+vm.prmBriefResultCtrl.item.pnx.display.title[0]+" (http://northeastern-primostaging.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmBriefResultCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
+        }
         vm.prmBriefResultCtrl.openTab = function(e, t){
           e.stopPropagation();
           if (t == "report_a_problem"){
@@ -178,7 +183,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             this.openItemMenu(e);
             this.selectedAction = t;
           }
-        }
+        };
       };
     }]);
     app.component('prmBriefResultContainerAfter', {
