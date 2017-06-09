@@ -9,7 +9,7 @@ if ( typeof jQuery === 'undefined' ){
 jQuery(function($) {
   var scholarOneSearch = (function(){
     'use strict';
-    $('body').append('<div id="permalinkModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true"><div class="modal-dialog modal-vertical-centered"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" >Permalink</h4></div><div class="modal-body" id="permalinkLink"></div></div></div></div>');
+    $('body').append('<div id="permalinkModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true"><div class="modal-dialog modal-vertical-centered"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" >Link</h4></div><div class="modal-body" id="permalinkLink"></div></div></div></div>');
     $("html,body").scrollTop(0);
     /**
      * Default Config
@@ -21,7 +21,7 @@ jQuery(function($) {
         icon: function() {
           return $( '<span class="icon-link" aria-hidden="true"></span>' );
         },
-        text: 'Permalink',
+        text: 'Link',
 	//path: '/NU:',
         path: '/primo_library/libweb/action/permalink.do?',
       },
