@@ -682,7 +682,7 @@ jQuery(function($) {
       element: "#showMoreOptions",
       title: "Choose a Search Scope",
       placement: "bottom",
-      content: "Use the drop down menu to choose between different search scopes:<ul><li>Library Catalogs + Articles searches all NU Libraries content and beyond, including books, articles, journals, media, and more.</li><li>Library Catalogs searches print and electronic materials in local collections, except for articles.</li><li>Law Library Catalog searches the NU Law Library’s holdings.</li></ul>",
+      content: "Use the drop down menu to choose between different search scopes:<ul><li>Library Catalogs + Articles searches all NU Libraries content and beyond, including books, articles, journals, media, and more.</li><li>Library Catalogs searches print and electronic materials in local collections, except for articles.</li></ul>",
       backdropPadding: "left"
       },
       {
