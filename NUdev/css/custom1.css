@@ -5,6 +5,9 @@ prm-topbar .top-nav-bar {
 prm-search-bar {
   background-color: #c00;
 }
+prm-journals-search-bar.animate-search-bar {
+  background-color: #c00;
+}
 prm-topbar .md-button, prm-topbar .md-button .item-content {
   color: #666;
 }

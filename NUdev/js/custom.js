@@ -257,6 +257,45 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     });
     /*ends journal title search link to advanced search*/
 
+  /*move the virtualBrowse section */
+  app.factory('sectionOrdering', function() {
+    return function (sections) {
+      if(!sections) return false;
+      
+      var numSections = sections.length;
+      if(!(numSections > 0)) return false;
+
+      // Check if there is a 'details' section.
+      var filterResult = sections.filter(function(s) {return s.serviceName === 'virtualBrowse';} );
+      if(filterResult.length !== 1 ) return false;
+      var detailsSection = filterResult[0];
+
+      var index = sections.indexOf(detailsSection);
+      
+      // Remove the 'virtualBrowse' section from the array.
+      sections.splice(index,1);
+
+      // Insert the 'virtualBrowse' section to the array.
+      sections.splice(3, 0, detailsSection);
+      
+      return true;
+    };
+  });
+    app.component('prmFullViewAfter', {
+    bindings: {
+      parentCtrl: '<',
+    },
+    controller: ['sectionOrdering', function(sectionOrdering) {
+      var ctrl = this;
+
+      ctrl.$onInit = function () {
+        sectionOrdering(ctrl.parentCtrl.services);
+      };
+
+    }]
+  });
+  /*end move the virtualBrowse section */
+
     /*add google analytics*/
     app.run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
       $window.ga('create', 'UA-4426028-9', 'auto');
