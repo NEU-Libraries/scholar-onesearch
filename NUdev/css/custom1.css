@@ -8,6 +8,9 @@ prm-search-bar {
 prm-journals-search-bar.animate-search-bar {
   background-color: #c00;
 }
+prm-browse-search-bar {
+  background-color: #cc0000;
+}
 prm-topbar .md-button, prm-topbar .md-button .item-content {
   color: #666;
 }
