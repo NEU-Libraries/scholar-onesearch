@@ -128,13 +128,13 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         };
         //TODO - what about if something gets added to this list - may need to refactor for loop
         if (!vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"]) { // ensure we aren't duplicating the entry
-          vm.prmActionCtrl.actionListService.requiredActionsList[8] = vm.prmActionCtrl.actionListService.requiredActionsList[7];
-          vm.prmActionCtrl.actionListService.requiredActionsList[7] = vm.prmActionCtrl.actionListService.requiredActionsList[6];
-          vm.prmActionCtrl.actionListService.requiredActionsList[6] = vm.prmActionCtrl.actionListService.requiredActionsList[5];
-          vm.prmActionCtrl.actionListService.requiredActionsList[5] = vm.prmActionCtrl.actionListService.requiredActionsList[4];
-          vm.prmActionCtrl.actionListService.requiredActionsList[4] = "report_a_problem";
+          //vm.prmActionCtrl.actionListService.requiredActionsList[8] = vm.prmActionCtrl.actionListService.requiredActionsList[7];
+          //vm.prmActionCtrl.actionListService.requiredActionsList[7] = vm.prmActionCtrl.actionListService.requiredActionsList[6];
+          //vm.prmActionCtrl.actionListService.requiredActionsList[6] = vm.prmActionCtrl.actionListService.requiredActionsList[5];
+          //vm.prmActionCtrl.actionListService.requiredActionsList[5] = vm.prmActionCtrl.actionListService.requiredActionsList[4];
+          vm.prmActionCtrl.actionListService.requiredActionsList[8] = "report_a_problem";
           vm.prmActionCtrl.actionListService.actionsToDisplay.unshift("report_a_problem");
-          vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"] = 4;
+          vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"] = 8;
         }
         if (vm.prmActionCtrl.$state.$current.locals.globals.$stateParams.vid == "NU") { //if using prod view, use prod links
           var url = "http://library.northeastern.edu/get-help/tech-support/report-a-problem?resource="+vm.prmActionCtrl.item.pnx.display.title[0]+" (http://northeastern-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?"+encodeURIComponent("docid="+vm.prmActionCtrl.item.pnx.control.recordid+"&context=L&vid=NUdev&search_scope=new_everything_scope&tab=default_tab&lang=en_US")+")";
