@@ -291,6 +291,10 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       ctrl.$onInit = function () {
         sectionOrdering(ctrl.parentCtrl.services);
       };
+      
+      angular.element(document).ready(function () {
+  	  	document.getElementById('virtualBrowse').getElementsByTagName("h4")[0].innerHTML = "Virtual Browse (Click on book for location info)";
+      });
 
     }]
   });
