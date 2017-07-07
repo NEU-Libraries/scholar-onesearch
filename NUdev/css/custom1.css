@@ -150,3 +150,36 @@ body.md-dialog-is-showing  {
 #tags {display:none;}
 button[aria-label="Tags"]{display:none;}
 /* end hide tags */
+
+/* Home page style changes */
+.md-headline {
+	color: #1e2a36;
+	font-weight: 500;
+}
+
+.md-headline img {
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-right: 6px;
+}
+
+md-card md-card-content img
+{
+    width: 10px;
+    min-width: 100%;
+}
+
+md-card.default-card md-card-title
+{
+    padding-bottom: 0px;
+}
+
+md-card md-card-content ul
+{
+    padding-top: 0px;
+    margin-left: 20px;
+}
+
+
+/* End Home page style changes */
