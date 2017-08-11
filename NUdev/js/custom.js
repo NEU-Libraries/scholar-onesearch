@@ -110,7 +110,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       template: '<div class="product-logo product-logo-local" layout="row" layout-align="start center" layout-fill id="banner" tabindex="0" role="banner">' +
       '<a href="http://library.northeastern.edu">' +
       '<img class="logo-image" alt="{{::(&apos;nui.header.LogoAlt&apos; | translate)}}" ng-src="custom/NUdev/img/nu-libraries-logo.svg"/></a>' +
-      '<a href="/primo-explore/?vid={{$ctrl.getView()}}">' +
+      '<a href="/primo-explore/search?vid={{$ctrl.getView()}}">' +
       '<img class="logo-image sos" alt="{{::(&apos;nui.header.LogoAlt&apos; | translate)}}" ng-src="custom/NUdev/img/sosbold.svg"/></a></div>'
     });
     /*end make lib logo clickable*/
